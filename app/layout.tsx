@@ -17,13 +17,23 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
+/**
+ * Six items. The old site had fifty — a visitor who sees a twelve-service
+ * dropdown doesn't think "capable", they think "agent".
+ *
+ * Destinations lead, because an international firm's nav should answer "do you
+ * do my country?" before anything else. Canada sits first: it is the largest
+ * practice and the only one with a full hub behind it. "Visa Refused" earns a
+ * top-level slot despite being smaller than the rest, because that visitor is
+ * holding a refusal letter and needs the door to be obvious.
+ */
 const NAV = [
-  { href: '/work-permit-canada', label: 'Work Permit' },
-  { href: '/canada-visit-visa', label: 'Visit Visa' },
+  { href: '/work-permit-canada', label: 'Canada' },
+  { href: '/usa', label: 'USA' },
+  { href: '/uk', label: 'UK' },
+  { href: '/europe', label: 'Europe' },
   { href: '/canada-visa-refused', label: 'Visa Refused' },
   { href: '/about', label: 'About' },
-  { href: '/answers', label: 'Answers' },
-  { href: '/contact', label: 'Contact' },
 ];
 
 export default function RootLayout({ children }: { children: ReactNode }) {
