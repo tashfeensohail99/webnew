@@ -24,6 +24,10 @@ export const ROUTES: Route[] = [
   // Money pages. Ordered by what the business actually sells.
   { path: '/work-permit-canada', reviewed: '2026-07-17', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/canada-visa-refused', reviewed: '2026-07-17', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/canada-visit-visa', reviewed: '2026-07-17', priority: 0.8, changeFrequency: 'monthly' },
+
+  // Linked from every page's footer, and the position the whole brand rests on.
+  { path: '/no-guarantee-policy', reviewed: '2026-07-17', priority: 0.6, changeFrequency: 'yearly' },
 
   // Destinations. Rules here change often — these need re-checking, not re-writing.
   { path: '/usa', reviewed: '2026-07-17', priority: 0.8, changeFrequency: 'weekly' },

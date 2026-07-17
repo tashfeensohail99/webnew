@@ -85,31 +85,41 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <p className="font-serif text-lg">{site.name}</p>
               <p className="mt-2 text-sm text-ink-400">{site.tagline}</p>
             </div>
+            {/* Only link to pages that exist. A footer link is on every page, so a
+                404 here is a 404 everywhere — it wastes crawl budget, and it dead-ends
+                a real person who trusted the link. Add entries back as pages ship:
+                  /study-visa-canada  — 3 leads ever; not worth a page yet
+                  /success-stories    — needs real filed/approved/refused counts first;
+                                        publishing outcomes without a denominator is
+                                        exactly the claim we tell people to distrust
+                  /fees               — needs the firm's real fee ranges
+                  /privacy, /terms    — REQUIRED before launch; need the firm's own
+                                        policies, not invented ones
+                /about/our-offices was removed outright: the offices already live on
+                /about, and a second page for the same content splits the signal. */}
             <FooterCol
               title="Services"
               links={[
                 ['/work-permit-canada', 'Canada Work Permit'],
                 ['/canada-visit-visa', 'Canada Visit Visa'],
                 ['/canada-visa-refused', 'Visa Refused'],
-                ['/study-visa-canada', 'Study Visa'],
+              ]}
+            />
+            <FooterCol
+              title="Destinations"
+              links={[
+                ['/usa', 'United States'],
+                ['/uk', 'United Kingdom'],
+                ['/europe', 'Europe & Schengen'],
               ]}
             />
             <FooterCol
               title="Firm"
               links={[
                 ['/about', 'About us'],
-                ['/about/our-team', 'Our team'],
-                ['/about/our-offices', 'Offices'],
-                ['/success-stories', 'Success stories'],
-                ['/fees', 'Fees'],
-              ]}
-            />
-            <FooterCol
-              title="Legal"
-              links={[
+                ['/about/our-team', 'Our lawyers'],
+                ['/book-consultation', 'Book a consultation'],
                 ['/no-guarantee-policy', 'Our no-guarantee policy'],
-                ['/privacy', 'Privacy'],
-                ['/terms', 'Terms'],
               ]}
             />
           </div>
