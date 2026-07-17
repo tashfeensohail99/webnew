@@ -150,6 +150,18 @@ img, svg { max-width: 100%; height: auto; }
 
 .shadow-soft { box-shadow: 0 1px 2px rgba(13, 27, 43, 0.04), 0 18px 40px -24px rgba(13, 27, 43, 0.18); }
 
+/* Refined reading column for policy / legal / long-form pages. */
+.prose-lux { color: var(--color-ink-600); font-size: 1.0625rem; line-height: 1.8; }
+.prose-lux > * + * { margin-top: 1.25rem; }
+.prose-lux h2 { font-family: var(--font-serif); color: var(--color-ink-900); font-size: 1.9rem; line-height: 1.2; margin-top: 3rem; letter-spacing: -0.01em; }
+.prose-lux h3 { font-family: var(--font-serif); color: var(--color-ink-900); font-size: 1.35rem; margin-top: 2rem; }
+.prose-lux h2 + p, .prose-lux h3 + p { margin-top: 0.85rem; }
+.prose-lux strong { color: var(--color-ink-900); font-weight: 600; }
+.prose-lux a { color: var(--color-gold-600); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+.prose-lux ul { margin-top: 1.25rem; padding-left: 0; list-style: none; }
+.prose-lux ul li { position: relative; padding-left: 1.6rem; margin-top: 0.6rem; }
+.prose-lux ul li::before { content: ''; position: absolute; left: 0; top: 0.65rem; width: 0.5rem; height: 0.5rem; border-radius: 9999px; background: var(--color-gold-500); }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }

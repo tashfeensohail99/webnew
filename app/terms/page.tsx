@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { PageHero, Prose, CTASection } from '@/components/ui';
 import { site } from '@/lib/site';
 
 /**
@@ -24,57 +25,52 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <>
-      <section className="border-b border-rule bg-ink-900 text-white">
-        <div className="mx-auto max-w-4xl px-4 py-14">
-          <h1 className="font-serif text-4xl leading-tight text-balance">Terms of use</h1>
-          <p className="mt-4 max-w-2xl text-ink-200 text-pretty">
-            What this website is, and — more importantly — what it isn’t.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Terms of use"
+        title="What this website is, and what it isn’t"
+        subtitle="The limits of what we publish here — set out plainly, before you rely on any of it."
+      />
 
-      <article className="mx-auto max-w-3xl px-4 py-14">
+      <Prose>
         {/* NOTE FOR THE FIRM (does not render): a lawyer should add the standard clauses
             (ownership, liability, governing law) before treating this as final. The core
             boundaries below are accurate and safe to publish. */}
 
-        <h2 className="font-serif text-3xl text-balance">This site is information, not advice</h2>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <h2>This site is information, not advice</h2>
+        <p>
           Everything published here is general information about how immigration systems work. It is
           not advice about <em>your</em> case, because we have not seen your case.
         </p>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <p>
           Immigration rules change constantly — sometimes in a single announcement, sometimes
           retroactively. We date our pages and we correct them when we learn something has changed.
-          But <strong className="text-ink-900">a page you read today may have been overtaken by an
-          announcement this morning</strong>, and no website can be a substitute for someone looking
-          at your actual situation.
+          But <strong>a page you read today may have been overtaken by an announcement this
+          morning</strong>, and no website can be a substitute for someone looking at your actual
+          situation.
         </p>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <p>
           Where we state a rule, we try to point you at the government source that says so. If the
           two ever disagree, the government is right and we are wrong — tell us, and we will fix the
           page.
         </p>
 
-        <h2 className="mt-12 font-serif text-3xl text-balance">Reading this site does not make us your lawyers</h2>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <h2>Reading this site does not make us your lawyers</h2>
+        <p>
           Nor does messaging us a question. We act for you only once we have both agreed the work in
           writing and you have engaged us. Until then, please do not send us anything confidential or
           time-critical and assume it is being acted on.
         </p>
 
-        <h2 className="mt-12 font-serif text-3xl text-balance">What we don’t promise</h2>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <h2>What we don’t promise</h2>
+        <p>
           No visa outcome. Not here, not anywhere, not ever — for the reasons set out in full on our{' '}
-          <Link href="/no-guarantee-policy" className="font-semibold text-accent-500 underline">
-            no-guarantee policy
-          </Link>
-          . If any page on this site ever reads as though it promises you an approval, that page is
-          wrong and we want to know about it.
+          <Link href="/no-guarantee-policy">no-guarantee policy</Link>. If any page on this site ever
+          reads as though it promises you an approval, that page is wrong and we want to know about
+          it.
         </p>
 
-        <h2 className="mt-12 font-serif text-3xl text-balance">Links to other sites</h2>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <h2>Links to other sites</h2>
+        <p>
           We link to government sources deliberately, so you can verify us. We do not control those
           sites and they may change without us noticing.
         </p>
@@ -83,18 +79,26 @@ export default function TermsPage() {
             — content ownership, limitation of liability, governing law and jurisdiction
             (Pakistan and Canada), and how changes are notified. Left out deliberately rather
             than copied from another firm's site. */}
-        <h2 className="mt-12 font-serif text-3xl text-balance">Questions about these terms</h2>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <h2>Questions about these terms</h2>
+        <p>
           We operate in Pakistan and Canada. If anything here is unclear, or you want to know how it
           applies to you, message us on WhatsApp and ask — we would rather explain it than have you
           guess.
         </p>
 
-        <p className="mt-12 text-sm text-ink-400">
+        <p className="text-sm text-ink-400">
           {site.name}. These terms cover the website at {site.url}. They are not the terms of any
           engagement — that is a separate agreement you would sign.
         </p>
-      </article>
+      </Prose>
+
+      <CTASection
+        eyebrow="Ask before you assume"
+        title="Not sure how any of this applies to you?"
+        subtitle="Message us and ask. We would rather explain it than have you guess — and we’ll tell you honestly where you stand before you engage us."
+        page="terms-cta"
+        waMessage="Hi, I have a question about your terms of use."
+      />
     </>
   );
 }

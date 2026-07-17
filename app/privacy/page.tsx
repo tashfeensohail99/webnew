@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { PageHero, Prose, CTASection } from '@/components/ui';
 import { site } from '@/lib/site';
 
 /**
@@ -36,45 +37,42 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <>
-      <section className="border-b border-rule bg-ink-900 text-white">
-        <div className="mx-auto max-w-4xl px-4 py-14">
-          <h1 className="font-serif text-4xl leading-tight text-balance">Privacy</h1>
-          <p className="mt-4 max-w-2xl text-ink-200 text-pretty">
-            Short version: this website collects nothing about you. Here is the longer version.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Privacy"
+        title="Privacy"
+        subtitle="Short version: this website collects nothing about you. Here is the longer version."
+      />
 
-      <article className="mx-auto max-w-3xl px-4 py-14">
+      <Prose>
         {/* NOTE FOR THE FIRM (does not render): the client-data-handling, retention and
             data-request sections still need a lawyer's wording before you rely on this
             page for anyone who has become a client. The website-behaviour sections below
             are accurate and safe to publish as-is. */}
 
-        <h2 className="font-serif text-3xl text-balance">What this website collects</h2>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <h2>What this website collects</h2>
+        <p>
           Nothing. There are no forms on this site, no cookies, no analytics, no tracking pixels and
           no advertising scripts. Every page is a static file. We do not know you visited.
         </p>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <p>
           You do not have to take our word for that — open your browser’s developer tools and look.
           It is one of the few claims on any immigration website you can check in ten seconds.
         </p>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <p>
           Our hosting provider keeps ordinary server logs, as every web host does. We do not use them
           to identify anyone.
         </p>
 
-        <h2 className="mt-12 font-serif text-3xl text-balance">When you message us on WhatsApp</h2>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <h2>When you message us on WhatsApp</h2>
+        <p>
           The buttons on this site open WhatsApp on your own phone with a message ready to send. We
           receive nothing until <em>you</em> press send.
         </p>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <p>
           When you do, WhatsApp delivers it to us — so it passes through Meta, under{' '}
           <a
             href="https://www.whatsapp.com/legal/privacy-policy"
-            className="font-semibold text-accent-500 underline"
+            className="link-underline font-semibold text-accent-500"
             rel="noopener nofollow"
             target="_blank"
           >
@@ -83,13 +81,13 @@ export default function PrivacyPage() {
           , not ours. We then receive your phone number, your WhatsApp display name, and whatever you
           wrote.
         </p>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <p>
           Those messages carry a short reference code such as{' '}
-          <code className="font-mono text-sm">[Ref: WP-7K2M]</code>. It identifies which page you
+          <code>[Ref: WP-7K2M]</code>. It identifies which page you
           came from — so the right person answers you, and so we know which pages are useful. It says
           nothing about <em>you</em>. It is not an identifier, and it is not shared with anyone.
         </p>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <p>
           We keep those conversations so that whoever picks up your case can see what you have
           already told us, rather than making you repeat it.
         </p>
@@ -108,14 +106,14 @@ export default function PrivacyPage() {
           consumer WhatsApp Business App rather than the Cloud API — different terms, and
           this paragraph would not be true of it.
         */}
-        <p className="mt-4 text-ink-600 text-pretty">
+        <p>
           One thing worth being straight about: under WhatsApp’s own business terms,{' '}
           <strong className="text-ink-900">we are responsible for that conversation, not Meta.</strong>{' '}
           Meta carries the messages; what happens to them afterwards is on us.
         </p>
 
-        <h2 className="mt-12 font-serif text-3xl text-balance">What we will never ask you for here</h2>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <h2>What we will never ask you for here</h2>
+        <p>
           Your CNIC or passport, to book a meeting. No legitimate firm needs your identity documents
           before it has spoken to you, and if anyone asks for them up front — us included — that
           alone should give you pause.
@@ -177,8 +175,8 @@ export default function PrivacyPage() {
               advisory we are likely outside it entirely — but that turns on our actual
               service mix.
         */}
-        <h2 className="mt-12 font-serif text-3xl text-balance">The law that applies to your documents</h2>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <h2>The law that applies to your documents</h2>
+        <p>
           Here is something most Pakistani firms will not tell you:{' '}
           <strong className="text-ink-900">
             Pakistan has no data protection law in force.
@@ -187,11 +185,11 @@ export default function PrivacyPage() {
           exist punishes people who steal your data — it says almost nothing about what a business
           holding your passport must do to look after it.
         </p>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <p>
           So when a firm in this market tells you your documents are “fully protected under the law”,
           ask them which law. There generally isn’t one.
         </p>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <p>
           We think the absence of a rule is not a reason to have no standard. Because we operate an
           office in Canada, Canadian federal privacy law reaches part of what we do — and rather than
           run two standards, we would rather hold the whole firm to the higher one.
@@ -200,8 +198,8 @@ export default function PrivacyPage() {
             "higher standard" line above reads as a binding undertaking or a policy,
             and the exact PIPEDA / UK-GDPR scope, before you rely on it. */}
 
-        <h2 className="mt-12 font-serif text-3xl text-balance">If you become a client</h2>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <h2>If you become a client</h2>
+        <p>
           Once you engage us, we hold the documents your case needs — identity documents, financial
           records and the papers for your application — and only the people working on your file can
           see them. We are finalising the full detail of how long we keep them and how to ask for a
@@ -241,40 +239,48 @@ export default function PrivacyPage() {
           that surfaces in searches is INDIAN Punjab legislation, not Pakistani. It does not
           apply. Do not let it back in.
         */}
-        <h2 className="mt-12 font-serif text-3xl text-balance">How long we keep your documents</h2>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <h2>How long we keep your documents</h2>
+        <p>
           No Pakistani law tells us. There is no statute setting a retention period for immigration
           files, and the anti-money-laundering rules that force banks, jewellers and estate agents to
           keep records for years do not cover firms like ours.
         </p>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <p>
           Which means how long we hold your passport scan is{' '}
           <strong className="text-ink-900">a decision we make, not one imposed on us</strong> — so it
           is a fair thing to hold us to.
         </p>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <p>
           We are setting that period now, measured against one principle: we keep your documents only
           for as long as your case and the law actually require, and no longer. Ask us and we will
           tell you where that stands.
         </p>
 
-        <h2 className="mt-12 font-serif text-3xl text-balance">Contact</h2>
-        <p className="mt-4 text-ink-600 text-pretty">
+        <h2>Contact</h2>
+        <p>
           Any question about your information — what we hold, or a request to see or remove it —
           message us on WhatsApp and we will point you to the right person.
         </p>
-        <p className="mt-6 text-ink-600 text-pretty">
+        <p>
           You can also simply come to an office and ask —{' '}
-          <Link href="/about" className="font-semibold text-accent-500 underline">
+          <Link href="/about" className="link-underline font-semibold text-accent-500">
             we have three
           </Link>
           .
         </p>
 
-        <p className="mt-12 text-sm text-ink-400">
+        <p className="text-sm text-ink-400">
           {site.name}. This page describes the website at {site.url}.
         </p>
-      </article>
+      </Prose>
+
+      <CTASection
+        eyebrow="Any question about your data"
+        title="Ask us — plainly, and we’ll answer plainly"
+        subtitle="Message us on WhatsApp about what we hold, or come to any of our three offices and ask in person."
+        waMessage="Hi, I have a question about how you handle my information."
+        page="privacy"
+      />
     </>
   );
 }
