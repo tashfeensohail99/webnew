@@ -38,4 +38,10 @@ export const ROUTES: Route[] = [
   { path: '/about', reviewed: '2026-07-17', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/about/our-team', reviewed: '2026-07-17', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/book-consultation', reviewed: '2026-07-17', priority: 0.7, changeFrequency: 'monthly' },
+  // Cost is the first thing this market searches and the last thing it answers.
+  { path: '/fees', reviewed: '2026-07-17', priority: 0.7, changeFrequency: 'monthly' },
+
+  // Boilerplate to a crawler, but they must exist and be reachable.
+  { path: '/privacy', reviewed: '2026-07-17', priority: 0.3, changeFrequency: 'yearly' },
+  { path: '/terms', reviewed: '2026-07-17', priority: 0.3, changeFrequency: 'yearly' },
 ];

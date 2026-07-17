@@ -86,16 +86,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <p className="mt-2 text-sm text-ink-400">{site.tagline}</p>
             </div>
             {/* Only link to pages that exist. A footer link is on every page, so a
-                404 here is a 404 everywhere — it wastes crawl budget, and it dead-ends
-                a real person who trusted the link. Add entries back as pages ship:
-                  /study-visa-canada  — 3 leads ever; not worth a page yet
-                  /success-stories    — needs real filed/approved/refused counts first;
-                                        publishing outcomes without a denominator is
-                                        exactly the claim we tell people to distrust
-                  /fees               — needs the firm's real fee ranges
-                  /privacy, /terms    — REQUIRED before launch; need the firm's own
-                                        policies, not invented ones
-                /about/our-offices was removed outright: the offices already live on
+                404 here is a 404 everywhere — it wastes crawl budget and dead-ends a
+                real person who trusted the link. Still deliberately absent:
+                  /study-visa-canada — 3 leads ever; not worth a page
+                  /success-stories   — needs real filed/approved/refused counts first.
+                                       Publishing outcomes without a denominator is
+                                       exactly the claim /no-guarantee-policy tells
+                                       readers to distrust.
+                /about/our-offices was dropped outright: the offices already live on
                 /about, and a second page for the same content splits the signal. */}
             <FooterCol
               title="Services"
@@ -103,6 +101,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 ['/work-permit-canada', 'Canada Work Permit'],
                 ['/canada-visit-visa', 'Canada Visit Visa'],
                 ['/canada-visa-refused', 'Visa Refused'],
+                ['/fees', 'Fees'],
               ]}
             />
             <FooterCol
@@ -120,6 +119,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 ['/about/our-team', 'Our lawyers'],
                 ['/book-consultation', 'Book a consultation'],
                 ['/no-guarantee-policy', 'Our no-guarantee policy'],
+                ['/privacy', 'Privacy'],
+                ['/terms', 'Terms'],
               ]}
             />
           </div>
