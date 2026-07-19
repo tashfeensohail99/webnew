@@ -46,6 +46,9 @@ export const ROUTES: Route[] = [
   { path: '/tools', reviewed: '2026-07-18', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/tools/work-permit-eligibility', reviewed: '2026-07-18', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/tools/visit-visa-refusal-risk', reviewed: '2026-07-18', priority: 0.9, changeFrequency: 'monthly' },
+  // Highest search volume of the three. changeFrequency is honest: IRCC can move the
+  // grid by ministerial instruction, so this page genuinely does need re-checking.
+  { path: '/tools/crs-calculator', reviewed: '2026-07-20', priority: 0.9, changeFrequency: 'weekly' },
 
   // Boilerplate to a crawler, but they must exist and be reachable.
   { path: '/privacy', reviewed: '2026-07-17', priority: 0.3, changeFrequency: 'yearly' },

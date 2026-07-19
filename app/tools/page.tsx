@@ -15,7 +15,7 @@ import { PageHero, Section, SectionHeading, FeatureCard, Callout, CTASection, Ic
 export const metadata: Metadata = {
   title: 'Free Immigration Tools & Eligibility Checkers',
   description:
-    'Free, honest self-assessment tools: check whether you could work in Canada without a job offer, and what a visa officer would question about your visitor visa. No sign-up.',
+    'Free, honest self-assessment tools: a current Express Entry CRS calculator, whether you could work in Canada without a job offer, and what an officer would question about your visitor visa. No sign-up.',
   alternates: { canonical: '/tools' },
 };
 
@@ -35,6 +35,14 @@ const TOOLS = [
     title: 'Visit visa refusal-risk check',
     body: 'Finds the specific things an officer will question about your file — home ties, funds, travel history — before you pay the application fee.',
     cta: 'Find my weak points',
+  },
+  {
+    href: '/tools/crs-calculator',
+    icon: 'calculator' as const,
+    kicker: 'Canada · Express Entry',
+    title: 'CRS points calculator',
+    body: 'Your Comprehensive Ranking System score against the grid as it stands today — including the 2025 change most calculators still get wrong.',
+    cta: 'Calculate my score',
   },
 ];
 
@@ -57,7 +65,7 @@ export default function ToolsPage() {
           title="Start with the one that matches your situation"
           subtitle="Each ends with an indicative result and the option to send it straight to us — with your answers attached, so nobody makes you repeat yourself."
         />
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {TOOLS.map((t) => (
             <FeatureCard
               key={t.href}

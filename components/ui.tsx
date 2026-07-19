@@ -289,6 +289,8 @@ export function Icon({ name, className = 'h-6 w-6' }: { name: IconName; classNam
       return (<svg {...p}><path d="M12 3l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 21l1.1-6.5L2.6 9.8l6.5-.9L12 3z" /></svg>);
     case 'user':
       return (<svg {...p}><circle cx="12" cy="8" r="4" /><path d="M4 21c0-4 4-6 8-6s8 2 8 6" /></svg>);
+    case 'calculator':
+      return (<svg {...p}><rect x="4" y="3" width="16" height="18" rx="2" /><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01" /></svg>);
     default:
       return (<svg {...p}><circle cx="12" cy="12" r="9" /></svg>);
   }
@@ -296,4 +298,4 @@ export function Icon({ name, className = 'h-6 w-6' }: { name: IconName; classNam
 
 export type IconName =
   | 'permit' | 'plane' | 'refresh' | 'scale' | 'shield' | 'doc'
-  | 'globe' | 'building' | 'check' | 'chat' | 'star' | 'user';
+  | 'globe' | 'building' | 'check' | 'chat' | 'star' | 'user' | 'calculator';
