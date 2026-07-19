@@ -41,6 +41,12 @@ export const ROUTES: Route[] = [
   // Cost is the first thing this market searches and the last thing it answers.
   { path: '/fees', reviewed: '2026-07-17', priority: 0.7, changeFrequency: 'monthly' },
 
+  // Free tools. High priority: they are the entry point most people search for,
+  // and they qualify a lead better than any brochure page can.
+  { path: '/tools', reviewed: '2026-07-18', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/tools/work-permit-eligibility', reviewed: '2026-07-18', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/tools/visit-visa-refusal-risk', reviewed: '2026-07-18', priority: 0.9, changeFrequency: 'monthly' },
+
   // Boilerplate to a crawler, but they must exist and be reachable.
   { path: '/privacy', reviewed: '2026-07-17', priority: 0.3, changeFrequency: 'yearly' },
   { path: '/terms', reviewed: '2026-07-17', priority: 0.3, changeFrequency: 'yearly' },
