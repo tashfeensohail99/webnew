@@ -52,7 +52,22 @@
   --font-serif: var(--font-fraunces), Georgia, 'Times New Roman', serif;
 }
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+/* ⚠️ DO NOT reintroduce a universal `margin: 0; padding: 0` reset here.
+ *
+ * This file previously carried:
+ *     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ *
+ * Tailwind v4 emits every utility inside `@layer utilities`, and UNLAYERED CSS
+ * beats LAYERED CSS in the cascade regardless of specificity. So that one line
+ * silently overrode every margin and padding utility on the entire site:
+ * `mx-auto`, `px-4`, `py-24`, `mt-6` — all dead. Nothing centred, nothing had
+ * gutters, and every page sat flush against the left edge of the viewport.
+ * `max-w-*` and `gap-*` kept working, which made it look like a design problem
+ * rather than a cascade bug.
+ *
+ * Tailwind's own preflight already applies box-sizing and sensible margin
+ * resets, correctly layered so utilities can override them. Let it do its job.
+ */
 
 html {
   font-family: var(--font-sans);
