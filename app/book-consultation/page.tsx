@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { WhatsAppCta } from '@/components/WhatsAppCta';
+import { LeadForm } from '@/components/LeadForm';
 import {
   PageHero,
   Section,
@@ -115,6 +116,24 @@ export default function BookConsultationPage() {
           See who you’ll speak to
         </Link>
       </PageHero>
+
+      {/* ========================= ENQUIRY FORM =========================
+          Deliberately BELOW the WhatsApp CTA in the hero. WhatsApp is where
+          the team actually works and where a reply can happen in seconds;
+          this is for people who won't use it. The form creates a lead in the
+          CRM and routes it to a sales agent exactly like any other channel. */}
+      <Section tone="paper">
+        <div className="mx-auto max-w-3xl">
+          <SectionHeading
+            eyebrow="Or write to us"
+            title="Send your details instead"
+            subtitle="If you would rather not use WhatsApp, this reaches the same team. Tell us what you are trying to do and we will come back to you."
+          />
+          <div className="mt-10">
+            <LeadForm page="contact" />
+          </div>
+        </div>
+      </Section>
 
       {/* ===================== WHY WE CHARGE FOR IT ===================== */}
       <Section tone="paper">

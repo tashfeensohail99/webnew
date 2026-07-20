@@ -92,7 +92,7 @@ const CARDS: Card[] = [
   },
   {
     href: '/europe',
-    kicker: 'Residence & Schengen access',
+    kicker: 'Schengen',
     title: 'Europe',
     tone: 'from-[#0d5a70] to-[#1a8ea1]',
     art: <Emblem kind="globe" className="absolute -right-4 top-5 h-40 w-40 text-white/20" />,
