@@ -9,7 +9,8 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "test:crs": "node test/crs-grid.test.ts",
-    "test:profiles": "node test/crs-profiles.ts"
+    "test:profiles": "node test/crs-profiles.ts",
+    "test:clb": "node test/clb.test.ts"
   },
   "dependencies": {
     "next": "^15.5.18",

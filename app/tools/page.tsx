@@ -44,6 +44,14 @@ const TOOLS = [
     body: 'Your Comprehensive Ranking System score against the grid as it stands today, plus a simple test you can run to check any calculator — including ours.',
     cta: 'Calculate my score',
   },
+  {
+    href: '/tools/clb-converter',
+    icon: 'chat' as const,
+    kicker: 'Canada · Language',
+    title: 'Language score to CLB converter',
+    body: 'Turn an IELTS, CELPIP, PTE, TEF or TCF result into the benchmark levels Canada actually uses — ability by ability, since the lowest one is what gates you.',
+    cta: 'Convert my scores',
+  },
 ];
 
 export default function ToolsPage() {
