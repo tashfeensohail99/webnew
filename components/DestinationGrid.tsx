@@ -72,8 +72,11 @@ function FlagPlate({
       // Height comes from the official ratio rather than a fixed class, so the
       // box matches the artwork exactly and nothing is cropped or squeezed.
       style={{ aspectRatio: String(ratio) }}
+      // The big flag steps up at LG, not SM: the Canada tile is only double-size
+      // from lg up, so a wider flag at the sm breakpoint would spill out of a
+      // half-width cell and get clipped by the card's overflow-hidden.
       className={`absolute block overflow-hidden rounded-lg shadow-lg ring-1 ring-white/30 -rotate-3 ${
-        big ? 'right-7 top-9 w-48 sm:w-60' : 'right-5 top-5 w-28'
+        big ? 'right-7 top-9 w-52 lg:w-72' : 'right-5 top-5 w-40'
       }`}
     >
       {children}
@@ -145,7 +148,11 @@ export function DestinationGrid() {
           key={c.href}
           href={c.href}
           className={`group relative overflow-hidden rounded-2xl bg-gradient-to-br ${c.tone} ${
-            c.wide ? 'lg:row-span-2 lg:min-h-[34rem]' : 'min-h-[15rem]'
+            // The wide card needs its OWN base min-height, not just the lg one.
+            // The flag is absolutely positioned so it adds no height; without a
+            // floor here the card collapsed to the height of its text on mobile
+            // and the flag overflowed straight through the title.
+            c.wide ? 'min-h-[18rem] lg:row-span-2 lg:min-h-[34rem]' : 'min-h-[15rem]'
           } text-white shadow-soft transition-transform duration-300 hover:-translate-y-1`}
         >
           <span className="pointer-events-none absolute inset-0 transition-transform duration-500 group-hover:scale-105">

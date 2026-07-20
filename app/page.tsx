@@ -95,6 +95,27 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ===================== GLOBAL DESTINATIONS ===================== */}
+      <section className="bg-paper">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:py-24">
+          <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="eyebrow">Global destinations</p>
+              <h2 className="mt-4 max-w-xl font-serif text-3xl leading-tight text-balance sm:text-4xl">
+                Opportunity has more than one address
+              </h2>
+            </div>
+            <p className="max-w-sm text-ink-600 text-pretty">
+              Canada is what we file most, and it is where our Canadian office is. The
+              other routes are real too — we will tell you plainly which one fits.
+            </p>
+          </div>
+          <div className="mt-12">
+            <DestinationGrid />
+          </div>
+        </div>
+      </section>
+
       {/* ========================= TRUST STRIP ========================= */}
       <section className="border-b border-rule bg-paper-alt">
         <div className="mx-auto max-w-6xl px-4 py-8 sm:flex sm:items-center sm:justify-between sm:gap-6">
@@ -223,27 +244,6 @@ export default function HomePage() {
               </div>
             ))}
           </dl>
-        </div>
-      </section>
-
-      {/* ===================== GLOBAL DESTINATIONS ===================== */}
-      <section className="bg-paper">
-        <div className="mx-auto max-w-6xl px-4 py-20 sm:py-24">
-          <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <p className="eyebrow">Global destinations</p>
-              <h2 className="mt-4 max-w-xl font-serif text-3xl leading-tight text-balance sm:text-4xl">
-                Opportunity has more than one address
-              </h2>
-            </div>
-            <p className="max-w-sm text-ink-600 text-pretty">
-              Canada is what we file most, and it is where our Canadian office is. The
-              other routes are real too — we will tell you plainly which one fits.
-            </p>
-          </div>
-          <div className="mt-12">
-            <DestinationGrid />
-          </div>
         </div>
       </section>
 
