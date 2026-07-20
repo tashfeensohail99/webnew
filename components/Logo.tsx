@@ -28,9 +28,9 @@
 type Variant = 'dark' | 'light';
 
 function Monogram({ variant, className }: { variant: Variant; className?: string }) {
-  const onDark = variant === 'light';
-  // Unique per variant so the header and footer marks never share a gradient id.
-  const gradId = `tis-silver-${variant}`;
+  // Unique per variant so the header and footer marks never share gradient ids.
+  const silver = `tis-silver-${variant}`;
+  const fold = `tis-fold-${variant}`;
 
   return (
     <svg
@@ -39,32 +39,36 @@ function Monogram({ variant, className }: { variant: Variant; className?: string
       role="img"
       aria-label="Tashfeen Immigration Solutions"
     >
-      {onDark ? (
-        <defs>
-          {/* Brushed steel: bright shoulder, mid body, soft return highlight. */}
-          <linearGradient id={gradId} x1="8%" y1="0%" x2="92%" y2="100%">
-            <stop offset="0%" stopColor="#ffffff" />
-            <stop offset="28%" stopColor="#dfe5ec" />
-            <stop offset="55%" stopColor="#98a3b3" />
-            <stop offset="78%" stopColor="#c9d2dd" />
-            <stop offset="100%" stopColor="#7d8899" />
-          </linearGradient>
-        </defs>
-      ) : null}
+      <defs>
+        {/* Brushed steel: bright shoulder, mid body, soft return highlight. */}
+        <linearGradient id={silver} x1="10%" y1="0%" x2="88%" y2="100%">
+          <stop offset="0%" stopColor="#ffffff" />
+          <stop offset="26%" stopColor="#e3e8ee" />
+          <stop offset="54%" stopColor="#9aa5b4" />
+          <stop offset="76%" stopColor="#ccd4de" />
+          <stop offset="100%" stopColor="#788899" />
+        </linearGradient>
+        {/* The shadowed plane of the fold — same metal, turned away from the light. */}
+        <linearGradient id={fold} x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#8c97a6" />
+          <stop offset="100%" stopColor="#5d6875" />
+        </linearGradient>
+      </defs>
+
+      {/* The navy tile. This is part of the mark, not a backdrop we added: the
+          brand asset is a silver T ON navy, so the tile travels with it. Without
+          it, the T has to be recoloured for light backgrounds and stops being
+          silver at all — which is exactly what went wrong before. */}
+      <rect x="0" y="0" width="128" height="128" rx="20" fill="#16283f" />
 
       {/* The T: broad chamfered crossbar folding into a tapered stem. */}
       <path
-        fill={onDark ? `url(#${gradId})` : '#0d1b2b'}
-        d="M12 14 H116 V36 L94 58 H76 L70 106 L64 118 L58 106 L52 58 H34 L12 36 Z"
+        fill={`url(#${silver})`}
+        d="M22 30 H106 V48 L88 66 H74 L69 104 L64 114 L59 104 L54 66 H40 L22 48 Z"
       />
-
-      {/* The fold: a darker plane down the right of the stem so the mark reads as
-          folded metal rather than a flat silhouette. */}
-      <path
-        fill={onDark ? '#5c6879' : '#213a54'}
-        fillOpacity={onDark ? 0.55 : 1}
-        d="M64 14 L76 58 L70 106 L64 118 Z"
-      />
+      {/* The fold down the right of the stem, so it reads as folded metal
+          rather than a flat silhouette. */}
+      <path fill={`url(#${fold})`} d="M64 30 L74 66 L69 104 L64 114 Z" />
     </svg>
   );
 }
