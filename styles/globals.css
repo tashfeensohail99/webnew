@@ -16,7 +16,12 @@
   --color-ink-100: #e6ebf2;
   --color-ink-200: #c7d2e0;
   --color-ink-300: #9fb1c6;
-  --color-ink-400: #6b829f;
+  /* Muted TEXT tone. Was #6b829f at 3.62:1 on the darkest light surface —
+     below the 4.5 AA floor, and it is a text token: 41 of its 42 usages are
+     `text-ink-400` (captions, hints, small print), with one hover border.
+     #586f89 keeps the same hue and saturation, dropped in lightness, at
+     4.76:1 — still clearly quieter than body ink-600, now actually readable. */
+  --color-ink-400: #586f89;
   --color-ink-500: #47607e;
   --color-ink-600: #2f4661;
   --color-ink-700: #213a54;
@@ -28,14 +33,28 @@
   --color-gold-300: #e4cd92;
   --color-gold-400: #d3b877;
   --color-gold-500: #c3a15c;   /* the signature gold */
-  --color-gold-600: #a2823f;   /* readable on white for text/links */
+  /* TEXT gold. Was #a2823f, and the comment claimed "readable on white" —
+     measured 3.62:1 against both paper and white, under the 4.5 AA floor for
+     body-size text. Every eyebrow, kicker and inline link on the site used it,
+     so the whole accent voice sat just below legible. #8c6f36 is the same hue
+     and saturation, dropped in lightness only.
+
+     Solved against the DARKEST light surface, not white. A first pass at
+     #8c6f36 cleared 4.73:1 on white but only 4.34:1 on paper-alt (#f7f5ef),
+     the warm ivory band — still failing, just less obviously. #846933 clears
+     every light surface the site uses: white 5.19, paper-alt 4.76, gold-50
+     4.81.
+
+     The DECORATIVE gold (--color-gold-500) is unchanged: it fills buttons and
+     draws rules, where the 4.5 text floor does not apply. */
+  --color-gold-600: #846933;
   --color-gold-700: #82682f;
   --color-gold-50:  #faf6ec;
 
   /* Back-compat: existing pages use `accent-*`. Point it at readable gold
      so every old `text-accent-500` link becomes an on-brand gold. */
-  --color-accent-500: #a2823f;
-  --color-accent-600: #82682f;
+  --color-accent-500: #846933;  /* matches gold-600 — see note above */
+  --color-accent-600: #71592b;
   --color-accent-400: #c3a15c;
   --color-accent-50:  #faf6ec;
 
@@ -222,6 +241,19 @@ img, svg { max-width: 100%; height: auto; }
    is the system fix: the surface decides, so the mistake stops being possible.
    Descendant selectors (0,2,0) outrank the base rule (0,1,0), and both are
    unlayered, so no cascade-layer surprises. */
+/* The muted text tone has to flip with the surface.
+   `--color-ink-400` was darkened to clear AA on the light surfaces where 41 of
+   its 42 usages live — but the footer and hero also use `text-ink-400` for
+   small print, and on navy the darker value drops to 3.6:1. One token cannot
+   serve both polarities, so the DARK surfaces raise it instead of every call
+   site having to remember. Same principle as the ghost button below: the
+   surface decides. Unlayered, so it beats the `@layer utilities` class. */
+.bg-navy .text-ink-400,
+.bg-hero .text-ink-400,
+footer.bg-navy .text-ink-400 {
+  color: var(--color-ink-300);
+}
+
 .bg-hero .btn-ghost,
 .bg-navy .btn-ghost {
   background: rgba(255, 255, 255, 0.06);
