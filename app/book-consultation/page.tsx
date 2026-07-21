@@ -23,11 +23,15 @@ import { site, SERVICE } from '@/lib/site';
  * a buyer who has been warned about immigration scams their whole life — a fee
  * that credits back reads as confidence rather than a toll.
  *
- * Deliberately NOT a form. Most of the audience is in Pakistan + the Gulf, where a form
- * is strictly worse than WhatsApp: more friction, no 24-hour service window, and
- * replies get forced into paid templates. And we ask for the minimum — a name and
- * a number books a meeting. Identity verification belongs at retainer, behind
- * auth, not on a public page.
+ * WhatsApp leads, and the form sits below it — for the audience in Pakistan and the
+ * Gulf, WhatsApp beats a form on every axis: less friction, a 24-hour service
+ * window, and no reply forced into a paid template.
+ *
+ * The form is for the people who won't use it, and since the consultation went
+ * free it carries the qualifying weight the PKR 5,000 fee used to. It asks the
+ * questions a lawyer asks first — refusals above all — so effort filters where
+ * price used to. Still NO identity documents: no CNIC, no passport. Those belong
+ * at retainer, behind auth, not on a public page.
  */
 export const metadata: Metadata = {
   title: 'Book a Consultation',
@@ -126,9 +130,9 @@ export default function BookConsultationPage() {
       <Section tone="paper">
         <div className="mx-auto max-w-3xl">
           <SectionHeading
-            eyebrow="Or write to us"
-            title="Send your details instead"
-            subtitle="If you would rather not use WhatsApp, this reaches the same team. Tell us what you are trying to do and we will come back to you."
+            eyebrow="Or write it out"
+            title="Tell us the awkward parts too"
+            subtitle="Three minutes, and it reaches the same team. These are the questions a lawyer asks in the first five — answering them here means the reply you get is about your case, not a request for more information."
           />
           <div className="mt-10">
             <LeadForm page="contact" />

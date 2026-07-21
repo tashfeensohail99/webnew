@@ -5,29 +5,45 @@ import { useEffect, useRef, useState } from 'react';
 /**
  * The website enquiry form.
  *
- * WhatsApp is the primary channel and stays that way — it is where the team
- * actually works, where the bot and the templates live, and where a reply can
- * happen in seconds. This form exists for the people who will not use WhatsApp:
- * desktop visitors, anyone who prefers email, and anyone who wants to write out
- * their situation properly. It sits BELOW the WhatsApp button by design.
+ * WhatsApp is still primary and this still sits BELOW it. What changed is what
+ * the form asks. The consultation used to cost PKR 5,000, and that fee was the
+ * filter — it separated a serious enquiry from the firehose. Free means the
+ * filter has to be EFFORT instead: this asks the questions a lawyer would ask
+ * in the first five minutes, so the enquiry that lands is already worth
+ * reading, and the person who won't spend three minutes on it self-selects out.
  *
- * It posts to POST /public/leads/website, which creates a lead in the CRM and
- * round-robins it to a sales agent. Two spam defences are cooperative with the
- * server and both are invisible to a real person:
+ * The questions are not busywork. Each one changes the answer:
+ *   - refusal history is the single biggest one, and the thing people hide
+ *   - who is travelling changes the route entirely (spouse/children)
+ *   - "what have you already done" surfaces the half-finished file, the agent
+ *     who disappeared, the application already in progress
  *
- *   - `company` is a honeypot. Rendered off-screen and hidden from assistive
- *     tech, with autocomplete off so a browser never fills it. Any value means
- *     a bot.
- *   - `elapsedMs` is how long the form has been on screen. The server rejects
- *     anything under three seconds.
+ * WHY IT ALL GOES INTO `message`:
+ * The backend runs a global ValidationPipe with forbidNonWhitelisted: true, and
+ * CreateWebsiteLeadDto accepts a fixed field list. Any NEW key in this payload
+ * is a 400 and a LOST ENQUIRY — not a degraded one. So the answers are composed
+ * into the existing `message` string, which the CRM already writes into the
+ * lead's notes where a rep reads them. This ships against the live backend with
+ * no CRM change and no deploy ordering to get wrong. If these ever need to be
+ * queryable columns, that is a DTO change first, then this.
  *
- * The server answers identically whether it accepted, deduped, or silently
- * dropped a bot — so this component cannot and does not try to distinguish
- * those cases. It says "we have it" and gets out of the way.
+ * `message` is @MaxLength(1200) server-side, so the composed block is clamped
+ * below that — overrunning it would 400 the whole submission, which is exactly
+ * the failure this form exists to avoid.
+ *
+ * Spam defences unchanged: `company` honeypot (off-screen, not display:none,
+ * since some bots skip hidden inputs but fill positioned ones) and `elapsedMs`
+ * set on mount rather than at module scope, so a prerendered page doesn't carry
+ * the build timestamp and make every submission look instant.
  */
 
 const API_BASE =
   process.env.NEXT_PUBLIC_CRM_API_URL ?? 'https://backend-production-5a89.up.railway.app';
+
+/** Server DTO caps `message` at 1200. Stay clear of it. */
+const MESSAGE_LIMIT = 1150;
+/** Free-text the visitor types, before we add the structured answers. */
+const SITUATION_MAX = 700;
 
 const DESTINATIONS = ['Canada', 'United Kingdom', 'United States', 'Europe', 'Not sure yet'];
 
@@ -42,17 +58,36 @@ const INTERESTS = [
   'Something else',
 ];
 
+const REFUSED = [
+  'No, never',
+  'Yes — Canada',
+  'Yes — another country',
+  'Yes — more than one',
+  'I’m not sure',
+];
+
+const WHO = ['Just me', 'Me and my spouse', 'Me and my family', 'Someone else, not me'];
+
+const STAGE = [
+  'Just starting to look into it',
+  'I’ve done some research',
+  'I have documents ready',
+  'An application is already in progress',
+  'I used an agent before and it went wrong',
+];
+
 type Status = 'idle' | 'sending' | 'sent' | 'error';
 
 export function LeadForm({ page = 'contact' }: { page?: string }) {
   const [status, setStatus] = useState<Status>('idle');
+  const [refused, setRefused] = useState('');
   const mountedAt = useRef<number>(0);
 
-  // Set on mount rather than at module scope: a prerendered page would
-  // otherwise carry the build time and every submission would look instant.
   useEffect(() => {
     mountedAt.current = Date.now();
   }, []);
+
+  const showRefusalDetail = refused.startsWith('Yes');
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -60,15 +95,31 @@ export function LeadForm({ page = 'contact' }: { page?: string }) {
     setStatus('sending');
 
     const fd = new FormData(e.currentTarget);
+    const val = (k: string) => String(fd.get(k) ?? '').trim();
+
+    // Structured answers first — a rep skimming the note sees the decisive
+    // facts before the prose. Blank answers are dropped rather than written as
+    // empty labels.
+    const composed = [
+      val('whoFor') ? `Who it's for: ${val('whoFor')}` : null,
+      val('refused') ? `Previously refused: ${val('refused')}` : null,
+      val('refusalDetail') ? `Refusal detail: ${val('refusalDetail')}` : null,
+      val('stage') ? `Where they are: ${val('stage')}` : null,
+      val('situation') ? `\nIn their words:\n${val('situation')}` : null,
+    ]
+      .filter(Boolean)
+      .join('\n');
+
     const payload = {
-      firstName: String(fd.get('firstName') ?? '').trim(),
-      lastName: String(fd.get('lastName') ?? '').trim(),
-      phone: String(fd.get('phone') ?? '').trim(),
-      email: String(fd.get('email') ?? '').trim() || undefined,
-      targetCountry: String(fd.get('targetCountry') ?? '') || undefined,
-      serviceInterest: String(fd.get('serviceInterest') ?? '') || undefined,
-      message: String(fd.get('message') ?? '').trim() || undefined,
-      company: String(fd.get('company') ?? ''), // honeypot
+      firstName: val('firstName'),
+      lastName: val('lastName'),
+      phone: val('phone'),
+      email: val('email') || undefined,
+      targetCountry: val('targetCountry') || undefined,
+      serviceInterest: val('serviceInterest') || undefined,
+      // Clamped: exceeding the server's 1200 would reject the whole enquiry.
+      message: composed ? composed.slice(0, MESSAGE_LIMIT) : undefined,
+      company: val('company'), // honeypot
       elapsedMs: mountedAt.current ? Date.now() - mountedAt.current : undefined,
       page,
     };
@@ -79,8 +130,6 @@ export function LeadForm({ page = 'contact' }: { page?: string }) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
-      // 429 is the throttle. Treat it as an error the person can act on
-      // (they can use WhatsApp) rather than a silent failure.
       setStatus(res.ok ? 'sent' : 'error');
     } catch {
       setStatus('error');
@@ -90,11 +139,11 @@ export function LeadForm({ page = 'contact' }: { page?: string }) {
   if (status === 'sent') {
     return (
       <div className="rounded-2xl border border-l-[3px] border-l-emerald-500 bg-emerald-50/60 p-7 sm:p-8">
-        <h3 className="font-serif text-2xl">We have your enquiry</h3>
+        <h3 className="font-serif text-2xl">We have it — thank you for being straight with us</h3>
         <p className="mt-3 leading-relaxed text-ink-700 text-pretty">
-          Someone from the team will come back to you. If you would rather not wait,
-          message us on WhatsApp — it is the fastest way to reach us, and the same people
-          answer.
+          Someone will read this properly and come back to you with where you stand. If you would
+          rather not wait, message us on WhatsApp — it is the fastest way to reach us, and the same
+          people answer.
         </p>
       </div>
     );
@@ -111,64 +160,91 @@ export function LeadForm({ page = 'contact' }: { page?: string }) {
           required
           type="tel"
           autoComplete="tel"
-          hint="Include your country code — for example +92 or +1."
+          hint="Include your country code — for example +92 or +971."
         />
         <Field label="Email (optional)" name="email" type="email" autoComplete="email" />
 
-        <div>
-          <label htmlFor="targetCountry" className="block text-sm font-medium text-ink-900">
-            Where are you hoping to go?
-          </label>
-          <select id="targetCountry" name="targetCountry" className="mt-2 w-full rounded-xl border border-rule bg-paper px-4 py-2.5 text-sm transition-colors focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500/20">
-            <option value="">Select…</option>
-            {DESTINATIONS.map((d) => (
-              <option key={d} value={d}>{d}</option>
-            ))}
-          </select>
-        </div>
+        <Select label="Where are you hoping to go?" name="targetCountry" options={DESTINATIONS} />
+        <Select label="What is this about?" name="serviceInterest" options={INTERESTS} />
+        <Select label="Who would be going?" name="whoFor" options={WHO} />
+        <Select label="Where are you up to?" name="stage" options={STAGE} />
+      </div>
 
-        <div>
-          <label htmlFor="serviceInterest" className="block text-sm font-medium text-ink-900">
-            What is this about?
-          </label>
-          <select id="serviceInterest" name="serviceInterest" className="mt-2 w-full rounded-xl border border-rule bg-paper px-4 py-2.5 text-sm transition-colors focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500/20">
-            <option value="">Select…</option>
-            {INTERESTS.map((s) => (
-              <option key={s} value={s}>{s}</option>
-            ))}
-          </select>
-        </div>
+      {/* ───────────────── The question that changes everything ───────────────
+          Given its own block, required, and framed so telling the truth feels
+          safe. People hide refusals, then a rep finds out at document stage
+          and the whole file has to be rebuilt. */}
+      <div className="mt-6 rounded-xl border border-gold-500/25 bg-gold-50/50 p-5">
+        <label htmlFor="refused" className="block text-sm font-semibold text-ink-900">
+          Have you ever been refused a visa — by any country?
+        </label>
+        <p className="mt-1 text-xs leading-relaxed text-ink-500 text-pretty">
+          A past refusal is not a dealbreaker. Not telling us about one is — it changes what you can
+          apply for, and we would rather know now than at the document stage.
+        </p>
+        <select
+          id="refused"
+          name="refused"
+          required
+          value={refused}
+          onChange={(e) => setRefused(e.target.value)}
+          className="mt-3 w-full rounded-xl border border-rule bg-paper px-4 py-2.5 text-sm transition-colors focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500/20"
+        >
+          <option value="">Select…</option>
+          {REFUSED.map((r) => (
+            <option key={r} value={r}>
+              {r}
+            </option>
+          ))}
+        </select>
+
+        {showRefusalDetail ? (
+          <div className="mt-4">
+            <label htmlFor="refusalDetail" className="block text-sm font-medium text-ink-900">
+              Which country, roughly when, and what reason were you given?
+            </label>
+            <input
+              id="refusalDetail"
+              name="refusalDetail"
+              maxLength={200}
+              placeholder="Canada, 2024, insufficient ties to home country"
+              className="mt-2 w-full rounded-xl border border-rule bg-paper px-4 py-2.5 text-sm transition-colors focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500/20"
+            />
+          </div>
+        ) : null}
       </div>
 
       <div className="mt-5">
-        <label htmlFor="message" className="block text-sm font-medium text-ink-900">
-          Tell us your situation
+        <label htmlFor="situation" className="block text-sm font-medium text-ink-900">
+          Anything else we should know
         </label>
         <p className="mt-1 text-xs text-ink-400 text-pretty">
-          The more honest you are — including anything that has gone wrong before — the
+          Your work, your funds, anything that has gone wrong before. The more honest this is, the
           more useful our answer will be.
         </p>
         <textarea
-          id="message"
-          name="message"
+          id="situation"
+          name="situation"
           rows={5}
-          maxLength={1200}
+          maxLength={SITUATION_MAX}
           className="mt-2 w-full rounded-xl border border-rule bg-paper px-4 py-3 text-sm transition-colors focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500/20"
         />
       </div>
 
       {/* Honeypot. Off-screen rather than display:none — some bots skip hidden
-          inputs but happily fill positioned ones. aria-hidden + tabIndex keep it
-          away from keyboard and screen-reader users. */}
-      <div aria-hidden="true" className="absolute left-[-9999px] top-[-9999px] h-0 w-0 overflow-hidden">
+          inputs but happily fill positioned ones. */}
+      <div
+        aria-hidden="true"
+        className="absolute left-[-9999px] top-[-9999px] h-0 w-0 overflow-hidden"
+      >
         <label htmlFor="company">Company</label>
         <input id="company" name="company" type="text" tabIndex={-1} autoComplete="off" />
       </div>
 
       {status === 'error' ? (
         <p className="mt-5 rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-800 text-pretty">
-          That did not send. Please try again in a moment, or message us on WhatsApp —
-          that always works and reaches the same team.
+          That did not send. Please try again in a moment, or message us on WhatsApp — that always
+          works and reaches the same team.
         </p>
       ) : null}
 
@@ -177,15 +253,38 @@ export function LeadForm({ page = 'contact' }: { page?: string }) {
         disabled={status === 'sending'}
         className="btn btn-navy mt-6 w-full justify-center disabled:opacity-60"
       >
-        {status === 'sending' ? 'Sending…' : 'Send my enquiry'}
+        {status === 'sending' ? 'Sending…' : 'Send this to a lawyer — free'}
       </button>
 
       <p className="mt-4 text-xs leading-relaxed text-ink-400 text-pretty">
-        We use what you send here to answer your enquiry, and we do not sell it to anyone.
-        Sending this does not create a client relationship, and nothing here is advice
-        until someone qualified has read your documents.
+        No payment, and no card. We use what you send here to answer your enquiry and we do not sell
+        it to anyone. Sending this does not create a client relationship, and nothing here is advice
+        until someone qualified has read your documents. Please don’t send passport or CNIC scans
+        yet — we don’t need them to tell you where you stand.
       </p>
     </form>
+  );
+}
+
+function Select({ label, name, options }: { label: string; name: string; options: string[] }) {
+  return (
+    <div>
+      <label htmlFor={name} className="block text-sm font-medium text-ink-900">
+        {label}
+      </label>
+      <select
+        id={name}
+        name={name}
+        className="mt-2 w-full rounded-xl border border-rule bg-paper px-4 py-2.5 text-sm transition-colors focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500/20"
+      >
+        <option value="">Select…</option>
+        {options.map((o) => (
+          <option key={o} value={o}>
+            {o}
+          </option>
+        ))}
+      </select>
+    </div>
   );
 }
 
