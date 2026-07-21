@@ -55,8 +55,11 @@ export function SiteHeader({ display, digits }: { display: string; digits: strin
       </div>
 
       <header className="sticky top-0 z-50 border-b border-rule/70 bg-paper/90 backdrop-blur-md">
-        <nav className="mx-auto flex max-w-7xl items-center px-4 py-3" aria-label="Main">
-          <Link href="/" className="mr-auto shrink-0" aria-label="Tashfeen Immigration Solutions — home">
+        <nav className="mx-auto flex max-w-7xl items-center gap-2 px-4 py-3" aria-label="Main">
+          {/* min-w-0 lets the wordmark give way rather than forcing the row
+              wider than the viewport. Everything here used to be shrink-0,
+              which is what pushed the hamburger off-screen below ~385px. */}
+          <Link href="/" className="mr-auto min-w-0" aria-label="Tashfeen Immigration Solutions — home">
             <Logo variant="dark" />
           </Link>
 
@@ -154,9 +157,14 @@ export function SiteHeader({ display, digits }: { display: string; digits: strin
             })}
           </ul>
 
+          {/* Shorter label below sm so the row fits a 320px phone. NOT `hidden`:
+              `.btn` is unlayered CSS in globals.css and unlayered rules beat
+              `@layer utilities` regardless of specificity, so Tailwind's
+              `hidden` silently does nothing on any element carrying `.btn`.
+              Swapping the label is honest about what actually renders. */}
           <Link
             href="/book-consultation"
-            className="btn btn-gold shrink-0 !px-4 !py-2.5 text-sm sm:!px-5"
+            className="btn btn-gold shrink-0 !px-3.5 !py-2.5 text-sm sm:!px-5"
           >
             <span className="hidden sm:inline">Talk to a lawyer — free</span>
             <span className="sm:hidden">Free consult</span>
