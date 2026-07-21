@@ -82,10 +82,19 @@ export function LeadForm({ page = 'contact' }: { page?: string }) {
   const [status, setStatus] = useState<Status>('idle');
   const [refused, setRefused] = useState('');
   const mountedAt = useRef<number>(0);
+  const sentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     mountedAt.current = Date.now();
   }, []);
+
+  // On success the form is REPLACED, so focus falls back to <body> and a
+  // keyboard or screen-reader user is left with no idea anything happened —
+  // they tab from the top of the page again. Move focus to the confirmation
+  // and it is both announced and the next Tab continues from the right place.
+  useEffect(() => {
+    if (status === 'sent') sentRef.current?.focus();
+  }, [status]);
 
   const showRefusalDetail = refused.startsWith('Yes');
 
@@ -138,7 +147,12 @@ export function LeadForm({ page = 'contact' }: { page?: string }) {
 
   if (status === 'sent') {
     return (
-      <div className="rounded-2xl border border-l-[3px] border-l-emerald-500 bg-emerald-50/60 p-7 sm:p-8">
+      <div
+        ref={sentRef}
+        role="status"
+        tabIndex={-1}
+        className="rounded-2xl border border-l-[3px] border-l-emerald-500 bg-emerald-50/60 p-7 sm:p-8"
+      >
         <h3 className="font-serif text-2xl">We have it — thank you for being straight with us</h3>
         <p className="mt-3 leading-relaxed text-ink-700 text-pretty">
           Someone will read this properly and come back to you with where you stand. If you would
@@ -178,7 +192,7 @@ export function LeadForm({ page = 'contact' }: { page?: string }) {
         <label htmlFor="refused" className="block text-sm font-semibold text-ink-900">
           Have you ever been refused a visa — by any country?
         </label>
-        <p className="mt-1 text-xs leading-relaxed text-ink-500 text-pretty">
+        <p id="refused-hint" className="mt-1 text-xs leading-relaxed text-ink-500 text-pretty">
           A past refusal is not a dealbreaker. Not telling us about one is — it changes what you can
           apply for, and we would rather know now than at the document stage.
         </p>
@@ -186,9 +200,10 @@ export function LeadForm({ page = 'contact' }: { page?: string }) {
           id="refused"
           name="refused"
           required
+          aria-describedby="refused-hint"
           value={refused}
           onChange={(e) => setRefused(e.target.value)}
-          className="mt-3 w-full rounded-xl border border-rule bg-paper min-h-11 px-4 py-2.5 text-sm transition-colors focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500/20"
+          className="mt-3 w-full rounded-xl border border-rule bg-paper min-h-11 px-4 py-2.5 text-sm transition-colors focus:border-gold-500"
         >
           <option value="">Select…</option>
           {REFUSED.map((r) => (
@@ -208,7 +223,7 @@ export function LeadForm({ page = 'contact' }: { page?: string }) {
               name="refusalDetail"
               maxLength={200}
               placeholder="Canada, 2024, insufficient ties to home country"
-              className="mt-2 w-full rounded-xl border border-rule bg-paper min-h-11 px-4 py-2.5 text-sm transition-colors focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500/20"
+              className="mt-2 w-full rounded-xl border border-rule bg-paper min-h-11 px-4 py-2.5 text-sm transition-colors focus:border-gold-500"
             />
           </div>
         ) : null}
@@ -218,7 +233,7 @@ export function LeadForm({ page = 'contact' }: { page?: string }) {
         <label htmlFor="situation" className="block text-sm font-medium text-ink-900">
           Anything else we should know
         </label>
-        <p className="mt-1 text-xs text-ink-400 text-pretty">
+        <p id="situation-hint" className="mt-1 text-xs text-ink-400 text-pretty">
           Your work, your funds, anything that has gone wrong before. The more honest this is, the
           more useful our answer will be.
         </p>
@@ -227,7 +242,8 @@ export function LeadForm({ page = 'contact' }: { page?: string }) {
           name="situation"
           rows={5}
           maxLength={SITUATION_MAX}
-          className="mt-2 w-full rounded-xl border border-rule bg-paper px-4 py-3 text-sm transition-colors focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500/20"
+          aria-describedby="situation-hint"
+          className="mt-2 w-full rounded-xl border border-rule bg-paper px-4 py-3 text-sm transition-colors focus:border-gold-500"
         />
       </div>
 
@@ -242,7 +258,10 @@ export function LeadForm({ page = 'contact' }: { page?: string }) {
       </div>
 
       {status === 'error' ? (
-        <p className="mt-5 rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-800 text-pretty">
+        <p
+          role="alert"
+          className="mt-5 rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-800 text-pretty"
+        >
           That did not send. Please try again in a moment, or message us on WhatsApp — that always
           works and reaches the same team.
         </p>
@@ -275,7 +294,7 @@ function Select({ label, name, options }: { label: string; name: string; options
       <select
         id={name}
         name={name}
-        className="mt-2 w-full rounded-xl border border-rule bg-paper min-h-11 px-4 py-2.5 text-sm transition-colors focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500/20"
+        className="mt-2 w-full rounded-xl border border-rule bg-paper min-h-11 px-4 py-2.5 text-sm transition-colors focus:border-gold-500"
       >
         <option value="">Select…</option>
         {options.map((o) => (
@@ -303,9 +322,19 @@ function Field({
         id={name}
         name={name}
         {...rest}
-        className="mt-2 w-full rounded-xl border border-rule bg-paper min-h-11 px-4 py-2.5 text-sm transition-colors focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500/20"
+        // Without this the hint is an orphan paragraph: it sits next to the
+        // input visually but is not part of the input's accessible description,
+        // so a screen reader reading the form field-by-field never says
+        // "include your country code" — the exact instruction that stops a
+        // phone number arriving un-diallable.
+        aria-describedby={hint ? `${name}-hint` : undefined}
+        className="mt-2 w-full rounded-xl border border-rule bg-paper min-h-11 px-4 py-2.5 text-sm transition-colors focus:border-gold-500"
       />
-      {hint ? <p className="mt-1 text-xs text-ink-400 text-pretty">{hint}</p> : null}
+      {hint ? (
+        <p id={`${name}-hint`} className="mt-1 text-xs text-ink-400 text-pretty">
+          {hint}
+        </p>
+      ) : null}
     </div>
   );
 }

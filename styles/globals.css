@@ -166,7 +166,38 @@ img, svg { max-width: 100%; height: auto; }
 
 ::selection { background: var(--color-gold-300); color: var(--color-ink-950); }
 
-:focus-visible { outline: 2px solid var(--color-gold-500); outline-offset: 3px; border-radius: 2px; }
+/* KEYBOARD FOCUS INDICATOR — WCAG 2.4.11 wants the indicator itself at 3:1.
+   This was `2px solid gold-500`, measured at 1.27:1 against the gold button and
+   2.02:1 against plain paper. Gold-on-gold is not a weak indicator, it is no
+   indicator — on the single most important control on the site. Navy carries it
+   on light surfaces (~16:1 on paper, ~7:1 against the gold button it outlines),
+   and the dark surfaces flip the token to white.
+
+   A custom property rather than descendant selectors, because focus lands on
+   arbitrarily deep children — `--focus-ring` inherits all the way down, so a
+   dark section only has to declare its polarity once. Same principle as the
+   ghost button and the muted ink below: the surface decides.
+
+   No `border-radius` here. The old rule set it on the ELEMENT, and being
+   unlayered it beat `rounded-xl` in `@layer utilities` — every input squared off
+   the moment it was focused. Browsers already follow the element's own radius. */
+:root { --focus-ring: var(--color-ink-900); }
+.bg-hero, .bg-navy, .bg-ink-900, .bg-ink-950 { --focus-ring: #ffffff; }
+
+:focus-visible { outline: 3px solid var(--focus-ring); outline-offset: 2px; }
+
+/* Form error state. `:user-invalid`, NOT `:invalid` — `:invalid` matches every
+   required field from first paint, so the form would greet a visitor who has
+   typed nothing with a wall of red. `:user-invalid` waits until they have
+   actually interacted and left it wrong. The text channel is the browser's own
+   validation message, so this is not colour-alone. */
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid { border-color: #b42318; }
+
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid { --focus-ring: #b42318; }
 
 /* ---------------------------------------------------------
    Premium helpers — plain CSS on token vars (robust across

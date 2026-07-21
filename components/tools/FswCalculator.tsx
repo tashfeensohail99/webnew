@@ -299,7 +299,7 @@ function Select({
     <select
       value={value}
       onChange={(e) => onChange(e.target.value)}
-      className="w-full rounded-xl border border-rule bg-paper px-4 py-2.5 text-sm text-ink-900 transition-colors focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500/20"
+      className="w-full rounded-xl border border-rule bg-paper px-4 py-2.5 text-sm text-ink-900 transition-colors focus:border-gold-500"
     >
       {options.map(([v, l]) => (
         <option key={v} value={v}>
