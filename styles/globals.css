@@ -83,6 +83,66 @@ body { min-height: 100vh; line-height: 1.65; }
 
 h1, h2, h3 { font-family: var(--font-serif); letter-spacing: -0.01em; }
 
+/* ---------------------------------------------------------
+   DISPLAY SCALE
+   The site read as a template, and the measurable reason was
+   a flat type scale: 297 of ~330 text elements on the home
+   page sat at 16/14/12px, with only 5 above 30px. Nothing led
+   the eye, so every block carried equal weight — which is
+   exactly what a page builder produces.
+
+   These are fluid (clamp) rather than a stack of breakpoint
+   overrides: one declaration covers 375px to 1440px, so a
+   headline can be genuinely large on desktop without wrapping
+   into a wall on a phone. The floor of each clamp is the size
+   that still fits a 375px screen.
+
+   Tight leading and a slight negative tracking are what make
+   large serif type read as set rather than merely scaled up.
+   --------------------------------------------------------- */
+
+.display-1 {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 1.6rem + 3.8vw, 4.75rem);
+  line-height: 1.02;
+  letter-spacing: -0.028em;
+  font-weight: 500;
+  text-wrap: balance;
+}
+
+.display-2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.95rem, 1.35rem + 2.5vw, 3.35rem);
+  line-height: 1.08;
+  letter-spacing: -0.022em;
+  font-weight: 500;
+  text-wrap: balance;
+}
+
+.display-3 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 1.15rem + 1.5vw, 2.25rem);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  font-weight: 500;
+  text-wrap: balance;
+}
+
+/* The paragraph that sits under a display heading. Larger and
+   lighter than body copy so the eye steps DOWN into the page
+   instead of hitting a second wall of 16px. */
+.lede {
+  font-size: clamp(1.06rem, 1rem + 0.35vw, 1.3rem);
+  line-height: 1.6;
+  color: var(--color-ink-600);
+  text-wrap: pretty;
+}
+
+/* Long-form measure. Reading comfort peaks around 65-75
+   characters; without this, prose on a wide screen runs the
+   full container and becomes hard to track back. */
+.measure { max-width: 68ch; }
+
 img, svg { max-width: 100%; height: auto; }
 
 ::selection { background: var(--color-gold-300); color: var(--color-ink-950); }

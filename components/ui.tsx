@@ -45,12 +45,8 @@ export function PageHero({
       <MonogramWatermark className="-right-10 -top-16 h-[30rem] w-[30rem]" />
       <div className="relative mx-auto max-w-6xl px-4 py-20 sm:py-28">
         {eyebrow ? <p className="eyebrow eyebrow--light">{eyebrow}</p> : null}
-        <h1 className="mt-6 max-w-3xl font-serif text-[2.5rem] font-medium leading-[1.07] tracking-tight text-balance sm:text-[3.4rem]">
-          {title}
-        </h1>
-        {subtitle ? (
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink-200 text-pretty">{subtitle}</p>
-        ) : null}
+        <h1 className="display-1 mt-6 max-w-4xl">{title}</h1>
+        {subtitle ? <p className="lede mt-6 max-w-2xl !text-ink-200">{subtitle}</p> : null}
         {children ? <div className="mt-9 flex flex-wrap items-center gap-3">{children}</div> : null}
       </div>
     </section>
@@ -71,10 +67,10 @@ export function SectionHeading({
   center?: boolean;
 }) {
   return (
-    <div className={center ? 'mx-auto max-w-2xl text-center' : 'max-w-2xl'}>
+    <div className={center ? 'mx-auto max-w-3xl text-center' : 'max-w-3xl'}>
       {eyebrow ? <p className={`eyebrow ${center ? 'justify-center' : ''}`}>{eyebrow}</p> : null}
-      <h2 className="mt-4 font-serif text-3xl leading-tight text-balance sm:text-4xl">{title}</h2>
-      {subtitle ? <p className="mt-4 text-lg text-ink-600 text-pretty">{subtitle}</p> : null}
+      <h2 className="display-2 mt-4">{title}</h2>
+      {subtitle ? <p className="lede mt-4">{subtitle}</p> : null}
     </div>
   );
 }

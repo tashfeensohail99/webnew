@@ -1,15 +1,21 @@
 import Link from 'next/link';
 import { Logo } from '@/components/Logo';
+import { MobileNav } from '@/components/MobileNav';
 import { liveNav } from '@/lib/nav';
 
 /**
  * The site header and mega-menu.
  *
- * Deliberately zero JavaScript. The dropdowns open on `group-hover` and on
- * `group-focus-within`, which means they work for mouse, keyboard and screen
- * readers without shipping a single byte of client code — the rest of the site
- * outside the tool pages is static, and the navigation should not be the thing
- * that breaks that.
+ * The DESKTOP menu is still zero-JavaScript: dropdowns open on `group-hover`
+ * and `group-focus-within`, so they work for mouse and keyboard without
+ * shipping client code.
+ *
+ * That approach does NOT survive contact with a touchscreen — `hover` never
+ * fires — so below xl the navigation is a real drawer (components/MobileNav),
+ * which is the one piece of the header that ships JS. It replaced a
+ * horizontally-scrolling rail measured at 11,067px wide: 29.5 screen-widths of
+ * sideways swiping through 69 flat links. Given this audience is overwhelmingly
+ * on phones, that made the site's own structure effectively unreachable.
  *
  * The menu renders from lib/nav.ts and only ever shows pages that exist. As
  * planned pages ship they light up on their own.
@@ -148,27 +154,17 @@ export function SiteHeader({ display, digits }: { display: string; digits: strin
             })}
           </ul>
 
-          <Link href="/book-consultation" className="btn btn-gold shrink-0 !px-5 !py-2.5 text-sm">
-            Book Consultation
+          <Link
+            href="/book-consultation"
+            className="btn btn-gold shrink-0 !px-4 !py-2.5 text-sm sm:!px-5"
+          >
+            <span className="hidden sm:inline">Talk to a lawyer — free</span>
+            <span className="sm:hidden">Free consult</span>
           </Link>
+
+          <MobileNav groups={groups} waHref={digits ? `https://wa.me/${digits}` : null} waLabel={display || 'WhatsApp'} />
         </nav>
 
-        {/* Below xl the mega-menu is impractical; a flat scrollable rail is honest
-            and usable, and this audience is overwhelmingly on phones. */}
-        <div className="border-t border-rule/70 xl:hidden">
-          <ul className="mx-auto flex max-w-7xl gap-1 overflow-x-auto px-4 py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-            {groups.flatMap((g) => g.columns.flatMap((c) => c.items)).map((item) => (
-              <li key={item.href} className="shrink-0">
-                <Link
-                  href={item.href}
-                  className="block whitespace-nowrap rounded-lg px-3 py-1.5 text-xs font-medium text-ink-600 transition-colors hover:bg-paper-alt hover:text-ink-900"
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
       </header>
     </>
   );

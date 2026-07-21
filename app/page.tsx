@@ -52,11 +52,11 @@ export default function HomePage() {
         <MonogramWatermark />
         <div className="relative mx-auto max-w-6xl px-4 py-24 sm:py-32">
           <p className="eyebrow eyebrow--light">Immigration, by qualified lawyers</p>
-          <h1 className="mt-6 max-w-3xl font-serif text-[2.6rem] font-medium leading-[1.06] tracking-tight text-balance sm:text-6xl">
+          <h1 className="display-1 mt-6 max-w-4xl">
             Canadian immigration, handled by{' '}
             <span className="text-gold-300">real lawyers.</span>
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-200 text-pretty">
+          <p className="lede mt-6 max-w-2xl !text-ink-200">
             Offices in Pakistan and Canada. The consultation is free, and you leave with a written
             summary of where you actually stand — including if the honest answer is don’t apply.
           </p>
@@ -101,9 +101,7 @@ export default function HomePage() {
           <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="eyebrow">Global destinations</p>
-              <h2 className="mt-4 max-w-xl font-serif text-3xl leading-tight text-balance sm:text-4xl">
-                Opportunity has more than one address
-              </h2>
+              <h2 className="display-2 mt-4 max-w-2xl">Opportunity has more than one address</h2>
             </div>
             <p className="max-w-sm text-ink-600 text-pretty">
               Canada is what we file most, and it is where our Canadian office is. The
@@ -146,10 +144,8 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-4 py-20 sm:py-24">
         <div className="max-w-2xl">
           <p className="eyebrow">What we do</p>
-          <h2 className="mt-4 font-serif text-3xl text-balance sm:text-4xl">
-            The routes we file most — and file well
-          </h2>
-          <p className="mt-4 text-ink-600 text-pretty">
+          <h2 className="display-2 mt-4">The routes we file most — and file well</h2>
+          <p className="lede mt-4">
             We don’t list fifty services to look big. These are the cases we handle every week.
           </p>
         </div>
@@ -163,7 +159,7 @@ export default function HomePage() {
               <p className="mt-6 text-xs font-semibold uppercase tracking-[0.15em] text-gold-600">
                 {s.kicker}
               </p>
-              <h3 className="mt-2 font-serif text-2xl">{s.title}</h3>
+              <h3 className="display-3 mt-2">{s.title}</h3>
               <p className="mt-3 flex-1 text-ink-600 text-pretty">{s.body}</p>
               <span className="mt-6 inline-flex items-center gap-1.5 font-semibold text-ink-900 transition-colors group-hover:text-gold-600">
                 {s.cta}
