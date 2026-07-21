@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { WhatsAppCta } from '@/components/WhatsAppCta';
 import { DestinationGrid } from '@/components/DestinationGrid';
+import { SplitSection } from '@/components/ui';
 import { site, SERVICE, leadLawyer } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -115,8 +116,8 @@ export default function HomePage() {
       </section>
 
       {/* ========================= TRUST STRIP ========================= */}
-      <section className="border-b border-rule bg-paper-alt">
-        <div className="mx-auto max-w-6xl px-4 py-8 sm:flex sm:items-center sm:justify-between sm:gap-6">
+      <section className="border-y border-rule bg-paper-alt">
+        <div className="mx-auto max-w-6xl px-4 py-10 sm:flex sm:items-center sm:justify-between sm:gap-6">
           <p className="text-ink-700 text-pretty">
             {lead ? (
               <>
@@ -140,17 +141,25 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* =========================== SERVICES =========================== */}
-      <section className="mx-auto max-w-6xl px-4 py-20 sm:py-24">
-        <div className="max-w-2xl">
-          <p className="eyebrow">What we do</p>
-          <h2 className="display-2 mt-4">The routes we file most — and file well</h2>
-          <p className="lede mt-4">
-            We don’t list fifty services to look big. These are the cases we handle every week.
-          </p>
-        </div>
-
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+      {/* =========================== SERVICES ===========================
+          Split layout: the heading sits BESIDE the cards and stays put as they
+          scroll, rather than sitting on top of yet another three-up grid. This
+          is the section that most made the page read as a template — the same
+          heading-over-grid silhouette repeated down the page. Below lg it
+          collapses back to the stacked order, which is correct on a phone. */}
+      <section className="mx-auto max-w-6xl px-4 py-24 sm:py-32">
+        <SplitSection
+          aside={
+            <>
+              <p className="eyebrow">What we do</p>
+              <h2 className="display-2 mt-4">The routes we file most — and file well</h2>
+              <p className="lede mt-4">
+                We don’t list fifty services to look big. These are the cases we handle every week.
+              </p>
+            </>
+          }
+        >
+        <div className="grid gap-6 sm:grid-cols-2">
           {SERVICES.map((s) => (
             <Link key={s.href} href={s.href} className="card group flex flex-col p-7">
               <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold-50 text-gold-600 ring-1 ring-gold-500/20">
@@ -168,22 +177,33 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
+        </SplitSection>
       </section>
 
-      {/* ===================== CREDIBILITY BAND ===================== */}
-      <section className="bg-navy text-white">
-        <div className="mx-auto grid max-w-6xl gap-8 px-4 py-14 sm:grid-cols-3">
-          {[
-            ['3', 'offices', 'Lahore, Islamabad & Mississauga — real doors, not a mailbox.'],
-            ['4', 'destinations', 'Canada, the USA, the UK and Europe — one firm, checked facts.'],
-            ['Free', 'consultation', 'And a written summary of where you stand, before money is discussed.'],
-          ].map(([big, small, desc]) => (
-            <div key={small as string} className="border-l-2 border-gold-500/60 pl-5">
-              <p className="font-serif text-4xl text-gold-300">{big}</p>
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-ink-300">{small}</p>
-              <p className="mt-3 text-sm text-ink-200 text-pretty">{desc}</p>
-            </div>
-          ))}
+      {/* ===================== CREDIBILITY BAND =====================
+          Given real weight rather than treated as a footnote strip. For an
+          audience that has been warned about immigration scams their whole
+          lives, "real doors on two continents" is the strongest thing this
+          page says — it was previously the quietest element on it. Bigger
+          numerals, more air, and a rule that reads as a deliberate divider
+          rather than a leftover border. */}
+      <section className="relative overflow-hidden bg-navy text-white">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:py-24">
+          <div className="grid gap-10 sm:grid-cols-3 sm:gap-8">
+            {[
+              ['3', 'offices', 'Lahore, Islamabad & Mississauga — real doors, not a mailbox.'],
+              ['4', 'destinations', 'Canada, the USA, the UK and Europe — one firm, checked facts.'],
+              ['Free', 'consultation', 'And a written summary of where you stand, before money is discussed.'],
+            ].map(([big, small, desc]) => (
+              <div key={small as string} className="border-t-2 border-gold-500/70 pt-5">
+                <p className="font-serif text-5xl leading-none text-gold-300 sm:text-6xl">{big}</p>
+                <p className="mt-3 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-300">
+                  {small}
+                </p>
+                <p className="mt-4 text-sm leading-relaxed text-ink-200 text-pretty">{desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

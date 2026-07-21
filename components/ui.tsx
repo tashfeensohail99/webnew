@@ -77,13 +77,31 @@ export function SectionHeading({
 
 /* -------------------------------- Section ---------------------------------- */
 
+/**
+ * A page section.
+ *
+ * `size` exists because every section on the site carried the identical
+ * `py-20 sm:py-28`. Uniform vertical rhythm is a large part of why the site read
+ * as a template: with no variation in pace a reader gets no signal about what is
+ * a major statement and what is a supporting note — everything arrives at the
+ * same volume. Real editorial layouts breathe unevenly on purpose.
+ *
+ * 'md' is the default and is byte-identical to the old value, so adding this
+ * changed nothing on the 77 pages that do not opt in.
+ *
+ *   sm  a supporting beat — a strip, a caveat, a hand-off
+ *   md  the standard section (unchanged)
+ *   lg  a major statement that should feel like a chapter break
+ */
 export function Section({
   children,
   tone = 'paper',
+  size = 'md',
   className = '',
 }: {
   children: ReactNode;
   tone?: 'paper' | 'alt' | 'navy';
+  size?: 'sm' | 'md' | 'lg';
   className?: string;
 }) {
   const bg =
@@ -92,10 +110,37 @@ export function Section({
       : tone === 'alt'
         ? 'border-y border-rule bg-paper-alt'
         : 'bg-paper';
+  const pad =
+    size === 'sm' ? 'py-12 sm:py-16' : size === 'lg' ? 'py-24 sm:py-36' : 'py-20 sm:py-28';
   return (
     <section className={bg}>
-      <div className={`mx-auto max-w-6xl px-4 py-20 sm:py-28 ${className}`}>{children}</div>
+      <div className={`mx-auto max-w-6xl px-4 ${pad} ${className}`}>{children}</div>
     </section>
+  );
+}
+
+/**
+ * A heading that sits BESIDE its content rather than above it, sticking as the
+ * content scrolls past on large screens.
+ *
+ * This is the main antidote to the card-grid sameness: the home page carried 15
+ * grids across 8 sections, nearly all built as heading-on-top-of-a-grid. Moving
+ * the heading into its own column breaks that silhouette and gives long content
+ * an anchor that stays visible.
+ *
+ * It costs nothing on mobile — below lg it collapses back to the ordinary
+ * stacked order, which is the right shape on a narrow screen anyway, and the
+ * sticky positioning does not apply.
+ */
+export function SplitSection({ aside, children }: { aside: ReactNode; children: ReactNode }) {
+  return (
+    <div className="grid gap-10 lg:grid-cols-12 lg:gap-14">
+      <div className="lg:col-span-4">
+        {/* top-28 clears the sticky header rather than sliding under it. */}
+        <div className="lg:sticky lg:top-28">{aside}</div>
+      </div>
+      <div className="lg:col-span-8">{children}</div>
+    </div>
   );
 }
 
