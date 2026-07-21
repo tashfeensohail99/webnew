@@ -211,6 +211,28 @@ img, svg { max-width: 100%; height: auto; }
 .btn-navy:hover { transform: translateY(-2px); background: var(--color-ink-800); }
 .btn-ghost { background: transparent; color: var(--color-ink-800); border: 1px solid var(--color-rule); }
 .btn-ghost:hover { border-color: var(--color-ink-400); background: var(--color-paper-alt); }
+
+/* A ghost button on a DARK surface auto-corrects.
+   `.btn-ghost` paints near-black text on a transparent background, which is
+   invisible on the navy hero — and it fails SILENTLY: the button still renders,
+   still occupies space, still clicks. It just cannot be read. That shipped on
+   three pages (express-entry, immigration-programs, work-permits), where
+   "Estimate your CRS score" was dark-on-dark.
+   The instance fix is to remember `.btn-ghost-light` at every call site. This
+   is the system fix: the surface decides, so the mistake stops being possible.
+   Descendant selectors (0,2,0) outrank the base rule (0,1,0), and both are
+   unlayered, so no cascade-layer surprises. */
+.bg-hero .btn-ghost,
+.bg-navy .btn-ghost {
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.22);
+}
+.bg-hero .btn-ghost:hover,
+.bg-navy .btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.4);
+}
 .btn-ghost-light { background: rgba(255, 255, 255, 0.06); color: #fff; border: 1px solid rgba(255, 255, 255, 0.22); }
 .btn-ghost-light:hover { background: rgba(255, 255, 255, 0.12); border-color: rgba(255, 255, 255, 0.4); transform: translateY(-2px); }
 
