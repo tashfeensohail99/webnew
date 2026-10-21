@@ -195,6 +195,10 @@ img, svg { max-width: 100%; height: auto; }
    different aspect ratios — see FLAG_RATIO in components/Flags.tsx. */
 .flag-xs { height: 0.7rem; width: auto; }
 .flag-sm { height: 0.95rem; width: auto; }
+/* The brand lockup. Same reasoning as .flag-*: an unlayered rule, so it beats
+   the `img { height: auto }` reset above. 2.25rem = h-9 in Tailwind — kept in
+   sync by convention, not by import. */
+.logo-img { height: 2.25rem; width: auto; }
 
 ::selection { background: var(--color-gold-300); color: var(--color-ink-950); }
 
