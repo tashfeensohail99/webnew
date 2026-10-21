@@ -7,6 +7,7 @@ import { site } from '@/lib/site';
 import { Logo } from '@/components/Logo';
 import { StructuredData } from '@/components/StructuredData';
 import { SiteHeader } from '@/components/SiteHeader';
+import { Icon, type IconName } from '@/components/ui';
 import { getWhatsAppChannel } from '@/lib/wa-channel';
 
 /* Premium type pairing: Fraunces (a modern, high-contrast serif) for display,
@@ -60,6 +61,28 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
               <Logo variant="light" />
               <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-300">{site.tagline}</p>
               <p className="mt-4 text-xs text-ink-400">Offices in Lahore · Islamabad · Mississauga</p>
+              {/* Social — rel="me" tells reader apps this profile belongs to this
+                  site, which is what Mastodon-era verification keys off and what
+                  some crawlers use alongside schema.org sameAs. Opens in a new
+                  tab (noopener for safety) since every one leaves our origin. */}
+              {site.social.length > 0 ? (
+                <ul className="mt-6 flex flex-wrap gap-2">
+                  {site.social.map((s) => (
+                    <li key={s.href}>
+                      <a
+                        href={s.href}
+                        aria-label={s.label}
+                        title={s.label}
+                        rel="me noopener"
+                        target="_blank"
+                        className="tap flex h-10 w-10 items-center justify-center rounded-full ring-1 ring-white/15 text-ink-300 transition-colors hover:bg-white/5 hover:text-white"
+                      >
+                        <Icon name={s.icon as IconName} className="h-5 w-5" />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
             </div>
             <FooterCol
               title="Services"
