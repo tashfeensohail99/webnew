@@ -87,6 +87,9 @@ export function StructuredData() {
         'Schengen visitor visas',
       ],
       ...(offices.length ? { location: offices.map((o) => ({ '@id': `${site.url}/#office-${o.city.toLowerCase()}` })) } : {}),
+      // sameAs is "another profile of this same entity" — the full social set
+      // from lib/site.ts, which the firm treats as its own presence.
+      ...(site.social.length ? { sameAs: site.social.map((s) => s.href) } : {}),
       ...(lawyers.length
         ? {
             employee: lawyers.map((l) => ({

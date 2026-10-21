@@ -115,6 +115,59 @@ export const site = {
       mapUrl: '',
     },
   ],
+
+  /**
+   * Social profiles. All five are treated as the firm's own presence per the
+   * firm's instruction, so they all go into the footer with a plain label and
+   * all appear in schema.org `sameAs` on the organisation entity.
+   *
+   * Note: the LinkedIn and TikTok URLs resolve to personal profiles rather than
+   * dedicated company pages. For a founder-run practice this is a conscious
+   * choice, not a bug. If a company page is created later, swap the `href` in
+   * place and leave everything else alone.
+   *
+   * URLs are stored in canonical form. Both raw links the firm sent carried
+   * session-only tracking suffixes that would mean nothing — or, in Facebook's
+   * case, actively break — for anyone else loading them:
+   *   • `?notif_id=…&notif_t=profile_plus_admin_invite&ref=notif` on the
+   *     Facebook link is a single-use admin-invite token keyed to the inviter's
+   *     session; the clean handle form `/<handle>` is what to publish.
+   *   • `?isSelfProfile=true` on the LinkedIn link is LinkedIn's own "this is
+   *     my own profile view" indicator — it only means anything when the
+   *     logged-in viewer owns the profile. Stripped.
+   */
+  social: [
+    {
+      platform: 'Facebook',
+      label: 'Facebook',
+      href: 'https://www.facebook.com/Tashfeenbarristerssolicitors',
+      icon: 'facebook',
+    },
+    {
+      platform: 'Instagram',
+      label: 'Instagram',
+      href: 'https://www.instagram.com/tashfeen_barristers_solicitors/',
+      icon: 'instagram',
+    },
+    {
+      platform: 'YouTube',
+      label: 'YouTube',
+      href: 'https://www.youtube.com/channel/UC7yaY91cb22ZPnBPJyGBNBg',
+      icon: 'youtube',
+    },
+    {
+      platform: 'LinkedIn',
+      label: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/tashfeen-sohail-abbas-gondal-95918a241/',
+      icon: 'linkedin',
+    },
+    {
+      platform: 'TikTok',
+      label: 'TikTok',
+      href: 'https://www.tiktok.com/@tashfeen.sohail.g',
+      icon: 'tiktok',
+    },
+  ],
 } as const;
 
 /**
