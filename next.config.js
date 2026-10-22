@@ -66,11 +66,28 @@ const nextConfig = {
     // permanent:true emits 308, not 301. Google treats the two identically for
     // ranking signals, and 308 additionally preserves the request method — so
     // this is correct, just not the status people expect to see.
-    return LEGACY_REDIRECTS.map(([source, destination]) => ({
-      source,
-      destination,
-      permanent: true,
-    }));
+    //
+    // www → the main address. Both hosts are attached to the Railway service,
+    // so without this the whole site answers twice. The canonical tags already
+    // point at the main address; this makes visitors and links land there too.
+    // Legacy paths requested on www go straight to their final page — still one
+    // hop, per the rule above. Query strings are carried through by Next.
+    const MAIN = 'https://tashfeenimmigrationsolutions.com';
+    const WWW = [{ type: 'host', value: 'www.tashfeenimmigrationsolutions.com' }];
+    return [
+      ...LEGACY_REDIRECTS.map(([source, destination]) => ({
+        source,
+        has: WWW,
+        destination: `${MAIN}${destination}`,
+        permanent: true,
+      })),
+      { source: '/:path*', has: WWW, destination: `${MAIN}/:path*`, permanent: true },
+      ...LEGACY_REDIRECTS.map(([source, destination]) => ({
+        source,
+        destination,
+        permanent: true,
+      })),
+    ];
   },
 };
 
