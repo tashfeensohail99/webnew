@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { site } from '@/lib/site';
 import { SocialIcon, type SocialName } from '@/components/SocialIcon';
 
@@ -12,10 +13,16 @@ import { SocialIcon, type SocialName } from '@/components/SocialIcon';
 const compact = (n: number) =>
   new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: n < 100_000 ? 1 : 0 }).format(n);
 
-export function SocialProof() {
+/** "890K+": the counted platforms' total, rounded down. Shared with /updates. */
+export function followersHeadline() {
   const s = site.socialStats;
   const total = s.facebook + s.instagram + s.youtube;
-  const headline = `${Math.floor(total / 10_000) * 10}K+`; // 892,520 -> "890K+"
+  return `${Math.floor(total / 10_000) * 10}K+`; // 892,520 -> "890K+"
+}
+
+export function SocialProof() {
+  const s = site.socialStats;
+  const headline = followersHeadline();
 
   const href = (icon: SocialName) => site.social.find((x) => x.icon === icon)?.href ?? '#';
   const tiles: { icon: SocialName; label: string; count?: number; noun: string }[] = [
@@ -37,6 +44,9 @@ export function SocialProof() {
             Daily immigration news, draw results and explainers — and the questions people actually
             ask us — across Facebook, Instagram, YouTube and TikTok.
           </p>
+          <Link href="/updates" className="mt-5 inline-block font-semibold text-accent-500 link-underline">
+            Watch the latest updates →
+          </Link>
         </div>
 
         <ul className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:mt-0 lg:w-[36rem] lg:shrink-0">

@@ -229,7 +229,7 @@ export default function AboutPage() {
                   rel="noopener"
                   target="_blank"
                 >
-                  Open in Maps
+                  Google reviews &amp; directions
                   <span aria-hidden="true">→</span>
                 </a>
               ) : null}

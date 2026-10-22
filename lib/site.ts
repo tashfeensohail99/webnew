@@ -76,11 +76,14 @@ export const site = {
    * changes, this file has to change too. Accepted deliberately: an office
    * line is a property of the office, not of whichever channel is active.
    *
-   * MAP LINKS: share.google short links, resolved 2026-07-21 to confirm they
-   * are not swapped — the Lahore link resolves to "DHA Haly Tower" (matching
-   * the Lahore address) and the Islamabad link to the "Tashfeen Barristers and
-   * Solicitors" profile. They are opaque, so re-check them if either office
-   * moves; a stale one fails silently.
+   * MAP LINKS: share.google short links to each office's GOOGLE BUSINESS
+   * PROFILE, supplied by the firm 2026-10-23 and resolved to confirm them:
+   * Lahore → "Tashfeen Immigration Solutions Lahore" (kgmid /g/11zd32rt6c);
+   * Islamabad → "Tashfeen Immigration Solutions Pvt Ltd" (kgmid /g/11xsf5bzv2,
+   * the same listing formerly named "Tashfeen Barristers and Solicitors").
+   * The old Lahore link resolved to the BUILDING ("DHA Haly Tower"), not the
+   * business — so it sent people past the firm's reviews. `kgmid` is Google's
+   * own id for each listing; it feeds `sameAs` in the LocalBusiness JSON-LD.
    */
   offices: [
     {
@@ -89,7 +92,9 @@ export const site = {
       address: 'Office #201 & 202, 2nd Floor, HALY TOWER, Sector R, DHA Phase 2, Lahore',
       hours: 'Monday to Saturday, 9 am – 6 pm',
       phone: '+92 335 000 1111',
-      mapUrl: 'https://share.google/gtClNV4K8xnskwPqS',
+      mapUrl: 'https://share.google/I0o72EndCryNvMrvV',
+      googleName: 'Tashfeen Immigration Solutions Lahore',
+      kgmid: '/g/11zd32rt6c',
     },
     {
       city: 'Islamabad',
@@ -104,7 +109,9 @@ export const site = {
         'Office 3029B, 3rd Floor, World Trade Centre, Giga Mall, Sector F, DHA Phase 2, Islamabad 45730',
       hours: 'Monday to Saturday, 9 am – 6 pm',
       phone: '+92 335 000 1111',
-      mapUrl: 'https://share.google/ceGjVWMzhtxhtq60o',
+      mapUrl: 'https://share.google/vJcS1ctTiwpKproPU',
+      googleName: 'Tashfeen Immigration Solutions Pvt Ltd',
+      kgmid: '/g/11xsf5bzv2',
     },
     {
       city: 'Mississauga',
@@ -113,6 +120,8 @@ export const site = {
       hours: '',
       phone: '',
       mapUrl: '',
+      googleName: '',
+      kgmid: '',
     },
   ],
 

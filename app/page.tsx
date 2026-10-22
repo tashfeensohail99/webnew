@@ -588,7 +588,7 @@ export default function HomePage() {
                 </Link>
                 {o.mapUrl ? (
                   <a href={o.mapUrl} rel="noopener noreferrer" target="_blank" className="tap font-semibold text-ink-700 link-underline">
-                    Directions
+                    Reviews &amp; directions
                   </a>
                 ) : null}
               </div>

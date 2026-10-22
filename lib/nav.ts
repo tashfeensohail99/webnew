@@ -116,6 +116,8 @@ export const NAV: NavGroup[] = [
         heading: 'Without a Canadian employer',
         items: [
           { href: '/work-permit-canada', label: 'C11 work permit', status: 'live', blurb: 'Run your own business — no job offer or LMIA' },
+          { href: '/work-permit-canada/business-plan', label: 'C11 business plan', status: 'live' },
+          { href: '/work-permit-canada/refusals', label: 'C11 refusals', status: 'live' },
           { href: '/work-permits/lmia-exempt', label: 'LMIA-exempt work permits', status: 'live' },
           { href: '/work-permits/spousal-open-work-permit', label: 'Spousal open work permit', status: 'live' },
           { href: '/work-permits/international-experience-canada', label: 'International Experience Canada', status: 'live' },
@@ -259,6 +261,7 @@ export const NAV: NavGroup[] = [
         items: [
           { href: '/about', label: 'About the firm', status: 'live' },
           { href: '/about/our-team', label: 'Our people', status: 'live' },
+          { href: '/updates', label: 'Latest updates & videos', status: 'live' },
           { href: '/fees', label: 'Fees', status: 'live' },
           { href: '/no-guarantee-policy', label: 'No-guarantee policy', status: 'live' },
           { href: '/book-consultation', label: 'Book a consultation', status: 'live' },

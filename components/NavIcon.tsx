@@ -55,6 +55,7 @@ const GLYPHS = {
   clipboard: (<><rect x="6" y="4" width="12" height="17" rx="2" /><path d="M9 4V3h6v1M9 13l2 2 4-4" /></>),
   gauge: (<><path d="M4 17a8 8 0 1 1 16 0M12 17l4-5" /><circle cx="12" cy="17" r="1" /></>),
   info: (<><circle cx="12" cy="12" r="9" /><path d="M12 11v6M12 7.5h.01" /></>),
+  play: (<><rect x="2.5" y="5" width="19" height="14" rx="3.5" /><path d="M10 9.2v5.6l4.8-2.8L10 9.2z" /></>),
   receipt: <path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3zM9 8h6M9 12h6M9 16h3" />,
 } as const;
 
@@ -141,6 +142,9 @@ const BY_HREF: Record<string, NavIconName> = {
   '/about': 'info',
   '/about/our-team': 'users',
   '/fees': 'receipt',
+  '/updates': 'play',
+  '/work-permit-canada/business-plan': 'doc',
+  '/work-permit-canada/refusals': 'alert',
   '/no-guarantee-policy': 'shield',
   '/book-consultation': 'calendar',
   '/immigration-consultant-lahore': 'pin',

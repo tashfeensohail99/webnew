@@ -23,6 +23,9 @@ export const ROUTES: Route[] = [
 
   // Money pages. Ordered by what the business actually sells.
   { path: '/work-permit-canada', reviewed: '2026-10-23', priority: 0.9, changeFrequency: 'monthly' },
+  // C11 spokes — the two questions the hub raises and cannot answer in full.
+  { path: '/work-permit-canada/business-plan', reviewed: '2026-10-23', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/work-permit-canada/refusals', reviewed: '2026-10-23', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/canada-visa-refused', reviewed: '2026-07-17', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/canada-visit-visa', reviewed: '2026-07-17', priority: 0.8, changeFrequency: 'monthly' },
 
@@ -40,6 +43,8 @@ export const ROUTES: Route[] = [
   { path: '/book-consultation', reviewed: '2026-07-17', priority: 0.7, changeFrequency: 'monthly' },
   // Cost is the first thing this market searches and the last thing it answers.
   { path: '/fees', reviewed: '2026-07-17', priority: 0.7, changeFrequency: 'monthly' },
+  // Rebuilt hourly from the YouTube feed (ISR), so 'daily' is the honest value.
+  { path: '/updates', reviewed: '2026-10-23', priority: 0.7, changeFrequency: 'daily' },
 
   // Local search: "immigration consultant in Lahore / Islamabad". Each office's
   // NAP comes from site.offices, the same record the LocalBusiness JSON-LD uses.

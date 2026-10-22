@@ -141,6 +141,11 @@ export function StructuredData() {
       },
       ...(o.phone ? { telephone: o.phone } : {}),
       ...(o.mapUrl ? { hasMap: o.mapUrl } : {}),
+      // Tie this office to its Google Business Profile: the listing's own name
+      // and Google's knowledge-graph id. This is what lets Google connect the
+      // site, the map pin and the reviews as one business.
+      ...(o.googleName ? { alternateName: o.googleName } : {}),
+      ...(o.kgmid ? { sameAs: [`https://www.google.com/search?kgmid=${o.kgmid}`] } : {}),
       ...openingHours(o.hours),
     })),
   ];

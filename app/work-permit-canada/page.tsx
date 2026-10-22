@@ -267,6 +267,16 @@ export default function WorkPermitPage() {
           </Link>
           .
         </p>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2">
+          <Link href="/work-permit-canada/business-plan" className="card group block p-6 transition-transform hover:-translate-y-0.5">
+            <p className="text-xs font-semibold uppercase tracking-[0.15em] text-gold-600">Next: the plan</p>
+            <p className="mt-2 font-serif text-xl">What a C11 business plan has to show →</p>
+          </Link>
+          <Link href="/work-permit-canada/refusals" className="card group block p-6 transition-transform hover:-translate-y-0.5">
+            <p className="text-xs font-semibold uppercase tracking-[0.15em] text-gold-600">Already refused?</p>
+            <p className="mt-2 font-serif text-xl">Why C11 applications are refused →</p>
+          </Link>
+        </div>
       </Section>
 
       {/* ===================== WHO IT FITS (qualify-in) ===================== */}

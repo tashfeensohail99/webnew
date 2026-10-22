@@ -119,7 +119,7 @@ export function OfficeLanding({
             <div className="mt-7 flex flex-wrap gap-3">
               {office.mapUrl ? (
                 <a href={office.mapUrl} rel="noopener noreferrer" target="_blank" className="btn btn-navy">
-                  Open in Google Maps
+                  Google reviews &amp; directions
                 </a>
               ) : null}
               <Link href="/book-consultation" className="btn btn-ghost">
