@@ -20,7 +20,7 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * family does not. Nothing dated, no fees, no durations, no thresholds.
  */
 export const metadata: Metadata = {
-  title: 'LMIA-Exempt Work Permits (International Mobility Program)',
+  title: 'LMIA-Exempt Work Permits in Canada',
   description:
     'Some work permits need no LMIA: a benefit to Canada, a treaty, or reciprocity. The main exemption families, and why no LMIA does not mean no scrutiny.',
   alternates: { canonical: '/work-permits/lmia-exempt' },

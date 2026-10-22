@@ -23,7 +23,7 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * change, so we name them and link the source rather than printing them.
  */
 export const metadata: Metadata = {
-  title: 'Provincial Attestation Letters (PAL / TAL) for Canadian Study Permits',
+  title: 'Provincial Attestation Letter (PAL/TAL) Explained',
   description:
     'What a provincial attestation letter is, who issues it, where it sits in the study permit sequence, and why a consultant cannot get it for you.',
   alternates: { canonical: '/study-in-canada/provincial-attestation-letter' },

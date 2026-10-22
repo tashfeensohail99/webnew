@@ -70,6 +70,18 @@ export function StructuredData() {
   const offices = site.offices.filter((o) => o.address);
 
   const graph: Record<string, unknown>[] = [
+    // The site itself. `name` is what Google shows as the site name above a
+    // result; without it Google guesses from the page titles, which now end in
+    // the short "| Tashfeen".
+    {
+      '@type': 'WebSite',
+      '@id': `${site.url}/#website`,
+      url: site.url,
+      name: site.name,
+      alternateName: [site.shortName, 'Tashfeen'],
+      inLanguage: 'en',
+      publisher: { '@id': `${site.url}/#organization` },
+    },
     {
       '@type': 'ProfessionalService',
       '@id': `${site.url}/#organization`,

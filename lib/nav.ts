@@ -86,6 +86,7 @@ export const NAV: NavGroup[] = [
         // major service and was two hovers deep, so it is now its own group.
         heading: 'Other permanent routes',
         items: [
+          { href: '/canada-immigration-from-pakistan', label: 'Immigrating from Pakistan: start here', status: 'live' },
           { href: '/atlantic-immigration-program', label: 'Atlantic Immigration Program', status: 'live' },
           { href: '/rural-community-immigration', label: 'Rural & northern immigration', status: 'live' },
           { href: '/caregivers', label: 'Caregiver routes', status: 'live' },
@@ -261,6 +262,8 @@ export const NAV: NavGroup[] = [
           { href: '/fees', label: 'Fees', status: 'live' },
           { href: '/no-guarantee-policy', label: 'No-guarantee policy', status: 'live' },
           { href: '/book-consultation', label: 'Book a consultation', status: 'live' },
+          { href: '/immigration-consultant-lahore', label: 'Lahore office', status: 'live' },
+          { href: '/immigration-consultant-islamabad', label: 'Islamabad office', status: 'live' },
         ],
       },
     ],

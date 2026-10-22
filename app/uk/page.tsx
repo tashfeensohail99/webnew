@@ -27,7 +27,7 @@ import { SERVICE } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'UK Visas from Pakistan',
   description:
-    'The £41,700 reality of the UK Skilled Worker route, why "self-sponsorship" is not a visa, and why the Expansion Worker route does not lead to settlement.',
+    'The £41,700 reality of the UK Skilled Worker route, why "self-sponsorship" is not a visa, and why Expansion Worker doesn’t lead to settlement.',
   alternates: { canonical: '/uk' },
 };
 

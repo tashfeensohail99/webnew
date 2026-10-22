@@ -24,7 +24,7 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * does the most damage. Where a number matters, we name the source instead.
  */
 export const metadata: Metadata = {
-  title: 'Canadian Immigration Programmes — An Honest Overview',
+  title: 'Canada Immigration Programs: An Honest Overview',
   description:
     'The main routes to Canada: economic immigration, provincial nomination, family sponsorship, study-then-work, work permits and business routes.',
   alternates: { canonical: '/immigration-programs' },

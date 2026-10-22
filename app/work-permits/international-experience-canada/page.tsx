@@ -23,7 +23,7 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * them — before they pay anyone for an "IEC visa" they cannot hold.
  */
 export const metadata: Metadata = {
-  title: 'International Experience Canada (IEC): Can Pakistani Citizens Apply?',
+  title: 'IEC Canada: Can Pakistani Citizens Apply?',
   description:
     'IEC runs on youth mobility agreements, and Canada has none with Pakistan. What that means, the two exceptions, and the work routes open to Pakistanis.',
   alternates: { canonical: '/work-permits/international-experience-canada' },

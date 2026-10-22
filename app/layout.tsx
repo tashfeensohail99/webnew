@@ -8,6 +8,7 @@ import { Logo } from '@/components/Logo';
 import { StructuredData } from '@/components/StructuredData';
 import { SiteHeader } from '@/components/SiteHeader';
 import { SocialIcon } from '@/components/SocialIcon';
+import { RelatedGuides } from '@/components/RelatedGuides';
 import { getWhatsAppChannel } from '@/lib/wa-channel';
 
 /* Premium type pairing: Fraunces (a modern, high-contrast serif) for display,
@@ -22,9 +23,12 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'sw
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
+  // "| Tashfeen", not "| Tashfeen Immigration": Google cuts titles at ~60
+  // characters, and the longer suffix pushed 39 of 76 pages past it. The full
+  // name still reaches Google as the site name via the WebSite JSON-LD.
   title: {
-    default: `Canadian Immigration Lawyers & Consultants in Pakistan | ${site.shortName}`,
-    template: `%s | ${site.shortName}`,
+    default: 'Canada Immigration Lawyers & Consultants in Pakistan | Tashfeen',
+    template: '%s | Tashfeen',
   },
   description:
     'Canadian work permits, visit visas and visa refusals — handled by qualified lawyers. Offices in Pakistan and Canada. We tell you honestly whether you qualify before you pay.',
@@ -67,6 +71,8 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
 
         <main id="main">{children}</main>
 
+        <RelatedGuides />
+
         {/* Footer — navy, to close the page with weight */}
         <footer className="mt-28 bg-navy text-ink-200">
           <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:grid-cols-2 lg:grid-cols-4">
@@ -108,6 +114,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
             <FooterCol
               title="Services"
               links={[
+                ['/canada-immigration-from-pakistan', 'Immigrate from Pakistan'],
                 ['/work-permit-canada', 'Canada Work Permit'],
                 ['/canada-visit-visa', 'Canada Visit Visa'],
                 ['/canada-visa-refused', 'Visa Refused'],
@@ -128,6 +135,8 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
                 ['/about', 'About us'],
                 ['/about/our-team', 'Our lawyers'],
                 ['/book-consultation', 'Book a consultation'],
+                ['/immigration-consultant-lahore', 'Lahore office'],
+                ['/immigration-consultant-islamabad', 'Islamabad office'],
                 ['/no-guarantee-policy', 'No-guarantee policy'],
                 ['/privacy', 'Privacy'],
                 ['/terms', 'Terms'],

@@ -23,7 +23,7 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * what is open on the day they read it.
  */
 export const metadata: Metadata = {
-  title: 'Prince Edward Island Provincial Nomination (PEI PNP)',
+  title: 'Prince Edward Island Nominee Program (PEI PNP)',
   description:
     'How Prince Edward Island’s Provincial Nominee Program works: expression of interest, enhanced and base nomination, and the intent-to-settle expectation.',
   alternates: { canonical: '/pnp/prince-edward-island' },

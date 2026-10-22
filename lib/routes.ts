@@ -19,7 +19,7 @@ export type Route = {
 };
 
 export const ROUTES: Route[] = [
-  { path: '/', reviewed: '2026-07-17', priority: 1.0, changeFrequency: 'monthly' },
+  { path: '/', reviewed: '2026-10-22', priority: 1.0, changeFrequency: 'monthly' },
 
   // Money pages. Ordered by what the business actually sells.
   { path: '/work-permit-canada', reviewed: '2026-07-17', priority: 0.9, changeFrequency: 'monthly' },
@@ -41,6 +41,11 @@ export const ROUTES: Route[] = [
   // Cost is the first thing this market searches and the last thing it answers.
   { path: '/fees', reviewed: '2026-07-17', priority: 0.7, changeFrequency: 'monthly' },
 
+  // Local search: "immigration consultant in Lahore / Islamabad". Each office's
+  // NAP comes from site.offices, the same record the LocalBusiness JSON-LD uses.
+  { path: '/immigration-consultant-lahore', reviewed: '2026-10-22', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/immigration-consultant-islamabad', reviewed: '2026-10-22', priority: 0.8, changeFrequency: 'monthly' },
+
   // Free tools. High priority: they are the entry point most people search for,
   // and they qualify a lead better than any brochure page can.
   { path: '/tools', reviewed: '2026-07-18', priority: 0.8, changeFrequency: 'monthly' },
@@ -55,6 +60,8 @@ export const ROUTES: Route[] = [
   // find a spousal sponsorship page whether or not that is this month's busy
   // service — see the note at the top of lib/nav.ts.
   { path: '/immigration-programs', reviewed: '2026-07-20', priority: 0.8, changeFrequency: 'monthly' },
+  // The "start here" map for the audience's single biggest search.
+  { path: '/canada-immigration-from-pakistan', reviewed: '2026-10-22', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/express-entry', reviewed: '2026-07-20', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/express-entry/federal-skilled-worker', reviewed: '2026-07-20', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/express-entry/canadian-experience-class', reviewed: '2026-07-20', priority: 0.8, changeFrequency: 'monthly' },

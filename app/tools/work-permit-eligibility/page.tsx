@@ -12,7 +12,7 @@ import { getWhatsAppChannel } from '@/lib/wa-channel';
  * the result hands the rep a lead that already contains the person's situation.
  */
 export const metadata: Metadata = {
-  title: 'Work in Canada Without a Job Offer — Eligibility Checker',
+  title: 'Work in Canada Without a Job Offer — Checker',
   description:
     'A free 60-second check: could you get a Canadian work permit without an employer sponsoring you? Honest, indicative result — no sign-up, no promises.',
   alternates: { canonical: '/tools/work-permit-eligibility' },

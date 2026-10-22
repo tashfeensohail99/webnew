@@ -13,7 +13,7 @@ import { CLB_TABLES_VERIFIED_ON } from '@/lib/clb';
  * often get wrong: your LOWEST ability is what gates you, not your average.
  */
 export const metadata: Metadata = {
-  title: 'Language Score to CLB Converter — IELTS, CELPIP, PTE, TEF, TCF',
+  title: 'IELTS, CELPIP, PTE & TEF to CLB Converter',
   description:
     'Convert IELTS General Training, CELPIP, PTE Core, TEF Canada or TCF Canada scores to Canadian Language Benchmark levels, ability by ability.',
   alternates: { canonical: '/tools/clb-converter' },

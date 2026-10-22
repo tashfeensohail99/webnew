@@ -23,7 +23,7 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * processing times, points values or draw statistics to this file.
  */
 export const metadata: Metadata = {
-  title: 'Newfoundland and Labrador Provincial Nomination (NLPNP)',
+  title: 'Newfoundland & Labrador PNP (NLPNP)',
   description:
     'How the Newfoundland and Labrador Nominee Program works: expression of interest, enhanced versus base nomination, and the intent-to-settle expectation.',
   alternates: { canonical: '/pnp/newfoundland-labrador' },

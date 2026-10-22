@@ -4,12 +4,12 @@ import { WhatsAppCta } from '@/components/WhatsAppCta';
 import { WhatsAppFloat } from '@/components/WhatsAppFloat';
 import { DestinationGrid } from '@/components/DestinationGrid';
 import { HeroCanada } from '@/components/HeroCanada';
-import { SplitSection } from '@/components/ui';
+import { SplitSection, FAQ, Icon } from '@/components/ui';
 import { site, SERVICE, leadLawyer } from '@/lib/site';
 
 export const metadata: Metadata = {
   description:
-    'Canadian work permits, visit visas and refusals — handled by qualified lawyers, with offices in Pakistan and Canada and a free consultation.',
+    'Lawyer-led Canada immigration from Pakistan — work permits, study, visit visas, Express Entry and refusals. Offices in Lahore & Islamabad. Free consultation.',
   alternates: { canonical: '/' },
 };
 
@@ -47,6 +47,137 @@ const WHY = [
   ['Honest before you pay', 'We tell you whether your case is strong before you owe us a rupee.'],
 ];
 
+/** The scrolling strip under the hero — every link a real guide. */
+const TICKER: [string, string][] = [
+  ['/express-entry', 'Express Entry'],
+  ['/pnp', 'Provincial nomination'],
+  ['/study-in-canada/study-permit', 'Study permits'],
+  ['/work-permits', 'Work permits'],
+  ['/work-permit-canada', 'Owner-operator route'],
+  ['/canada-visit-visa', 'Visit visas'],
+  ['/visitor-visa/super-visa', 'Super Visa'],
+  ['/family-sponsorship/spouse-partner', 'Spouse sponsorship'],
+  ['/work-permits/post-graduation', 'Post-graduation work permit'],
+  ['/refusals/judicial-review', 'Judicial review'],
+  ['/refusals/gcms-notes', 'GCMS notes'],
+  ['/tools/crs-calculator', 'CRS calculator'],
+  ['/uk', 'United Kingdom'],
+  ['/usa', 'United States'],
+  ['/europe', 'Europe & Schengen'],
+];
+
+const STEPS = [
+  ['Tell us where you are', 'On WhatsApp, by phone, or at our Lahore or Islamabad office — wherever is easiest for you.'],
+  ['A lawyer reads your history', 'Refusals, gaps, funds, the awkward parts. The things agents skip are where files fail.'],
+  ['You get it in writing', 'Which route fits, what is weak, and what it would take — a written summary, free.'],
+  ['Then you decide', 'Only then do fees come up, in writing. If the honest answer is “not yet”, that is what you hear.'],
+];
+
+/** "Every route, explained" — the guides people search for, grouped the way they ask. */
+const GUIDES: { heading: string; href: string; links: [string, string][] }[] = [
+  {
+    heading: 'Permanent residence',
+    href: '/immigration-programs',
+    links: [
+      ['/express-entry', 'Express Entry'],
+      ['/express-entry/federal-skilled-worker', 'Federal Skilled Worker'],
+      ['/pnp', 'Provincial Nominee Programs'],
+      ['/pnp/ontario', 'Ontario (OINP)'],
+      ['/atlantic-immigration-program', 'Atlantic Immigration Program'],
+      ['/business-immigration', 'Business & investment'],
+    ],
+  },
+  {
+    heading: 'Work in Canada',
+    href: '/work-permits',
+    links: [
+      ['/work-permits/lmia', 'LMIA work permits'],
+      ['/work-permit-canada', 'Without a Canadian employer'],
+      ['/work-permits/spousal-open-work-permit', 'Spousal open work permit'],
+      ['/work-permits/post-graduation', 'Post-graduation work permit'],
+      ['/work-permits/lmia-exempt', 'LMIA-exempt permits'],
+    ],
+  },
+  {
+    heading: 'Study in Canada',
+    href: '/study-in-canada',
+    links: [
+      ['/study-in-canada/study-permit', 'Study permits'],
+      ['/study-in-canada/proof-of-funds', 'Proving your funds'],
+      ['/study-in-canada/provincial-attestation-letter', 'Provincial attestation letter'],
+      ['/study-in-canada/refusals', 'Study permit refusals'],
+      ['/study-in-canada/study-to-permanent-residence', 'From study to PR'],
+    ],
+  },
+  {
+    heading: 'Family & visits',
+    href: '/family-sponsorship',
+    links: [
+      ['/family-sponsorship/spouse-partner', 'Sponsor a spouse or partner'],
+      ['/family-sponsorship/parents-grandparents', 'Parents & grandparents'],
+      ['/visitor-visa/super-visa', 'Super Visa'],
+      ['/canada-visit-visa', 'Canada visitor visa'],
+      ['/visitor-visa/invitation-letter', 'Invitation letters'],
+    ],
+  },
+  {
+    heading: 'After a refusal',
+    href: '/canada-visa-refused',
+    links: [
+      ['/canada-visa-refused', 'What to do after a refusal'],
+      ['/refusals/gcms-notes', 'Get the officer’s notes'],
+      ['/refusals/re-applying', 'Re-applying'],
+      ['/refusals/judicial-review', 'Judicial review'],
+      ['/refusals/misrepresentation', 'Misrepresentation findings'],
+    ],
+  },
+];
+
+const TOOLS = [
+  ['/tools/crs-calculator', 'CRS calculator', 'Your Express Entry score, line by line.'],
+  ['/tools/fsw-67-calculator', 'FSW 67-point calculator', 'Do you clear the Federal Skilled Worker pass mark?'],
+  ['/tools/clb-converter', 'Score to CLB converter', 'IELTS, CELPIP, PTE, TEF or TCF — what your result is worth.'],
+  ['/tools/work-permit-eligibility', 'Work without a job offer', 'Whether the owner-operator route is worth a closer look.'],
+  ['/tools/visit-visa-refusal-risk', 'Visit visa risk check', 'The weak spots an officer will see in your visit application.'],
+];
+
+/** Offices with a confirmed address, each with its own landing page. */
+const OFFICE_PAGES: Record<string, string> = {
+  Lahore: '/immigration-consultant-lahore',
+  Islamabad: '/immigration-consultant-islamabad',
+};
+const OFFICES = site.offices
+  .filter((o) => o.address && OFFICE_PAGES[o.city])
+  .map((o) => ({ ...o, page: OFFICE_PAGES[o.city]! }));
+
+/** Plain-text answers: rendered on the page AND emitted as FAQPage JSON-LD. */
+const HOME_FAQS = [
+  {
+    q: 'Is the consultation really free?',
+    a: 'Yes. It costs nothing, you owe nothing unless you decide to go ahead, and you leave with a written summary of where you stand — including if the honest answer is not to apply yet.',
+  },
+  {
+    q: 'Can you guarantee me a visa?',
+    a: 'No, and neither can anyone else. A visa officer decides every application. Anyone promising a guaranteed visa is either mistaken or lying to you.',
+  },
+  {
+    q: 'Do you only handle Canada?',
+    a: 'Canada is what we file most, but we also handle the United Kingdom, the United States and Europe — and we will tell you plainly which destination actually fits your profile.',
+  },
+  {
+    q: 'I live in Saudi Arabia, the UAE or Qatar. Can you still help?',
+    a: 'Yes. Many of our clients apply from the Gulf. Consultations can be held remotely, and we handle the Pakistan side of your paperwork while you stay where you are.',
+  },
+  {
+    q: 'I was refused before. Is it worth applying again?',
+    a: 'Sometimes — but never by sending the same file again. The first step is finding out the real reason, usually from the officer’s GCMS notes. Then you know whether to fix and re-apply, or challenge the decision.',
+  },
+  {
+    q: 'How do I know you are not a scam?',
+    a: 'Check us before you pay — that is our advice about anyone. Visit our offices in Lahore or Islamabad, ask for the licence number of the lawyer reviewing your file, and look it up yourself.',
+  },
+];
+
 export default function HomePage() {
   const lead = leadLawyer();
 
@@ -65,12 +196,12 @@ export default function HomePage() {
               Canadian immigration, handled by{' '}
               <span className="text-gold-300">real lawyers.</span>
             </h1>
-            <p className="lede mt-6 max-w-2xl !text-ink-200">
+            <p className="hero-rise lede mt-6 max-w-2xl !text-ink-200">
               Offices in Pakistan and Canada. The consultation is free, and you leave with a written
               summary of where you actually stand — including if the honest answer is don’t apply.
             </p>
 
-            <div className="mt-9 flex flex-wrap items-center gap-3">
+            <div className="hero-rise hero-rise-2 mt-9 flex flex-wrap items-center gap-3">
               <Link href="/book-consultation" className="btn btn-gold">
                 Talk to a lawyer — free
                 <span aria-hidden="true">→</span>
@@ -89,7 +220,7 @@ export default function HomePage() {
             </div>
 
             {/* Trust bar */}
-            <div className="mt-14 grid max-w-3xl gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/5 sm:grid-cols-3">
+            <div className="hero-rise hero-rise-3 mt-14 grid max-w-3xl gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/5 sm:grid-cols-3">
               {[
                 ['Two continents', 'Offices in Pakistan & Canada'],
                 ['Lawyer-led', 'Every case reviewed by counsel'],
@@ -112,6 +243,33 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ========================= ROUTE TICKER =========================
+          Every route we handle, drifting past under the hero — the quickest
+          way to show breadth without another grid. Plain links (crawlable);
+          the second copy that makes the loop seamless is hidden from
+          assistive tech and the tab order. Pauses on hover/focus, and stops
+          entirely under reduced motion (globals.css). */}
+      <nav aria-label="Popular routes" className="ticker overflow-hidden border-b border-rule bg-paper-alt">
+        <div className="ticker-track py-3.5">
+          {[0, 1].map((copy) => (
+            <ul key={copy} className="flex shrink-0 items-center" aria-hidden={copy === 1 ? true : undefined}>
+              {TICKER.map(([href, label]) => (
+                <li key={href} className="flex items-center">
+                  <Link
+                    href={href}
+                    tabIndex={copy === 1 ? -1 : undefined}
+                    className="whitespace-nowrap px-5 text-sm font-medium text-ink-600 transition-colors hover:text-gold-600"
+                  >
+                    {label}
+                  </Link>
+                  <span aria-hidden="true" className="h-1 w-1 rounded-full bg-gold-500" />
+                </li>
+              ))}
+            </ul>
+          ))}
+        </div>
+      </nav>
 
       {/* ===================== GLOBAL DESTINATIONS ===================== */}
       <section className="bg-paper">
@@ -195,6 +353,45 @@ export default function HomePage() {
           ))}
         </div>
         </SplitSection>
+
+        {/* Start-here banner: the one page that answers the question most
+            visitors arrive with. */}
+        <Link
+          href="/canada-immigration-from-pakistan"
+          className="card group mt-14 flex flex-col gap-4 p-7 sm:flex-row sm:items-center sm:justify-between sm:p-9"
+        >
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.15em] text-gold-600">New to all of this? Start here</p>
+            <p className="mt-2 font-serif text-2xl text-balance sm:text-3xl">
+              How to immigrate to Canada from Pakistan — every route on one page
+            </p>
+          </div>
+          <span className="inline-flex shrink-0 items-center gap-1.5 font-semibold text-ink-900 transition-colors group-hover:text-gold-600">
+            Read the guide
+            <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
+          </span>
+        </Link>
+      </section>
+
+      {/* ========================= HOW IT WORKS ========================= */}
+      <section className="reveal border-y border-rule bg-paper-alt">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:py-24">
+          <div className="max-w-2xl">
+            <p className="eyebrow">How it works</p>
+            <h2 className="display-2 mt-4">From first message to a straight answer</h2>
+          </div>
+          <ol className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {STEPS.map(([title, body], i) => (
+              <li key={title} className="card relative flex flex-col overflow-hidden p-7">
+                <span aria-hidden="true" className="step-numeral font-serif text-6xl leading-none">
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <h3 className="mt-5 font-serif text-xl">{title}</h3>
+                <p className="mt-2.5 flex-1 text-ink-600 text-pretty">{body}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
       </section>
 
       {/* ===================== CREDIBILITY BAND =====================
@@ -219,6 +416,72 @@ export default function HomePage() {
                 </p>
                 <p className="mt-4 text-sm leading-relaxed text-ink-200 text-pretty">{desc}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===================== EVERY ROUTE, EXPLAINED =====================
+          The homepage linked to 11 pages before this — so the 70-odd guides
+          behind it got almost none of its weight, and a visitor who didn't
+          use the menu never found them. Grouped the way people ask. */}
+      <section className="reveal mx-auto max-w-6xl px-4 py-24 sm:py-28">
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+          <div className="max-w-2xl">
+            <p className="eyebrow">Free guides</p>
+            <h2 className="display-2 mt-4">Every route, explained in plain language</h2>
+          </div>
+          <p className="max-w-sm text-ink-600 text-pretty">
+            What each route asks of you, how it runs, and where applications from Pakistan go wrong —
+            written by people who file them.
+          </p>
+        </div>
+        <div className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-5">
+          {GUIDES.map((g) => (
+            <div key={g.heading}>
+              <h3 className="border-b border-rule pb-3 font-serif text-xl">
+                <Link href={g.href} className="transition-colors hover:text-gold-600">
+                  {g.heading}
+                </Link>
+              </h3>
+              <ul className="mt-2">
+                {g.links.map(([href, label]) => (
+                  <li key={href}>
+                    <Link href={href} className="tap text-[0.95rem] text-ink-600 transition-colors hover:text-gold-600">
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ========================== FREE TOOLS ========================== */}
+      <section className="reveal border-y border-rule bg-paper-alt">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:py-24">
+          <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+            <div className="max-w-2xl">
+              <p className="eyebrow">Free tools</p>
+              <h2 className="display-2 mt-4">Run the numbers yourself</h2>
+            </div>
+            <Link href="/tools" className="tap shrink-0 font-semibold text-accent-500 link-underline">
+              All tools →
+            </Link>
+          </div>
+          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+            {TOOLS.map(([href, title, body]) => (
+              <Link key={href} href={href} className="card group flex flex-col p-6">
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gold-50 text-gold-600 ring-1 ring-gold-500/20">
+                  <Icon name="calculator" className="h-5 w-5" />
+                </span>
+                <h3 className="mt-5 font-serif text-lg leading-snug">{title}</h3>
+                <p className="mt-2 flex-1 text-sm text-ink-600 text-pretty">{body}</p>
+                <span className="mt-4 text-sm font-semibold text-ink-900 transition-colors group-hover:text-gold-600">
+                  Open →
+                </span>
+              </Link>
             ))}
           </div>
         </div>
@@ -278,6 +541,65 @@ export default function HomePage() {
             ))}
           </dl>
         </div>
+      </section>
+
+      {/* =========================== OFFICES ===========================
+          Name, address and hours on the homepage, from the same record the
+          LocalBusiness JSON-LD uses — consistent NAP is most of local SEO. */}
+      <section className="reveal mx-auto max-w-6xl px-4 py-24 sm:py-28">
+        <div className="max-w-2xl">
+          <p className="eyebrow">Visit us</p>
+          <h2 className="display-2 mt-4">Real offices you can walk into</h2>
+          <p className="lede mt-4">
+            In Lahore and Islamabad — and in Mississauga, Canada. Come in, or talk to us from wherever
+            you are.
+          </p>
+        </div>
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
+          {OFFICES.map((o) => (
+            <div key={o.city} className="card flex flex-col p-7 sm:p-8">
+              <p className="text-xs font-semibold uppercase tracking-[0.15em] text-gold-600">{o.city} office</p>
+              <p className="mt-3 font-serif text-xl leading-snug">{o.address}</p>
+              <p className="mt-3 text-sm text-ink-600">{o.hours}</p>
+              <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
+                <Link href={o.page} className="tap font-semibold text-accent-500 link-underline">
+                  About the {o.city} office →
+                </Link>
+                {o.mapUrl ? (
+                  <a href={o.mapUrl} rel="noopener noreferrer" target="_blank" className="tap font-semibold text-ink-700 link-underline">
+                    Directions
+                  </a>
+                ) : null}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ============================== FAQ ============================== */}
+      <section className="reveal border-t border-rule bg-paper-alt">
+        <div className="mx-auto max-w-4xl px-4 py-20 sm:py-24">
+          <p className="eyebrow">Questions</p>
+          <h2 className="display-2 mt-4">What people ask us first</h2>
+          <div className="mt-10">
+            <FAQ items={HOME_FAQS} />
+          </div>
+        </div>
+        <script
+          type="application/ld+json"
+          // Static copy from HOME_FAQS — no user input reaches this.
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: HOME_FAQS.map((f) => ({
+                '@type': 'Question',
+                name: f.q,
+                acceptedAnswer: { '@type': 'Answer', text: f.a },
+              })),
+            }),
+          }}
+        />
       </section>
 
       {/* ========================= FINAL CTA ========================= */}

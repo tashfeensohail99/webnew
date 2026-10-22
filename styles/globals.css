@@ -458,6 +458,54 @@ img, svg { max-width: 100%; height: auto; }
   .hc-pulse, .hc-corridor { animation: none; }
 }
 
+/* ---------------------------------------------------------
+   MOTION — homepage polish. Every piece is progressive: with
+   reduced motion, or in a browser without the feature, the
+   content simply sits still and fully visible.
+   --------------------------------------------------------- */
+
+/* Route ticker under the hero. Two identical lists in one track; sliding the
+   track by exactly half loops seamlessly. Edges fade so items enter and leave
+   rather than being cut. */
+.ticker { mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); }
+.ticker-track { display: flex; width: max-content; animation: ticker 70s linear infinite; }
+.ticker:hover .ticker-track,
+.ticker:focus-within .ticker-track { animation-play-state: paused; }
+@keyframes ticker { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .ticker { overflow-x: auto; mask-image: none; }
+  .ticker-track { animation: none; }
+}
+
+/* Sections ease up as they scroll into view. Scroll-driven, so no JS — and
+   only where supported AND motion is welcome. An element already on screen
+   at load is past its range, so it renders in its final state immediately. */
+@keyframes reveal-up { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: none; } }
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal { animation: reveal-up linear both; animation-timeline: view(); animation-range: entry 0% entry 30%; }
+  }
+}
+
+/* Hero entrance: the supporting lines rise in after the headline. The
+   headline itself never animates — it is the page's largest paint, and
+   delaying it would cost Core Web Vitals for a flourish. */
+@keyframes hero-rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: no-preference) {
+  .hero-rise { animation: hero-rise .7s cubic-bezier(.2, .7, .2, 1) both; }
+  .hero-rise-2 { animation-delay: .12s; }
+  .hero-rise-3 { animation-delay: .24s; }
+}
+
+/* "How it works" numerals: gold fading to nothing, so the number is a shape
+   behind the step rather than a second heading competing with it. */
+.step-numeral {
+  background: linear-gradient(180deg, var(--color-gold-500), transparent 95%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 /* Floating WhatsApp button: a soft ring breathes out from the disc so the eye
    finds it, then rests. Off entirely under reduced motion. */
 @keyframes wa-ring {

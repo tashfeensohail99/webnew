@@ -23,7 +23,7 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * back to someone reading the expiry date on the wrong one.
  */
 export const metadata: Metadata = {
-  title: 'Extending a Visit to Canada — Visitor Records, Maintained Status and Restoration',
+  title: 'Extend Your Stay in Canada — Visitor Record Guide',
   description:
     'Visitor visa versus visitor record, how to extend before your status expires, what maintained status allows, and what restoration means if it has lapsed.',
   alternates: { canonical: '/visitor-visa/extension' },

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 import { WhatsAppCta } from '@/components/WhatsAppCta';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { SERVICE } from '@/lib/site';
 
 /**
@@ -8,8 +9,9 @@ import { SERVICE } from '@/lib/site';
  * reads as one considered, high-end brand — not a set of documents.
  *
  * Rules baked in: navy + gold, Fraunces display / Inter body, generous space,
- * soft depth, gold used as accent not fill. All server-rendered, zero client JS
- * (the FAQ uses native <details>). No external images — SVG/CSS only.
+ * soft depth, gold used as accent not fill. Server-rendered; the only client JS
+ * is the hero's breadcrumb trail, which reads the path (the FAQ uses native
+ * <details>). No external images — SVG/CSS only.
  */
 
 /* --------------------------------- Monogram -------------------------------- */
@@ -44,6 +46,7 @@ export function PageHero({
     <section className="relative overflow-hidden bg-hero text-white">
       <MonogramWatermark className="-right-10 -top-16 h-[30rem] w-[30rem]" />
       <div className="relative mx-auto max-w-6xl px-4 py-20 sm:py-28">
+        <Breadcrumbs />
         {eyebrow ? <p className="eyebrow eyebrow--light">{eyebrow}</p> : null}
         <h1 className="display-1 mt-6 max-w-4xl">{title}</h1>
         {subtitle ? <p className="lede mt-6 max-w-2xl !text-ink-200">{subtitle}</p> : null}
