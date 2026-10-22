@@ -4,6 +4,7 @@ import { WhatsAppCta } from '@/components/WhatsAppCta';
 import { WhatsAppFloat } from '@/components/WhatsAppFloat';
 import { DestinationGrid } from '@/components/DestinationGrid';
 import { HeroGlobe } from '@/components/HeroGlobe';
+import { FounderFeature } from '@/components/FounderFeature';
 import { SplitSection, FAQ, Icon } from '@/components/ui';
 import { site, SERVICE, leadLawyer } from '@/lib/site';
 
@@ -393,6 +394,15 @@ export default function HomePage() {
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      {/* ============================ FOUNDER ============================
+          The firm's founder, photographed at the Lahore office — the one face
+          on the site, and the answer to "who is actually behind this?". */}
+      <section className="cv-auto reveal relative overflow-hidden">
+        <div className="mx-auto max-w-6xl px-4 py-24 sm:py-32">
+          <FounderFeature />
         </div>
       </section>
 

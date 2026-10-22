@@ -12,6 +12,7 @@ import {
   Icon,
 } from '@/components/ui';
 import { WhatsAppCta } from '@/components/WhatsAppCta';
+import { FounderFeature } from '@/components/FounderFeature';
 import { site, lawyers, SERVICE } from '@/lib/site';
 
 /**
@@ -264,6 +265,11 @@ export default function AboutPage() {
           },
         ]}
       />
+
+      {/* ============================ FOUNDER ============================ */}
+      <Section tone="alt" size="lg">
+        <FounderFeature eyebrow="Who runs the firm" />
+      </Section>
 
       {/* ============================ LAWYERS ============================ */}
       <Section tone="paper">

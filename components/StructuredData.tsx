@@ -1,4 +1,4 @@
-import { site, lawyers } from '@/lib/site';
+import { site, lawyers, founder } from '@/lib/site';
 
 /**
  * Schema.org JSON-LD for the organisation and its offices.
@@ -102,6 +102,15 @@ export function StructuredData() {
       // sameAs is "another profile of this same entity" — the full social set
       // from lib/site.ts, which the firm treats as its own presence.
       ...(site.social.length ? { sameAs: site.social.map((s) => s.href) } : {}),
+      // Name, title and photo as the firm confirmed them — no credential.
+      founder: {
+        '@type': 'Person',
+        name: founder.name,
+        jobTitle: founder.title,
+        image: `${site.url}${founder.photo.stem}-${founder.photo.width}.jpg`,
+        sameAs: [founder.linkedin],
+        worksFor: { '@id': `${site.url}/#organization` },
+      },
       ...(lawyers.length
         ? {
             employee: lawyers.map((l) => ({

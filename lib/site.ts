@@ -289,6 +289,27 @@ export type Lawyer = {
 export const lawyers: Lawyer[] = [];
 
 /**
+ * The founder, as confirmed by the firm on 2026-10-23: name, title, and the
+ * office the portrait was taken in. Deliberately nothing more — no years in
+ * practice, no qualifications, no quotes in his name — until the firm supplies
+ * them. This is NOT a lawyer entry: it never feeds `ReviewedBy`, and no
+ * credential is implied. The photo was supplied by the firm.
+ */
+export const founder = {
+  name: 'Tashfeen Sohail Abbas Gondal',
+  title: 'Founder & CEO',
+  office: 'Lahore',
+  linkedin: 'https://www.linkedin.com/in/tashfeen-sohail-abbas-gondal-95918a241/',
+  photo: {
+    /** /public path stem; files exist at each width in `widths`. */
+    stem: '/team/tashfeen-sohail-abbas-gondal',
+    widths: [480, 720, 960],
+    width: 960,
+    height: 1280,
+  },
+} as const;
+
+/**
  * Refuses to build for production while any placeholder remains.
  *
  * The whole promise of this site is "we are real lawyers, go and check". Demo
