@@ -7,6 +7,7 @@ import { usePathname } from 'next/navigation';
 import { DESTINATIONS, type NavGroup } from '@/lib/nav';
 import { FlagCanada, FlagUK, FlagUSA, FlagEU } from '@/components/Flags';
 import { ThemeToggle } from '@/components/ThemeToggle';
+import { NavIcon } from '@/components/NavIcon';
 
 /** Same mapping as the desktop DestinationBar; kept local to avoid a shared
  *  module whose only job would be four key/value pairs. */
@@ -265,8 +266,11 @@ export function MobileNav({
                                 <li key={item.href}>
                                   <Link
                                     href={item.href}
-                                    className="block rounded-lg px-3 py-2.5 text-[0.95rem] text-ink-200 transition-colors hover:bg-white/10 hover:text-white"
+                                    className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-[0.95rem] text-ink-200 transition-colors hover:bg-white/10 hover:text-white"
                                   >
+                                    <span className="flex w-4 shrink-0 justify-center text-gold-300">
+                                      <NavIcon href={item.href} />
+                                    </span>
                                     {item.label}
                                   </Link>
                                 </li>

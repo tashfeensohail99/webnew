@@ -3,6 +3,7 @@ import { Logo } from '@/components/Logo';
 import { MobileNav } from '@/components/MobileNav';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { DestinationBar } from '@/components/DestinationBar';
+import { NavIcon, hasNavIcon } from '@/components/NavIcon';
 import { liveNav, OTHER_DESTINATIONS } from '@/lib/nav';
 
 /**
@@ -150,12 +151,19 @@ export function SiteHeader({ display, digits }: { display: string; digits: strin
                                   <li key={item.href}>
                                     <Link
                                       href={item.href}
-                                      className="block rounded-lg px-3 py-2 -mx-3 transition-colors hover:bg-paper-alt"
+                                      className="group/item -mx-3 flex items-center gap-3 rounded-lg px-3 py-2 transition-colors hover:bg-paper-alt"
                                     >
-                                      <span className="block text-sm font-medium text-ink-900">{item.label}</span>
-                                      {item.blurb ? (
-                                        <span className="mt-0.5 block text-xs text-ink-400">{item.blurb}</span>
+                                      {hasNavIcon(item.href) ? (
+                                        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-gold-50 text-gold-600 ring-1 ring-gold-500/20 transition-colors group-hover/item:bg-gold-500 group-hover/item:text-ink-950">
+                                          <NavIcon href={item.href} />
+                                        </span>
                                       ) : null}
+                                      <span className="min-w-0">
+                                        <span className="block text-sm font-medium text-ink-900">{item.label}</span>
+                                        {item.blurb ? (
+                                          <span className="mt-0.5 block text-xs text-ink-400">{item.blurb}</span>
+                                        ) : null}
+                                      </span>
                                     </Link>
                                   </li>
                                 ))}
