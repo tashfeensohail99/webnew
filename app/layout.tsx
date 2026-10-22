@@ -61,27 +61,33 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
               <Logo variant="light" />
               <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-300">{site.tagline}</p>
               <p className="mt-4 text-xs text-ink-400">Offices in Lahore · Islamabad · Mississauga</p>
-              {/* Social — rel="me" tells reader apps this profile belongs to this
-                  site, which is what Mastodon-era verification keys off and what
-                  some crawlers use alongside schema.org sameAs. Opens in a new
-                  tab (noopener for safety) since every one leaves our origin. */}
+              {/* Social — labelled "Follow us" so the row reads as a section
+                  rather than a stray strip of icons under the logo. rel="me"
+                  tells reader apps this profile belongs to this site, which is
+                  what some crawlers use alongside schema.org sameAs. Opens in a
+                  new tab (noopener for safety) since every one leaves origin. */}
               {site.social.length > 0 ? (
-                <ul className="mt-6 flex flex-wrap gap-2">
-                  {site.social.map((s) => (
-                    <li key={s.href}>
-                      <a
-                        href={s.href}
-                        aria-label={s.label}
-                        title={s.label}
-                        rel="me noopener"
-                        target="_blank"
-                        className="tap flex h-10 w-10 items-center justify-center rounded-full ring-1 ring-white/15 text-ink-300 transition-colors hover:bg-white/5 hover:text-white"
-                      >
-                        <Icon name={s.icon as IconName} className="h-5 w-5" />
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+                <div className="mt-7">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gold-400">
+                    Follow us
+                  </p>
+                  <ul className="mt-3 flex flex-wrap gap-2.5">
+                    {site.social.map((s) => (
+                      <li key={s.href}>
+                        <a
+                          href={s.href}
+                          aria-label={`${s.label} — follow us`}
+                          title={s.label}
+                          rel="me noopener"
+                          target="_blank"
+                          className="tap flex h-10 w-10 items-center justify-center rounded-full ring-1 ring-white/15 text-ink-300 transition-colors hover:bg-gold-500 hover:text-ink-950 hover:ring-gold-500"
+                        >
+                          <Icon name={s.icon as IconName} className="h-5 w-5" />
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ) : null}
             </div>
             <FooterCol
