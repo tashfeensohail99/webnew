@@ -200,6 +200,79 @@ img, svg { max-width: 100%; height: auto; }
    sync by convention, not by import. */
 .logo-img { height: 2.25rem; width: auto; }
 
+/* Hero Canada visual — styling and motion for the Natural-Earth-based globe
+   lives here, not in the component. Keeping it as plain CSS (rather than
+   Tailwind-arbitrary classes on the elements) means the hundreds of SVG
+   nodes stay readable, and the keyframes survive hydration without the
+   first-paint flash a mount-time class swap would cause. */
+
+.canada-globe { display: block; height: 100%; width: 100%; overflow: visible; }
+.sphere-shadow { filter: drop-shadow(0 9px 20px rgba(7, 35, 88, .3)); }
+
+.graticules path {
+  fill: none;
+  stroke: #9ebde3;
+  stroke-width: .85;
+  stroke-opacity: .22;
+}
+
+.surrounding-land {
+  fill: url(#land-grad);
+  stroke: #89b1e3;
+  stroke-opacity: .7;
+  stroke-width: 1.25;
+  stroke-linejoin: round;
+}
+
+.canada {
+  fill: url(#canada-grad);
+  stroke: #ffd8e1;
+  stroke-width: 2.1;
+  stroke-opacity: .98;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0 10px rgba(254, 76, 113, .72));
+}
+
+.land-relief { mix-blend-mode: soft-light; opacity: .62; pointer-events: none; }
+
+.map-water-labels text { font-family: inherit; pointer-events: none; }
+.ocean-label  { fill: #9bc9fb; font-size: 17px;   font-weight: 650; letter-spacing: 3px; }
+.water-label  { fill: #d0e2fa; font-size: 14px;   font-weight: 650; letter-spacing: 2px; opacity: .9; }
+.region-label { fill: #c4d6ec; font-size: 13px;   font-weight: 700; letter-spacing: 1.5px; opacity: .78; }
+
+.map-flag { opacity: .91; filter: drop-shadow(0 0 22px rgba(255, 255, 255, .18)); pointer-events: none; }
+
+.city { outline: none; cursor: default; }
+.city-dot { fill: #fff; stroke: #ffb6c4; stroke-width: 1.4; }
+.city-halo { fill: #fff; opacity: .11; }
+.city-leader { stroke: #fff; stroke-width: 1.2; opacity: .78; }
+.city-label {
+  fill: #fff; font-size: 15px; font-weight: 680;
+  stroke: rgba(10, 21, 46, .82); stroke-width: 3.5px; paint-order: stroke fill;
+  stroke-linejoin: round;
+}
+
+/* The firm's own office — slightly larger halo + gold accent so it reads as
+   the one claim on the map the firm can be held to. */
+.hc-office .city-dot { stroke: #ffffff; }
+
+/* Pulse ring on the office halo. Separate from .city-halo's opacity so the
+   static halo stays visible while the pulse layers on top. */
+@keyframes hc-pulse {
+  0%   { transform: scale(0.6); opacity: 0.55; }
+  70%  { transform: scale(2.2); opacity: 0;    }
+  100% { transform: scale(2.2); opacity: 0;    }
+}
+.hc-pulse { animation: hc-pulse 2.6s ease-out infinite; }
+
+/* The flight corridor's dash drift. */
+@keyframes hc-dash-drift { to { stroke-dashoffset: -32; } }
+.hc-corridor { animation: hc-dash-drift 1.6s linear infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hc-pulse, .hc-corridor { animation: none; }
+}
+
 ::selection { background: var(--color-gold-300); color: var(--color-ink-950); }
 
 /* KEYBOARD FOCUS INDICATOR — WCAG 2.4.11 wants the indicator itself at 3:1.

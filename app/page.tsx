@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { WhatsAppCta } from '@/components/WhatsAppCta';
 import { DestinationGrid } from '@/components/DestinationGrid';
+import { HeroCanada } from '@/components/HeroCanada';
 import { SplitSection } from '@/components/ui';
 import { site, SERVICE, leadLawyer } from '@/lib/site';
 
@@ -50,48 +51,61 @@ export default function HomePage() {
     <>
       {/* ============================= HERO ============================= */}
       <section className="relative overflow-hidden bg-hero text-white">
-        <MonogramWatermark />
-        <div className="relative mx-auto max-w-6xl px-4 py-24 sm:py-32">
-          <p className="eyebrow eyebrow--light">Immigration, by qualified lawyers</p>
-          <h1 className="display-1 mt-6 max-w-4xl">
-            Canadian immigration, handled by{' '}
-            <span className="text-gold-300">real lawyers.</span>
-          </h1>
-          <p className="lede mt-6 max-w-2xl !text-ink-200">
-            Offices in Pakistan and Canada. The consultation is free, and you leave with a written
-            summary of where you actually stand — including if the honest answer is don’t apply.
-          </p>
+        <div className="relative mx-auto max-w-6xl px-4 py-24 sm:py-32 lg:grid lg:grid-cols-[minmax(0,1.7fr)_minmax(0,1fr)] lg:items-center lg:gap-8 xl:grid-cols-[minmax(0,1.55fr)_minmax(0,1fr)] xl:gap-12">
+          {/* Text column. */}
+          <div>
+            <p className="eyebrow eyebrow--light">Immigration, by qualified lawyers</p>
+            {/* At lg+ the headline shares the row with the globe, so it has
+                to accept a slightly tighter cap than the standalone display-1
+                clamp — otherwise "Canadian immigration," splits mid-phrase. */}
+            <h1 className="display-1 mt-6 lg:!text-[3.5rem] lg:!leading-[1.03] xl:!text-[4rem]">
+              Canadian immigration, handled by{' '}
+              <span className="text-gold-300">real lawyers.</span>
+            </h1>
+            <p className="lede mt-6 max-w-2xl !text-ink-200">
+              Offices in Pakistan and Canada. The consultation is free, and you leave with a written
+              summary of where you actually stand — including if the honest answer is don’t apply.
+            </p>
 
-          <div className="mt-9 flex flex-wrap items-center gap-3">
-            <Link href="/book-consultation" className="btn btn-gold">
-              Talk to a lawyer — free
-              <span aria-hidden="true">→</span>
-            </Link>
-            <WhatsAppCta
-              variant="ghost"
-              intent={{
-                service: SERVICE.WORK_PERMIT,
-                page: 'home',
-                targetCountry: 'Canada',
-                message: 'Hi, I’d like to ask about immigrating to Canada.',
-              }}
-            >
-              Start on WhatsApp
-            </WhatsAppCta>
+            <div className="mt-9 flex flex-wrap items-center gap-3">
+              <Link href="/book-consultation" className="btn btn-gold">
+                Talk to a lawyer — free
+                <span aria-hidden="true">→</span>
+              </Link>
+              <WhatsAppCta
+                variant="ghost"
+                intent={{
+                  service: SERVICE.WORK_PERMIT,
+                  page: 'home',
+                  targetCountry: 'Canada',
+                  message: 'Hi, I’d like to ask about immigrating to Canada.',
+                }}
+              >
+                Start on WhatsApp
+              </WhatsAppCta>
+            </div>
+
+            {/* Trust bar */}
+            <div className="mt-14 grid max-w-3xl gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/5 sm:grid-cols-3">
+              {[
+                ['Two continents', 'Offices in Pakistan & Canada'],
+                ['Lawyer-led', 'Every case reviewed by counsel'],
+                ['No false hope', 'We’ll tell you not to apply'],
+              ].map(([h, s]) => (
+                <div key={h} className="bg-ink-950/30 px-5 py-5">
+                  <p className="font-serif text-lg text-white">{h}</p>
+                  <p className="mt-1 text-sm text-ink-300">{s}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
-          {/* Trust bar */}
-          <div className="mt-14 grid max-w-3xl gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/5 sm:grid-cols-3">
-            {[
-              ['Two continents', 'Offices in Pakistan & Canada'],
-              ['Lawyer-led', 'Every case reviewed by counsel'],
-              ['No false hope', 'We’ll tell you not to apply'],
-            ].map(([h, s]) => (
-              <div key={h} className="bg-ink-950/30 px-5 py-5">
-                <p className="font-serif text-lg text-white">{h}</p>
-                <p className="mt-1 text-sm text-ink-300">{s}</p>
-              </div>
-            ))}
+          {/* Globe column — hidden below lg where the headline needs the full
+              width. From lg up it is a real part of the grid, so the headline
+              never fights it. The negative mr allows the globe to bleed a
+              little past the content container's right edge for presence. */}
+          <div className="relative hidden lg:block lg:mr-[-4rem] xl:mr-[-2rem]">
+            <HeroCanada />
           </div>
         </div>
       </section>
