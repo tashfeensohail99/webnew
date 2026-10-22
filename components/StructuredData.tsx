@@ -78,7 +78,7 @@ export function StructuredData() {
       '@id': `${site.url}/#website`,
       url: site.url,
       name: site.name,
-      alternateName: [site.shortName, 'Tashfeen'],
+      alternateName: [site.shortName, site.socialName, 'Tashfeen'],
       inLanguage: 'en',
       publisher: { '@id': `${site.url}/#organization` },
     },
@@ -86,7 +86,12 @@ export function StructuredData() {
       '@type': 'ProfessionalService',
       '@id': `${site.url}/#organization`,
       name: site.name,
+      // The name on the firm's social profiles and Google Business Profile —
+      // so the social following is joined to this entity, not a stranger's.
+      alternateName: [site.shortName, site.socialName],
       url: site.url,
+      logo: `${site.url}/icon`,
+      image: `${site.url}${founder.photo.stem}-${founder.photo.width}.jpg`,
       description:
         'International immigration firm with lawyers, and offices in Pakistan and Canada. Canada, USA, UK and Europe.',
       areaServed: ['PK', 'SA', 'AE', 'OM', 'QA', 'BH', 'GB', 'CA', 'US'],

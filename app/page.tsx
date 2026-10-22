@@ -5,6 +5,7 @@ import { WhatsAppFloat } from '@/components/WhatsAppFloat';
 import { DestinationGrid } from '@/components/DestinationGrid';
 import { HeroGlobe } from '@/components/HeroGlobe';
 import { FounderFeature } from '@/components/FounderFeature';
+import { SocialProof } from '@/components/SocialProof';
 import { SplitSection, FAQ, Icon } from '@/components/ui';
 import { site, SERVICE, leadLawyer } from '@/lib/site';
 
@@ -18,8 +19,8 @@ const SERVICES = [
   {
     href: '/work-permit-canada',
     icon: 'permit' as const,
-    kicker: 'Canada · C11',
-    title: 'Canada Work Permit',
+    kicker: 'Canada · No job offer needed',
+    title: 'C11 Work Permit',
     body: 'You do not need a job offer to work in Canada. If you own a business or you are self-employed, there is a route most agents in Pakistan don’t know how to file.',
     cta: 'See if it fits you',
   },
@@ -54,7 +55,7 @@ const TICKER: [string, string][] = [
   ['/pnp', 'Provincial nomination'],
   ['/study-in-canada/study-permit', 'Study permits'],
   ['/work-permits', 'Work permits'],
-  ['/work-permit-canada', 'Owner-operator route'],
+  ['/work-permit-canada', 'C11 work permit'],
   ['/canada-visit-visa', 'Visit visas'],
   ['/visitor-visa/super-visa', 'Super Visa'],
   ['/family-sponsorship/spouse-partner', 'Spouse sponsorship'],
@@ -93,7 +94,7 @@ const GUIDES: { heading: string; href: string; links: [string, string][] }[] = [
     href: '/work-permits',
     links: [
       ['/work-permits/lmia', 'LMIA work permits'],
-      ['/work-permit-canada', 'Without a Canadian employer'],
+      ['/work-permit-canada', 'C11 work permit (own business)'],
       ['/work-permits/spousal-open-work-permit', 'Spousal open work permit'],
       ['/work-permits/post-graduation', 'Post-graduation work permit'],
       ['/work-permits/lmia-exempt', 'LMIA-exempt permits'],
@@ -273,6 +274,11 @@ export default function HomePage() {
           ))}
         </div>
       </nav>
+
+      {/* ======================== SOCIAL PROOF ========================
+          The firm's real reach (~890K followers) — the strongest trust signal
+          it has, and one the site never showed. */}
+      <SocialProof />
 
       {/* ===================== GLOBAL DESTINATIONS ===================== */}
       <section className="cv-auto bg-paper">
@@ -600,21 +606,6 @@ export default function HomePage() {
             <FAQ items={HOME_FAQS} />
           </div>
         </div>
-        <script
-          type="application/ld+json"
-          // Static copy from HOME_FAQS — no user input reaches this.
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              mainEntity: HOME_FAQS.map((f) => ({
-                '@type': 'Question',
-                name: f.q,
-                acceptedAnswer: { '@type': 'Answer', text: f.a },
-              })),
-            }),
-          }}
-        />
       </section>
 
       {/* ========================= FINAL CTA ========================= */}

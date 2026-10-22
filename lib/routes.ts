@@ -22,7 +22,7 @@ export const ROUTES: Route[] = [
   { path: '/', reviewed: '2026-10-22', priority: 1.0, changeFrequency: 'monthly' },
 
   // Money pages. Ordered by what the business actually sells.
-  { path: '/work-permit-canada', reviewed: '2026-07-17', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/work-permit-canada', reviewed: '2026-10-23', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/canada-visa-refused', reviewed: '2026-07-17', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/canada-visit-visa', reviewed: '2026-07-17', priority: 0.8, changeFrequency: 'monthly' },
 
@@ -83,7 +83,7 @@ export const ROUTES: Route[] = [
   // Wave 2 programme coverage. Structural pages — no volatile numbers, so these
   // age slowly and the reviewed date means something.
   { path: '/atlantic-immigration-program', reviewed: '2026-07-20', priority: 0.8, changeFrequency: 'monthly' },
-  { path: '/business-immigration', reviewed: '2026-07-20', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/business-immigration', reviewed: '2026-10-23', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/caregivers', reviewed: '2026-07-20', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/express-entry/category-based-draws', reviewed: '2026-07-20', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/family-sponsorship/dependent-children', reviewed: '2026-07-20', priority: 0.7, changeFrequency: 'monthly' },

@@ -113,9 +113,9 @@ const ROUTES = [
     href: '/work-permit-canada',
     icon: 'scale' as const,
     kicker: 'If you run a business',
-    title: 'Owner-operator route',
+    title: 'C11 work permit',
     body: 'If you own a business in Pakistan, there is a way to work in Canada by running one there. Most agents never file it.',
-    cta: 'See if it fits you',
+    cta: 'The C11, explained',
   },
   {
     href: '/family-sponsorship',

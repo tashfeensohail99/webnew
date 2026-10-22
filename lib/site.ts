@@ -136,6 +136,29 @@ export const site = {
    *     my own profile view" indicator — it only means anything when the
    *     logged-in viewer owns the profile. Stripped.
    */
+  /**
+   * Public follower counts, read off the firm's own profiles on 2026-10-23:
+   * the Facebook page "Tashfeen Barristers & Solicitors" (649,420 followers),
+   * Instagram (223K followers, 4,597 posts) and YouTube (20.1K subscribers,
+   * 821 videos). They go stale — refresh the numbers and `asOf` together.
+   * TikTok blocks automated reads, so it is shown without a count rather than
+   * with a guessed one.
+   */
+  socialStats: {
+    asOf: 'October 2026',
+    facebook: 649_420,
+    instagram: 223_000,
+    youtube: 20_100,
+  },
+
+  /**
+   * The name the firm trades under on Facebook, Instagram and its Google
+   * Business Profile. Emitted as alternateName so search engines and AI tools
+   * join the ~890K-follower social presence to this site instead of treating
+   * it as a different company.
+   */
+  socialName: 'Tashfeen Barristers & Solicitors',
+
   social: [
     {
       platform: 'Facebook',

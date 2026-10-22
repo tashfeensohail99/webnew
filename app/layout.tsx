@@ -115,7 +115,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
               title="Services"
               links={[
                 ['/canada-immigration-from-pakistan', 'Immigrate from Pakistan'],
-                ['/work-permit-canada', 'Canada Work Permit'],
+                ['/work-permit-canada', 'C11 Work Permit'],
                 ['/canada-visit-visa', 'Canada Visit Visa'],
                 ['/canada-visa-refused', 'Visa Refused'],
                 ['/fees', 'Fees'],

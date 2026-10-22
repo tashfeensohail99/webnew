@@ -13,44 +13,75 @@ import {
 } from '@/components/ui';
 import { WhatsAppCta } from '@/components/WhatsAppCta';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { LiteYouTube } from '@/components/LiteYouTube';
 import { site, SERVICE } from '@/lib/site';
 
 /**
  * The flagship page — Canada's C11 work-permit route, the firm's most substantial service.
  *
- * The H1 deliberately does NOT say "C11". Nobody searches an IRCC exemption
- * code — buyers search their own situation ("without a job offer", "self
- * employed"), which is exactly how they describe themselves in our own recorded
- * questions. C11 is the answer they discover here, never the question they ask.
+ * The H1 now LEADS with "C11 work permit" and keeps the plain-language promise
+ * ("without a job offer or an LMIA") beside it. The earlier version kept the
+ * code out of the H1 on the theory that nobody searches it; the search results
+ * say otherwise (2026-10-23: the ranking pages for this route are all titled
+ * "C11 work permit"), and the firm asked to rank for the C11 search. Both
+ * phrasings now appear, so both kinds of searcher land here.
+ *
+ * Every rule stated on this page is taken from IRCC's own program delivery
+ * instructions for the C11 category (linked as IRCC.c11, last updated by IRCC
+ * 2025-05-27). Re-check that page when reviewing this one.
  */
 export const metadata: Metadata = {
-  title: 'Canada Work Permit Without a Job Offer (C11)',
+  title: 'C11 Work Permit Canada: Run Your Own Business',
   description:
-    'If you own a business or are self-employed in Pakistan, you may need no job offer or LMIA to work in Canada. What the C11 requires, and who it is not for.',
+    'The C11 work permit lets you run your own Canadian business with no job offer or LMIA. IRCC’s real rules: 51% ownership, significant benefit, funds.',
   alternates: { canonical: '/work-permit-canada' },
 };
 
 const PAGE = 'work-permit-canada';
+
+const IRCC = {
+  c11: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/entrepreneurs-self-employed-seeking-only-temp-residence-r205-c11.html',
+} as const;
+
+/** The firm's own explainer on its YouTube channel (published 2026-10-11). */
+const VIDEO = {
+  id: '9cXFhUmFZm4',
+  title: 'Canada C-11 Work Permit: Start Your Own Business & Bring Your Family! | Requirements Explained',
+  uploadDate: '2026-10-11T18:24:59+00:00',
+} as const;
+
+/**
+ * "C11 at a glance" — the rules as IRCC states them, one line each. Written to
+ * be quoted: short, sourced, no adjectives.
+ */
+const GLANCE: [string, string][] = [
+  ['Ownership', 'You must control at least 51% of the Canadian business. An owner with less who works in it applies as an employee instead.'],
+  ['Significant benefit', 'Jobs for Canadians, market or export growth, innovation, or keeping Canadians employed. IRCC is explicit that it is not the amount you spend that makes a business significant.'],
+  ['Business plan', 'Concrete start-up steps — location, sourcing, costs, wages, marketing and customers. A detailed market analysis on its own is not a plan.'],
+  ['Your funds', 'Business money kept separate from your family’s living funds, which must be at least the low-income cut-off for your family size for 18 months — with proof of where the money came from.'],
+  ['Length of stay', 'The work should normally not exceed 18 months. Longer needs a definite plan to hand over the running of the business.'],
+  ['Settling permanently', 'The C11 is a temporary permit. IRCC’s guidance points business owners who intend to settle to other routes, such as provincial entrepreneur streams.'],
+];
 
 /* Who this route actually fits — the qualify-in profiles. */
 const FITS = [
   {
     icon: 'building' as const,
     kicker: 'Business owners',
-    title: 'You own or run a business',
-    body: 'A registered business in Pakistan that you can prove you actually operate — not a name on paper.',
+    title: 'You run a business now',
+    body: 'A registered business in Pakistan or the Gulf that you can prove you actually operate — accounts, dealings, history. It is the experience the officer weighs.',
   },
   {
     icon: 'user' as const,
-    kicker: 'Self-employed & senior',
-    title: 'You’re self-employed or senior',
-    body: 'A self-employed professional, or someone senior enough that a Canadian business case is genuinely credible.',
+    kicker: 'Majority owner',
+    title: 'You’ll control the Canadian business',
+    body: 'At least 51% of it, and you will be the one running it day to day — not a passive or minority investor.',
   },
   {
     icon: 'shield' as const,
     kicker: 'Funds you can show',
-    title: 'You have showable funds',
-    body: 'Money in your own name that you can document — not borrowed for a photograph the week before filing.',
+    title: 'You have funds with a paper trail',
+    body: 'Business money and your family’s living funds, in your own name, with a clear source — not borrowed for a photograph the week before filing.',
   },
   {
     icon: 'refresh' as const,
@@ -108,12 +139,28 @@ const FAQS = [
     a: 'Correct — the C11 is a route that needs no employer, no LMIA, and no job offer to chase. You are the applicant and, in effect, the employer. That does not make it easy: it is a real business case argued on “significant benefit” to Canada, with real money behind it.',
   },
   {
+    q: 'What is a C11 work permit?',
+    a: 'The C11 is a Canadian work permit that needs no LMIA and no job offer. It is issued under paragraph 205(a) of the Immigration and Refugee Protection Regulations to a business owner whose work in Canada brings a significant economic, social or cultural benefit. IRCC lists it under business owners seeking only temporary residence.',
+  },
+  {
+    q: 'What percentage of the business do I need to own?',
+    a: 'At least 51%. IRCC’s instructions say a C11 should be considered only when the applicant controls at least 51% of the business. Someone with a smaller share who works in the business applies as an employee instead, which usually means an LMIA.',
+  },
+  {
     q: 'Do I need an IELTS band?',
-    a: 'The C11 does not carry a mandated IELTS band the way some routes do. That doesn’t make language irrelevant — a credible business case still has to hold together — but you are not shut out for missing a fixed score.',
+    a: 'No fixed IELTS score is required for a C11. Language still matters: IRCC asks whether your skills and language abilities will help the business succeed, so a credible business case has to hold together — but you are not shut out for missing a set band.',
   },
   {
     q: 'How much money do I need to show?',
-    a: 'It depends on the business case you’re making. We won’t print an invented figure on a page you’d make a life decision from — we confirm the exact amount and how long it must sit in your own name once we’ve seen your case.',
+    a: 'Two separate amounts. First, funds to support your family: IRCC sets the floor at the low-income cut-off for your family size, for 18 months or the length of your stay if shorter. Second, the business funds your plan needs — there is no official minimum investment; the officer judges whether your money covers your plan and where it came from. We work out both figures with you for your own case.',
+  },
+  {
+    q: 'How long does a C11 work permit last?',
+    a: 'IRCC’s guidance says the work should normally not exceed 18 months. A longer period needs a definite plan for handing over the running of the business, such as hiring a manager.',
+  },
+  {
+    q: 'Can a C11 lead to permanent residence?',
+    a: 'Not on its own. The C11 is a temporary permit for business owners, and IRCC’s guidance directs owners who intend to settle permanently to other routes, such as provincial entrepreneur streams. Some people go on to qualify for permanent residence through a separate application on their own merits — whether that is realistic for you depends on your profile, and we will tell you straight.',
   },
   {
     q: 'What does it cost?',
@@ -133,19 +180,19 @@ export default function WorkPermitPage() {
   return (
     <>
       <PageHero
-        eyebrow="Canada · C11 work permit"
+        eyebrow="Canada · C11 work permit · R205(a)"
         title={
           <>
-            Work in Canada without a{' '}
-            <span className="text-gold-300">job offer or an LMIA</span>
+            C11 work permit: work in Canada{' '}
+            <span className="text-gold-300">without a job offer or an LMIA</span>
           </>
         }
         subtitle={
           <>
-            If you own a business or you’re self-employed in Pakistan, there is a legal route to work
-            in Canada that needs no employer, no LMIA, and no IELTS band. It’s called a{' '}
-            <strong className="font-semibold text-white">C11</strong> — and most agents never file
-            one.
+            If you run a business in Pakistan or the Gulf and will own and run one in Canada, the{' '}
+            <strong className="font-semibold text-white">C11</strong> lets you work there with no
+            employer, no LMIA and no fixed IELTS score. It is argued on one thing — significant
+            benefit to Canada — and most agents never file one properly.
           </>
         }
       >
@@ -172,7 +219,7 @@ export default function WorkPermitPage() {
           {
             big: 'C11',
             label: 'the route',
-            desc: 'No LMIA, no job offer, no IELTS band — a work permit argued on significant benefit to Canada.',
+            desc: 'No LMIA, no job offer, no fixed IELTS score — a work permit argued on significant benefit to Canada.',
           },
           {
             big: 'Canada',
@@ -186,6 +233,41 @@ export default function WorkPermitPage() {
           },
         ]}
       />
+
+      {/* ======================= C11 AT A GLANCE =======================
+          IRCC's own rules, one line each, with the source linked — the block
+          a reader (or an AI answer) can lift as-is. */}
+      <Section tone="paper">
+        <SectionHeading
+          eyebrow="C11 at a glance"
+          title="What the C11 is, in IRCC’s own terms"
+        />
+        <p className="lede mt-6 max-w-3xl">
+          The C11 is an LMIA-exempt Canadian work permit, issued under paragraph 205(a) of the
+          Immigration and Refugee Protection Regulations, for a business owner whose work in Canada
+          will bring a <strong className="font-semibold text-ink-900">significant economic, social or cultural benefit</strong>.
+          IRCC files it under business owners seeking only temporary residence.
+        </p>
+        <dl className="mt-10 grid gap-x-10 gap-y-7 sm:grid-cols-2 lg:grid-cols-3">
+          {GLANCE.map(([term, def]) => (
+            <div key={term} className="border-l-2 border-gold-500/60 pl-5">
+              <dt className="font-serif text-xl">{term}</dt>
+              <dd className="mt-1.5 text-ink-600 text-pretty">{def}</dd>
+            </div>
+          ))}
+        </dl>
+        <p className="mt-8 text-sm text-ink-500">
+          Source:{' '}
+          <a href={IRCC.c11} rel="noopener noreferrer" target="_blank" className="font-semibold text-accent-500 link-underline">
+            IRCC program delivery instructions for C11
+          </a>{' '}
+          (last updated by IRCC on 27 May 2025). Want to settle permanently as a business owner? See{' '}
+          <Link href="/business-immigration" className="font-semibold text-accent-500 link-underline">
+            business immigration to Canada
+          </Link>
+          .
+        </p>
+      </Section>
 
       {/* ===================== WHO IT FITS (qualify-in) ===================== */}
       <Section tone="paper">
@@ -248,7 +330,7 @@ export default function WorkPermitPage() {
             <ul className="mt-6 space-y-4">
               {[
                 ['A genuine business plan for Canada', 'Built around what you actually do — never a template pulled off a shelf.'],
-                ['Funds in your own name', 'Documented over the holding period your case requires. We confirm the exact figure for you.'],
+                ['Funds in your own name', 'Business funds, plus family living funds of at least the low-income cut-off for 18 months — with their source documented. We confirm your exact figures.'],
                 ['Proof you’ve run a business', 'Real evidence you operate the business you claim — registration, dealings, history.'],
                 ['A case that stands up', 'Everything above, assembled so it holds together as one argument to an officer.'],
               ].map(([term, def]) => (
@@ -329,8 +411,50 @@ export default function WorkPermitPage() {
           </p>
         </div>
         <div className="mt-8">
-          <ReviewedBy updated="July 2026" />
+          <ReviewedBy updated="October 2026" />
         </div>
+      </Section>
+
+      {/* ===================== VIDEO ===================== */}
+      <Section tone="paper">
+        <div className="grid gap-10 lg:grid-cols-5 lg:items-center">
+          <div className="lg:col-span-2">
+            <SectionHeading
+              eyebrow="Watch"
+              title="The C11, explained on our YouTube channel"
+              subtitle="Who the route suits, what the business case needs, and what happens with your family — in our own explainer."
+            />
+            <a
+              href={`https://www.youtube.com/watch?v=${VIDEO.id}`}
+              rel="noopener"
+              target="_blank"
+              className="tap mt-6 inline-flex font-semibold text-accent-500 link-underline"
+            >
+              Watch on YouTube →
+            </a>
+          </div>
+          <div className="lg:col-span-3">
+            <LiteYouTube id={VIDEO.id} title={VIDEO.title} />
+          </div>
+        </div>
+        <script
+          type="application/ld+json"
+          // Static facts about the firm's own video — no user input.
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'VideoObject',
+              name: VIDEO.title,
+              description:
+                'An explainer on Canada’s C11 work permit for business owners, from the Tashfeen Immigration Solutions YouTube channel.',
+              thumbnailUrl: `https://i.ytimg.com/vi/${VIDEO.id}/hqdefault.jpg`,
+              uploadDate: VIDEO.uploadDate,
+              embedUrl: `https://www.youtube.com/embed/${VIDEO.id}`,
+              url: `https://www.youtube.com/watch?v=${VIDEO.id}`,
+              publisher: { '@id': `${site.url}/#organization` },
+            }),
+          }}
+        />
       </Section>
 
       {/* ===================== FAQ ===================== */}

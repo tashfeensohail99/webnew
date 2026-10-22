@@ -115,7 +115,7 @@ export const NAV: NavGroup[] = [
       {
         heading: 'Without a Canadian employer',
         items: [
-          { href: '/work-permit-canada', label: 'Owner-operator route', status: 'live', blurb: 'Running your own business rather than being hired' },
+          { href: '/work-permit-canada', label: 'C11 work permit', status: 'live', blurb: 'Run your own business — no job offer or LMIA' },
           { href: '/work-permits/lmia-exempt', label: 'LMIA-exempt work permits', status: 'live' },
           { href: '/work-permits/spousal-open-work-permit', label: 'Spousal open work permit', status: 'live' },
           { href: '/work-permits/international-experience-canada', label: 'International Experience Canada', status: 'live' },

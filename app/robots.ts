@@ -14,7 +14,25 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       { userAgent: '*', allow: '/' },
-      { userAgent: ['GPTBot', 'ClaudeBot', 'PerplexityBot', 'Google-Extended'], allow: '/' },
+      // Named explicitly so the intent is unmistakable. OAI-SearchBot and
+      // ChatGPT-User are what put a site in ChatGPT's live search answers
+      // (GPTBot is training); Bingbot matters too, because ChatGPT search
+      // leans on Bing's index.
+      {
+        userAgent: [
+          'OAI-SearchBot',
+          'ChatGPT-User',
+          'GPTBot',
+          'ClaudeBot',
+          'Claude-SearchBot',
+          'PerplexityBot',
+          'Perplexity-User',
+          'Google-Extended',
+          'Applebot-Extended',
+          'Bingbot',
+        ],
+        allow: '/',
+      },
     ],
     sitemap: `${site.url}/sitemap.xml`,
     host: site.url,

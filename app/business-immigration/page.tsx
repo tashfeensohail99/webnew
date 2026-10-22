@@ -28,7 +28,7 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * numbers change; every one of them is linked to IRCC or the province instead.
  */
 export const metadata: Metadata = {
-  title: 'Business and Investment Immigration to Canada',
+  title: 'Canada Business Immigration from Pakistan',
   description:
     'An honest map: the Start-Up Visa and Self-Employed Persons Program are closed to new applicants, what remains, and checking current status with IRCC.',
   alternates: { canonical: '/business-immigration' },
@@ -59,9 +59,11 @@ const LANDSCAPE = [
     icon: 'permit' as const,
     kicker: 'Temporary',
     title: 'Work permits for business owners',
-    body: 'Owners who will actively run a Canadian business generally come through the ordinary work-permit system, either with a labour market assessment or under a significant-benefit exemption. Whichever applies, it is a temporary permit — not permanent residence.',
+    body: 'Owners who will actively run a Canadian business generally come through the ordinary work-permit system, either with a labour market assessment or under the significant-benefit exemption known as the C11. Whichever applies, it is a temporary permit — not permanent residence.',
+    href: '/work-permit-canada',
+    cta: 'The C11 work permit, explained',
   },
-];
+] as { icon: 'doc' | 'building' | 'permit'; kicker: string; title: string; body: string; href?: string; cta?: string }[];
 
 const STEPS = [
   {
@@ -206,7 +208,7 @@ export default function BusinessImmigrationPage() {
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {LANDSCAPE.map((l) => (
-            <FeatureCard key={l.title} icon={<Icon name={l.icon} />} kicker={l.kicker} title={l.title}>
+            <FeatureCard key={l.title} icon={<Icon name={l.icon} />} kicker={l.kicker} title={l.title} href={l.href} cta={l.cta}>
               {l.body}
             </FeatureCard>
           ))}

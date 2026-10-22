@@ -227,9 +227,33 @@ export function Callout({ children, title }: { children: ReactNode; title?: Reac
 
 /* ----------------------------------- FAQ ----------------------------------- */
 
+/**
+ * Also emits FAQPage JSON-LD for every item whose answer is plain text — the
+ * form AI search (ChatGPT, Perplexity, Google's AI answers) and Google parse
+ * most reliably. Answers written as JSX (with links) are left out of the
+ * markup rather than flattened. One FAQ per page, so one FAQPage per page.
+ */
 export function FAQ({ items }: { items: { q: string; a: ReactNode }[] }) {
+  const plain = items.filter((it): it is { q: string; a: string } => typeof it.a === 'string');
   return (
     <div className="divide-y divide-rule overflow-hidden rounded-2xl border border-rule bg-paper shadow-soft">
+      {plain.length ? (
+        <script
+          type="application/ld+json"
+          // Author-written copy from the page itself — no user input.
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: plain.map((it) => ({
+                '@type': 'Question',
+                name: it.q,
+                acceptedAnswer: { '@type': 'Answer', text: it.a },
+              })),
+            }),
+          }}
+        />
+      ) : null}
       {items.map((it, i) => (
         <details key={i} className="group px-6 py-5 [&_summary::-webkit-details-marker]:hidden">
           <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-serif text-lg text-ink-900">
