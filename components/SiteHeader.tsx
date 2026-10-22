@@ -127,8 +127,13 @@ export function SiteHeader({ display, digits }: { display: string; digits: strin
                       The `pt-6` is on the TRANSPARENT positioner, not the card,
                       so it doubles as a hover bridge: the pointer can cross the
                       gap between trigger and card without the menu closing. */}
+                  {/* content-visibility: hidden while closed — eight panels
+                      of links and icons sit in front of the hero in the DOM,
+                      and laying them out at load was paid for in mobile LCP.
+                      Same effect as `invisible` for focus and the a11y tree;
+                      the links stay in the HTML for crawlers. */}
                   <div
-                    className={`invisible absolute z-40 opacity-0 transition-[opacity,transform] duration-200 [transform:translateY(-4px)] group-focus-within:visible group-focus-within:opacity-100 group-focus-within:[transform:none] group-hover:visible group-hover:opacity-100 group-hover:[transform:none] ${
+                    className={`invisible absolute z-40 opacity-0 transition-[opacity,transform] duration-200 [content-visibility:hidden] [transform:translateY(-4px)] group-focus-within:visible group-focus-within:opacity-100 group-focus-within:[content-visibility:visible] group-focus-within:[transform:none] group-hover:visible group-hover:opacity-100 group-hover:[content-visibility:visible] group-hover:[transform:none] ${
                       wide
                         ? 'left-0 right-0 top-full'
                         : 'left-0 top-full w-[19rem] pt-6 last:left-auto last:right-0'

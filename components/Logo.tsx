@@ -21,8 +21,10 @@
 
 type Variant = 'dark' | 'light';
 
-/** Natural dimensions of /public/logo.png, used so Next sizes it without jank. */
-const LOGO_PX = { w: 1080, h: 348 };
+/** Natural dimensions of /public/logo.png, used so Next sizes it without jank.
+ *  Downscaled from the firm's 1080×348 original to 3× its 36px display height
+ *  (34 KB → 11 KB) — sharp on any phone, without the bytes Lighthouse flagged. */
+const LOGO_PX = { w: 348, h: 112 };
 
 export function Logo({
   variant = 'dark',

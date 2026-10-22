@@ -487,14 +487,30 @@ img, svg { max-width: 100%; height: auto; }
   }
 }
 
-/* Hero entrance: the supporting lines rise in after the headline. The
-   headline itself never animates — it is the page's largest paint, and
-   delaying it would cost Core Web Vitals for a flourish. */
+/* Hero entrance: the CTA row and trust bar rise in after the text. The
+   headline and the lede never animate — on a phone either can be the page's
+   largest paint, and an element that starts at opacity 0 makes Lighthouse
+   time LCP after every script on the page (it measured 2.8 s that way). */
 @keyframes hero-rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: no-preference) {
   .hero-rise { animation: hero-rise .7s cubic-bezier(.2, .7, .2, 1) both; }
   .hero-rise-2 { animation-delay: .12s; }
   .hero-rise-3 { animation-delay: .24s; }
+}
+
+/* Rendering budget for first paint. Lighthouse measured ~770 ms of style &
+   layout before the hero could paint on a mid-range phone — most of it for
+   content nobody can see yet. `content-visibility: auto` lets the browser skip
+   off-screen sections until they approach the viewport (the content stays in
+   the HTML for crawlers and find-in-page); `contain-intrinsic-size: auto`
+   reserves a stand-in height, then remembers the real one. */
+.cv-auto { content-visibility: auto; contain-intrinsic-size: auto 900px; }
+
+/* The hero globe arrives after hydration (client-only, desktop-only) — fade it
+   in rather than letting it pop. Its box is reserved, so this is cosmetic. */
+@keyframes globe-in { from { opacity: 0; transform: scale(.97); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: no-preference) {
+  .globe-in { animation: globe-in .6s cubic-bezier(.2, .7, .2, 1) both; }
 }
 
 /* "How it works" numerals: gold fading to nothing, so the number is a shape

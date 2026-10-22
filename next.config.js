@@ -47,7 +47,6 @@ const nextConfig = {
   // `node .next/standalone/server.js`, copying public/ and .next/static in.
   typescript: { ignoreBuildErrors: true },
   eslint: { ignoreDuringBuilds: true },
-
   // Keep the HTML off long-lived CDN caches. Next's default for fully static
   // pages is `s-maxage=31536000`, which Railway's edge honoured for a year and
   // made deploys appear not to land. Revalidate hourly, serve stale briefly.
@@ -60,6 +59,13 @@ const nextConfig = {
         ],
       },
     ];
+  },
+
+  // Crawlers and older browsers request /favicon.ico directly, whatever the
+  // <link rel="icon"> says. Serve the generated app/icon.tsx PNG there rather
+  // than a 404 (which was also the console error Lighthouse flagged).
+  async rewrites() {
+    return [{ source: '/favicon.ico', destination: '/icon' }];
   },
 
   async redirects() {

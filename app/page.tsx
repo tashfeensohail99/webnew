@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { WhatsAppCta } from '@/components/WhatsAppCta';
 import { WhatsAppFloat } from '@/components/WhatsAppFloat';
 import { DestinationGrid } from '@/components/DestinationGrid';
-import { HeroCanada } from '@/components/HeroCanada';
+import { HeroGlobe } from '@/components/HeroGlobe';
 import { SplitSection, FAQ, Icon } from '@/components/ui';
 import { site, SERVICE, leadLawyer } from '@/lib/site';
 
@@ -196,7 +196,7 @@ export default function HomePage() {
               Canadian immigration, handled by{' '}
               <span className="text-gold-300">real lawyers.</span>
             </h1>
-            <p className="hero-rise lede mt-6 max-w-2xl !text-ink-200">
+            <p className="lede mt-6 max-w-2xl !text-ink-200">
               Offices in Pakistan and Canada. The consultation is free, and you leave with a written
               summary of where you actually stand — including if the honest answer is don’t apply.
             </p>
@@ -237,9 +237,11 @@ export default function HomePage() {
           {/* Globe column — hidden below lg where the headline needs the full
               width. From lg up it is a real part of the grid, so the headline
               never fights it. The negative mr allows the globe to bleed a
-              little past the content container's right edge for presence. */}
-          <div className="relative hidden lg:block lg:mr-[-4rem] lg:scale-[1.06] xl:mr-[-3rem] xl:scale-110">
-            <HeroCanada />
+              little past the content container's right edge for presence.
+              aspect-square reserves the globe's box before it loads
+              (HeroGlobe is client-only), so its arrival shifts nothing. */}
+          <div className="relative hidden aspect-square lg:block lg:mr-[-4rem] lg:scale-[1.06] xl:mr-[-3rem] xl:scale-110">
+            <HeroGlobe />
           </div>
         </div>
       </section>
@@ -272,7 +274,7 @@ export default function HomePage() {
       </nav>
 
       {/* ===================== GLOBAL DESTINATIONS ===================== */}
-      <section className="bg-paper">
+      <section className="cv-auto bg-paper">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:py-24">
           <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
             <div>
@@ -374,7 +376,7 @@ export default function HomePage() {
       </section>
 
       {/* ========================= HOW IT WORKS ========================= */}
-      <section className="reveal border-y border-rule bg-paper-alt">
+      <section className="cv-auto reveal border-y border-rule bg-paper-alt">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:py-24">
           <div className="max-w-2xl">
             <p className="eyebrow">How it works</p>
@@ -401,7 +403,7 @@ export default function HomePage() {
           page says — it was previously the quietest element on it. Bigger
           numerals, more air, and a rule that reads as a deliberate divider
           rather than a leftover border. */}
-      <section className="relative overflow-hidden bg-navy text-white">
+      <section className="cv-auto relative overflow-hidden bg-navy text-white">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:py-24">
           <div className="grid gap-10 sm:grid-cols-3 sm:gap-8">
             {[
@@ -425,7 +427,7 @@ export default function HomePage() {
           The homepage linked to 11 pages before this — so the 70-odd guides
           behind it got almost none of its weight, and a visitor who didn't
           use the menu never found them. Grouped the way people ask. */}
-      <section className="reveal mx-auto max-w-6xl px-4 py-24 sm:py-28">
+      <section className="cv-auto reveal mx-auto max-w-6xl px-4 py-24 sm:py-28">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-2xl">
             <p className="eyebrow">Free guides</p>
@@ -459,7 +461,7 @@ export default function HomePage() {
       </section>
 
       {/* ========================== FREE TOOLS ========================== */}
-      <section className="reveal border-y border-rule bg-paper-alt">
+      <section className="cv-auto reveal border-y border-rule bg-paper-alt">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:py-24">
           <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
             <div className="max-w-2xl">
@@ -488,7 +490,7 @@ export default function HomePage() {
       </section>
 
       {/* ======================= HONESTY BLOCK ======================= */}
-      <section className="mx-auto max-w-6xl px-4 py-20 sm:py-24">
+      <section className="cv-auto mx-auto max-w-6xl px-4 py-20 sm:py-24">
         <div className="card overflow-hidden md:grid md:grid-cols-5">
           <div className="border-b border-rule bg-paper-alt p-8 md:col-span-2 md:border-b-0 md:border-r md:p-10">
             <p className="eyebrow">The honest bit</p>
@@ -519,7 +521,7 @@ export default function HomePage() {
       </section>
 
       {/* ========================== WHY US ========================== */}
-      <section className="border-t border-rule bg-paper-alt">
+      <section className="cv-auto border-t border-rule bg-paper-alt">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:py-24">
           <div className="max-w-2xl">
             <p className="eyebrow">Why people choose us</p>
@@ -527,26 +529,29 @@ export default function HomePage() {
               The difference is who reads your file
             </h2>
           </div>
-          <dl className="mt-12 grid gap-x-10 gap-y-8 sm:grid-cols-2">
+          {/* A list, not a <dl>: the check icon and the wrapper div sat
+              between <dl> and its <dt>/<dd>, which is invalid markup and the
+              one accessibility failure Lighthouse reported on this page. */}
+          <ul className="mt-12 grid gap-x-10 gap-y-8 sm:grid-cols-2">
             {WHY.map(([term, def]) => (
-              <div key={term} className="flex gap-4">
+              <li key={term} className="flex gap-4">
                 <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gold-500 text-ink-950">
                   <CheckIcon />
                 </span>
                 <div>
-                  <dt className="font-serif text-xl">{term}</dt>
-                  <dd className="mt-1.5 text-ink-600 text-pretty">{def}</dd>
+                  <h3 className="font-serif text-xl">{term}</h3>
+                  <p className="mt-1.5 text-ink-600 text-pretty">{def}</p>
                 </div>
-              </div>
+              </li>
             ))}
-          </dl>
+          </ul>
         </div>
       </section>
 
       {/* =========================== OFFICES ===========================
           Name, address and hours on the homepage, from the same record the
           LocalBusiness JSON-LD uses — consistent NAP is most of local SEO. */}
-      <section className="reveal mx-auto max-w-6xl px-4 py-24 sm:py-28">
+      <section className="cv-auto reveal mx-auto max-w-6xl px-4 py-24 sm:py-28">
         <div className="max-w-2xl">
           <p className="eyebrow">Visit us</p>
           <h2 className="display-2 mt-4">Real offices you can walk into</h2>
@@ -577,7 +582,7 @@ export default function HomePage() {
       </section>
 
       {/* ============================== FAQ ============================== */}
-      <section className="reveal border-t border-rule bg-paper-alt">
+      <section className="cv-auto reveal border-t border-rule bg-paper-alt">
         <div className="mx-auto max-w-4xl px-4 py-20 sm:py-24">
           <p className="eyebrow">Questions</p>
           <h2 className="display-2 mt-4">What people ask us first</h2>
@@ -603,7 +608,7 @@ export default function HomePage() {
       </section>
 
       {/* ========================= FINAL CTA ========================= */}
-      <section className="relative overflow-hidden bg-hero text-white">
+      <section className="cv-auto relative overflow-hidden bg-hero text-white">
         <MonogramWatermark />
         <div className="relative mx-auto max-w-3xl px-4 py-20 text-center sm:py-24">
           <p className="eyebrow eyebrow--light justify-center">Start with a conversation</p>
