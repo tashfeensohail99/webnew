@@ -332,20 +332,8 @@ export function Icon({ name, className = 'h-6 w-6' }: { name: IconName; classNam
       return (<svg {...p}><circle cx="12" cy="8" r="4" /><path d="M4 21c0-4 4-6 8-6s8 2 8 6" /></svg>);
     case 'calculator':
       return (<svg {...p}><rect x="4" y="3" width="16" height="18" rx="2" /><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01" /></svg>);
-    /* Social glyphs — drawn in the same stroked style as the rest of the set so
-       the footer reads as one visual family rather than a strip of brand marks.
-       Each one is simplified to its silhouette: it has to be recognisable at
-       20px without being a trademark reproduction. */
-    case 'facebook':
-      return (<svg {...p}><path d="M15 3h-2a4 4 0 0 0-4 4v3H6v4h3v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h2V3z" /></svg>);
-    case 'instagram':
-      return (<svg {...p}><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none" /></svg>);
-    case 'linkedin':
-      return (<svg {...p}><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M8 10v7M8 7v.01M12 17v-5a2 2 0 0 1 4 0v5M12 10v7" /></svg>);
-    case 'youtube':
-      return (<svg {...p}><rect x="2.5" y="6" width="19" height="12" rx="3" /><path d="M10 9.5v5l5-2.5-5-2.5z" /></svg>);
-    case 'tiktok':
-      return (<svg {...p}><path d="M14 3v10.5a3.5 3.5 0 1 1-3.5-3.5" /><path d="M14 3c0 2.8 2.2 5 5 5" /></svg>);
+    /* Social marks live in components/SocialIcon.tsx — full-colour brand
+       tiles, at the firm's request, not stroked glyphs from this set. */
     default:
       return (<svg {...p}><circle cx="12" cy="12" r="9" /></svg>);
   }
@@ -353,5 +341,4 @@ export function Icon({ name, className = 'h-6 w-6' }: { name: IconName; classNam
 
 export type IconName =
   | 'permit' | 'plane' | 'refresh' | 'scale' | 'shield' | 'doc'
-  | 'globe' | 'building' | 'check' | 'chat' | 'star' | 'user' | 'calculator'
-  | 'facebook' | 'instagram' | 'linkedin' | 'youtube' | 'tiktok';
+  | 'globe' | 'building' | 'check' | 'chat' | 'star' | 'user' | 'calculator';

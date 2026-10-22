@@ -412,10 +412,13 @@ img, svg { max-width: 100%; height: auto; }
   stroke-width: 1.8;
   stroke-opacity: .98;
   stroke-linejoin: round;
-  /* Raised plate: the SVG bevel/cast-shadow filter (defined in the component)
-     chained with the red glow. */
-  filter: url(#hc-raise) drop-shadow(0 0 12px rgba(254, 76, 113, .5));
 }
+/* Raised plate: the SVG bevel/cast-shadow filter (defined in the component)
+   chained with the red glow. It sits on the GROUP — red base, the flag's
+   white band and maple leaf, and the outline — so the bevel is computed from
+   the whole landmass and lights the white parts exactly like the red. */
+.canada-plate { filter: url(#hc-raise) drop-shadow(0 0 12px rgba(254, 76, 113, .5)); }
+.canada-outline { fill: none; stroke: #ffd8e1; stroke-width: 1.8; stroke-opacity: .98; stroke-linejoin: round; }
 
 .land-relief { mix-blend-mode: soft-light; opacity: .62; pointer-events: none; }
 
@@ -423,8 +426,6 @@ img, svg { max-width: 100%; height: auto; }
 .ocean-label  { fill: #9bc9fb; font-size: 17px;   font-weight: 650; letter-spacing: 3px; }
 .water-label  { fill: #d0e2fa; font-size: 14px;   font-weight: 650; letter-spacing: 2px; opacity: .9; }
 .region-label { fill: #c4d6ec; font-size: 13px;   font-weight: 700; letter-spacing: 1.5px; opacity: .78; }
-
-.map-flag { opacity: .91; filter: drop-shadow(0 0 22px rgba(255, 255, 255, .18)); pointer-events: none; }
 
 .city { outline: none; cursor: default; }
 .city-dot { fill: #fff; stroke: #0b1522; stroke-width: 1.6; }

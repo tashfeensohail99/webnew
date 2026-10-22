@@ -7,7 +7,7 @@ import { site } from '@/lib/site';
 import { Logo } from '@/components/Logo';
 import { StructuredData } from '@/components/StructuredData';
 import { SiteHeader } from '@/components/SiteHeader';
-import { Icon, type IconName } from '@/components/ui';
+import { SocialIcon } from '@/components/SocialIcon';
 import { getWhatsAppChannel } from '@/lib/wa-channel';
 
 /* Premium type pairing: Fraunces (a modern, high-contrast serif) for display,
@@ -78,7 +78,9 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
                   rather than a stray strip of icons under the logo. rel="me"
                   tells reader apps this profile belongs to this site, which is
                   what some crawlers use alongside schema.org sameAs. Opens in a
-                  new tab (noopener for safety) since every one leaves origin. */}
+                  new tab (noopener for safety) since every one leaves origin.
+                  The marks are the networks' own full-colour tiles (the firm
+                  asked for colour, not the stroked house glyphs). */}
               {site.social.length > 0 ? (
                 <div className="mt-7">
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gold-400">
@@ -93,9 +95,9 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
                           title={s.label}
                           rel="me noopener"
                           target="_blank"
-                          className="tap flex h-10 w-10 items-center justify-center rounded-full ring-1 ring-white/15 text-ink-300 transition-colors hover:bg-gold-500 hover:text-ink-950 hover:ring-gold-500"
+                          className="tap rounded-xl transition-transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2"
                         >
-                          <Icon name={s.icon as IconName} className="h-5 w-5" />
+                          <SocialIcon name={s.icon} className="h-10 w-10 drop-shadow-sm" />
                         </a>
                       </li>
                     ))}
