@@ -45,17 +45,16 @@ export function HeroCanada({ className = '' }: { className?: string }) {
 
 <defs>
   <radialGradient id="ocean-grad" cx="38%" cy="30%" r="80%">
-    <stop offset="0%" stopColor="#484b55"/><stop offset="30%" stopColor="#2c2e36"/><stop offset="62%" stopColor="#191a20"/><stop offset="85%" stopColor="#0c0d11"/><stop offset="100%" stopColor="#050609"/>
+    <stop offset="0%" stopColor="#3f86e0"/><stop offset="30%" stopColor="#1e5bbd"/><stop offset="62%" stopColor="#0d3176"/><stop offset="85%" stopColor="#071d53"/><stop offset="100%" stopColor="#030f30"/>
   </radialGradient>
-  {/* Atmosphere limb — a warm white/gold halo hugging the sphere's edge and
+  {/* Atmosphere limb — a bright blue halo hugging the sphere's edge and
       fading outward, so the globe reads as a lit body in space instead of a
-      dark disc dissolving into the dark hero. White+gold, not blue, to match
-      the requested monochrome-with-gold treatment. */}
+      dark disc dissolving into the dark hero. */}
   <radialGradient id="hc-atmo" cx="50%" cy="50%" r="50%">
-    <stop offset="80%" stopColor="#f3e6c8" stopOpacity="0"/>
-    <stop offset="88%" stopColor="#f4e6c2" stopOpacity="0.52"/>
-    <stop offset="92.5%" stopColor="#ffffff" stopOpacity="0.42"/>
-    <stop offset="100%" stopColor="#d8b872" stopOpacity="0"/>
+    <stop offset="80%" stopColor="#57b6ff" stopOpacity="0"/>
+    <stop offset="88%" stopColor="#6cc0ff" stopOpacity="0.55"/>
+    <stop offset="92.5%" stopColor="#8fd3ff" stopOpacity="0.38"/>
+    <stop offset="100%" stopColor="#3f8fe0" stopOpacity="0"/>
   </radialGradient>
   {/* Terminator — the main volume cue. Darkens the far (lower-right) side
       hard so the sphere reads as lit from the upper-left. Offset centre +
@@ -76,14 +75,13 @@ export function HeroCanada({ className = '' }: { className?: string }) {
   </radialGradient>
   {/* Crisp inner rim highlight on the lit edge. */}
   <radialGradient id="hc-rim" cx="50%" cy="50%" r="50%">
-    <stop offset="94%" stopColor="#ffffff" stopOpacity="0"/>
-    <stop offset="98.5%" stopColor="#ffffff" stopOpacity="0.55"/>
-    <stop offset="100%" stopColor="#ffffff" stopOpacity="0"/>
+    <stop offset="94%" stopColor="#bfe6ff" stopOpacity="0"/>
+    <stop offset="98.5%" stopColor="#d8f0ff" stopOpacity="0.5"/>
+    <stop offset="100%" stopColor="#d8f0ff" stopOpacity="0"/>
   </radialGradient>
-  {/* Surrounding continents: light grey (white-and-dark palette), not blue. */}
-  <linearGradient id="land-grad" x1="0" y1="0" x2=".9" y2="1"><stop offset="0%" stopColor="#dadee5"/><stop offset="100%" stopColor="#9ba2ae"/></linearGradient>
+  <linearGradient id="land-grad" x1="0" y1="0" x2=".9" y2="1"><stop offset="0%" stopColor="#2f5695"/><stop offset="100%" stopColor="#142a57"/></linearGradient>
   <linearGradient id="canada-grad" x1="0" y1="0" x2=".65" y2="1"><stop offset="0%" stopColor="#ff5564"/><stop offset="48%" stopColor="#f52647"/><stop offset="100%" stopColor="#b30e2a"/></linearGradient>
-  <radialGradient id="globe-shine" cx="30%" cy="21%" r="44%"><stop offset="0" stopColor="#ffffff" stopOpacity=".5"/><stop offset="22%" stopColor="#f3ead6" stopOpacity=".16"/><stop offset="52%" stopColor="#ffffff" stopOpacity="0"/><stop offset="100%" stopColor="#ffffff" stopOpacity="0"/></radialGradient>
+  <radialGradient id="globe-shine" cx="30%" cy="21%" r="44%"><stop offset="0" stopColor="#ffffff" stopOpacity=".5"/><stop offset="22%" stopColor="#d4e9ff" stopOpacity=".16"/><stop offset="52%" stopColor="#ffffff" stopOpacity="0"/><stop offset="100%" stopColor="#ffffff" stopOpacity="0"/></radialGradient>
   {/* A small, tight glint — the hard reflection that sells "glossy sphere". */}
   <radialGradient id="hc-glint" cx="50%" cy="50%" r="50%"><stop offset="0" stopColor="#ffffff" stopOpacity=".85"/><stop offset="45%" stopColor="#ffffff" stopOpacity=".18"/><stop offset="100%" stopColor="#ffffff" stopOpacity="0"/></radialGradient>
   <filter id="map-glow" x="-15%" y="-15%" width="130%" height="130%"><feGaussianBlur stdDeviation="6"/></filter>
