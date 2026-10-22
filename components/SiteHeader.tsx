@@ -63,7 +63,7 @@ export function SiteHeader({ display, digits }: { display: string; digits: strin
             <Logo variant="dark" />
           </Link>
 
-          <ul className="mr-3 hidden items-center desknav:flex xl:mr-6">
+          <ul className="mr-3 hidden items-center desknav:flex xl:mr-4">
             {groups.map((g) => {
               const flat = g.columns.flatMap((c) => c.items);
               const single = flat.length === 1 && g.columns.length === 1 && !g.columns[0].heading;
@@ -89,11 +89,22 @@ export function SiteHeader({ display, digits }: { display: string; digits: strin
 
               return (
                 <li key={g.label} className={`group ${wide ? 'static' : 'relative'}`}>
+                  {/* Label icons only from xl up. The row is a fixed width
+                      from there (max-w-7xl) with 130px spare, and eight 14px
+                      icons fit only because the label padding drops from
+                      px-3.5 to px-3 at the same breakpoint. Below xl there is
+                      no spare width at all (0px at the 66rem desknav floor),
+                      so adding them there would wrap the header.
+                      `whitespace-nowrap` + px-2 below xl: at 66rem "Canada PR"
+                      used to break onto two lines and make the bar taller. */}
                   <button
                     type="button"
                     aria-haspopup="true"
-                    className="flex items-center gap-1 px-2.5 py-2 text-sm font-medium text-ink-600 transition-colors group-hover:text-ink-900 group-focus-within:text-ink-900 xl:px-3.5"
+                    className="flex items-center gap-1 whitespace-nowrap px-2 py-2 text-sm font-medium text-ink-600 transition-colors group-hover:text-ink-900 group-focus-within:text-ink-900 xl:px-3"
                   >
+                    {g.href && hasNavIcon(g.href) ? (
+                      <NavIcon href={g.href} className="hidden h-3.5 w-3.5 shrink-0 text-gold-600 xl:block" />
+                    ) : null}
                     {g.label}
                     <svg
                       viewBox="0 0 12 12"
