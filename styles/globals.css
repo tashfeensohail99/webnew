@@ -83,8 +83,8 @@
 
   /* ---- Surfaces: warm, not clinical ---- */
   --color-paper:     #ffffff;
-  --color-paper-alt: #f7f5ef;   /* warm ivory for alternating bands */
-  --color-rule:      #e6e2d8;   /* warm hairline */
+  --color-paper-alt: #f4f7fb;   /* cool near-white for alternating bands — "white white", not ivory */
+  --color-rule:      #e1e7ef;   /* cool hairline */
 
   --font-sans:  var(--font-inter), system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --font-serif: var(--font-fraunces), Georgia, 'Times New Roman', serif;
@@ -137,9 +137,11 @@ html {
 html[data-theme="dark"] {
   color-scheme: dark;
   color: #e7eef7;
-  --color-paper:     #0b1522;
-  --color-paper-alt: #111e2f;
-  --color-rule:      rgba(205, 219, 238, 0.14);
+  /* Dark = the brand NAVY, visibly blue — not a near-black. The hero/footer
+     gradients bottom out darker (ink-950), so they still read as bands. */
+  --color-paper:     #0e1f36;
+  --color-paper-alt: #132846;
+  --color-rule:      rgba(170, 195, 230, 0.18);
   /* The text golds read too dark on a dark ground — lift them. The
      decorative gold-400/500 (button fills, rules) stay as they are. */
   --color-gold-600:   #dcc07f;
@@ -164,11 +166,13 @@ html[data-theme="dark"] .text-ink-400 { color: #8f9eb2; }
    opacity and border variants) darkens at once. These shades are only ever
    backgrounds, never text, so flipping them is safe. */
 html[data-theme="dark"] {
-  --color-gold-50:    #241d10;
-  --color-emerald-50: #0f2019;
-  --color-amber-50:   #241a09;
-  --color-rose-50:    #2a1418;
-  --color-rose-200:   #5b2530;
+  /* Translucent tints rather than fixed browns, so they take on whatever navy
+     surface sits beneath them (page, band or card). */
+  --color-gold-50:    rgba(195, 161, 92, 0.34);
+  --color-emerald-50: rgba(16, 185, 129, 0.16);
+  --color-amber-50:   rgba(245, 158, 11, 0.16);
+  --color-rose-50:    rgba(244, 63, 94, 0.16);
+  --color-rose-200:   rgba(244, 63, 94, 0.4);
 }
 /* The dark-palette TEXT that sits on those tints must lighten to stay legible
    now that the tint is dark. */
@@ -178,20 +182,20 @@ html[data-theme="dark"] .text-rose-800 { color: #fecdd3; }
 html[data-theme="dark"] .text-rose-500 { color: #fb7185; }
 /* ink-100 is LIGHT text on dark bands (can't flip its token); only its use as
    a progress-track background needs darkening. */
-html[data-theme="dark"] .bg-ink-100 { background-color: #1b2a3d; }
+html[data-theme="dark"] .bg-ink-100 { background-color: #112340; } /* recessed below the #1a3353 card */
 
 /* Custom classes that read ink/gold tokens directly in their own CSS. */
 html[data-theme="dark"] .lede { color: #c3d0df; }
 html[data-theme="dark"] .btn-ghost { color: #dce4ef; }
 html[data-theme="dark"] .btn-ghost:hover { background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.3); }
-html[data-theme="dark"] .btn-navy { background: #1b2d44; }
-html[data-theme="dark"] .btn-navy:hover { background: #22364f; }
+html[data-theme="dark"] .btn-navy { background: #214068; }
+html[data-theme="dark"] .btn-navy:hover { background: #294f80; }
 
 /* Cards lift off the dark page with a lighter surface + hairline,
    since the light-mode drop shadow is invisible on a dark ground. */
 html[data-theme="dark"] .card {
-  background: #15243a;
-  border-color: rgba(255, 255, 255, 0.1);
+  background: #1a3353;
+  border-color: rgba(190, 210, 240, 0.14);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 18px 40px -24px rgba(0, 0, 0, 0.6);
 }
 html[data-theme="dark"] .card:hover { border-color: var(--color-gold-400); }
@@ -203,7 +207,7 @@ html[data-theme="dark"] .prose-lux h3,
 html[data-theme="dark"] .prose-lux strong { color: #f1f5fb; }
 html[data-theme="dark"] .prose-lux a { color: #dcc07f; }
 
-html[data-theme="dark"] ::selection { background: var(--color-gold-500); color: #0b1522; }
+html[data-theme="dark"] ::selection { background: var(--color-gold-500); color: #0e1f36; }
 
 /* The header logo is the navy lockup (for the light bar). On the dark bar it
    must read white — invert it, matching what the footer's light variant does. */
