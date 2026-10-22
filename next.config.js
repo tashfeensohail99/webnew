@@ -40,10 +40,27 @@ const LEGACY_REDIRECTS = [
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // Standalone output for Docker, same as apps/frontend.
-  output: 'standalone',
+  // NOTE: `output: 'standalone'` was removed. Railway builds this with Railpack
+  // (there is no Dockerfile) and starts it with `next start`, which warns and
+  // misbehaves under standalone output — the runtime served a stale build. If a
+  // Docker image is reintroduced, re-add standalone AND set the start command to
+  // `node .next/standalone/server.js`, copying public/ and .next/static in.
   typescript: { ignoreBuildErrors: true },
   eslint: { ignoreDuringBuilds: true },
+
+  // Keep the HTML off long-lived CDN caches. Next's default for fully static
+  // pages is `s-maxage=31536000`, which Railway's edge honoured for a year and
+  // made deploys appear not to land. Revalidate hourly, serve stale briefly.
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          { key: 'Cache-Control', value: 'public, max-age=0, s-maxage=3600, stale-while-revalidate=86400' },
+        ],
+      },
+    ];
+  },
 
   async redirects() {
     // permanent:true emits 308, not 301. Google treats the two identically for
