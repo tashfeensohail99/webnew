@@ -36,20 +36,20 @@ wa.me/92XXXXXXXXXX?text=Hi, I'd like … [Ref: WP-7K2M]
 ```
 
 That token is the only thing that survives the hop from browser → Meta → our
-webhook, which sees just the sender's number and the message text. The CRM parses
-it on the first inbound, stamps `sourceChannel='website'` + `serviceInterest` +
-`targetCountry`, then hands off to the existing round-robin. Without it, every
-website lead is indistinguishable from cold WhatsApp traffic and the site looks
-like it does nothing.
+webhook, which sees just the sender's number and the message text. When a NEW
+contact's first message carries it, the CRM creates the lead with
+`sourceChannel='whatsapp-website'`, `serviceInterest` from the prefix and a note
+with the ref, then the normal WhatsApp round-robin assigns it (contacts already in
+the CRM are left as they are). Without it, every website lead is indistinguishable
+from cold WhatsApp traffic and the site looks like it does nothing.
 
 Token prefixes map to canonical CRM service codes (`lib/wa.ts`):
 `WP-` work permit · `VV-` visit visa · `JR-` refusal/judicial review · `SV-` study.
 
-> **Status, checked 2026-10-22 against the CRM repo (`tashfeensohail99/tafai`):**
-> the webhook does **not** parse this token yet. A website WhatsApp chat lands in
-> the CRM inbox as an ordinary `sourceChannel='whatsapp'` lead; the `[Ref: …]`
-> text is only visible in its first message. The consultation form
-> (`POST /public/leads/website`) is attributed correctly — source `WEBSITE`,
+> Implemented in the CRM by `tashfeensohail99/tafai#475` (live 2026-10-22). The
+> Sales UI shows these leads under its **Website** source; the admin leads page
+> lists `whatsapp-website` as its own source. The consultation form
+> (`POST /public/leads/website`) is a separate path — source `WEBSITE`,
 > round-robined to a sales agent.
 
 ## Where the facts live

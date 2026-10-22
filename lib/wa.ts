@@ -9,9 +9,10 @@ import { type ServiceCode } from './site';
  * "this person came from the C11 page" is to put a marker in the text the
  * customer sends.
  *
- * The webhook parses [Ref: XX-YYYY] on the FIRST inbound of a thread, resolves
- * it, and stamps sourceChannel='website' + serviceInterest + targetCountry on
- * the lead before handing off to the existing round-robin (ensureAssigned).
+ * The webhook parses [Ref: XX-YYYY] from a NEW contact's first message and
+ * creates the lead with sourceChannel='whatsapp-website', serviceInterest from
+ * the prefix and a note with the ref (tafai#475), before the normal WhatsApp
+ * round-robin assigns it. Contacts already in the CRM are left unchanged.
  * Without this every website enquiry is indistinguishable from the 22,582 cold
  * WhatsApp contacts that convert at ~0%, and the site looks like it does nothing.
  *
