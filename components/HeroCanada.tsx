@@ -32,15 +32,44 @@
  * spread out in flight at first paint rather than all launching together.
  */
 const FLIGHTS = [
-  { d: 'M -60 860 Q 80 540 263 433', dur: '7s', begin: '0s' },      // → Vancouver
-  { d: 'M -60 860 Q 150 540 322 431', dur: '8.5s', begin: '-2.5s' }, // → Calgary
-  { d: 'M -60 860 Q 290 590 548 493', dur: '9.5s', begin: '-5s' },   // → Mississauga
-  { d: 'M -60 860 Q 360 560 589 461', dur: '8s', begin: '-6.5s' },   // → Montréal
+  { d: 'M -60 860 Q 80 540 263 433', dur: '9s', begin: '0s' },       // → Vancouver
+  { d: 'M -60 860 Q 150 540 322 431', dur: '10.5s', begin: '-3s' },  // → Calgary
+  { d: 'M -60 860 Q 290 590 556 493', dur: '11.5s', begin: '-6s' },  // → Mississauga
+  { d: 'M -60 860 Q 360 560 589 461', dur: '10s', begin: '-8s' },    // → Montréal
 ] as const;
+
+/**
+ * City markers, placed by fitting the map's own projection to the nine cities
+ * that shipped with real lat/lon placement (residuals < 2px), then projecting
+ * each city's real coordinates. dx/dy/anchor position the label clear of its
+ * neighbours; Mississauga is the firm's office and is the only one emphasised.
+ */
+const CITIES = [
+  { name: 'Whitehorse',   x: 224, y: 285, dx: 10,  dy: 4,   anchor: 'start'  as const },
+  { name: 'Yellowknife',  x: 361, y: 321, dx: 0,   dy: -13, anchor: 'middle' as const },
+  { name: 'Iqaluit',      x: 637, y: 287, dx: 10,  dy: 4,   anchor: 'start'  as const },
+  { name: 'Vancouver',    x: 263, y: 433, dx: -10, dy: -9,  anchor: 'end'    as const },
+  { name: 'Edmonton',     x: 330, y: 407, dx: -10, dy: -9,  anchor: 'end'    as const },
+  { name: 'Calgary',      x: 322, y: 431, dx: -10, dy: 17,  anchor: 'end'    as const },
+  { name: 'Saskatoon',    x: 371, y: 428, dx: 10,  dy: -7,  anchor: 'start'  as const },
+  { name: 'Regina',       x: 383, y: 445, dx: 9,   dy: 21,  anchor: 'start'  as const },
+  { name: 'Winnipeg',     x: 429, y: 451, dx: -10, dy: -9,  anchor: 'end'    as const },
+  { name: 'Thunder Bay',  x: 482, y: 461, dx: 0,   dy: 22,  anchor: 'middle' as const },
+  { name: 'Mississauga',  x: 556, y: 493, dx: 0,   dy: 28,  anchor: 'middle' as const, firm: true },
+  { name: 'Ottawa',       x: 576, y: 467, dx: -14, dy: -13, anchor: 'end'    as const },
+  { name: 'Montréal',     x: 589, y: 461, dx: 13,  dy: 17,  anchor: 'start'  as const },
+  { name: 'Québec City',  x: 600, y: 443, dx: 13,  dy: -12, anchor: 'start'  as const },
+  { name: 'Halifax',      x: 653, y: 439, dx: 13,  dy: 19,  anchor: 'start'  as const },
+  { name: "St. John’s",   x: 712, y: 370, dx: -11, dy: 4,   anchor: 'end'    as const },
+];
+
+/** Material "flight" glyph, nose up in a 24×24 box; pre-rotated so the nose
+ *  points +x, which is what animateMotion rotate="auto" aligns to the path. */
+const PLANE_D = 'M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z';
 
 export function HeroCanada({ className = '' }: { className?: string }) {
   return (
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-70 -70 960 960" aria-hidden="true" className={`canada-globe pointer-events-none ${className}`}>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-48 -48 916 916" aria-hidden="true" className={`canada-globe pointer-events-none ${className}`}>
 
 
 <defs>
@@ -91,6 +120,22 @@ export function HeroCanada({ className = '' }: { className?: string }) {
     <feComponentTransfer in="desaturated"><feFuncA type="linear" slope=".3"/></feComponentTransfer>
   </filter>
   <clipPath id="globe-circle"><circle cx="410" cy="410" r="410"/></clipPath>
+  {/* Raised landmass: a specular bevel on the edges facing the upper-left
+      light, plus a soft cast shadow down-right, so Canada reads as a plate
+      lifted off the sphere rather than a flat red fill. */}
+  <filter id="hc-raise" x="-12%" y="-12%" width="128%" height="130%" colorInterpolationFilters="sRGB">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="2.6" result="blur"/>
+    <feSpecularLighting in="blur" surfaceScale="9" specularConstant="1.05" specularExponent="14" lightingColor="#ffffff" result="spec">
+      <feDistantLight azimuth="225" elevation="40"/>
+    </feSpecularLighting>
+    <feComposite in="spec" in2="SourceAlpha" operator="in" result="specIn"/>
+    <feComposite in="SourceGraphic" in2="specIn" operator="arithmetic" k1="0" k2="1" k3="0.85" k4="0" result="lit"/>
+    <feDropShadow in="lit" dx="6" dy="9" stdDeviation="6" floodColor="#000000" floodOpacity="0.66"/>
+  </filter>
+  {/* Plane glyph lift. */}
+  <filter id="hc-plane" x="-60%" y="-60%" width="220%" height="220%">
+    <feDropShadow dx="0" dy="2.5" stdDeviation="2.2" floodColor="#000000" floodOpacity="0.7"/>
+  </filter>
 </defs>
 {/* Atmosphere halo — drawn outside the clip so it can bloom past the
     sphere's edge into the dark hero. Two passes: a wide soft bloom and a
@@ -105,92 +150,37 @@ export function HeroCanada({ className = '' }: { className?: string }) {
   <g className="map-water-labels"><text className="ocean-label" x="263" y="138" textAnchor="middle">ARCTIC OCEAN</text>
 <text className="ocean-label" x="133" y="582" textAnchor="middle">PACIFIC OCEAN</text>
 <text className="ocean-label" x="650" y="690" textAnchor="middle">ATLANTIC OCEAN</text>
-<text className="water-label" x="512" y="360" textAnchor="middle">HUDSON BAY</text>
 <text className="region-label" x="682" y="186" textAnchor="middle">GREENLAND</text>
 <text className="region-label" x="155" y="315" textAnchor="middle">ALASKA</text>
 <text className="region-label" x="369" y="679" textAnchor="middle">UNITED STATES</text></g>
-  <g className="map-flag" transform="translate(360.5 347.5) scale(0.72)" aria-hidden="true">
+  <g className="map-flag" transform="translate(408.2 286.3) scale(0.78)" aria-hidden="true">
      <rect x="0" y="0" width="138" height="112" rx="12" fill="#fff" opacity=".94"/>
      <rect x="0" y="0" width="31" height="112" fill="#e51a38" rx="5"/>
      <rect x="107" y="0" width="31" height="112" fill="#e51a38" rx="5"/>
      <svg x="33" y="6" width="72" height="99" viewBox="0 0 100 100" overflow="visible"><polygon points="50,4 57,25 70,17 68,33 86,31 76,45 94,55 72,60 76,72 55,69 55,91 45,91 45,69 24,72 28,60 6,55 24,45 14,31 32,33 30,17 43,25" fill="#d80c2d"/></svg>
   </g>
-  <g className="city-markers"><g className="city" tabIndex={0} role="img" aria-label="Vancouver" data-city="Vancouver">
-  
-  <line className="city-leader" x1="262.7" y1="432.9" x2="254.6" y2="423.8"/>
-  <circle className="city-halo" cx="262.7" cy="432.9" r="10"/>
-  <circle className="city-dot" cx="262.7" cy="432.9" r="4.3"/>
-  <text className="city-label" x="248.7" y="418.9" textAnchor="end">Vancouver</text>
-</g><g className="city" tabIndex={0} role="img" aria-label="Edmonton" data-city="Edmonton">
-  
-  <line className="city-leader" x1="330.3" y1="406.9" x2="322.2" y2="392.6"/>
-  <circle className="city-halo" cx="330.3" cy="406.9" r="10"/>
-  <circle className="city-dot" cx="330.3" cy="406.9" r="4.3"/>
-  <text className="city-label" x="316.3" y="384.9" textAnchor="end">Edmonton</text>
-</g><g className="city" tabIndex={0} role="img" aria-label="Calgary" data-city="Calgary">
-  
-  <line className="city-leader" x1="322.1" y1="430.9" x2="314.0" y2="449.7"/>
-  <circle className="city-halo" cx="322.1" cy="430.9" r="10"/>
-  <circle className="city-dot" cx="322.1" cy="430.9" r="4.3"/>
-  <text className="city-label" x="308.1" y="459.9" textAnchor="end">Calgary</text>
-</g><g className="city" tabIndex={0} role="img" aria-label="Winnipeg" data-city="Winnipeg">
-  
-  <line className="city-leader" x1="428.5" y1="450.8" x2="434.9" y2="465.1"/>
-  <circle className="city-halo" cx="428.5" cy="450.8" r="10"/>
-  <circle className="city-dot" cx="428.5" cy="450.8" r="4.3"/>
-  <text className="city-label" x="439.5" y="472.8" textAnchor="start">Winnipeg</text>
-</g>
-<g className="city hc-office" aria-label="Mississauga — our office">
-  <line className="city-leader" x1="548" y1="493" x2="548" y2="522"/>
-  <circle className="city-halo hc-pulse" cx="548" cy="493" r="14" style={{ transformOrigin: '548px 493px', transformBox: 'fill-box' }}/>
-  <circle className="city-dot" cx="548" cy="493" r="6" fill="#f3c75f" stroke="#ffffff" strokeWidth="1.4"/>
-  <text className="city-label" x="548" y="542" textAnchor="middle" fontSize="17" fontWeight="700">Mississauga</text>
-  <text x="548" y="562" textAnchor="middle" fontFamily="var(--font-inter), ui-sans-serif, system-ui" fontSize="11" fontWeight="600" letterSpacing="0.22em" fill="#f3c75f">OUR OFFICE</text>
-</g><g className="city" tabIndex={0} role="img" aria-label="Ottawa" data-city="Ottawa">
-  
-  <line className="city-leader" x1="576.1" y1="466.8" x2="560.4" y2="449.3"/>
-  <circle className="city-halo" cx="576.1" cy="466.8" r="10"/>
-  <circle className="city-dot" cx="576.1" cy="466.8" r="4.3"/>
-  <text className="city-label" x="549.1" y="439.8" textAnchor="end">Ottawa</text>
-</g><g className="city" tabIndex={0} role="img" aria-label="Montréal" data-city="Montréal">
-  
-  <line className="city-leader" x1="589.4" y1="460.9" x2="597.5" y2="471.9"/>
-  <circle className="city-halo" cx="589.4" cy="460.9" r="10"/>
-  <circle className="city-dot" cx="589.4" cy="460.9" r="4.3"/>
-  <text className="city-label" x="603.4" y="477.9" textAnchor="start">Montréal</text>
-</g><g className="city" tabIndex={0} role="img" aria-label="Québec City" data-city="Québec City">
-  
-  <line className="city-leader" x1="599.5" y1="442.6" x2="610.0" y2="425.7"/>
-  <circle className="city-halo" cx="599.5" cy="442.6" r="10"/>
-  <circle className="city-dot" cx="599.5" cy="442.6" r="4.3"/>
-  <text className="city-label" x="617.5" y="416.6" textAnchor="start">Québec City</text>
-</g><g className="city" tabIndex={0} role="img" aria-label="Halifax" data-city="Halifax">
-  
-  <line className="city-leader" x1="652.9" y1="438.8" x2="661.0" y2="453.1"/>
-  <circle className="city-halo" cx="652.9" cy="438.8" r="10"/>
-  <circle className="city-dot" cx="652.9" cy="438.8" r="4.3"/>
-  <text className="city-label" x="666.9" y="460.8" textAnchor="start">Halifax</text>
-</g><g className="city" tabIndex={0} role="img" aria-label="Yellowknife" data-city="Yellowknife">
-  <line className="city-leader" x1="335" y1="338" x2="335" y2="330"/>
-  <circle className="city-halo" cx="335" cy="338" r="10"/>
-  <circle className="city-dot" cx="335" cy="338" r="4.3"/>
-  <text className="city-label" x="335" y="325" textAnchor="middle">Yellowknife</text>
-</g><g className="city" tabIndex={0} role="img" aria-label="Regina" data-city="Regina">
-  <line className="city-leader" x1="388" y1="442" x2="388" y2="451"/>
-  <circle className="city-halo" cx="388" cy="442" r="10"/>
-  <circle className="city-dot" cx="388" cy="442" r="4.3"/>
-  <text className="city-label" x="388" y="464" textAnchor="middle">Regina</text>
-</g><g className="city" tabIndex={0} role="img" aria-label="Thunder Bay" data-city="Thunder Bay">
-  <line className="city-leader" x1="486" y1="466" x2="486" y2="475"/>
-  <circle className="city-halo" cx="486" cy="466" r="10"/>
-  <circle className="city-dot" cx="486" cy="466" r="4.3"/>
-  <text className="city-label" x="486" y="488" textAnchor="middle">Thunder Bay</text>
-</g><g className="city" tabIndex={0} role="img" aria-label="St. John's" data-city="St. John's">
-  <line className="city-leader" x1="728" y1="422" x2="720" y2="418"/>
-  <circle className="city-halo" cx="728" cy="422" r="10"/>
-  <circle className="city-dot" cx="728" cy="422" r="4.3"/>
-  <text className="city-label" x="714" y="416" textAnchor="end">St. John’s</text>
-</g></g>
+  <g className="city-markers">
+    {CITIES.map((c) => {
+      const office = Boolean(c.firm);
+      const lx = c.dx === 0 ? 0 : Math.sign(c.dx) * 6;
+      const ly = c.dy === 0 ? 0 : Math.sign(c.dy) * 6;
+      return (
+        <g key={c.name} className={office ? 'city hc-office' : 'city'} aria-label={office ? `${c.name} — our office` : c.name}>
+          <line className="city-leader" x1={c.x} y1={c.y} x2={c.x + lx} y2={c.y + ly}/>
+          {office ? (
+            <circle className="city-halo hc-pulse" cx={c.x} cy={c.y} r={15} style={{ transformOrigin: `${c.x}px ${c.y}px`, transformBox: 'fill-box' }}/>
+          ) : (
+            <circle className="city-halo" cx={c.x} cy={c.y} r={9}/>
+          )}
+          <circle className="city-dot" cx={c.x} cy={c.y} r={office ? 7 : 5} {...(office ? { fill: '#f3c75f', stroke: '#ffffff', strokeWidth: 1.6 } : {})}/>
+          <text className="city-label" x={c.x + c.dx} y={c.y + c.dy} textAnchor={c.anchor} style={office ? { fontSize: 18, fontWeight: 750 } : undefined}>{c.name}</text>
+          {office ? (
+            <text x={c.x + c.dx} y={c.y + c.dy + 15} textAnchor={c.anchor} fontFamily="var(--font-inter), ui-sans-serif, system-ui" fontSize="11" fontWeight="700" letterSpacing="0.22em" fill="#f3c75f" stroke="rgba(10,21,46,.85)" strokeWidth="3" paintOrder="stroke fill">OUR OFFICE</text>
+          ) : null}
+        </g>
+      );
+    })}
+  </g>
   {/* Volume shading — darken the far side so the light reads top-left. */}
   <circle cx="410" cy="410" r="374" fill="url(#hc-terminator)" pointerEvents="none"/>
   {/* Limb vignette — rounds off the silhouette. */}
@@ -207,15 +197,16 @@ export function HeroCanada({ className = '' }: { className?: string }) {
 <g aria-hidden="true" clipPath="url(#globe-circle)">
   {FLIGHTS.map((f) => (
     <g key={f.d}>
-      {/* The dashed trail. */}
-      <path d={f.d} fill="none" stroke="#f3c75f" strokeWidth="1.8" strokeDasharray="5 9" strokeLinecap="round" opacity="0.6" className="hc-corridor"/>
-      {/* The plane: a bright core + soft halo, walking the arc. */}
-      <circle r="7" fill="#f3c75f" opacity="0.28">
-        <animateMotion dur={f.dur} begin={f.begin} repeatCount="indefinite" path={f.d}/>
-      </circle>
-      <circle r="3.4" fill="#fff3d6">
-        <animateMotion dur={f.dur} begin={f.begin} repeatCount="indefinite" path={f.d}/>
-      </circle>
+      {/* Faint dashed trail. */}
+      <path d={f.d} fill="none" stroke="#f3c75f" strokeWidth="1.6" strokeDasharray="4 9" strokeLinecap="round" opacity="0.45" className="hc-corridor"/>
+      {/* The plane: small, white, outlined so it reads on red land and dark
+          ocean alike, banking with the arc via rotate="auto". */}
+      <g filter="url(#hc-plane)">
+        <g transform="rotate(90) scale(1.15) translate(-12 -12)">
+          <path d={PLANE_D} fill="#ffffff" stroke="#0b1522" strokeWidth="1.1" strokeLinejoin="round"/>
+        </g>
+        <animateMotion dur={f.dur} begin={f.begin} repeatCount="indefinite" rotate="auto" path={f.d}/>
+      </g>
     </g>
   ))}
 </g>
