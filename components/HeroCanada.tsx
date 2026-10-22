@@ -24,6 +24,20 @@
  * Decorative — aria-hidden. The headline already tells the story in words.
  */
 
+/**
+ * The Pakistan → Canada air corridor, as several flights at once. Each path
+ * emerges from the lower-left limb (the Gulf / South Asia, off-globe and
+ * clipped) and arcs to a different Canadian destination; a marker walks each
+ * one on its own loop, with negative `begin` offsets so they are already
+ * spread out in flight at first paint rather than all launching together.
+ */
+const FLIGHTS = [
+  { d: 'M -60 860 Q 80 540 263 433', dur: '7s', begin: '0s' },      // → Vancouver
+  { d: 'M -60 860 Q 150 540 322 431', dur: '8.5s', begin: '-2.5s' }, // → Calgary
+  { d: 'M -60 860 Q 290 590 548 493', dur: '9.5s', begin: '-5s' },   // → Mississauga
+  { d: 'M -60 860 Q 360 560 589 461', dur: '8s', begin: '-6.5s' },   // → Montréal
+] as const;
+
 export function HeroCanada({ className = '' }: { className?: string }) {
   return (
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-70 -70 960 960" aria-hidden="true" className={`canada-globe pointer-events-none ${className}`}>
@@ -31,17 +45,17 @@ export function HeroCanada({ className = '' }: { className?: string }) {
 
 <defs>
   <radialGradient id="ocean-grad" cx="38%" cy="30%" r="80%">
-    <stop offset="0%" stopColor="#3f86e0"/><stop offset="30%" stopColor="#1e5bbd"/><stop offset="62%" stopColor="#0d3176"/><stop offset="85%" stopColor="#071d53"/><stop offset="100%" stopColor="#030f30"/>
+    <stop offset="0%" stopColor="#484b55"/><stop offset="30%" stopColor="#2c2e36"/><stop offset="62%" stopColor="#191a20"/><stop offset="85%" stopColor="#0c0d11"/><stop offset="100%" stopColor="#050609"/>
   </radialGradient>
-  {/* Atmosphere limb — a bright blue halo hugging the sphere's edge and
+  {/* Atmosphere limb — a warm white/gold halo hugging the sphere's edge and
       fading outward, so the globe reads as a lit body in space instead of a
-      dark disc dissolving into the dark hero. This is the single biggest
-      reason the reference pops on light and mine did not on dark. */}
+      dark disc dissolving into the dark hero. White+gold, not blue, to match
+      the requested monochrome-with-gold treatment. */}
   <radialGradient id="hc-atmo" cx="50%" cy="50%" r="50%">
-    <stop offset="80%" stopColor="#57b6ff" stopOpacity="0"/>
-    <stop offset="88%" stopColor="#6cc0ff" stopOpacity="0.55"/>
-    <stop offset="92.5%" stopColor="#8fd3ff" stopOpacity="0.38"/>
-    <stop offset="100%" stopColor="#3f8fe0" stopOpacity="0"/>
+    <stop offset="80%" stopColor="#f3e6c8" stopOpacity="0"/>
+    <stop offset="88%" stopColor="#f4e6c2" stopOpacity="0.52"/>
+    <stop offset="92.5%" stopColor="#ffffff" stopOpacity="0.42"/>
+    <stop offset="100%" stopColor="#d8b872" stopOpacity="0"/>
   </radialGradient>
   {/* Terminator — the main volume cue. Darkens the far (lower-right) side
       hard so the sphere reads as lit from the upper-left. Offset centre +
@@ -62,13 +76,14 @@ export function HeroCanada({ className = '' }: { className?: string }) {
   </radialGradient>
   {/* Crisp inner rim highlight on the lit edge. */}
   <radialGradient id="hc-rim" cx="50%" cy="50%" r="50%">
-    <stop offset="94%" stopColor="#bfe6ff" stopOpacity="0"/>
-    <stop offset="98.5%" stopColor="#d8f0ff" stopOpacity="0.5"/>
-    <stop offset="100%" stopColor="#d8f0ff" stopOpacity="0"/>
+    <stop offset="94%" stopColor="#ffffff" stopOpacity="0"/>
+    <stop offset="98.5%" stopColor="#ffffff" stopOpacity="0.55"/>
+    <stop offset="100%" stopColor="#ffffff" stopOpacity="0"/>
   </radialGradient>
-  <linearGradient id="land-grad" x1="0" y1="0" x2=".9" y2="1"><stop offset="0%" stopColor="#2f5695"/><stop offset="100%" stopColor="#142a57"/></linearGradient>
+  {/* Surrounding continents: light grey (white-and-dark palette), not blue. */}
+  <linearGradient id="land-grad" x1="0" y1="0" x2=".9" y2="1"><stop offset="0%" stopColor="#dadee5"/><stop offset="100%" stopColor="#9ba2ae"/></linearGradient>
   <linearGradient id="canada-grad" x1="0" y1="0" x2=".65" y2="1"><stop offset="0%" stopColor="#ff5564"/><stop offset="48%" stopColor="#f52647"/><stop offset="100%" stopColor="#b30e2a"/></linearGradient>
-  <radialGradient id="globe-shine" cx="30%" cy="21%" r="44%"><stop offset="0" stopColor="#ffffff" stopOpacity=".5"/><stop offset="22%" stopColor="#d4e9ff" stopOpacity=".16"/><stop offset="52%" stopColor="#ffffff" stopOpacity="0"/><stop offset="100%" stopColor="#ffffff" stopOpacity="0"/></radialGradient>
+  <radialGradient id="globe-shine" cx="30%" cy="21%" r="44%"><stop offset="0" stopColor="#ffffff" stopOpacity=".5"/><stop offset="22%" stopColor="#f3ead6" stopOpacity=".16"/><stop offset="52%" stopColor="#ffffff" stopOpacity="0"/><stop offset="100%" stopColor="#ffffff" stopOpacity="0"/></radialGradient>
   {/* A small, tight glint — the hard reflection that sells "glossy sphere". */}
   <radialGradient id="hc-glint" cx="50%" cy="50%" r="50%"><stop offset="0" stopColor="#ffffff" stopOpacity=".85"/><stop offset="45%" stopColor="#ffffff" stopOpacity=".18"/><stop offset="100%" stopColor="#ffffff" stopOpacity="0"/></radialGradient>
   <filter id="map-glow" x="-15%" y="-15%" width="130%" height="130%"><feGaussianBlur stdDeviation="6"/></filter>
@@ -192,10 +207,19 @@ export function HeroCanada({ className = '' }: { className?: string }) {
 <circle cx="410" cy="410" r="374" fill="none" stroke="#6e9ad8" strokeOpacity=".36" strokeWidth="1.5"/>
 
 <g aria-hidden="true" clipPath="url(#globe-circle)">
-  <path d="M -60 820 Q 160 620 320 560 T 548 493" fill="none" stroke="#f3c75f" strokeWidth="2.4" strokeDasharray="6 10" strokeLinecap="round" opacity="0.82" className="hc-corridor"/>
-  <circle r="5.2" fill="#f3c75f" opacity="0.95">
-    <animateMotion dur="9s" repeatCount="indefinite" path="M -60 820 Q 160 620 320 560 T 548 493"/>
-  </circle>
+  {FLIGHTS.map((f) => (
+    <g key={f.d}>
+      {/* The dashed trail. */}
+      <path d={f.d} fill="none" stroke="#f3c75f" strokeWidth="1.8" strokeDasharray="5 9" strokeLinecap="round" opacity="0.6" className="hc-corridor"/>
+      {/* The plane: a bright core + soft halo, walking the arc. */}
+      <circle r="7" fill="#f3c75f" opacity="0.28">
+        <animateMotion dur={f.dur} begin={f.begin} repeatCount="indefinite" path={f.d}/>
+      </circle>
+      <circle r="3.4" fill="#fff3d6">
+        <animateMotion dur={f.dur} begin={f.begin} repeatCount="indefinite" path={f.d}/>
+      </circle>
+    </g>
+  ))}
 </g>
 
 </svg>
