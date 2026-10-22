@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Spouse / partner sponsorship.
@@ -23,7 +24,7 @@ import {
 export const metadata: Metadata = {
   title: 'Sponsoring a Spouse or Partner to Canada',
   description:
-    'The three relationship types Canada recognises, what evidences each, the real trade-offs between inland and outland applications, and how officers actually assess whether a relationship is genuine.',
+    'The three relationships Canada recognises, what evidences each, the inland versus outland trade-offs, and how officers assess whether one is genuine.',
   alternates: { canonical: '/family-sponsorship/spouse-partner' },
 };
 
@@ -487,6 +488,9 @@ export default function SpousePartnerSponsorshipPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

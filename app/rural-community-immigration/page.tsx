@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Rural and northern immigration — community-driven routes.
@@ -27,7 +28,7 @@ import {
 export const metadata: Metadata = {
   title: 'Rural and Northern Immigration Routes to Canada',
   description:
-    'How community-driven immigration works: a job offer from a designated employer in a participating community, a community recommendation, then a federal permanent residence application — and who these routes genuinely do not suit.',
+    'How community-driven immigration works: a job offer from a designated employer, a community recommendation, then a federal PR application.',
   alternates: { canonical: '/rural-community-immigration' },
 };
 
@@ -421,6 +422,9 @@ export default function RuralCommunityImmigrationPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

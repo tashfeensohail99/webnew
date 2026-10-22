@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Spousal open work permit.
@@ -25,7 +26,7 @@ import {
 export const metadata: Metadata = {
   title: 'Spousal Open Work Permit for Canada',
   description:
-    'Who can hold a spousal open work permit, why an open permit is not tied to one employer, how eligibility for spouses of workers and students has been narrowed — and who this route no longer suits.',
+    'Who can hold a spousal open work permit, why it is not tied to one employer, and how eligibility for spouses of workers and students has narrowed.',
   alternates: { canonical: '/work-permits/spousal-open-work-permit' },
 };
 
@@ -473,6 +474,9 @@ export default function SpousalOpenWorkPermitPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

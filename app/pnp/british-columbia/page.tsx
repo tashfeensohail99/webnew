@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * BC PNP — structural page.
@@ -24,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: 'British Columbia Provincial Nomination (BC PNP)',
   description:
-    'How British Columbia selects immigrants: what the province is looking for, how registration, invitation and nomination work, the difference between base and Express Entry-aligned nomination — and who the route does not suit.',
+    'How British Columbia selects immigrants: how registration, invitation and nomination work, and base versus Express Entry-aligned nomination.',
   alternates: { canonical: '/pnp/british-columbia' },
 };
 
@@ -418,6 +419,9 @@ export default function BritishColumbiaPnpPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

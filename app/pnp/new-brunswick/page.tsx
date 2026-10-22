@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * New Brunswick Provincial Nominee Program.
@@ -23,7 +24,7 @@ import {
 export const metadata: Metadata = {
   title: 'New Brunswick Provincial Nomination (NBPNP)',
   description:
-    'How New Brunswick’s provincial nominee programme works structurally — expression of interest and candidate pool, enhanced versus base nomination, the francophone dimension, and the intent-to-settle expectation that decides most files.',
+    'How New Brunswick’s nominee programme works: expression of interest, enhanced versus base nomination, the francophone dimension, and the intent to settle.',
   alternates: { canonical: '/pnp/new-brunswick' },
 };
 
@@ -490,6 +491,9 @@ export default function NewBrunswickPnpPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

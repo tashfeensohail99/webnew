@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Judicial review at the Federal Court.
@@ -28,7 +29,7 @@ import {
 export const metadata: Metadata = {
   title: 'Judicial review at the Federal Court',
   description:
-    'What judicial review of an IRCC decision actually is: a review of whether the decision was reasonable and fair, not a second chance at the application. Leave, deadlines, redetermination, and why it needs a lawyer.',
+    'What judicial review of an IRCC decision is: a check on whether it was reasonable and fair, not a reapplication. Deadlines, and why it needs a lawyer.',
   alternates: { canonical: '/refusals/judicial-review' },
 };
 
@@ -483,6 +484,9 @@ export default function JudicialReviewPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

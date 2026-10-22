@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Electronic Travel Authorisation (eTA).
@@ -25,7 +26,7 @@ import {
 export const metadata: Metadata = {
   title: 'Electronic Travel Authorisation (eTA) for Canada',
   description:
-    'What an eTA is, who it is for, and why a Pakistani passport holder normally needs a visitor visa instead. The narrow circumstances in which a visa-required national may use an eTA — and why it is not a shortcut.',
+    'What an eTA is, and why a Pakistani passport holder normally needs a visitor visa — plus the narrow case where a visa-required national may use one.',
   alternates: { canonical: '/visitor-visa/eta' },
 };
 
@@ -450,6 +451,9 @@ export default function EtaPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

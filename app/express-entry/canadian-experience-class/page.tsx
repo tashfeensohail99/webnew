@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Canadian Experience Class.
@@ -23,7 +24,7 @@ import {
 export const metadata: Metadata = {
   title: 'Canadian Experience Class (CEC)',
   description:
-    'The Express Entry stream for people who have already worked in Canada. What counts as Canadian skilled experience, what does not, the language requirement by TEER category — and who this route does not suit.',
+    'The Express Entry stream for people who have worked in Canada: what counts as Canadian experience, what does not, and the language requirement by TEER.',
   alternates: { canonical: '/express-entry/canadian-experience-class' },
 };
 
@@ -408,6 +409,9 @@ export default function CanadianExperienceClassPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

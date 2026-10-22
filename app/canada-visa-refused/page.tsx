@@ -31,7 +31,7 @@ import { site, SERVICE } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Canada Visa Refused? Your Real Options',
   description:
-    'Your refusal letter doesn’t tell you the real reason. How to get your GCMS notes, what actually caused the refusal, and whether reapplying or judicial review is your move.',
+    'Your refusal letter doesn’t tell you the real reason. How to get your GCMS notes, what actually caused the refusal, and whether to reapply or seek review.',
   alternates: { canonical: '/canada-visa-refused' },
 };
 

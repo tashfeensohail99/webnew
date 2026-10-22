@@ -26,7 +26,7 @@ import { site, SERVICE } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Canada Work Permit Without a Job Offer (C11)',
   description:
-    'If you own a business or are self-employed in Pakistan, you may not need a job offer or an LMIA to work in Canada. What the C11 route really requires — and who it is not for.',
+    'If you own a business or are self-employed in Pakistan, you may need no job offer or LMIA to work in Canada. What the C11 requires, and who it is not for.',
   alternates: { canonical: '/work-permit-canada' },
 };
 

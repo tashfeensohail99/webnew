@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Designated learning institutions.
@@ -24,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: 'Designated Learning Institutions (DLI) in Canada',
   description:
-    'What DLI status means, why a study permit is impossible without it, why post-graduation work permit eligibility depends on the institution and the programme, and how to verify a school on IRCC’s own list.',
+    'What DLI status means, why a study permit is impossible without it, why PGWP eligibility depends on it, and how to verify a school on IRCC’s own list.',
   alternates: { canonical: '/study-in-canada/designated-learning-institutions' },
 };
 
@@ -428,6 +429,9 @@ export default function DliPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

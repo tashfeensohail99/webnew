@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Reconsideration requests.
@@ -27,7 +28,7 @@ import {
 export const metadata: Metadata = {
   title: 'Reconsideration requests after an IRCC refusal',
   description:
-    'What a reconsideration request is, why it is discretionary and treated as exceptional rather than routine, when it is genuinely worth attempting — and why the judicial review clock keeps running while you wait.',
+    'What a reconsideration request is, why it is discretionary and exceptional, when it is worth attempting, and why the judicial review clock keeps running.',
   alternates: { canonical: '/refusals/reconsideration' },
 };
 
@@ -477,6 +478,9 @@ export default function ReconsiderationPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

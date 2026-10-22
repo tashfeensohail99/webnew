@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Orientation hub. The reader arrives not knowing which route applies to them —
@@ -25,7 +26,7 @@ import {
 export const metadata: Metadata = {
   title: 'Canadian Immigration Programmes — An Honest Overview',
   description:
-    'The main routes to Canada explained in plain terms: economic immigration, provincial nomination, family sponsorship, study-then-work, work permits and business routes. Which family fits you — and which does not.',
+    'The main routes to Canada: economic immigration, provincial nomination, family sponsorship, study-then-work, work permits and business routes.',
   alternates: { canonical: '/immigration-programs' },
 };
 
@@ -360,6 +361,9 @@ export default function ImmigrationProgramsPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

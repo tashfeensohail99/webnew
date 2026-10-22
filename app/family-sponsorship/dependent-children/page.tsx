@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Sponsoring dependent children.
@@ -24,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: 'Sponsoring Dependent Children for Canada',
   description:
-    'Who counts as a dependent child, how the age lock-in date works and why the date the application is received matters, dependants of dependants, adopted children, and the difference between including a child on your own PR application and sponsoring separately.',
+    'Who counts as a dependent child, how the age lock-in date works, dependants of dependants, and whether to include a child or sponsor them separately.',
   alternates: { canonical: '/family-sponsorship/dependent-children' },
 };
 
@@ -479,6 +480,9 @@ export default function DependentChildrenPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

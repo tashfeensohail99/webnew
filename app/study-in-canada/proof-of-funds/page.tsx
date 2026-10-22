@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Proof of funds for a study permit.
@@ -23,7 +24,7 @@ import {
 export const metadata: Metadata = {
   title: 'Proving Funds for a Canadian Study Permit',
   description:
-    'What a visa officer is actually testing when they assess your money: that it exists, that it is available to you, and that its origin is explainable. Acceptable evidence in kind, sponsors, and why sudden large deposits read badly.',
+    'What an officer tests when assessing your money: that it exists, is available, and has an explainable origin — plus evidence and sudden deposits.',
   alternates: { canonical: '/study-in-canada/proof-of-funds' },
 };
 
@@ -474,6 +475,9 @@ export default function ProofOfFundsPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

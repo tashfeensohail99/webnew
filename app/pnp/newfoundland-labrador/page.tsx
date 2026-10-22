@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Newfoundland and Labrador Provincial Nominee Program (NLPNP).
@@ -24,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: 'Newfoundland and Labrador Provincial Nomination (NLPNP)',
   description:
-    'How the Newfoundland and Labrador Provincial Nominee Program works structurally — expression of interest, enhanced versus base nomination, and the intent-to-settle expectation. Written without figures that go stale.',
+    'How the Newfoundland and Labrador Nominee Program works: expression of interest, enhanced versus base nomination, and the intent-to-settle expectation.',
   alternates: { canonical: '/pnp/newfoundland-labrador' },
 };
 
@@ -489,6 +490,9 @@ export default function NewfoundlandLabradorPnpPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Extending a visit to Canada.
@@ -24,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: 'Extending a Visit to Canada — Visitor Records, Maintained Status and Restoration',
   description:
-    'The difference between a visitor visa and a visitor record, how to apply to extend before your status expires, what maintained status does and does not allow, and what restoration means if your status has already lapsed.',
+    'Visitor visa versus visitor record, how to extend before your status expires, what maintained status allows, and what restoration means if it has lapsed.',
   alternates: { canonical: '/visitor-visa/extension' },
 };
 
@@ -461,6 +462,9 @@ export default function VisitorExtensionPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

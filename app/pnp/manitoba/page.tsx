@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Manitoba Provincial Nominee Program (MPNP).
@@ -23,7 +24,7 @@ import {
 export const metadata: Metadata = {
   title: 'Manitoba Provincial Nomination (MPNP)',
   description:
-    'How Manitoba’s nomination process works structurally — the expression-of-interest pool, base versus Express Entry-aligned nominations, the weight Manitoba places on a genuine connection to the province, and who this route does not suit.',
+    'How Manitoba’s nomination works: the expression-of-interest pool, base versus Express Entry-aligned streams, and the weight it gives a genuine connection.',
   alternates: { canonical: '/pnp/manitoba' },
 };
 
@@ -447,6 +448,9 @@ export default function ManitobaPnpPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

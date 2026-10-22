@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Canadian study permit — the application end to end.
@@ -25,7 +26,7 @@ import {
 export const metadata: Metadata = {
   title: 'Canadian Study Permit',
   description:
-    'How a Canadian study permit application actually works: acceptance from a designated learning institution, the attestation letter, proof of funds, medicals and biometrics — and why the study plan is what officers really assess.',
+    'How a study permit application works: acceptance from a DLI, the attestation letter, proof of funds, medicals, and the study plan officers assess.',
   alternates: { canonical: '/study-in-canada/study-permit' },
 };
 
@@ -423,6 +424,9 @@ export default function StudyPermitPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

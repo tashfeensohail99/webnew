@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Category-based selection in Express Entry.
@@ -25,7 +26,7 @@ import {
 export const metadata: Metadata = {
   title: 'Category-Based Express Entry Draws',
   description:
-    'How IRCC invites Express Entry candidates by category instead of by score alone, how categories are established and revised, and why you cannot choose the category you fall into.',
+    'How IRCC invites Express Entry candidates by category rather than score, how categories are set, and why you cannot choose the one you fall into.',
   alternates: { canonical: '/express-entry/category-based-draws' },
 };
 
@@ -460,6 +461,9 @@ export default function CategoryBasedDrawsPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

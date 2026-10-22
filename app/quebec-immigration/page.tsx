@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Quebec immigration.
@@ -25,7 +26,7 @@ import {
 export const metadata: Metadata = {
   title: 'Quebec Immigration',
   description:
-    'Quebec selects its own economic immigrants under an accord with Canada. How the two-stage structure works, why the Quebec certificate sits outside Express Entry, and why without French most Quebec economic routes are impractical.',
+    'Quebec selects its own economic immigrants. The two-stage structure, why the Quebec certificate sits outside Express Entry, and why French is decisive.',
   alternates: { canonical: '/quebec-immigration' },
 };
 
@@ -498,6 +499,9 @@ export default function QuebecImmigrationPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

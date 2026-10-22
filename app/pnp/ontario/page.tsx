@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Ontario provincial nomination (OINP).
@@ -24,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: 'Ontario Provincial Nomination (OINP)',
   description:
-    'How Ontario’s provincial nominee programme works structurally — what the province looks for, enhanced versus base nomination, the intent-to-settle expectation, and who this route does not suit.',
+    'How Ontario’s nominee programme works: what the province looks for, enhanced versus base nomination, and the intent-to-settle expectation.',
   alternates: { canonical: '/pnp/ontario' },
 };
 
@@ -505,6 +506,9 @@ export default function PnpOntarioPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Study → PR.
@@ -24,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: 'From Study to Permanent Residence in Canada',
   description:
-    'The realistic sequence from a study permit to permanent residence — post-graduation work permit, Canadian skilled work experience, then Express Entry or a provincial nomination — and where it breaks down.',
+    'The realistic sequence from study permit to PR: a PGWP, Canadian skilled experience, then Express Entry or a nomination — and where it breaks down.',
   alternates: { canonical: '/study-in-canada/study-to-permanent-residence' },
 };
 
@@ -485,6 +486,9 @@ export default function StudyToPermanentResidencePage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

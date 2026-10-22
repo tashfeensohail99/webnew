@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Business and investment immigration.
@@ -29,7 +30,7 @@ import {
 export const metadata: Metadata = {
   title: 'Business and Investment Immigration to Canada',
   description:
-    'An honest map of the business routes: the federal Start-Up Visa and Self-Employed Persons Program are not open to new applicants, and what remains — provincial entrepreneur streams and work permits for business owners. Check current status with IRCC.',
+    'An honest map: the Start-Up Visa and Self-Employed Persons Program are closed to new applicants, what remains, and checking current status with IRCC.',
   alternates: { canonical: '/business-immigration' },
 };
 
@@ -601,6 +602,9 @@ export default function BusinessImmigrationPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

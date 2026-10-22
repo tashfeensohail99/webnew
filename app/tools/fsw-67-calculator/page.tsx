@@ -15,7 +15,7 @@ import { FSW_GRID_VERIFIED_ON } from '@/lib/fsw-grid';
 export const metadata: Metadata = {
   title: 'FSW 67-Point Calculator — Federal Skilled Worker Eligibility',
   description:
-    'Work out your Federal Skilled Worker selection points against the 67-point pass mark set in the Immigration and Refugee Protection Regulations. Not the same as your CRS score.',
+    'Work out your Federal Skilled Worker points against the 67-point pass mark set in the immigration regulations. Not the same as your CRS score.',
   alternates: { canonical: '/tools/fsw-67-calculator' },
 };
 

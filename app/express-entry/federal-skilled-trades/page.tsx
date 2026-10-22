@@ -11,11 +11,12 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 export const metadata: Metadata = {
   title: 'Federal Skilled Trades Program',
   description:
-    'The Express Entry stream for qualified tradespeople. What it actually requires — a certificate of qualification or a Canadian job offer, hands-on trade experience, and a split language test — and why it is the least used of the three federal programs.',
+    'The Express Entry stream for qualified tradespeople: the certificate or job offer, the trade experience, the split language test, and why it is least used.',
   alternates: { canonical: '/express-entry/federal-skilled-trades' },
 };
 
@@ -368,6 +369,9 @@ export default function FederalSkilledTradesPage() {
             . Where the official source and this page ever disagree, the official source governs.
           </p>
         </Prose>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
+        </div>
       </Section>
 
       <CTASection

@@ -12,6 +12,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * The study route, written structurally.
@@ -25,7 +26,7 @@ import {
 export const metadata: Metadata = {
   title: 'Study in Canada',
   description:
-    'The Canadian study route end to end — choosing a DLI, the provincial attestation letter, the study permit, funds and genuine intent, working while you study, and the post-graduation work permit. Including when studying is the wrong way to chase PR.',
+    'The Canadian study route end to end: choosing a DLI, the attestation letter, the study permit, proof of funds, working while studying, and the PGWP.',
   alternates: { canonical: '/study-in-canada' },
 };
 
@@ -446,6 +447,9 @@ export default function StudyInCanadaPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

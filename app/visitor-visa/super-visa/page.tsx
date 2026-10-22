@@ -11,11 +11,12 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 export const metadata: Metadata = {
   title: 'Super Visa for parents and grandparents',
   description:
-    'How the Super Visa differs from an ordinary visitor visa, what the inviting child or grandchild has to prove, and how it compares with sponsoring parents for permanent residence.',
+    'How the Super Visa differs from a visitor visa, what the inviting child or grandchild must prove, and how it compares with sponsoring parents for PR.',
   alternates: { canonical: '/visitor-visa/super-visa' },
 };
 
@@ -374,6 +375,9 @@ export default function SuperVisaPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions families actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

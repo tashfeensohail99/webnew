@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Global Talent Stream.
@@ -23,7 +24,7 @@ import {
 export const metadata: Metadata = {
   title: 'Global Talent Stream Work Permits for Canada',
   description:
-    'How the Global Talent Stream works: the employer categories ESDC currently operates, the Labour Market Benefits Plan an employer must commit to, and why the worker cannot start this process alone.',
+    'How the Global Talent Stream works: the employer categories ESDC runs, the Labour Market Benefits Plan it requires, and why a worker cannot start it alone.',
   alternates: { canonical: '/work-permits/global-talent-stream' },
 };
 
@@ -397,6 +398,9 @@ export default function GlobalTalentStreamPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

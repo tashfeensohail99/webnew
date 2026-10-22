@@ -158,6 +158,28 @@ html[data-theme="dark"] .text-ink-600 { color: #c0cddc; }
 html[data-theme="dark"] .text-ink-500 { color: #aab8ca; }
 html[data-theme="dark"] .text-ink-400 { color: #8f9eb2; }
 
+/* Light tint backgrounds (the *-50 shades) do NOT flip on their own, so in
+   dark mode cream chips, selected tool answers and light status badges stay
+   bright and go light-on-light. Flip the tint TOKENS so every bg-*-50 (incl.
+   opacity and border variants) darkens at once. These shades are only ever
+   backgrounds, never text, so flipping them is safe. */
+html[data-theme="dark"] {
+  --color-gold-50:    #241d10;
+  --color-emerald-50: #0f2019;
+  --color-amber-50:   #241a09;
+  --color-rose-50:    #2a1418;
+  --color-rose-200:   #5b2530;
+}
+/* The dark-palette TEXT that sits on those tints must lighten to stay legible
+   now that the tint is dark. */
+html[data-theme="dark"] .text-emerald-800 { color: #6ee7b7; }
+html[data-theme="dark"] .text-amber-800 { color: #fcd34d; }
+html[data-theme="dark"] .text-rose-800 { color: #fecdd3; }
+html[data-theme="dark"] .text-rose-500 { color: #fb7185; }
+/* ink-100 is LIGHT text on dark bands (can't flip its token); only its use as
+   a progress-track background needs darkening. */
+html[data-theme="dark"] .bg-ink-100 { background-color: #1b2a3d; }
+
 /* Custom classes that read ink/gold tokens directly in their own CSS. */
 html[data-theme="dark"] .lede { color: #c3d0df; }
 html[data-theme="dark"] .btn-ghost { color: #dce4ef; }
@@ -301,10 +323,12 @@ img, svg { max-width: 100%; height: auto; }
 .canada {
   fill: url(#canada-grad);
   stroke: #ffd8e1;
-  stroke-width: 2.1;
+  stroke-width: 1.8;
   stroke-opacity: .98;
   stroke-linejoin: round;
-  filter: drop-shadow(0 0 10px rgba(254, 76, 113, .72));
+  /* Raised plate: the SVG bevel/cast-shadow filter (defined in the component)
+     chained with the red glow. */
+  filter: url(#hc-raise) drop-shadow(0 0 12px rgba(254, 76, 113, .5));
 }
 
 .land-relief { mix-blend-mode: soft-light; opacity: .62; pointer-events: none; }
@@ -317,12 +341,12 @@ img, svg { max-width: 100%; height: auto; }
 .map-flag { opacity: .91; filter: drop-shadow(0 0 22px rgba(255, 255, 255, .18)); pointer-events: none; }
 
 .city { outline: none; cursor: default; }
-.city-dot { fill: #fff; stroke: #ffb6c4; stroke-width: 1.4; }
-.city-halo { fill: #fff; opacity: .11; }
-.city-leader { stroke: #fff; stroke-width: 1.2; opacity: .78; }
+.city-dot { fill: #fff; stroke: #0b1522; stroke-width: 1.6; }
+.city-halo { fill: #fff; opacity: .14; }
+.city-leader { stroke: #fff; stroke-width: 1.2; opacity: .7; }
 .city-label {
-  fill: #fff; font-size: 15px; font-weight: 680;
-  stroke: rgba(10, 21, 46, .82); stroke-width: 3.5px; paint-order: stroke fill;
+  fill: #fff; font-size: 16.5px; font-weight: 700; letter-spacing: .01em;
+  stroke: rgba(8, 17, 36, .9); stroke-width: 4px; paint-order: stroke fill;
   stroke-linejoin: round;
 }
 

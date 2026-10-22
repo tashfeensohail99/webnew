@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * The refusal-letter-vs-officer-notes page.
@@ -24,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: 'The officer’s notes behind a refusal',
   description:
-    'Every IRCC decision has officer notes behind it, and they usually say more than the refusal letter. Why they matter, what they can settle, and who is allowed to ask for them.',
+    'Every IRCC decision has officer notes, and they say more than the refusal letter. Why they matter, what they can settle, and who may ask for them.',
   alternates: { canonical: '/refusals/gcms-notes' },
 };
 
@@ -315,6 +316,9 @@ export default function GcmsNotesPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

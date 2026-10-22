@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Prince Edward Island Provincial Nominee Program.
@@ -24,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: 'Prince Edward Island Provincial Nomination (PEI PNP)',
   description:
-    'How Prince Edward Island’s Provincial Nominee Program works structurally — expression of interest, enhanced and base nomination, the kinds of stream a province runs, and the intent-to-settle expectation that decides most of these files.',
+    'How Prince Edward Island’s Provincial Nominee Program works: expression of interest, enhanced and base nomination, and the intent-to-settle expectation.',
   alternates: { canonical: '/pnp/prince-edward-island' },
 };
 
@@ -444,6 +445,9 @@ export default function PeiPnpPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

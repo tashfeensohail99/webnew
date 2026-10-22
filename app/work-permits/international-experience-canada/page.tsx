@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * International Experience Canada.
@@ -24,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: 'International Experience Canada (IEC): Can Pakistani Citizens Apply?',
   description:
-    'IEC runs on bilateral youth mobility agreements, and Canada does not have one with Pakistan. What that means in practice, the two narrow exceptions, and the Canadian work routes that are genuinely open to Pakistani applicants.',
+    'IEC runs on youth mobility agreements, and Canada has none with Pakistan. What that means, the two exceptions, and the work routes open to Pakistanis.',
   alternates: { canonical: '/work-permits/international-experience-canada' },
 };
 
@@ -395,6 +396,9 @@ export default function IecPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

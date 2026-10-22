@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * LMIA-exempt work permits — the International Mobility Program, explained by
@@ -21,7 +22,7 @@ import {
 export const metadata: Metadata = {
   title: 'LMIA-Exempt Work Permits (International Mobility Program)',
   description:
-    'Some Canadian work permits need no LMIA — because of a benefit to Canada, a treaty, or reciprocity. What the main exemption families are, and why exemption from the LMIA is not exemption from scrutiny.',
+    'Some work permits need no LMIA: a benefit to Canada, a treaty, or reciprocity. The main exemption families, and why no LMIA does not mean no scrutiny.',
   alternates: { canonical: '/work-permits/lmia-exempt' },
 };
 
@@ -317,6 +318,9 @@ export default function LmiaExemptPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

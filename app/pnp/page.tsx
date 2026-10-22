@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * The PNP explainer.
@@ -26,7 +27,7 @@ import {
 export const metadata: Metadata = {
   title: 'Provincial Nominee Programs (PNP)',
   description:
-    'How Canada’s Provincial Nominee Programs actually work: provinces nominate, IRCC decides. Enhanced versus base streams, why a nomination is the strongest advantage in Express Entry, and who this route does not suit.',
+    'How Provincial Nominee Programs work: provinces nominate, IRCC decides. Enhanced versus base streams, and why a nomination is the strongest CRS advantage.',
   alternates: { canonical: '/pnp' },
 };
 
@@ -497,6 +498,9 @@ export default function PnpPage() {
         />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

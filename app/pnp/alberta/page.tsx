@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Alberta provincial nomination (AAIP).
@@ -25,7 +26,7 @@ import {
 export const metadata: Metadata = {
   title: 'Alberta Provincial Nomination (AAIP)',
   description:
-    'How the Alberta Advantage Immigration Program works structurally — expression of interest and invitation, enhanced versus base nomination, the kinds of stream a province runs, and the intent-to-settle expectation that decides more files than people expect.',
+    'How the Alberta Advantage Immigration Program works: expression of interest and invitation, enhanced versus base nomination, and the intent to settle.',
   alternates: { canonical: '/pnp/alberta' },
 };
 
@@ -471,6 +472,9 @@ export default function AlbertaPnpPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

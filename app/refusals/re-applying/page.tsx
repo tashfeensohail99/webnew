@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Re-applying after a refusal.
@@ -24,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: 'Re-applying After a Canadian Visa Refusal',
   description:
-    'Applying again with the same facts usually produces the same answer. What counts as a genuine change in circumstances, what does not, and why every previous refusal must be disclosed on the next application.',
+    'Applying again with the same facts usually brings the same answer. What counts as a genuine change, what does not, and why every refusal must be disclosed.',
   alternates: { canonical: '/refusals/re-applying' },
 };
 
@@ -513,6 +514,9 @@ export default function ReApplyingPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

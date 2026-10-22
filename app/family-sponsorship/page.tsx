@@ -10,6 +10,7 @@ import {
   CTASection,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Family sponsorship — the family class.
@@ -23,7 +24,7 @@ import {
 export const metadata: Metadata = {
   title: 'Family Sponsorship to Canada',
   description:
-    'Sponsoring a spouse, partner, child, parent or grandparent to Canada — who may sponsor, who may be sponsored, what the undertaking really commits you to, and who this route does not suit.',
+    'Sponsoring a spouse, partner, child, parent or grandparent: who may sponsor, who may be sponsored, and what the undertaking really commits you to.',
   alternates: { canonical: '/family-sponsorship' },
 };
 
@@ -618,6 +619,9 @@ export default function FamilySponsorshipPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

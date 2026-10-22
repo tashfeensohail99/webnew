@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Provincial / territorial attestation letters (PAL / TAL).
@@ -24,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: 'Provincial Attestation Letters (PAL / TAL) for Canadian Study Permits',
   description:
-    'What a provincial or territorial attestation letter is, who issues it, where it sits in the study permit sequence, who is exempt — and why it is not something a consultant can obtain on your behalf.',
+    'What a provincial attestation letter is, who issues it, where it sits in the study permit sequence, and why a consultant cannot get it for you.',
   alternates: { canonical: '/study-in-canada/provincial-attestation-letter' },
 };
 
@@ -449,6 +450,9 @@ export default function ProvincialAttestationLetterPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

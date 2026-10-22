@@ -11,11 +11,12 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 export const metadata: Metadata = {
   title: 'Federal Skilled Worker Program',
   description:
-    'How the Federal Skilled Worker Program really works: the six selection factors, the work experience and language requirements, credential assessment, settlement funds — and why eligibility and your CRS rank are two different scoreboards.',
+    'How the Federal Skilled Worker Program works: the six selection factors, work and language requirements, credential assessment, funds, and how CRS differs.',
   alternates: { canonical: '/express-entry/federal-skilled-worker' },
 };
 
@@ -433,6 +434,9 @@ export default function FederalSkilledWorkerPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

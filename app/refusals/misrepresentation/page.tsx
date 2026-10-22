@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Misrepresentation findings under IRPA s.40.
@@ -27,7 +28,7 @@ import {
 export const metadata: Metadata = {
   title: 'Misrepresentation Findings in Canadian Immigration',
   description:
-    'What misrepresentation means under section 40 of the Immigration and Refugee Protection Act, why an agent’s actions in your name can bind you, and why a procedural fairness letter is not something to answer alone.',
+    'What misrepresentation means under section 40 of the IRPA, why an agent’s actions in your name can bind you, and why not to answer a fairness letter alone.',
   alternates: { canonical: '/refusals/misrepresentation' },
 };
 
@@ -388,6 +389,9 @@ export default function MisrepresentationPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Caregiver immigration routes.
@@ -28,7 +29,7 @@ import {
 export const metadata: Metadata = {
   title: 'Caregiver Immigration Routes to Canada',
   description:
-    'How Canadian caregiver routes are structured — home child care and home support work, the job offer, language and education requirements, and why the named programmes in this space open and close. Plus a plain warning about paid caregiver placements.',
+    'How Canadian caregiver routes work: home child care and home support, the job offer, language and education rules, and a warning on paid placements.',
   alternates: { canonical: '/caregivers' },
 };
 
@@ -495,6 +496,9 @@ export default function CaregiversPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

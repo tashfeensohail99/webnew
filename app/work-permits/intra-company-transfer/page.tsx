@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Intra-company transfers (ICT).
@@ -23,7 +24,7 @@ import {
 export const metadata: Metadata = {
   title: 'Intra-Company Transfers to Canada',
   description:
-    'Moving within a multinational to a Canadian branch, affiliate or subsidiary: the qualifying relationship between the two companies, the executive, senior managerial and specialised knowledge categories, and why a company created to enable a transfer does not survive scrutiny.',
+    'Intra-company transfers to a Canadian branch: the qualifying company relationship, the three worker categories, and why a shell set up to enable one fails.',
   alternates: { canonical: '/work-permits/intra-company-transfer' },
 };
 
@@ -441,6 +442,9 @@ export default function IntraCompanyTransferPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

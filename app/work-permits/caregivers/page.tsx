@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Caregiver work permits — home child care and home support work.
@@ -23,7 +24,7 @@ import {
 export const metadata: Metadata = {
   title: 'Caregiver Work Permits for Canada',
   description:
-    'Work permits for home child care and home support work in Canada: the job offer, how a private household is assessed as an employer, language and education expectations, and the placement-fee and off-permit-duties risks to avoid.',
+    'Work permits for home child care and home support: the job offer, a household as employer, language and education, and the placement-fee risks to avoid.',
   alternates: { canonical: '/work-permits/caregivers' },
 };
 
@@ -478,6 +479,9 @@ export default function CaregiverWorkPermitsPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

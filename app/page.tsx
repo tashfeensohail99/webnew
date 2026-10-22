@@ -7,6 +7,8 @@ import { SplitSection } from '@/components/ui';
 import { site, SERVICE, leadLawyer } from '@/lib/site';
 
 export const metadata: Metadata = {
+  description:
+    'Canadian work permits, visit visas and refusals — handled by qualified lawyers, with offices in Pakistan and Canada and a free consultation.',
   alternates: { canonical: '/' },
 };
 
@@ -51,14 +53,14 @@ export default function HomePage() {
     <>
       {/* ============================= HERO ============================= */}
       <section className="relative overflow-hidden bg-hero text-white">
-        <div className="relative mx-auto max-w-6xl px-4 py-24 sm:py-32 lg:grid lg:grid-cols-[minmax(0,1.7fr)_minmax(0,1fr)] lg:items-center lg:gap-8 xl:grid-cols-[minmax(0,1.55fr)_minmax(0,1fr)] xl:gap-12">
+        <div className="relative mx-auto max-w-6xl px-4 py-24 sm:py-32 lg:grid lg:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)] lg:items-center lg:gap-6 xl:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] xl:gap-10">
           {/* Text column. */}
           <div>
             <p className="eyebrow eyebrow--light">Immigration, by qualified lawyers</p>
             {/* At lg+ the headline shares the row with the globe, so it has
                 to accept a slightly tighter cap than the standalone display-1
                 clamp — otherwise "Canadian immigration," splits mid-phrase. */}
-            <h1 className="display-1 mt-6 lg:!text-[3.5rem] lg:!leading-[1.03] xl:!text-[4rem]">
+            <h1 className="display-1 mt-6 lg:!text-[3.3rem] lg:!leading-[1.03] xl:!text-[3.7rem]">
               Canadian immigration, handled by{' '}
               <span className="text-gold-300">real lawyers.</span>
             </h1>
@@ -104,7 +106,7 @@ export default function HomePage() {
               width. From lg up it is a real part of the grid, so the headline
               never fights it. The negative mr allows the globe to bleed a
               little past the content container's right edge for presence. */}
-          <div className="relative hidden lg:block lg:mr-[-4rem] xl:mr-[-2rem]">
+          <div className="relative hidden lg:block lg:mr-[-4rem] lg:scale-[1.06] xl:mr-[-3rem] xl:scale-110">
             <HeroCanada />
           </div>
         </div>
@@ -206,7 +208,7 @@ export default function HomePage() {
           <div className="grid gap-10 sm:grid-cols-3 sm:gap-8">
             {[
               ['3', 'offices', 'Lahore, Islamabad & Mississauga — real doors, not a mailbox.'],
-              ['4', 'destinations', 'Canada, the USA, the UK and Europe — one firm, checked facts.'],
+              ['4', 'countries', 'Canada, the USA, the UK and Europe — plus investor routes, one firm.'],
               ['Free', 'consultation', 'And a written summary of where you stand, before money is discussed.'],
             ].map(([big, small, desc]) => (
               <div key={small as string} className="border-t-2 border-gold-500/70 pt-5">

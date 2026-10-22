@@ -15,7 +15,7 @@ import { PageHero, Section, SectionHeading, FeatureCard, Callout, CTASection, Ic
 export const metadata: Metadata = {
   title: 'Free Immigration Tools & Eligibility Checkers',
   description:
-    'Free, honest self-assessment tools: a current Express Entry CRS calculator, whether you could work in Canada without a job offer, and what an officer would question about your visitor visa. No sign-up.',
+    'Free self-assessment tools: a current Express Entry CRS calculator, a work-without-a-job-offer check, and a visitor-visa refusal-risk gauge. No sign-up.',
   alternates: { canonical: '/tools' },
 };
 

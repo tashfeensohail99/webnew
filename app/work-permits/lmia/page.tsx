@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * LMIA-based work permits.
@@ -23,7 +24,7 @@ import {
 export const metadata: Metadata = {
   title: 'LMIA-Based Work Permits for Canada',
   description:
-    'What a Labour Market Impact Assessment is, why it is the employer’s application and not yours, how the two-step LMIA-then-work-permit sequence runs — and why nobody can legally sell you one.',
+    'What a Labour Market Impact Assessment is, why it is the employer’s application not yours, and why nobody can legally sell you one.',
   alternates: { canonical: '/work-permits/lmia' },
 };
 
@@ -388,6 +389,9 @@ export default function LmiaPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

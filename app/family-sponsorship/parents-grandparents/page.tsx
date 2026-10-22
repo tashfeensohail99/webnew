@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Sponsoring parents and grandparents.
@@ -23,7 +24,7 @@ import {
 export const metadata: Metadata = {
   title: 'Sponsoring Parents and Grandparents for Canada',
   description:
-    'How the parents and grandparents route actually works — the interest-to-sponsor pool, the invitation, the income test across tax years, and the long undertaking — plus an honest comparison with the Super Visa.',
+    'How the parents and grandparents route works: the interest-to-sponsor pool, the invitation, the income test, the undertaking, and the Super Visa compared.',
   alternates: { canonical: '/family-sponsorship/parents-grandparents' },
 };
 
@@ -489,6 +490,9 @@ export default function ParentsGrandparentsPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions families actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

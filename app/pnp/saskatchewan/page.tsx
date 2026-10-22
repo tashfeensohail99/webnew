@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Saskatchewan provincial nomination (SINP).
@@ -24,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: 'Saskatchewan Provincial Nomination (SINP)',
   description:
-    'How the Saskatchewan Immigrant Nominee Program works structurally — expression of interest and direct application, enhanced versus base nomination, and the intent-to-settle expectation that decides whether this province is honestly your route.',
+    'How the Saskatchewan Immigrant Nominee Program works: expression of interest and direct application, base versus enhanced nomination, and intent to settle.',
   alternates: { canonical: '/pnp/saskatchewan' },
 };
 
@@ -461,6 +462,9 @@ export default function SaskatchewanPnpPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

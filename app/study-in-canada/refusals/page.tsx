@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Study permit refusals.
@@ -24,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: 'Canada Study Permit Refusals',
   description:
-    'What each ticked box on a study permit refusal letter actually means, why the officer’s notes say far more than the letter, and why re-submitting the same file usually produces the same answer.',
+    'What each ticked box on a study permit refusal means, why the officer’s notes say far more, and why resubmitting the same file rarely changes it.',
   alternates: { canonical: '/study-in-canada/refusals' },
 };
 
@@ -448,6 +449,9 @@ export default function StudyPermitRefusalsPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

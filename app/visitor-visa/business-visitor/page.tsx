@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Business visitors.
@@ -23,7 +24,7 @@ import {
 export const metadata: Metadata = {
   title: 'Business Visitors to Canada',
   description:
-    'The line between business visitor activity and work that requires a permit — the tests officers apply, activities on each side of the line, and why crossing it is a status breach rather than a paperwork problem.',
+    'The line between business visitor activity and work needing a permit: the tests officers apply, and why crossing it is a status breach, not paperwork.',
   alternates: { canonical: '/visitor-visa/business-visitor' },
 };
 
@@ -445,6 +446,9 @@ export default function BusinessVisitorPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

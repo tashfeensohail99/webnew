@@ -29,7 +29,7 @@ import { CRS_GRID_VERIFIED_ON, OFFICIAL_CALCULATOR_URL } from '@/lib/crs-grid';
 export const metadata: Metadata = {
   title: 'CRS Calculator — Express Entry Points',
   description:
-    'Free Express Entry CRS score calculator built on IRCC’s current grid, including the March 2025 removal of job-offer points from the CRS. Check our arithmetic against IRCC’s own tool.',
+    'Free Express Entry CRS calculator on IRCC’s current grid, including the March 2025 removal of job-offer points. Check our arithmetic against IRCC’s tool.',
   alternates: { canonical: '/tools/crs-calculator' },
 };
 

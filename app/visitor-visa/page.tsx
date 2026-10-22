@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * The hub page for temporary visits to Canada.
@@ -31,7 +32,7 @@ import {
 export const metadata: Metadata = {
   title: 'Visiting Canada',
   description:
-    'Visitor visa or eTA, Super Visa, business visitors, and extending a stay — how Canada’s temporary visit routes actually work, and the one question underneath every application.',
+    'Visitor visa or eTA, Super Visa, business visitors and extensions: how these routes work, and the one question underneath every application.',
   alternates: { canonical: '/visitor-visa' },
 };
 
@@ -341,6 +342,9 @@ export default function VisitorVisaPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

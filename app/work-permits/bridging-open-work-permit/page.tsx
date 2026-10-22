@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Bridging open work permit (BOWP).
@@ -24,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: 'Bridging Open Work Permit (BOWP) for Canada',
   description:
-    'What a bridging open work permit does, which permanent residence applicants it covers as a category, the timing rule tied to your current permit’s expiry, and who it does not help.',
+    'What a bridging open work permit does, which PR applicants it covers, the timing rule tied to your current permit’s expiry, and who it does not help.',
   alternates: { canonical: '/work-permits/bridging-open-work-permit' },
 };
 
@@ -434,6 +435,9 @@ export default function BridgingOpenWorkPermitPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

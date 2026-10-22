@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Extending a study permit.
@@ -22,7 +23,7 @@ import {
 export const metadata: Metadata = {
   title: 'Extending a Study Permit in Canada',
   description:
-    'When and how to extend a study permit, what maintained status does and does not protect while a decision is pending, and how restoration works if a permit expires first.',
+    'When and how to extend a study permit, what maintained status protects while a decision is pending, and how restoration works if a permit expires first.',
   alternates: { canonical: '/study-in-canada/study-permit-extension' },
 };
 
@@ -480,6 +481,9 @@ export default function StudyPermitExtensionPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions students actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

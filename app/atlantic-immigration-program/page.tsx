@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Atlantic Immigration Program.
@@ -23,7 +24,7 @@ import {
 export const metadata: Metadata = {
   title: 'Atlantic Immigration Program',
   description:
-    'A permanent, employer-driven route to Canadian permanent residence in Nova Scotia, New Brunswick, Prince Edward Island and Newfoundland and Labrador — designated employers, endorsement, settlement plans, and no LMIA.',
+    'A permanent, employer-driven PR route in the four Atlantic provinces: designated employers, endorsement, a settlement plan, and no LMIA required.',
   alternates: { canonical: '/atlantic-immigration-program' },
 };
 
@@ -487,6 +488,9 @@ export default function AtlanticImmigrationProgramPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

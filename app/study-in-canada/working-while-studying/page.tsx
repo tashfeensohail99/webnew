@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Working while studying in Canada.
@@ -26,7 +27,7 @@ import {
 export const metadata: Metadata = {
   title: 'Working While Studying in Canada',
   description:
-    'How permission to work flows from the conditions printed on your study permit — on-campus work, off-campus work, work placements that are part of the programme, and why working beyond your conditions is a status breach.',
+    'How work permission follows the conditions on your study permit: on-campus and off-campus work, placements, and why exceeding them breaches status.',
   alternates: { canonical: '/study-in-canada/working-while-studying' },
 };
 
@@ -465,6 +466,9 @@ export default function WorkingWhileStudyingPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions students actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

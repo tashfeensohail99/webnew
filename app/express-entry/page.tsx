@@ -12,6 +12,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Express Entry — the system, not a programme.
@@ -25,7 +26,7 @@ import {
 export const metadata: Metadata = {
   title: 'Express Entry',
   description:
-    'Express Entry is a management system for three federal immigration programmes — not a programme you apply to. How the pool, the CRS ranking and the invitation actually work, and when it isn’t your route.',
+    'Express Entry is a system for three federal programmes, not one you apply to. How the pool, the CRS ranking and the invitation actually work.',
   alternates: { canonical: '/express-entry' },
 };
 
@@ -441,6 +442,9 @@ export default function ExpressEntryPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * The work-permit hub. Two axes, explained once and properly:
@@ -24,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: 'Canadian work permits',
   description:
-    'How Canadian work permits actually work: employer-specific vs open, LMIA-based vs LMIA-exempt, what an LMIA is, and why buying a job offer is the fastest way to a misrepresentation bar.',
+    'How Canadian work permits work: employer-specific versus open, LMIA-based versus exempt, and why buying a job offer risks a misrepresentation bar.',
   alternates: { canonical: '/work-permits' },
 };
 
@@ -405,6 +406,9 @@ export default function WorkPermitsPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

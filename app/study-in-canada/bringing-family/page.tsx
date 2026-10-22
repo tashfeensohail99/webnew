@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Bringing family while you study in Canada.
@@ -24,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: 'Bringing Family While You Study in Canada',
   description:
-    'How accompanying spouses and dependent children are handled on a Canadian study permit application — when a child needs their own study permit, when a spouse may qualify for an open work permit, and why that eligibility has narrowed.',
+    'How spouses and children are handled on a study permit application: when a child needs a permit, when a spouse may get a work permit, and recent limits.',
   alternates: { canonical: '/study-in-canada/bringing-family' },
 };
 
@@ -487,6 +488,9 @@ export default function BringingFamilyPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

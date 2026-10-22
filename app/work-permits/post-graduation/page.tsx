@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Post-graduation work permit.
@@ -26,7 +27,7 @@ import {
 export const metadata: Metadata = {
   title: 'Post-Graduation Work Permit (PGWP) for Canada',
   description:
-    'What the post-graduation work permit is, why eligibility depends on both the institution and the specific programme, how its length relates to what you studied — and why it is a once-in-a-lifetime permit you should plan for before you enrol.',
+    'What the post-graduation work permit is, why eligibility depends on the institution and programme, how its length is set, and why it is once in a lifetime.',
   alternates: { canonical: '/work-permits/post-graduation' },
 };
 
@@ -474,6 +475,9 @@ export default function PostGraduationWorkPermitPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 

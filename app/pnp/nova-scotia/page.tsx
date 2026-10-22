@@ -11,6 +11,7 @@ import {
   Prose,
   Icon,
 } from '@/components/ui';
+import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
  * Nova Scotia Nominee Program (NSNP).
@@ -25,7 +26,7 @@ import {
 export const metadata: Metadata = {
   title: 'Nova Scotia Provincial Nomination (NSNP)',
   description:
-    'How the Nova Scotia Nominee Program works structurally — expression of interest, Express Entry-aligned and base nomination, and the intent-to-settle expectation. Written without stream lists or figures that go stale; current criteria link to the province and IRCC.',
+    'How the Nova Scotia Nominee Program works: expression of interest, Express Entry-aligned and base nomination, and the intent-to-settle expectation.',
   alternates: { canonical: '/pnp/nova-scotia' },
 };
 
@@ -433,6 +434,9 @@ export default function NovaScotiaPnpPage() {
         <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
         <div className="mt-10">
           <FAQ items={FAQS} />
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl">
+          <ReviewedBy updated="July 2026" />
         </div>
       </Section>
 
