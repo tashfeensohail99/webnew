@@ -144,13 +144,12 @@ export function FlagEU({ className }: FlagProps) {
           // Clock positions, starting at 12. Every star stays upright — they
           // do NOT rotate to face the centre.
           const a = (i * 30 - 90) * (Math.PI / 180);
-          return (
-            <path
-              key={i}
-              d={starPath(r)}
-              transform={`translate(${cx + Math.cos(a) * ring} ${cy + Math.sin(a) * ring})`}
-            />
-          );
+          // Rounded like starPath: Node and the browser disagree in the last
+          // bits of Math.cos/sin, and the raw doubles made every page log a
+          // hydration mismatch on this attribute.
+          const x = (cx + Math.cos(a) * ring).toFixed(3);
+          const y = (cy + Math.sin(a) * ring).toFixed(3);
+          return <path key={i} d={starPath(r)} transform={`translate(${x} ${y})`} />;
         })}
       </g>
     </svg>
