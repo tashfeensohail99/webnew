@@ -45,6 +45,13 @@ like it does nothing.
 Token prefixes map to canonical CRM service codes (`lib/wa.ts`):
 `WP-` work permit · `VV-` visit visa · `JR-` refusal/judicial review · `SV-` study.
 
+> **Status, checked 2026-10-22 against the CRM repo (`tashfeensohail99/tafai`):**
+> the webhook does **not** parse this token yet. A website WhatsApp chat lands in
+> the CRM inbox as an ordinary `sourceChannel='whatsapp'` lead; the `[Ref: …]`
+> text is only visible in its first message. The consultation form
+> (`POST /public/leads/website`) is attributed correctly — source `WEBSITE`,
+> round-robined to a sales agent.
+
 ## Where the facts live
 
 `lib/site.ts` is the single source of truth for anything a customer could act on —

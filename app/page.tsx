@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { WhatsAppCta } from '@/components/WhatsAppCta';
+import { WhatsAppFloat } from '@/components/WhatsAppFloat';
 import { DestinationGrid } from '@/components/DestinationGrid';
 import { HeroCanada } from '@/components/HeroCanada';
 import { SplitSection } from '@/components/ui';
@@ -311,6 +312,14 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <WhatsAppFloat
+        intent={{
+          service: SERVICE.WORK_PERMIT,
+          page: 'home-float',
+          message: 'Hi, I’d like some advice about my immigration options.',
+        }}
+      />
     </>
   );
 }

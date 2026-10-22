@@ -458,6 +458,18 @@ img, svg { max-width: 100%; height: auto; }
   .hc-pulse, .hc-corridor { animation: none; }
 }
 
+/* Floating WhatsApp button: a soft ring breathes out from the disc so the eye
+   finds it, then rests. Off entirely under reduced motion. */
+@keyframes wa-ring {
+  0%   { transform: scale(1);    opacity: .5; }
+  70%  { transform: scale(1.75); opacity: 0;  }
+  100% { transform: scale(1.75); opacity: 0;  }
+}
+.wa-float-ring { background: #25d366; animation: wa-ring 2.8s ease-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .wa-float-ring { animation: none; opacity: 0; }
+}
+
 ::selection { background: var(--color-gold-300); color: var(--color-ink-950); }
 
 /* KEYBOARD FOCUS INDICATOR — WCAG 2.4.11 wants the indicator itself at 3:1.
