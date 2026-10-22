@@ -217,6 +217,88 @@ html[data-theme="dark"] header .logo-img { filter: brightness(0) invert(1); }
    top hairline keeps it reading as a distinct zone. */
 html[data-theme="dark"] footer { border-top: 1px solid rgba(255, 255, 255, 0.06); }
 
+/* =========================================================
+   LIGHT THEME  —  the navy bands go light too.
+
+   The site was designed with a navy hero / footer / stat band in BOTH
+   themes. The firm wants light mode to be light everywhere, so in light
+   mode (html without data-theme="dark" — the no-JS default too) the band
+   surfaces become white-to-cool-white and every light-on-navy utility used
+   inside them is re-mapped to navy-on-white. Same unlayered-override
+   technique as the dark theme. The bands: .bg-hero (page hero, PageHero,
+   CTASection), .bg-navy (StatBand, Section tone="navy", footer, the
+   calculators' result rails) and .bg-ink-950 (header utility bar, mobile
+   drawer). Nothing stays navy in light mode — that was the complaint.
+   ========================================================= */
+html:not([data-theme="dark"]) .bg-hero {
+  background:
+    radial-gradient(1100px 520px at 78% -8%, rgba(195, 161, 92, 0.16), transparent 60%),
+    radial-gradient(760px 420px at 8% 108%, rgba(47, 70, 97, 0.08), transparent 60%),
+    linear-gradient(160deg, #ffffff 0%, #f4f7fb 55%, #e9eff7 100%);
+  color: var(--color-ink-900);
+}
+html:not([data-theme="dark"]) .bg-navy {
+  background: linear-gradient(165deg, #f4f7fb, #e9eff7);
+  color: var(--color-ink-900);
+}
+html:not([data-theme="dark"]) .bg-ink-950 {
+  background: var(--color-paper-alt);
+  color: var(--color-ink-900);
+}
+/* The utility bar (the one .bg-ink-950 that also carries text-ink-300) stays
+   muted and gets a hairline so it still reads as a strip above the white
+   header. */
+html:not([data-theme="dark"]) .bg-ink-950.text-ink-300 {
+  color: var(--color-ink-600);
+  border-bottom: 1px solid var(--color-rule);
+}
+html:not([data-theme="dark"]) footer { border-top: 1px solid var(--color-rule); }
+
+html:not([data-theme="dark"]) :is(.bg-hero, .bg-navy, .bg-ink-950) {
+  --focus-ring: var(--color-ink-900);
+}
+
+/* Text inside the bands. */
+html:not([data-theme="dark"]) :is(.bg-hero, .bg-navy, .bg-ink-950) :is(.text-white, .text-ink-100) { color: var(--color-ink-900); }
+html:not([data-theme="dark"]) :is(.bg-hero, .bg-navy, .bg-ink-950) :is(.text-ink-200, .text-ink-300) { color: var(--color-ink-600); }
+/* `!text-ink-200` is an !important utility. For !important declarations the
+   layer order flips (layered beats unlayered), so this override has to live
+   INSIDE Tailwind's utilities layer, where its higher specificity wins. */
+@layer utilities {
+  html:not([data-theme="dark"]) :is(.bg-hero, .bg-navy, .bg-ink-950) .\!text-ink-200 { color: var(--color-ink-600) !important; }
+}
+html:not([data-theme="dark"]) :is(.bg-hero, .bg-navy, .bg-ink-950) .text-ink-400 { color: var(--color-ink-500); }
+html:not([data-theme="dark"]) :is(.bg-hero, .bg-navy, .bg-ink-950) :is(.text-gold-300, .text-gold-400) { color: var(--color-gold-600); }
+html:not([data-theme="dark"]) :is(.bg-hero, .bg-navy, .bg-ink-950) .eyebrow--light { color: var(--color-gold-600); }
+html:not([data-theme="dark"]) :is(.bg-hero, .bg-navy, .bg-ink-950) .eyebrow--light::before { background: linear-gradient(90deg, transparent, var(--color-gold-500)); }
+html:not([data-theme="dark"]) :is(.bg-hero, .bg-navy, .bg-ink-950) .hover\:text-white:hover { color: var(--color-ink-900); }
+
+/* Translucent-white tiles, borders, rings and dividers → white tiles with
+   hairlines; translucent-white hover fills → a faint navy wash. */
+html:not([data-theme="dark"]) :is(.bg-hero, .bg-navy, .bg-ink-950) .bg-white\/5 { background-color: var(--color-rule); }
+html:not([data-theme="dark"]) :is(.bg-hero, .bg-navy, .bg-ink-950) :is(.bg-white\/10, .bg-white\/\[0\.06\], .bg-ink-950\/30) { background-color: #ffffff; }
+html:not([data-theme="dark"]) :is(.bg-hero, .bg-navy, .bg-ink-950) :is(.hover\:bg-white\/10:hover, .hover\:bg-white\/\[0\.12\]:hover) { background-color: rgba(13, 27, 43, 0.06); }
+html:not([data-theme="dark"]) :is(.bg-hero, .bg-navy, .bg-ink-950) :is(.border-white\/10, .border-white\/15, .border-white\/20) { border-color: var(--color-rule); }
+html:not([data-theme="dark"]) :is(.bg-hero, .bg-navy, .bg-ink-950) .divide-white\/10 > :not(:last-child) { border-color: var(--color-rule); }
+html:not([data-theme="dark"]) :is(.bg-hero, .bg-navy, .bg-ink-950) :is(.ring-white\/15, .ring-white\/25) { --tw-ring-color: var(--color-rule); }
+html:not([data-theme="dark"]) :is(.bg-hero, .bg-navy, .bg-ink-950) :is(.text-white\/\[0\.03\], .text-white\/\[0\.035\]) { color: rgba(13, 27, 43, 0.05); }
+
+/* Ghost buttons on a light band. */
+html:not([data-theme="dark"]) :is(.bg-hero, .bg-navy, .bg-ink-950) :is(.btn-ghost, .btn-ghost-light) {
+  background: #ffffff;
+  color: var(--color-ink-800);
+  border: 1px solid var(--color-rule);
+}
+html:not([data-theme="dark"]) :is(.bg-hero, .bg-navy, .bg-ink-950) :is(.btn-ghost:hover, .btn-ghost-light:hover) {
+  background: var(--color-paper-alt);
+  border-color: var(--color-ink-400);
+  color: var(--color-ink-900);
+}
+
+/* The footer logo is the white (inverted) variant for a navy footer; on the
+   light footer it must be the navy lockup again. */
+html:not([data-theme="dark"]) footer .logo-img { filter: none; }
+
 body { min-height: 100vh; line-height: 1.65; }
 
 h1, h2, h3 { font-family: var(--font-serif); letter-spacing: -0.01em; }
