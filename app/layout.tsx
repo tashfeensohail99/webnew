@@ -38,8 +38,17 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
   const { display, digits } = await getWhatsAppChannel();
 
   return (
-    <html lang="en" className={`${fraunces.variable} ${inter.variable}`}>
+    <html lang="en" className={`${fraunces.variable} ${inter.variable}`} suppressHydrationWarning>
       <head>
+        {/* Theme bootstrap — runs before first paint so there is no flash of
+            the wrong theme. Explicit choice (localStorage) wins; otherwise
+            follow the OS. Wrapped in try/catch for private-mode storage. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "(function(){try{var t=localStorage.getItem('theme');if(t!=='light'&&t!=='dark'){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();",
+          }}
+        />
         <StructuredData />
       </head>
       <body className="bg-paper text-ink-900">

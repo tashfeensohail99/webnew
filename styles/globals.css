@@ -117,6 +117,80 @@ html {
   scroll-behavior: smooth;
 }
 
+/* =========================================================
+   DARK THEME  —  <html data-theme="dark">
+
+   The navy "ink" SCALE is deliberately left untouched so the
+   already-dark surfaces (bg-hero / bg-navy / bg-ink-*) stay dark
+   in both themes. Only two things change:
+     1. the light-surface tokens (paper / paper-alt / rule) flip dark,
+     2. the ink TEXT utilities + ink-reading custom classes are
+        re-mapped to light.
+   The text rules are UNLAYERED, so they beat Tailwind's layered
+   `.text-ink-*` utilities (same trap documented for img/flags above,
+   used here on purpose).
+
+   A page's structure survives because `bg-paper` surfaces go dark,
+   their `text-ink-*` content goes light, and the gold accent lifts
+   a shade so links/eyebrows stay legible on the dark ground.
+   ========================================================= */
+html[data-theme="dark"] {
+  color-scheme: dark;
+  color: #e7eef7;
+  --color-paper:     #0b1522;
+  --color-paper-alt: #111e2f;
+  --color-rule:      rgba(205, 219, 238, 0.14);
+  /* The text golds read too dark on a dark ground — lift them. The
+     decorative gold-400/500 (button fills, rules) stay as they are. */
+  --color-gold-600:   #dcc07f;
+  --color-accent-500: #dcc07f;
+  --color-accent-600: #e9d49a;
+  --focus-ring: #ffffff;
+}
+
+/* Ink text utilities → light. Only the shades used as text on LIGHT
+   surfaces are remapped; ink-100..300 are left alone (they are the
+   light text that already sits on the dark bands). */
+html[data-theme="dark"] .text-ink-900 { color: #f1f5fb; }
+html[data-theme="dark"] .text-ink-800 { color: #e7eef7; }
+html[data-theme="dark"] .text-ink-700 { color: #d7e1ee; }
+html[data-theme="dark"] .text-ink-600 { color: #c0cddc; }
+html[data-theme="dark"] .text-ink-500 { color: #aab8ca; }
+html[data-theme="dark"] .text-ink-400 { color: #8f9eb2; }
+
+/* Custom classes that read ink/gold tokens directly in their own CSS. */
+html[data-theme="dark"] .lede { color: #c3d0df; }
+html[data-theme="dark"] .btn-ghost { color: #dce4ef; }
+html[data-theme="dark"] .btn-ghost:hover { background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.3); }
+html[data-theme="dark"] .btn-navy { background: #1b2d44; }
+html[data-theme="dark"] .btn-navy:hover { background: #22364f; }
+
+/* Cards lift off the dark page with a lighter surface + hairline,
+   since the light-mode drop shadow is invisible on a dark ground. */
+html[data-theme="dark"] .card {
+  background: #15243a;
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 18px 40px -24px rgba(0, 0, 0, 0.6);
+}
+html[data-theme="dark"] .card:hover { border-color: var(--color-gold-400); }
+
+/* Long-form prose pages. */
+html[data-theme="dark"] .prose-lux { color: #c3d0df; }
+html[data-theme="dark"] .prose-lux h2,
+html[data-theme="dark"] .prose-lux h3,
+html[data-theme="dark"] .prose-lux strong { color: #f1f5fb; }
+html[data-theme="dark"] .prose-lux a { color: #dcc07f; }
+
+html[data-theme="dark"] ::selection { background: var(--color-gold-500); color: #0b1522; }
+
+/* The header logo is the navy lockup (for the light bar). On the dark bar it
+   must read white — invert it, matching what the footer's light variant does. */
+html[data-theme="dark"] header .logo-img { filter: brightness(0) invert(1); }
+
+/* The footer is already navy, so in dark mode it blends into the page; a faint
+   top hairline keeps it reading as a distinct zone. */
+html[data-theme="dark"] footer { border-top: 1px solid rgba(255, 255, 255, 0.06); }
+
 body { min-height: 100vh; line-height: 1.65; }
 
 h1, h2, h3 { font-family: var(--font-serif); letter-spacing: -0.01em; }

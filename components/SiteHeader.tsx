@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Logo } from '@/components/Logo';
 import { MobileNav } from '@/components/MobileNav';
+import { ThemeToggle } from '@/components/ThemeToggle';
 import { DestinationBar } from '@/components/DestinationBar';
 import { liveNav, OTHER_DESTINATIONS } from '@/lib/nav';
 
@@ -201,6 +202,8 @@ export function SiteHeader({ display, digits }: { display: string; digits: strin
               `@layer utilities` regardless of specificity, so Tailwind's
               `hidden` silently does nothing on any element carrying `.btn`.
               Swapping the label is honest about what actually renders. */}
+          <ThemeToggle className="hidden shrink-0 text-ink-500 hover:text-ink-900 sm:inline-flex" />
+
           <Link
             href="/book-consultation"
             className="btn btn-gold shrink-0 !min-h-11 !px-3.5 text-sm sm:!px-5"

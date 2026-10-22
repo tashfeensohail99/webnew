@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { DESTINATIONS, type NavGroup } from '@/lib/nav';
 import { FlagCanada, FlagUK, FlagUSA, FlagEU } from '@/components/Flags';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 /** Same mapping as the desktop DestinationBar; kept local to avoid a shared
  *  module whose only job would be four key/value pairs. */
@@ -157,19 +158,22 @@ export function MobileNav({
           {/* Header row — close sits right, where the thumb already is. */}
           <div className="flex shrink-0 items-center justify-between border-b border-white/10 px-4 py-3">
             <span className="font-serif text-lg text-white">Menu</span>
-            <button
-              type="button"
-              onClick={() => {
-                setOpen(false);
-                triggerRef.current?.focus();
-              }}
-              aria-label="Close menu"
-              className="flex h-11 w-11 items-center justify-center rounded-xl text-ink-300 transition-colors hover:bg-white/10 hover:text-white"
-            >
-              <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth={1.8} aria-hidden="true">
-                <path d="M6 6l12 12M18 6L6 18" strokeLinecap="round" />
-              </svg>
-            </button>
+            <div className="flex items-center gap-1">
+              <ThemeToggle className="text-white" />
+              <button
+                type="button"
+                onClick={() => {
+                  setOpen(false);
+                  triggerRef.current?.focus();
+                }}
+                aria-label="Close menu"
+                className="flex h-11 w-11 items-center justify-center rounded-xl text-ink-300 transition-colors hover:bg-white/10 hover:text-white"
+              >
+                <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth={1.8} aria-hidden="true">
+                  <path d="M6 6l12 12M18 6L6 18" strokeLinecap="round" />
+                </svg>
+              </button>
+            </div>
           </div>
 
           {/* Destinations FIRST, above the accordion and outside the scroll
