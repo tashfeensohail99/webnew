@@ -143,7 +143,7 @@ const ROUTES = [
   },
 ];
 
-const DOCUMENTS: { title: string; body: ReactNode }[] = [
+const DOCUMENTS: { title: string; body: ReactNode; guide?: string }[] = [
   {
     title: 'A valid passport',
     body: 'Renew early if it is close to expiry — a permit generally cannot run past the date your passport does.',
@@ -170,6 +170,7 @@ const DOCUMENTS: { title: string; body: ReactNode }[] = [
   },
   {
     title: 'Police certificates',
+    guide: '/canada-immigration-from-pakistan/police-certificate',
     body: (
       <>
         For permanent residence, from Pakistan and from{' '}
@@ -180,6 +181,7 @@ const DOCUMENTS: { title: string; body: ReactNode }[] = [
   },
   {
     title: 'A medical exam',
+    guide: '/canada-immigration-from-pakistan/medical-exam',
     body: (
       <>
         Done by an <Official href={IRCC.medical}>IRCC panel physician</Official> — not your own
@@ -189,6 +191,7 @@ const DOCUMENTS: { title: string; body: ReactNode }[] = [
   },
   {
     title: 'Biometrics',
+    guide: '/canada-immigration-from-pakistan/biometrics',
     body: 'Fingerprints and a photo, given in person at a Visa Application Centre. There are centres in Pakistan; you can also give them where you live in the Gulf.',
   },
   {
@@ -364,6 +367,13 @@ export default function CanadaFromPakistanPage() {
             <div key={d.title} className="border-l-2 border-gold-500/60 pl-5">
               <dt className="font-serif text-xl">{d.title}</dt>
               <dd className="mt-1.5 text-ink-600 text-pretty">{d.body}</dd>
+              {d.guide ? (
+                <dd className="mt-2">
+                  <Link href={d.guide} className="text-sm font-semibold text-accent-500 link-underline">
+                    Step by step from Pakistan →
+                  </Link>
+                </dd>
+              ) : null}
             </div>
           ))}
         </dl>

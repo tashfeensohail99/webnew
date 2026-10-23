@@ -66,7 +66,12 @@ export const ROUTES: Route[] = [
   // service — see the note at the top of lib/nav.ts.
   { path: '/immigration-programs', reviewed: '2026-07-20', priority: 0.8, changeFrequency: 'monthly' },
   // The "start here" map for the audience's single biggest search.
-  { path: '/canada-immigration-from-pakistan', reviewed: '2026-10-22', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/canada-immigration-from-pakistan', reviewed: '2026-10-23', priority: 0.9, changeFrequency: 'monthly' },
+  // The three practical steps nearly every file from Pakistan goes through —
+  // each built from IRCC's own pages, with IRCC's links for anything that moves.
+  { path: '/canada-immigration-from-pakistan/police-certificate', reviewed: '2026-10-23', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/canada-immigration-from-pakistan/medical-exam', reviewed: '2026-10-23', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/canada-immigration-from-pakistan/biometrics', reviewed: '2026-10-23', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/express-entry', reviewed: '2026-07-20', priority: 0.9, changeFrequency: 'monthly' },
   // Read hourly from IRCC's rounds feed (ISR) — a new round can land any weekday.
   { path: '/express-entry/draws', reviewed: '2026-10-23', priority: 0.9, changeFrequency: 'daily' },
