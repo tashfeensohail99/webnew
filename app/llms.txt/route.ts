@@ -1,5 +1,6 @@
 import { site, founder } from '@/lib/site';
 import { liveNav } from '@/lib/nav';
+import { sortedPosts } from '@/lib/blog';
 
 /**
  * /llms.txt — a plain-text map of the site for AI assistants (the llmstxt.org
@@ -32,6 +33,9 @@ export function GET() {
     `- [Business immigration to Canada](${site.url}/business-immigration): what remains for entrepreneurs, and what has closed.`,
     `- [Visa refused?](${site.url}/canada-visa-refused): GCMS notes, reconsideration, re-applying and judicial review.`,
     `- [Latest updates](${site.url}/updates): our newest YouTube explainers on draws and rule changes, each dated and linked to the matching guide.`,
+    '',
+    '## Blog (dated posts)',
+    ...sortedPosts().map((p) => `- [${p.title}](${site.url}/blog/${p.slug}) (${p.published}): ${p.description}`),
     '',
   ];
 

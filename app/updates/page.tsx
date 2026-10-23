@@ -6,6 +6,7 @@ import { SocialIcon } from '@/components/SocialIcon';
 import { followersHeadline } from '@/components/SocialProof';
 import { latestUpdates, type Video } from '@/lib/youtube';
 import { site } from '@/lib/site';
+import { sortedPosts } from '@/lib/blog';
 
 /**
  * /updates — the channel's latest explainers and rule-change videos, on the site.
@@ -170,8 +171,22 @@ export default async function UpdatesPage() {
         </Section>
       )}
 
-      {/* What the channel covers — and where each topic lives in full on the site. */}
+      {/* The written side of the same updates. */}
       <Section tone="paper">
+        <SectionHeading eyebrow="In writing" title="From the blog" subtitle="Dated posts on the same changes, written from the official sources." />
+        <ul className="mt-8 space-y-3">
+          {sortedPosts().slice(0, 5).map((p) => (
+            <li key={p.slug}>
+              <Link href={`/blog/${p.slug}`} className="font-serif text-xl link-underline">
+                {p.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </Section>
+
+      {/* What the channel covers — and where each topic lives in full on the site. */}
+      <Section tone="alt">
         <SectionHeading
           eyebrow="What we cover"
           title="The topics behind the videos"

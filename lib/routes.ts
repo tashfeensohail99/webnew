@@ -43,6 +43,8 @@ export const ROUTES: Route[] = [
   { path: '/book-consultation', reviewed: '2026-07-17', priority: 0.7, changeFrequency: 'monthly' },
   // Cost is the first thing this market searches and the last thing it answers.
   { path: '/fees', reviewed: '2026-07-17', priority: 0.7, changeFrequency: 'monthly' },
+  // The blog index. Posts add themselves to the sitemap from lib/blog.ts.
+  { path: '/blog', reviewed: '2026-10-23', priority: 0.7, changeFrequency: 'weekly' },
   // Rebuilt hourly from the YouTube feed (ISR), so 'daily' is the honest value.
   { path: '/updates', reviewed: '2026-10-23', priority: 0.7, changeFrequency: 'daily' },
 

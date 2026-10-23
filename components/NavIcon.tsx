@@ -57,6 +57,7 @@ const GLYPHS = {
   info: (<><circle cx="12" cy="12" r="9" /><path d="M12 11v6M12 7.5h.01" /></>),
   play: (<><rect x="2.5" y="5" width="19" height="14" rx="3.5" /><path d="M10 9.2v5.6l4.8-2.8L10 9.2z" /></>),
   fingerprint: <path d="M12 11v3a6 6 0 0 1-1.6 4M8.6 8.4A5 5 0 0 1 17 12v1.5M4.8 10a7.5 7.5 0 0 1 14-3M7 12.5V14a9 9 0 0 0 1.2 4.5M15.2 15.5a11 11 0 0 1-1.2 4.5" />,
+  pen: <path d="M4 20h4L19 9l-4-4L4 16v4zM13.5 6.5l4 4" />,
   receipt: <path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3zM9 8h6M9 12h6M9 16h3" />,
 } as const;
 
@@ -148,6 +149,7 @@ const BY_HREF: Record<string, NavIconName> = {
   '/about/our-team': 'users',
   '/fees': 'receipt',
   '/updates': 'play',
+  '/blog': 'pen',
   '/work-permit-canada/business-plan': 'doc',
   '/work-permit-canada/refusals': 'alert',
   '/no-guarantee-policy': 'shield',

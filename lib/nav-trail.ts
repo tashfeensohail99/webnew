@@ -1,5 +1,6 @@
 import { NAV, type NavGroup, type NavItem } from './nav';
 import { ROUTES } from './routes';
+import { POSTS } from './blog';
 
 /**
  * Where a page sits in the site — derived from the nav, so breadcrumbs and
@@ -43,6 +44,9 @@ const PAGE_LABEL: Record<string, string> = {
 
 const ROUTE_SET = new Set(ROUTES.map((r) => r.path));
 
+/** Blog posts aren't in the menu, so their crumb label comes from lib/blog.ts. */
+const POST_LABEL: Record<string, string> = Object.fromEntries(POSTS.map((p) => [`/blog/${p.slug}`, p.short]));
+
 const live = (i: NavItem) => i.status === 'live';
 
 function itemLabel(path: string): string | undefined {
@@ -60,7 +64,7 @@ function titleCase(slug: string): string {
 }
 
 export function labelFor(path: string): string {
-  return PAGE_LABEL[path] ?? GROUP_LABEL[path] ?? itemLabel(path) ?? titleCase(path.split('/').pop() ?? '');
+  return PAGE_LABEL[path] ?? POST_LABEL[path] ?? GROUP_LABEL[path] ?? itemLabel(path) ?? titleCase(path.split('/').pop() ?? '');
 }
 
 /** The menu group a page belongs to. A page listed in two groups (Super Visa is

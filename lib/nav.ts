@@ -266,6 +266,7 @@ export const NAV: NavGroup[] = [
           { href: '/about', label: 'About the firm', status: 'live' },
           { href: '/about/our-team', label: 'Our people', status: 'live' },
           { href: '/updates', label: 'Latest updates & videos', status: 'live' },
+          { href: '/blog', label: 'Blog', status: 'live' },
           { href: '/fees', label: 'Fees', status: 'live' },
           { href: '/no-guarantee-policy', label: 'No-guarantee policy', status: 'live' },
           { href: '/book-consultation', label: 'Book a consultation', status: 'live' },

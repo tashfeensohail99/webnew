@@ -135,6 +135,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
                 ['/about', 'About us'],
                 ['/about/our-team', 'Our lawyers'],
                 ['/updates', 'Latest updates'],
+                ['/blog', 'Blog'],
                 ['/book-consultation', 'Book a consultation'],
                 ['/immigration-consultant-lahore', 'Lahore office'],
                 ['/immigration-consultant-islamabad', 'Islamabad office'],

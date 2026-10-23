@@ -8,6 +8,7 @@ import { FounderFeature } from '@/components/FounderFeature';
 import { SocialProof } from '@/components/SocialProof';
 import { SplitSection, FAQ, Icon } from '@/components/ui';
 import { site, SERVICE, leadLawyer } from '@/lib/site';
+import { sortedPosts } from '@/lib/blog';
 
 export const metadata: Metadata = {
   description:
@@ -473,6 +474,37 @@ export default function HomePage() {
               </ul>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* ======================= FROM THE BLOG =======================
+          The dated layer: what changed this month, each post handing on to a
+          guide above. A homepage link is also the fastest way for a new post
+          to be crawled. */}
+      <section className="cv-auto border-t border-rule">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:py-24">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+            <div className="max-w-2xl">
+              <p className="eyebrow">From the blog</p>
+              <h2 className="display-2 mt-4">What just changed</h2>
+            </div>
+            <Link href="/blog" className="font-semibold text-accent-500 link-underline">
+              All posts →
+            </Link>
+          </div>
+          <ul className="mt-10 grid gap-6 md:grid-cols-3">
+            {sortedPosts().slice(0, 3).map((p) => (
+              <li key={p.slug}>
+                <Link href={`/blog/${p.slug}`} className="card group flex h-full flex-col p-6 transition-transform hover:-translate-y-0.5">
+                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-gold-600">
+                    {p.topic} · {new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${p.published}T00:00:00Z`))}
+                  </p>
+                  <h3 className="mt-3 font-serif text-xl leading-snug text-balance">{p.title}</h3>
+                  <span className="mt-auto pt-4 text-sm font-semibold text-accent-500">Read the post →</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
