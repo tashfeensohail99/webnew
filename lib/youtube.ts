@@ -33,6 +33,7 @@ export type Video = {
 /** Most specific first — the first match wins. */
 const TOPICS: [RegExp, string, Video['guide']?][] = [
   [/c-?11/i, 'Canada', { href: '/work-permit-canada', label: 'C11 work permit guide' }],
+  [/\bdraws?\b|\binvites?\b|invitations to apply/i, 'Canada', { href: '/express-entry/draws', label: 'Express Entry draws tracker' }],
   [/express entry|\bcrs\b/i, 'Canada', { href: '/express-entry', label: 'Express Entry guide' }],
   [/ontario/i, 'Canada', { href: '/pnp/ontario', label: 'Ontario PNP guide' }],
   [/refus|judicial review/i, 'Canada', { href: '/canada-visa-refused', label: 'visa refusal guide' }],

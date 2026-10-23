@@ -32,7 +32,7 @@ const youtube = site.social.find((s) => s.icon === 'youtube')?.href ?? 'https://
 
 /** The subjects the channel returns to, each with the guide that covers it in full. */
 const TOPIC_GUIDES: [string, string, string][] = [
-  ['/express-entry', 'Express Entry draws', 'What a draw result means for you, how the CRS works, and how to raise your score.'],
+  ['/express-entry/draws', 'Express Entry draws', 'Every round and its CRS cut-off, read automatically from IRCC’s own data — and what a result does and doesn’t tell you.'],
   ['/pnp', 'Provincial nomination', 'Each province’s streams — Ontario, Alberta, BC and the rest — and when a nomination beats waiting for a draw.'],
   ['/work-permit-canada', 'The C11 work permit', 'Running your own business in Canada without a job offer or an LMIA, under IRCC’s own rules.'],
   ['/canada-visa-refused', 'Refusals and judicial review', 'Reading a refusal, getting the officer’s notes, and the routes forward — including Federal Court.'],

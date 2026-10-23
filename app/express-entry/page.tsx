@@ -129,8 +129,12 @@ const FAQS = [
         round of invitations and moves with the pool, so we don’t print one here. IRCC publishes the
         result of every round —{' '}
         <Official href={IRCC.rounds}>rounds of invitations on canada.ca</Official> — and that is the
-        only place worth reading them from. What we can do is work out your score honestly and tell
-        you where it sits.{' '}
+        only place worth reading them from — our{' '}
+        <Link href="/express-entry/draws" className="font-semibold text-accent-500 link-underline">
+          Express Entry draws page
+        </Link>{' '}
+        lists every round, read automatically from that same IRCC data. What we can do is work out
+        your score honestly and tell you where it sits.{' '}
         <Link href="/tools/crs-calculator" className="font-semibold text-accent-500 link-underline">
           Estimate your CRS score
         </Link>

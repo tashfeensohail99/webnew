@@ -73,6 +73,7 @@ const BY_HREF: Record<string, NavIconName> = {
   // Canada PR
   '/canada-immigration-from-pakistan': 'compass',
   '/express-entry': 'zap',
+  '/express-entry/draws': 'growth',
   '/express-entry/federal-skilled-worker': 'briefcase',
   '/express-entry/canadian-experience-class': 'leaf',
   '/express-entry/federal-skilled-trades': 'wrench',

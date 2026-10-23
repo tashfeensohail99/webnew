@@ -68,6 +68,8 @@ export const ROUTES: Route[] = [
   // The "start here" map for the audience's single biggest search.
   { path: '/canada-immigration-from-pakistan', reviewed: '2026-10-22', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/express-entry', reviewed: '2026-07-20', priority: 0.9, changeFrequency: 'monthly' },
+  // Read hourly from IRCC's rounds feed (ISR) — a new round can land any weekday.
+  { path: '/express-entry/draws', reviewed: '2026-10-23', priority: 0.9, changeFrequency: 'daily' },
   { path: '/express-entry/federal-skilled-worker', reviewed: '2026-07-20', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/express-entry/canadian-experience-class', reviewed: '2026-07-20', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/express-entry/federal-skilled-trades', reviewed: '2026-07-20', priority: 0.7, changeFrequency: 'monthly' },

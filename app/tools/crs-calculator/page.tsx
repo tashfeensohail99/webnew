@@ -78,6 +78,12 @@ export default async function CrsCalculatorPage() {
       <Section tone="paper">
         <div className="mx-auto max-w-5xl">
           <CrsCalculator digits={digits} />
+          <p className="mt-6 text-center text-ink-600">
+            Got your score?{' '}
+            <Link href="/express-entry/draws" className="font-semibold text-accent-500 link-underline">
+              Compare it with the latest Express Entry draws →
+            </Link>
+          </p>
         </div>
       </Section>
 

@@ -27,6 +27,7 @@ export function GET() {
     '',
     '## Start here',
     `- [How to immigrate to Canada from Pakistan](${site.url}/canada-immigration-from-pakistan): every route, the documents Pakistani applicants need, and common mistakes.`,
+    `- [Express Entry draws](${site.url}/express-entry/draws): every round of invitations with its date, type, invitations and CRS cut-off, read hourly from IRCC's own data.`,
     `- [C11 work permit](${site.url}/work-permit-canada): run your own Canadian business without a job offer or LMIA — IRCC's rules (51% ownership, significant benefit, funds).`,
     `- [Business immigration to Canada](${site.url}/business-immigration): what remains for entrepreneurs, and what has closed.`,
     `- [Visa refused?](${site.url}/canada-visa-refused): GCMS notes, reconsideration, re-applying and judicial review.`,

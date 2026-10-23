@@ -462,6 +462,15 @@ export default function CategoryBasedDrawsPage() {
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>
+        {/* A link, not numbers: the draws page reads IRCC's data live, so this
+            page can stay free of cut-offs as the note at the top requires. */}
+        <p className="mx-auto mt-10 max-w-3xl text-ink-600 text-pretty">
+          Want to see how category rounds have actually gone?{' '}
+          <Link href="/express-entry/draws" className="font-semibold text-accent-500 link-underline">
+            Every Express Entry round and its cut-off, from IRCC’s own data
+          </Link>
+          .
+        </p>
         <div className="mx-auto mt-10 max-w-3xl">
           <ReviewedBy updated="July 2026" />
         </div>

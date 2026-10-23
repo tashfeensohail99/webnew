@@ -60,6 +60,7 @@ export const NAV: NavGroup[] = [
         heading: 'Express Entry',
         items: [
           { href: '/express-entry', label: 'Express Entry overview', status: 'live' },
+          { href: '/express-entry/draws', label: 'Latest Express Entry draws', status: 'live', blurb: 'Every round and cut-off, from IRCC’s data' },
           { href: '/express-entry/federal-skilled-worker', label: 'Federal Skilled Worker', status: 'live' },
           { href: '/express-entry/canadian-experience-class', label: 'Canadian Experience Class', status: 'live' },
           { href: '/express-entry/federal-skilled-trades', label: 'Federal Skilled Trades', status: 'live' },
