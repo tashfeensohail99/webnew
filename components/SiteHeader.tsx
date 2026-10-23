@@ -34,19 +34,21 @@ export function SiteHeader({ display, digits }: { display: string; digits: strin
           40px below this line. Deleting them is what pays for the destination
           strip, so the bar carries more information at the same weight. */}
       <div className="bg-ink-950 text-ink-300">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-x-6 gap-y-1 px-4 py-1.5 text-xs">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-x-3 px-2 py-1 text-xs sm:flex-wrap sm:gap-x-6 sm:gap-y-1 sm:px-4 sm:py-1.5">
           <DestinationBar />
-          <div className="flex flex-wrap items-center gap-x-5 gap-y-1">
+          <div className="flex shrink-0 flex-wrap items-center gap-x-5 gap-y-1">
             {digits ? (
               <a
                 href={`https://wa.me/${digits}`}
                 rel="noopener"
-                className="tap inline-flex items-center gap-1.5 transition-colors hover:text-white"
+                aria-label={`WhatsApp ${display || 'us'}`}
+                className="tap inline-flex items-center gap-1.5 px-1.5 transition-colors hover:text-white sm:px-0"
               >
                 <svg viewBox="0 0 24 24" aria-hidden="true" className="h-3.5 w-3.5" fill="currentColor">
                   <path d="M12.04 2C6.6 2 2.18 6.42 2.18 11.86c0 1.74.46 3.44 1.32 4.94L2.1 22l5.34-1.4a9.83 9.83 0 0 0 4.6 1.17c5.43 0 9.85-4.42 9.85-9.86 0-2.63-1.02-5.11-2.88-6.97A9.79 9.79 0 0 0 12.04 2z" />
                 </svg>
-                {display || 'Message us on WhatsApp'}
+                {/* Icon only on phones: the number pushed the bar onto a second row. */}
+                <span className="hidden sm:inline">{display || 'Message us on WhatsApp'}</span>
               </a>
             ) : null}
             <span className="hidden lg:inline">Lahore · Islamabad · Mississauga</span>

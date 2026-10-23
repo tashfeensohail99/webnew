@@ -32,6 +32,10 @@ const FLAGS: Record<string, (p: { className?: string }) => React.ReactElement> =
   '/europe': FlagEU,
 };
 
+/** Phone-width labels: the full names wrapped to two lines each at 360px and
+ *  pushed the bar to three rows. The full name stays as the accessible name. */
+const SHORT: Record<string, string> = { '/uk': 'UK', '/usa': 'USA' };
+
 export function DestinationBar() {
   const pathname = usePathname() || '/';
 
@@ -49,7 +53,7 @@ export function DestinationBar() {
   };
 
   return (
-    <nav aria-label="Destinations" className="flex items-center gap-x-1">
+    <nav aria-label="Destinations" className="flex min-w-0 items-center sm:gap-x-1">
       {DESTINATIONS.map((d) => {
         const Flag = FLAGS[d.href];
         const current = inSection(d.href);
@@ -58,7 +62,8 @@ export function DestinationBar() {
             key={d.href}
             href={d.href}
             aria-current={current ? 'page' : undefined}
-            className={`tap inline-flex items-center gap-1.5 rounded-md px-2 transition-colors ${
+            aria-label={SHORT[d.href] ? d.label : undefined}
+            className={`tap inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-md px-1.5 transition-colors sm:px-2 ${
               current ? 'text-white' : 'text-ink-300 hover:text-white'
             }`}
           >
@@ -73,7 +78,16 @@ export function DestinationBar() {
                 }`}
               />
             ) : null}
-            <span className={current ? 'border-b border-gold-500 pb-px' : ''}>{d.label}</span>
+            <span className={current ? 'border-b border-gold-500 pb-px' : ''}>
+              {SHORT[d.href] ? (
+                <>
+                  <span className="sm:hidden">{SHORT[d.href]}</span>
+                  <span className="hidden sm:inline">{d.label}</span>
+                </>
+              ) : (
+                d.label
+              )}
+            </span>
           </Link>
         );
       })}
