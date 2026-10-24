@@ -33,7 +33,7 @@ export const ROUTES: Route[] = [
   { path: '/no-guarantee-policy', reviewed: '2026-07-17', priority: 0.6, changeFrequency: 'yearly' },
 
   // Destinations. Rules here change often — these need re-checking, not re-writing.
-  { path: '/usa', reviewed: '2026-07-17', priority: 0.8, changeFrequency: 'weekly' },
+  { path: '/usa', reviewed: '2026-10-24', priority: 0.8, changeFrequency: 'weekly' },
   { path: '/uk', reviewed: '2026-07-17', priority: 0.8, changeFrequency: 'weekly' },
   { path: '/europe', reviewed: '2026-07-17', priority: 0.8, changeFrequency: 'weekly' },
 

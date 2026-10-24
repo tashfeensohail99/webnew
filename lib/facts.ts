@@ -50,13 +50,16 @@ export const FACTS: Record<string, Fact> = {
   usImmigrantVisaPause: {
     id: 'us.iv.pause',
     claim:
-      'Pakistan is among 75 countries subject to a US immigrant visa pause, announced 14 January 2026 and effective 21 January 2026. It is indefinite.',
+      'From 21 January 2026 Pakistan was one of 75 countries under a US immigrant visa pause. A federal court order ended it on 21 August 2026, and the State Department says it is no longer in effect. It can change — check the State Department notice and the US Embassy in Pakistan visa page.',
     provenance: 'secondary',
-    source: 'US government announcement as reported; NAFSA tracking tables',
-    checked: '2026-07-17',
+    source:
+      'State Department notice of 28 Aug 2026 (travel.state.gov blocks automated fetching; wording read via a search-engine copy); pk.usembassy.gov pause notice now 404 and visas page carries none; CLINIC v. Rubio (S.D.N.Y. No. 26-CV-00858), vacatur 21 Aug 2026, as reported',
+    sourceUrl:
+      'https://travel.state.gov/en/newsroom/visas/2026/immigrant-visa-processing-updates-for-nationalities-at-high-risk-of-public-benefits-usage.html',
+    checked: '2026-10-24',
     needsLawyer: true,
     note:
-      'Materially guts EB-5 and EB2-NIW by consular processing from Pakistan. Adjustment of status (I-485) for people already lawfully inside the US is reported as unaffected, but that was NOT explicitly government-confirmed — hedge the wording. Live litigation: Ullah v. LaFave and Rubio (D. Mass., No. 25-12804-LTS), PI 2 June 2026, mixed ruling 6 July 2026; relief appears plaintiff-specific. Needs a visible last-reviewed date and a monthly re-check.',
+      'Published on /usa and /blog/eb2-niw-pakistan on 24 Oct 2026 on the firm owner’s instruction, in wording that stays true either way the litigation goes (states the record, sends readers to the official pages). Still worth a lawyer’s confirmation. Reported but NOT officially confirmed: a government appeal, and a post-ruling pause on immigrant-visa interview appointments for officer training — hence "interview scheduling has not simply snapped back". Adjustment of status is discretionary per USCIS PM-602-0199 (21 May 2026). Re-check monthly.',
   },
   usNoTravelBan: {
     id: 'us.no.travelban',
@@ -66,7 +69,7 @@ export const FACTS: Record<string, Fact> = {
     source: 'NAFSA travel-ban comparison table (Pakistan blank across all three)',
     checked: '2026-07-17',
     note:
-      'This is a CORRECTIVE fact and one of the most valuable on the site. A casual web search will wrongly tell a Pakistani applicant they are banned — it alarms clients and costs the firm business. Do not confuse with the immigrant visa pause above, which IS real and DOES apply.',
+      'This is a CORRECTIVE fact and one of the most valuable on the site. A casual web search will wrongly tell a Pakistani applicant they are banned — it alarms clients and costs the firm business. Do not confuse with the immigrant visa pause above, which DID apply to Pakistan until a court ended it on 21 August 2026. The USCIS holds (2 Dec 2025, 1 Jan 2026 memos) covered travel-ban countries only, and have since been vacated / blocked by courts.',
   },
 
   // ── UNITED KINGDOM ───────────────────────────────────────────────────────

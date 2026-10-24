@@ -70,6 +70,28 @@ export const POSTS: Post[] = [
       { label: 'IRCC — How the Provincial Nominee Program works', href: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/works.html' },
     ],
   },
+  {
+    slug: 'eb2-niw-pakistan',
+    title: 'EB-2 NIW Green Card from Pakistan: Where It Stands',
+    short: 'EB-2 NIW from Pakistan',
+    description:
+      'What the EB-2 National Interest Waiver asks for, whether Pakistanis can file now, the end of the visa pause and the EB-2 backlog — as of October 2026.',
+    published: '2026-10-24',
+    topic: 'USA',
+    guide: { href: '/usa', label: 'USA guide' },
+    sources: [
+      { label: 'USCIS Policy Manual — Volume 6, Part F, Chapter 5 (advanced degree, exceptional ability, national interest waiver)', href: 'https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-5' },
+      { label: 'USCIS — Employment-based immigration: second preference (EB-2)', href: 'https://www.uscis.gov/working-in-the-united-states/permanent-workers/employment-based-immigration-second-preference-eb-2' },
+      { label: 'USCIS — Form I-140', href: 'https://www.uscis.gov/i-140' },
+      { label: 'US Department of State — Immigrant visa processing updates (pause no longer in effect as of 21 August 2026)', href: 'https://travel.state.gov/en/newsroom/visas/2026/immigrant-visa-processing-updates-for-nationalities-at-high-risk-of-public-benefits-usage.html' },
+      { label: 'US Embassy in Pakistan — Visas', href: 'https://pk.usembassy.gov/visas/' },
+      { label: 'Federal Register — Proclamation 10998 (December 2025)', href: 'https://www.govinfo.gov/content/pkg/FR-2025-12-19/pdf/2025-23570.pdf' },
+      { label: 'USCIS — Recent court order on hold policies', href: 'https://www.uscis.gov/newsroom/alerts/recent-court-order-on-hold-policies' },
+      { label: 'US Department of State — Visa Bulletin for November 2026', href: 'https://travel.state.gov/content/dam/visas/Bulletins/visabulletin_November2026.pdf' },
+      { label: 'USCIS — Adjustment of status and discretion (PM-602-0199, May 2026)', href: 'https://uscis.gov/sites/default/files/document/memos/PM-602-0199-AdjustmentOfStatusAndDiscretion-20260521.pdf' },
+      { label: 'USCIS — Common scams', href: 'https://www.uscis.gov/scams-fraud-and-misconduct/avoid-scams/common-scams' },
+    ],
+  },
 ];
 
 export const postBySlug = (slug: string) => POSTS.find((p) => p.slug === slug);

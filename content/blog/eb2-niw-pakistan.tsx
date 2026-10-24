@@ -1,12 +1,12 @@
 import Link from 'next/link';
 
 /**
- * DRAFT — not listed in lib/blog.ts until the firm confirms the immigrant-visa
- * position (the /usa page marks it needsLawyer). Written from USCIS, State
- * Department, Federal Register and US Embassy Pakistan sources as checked on
- * 23 October 2026. The pause wording is deliberately robust to either outcome
- * of the litigation: it states the record and sends the reader to the official
- * notice, rather than promising the pause is over.
+ * Published 24 October 2026 on the firm's instruction. Written from USCIS,
+ * State Department, Federal Register and US Embassy Pakistan sources as checked
+ * on 23–24 October 2026. The pause wording matches /usa and lib/facts.ts and is
+ * deliberately robust to either outcome of the litigation: it states the record
+ * and sends the reader to the official notice, rather than promising the pause
+ * is over for good.
  */
 const a = 'font-semibold';
 
@@ -21,8 +21,8 @@ export default function Eb2NiwPakistan() {
   return (
     <>
       <p>
-        The EB-2 National Interest Waiver is the green card people ask us about most, because it needs no
-        US employer: you can petition for yourself. But there are two separate questions, and they get
+        The EB-2 National Interest Waiver is the US green card people ask about constantly, because it
+        needs no US employer: you can petition for yourself. But there are two separate questions, and they get
         mixed up constantly. <strong>Do you qualify?</strong> And <strong>can the process actually
         finish from Pakistan right now?</strong>
       </p>
@@ -66,8 +66,9 @@ export default function Eb2NiwPakistan() {
         Embassy in Islamabad’s visa page no longer carries a pause notice.
       </p>
       <p>
-        Court-ordered changes can be appealed and reversed, and this one can change at short notice.
-        Before you pay for anything that ends at a consulate, read the{' '}
+        It can change. Court-ordered changes can be appealed and reversed, and the end of the pause
+        does not mean interview scheduling has simply returned to normal. Before you pay for anything
+        that ends at a consulate, read the{' '}
         <a href={OFFICIAL.ivNotice} rel="noopener noreferrer" target="_blank" className={a}>
           State Department’s notice
         </a>{' '}

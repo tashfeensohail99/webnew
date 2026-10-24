@@ -18,22 +18,39 @@ import { SERVICE } from '@/lib/site';
 /**
  * The USA page leads with the correction, not the pitch.
  *
- * Two things are true at once in 2026 and almost nobody separates them: Pakistan
- * is NOT on the travel ban, but Pakistani immigrant visas ARE paused. A worried
- * applicant googling this gets the wrong answer today. Being the page that sorts
- * it out is worth more than any brochure — it is useful, it is checkable, and it
- * is the kind of thing only a firm with lawyers bothers to write.
+ * Two things get blurred in 2026 and almost nobody separates them: Pakistan is
+ * NOT on the travel ban, and the immigrant-visa pause that DID cover Pakistan
+ * from 21 January 2026 was ended by a federal court order on 21 August 2026.
+ * A worried applicant googling this gets the wrong answer today. Being the page
+ * that sorts it out is worth more than any brochure.
  *
- * ⚠️ LAWYER REVIEW REQUIRED. See lib/facts.ts: the E-2 treaty position and the
- * immigrant-visa pause both carry needsLawyer:true. travel.state.gov blocks
- * automated fetching, so the DOS treaty table was never read directly and at
- * least one law-firm table omits Pakistan. The firm has already sold 2 E-2
- * engagements — a human must open the DOS table before this page ships.
+ * The pause wording is deliberately written to stay true whichever way the
+ * litigation goes: it states the record with dates and sends the reader to the
+ * State Department's notice and the US Embassy's visa page on the day. Updated
+ * 24 October 2026 on the firm's instruction (see lib/facts.ts).
+ *
+ * ⚠️ LAWYER REVIEW REQUIRED for the E-2 treaty position (lib/facts.ts):
+ * travel.state.gov blocks automated fetching, so the DOS treaty table was never
+ * read directly and at least one law-firm table omits Pakistan. The firm has
+ * already sold 2 E-2 engagements — a human must open the DOS table.
  */
+const OFFICIAL = {
+  ivNotice:
+    'https://travel.state.gov/en/newsroom/visas/2026/immigrant-visa-processing-updates-for-nationalities-at-high-risk-of-public-benefits-usage.html',
+  embassy: 'https://pk.usembassy.gov/visas/',
+} as const;
+
+function Official({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <a href={href} rel="noopener noreferrer" target="_blank" className="font-semibold text-accent-500 link-underline">
+      {children}
+    </a>
+  );
+}
 export const metadata: Metadata = {
   title: 'US Visas from Pakistan',
   description:
-    'Pakistan is not on the US travel ban — but immigrant visas are paused. What that actually means for investors, students and visitors in 2026.',
+    'Pakistan is not on the US travel ban, and a court ended the 2026 immigrant-visa pause. What it means for visitors, students, investors and green cards.',
   alternates: { canonical: '/usa' },
 };
 
@@ -91,13 +108,17 @@ const ROUTES = [
     body: (
       <>
         <p>
-          Honestly: mostly stuck from Pakistan while the immigrant visa pause holds, because they
-          finish at the consulate. We would rather tell you that now than take a fee to start
-          something that cannot currently finish.
+          These finish at the consulate, so the immigrant-visa pause stopped them. A court order
+          ended that pause on 21 August 2026 — but they move slowly: EB-2 is backlogged, interview
+          scheduling has not simply snapped back, and the position can change. Filing the petition
+          with USCIS itself was never paused for Pakistanis.
         </p>
         <p className="mt-3">
-          If you are already in the US lawfully, the picture is different. That is worth a
-          conversation.
+          We will tell you honestly whether yours can realistically finish before you pay for it.{' '}
+          <Link href="/blog/eb2-niw-pakistan" className="font-semibold text-accent-500 link-underline">
+            Where the EB-2 NIW stands from Pakistan
+          </Link>
+          .
         </p>
       </>
     ),
@@ -110,8 +131,9 @@ const FAQ_ITEMS = [
     a: (
       <p>
         No. Pakistan is not in the June 2025 proclamation, not in the December 2025 expansion, and
-        not on the USCIS adjudication pause. Visitor, student and business visas all remain
-        available to Pakistani nationals.
+        was not covered by the USCIS holds on pending cases — which courts have since vacated and
+        blocked anyway. Visitor, student and business visas all remain available to Pakistani
+        nationals.
       </p>
     ),
   },
@@ -119,10 +141,13 @@ const FAQ_ITEMS = [
     q: 'My priority date is current — so why isn’t my visa being issued?',
     a: (
       <p>
-        Because those are two different things. Since January 2026, Pakistan is one of 75 countries
-        under an indefinite US immigrant visa pause. Your priority date can be current while the
-        visa still isn’t being issued at the consulate in Islamabad. This is the single most
-        confusing thing in the market right now.
+        Because those are two different things. A current priority date means the queue has reached
+        you; the consulate still has to be able to issue. From 21 January 2026 Pakistan was one of
+        75 countries under a US immigrant visa pause. A federal court order ended it on 21 August
+        2026, but interview scheduling has not simply returned to normal and the position can
+        change. Check the <Official href={OFFICIAL.ivNotice}>State Department’s notice</Official>{' '}
+        and the <Official href={OFFICIAL.embassy}>US Embassy in Pakistan’s visa page</Official>{' '}
+        on the day.
       </p>
     ),
   },
@@ -151,9 +176,11 @@ const FAQ_ITEMS = [
     q: 'I’m already in the US lawfully — does the pause affect me?',
     a: (
       <p>
-        It is reported that people already lawfully inside the United States, adjusting status
-        there, are not affected in the same way as those applying at the consulate. If that is your
-        situation, it is worth a proper conversation rather than a web page.
+        People lawfully inside the United States may be able to apply for a green card there
+        (adjustment of status) rather than at a consulate. Don’t treat that as automatic: a May 2026
+        USCIS memo describes adjustment as discretionary relief and lists factors that can count
+        against an applicant. If that is your situation, it is worth a proper conversation rather
+        than a web page.
       </p>
     ),
   },
@@ -216,8 +243,8 @@ export default function UsaPage() {
             </h3>
             <p className="mt-4 text-ink-600 text-pretty">
               Pakistan is not on it. Not in the June 2025 proclamation, not in the December 2025
-              expansion, not on the USCIS adjudication pause. If you have read otherwise online, that
-              was wrong.
+              expansion, and not covered by the USCIS holds on pending cases. If you have read
+              otherwise online, that was wrong.
             </p>
             <p className="mt-4 text-ink-600 text-pretty">
               Visitor visas, student visas and business visas are all still available to Pakistani
@@ -230,19 +257,21 @@ export default function UsaPage() {
               <Icon name="shield" className="h-5 w-5" />
             </span>
             <h3 className="mt-5 font-serif text-2xl text-balance">
-              But immigrant visas <em className="not-italic text-gold-600">are</em> paused
+              And the immigrant-visa pause <em className="not-italic text-gold-600">has ended</em> —
+              for now
             </h3>
             <p className="mt-4 text-ink-600 text-pretty">
-              Since January 2026, Pakistan is one of 75 countries under a US immigrant visa pause. It
-              is indefinite. In plain terms: routes that end in a green card issued by the consulate
-              in Islamabad are not currently completing.
+              From 21 January 2026, Pakistan was one of 75 countries under a US immigrant visa pause.
+              A federal court order ended it on 21 August 2026, and the State Department says it is no
+              longer in effect.
             </p>
             <p className="mt-4 text-ink-600 text-pretty">
-              This catches people out:{' '}
-              <strong className="text-ink-900">
-                your priority date can be current while your visa still isn’t being issued.
-              </strong>{' '}
-              Those are two different things.
+              <strong className="text-ink-900">It can change.</strong> Court-ordered changes can be
+              appealed, and interview scheduling has not simply snapped back. Before you pay for
+              anything that ends at the consulate, check the{' '}
+              <Official href={OFFICIAL.ivNotice}>State Department’s notice</Official> and the{' '}
+              <Official href={OFFICIAL.embassy}>US Embassy in Pakistan’s visa page</Official> on the
+              day.
             </p>
           </div>
         </div>
@@ -250,9 +279,10 @@ export default function UsaPage() {
         <div className="mt-6">
           <Callout title="Already lawfully inside the US? Your answer is different.">
             <p>
-              It is reported that people already lawfully inside the United States, adjusting status
-              there, are not affected in the same way. If that is your situation, it is worth a
-              proper conversation rather than a web page.
+              People lawfully inside the United States may be able to apply for a green card there,
+              without going through a consulate — but USCIS treats that as discretionary, not
+              automatic. If that is your situation, it is worth a proper conversation rather than a
+              web page.
             </p>
           </Callout>
         </div>
@@ -261,9 +291,9 @@ export default function UsaPage() {
       <StatBand
         items={[
           {
-            big: '75',
-            label: 'countries paused',
-            desc: 'Pakistan is one of them, under an indefinite US immigrant visa pause since January 2026.',
+            big: '21 Aug',
+            label: 'pause ended',
+            desc: 'A court order ended the 75-country immigrant visa pause, which covered Pakistan, on 21 August 2026. It can change — check the State Department’s notice.',
           },
           {
             big: '1961',
@@ -283,7 +313,7 @@ export default function UsaPage() {
         <SectionHeading
           eyebrow="The routes"
           title="So what is actually open?"
-          subtitle="Non-immigrant routes still run. The green-card routes mostly don’t, for now. We’ll tell you which is which before you spend anything."
+          subtitle="Non-immigrant routes run as normal. Green-card routes can move again, slowly. We’ll tell you which is realistic for you before you spend anything."
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
@@ -318,7 +348,7 @@ export default function UsaPage() {
         </div>
 
         <div className="mx-auto mt-12 max-w-3xl">
-          <ReviewedBy updated="July 2026" />
+          <ReviewedBy updated="October 2026" />
         </div>
       </Section>
 
@@ -352,7 +382,7 @@ export default function UsaPage() {
       <CTASection
         eyebrow="Start with a conversation"
         title="Find out which US route is really open to you"
-        subtitle="A lawyer-reviewed answer on where you actually stand — and an honest no if the route you want is paused right now."
+        subtitle="A lawyer-reviewed answer on where you actually stand — and an honest no if the route you want isn’t realistic right now."
         page="usa-cta"
         waMessage="Hi, I’d like to book a consultation about a US visa."
       />
