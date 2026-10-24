@@ -157,6 +157,19 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
                 .
               </p>
             </div>
+            {/* Builder credit — the firm's technology partner, as the firm asked. */}
+            <div className="border-t border-white/10">
+              <p className="mx-auto max-w-6xl px-4 py-4 text-center text-xs text-ink-400 sm:text-left">
+                Powered by{' '}
+                <a href="https://summitautomates.com" rel="noopener" target="_blank" className="text-gold-300 underline underline-offset-2">
+                  Summit System Pvt Ltd
+                </a>
+                <span aria-hidden="true"> · </span>
+                <a href="mailto:admin@summitautomates.com" className="underline underline-offset-2 hover:text-ink-200">
+                  admin@summitautomates.com
+                </a>
+              </p>
+            </div>
           </div>
         </footer>
       </body>
