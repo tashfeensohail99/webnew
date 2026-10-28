@@ -26,8 +26,13 @@ export const metadata: Metadata = {
   // "| Tashfeen", not "| Tashfeen Immigration": Google cuts titles at ~60
   // characters, and the longer suffix pushed 39 of 76 pages past it. The full
   // name still reaches Google as the site name via the WebSite JSON-LD.
+  //
+  // The default (the homepage's title) leads with the FULL name: a search for
+  // "Tashfeen Immigration Solutions" on 28 Oct 2026 did not return this site at
+  // all — the engine knew the pages but not the name. The homepage is where a
+  // brand query should land, so the brand goes first.
   title: {
-    default: 'Canada Immigration Lawyers & Consultants in Pakistan | Tashfeen',
+    default: 'Tashfeen Immigration Solutions | Canada Immigration from Pakistan',
     template: '%s | Tashfeen',
   },
   description:

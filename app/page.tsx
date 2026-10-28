@@ -191,7 +191,7 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-6xl px-4 py-24 sm:py-32 lg:grid lg:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)] lg:items-center lg:gap-6 xl:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] xl:gap-10">
           {/* Text column. */}
           <div>
-            <p className="eyebrow eyebrow--light">Immigration, by qualified lawyers</p>
+            <p className="eyebrow eyebrow--light">Tashfeen Immigration Solutions · qualified lawyers</p>
             {/* At lg+ the headline shares the row with the globe, so it has
                 to accept a slightly tighter cap than the standalone display-1
                 clamp — otherwise "Canadian immigration," splits mid-phrase. */}

@@ -13,7 +13,7 @@ import {
 } from '@/components/ui';
 import { WhatsAppCta } from '@/components/WhatsAppCta';
 import { FounderFeature } from '@/components/FounderFeature';
-import { site, lawyers, SERVICE } from '@/lib/site';
+import { site, lawyers, SERVICE, founder } from '@/lib/site';
 
 /**
  * The trust page.
@@ -25,9 +25,11 @@ import { site, lawyers, SERVICE } from '@/lib/site';
  * verify us before paying. Those are things a scam cannot cheaply fake.
  */
 export const metadata: Metadata = {
-  title: 'About Us',
+  // Absolute, so the full name leads instead of "About Us | Tashfeen" — this is
+  // the page a "who is Tashfeen Immigration Solutions" query should land on.
+  title: { absolute: 'About Tashfeen Immigration Solutions' },
   description:
-    'An international immigration firm with lawyers, and offices in Lahore, Islamabad and Canada. Come and see us before you pay anyone.',
+    'Tashfeen Immigration Solutions — also known as Tashfeen Barristers & Solicitors — is an immigration firm with lawyers and offices in Lahore, Islamabad and Canada.',
   alternates: { canonical: '/about' },
 };
 
@@ -51,7 +53,31 @@ const PRINCIPLES: [string, string][] = [
   ],
 ];
 
+/**
+ * The identity questions people put to search engines and AI assistants about
+ * a firm before trusting it. Plain-text answers, so the FAQ component emits them
+ * as FAQPage JSON-LD; every fact comes from lib/site.ts.
+ */
+const IDENTITY_FAQS: { q: string; a: string }[] = [
+  {
+    q: `Is ${site.name} the same firm as ${site.socialName}?`,
+    a: `Yes — one firm. This website and our Google Business listings use the name ${site.name}; our Facebook page and Instagram use ${site.socialName}. Both lead to the same team and the same offices.`,
+  },
+  {
+    q: `Who runs ${site.name}?`,
+    a: `${founder.name} is the ${founder.title}, based at the ${founder.office} office.`,
+  },
+  {
+    q: `Where are the offices of ${site.name}?`,
+    a: `${site.offices
+      .filter((o) => o.address)
+      .map((o) => `${o.city}: ${o.address}`)
+      .join('. ')}. The firm also has an office in Mississauga, Canada.`,
+  },
+];
+
 const FAQS: { q: string; a: ReactNode }[] = [
+  ...IDENTITY_FAQS,
   {
     q: 'Can you guarantee I’ll get a visa?',
     a: (

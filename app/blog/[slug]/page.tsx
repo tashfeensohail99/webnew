@@ -9,12 +9,14 @@ import { site } from '@/lib/site';
 import ExpressEntry2026 from '@/content/blog/express-entry-2026-so-far';
 import OntarioHigherEarners from '@/content/blog/ontario-higher-earners-2026';
 import Eb2NiwPakistan from '@/content/blog/eb2-niw-pakistan';
+import MofaOnlineAttestation from '@/content/blog/mofa-online-attestation';
 
 /** One line per post. A slug in lib/blog.ts without a body here is a build error, not a blank page. */
 const BODIES: Record<string, ComponentType> = {
   'express-entry-2026-so-far': ExpressEntry2026,
   'ontario-higher-earners-2026': OntarioHigherEarners,
   'eb2-niw-pakistan': Eb2NiwPakistan,
+  'mofa-online-attestation': MofaOnlineAttestation,
 };
 
 export const dynamicParams = false;

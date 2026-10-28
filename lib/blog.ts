@@ -24,7 +24,7 @@ export type Post = {
   /** ISO dates. `updated` only when the facts in the post were re-checked. */
   published: string;
   updated?: string;
-  topic: 'Canada' | 'USA' | 'UK' | 'Europe';
+  topic: 'Canada' | 'USA' | 'UK' | 'Europe' | 'Pakistan';
   /** The evergreen guide this post hands the reader on to. */
   guide: { href: string; label: string };
   /** Official sources the post was written from, shown at the end. */
@@ -90,6 +90,24 @@ export const POSTS: Post[] = [
       { label: 'US Department of State — Visa Bulletin for November 2026', href: 'https://travel.state.gov/content/dam/visas/Bulletins/visabulletin_November2026.pdf' },
       { label: 'USCIS — Adjustment of status and discretion (PM-602-0199, May 2026)', href: 'https://uscis.gov/sites/default/files/document/memos/PM-602-0199-AdjustmentOfStatusAndDiscretion-20260521.pdf' },
       { label: 'USCIS — Common scams', href: 'https://www.uscis.gov/scams-fraud-and-misconduct/avoid-scams/common-scams' },
+    ],
+  },
+  {
+    slug: 'mofa-online-attestation',
+    title: 'MOFA Online Attestation in Pakistan: How It Works',
+    short: 'MOFA online attestation',
+    description:
+      'Since 12 October 2026, MOFA attests documents online and emails an e-certificate: what changed, apostille or general attestation, and what Canada accepts.',
+    published: '2026-10-28',
+    topic: 'Pakistan',
+    guide: { href: '/canada-immigration-from-pakistan', label: 'guide to immigrating to Canada from Pakistan' },
+    sources: [
+      { label: 'Ministry of Foreign Affairs — Consular services: attestation of documents (notices of 27 July and 12 October 2026)', href: 'https://mofa.gov.pk/tabs/consular-service-attestation-of-documents' },
+      { label: 'MOFA — Attestation portal (apply online)', href: 'https://portal-attestation.mofa.gov.pk' },
+      { label: 'MOFA — Apostille and general attestation: services, checklists and destination directory', href: 'https://attestation.mofa.gov.pk/' },
+      { label: 'MOFA — General attestation SOPs and checklist', href: 'https://attestation.mofa.gov.pk/general-checklist' },
+      { label: 'HEC — Degree attestation', href: 'https://www.hec.gov.pk/english/services/students/DAS/Pages/Degree-Attestation.aspx' },
+      { label: 'IBCC — Requirements for attestation', href: 'https://ibcc.edu.pk/attestation/requirements-for-attestation/' },
     ],
   },
 ];
