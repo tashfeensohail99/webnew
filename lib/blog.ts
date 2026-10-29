@@ -110,6 +110,31 @@ export const POSTS: Post[] = [
       { label: 'IBCC — Requirements for attestation', href: 'https://ibcc.edu.pk/attestation/requirements-for-attestation/' },
     ],
   },
+  {
+    slug: 'austria-red-white-red-card',
+    title: 'Austria Red-White-Red Card from Pakistan in 2026',
+    short: 'Austria’s Red-White-Red Card',
+    description:
+      'Austria’s points-based work permit from Pakistan: the four routes, 2026’s 64 shortage jobs, August 2026’s job-change rules and the embassy process.',
+    published: '2026-10-29',
+    topic: 'Europe',
+    guide: { href: '/europe', label: 'Europe & Schengen guide' },
+    sources: [
+      { label: 'Migration platform of the Austrian Federal Government — Red-White-Red Card categories', href: 'https://www.migration.gv.at/en/types-of-immigration/permanent-immigration/' },
+      { label: 'migration.gv.at — Very highly qualified workers (points and job-seeker visa)', href: 'https://www.migration.gv.at/en/types-of-immigration/permanent-immigration/very-highly-qualified-workers/' },
+      { label: 'migration.gv.at — Skilled workers in shortage occupations', href: 'https://www.migration.gv.at/de/formen-der-zuwanderung/dauerhafte-zuwanderung/fachkraefte-in-mangelberufen/' },
+      { label: 'migration.gv.at — Nationwide shortage occupations for 2026 (German)', href: 'https://www.migration.gv.at/de/formen-der-zuwanderung/dauerhafte-zuwanderung/bundesweite-mangelberufe/' },
+      { label: 'migration.gv.at — Other key workers', href: 'https://www.migration.gv.at/de/formen-der-zuwanderung/dauerhafte-zuwanderung/sonstige-schluesselkraefte/' },
+      { label: 'migration.gv.at — EU Blue Card', href: 'https://www.migration.gv.at/en/types-of-immigration/permanent-immigration/eu-blue-card/' },
+      { label: 'migration.gv.at — Red-White-Red Card plus', href: 'https://www.migration.gv.at/en/types-of-immigration/permanent-immigration/redwhiteredcardplus/' },
+      { label: 'Austrian Ministry of Labour and Economy — Shortage occupations for 2025 (press release, 7 January 2025)', href: 'https://www.bmwet.gv.at/Presse/Archiv/Archiv-Pressemeldungen-BMAW/BMAW-Pressemeldungen-2025/J%C3%A4nner-2025/Fachkr%C3%A4fteverordnung-25.html' },
+      { label: 'Austrian Parliament — Amendment to the NAG and AuslBG (443 d.B., BGBl. I No. 81/2026)', href: 'https://www.parlament.gv.at/gegenstand/XXVIII/I/443' },
+      { label: 'Austrian Embassy Islamabad — How to apply', href: 'https://www.bmeia.gv.at/en/austrian-embassy-islamabad/travel-to-austria/entrance-and-residence/how-to-apply' },
+      { label: 'Austrian Embassy Islamabad — Settlement and residence (fees from 1 January 2026)', href: 'https://www.bmeia.gv.at/en/austrian-embassy-islamabad/travel-to-austria/entrance-and-residence/settlement-and-residence' },
+      { label: 'Austrian Embassy Islamabad — Home page (notice on false information and fraudulent numbers)', href: 'https://www.bmeia.gv.at/en/austrian-embassy-islamabad' },
+      { label: 'berufsanerkennung.at — Recognition of foreign qualifications', href: 'https://www.berufsanerkennung.at/en/' },
+    ],
+  },
 ];
 
 export const postBySlug = (slug: string) => POSTS.find((p) => p.slug === slug);

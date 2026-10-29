@@ -41,7 +41,7 @@ const TOPICS: [RegExp, string, Video['guide']?][] = [
   // Case-sensitive on purpose: "US"/"UK" as words, not the "us" in "contact us".
   [/\bUSA?\b|\bU\.S\.|United States|America/, 'USA', { href: '/usa', label: 'USA guide' }],
   [/\bUK\b|United Kingdom|Britain/, 'UK', { href: '/uk', label: 'UK guide' }],
-  [/europe|schengen|italy|spain|france|germany|portugal/i, 'Europe', { href: '/europe', label: 'Europe guide' }],
+  [/europe|schengen|italy|spain|france|germany|portugal|austria/i, 'Europe', { href: '/europe', label: 'Europe guide' }],
   [/canada/i, 'Canada', { href: '/canada-immigration-from-pakistan', label: 'Canada from Pakistan guide' }],
   [/qatar|uae|dubai|saudi|oman|bahrain|kuwait|gulf/i, 'Gulf'],
 ];

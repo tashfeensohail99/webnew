@@ -10,6 +10,7 @@ import ExpressEntry2026 from '@/content/blog/express-entry-2026-so-far';
 import OntarioHigherEarners from '@/content/blog/ontario-higher-earners-2026';
 import Eb2NiwPakistan from '@/content/blog/eb2-niw-pakistan';
 import MofaOnlineAttestation from '@/content/blog/mofa-online-attestation';
+import AustriaRedWhiteRedCard from '@/content/blog/austria-red-white-red-card';
 
 /** One line per post. A slug in lib/blog.ts without a body here is a build error, not a blank page. */
 const BODIES: Record<string, ComponentType> = {
@@ -17,6 +18,7 @@ const BODIES: Record<string, ComponentType> = {
   'ontario-higher-earners-2026': OntarioHigherEarners,
   'eb2-niw-pakistan': Eb2NiwPakistan,
   'mofa-online-attestation': MofaOnlineAttestation,
+  'austria-red-white-red-card': AustriaRedWhiteRedCard,
 };
 
 export const dynamicParams = false;
