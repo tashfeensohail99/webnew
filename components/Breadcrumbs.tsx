@@ -40,8 +40,13 @@ export function Breadcrumbs() {
         '@id': `${url(path)}#webpage`,
         url: url(path),
         isPartOf: { '@id': `${site.url}/#website` },
+        inLanguage: 'en',
         breadcrumb: { '@id': `${url(path)}#breadcrumb` },
-        ...(reviewed ? { lastReviewed: reviewed, reviewedBy: { '@id': `${site.url}/#organization` } } : {}),
+        // `dateModified` is the property most crawlers and AI assistants
+        // actually read for freshness; `lastReviewed` is the precise claim.
+        ...(reviewed
+          ? { lastReviewed: reviewed, dateModified: reviewed, reviewedBy: { '@id': `${site.url}/#organization` } }
+          : {}),
       },
     ],
   };

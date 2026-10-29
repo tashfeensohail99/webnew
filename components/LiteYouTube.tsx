@@ -32,7 +32,9 @@ export function LiteYouTube({ id, title }: { id: string; title: string }) {
         >
           <img
             src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`}
-            alt=""
+            // The button's aria-label is what a screen reader announces; the alt
+            // is for image search and crawlers, which otherwise see a blank.
+            alt={title}
             loading="lazy"
             decoding="async"
             className="h-full w-full object-cover opacity-90 transition-opacity duration-200 group-hover:opacity-100"

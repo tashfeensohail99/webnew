@@ -38,7 +38,7 @@ export const ROUTES: Route[] = [
   { path: '/europe', reviewed: '2026-07-17', priority: 0.8, changeFrequency: 'weekly' },
 
   // Trust. The team page is the highest-value page on the site once it has names.
-  { path: '/about', reviewed: '2026-07-17', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/about', reviewed: '2026-10-28', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/about/our-team', reviewed: '2026-07-17', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/book-consultation', reviewed: '2026-07-17', priority: 0.7, changeFrequency: 'monthly' },
   // Cost is the first thing this market searches and the last thing it answers.

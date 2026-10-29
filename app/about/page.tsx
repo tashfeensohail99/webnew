@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   // the page a "who is Tashfeen Immigration Solutions" query should land on.
   title: { absolute: 'About Tashfeen Immigration Solutions' },
   description:
-    'Tashfeen Immigration Solutions — also known as Tashfeen Barristers & Solicitors — is an immigration firm with lawyers and offices in Lahore, Islamabad and Canada.',
+    'Tashfeen Immigration Solutions (also Tashfeen Barristers & Solicitors): an immigration firm with lawyers and offices in Lahore, Islamabad and Canada.',
   alternates: { canonical: '/about' },
 };
 

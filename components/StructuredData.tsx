@@ -68,6 +68,7 @@ function openingHours(hours: string): Record<string, unknown> {
 
 export function StructuredData() {
   const offices = site.offices.filter((o) => o.address);
+  const phone = offices.find((o) => o.phone)?.phone;
 
   const graph: Record<string, unknown>[] = [
     // The site itself. `name` is what Google shows as the site name above a
@@ -94,11 +95,37 @@ export function StructuredData() {
       image: `${site.url}${founder.photo.stem}-${founder.photo.width}.jpg`,
       description:
         'International immigration firm with lawyers, and offices in Pakistan and Canada. Canada, USA, UK and Europe.',
+      slogan: site.tagline,
       areaServed: ['PK', 'SA', 'AE', 'OM', 'QA', 'BH', 'GB', 'CA', 'US'],
+      // The one published number, from the office records. A ContactPoint is
+      // what lets an assistant answer "how do I contact them?" from the data
+      // rather than by scraping the footer.
+      ...(phone
+        ? {
+            telephone: phone,
+            contactPoint: [
+              {
+                '@type': 'ContactPoint',
+                telephone: phone,
+                contactType: 'customer service',
+                availableLanguage: ['English', 'Urdu'],
+                areaServed: ['PK', 'CA'],
+              },
+            ],
+          }
+        : {}),
+      // One entry per subject the site has a guide for — nothing it doesn't.
       knowsAbout: [
         'Canadian work permits',
+        'C11 work permit for business owners',
+        'Express Entry',
+        'Provincial Nominee Programs',
+        'Canadian study permits',
+        'Family sponsorship to Canada',
         'Canadian visitor visas',
+        'Canadian visa refusals',
         'Judicial review of visa refusals',
+        'EB-2 National Interest Waiver',
         'US investor visas',
         'UK Skilled Worker visas',
         'Schengen visitor visas',
