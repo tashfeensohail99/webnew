@@ -196,9 +196,12 @@ export default function TeamPage() {
               yourself. A named person on a public register is the one thing an anonymous agent can
               never offer you.
             </p>
-            <p className="mt-5">
+            <p className="mt-5 space-x-4">
               <Link href="/book-consultation" className="font-semibold text-accent-500 link-underline">
                 Talk to a lawyer — free, and in writing →
+              </Link>
+              <Link href="/canadian-immigration-lawyer-pakistan" className="font-semibold text-accent-500 link-underline">
+                How to check any immigration lawyer in Pakistan →
               </Link>
             </p>
           </Callout>

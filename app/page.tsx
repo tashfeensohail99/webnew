@@ -11,8 +11,12 @@ import { site, SERVICE, leadLawyer } from '@/lib/site';
 import { sortedPosts } from '@/lib/blog';
 
 export const metadata: Metadata = {
+  // Keyword first, brand in full after it. Google shows the site name from the
+  // WebSite JSON-LD separately, so the brand is not lost — and "Canadian
+  // immigration lawyers in Pakistan" is the query this page already ranks for.
+  title: { absolute: 'Canadian Immigration Lawyers in Pakistan | Tashfeen Immigration Solutions' },
   description:
-    'Lawyer-led Canada immigration from Pakistan — work permits, study, visit visas, Express Entry and refusals. Offices in Lahore & Islamabad. Free consultation.',
+    'Canadian immigration lawyers in Pakistan — work permits, study, visit visas, Express Entry and refusals. Offices in Lahore & Islamabad. Free consultation.',
   alternates: { canonical: '/' },
 };
 
@@ -197,7 +201,7 @@ export default function HomePage() {
                 clamp — otherwise "Canadian immigration," splits mid-phrase. */}
             <h1 className="display-1 mt-6 lg:!text-[3.3rem] lg:!leading-[1.03] xl:!text-[3.7rem]">
               Canadian immigration, handled by{' '}
-              <span className="text-gold-300">real lawyers.</span>
+              <span className="text-gold-300">real lawyers in Pakistan.</span>
             </h1>
             <p className="lede mt-6 max-w-2xl !text-ink-200">
               Offices in Pakistan and Canada. The consultation is free, and you leave with a written
@@ -564,6 +568,13 @@ export default function HomePage() {
             >
               Read our no-guarantee policy →
             </Link>
+            <p className="mt-4 text-ink-600 text-pretty">
+              Choosing between firms?{' '}
+              <Link href="/canadian-immigration-lawyer-pakistan" className="font-semibold text-accent-500 link-underline">
+                How to check any Canadian immigration lawyer in Pakistan
+              </Link>{' '}
+              — including us.
+            </p>
           </div>
         </div>
       </section>

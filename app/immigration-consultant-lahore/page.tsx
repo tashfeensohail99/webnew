@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { OfficeLanding } from '@/components/OfficeLanding';
 import { site } from '@/lib/site';
 
@@ -31,6 +32,13 @@ export default function LahoreOfficePage() {
             Our Lahore office is different in the one way you can check: your file is reviewed by a
             qualified lawyer, someone accountable to a regulator, who will tell you plainly whether
             your case is strong — and will tell you not to apply if it isn’t.
+          </p>
+          <p>
+            Before you pay anyone in Lahore — including us — read{' '}
+            <Link href="/canadian-immigration-lawyer-pakistan" className="font-semibold text-accent-500 link-underline">
+              how to check a Canadian immigration lawyer in Pakistan
+            </Link>
+            .
           </p>
         </>
       }

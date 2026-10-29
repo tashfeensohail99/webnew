@@ -139,6 +139,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
               links={[
                 ['/about', 'About us'],
                 ['/about/our-team', 'Our lawyers'],
+                ['/canadian-immigration-lawyer-pakistan', 'Choosing a lawyer in Pakistan'],
                 ['/updates', 'Latest updates'],
                 ['/blog', 'Blog'],
                 ['/book-consultation', 'Book a consultation'],

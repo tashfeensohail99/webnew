@@ -40,6 +40,7 @@ const PAGE_LABEL: Record<string, string> = {
   '/canada-immigration-from-pakistan': 'Immigrate from Pakistan',
   '/immigration-consultant-lahore': 'Lahore office',
   '/immigration-consultant-islamabad': 'Islamabad office',
+  '/canadian-immigration-lawyer-pakistan': 'Choosing a lawyer',
 };
 
 const ROUTE_SET = new Set(ROUTES.map((r) => r.path));

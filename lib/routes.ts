@@ -52,6 +52,9 @@ export const ROUTES: Route[] = [
   // NAP comes from site.offices, the same record the LocalBusiness JSON-LD uses.
   { path: '/immigration-consultant-lahore', reviewed: '2026-10-22', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/immigration-consultant-islamabad', reviewed: '2026-10-22', priority: 0.8, changeFrequency: 'monthly' },
+  // "Best Canadian immigration lawyer in Pakistan": answered with IRCC's rule on
+  // authorised representatives and the registers to check, not a self-ranking.
+  { path: '/canadian-immigration-lawyer-pakistan', reviewed: '2026-10-29', priority: 0.9, changeFrequency: 'monthly' },
 
   // Free tools. High priority: they are the entry point most people search for,
   // and they qualify a lead better than any brochure page can.
