@@ -4,7 +4,8 @@ import { OfficeLanding } from '@/components/OfficeLanding';
 import { site } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Immigration Lawyers & Consultants in Islamabad',
+  // Absolute for the same reason as the Lahore page.
+  title: { absolute: 'Canada Visa Consultants & Immigration Lawyers in Islamabad' },
   description:
     'Our Islamabad office at the World Trade Centre, Giga Mall, DHA Phase 2 — Canada, UK, USA and Europe immigration, lawyer-reviewed. Free consultation.',
   alternates: { canonical: '/immigration-consultant-islamabad' },

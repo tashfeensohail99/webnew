@@ -1,9 +1,10 @@
 /**
  * The old WordPress site is a cloned shop-theme demo carrying another firm's
  * branding alongside its theme's demo pages. Only the URLs that are genuinely
- * ours are worth their PageRank; everything else is served 410 Gone (see
- * lib/legacy-urls.ts) rather than redirected — bulk-redirecting unrelated pages
- * to the homepage reads to Google as a soft 404 and transfers nothing.
+ * ours are worth their PageRank; everything else is left to 404 rather than
+ * redirected — bulk-redirecting unrelated pages to the homepage reads to Google
+ * as a soft 404 and transfers nothing. (Search Console, 2026-10-29: none of the
+ * ~216 legacy 404s has an external link pointing at it.)
  *
  * [oldPath, newPath] — one hop each, no chains.
  *
@@ -15,26 +16,25 @@
 const LEGACY_REDIRECTS = [
   ['/what-is-c11-entrepreneur-work-permit', '/work-permit-canada'],
   ['/the-canadian-c11-work-permit-everything-you-need-to-know', '/work-permit-canada'],
-  ['/what-is-judicial-review', '/canada-visa-refused'],
+  ['/what-is-judicial-review', '/refusals/judicial-review'],
   ['/reasons-behind-visa-rejection', '/canada-visa-refused'],
   ['/canada-immigration', '/'],
   ['/canadian-programs', '/'],
   ['/migrate-to-canada-from-dubai-and-be-a-part-of-a-vibrant-culture', '/'],
   ['/migrate-to-canada-from-uae-in-2022', '/'],
-  ['/best-immigration-lawyers-in-pakistan', '/about/our-team'],
+  ['/best-immigration-lawyers-in-pakistan', '/canadian-immigration-lawyer-pakistan'],
+  ['/enquiry-consultation', '/book-consultation'],
+  ['/privacy-policy-2', '/privacy'],
+  // The full slugs of these two posts aren't recorded anywhere (Search Console
+  // truncates them), so match on the stem.
+  ['/how-to-raise-your-express-entry-crs-score:rest(.*)', '/tools/crs-calculator'],
+  ['/importance-of-crs-for-canadian-immigration:rest(.*)', '/tools/crs-calculator'],
 ];
 
 /**
- * PENDING — add these back the moment their target page ships, and re-point the
- * two C11 / refusal entries above to their spokes:
+ * PENDING — add these back the moment their target page ships:
  *   /approved-cases                       → /success-stories
- *   /how-to-raise-your-express-entry-crs… → /answers/crs-score-explained
- *   /importance-of-crs-for-canadian-immi… → /answers/crs-score-explained
- *   /enquiry-consultation                 → /book-consultation
- *   /privacy-policy-2                     → /privacy
- *   /what-is-c11-entrepreneur-work-permit → /work-permit-canada/lmia-exempt-c11
- *   /what-is-judicial-review              → /canada-visa-refused/judicial-review
- *   /reasons-behind-visa-rejection        → /canada-visa-refused/common-refusal-reasons
+ *   /reasons-behind-visa-rejection        → a common-refusal-reasons spoke
  */
 
 /** @type {import('next').NextConfig} */

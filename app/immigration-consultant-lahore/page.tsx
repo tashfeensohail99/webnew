@@ -4,7 +4,9 @@ import { OfficeLanding } from '@/components/OfficeLanding';
 import { site } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Immigration Lawyers & Consultants in Lahore',
+  // Absolute: people search "canada visa consultant in lahore", and Google shows
+  // the site name separately, so the brand suffix would only cost length.
+  title: { absolute: 'Canada Visa Consultants & Immigration Lawyers in Lahore' },
   description:
     'Our Lahore office in Haly Tower, DHA Phase 2 — Canada, UK, USA and Europe immigration, reviewed by lawyers. Free consultation. Address and hours.',
   alternates: { canonical: '/immigration-consultant-lahore' },

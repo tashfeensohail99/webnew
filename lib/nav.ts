@@ -220,7 +220,7 @@ export const NAV: NavGroup[] = [
       {
         items: [
           { href: '/canada-visa-refused', label: 'What to do after a refusal', status: 'live' },
-          { href: '/refusals/gcms-notes', label: 'The officer’s notes', status: 'live' },
+          { href: '/refusals/gcms-notes', label: 'GCMS notes (the officer’s notes)', status: 'live' },
           { href: '/refusals/reconsideration', label: 'Reconsideration requests', status: 'live' },
           { href: '/refusals/judicial-review', label: 'Judicial review', status: 'live' },
           { href: '/refusals/re-applying', label: 'Re-applying after a refusal', status: 'live' },

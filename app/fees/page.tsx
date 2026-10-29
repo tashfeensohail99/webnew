@@ -27,9 +27,11 @@ import { site, SERVICE } from '@/lib/site';
  * yours, or hold you to one you never quoted.
  */
 export const metadata: Metadata = {
-  title: 'Our Fees',
+  // Absolute: "Our Fees" told a searcher nothing, and the brand suffix would
+  // push the descriptive version past the ~60 characters Google shows.
+  title: { absolute: 'Immigration Fees in Pakistan: What Tashfeen Charges' },
   description:
-    'What we charge, what the government charges, and why we separate the two. The consultation itself is free.',
+    'What we have actually charged for Canada visit visas, C11 work permits and judicial reviews — and which part is our fee, which is the government’s.',
   alternates: { canonical: '/fees' },
 };
 

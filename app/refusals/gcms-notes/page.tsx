@@ -23,9 +23,9 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * finding.
  */
 export const metadata: Metadata = {
-  title: 'The officer’s notes behind a refusal',
+  title: 'GCMS Notes After a Canada Refusal: What They Show',
   description:
-    'Every IRCC decision has officer notes, and they say more than the refusal letter. Why they matter, what they can settle, and who may ask for them.',
+    'GCMS notes are the officer’s own record of your IRCC file, and they say more than the refusal letter. Why they matter, what they settle, who may ask for them.',
   alternates: { canonical: '/refusals/gcms-notes' },
 };
 
@@ -61,8 +61,8 @@ const AMBIGUITIES = [
 
 const FAQS = [
   {
-    q: 'What are the notes, exactly?',
-    a: 'IRCC officers work inside a case management system, and they record entries as they process a file — what was reviewed, what was verified, what concerned them, and the reasoning that led to the decision. The refusal letter you received is a summary written from that record. The record itself is usually longer and more specific.',
+    q: 'What are GCMS notes, exactly?',
+    a: 'IRCC officers work inside the Global Case Management System (GCMS), and they record entries as they process a file — what was reviewed, what was verified, what concerned them, and the reasoning that led to the decision. The refusal letter you received is a summary written from that record. The record itself is usually longer and more specific.',
   },
   {
     q: 'Why doesn’t the refusal letter just say all that?',
@@ -94,7 +94,7 @@ export default function GcmsNotesPage() {
   return (
     <>
       <PageHero
-        eyebrow="After a refusal"
+        eyebrow="GCMS notes · After a refusal"
         title={
           <>
             The refusal letter is the summary.{' '}
@@ -130,10 +130,10 @@ export default function GcmsNotesPage() {
           </p>
           <p>
             Separately, and continuously while your file was being worked, the officer was writing
-            in IRCC’s case management system: what documents were opened, what was checked against
-            what, where the file was sent for further review, which specific element raised doubt,
-            and the reasoning that closed the case. That record exists whether or not you ever ask
-            for it.
+            in IRCC’s Global Case Management System — which is why these are usually called GCMS
+            notes: what documents were opened, what was checked against what, where the file was
+            sent for further review, which specific element raised doubt, and the reasoning that
+            closed the case. That record exists whether or not you ever ask for it.
           </p>
           <p>
             The gap between those two things is where money gets wasted. People read a one-line
