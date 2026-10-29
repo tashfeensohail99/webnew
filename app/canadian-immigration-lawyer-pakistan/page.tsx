@@ -17,7 +17,7 @@ import { site, founder } from '@/lib/site';
  * from lib/site.ts only.
  */
 export const metadata: Metadata = {
-  title: { absolute: 'Best Canadian Immigration Lawyer in Pakistan: How to Check (2026)' },
+  title: { absolute: 'Best Canadian Immigration Lawyer in Pakistan? How to Check' },
   description:
     'No one ranks Canadian immigration lawyers in Pakistan. What you can check: who may represent you before IRCC, and how to verify a name in two minutes.',
   alternates: { canonical: '/canadian-immigration-lawyer-pakistan' },

@@ -11,10 +11,12 @@ import { site, SERVICE, leadLawyer } from '@/lib/site';
 import { sortedPosts } from '@/lib/blog';
 
 export const metadata: Metadata = {
-  // Keyword first, brand in full after it. Google shows the site name from the
-  // WebSite JSON-LD separately, so the brand is not lost — and "Canadian
+  // Keyword first, then the short brand like every other page: Bing's URL
+  // inspection flagged the 73-character version with the full name as "title
+  // too long", and Google cuts at ~60 anyway. The full name still reaches both
+  // as the site name via the WebSite JSON-LD and og:site_name. "Canadian
   // immigration lawyers in Pakistan" is the query this page already ranks for.
-  title: { absolute: 'Canadian Immigration Lawyers in Pakistan | Tashfeen Immigration Solutions' },
+  title: { absolute: 'Canadian Immigration Lawyers in Pakistan | Tashfeen' },
   description:
     'Canadian immigration lawyers in Pakistan — work permits, study, visit visas, Express Entry and refusals. Offices in Lahore & Islamabad. Free consultation.',
   alternates: { canonical: '/' },
