@@ -357,6 +357,10 @@ export function Icon({ name, className = 'h-6 w-6' }: { name: IconName; classNam
       return (<svg {...p}><path d="M12 3l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 21l1.1-6.5L2.6 9.8l6.5-.9L12 3z" /></svg>);
     case 'user':
       return (<svg {...p}><circle cx="12" cy="8" r="4" /><path d="M4 21c0-4 4-6 8-6s8 2 8 6" /></svg>);
+    case 'users':
+      return (<svg {...p}><circle cx="9" cy="8" r="3.5" /><path d="M2.5 20c0-3.5 3-5.5 6.5-5.5s6.5 2 6.5 5.5M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.8c2.2.6 3.5 2.4 3.5 5.2" /></svg>);
+    case 'pin':
+      return (<svg {...p}><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z" /><circle cx="12" cy="9.5" r="2.5" /></svg>);
     case 'calculator':
       return (<svg {...p}><rect x="4" y="3" width="16" height="18" rx="2" /><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01" /></svg>);
     /* Social marks live in components/SocialIcon.tsx — full-colour brand
@@ -368,4 +372,4 @@ export function Icon({ name, className = 'h-6 w-6' }: { name: IconName; classNam
 
 export type IconName =
   | 'permit' | 'plane' | 'refresh' | 'scale' | 'shield' | 'doc'
-  | 'globe' | 'building' | 'check' | 'chat' | 'star' | 'user' | 'calculator';
+  | 'globe' | 'building' | 'check' | 'chat' | 'star' | 'user' | 'users' | 'pin' | 'calculator';

@@ -3,10 +3,9 @@ import type { Metadata } from 'next';
 import { WhatsAppCta } from '@/components/WhatsAppCta';
 import { WhatsAppFloat } from '@/components/WhatsAppFloat';
 import { DestinationGrid } from '@/components/DestinationGrid';
-import { HeroGlobe } from '@/components/HeroGlobe';
 import { FounderFeature } from '@/components/FounderFeature';
 import { SocialProof } from '@/components/SocialProof';
-import { SplitSection, FAQ, Icon } from '@/components/ui';
+import { SplitSection, FAQ, Icon, type IconName } from '@/components/ui';
 import { site, SERVICE, leadLawyer } from '@/lib/site';
 import { sortedPosts } from '@/lib/blog';
 
@@ -25,6 +24,14 @@ export const metadata: Metadata = {
 /** In-copy links in the hero: readable on the dark field, still plainly links. */
 const HERO_LINK =
   'font-medium text-white underline decoration-gold-400/60 underline-offset-4 transition-colors hover:decoration-gold-300';
+
+/** The hero's trust row, worded as on the firm's banner. */
+const HERO_POINTS: [IconName, string][] = [
+  ['scale', 'Lawyer-led guidance'],
+  ['users', 'Personalised support'],
+  ['doc', 'End-to-end application help'],
+  ['pin', 'Offices in Islamabad & Lahore'],
+];
 
 const SERVICES = [
   {
@@ -196,29 +203,54 @@ export default function HomePage() {
 
   return (
     <>
-      {/* ============================= HERO ============================= */}
+      {/* ============================= HERO =============================
+          Laid out after the firm's banner (Nov 2026): copy on the left, the
+          consultation photo on the right. The photo is cut from that banner
+          with its baked-in text left out — every word here is page text. */}
       <section className="relative overflow-hidden bg-hero text-white">
-        <div className="relative mx-auto max-w-6xl px-4 py-24 sm:py-32 lg:grid lg:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)] lg:items-center lg:gap-6 xl:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] xl:gap-10">
-          {/* Text column. */}
-          <div>
-            <p className="flex items-center gap-3 text-sm font-semibold text-gold-300 sm:text-base">
-              <span aria-hidden="true" className="h-px w-7 shrink-0 bg-gradient-to-r from-transparent to-gold-400" />
+        {/* A band above the copy on phones; the right half from lg up. The
+            fades melt it into the hero field in either theme. */}
+        <div className="relative h-60 sm:h-80 lg:absolute lg:inset-y-0 lg:right-0 lg:h-auto lg:w-[46%]">
+          <img
+            src="/home/hero-consultation-720.webp"
+            srcSet="/home/hero-consultation-480.webp 480w, /home/hero-consultation-720.webp 720w, /home/hero-consultation-847.webp 847w"
+            // From lg the photo is cropped to the hero's height, so it renders
+            // wider than its column — always take the full-size file there.
+            sizes="(min-width: 1024px) 847px, 100vw"
+            width={847}
+            height={897}
+            alt="Canadian immigration consultation and visa guidance at Tashfeen Immigration Solutions"
+            fetchPriority="high"
+            decoding="async"
+            // `!` because the unlayered `img { height: auto }` reset in
+            // globals.css beats a plain h-full.
+            className="!h-full w-full object-cover object-[60%_62%] lg:object-center"
+          />
+          <div aria-hidden="true" className="hero-photo-fade-y absolute inset-0 lg:hidden" />
+          <div aria-hidden="true" className="hero-photo-fade-x absolute inset-0 hidden lg:block" />
+        </div>
+
+        <div className="relative mx-auto -mt-6 max-w-6xl px-4 pb-20 sm:pb-24 lg:mt-0 lg:py-16">
+          <div className="lg:max-w-[34rem] xl:max-w-[38rem]">
+            <p className="flex items-center gap-3 text-sm font-semibold text-white sm:text-base">
+              <span aria-hidden="true" className="h-4 w-[3px] shrink-0 -skew-x-12 rounded-full bg-gold-400" />
               Your Canadian Immigration Journey Starts with the Right Guidance
             </p>
-            {/* At lg+ the headline shares the row with the globe, so it takes a
-                tighter cap than the standalone display-1 clamp. The place line
-                is part of the same H1 but set smaller, so the heading carries
-                the full phrase without becoming a wall of display type. */}
+            {/* The place line is part of the same H1, set smaller on a gold
+                band, so the heading carries the full phrase without becoming
+                a wall of display type. */}
             <h1 className="display-1 mt-5 lg:!text-[3rem] lg:!leading-[1.05] xl:!text-[3.3rem]">
               Canadian Immigration Lawyers in Pakistan
               <span className="sr-only"> – </span>
-              <span className="mt-3 block text-[0.5em] leading-snug text-gold-300">
-                Trusted Guidance in Islamabad &amp; Lahore
+              <span className="mt-4 block">
+                <span className="inline-block rounded-md bg-gold-500 px-3 py-1.5 text-[0.5em] leading-snug text-[#0d1b2b] shadow-[0_10px_24px_-14px_rgba(163,130,63,0.9)]">
+                  Trusted Guidance in Islamabad &amp; Lahore
+                </span>
               </span>
             </h1>
 
             <div className="mt-7 max-w-2xl space-y-4 text-[1.02rem] leading-relaxed text-ink-200 text-pretty">
-              <p className="lede !text-ink-200">
+              <p>
                 Planning to study, work, visit, or build a new life in Canada? Tashfeen Immigration
                 Solutions helps individuals, families, students, and business owners across{' '}
                 <Link href="/immigration-consultant-islamabad" className={HERO_LINK}>Islamabad</Link>,
@@ -237,19 +269,16 @@ export default function HomePage() {
                 <Link href="/family-sponsorship" className={HERO_LINK}>family sponsorship</Link>, and{' '}
                 <Link href="/business-immigration" className={HERO_LINK}>business immigration</Link>.
               </p>
-              <p>
-                We believe every immigration journey deserves careful attention, realistic advice, and
-                a clear understanding of the requirements. From reviewing your circumstances and
-                identifying suitable immigration options to explaining documentation requirements and
-                possible challenges, our goal is to help you make informed decisions about your future.
-              </p>
-              <p>
-                Whether you are applying for the first time or need guidance{' '}
-                <Link href="/canada-visa-refused" className={HERO_LINK}>after a visa refusal</Link>,
-                start with a free consultation to understand your available options and the next
-                steps.
-              </p>
             </div>
+
+            <ul className="mt-8 grid grid-cols-2 gap-x-5 gap-y-4 sm:grid-cols-4 lg:grid-cols-2">
+              {HERO_POINTS.map(([icon, label]) => (
+                <li key={label} className="flex items-center gap-2.5 text-sm font-medium leading-snug text-white">
+                  <Icon name={icon} className="h-7 w-7 shrink-0 text-gold-300" />
+                  {label}
+                </li>
+              ))}
+            </ul>
 
             <div className="hero-rise hero-rise-2 mt-9 flex flex-wrap items-center gap-3">
               {/* The firm's Google Form was meant to go here, but it made visitors
@@ -271,20 +300,6 @@ export default function HomePage() {
                 Start on WhatsApp
               </WhatsAppCta>
             </div>
-            <p className="hero-rise hero-rise-3 mt-5 text-sm text-ink-300">
-              Personalised guidance <span aria-hidden="true">•</span> Lawyer-led case reviews{' '}
-              <span aria-hidden="true">•</span> Offices in Islamabad and Lahore
-            </p>
-          </div>
-
-          {/* Globe column — hidden below lg where the headline needs the full
-              width. From lg up it is a real part of the grid, so the headline
-              never fights it. The negative mr allows the globe to bleed a
-              little past the content container's right edge for presence.
-              aspect-square reserves the globe's box before it loads
-              (HeroGlobe is client-only), so its arrival shifts nothing. */}
-          <div className="relative hidden aspect-square lg:block lg:mr-[-4rem] lg:scale-[1.06] xl:mr-[-3rem] xl:scale-110">
-            <HeroGlobe />
           </div>
         </div>
       </section>
@@ -338,6 +353,22 @@ export default function HomePage() {
               Whether your goal is Canadian permanent residence, higher education, employment, family
               reunification, or business opportunities, we focus on providing clear information,
               professional support, and realistic expectations.
+            </p>
+            {/* These two closed the hero in the firm's copy; the banner layout
+                keeps the hero to its first two paragraphs, so they sit here. */}
+            <p>
+              We believe every immigration journey deserves careful attention, realistic advice, and
+              a clear understanding of the requirements. From reviewing your circumstances and
+              identifying suitable immigration options to explaining documentation requirements and
+              possible challenges, our goal is to help you make informed decisions about your future.
+            </p>
+            <p>
+              Whether you are applying for the first time or need guidance{' '}
+              <Link href="/canada-visa-refused" className="font-medium text-ink-900 underline decoration-gold-500/60 underline-offset-4 hover:decoration-gold-600">
+                after a visa refusal
+              </Link>
+              , start with a free consultation to understand your available options and the next
+              steps.
             </p>
             <p className="font-semibold text-ink-900">
               Speak with our team today and take the first step toward understanding your Canadian

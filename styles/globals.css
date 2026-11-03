@@ -237,6 +237,8 @@ html:not([data-theme="dark"]) .bg-hero {
     linear-gradient(160deg, #ffffff 0%, #f4f7fb 55%, #e9eff7 100%);
   color: var(--color-ink-900);
 }
+html:not([data-theme="dark"]) .hero-photo-fade-x { background: linear-gradient(90deg, #f3f6fa 0%, rgba(243, 246, 250, 0.55) 9%, rgba(243, 246, 250, 0) 24%); }
+html:not([data-theme="dark"]) .hero-photo-fade-y { background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, #ffffff 100%); }
 html:not([data-theme="dark"]) .bg-navy {
   background: linear-gradient(165deg, #f4f7fb, #e9eff7);
   color: var(--color-ink-900);
@@ -581,6 +583,10 @@ textarea:user-invalid { --focus-ring: #b42318; }
     radial-gradient(760px 420px at 8% 108%, rgba(47, 70, 97, 0.55), transparent 60%),
     linear-gradient(160deg, #0f2135 0%, var(--color-ink-900) 46%, var(--color-ink-950) 100%);
 }
+/* Home hero photo: fades that melt it into the hero field — the left edge from
+   lg up, the bottom edge on phones where it sits above the copy. */
+.hero-photo-fade-x { background: linear-gradient(90deg, #0d1b2b 0%, rgba(13, 27, 43, 0.55) 9%, rgba(13, 27, 43, 0) 24%); }
+.hero-photo-fade-y { background: linear-gradient(180deg, rgba(14, 31, 51, 0) 40%, #0e1f33 100%); }
 .bg-navy {
   background: linear-gradient(165deg, var(--color-ink-900), var(--color-ink-950));
 }
