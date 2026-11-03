@@ -22,6 +22,10 @@ export const metadata: Metadata = {
   alternates: { canonical: '/' },
 };
 
+/** In-copy links in the hero: readable on the dark field, still plainly links. */
+const HERO_LINK =
+  'font-medium text-white underline decoration-gold-400/60 underline-offset-4 transition-colors hover:decoration-gold-300';
+
 const SERVICES = [
   {
     href: '/work-permit-canada',
@@ -197,22 +201,62 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-6xl px-4 py-24 sm:py-32 lg:grid lg:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)] lg:items-center lg:gap-6 xl:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] xl:gap-10">
           {/* Text column. */}
           <div>
-            <p className="eyebrow eyebrow--light">Tashfeen Immigration Solutions · qualified lawyers</p>
-            {/* At lg+ the headline shares the row with the globe, so it has
-                to accept a slightly tighter cap than the standalone display-1
-                clamp — otherwise "Canadian immigration," splits mid-phrase. */}
-            <h1 className="display-1 mt-6 lg:!text-[3.3rem] lg:!leading-[1.03] xl:!text-[3.7rem]">
-              Canadian immigration, handled by{' '}
-              <span className="text-gold-300">real lawyers in Pakistan.</span>
-            </h1>
-            <p className="lede mt-6 max-w-2xl !text-ink-200">
-              Offices in Pakistan and Canada. The consultation is free, and you leave with a written
-              summary of where you actually stand — including if the honest answer is don’t apply.
+            <p className="flex items-center gap-3 text-sm font-semibold text-gold-300 sm:text-base">
+              <span aria-hidden="true" className="h-px w-7 shrink-0 bg-gradient-to-r from-transparent to-gold-400" />
+              Your Canadian Immigration Journey Starts with the Right Guidance
             </p>
+            {/* At lg+ the headline shares the row with the globe, so it takes a
+                tighter cap than the standalone display-1 clamp. The place line
+                is part of the same H1 but set smaller, so the heading carries
+                the full phrase without becoming a wall of display type. */}
+            <h1 className="display-1 mt-5 lg:!text-[3rem] lg:!leading-[1.05] xl:!text-[3.3rem]">
+              Canadian Immigration Lawyers in Pakistan
+              <span className="sr-only"> – </span>
+              <span className="mt-3 block text-[0.5em] leading-snug text-gold-300">
+                Trusted Guidance in Islamabad &amp; Lahore
+              </span>
+            </h1>
+
+            <div className="mt-7 max-w-2xl space-y-4 text-[1.02rem] leading-relaxed text-ink-200 text-pretty">
+              <p className="lede !text-ink-200">
+                Planning to study, work, visit, or build a new life in Canada? Tashfeen Immigration
+                Solutions helps individuals, families, students, and business owners across{' '}
+                <Link href="/immigration-consultant-islamabad" className={HERO_LINK}>Islamabad</Link>,
+                Rawalpindi,{' '}
+                <Link href="/immigration-consultant-lahore" className={HERO_LINK}>Lahore</Link>, and
+                Pakistan explore Canadian immigration pathways with greater confidence.
+              </p>
+              <p>
+                Our lawyer-led team provides personalised support for{' '}
+                <Link href="/immigration-programs" className={HERO_LINK}>Canada permanent residence</Link>,{' '}
+                <Link href="/express-entry" className={HERO_LINK}>Express Entry</Link>,{' '}
+                <Link href="/pnp" className={HERO_LINK}>Provincial Nominee Programs (PNPs)</Link>,{' '}
+                <Link href="/study-in-canada/study-permit" className={HERO_LINK}>study permits</Link>,{' '}
+                <Link href="/work-permits" className={HERO_LINK}>work permits</Link>,{' '}
+                <Link href="/canada-visit-visa" className={HERO_LINK}>visitor visas</Link>,{' '}
+                <Link href="/family-sponsorship" className={HERO_LINK}>family sponsorship</Link>, and{' '}
+                <Link href="/business-immigration" className={HERO_LINK}>business immigration</Link>.
+              </p>
+              <p>
+                We believe every immigration journey deserves careful attention, realistic advice, and
+                a clear understanding of the requirements. From reviewing your circumstances and
+                identifying suitable immigration options to explaining documentation requirements and
+                possible challenges, our goal is to help you make informed decisions about your future.
+              </p>
+              <p>
+                Whether you are applying for the first time or need guidance{' '}
+                <Link href="/canada-visa-refused" className={HERO_LINK}>after a visa refusal</Link>,
+                start with a free consultation to understand your available options and the next
+                steps.
+              </p>
+            </div>
 
             <div className="hero-rise hero-rise-2 mt-9 flex flex-wrap items-center gap-3">
+              {/* The firm's Google Form was meant to go here, but it made visitors
+                  sign in to Google before it opened (Nov 2026) — and its answers
+                  never reach the CRM. /book-consultation does both jobs. */}
               <Link href="/book-consultation" className="btn btn-gold">
-                Talk to a lawyer — free
+                Get Your Free Immigration Assessment
                 <span aria-hidden="true">→</span>
               </Link>
               <WhatsAppCta
@@ -227,20 +271,10 @@ export default function HomePage() {
                 Start on WhatsApp
               </WhatsAppCta>
             </div>
-
-            {/* Trust bar */}
-            <div className="hero-rise hero-rise-3 mt-14 grid max-w-3xl gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/5 sm:grid-cols-3">
-              {[
-                ['Two continents', 'Offices in Pakistan & Canada'],
-                ['Lawyer-led', 'Every case reviewed by counsel'],
-                ['No false hope', 'We’ll tell you not to apply'],
-              ].map(([h, s]) => (
-                <div key={h} className="bg-ink-950/30 px-5 py-5">
-                  <p className="font-serif text-lg text-white">{h}</p>
-                  <p className="mt-1 text-sm text-ink-300">{s}</p>
-                </div>
-              ))}
-            </div>
+            <p className="hero-rise hero-rise-3 mt-5 text-sm text-ink-300">
+              Personalised guidance <span aria-hidden="true">•</span> Lawyer-led case reviews{' '}
+              <span aria-hidden="true">•</span> Offices in Islamabad and Lahore
+            </p>
           </div>
 
           {/* Globe column — hidden below lg where the headline needs the full
@@ -281,6 +315,52 @@ export default function HomePage() {
           ))}
         </div>
       </nav>
+
+      {/* ===================== SERVICES OVERVIEW =====================
+          The plain summary of what we handle, straight under the hero — for
+          the reader who wants the scope before the detail. */}
+      <section className="bg-paper">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:py-24 lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)] lg:gap-16">
+          <div>
+            <p className="eyebrow">Our services</p>
+            <h2 className="mt-4 font-serif text-3xl leading-tight text-balance sm:text-4xl">
+              Canadian Visa &amp; Immigration Services in Islamabad and Across Pakistan
+            </h2>
+          </div>
+          <div className="mt-8 space-y-4 text-[1.05rem] leading-relaxed text-ink-600 text-pretty lg:mt-10">
+            <p>
+              At Tashfeen Immigration Solutions, we understand that every Canadian visa or immigration
+              application involves different requirements. Our team assists applicants with
+              understanding eligibility, preparing supporting documentation, and navigating the
+              applicable immigration process.
+            </p>
+            <p>
+              Whether your goal is Canadian permanent residence, higher education, employment, family
+              reunification, or business opportunities, we focus on providing clear information,
+              professional support, and realistic expectations.
+            </p>
+            <p className="font-semibold text-ink-900">
+              Speak with our team today and take the first step toward understanding your Canadian
+              immigration options.
+            </p>
+            <div className="flex flex-wrap items-center gap-3 pt-3">
+              <WhatsAppCta
+                intent={{
+                  service: SERVICE.WORK_PERMIT,
+                  page: 'home-services',
+                  targetCountry: 'Canada',
+                  message: 'Hi, I’d like to speak with your team about my Canadian immigration options.',
+                }}
+              >
+                Speak with our team
+              </WhatsAppCta>
+              <Link href="/book-consultation" className="btn btn-ghost">
+                Book a consultation
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ======================== SOCIAL PROOF ========================
           The firm's real reach (~890K followers) — the strongest trust signal
