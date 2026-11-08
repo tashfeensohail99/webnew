@@ -16,83 +16,84 @@ import { ReviewedBy } from '@/components/ReviewedBy';
 /**
  * Ontario provincial nomination (OINP).
  *
- * Deliberately contains no stream list. Ontario replaced its entire stream
- * framework in 2026 — any page naming streams and their criteria is wrong
- * within a season. What is stable is the shape of the thing: what a province
- * is buying when it nominates, how enhanced and base nomination differ, and
- * the intent-to-settle expectation. Everything current lives on ontario.ca.
+ * Ontario replaced its entire stream framework in 2026 and now runs one stream,
+ * named here with a date. Re-check it monthly against lib/facts.ts. Criteria,
+ * scoring and deadlines stay on ontario.ca. What is stable is the shape of the
+ * thing: what a province is buying when it nominates, how enhanced and base
+ * nomination differ, and the intent-to-settle expectation.
  */
 export const metadata: Metadata = {
   title: 'Ontario Provincial Nomination (OINP)',
   description:
-    'How Ontario’s nominee programme works: what the province looks for, enhanced versus base nomination, and the intent-to-settle expectation.',
+    'Ontario replaced its OINP streams in 2026 with one, the Ontario Workforce Priority stream. What that means from Pakistan, and who it does not suit.',
   alternates: { canonical: '/pnp/ontario' },
 };
 
 const PAGE = 'pnp-ontario';
 
 const OFFICIAL_OINP = 'https://www.ontario.ca/page/ontario-immigrant-nominee-program-oinp';
+const OFFICIAL_OWP = 'https://www.ontario.ca/page/ontario-workforce-priority-stream';
 const OFFICIAL_UPDATES = 'https://www.ontario.ca/page/2026-ontario-immigrant-nominee-program-updates';
 const IRCC_PNP =
   'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html';
 const IRCC_STATS =
   'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/reports-statistics.html';
 
-const STREAM_KINDS = [
+const STREAM_FACTS = [
   {
     icon: 'building' as const,
-    kicker: 'Category',
-    title: 'Employer-driven',
-    body: 'Built around a named Ontario employer with a role they cannot fill locally. The employer’s legitimacy, the wage and the location of the job are all assessed alongside you.',
-  },
-  {
-    icon: 'permit' as const,
-    kicker: 'Category',
-    title: 'In-demand occupation',
-    body: 'Targets whichever occupations the province has currently identified as short-staffed. Which occupations those are is revised as labour-market conditions change, so it is a moving target by design — the province publishes the list in force, and that is the only version to work from.',
+    kicker: 'Start here',
+    title: 'A job offer from an Ontario employer',
+    body: 'Your employer starts the process through Ontario’s employer portal and must have the position approved. The one exception is eligible self-employed physicians, who do not need a job offer.',
   },
   {
     icon: 'doc' as const,
-    kicker: 'Category',
-    title: 'Graduate and student',
-    body: 'For people who studied in Ontario at a recognised institution and are already in the province’s labour market. Provinces treat local study as strong evidence of settlement intent.',
+    kicker: 'Then',
+    title: 'An expression of interest',
+    body: 'Once your employer has submitted the job offer, you register an expression of interest within the deadline Ontario sets. It is scored, and you can apply only if you are invited.',
   },
   {
     icon: 'calculator' as const,
-    kicker: 'Category',
-    title: 'Entrepreneur and investment',
-    body: 'For people establishing or buying an Ontario business, usually with a performance agreement and a nomination only after the business actually operates. This is a business file, not a points file.',
+    kicker: 'How you are ranked',
+    title: 'Points for the job and for you',
+    body: 'Ontario scores factors including the TEER level and occupational category of the job, the wage, official languages and where in Ontario the job is. Jobs outside Toronto score higher on location.',
   },
   {
-    icon: 'chat' as const,
-    kicker: 'Category',
-    title: 'Francophone',
-    body: 'Many provinces run a French-language route reflecting federal francophone-immigration objectives. Ontario has a sizeable francophone population outside Toronto.',
+    icon: 'permit' as const,
+    kicker: 'Experience',
+    title: 'Set by the TEER level of the job',
+    body: 'The work experience you must show depends on the TEER category of the job offer. A licence can count where the job requires one. Ontario sets out each requirement on its stream page.',
   },
   {
-    icon: 'globe' as const,
-    kicker: 'Category',
-    title: 'Regional and community',
-    body: 'Some provinces steer nomination toward areas outside the largest city, where labour shortages are sharper and retention is the province’s real concern.',
+    icon: 'plane' as const,
+    kicker: 'Express Entry',
+    title: 'An option for TEER 0 to 3',
+    body: 'With a job offer in TEER 0, 1, 2 or 3 you can ask to be nominated through Express Entry, as long as you meet a federal Express Entry programme’s criteria and keep a valid profile.',
+  },
+  {
+    icon: 'shield' as const,
+    kicker: 'Not open',
+    title: 'No other stream',
+    body: 'Ontario says all its other streams are closed. Guides that still describe separate employer, graduate, French-speaking or entrepreneur routes are out of date.',
   },
 ];
 
 const STEPS = [
   {
-    title: 'Establish the connection first',
-    body: 'A nomination follows a genuine link to Ontario — an offer from an Ontario employer, study or work already completed there, or a business you are actually establishing. The link is the substance of the application, not a formality attached to it.',
+    title: 'Find an Ontario employer first',
+    body: 'The stream is built around a qualifying job offer. Without an Ontario employer willing to go through the process, there is no way in unless you are an eligible self-employed physician.',
   },
   {
     title: 'Check what is open today',
-    body: 'Ontario publishes which routes are accepting applications, and this changes. Confirm on the province’s own site on the day you plan to act, not from a summary page written months earlier.',
+    body: 'Ontario publishes changes to the stream as they happen. Confirm on the province’s own site on the day you plan to act, not from a summary page written months earlier.',
   },
   {
-    title: 'Register interest, or apply directly',
-    body: 'Provinces typically use one of two mechanics: an expression-of-interest pool from which the province invites candidates it wants, or a direct application window that opens and closes. Which applies depends on the route.',
+    title: 'Your employer submits, then you register interest',
+    body: 'Your employer submits the job offer through Ontario’s employer portal and you receive a job offer ID. You then register an expression of interest within Ontario’s deadline. Registering is not applying, and you can apply only if invited.',
   },
   {
-    title: 'Submit the provincial application',
-    body: 'This is a separate application to the province, with its own forms, evidence and fee. Employment evidence, credentials, language results and proof of your connection to Ontario are the usual weight of it.',
+    title: 'If invited, both of you apply',
+    body: 'You apply for nomination and your employer applies for approval of the position, each within short deadlines. Both have to succeed. Employment evidence, credentials and language results are the usual weight of your side.',
   },
   {
     title: 'Provincial assessment and nomination',
@@ -111,23 +112,23 @@ const FAQS = [
   },
   {
     q: 'What is the difference between enhanced and base nomination?',
-    a: 'An enhanced nomination is aligned with Express Entry: you must already have an eligible Express Entry profile, and the nomination attaches to it. A base nomination sits outside Express Entry — you are nominated by the province and then file a paper-based permanent residence application to IRCC through a different route. The evidence the province wants is broadly similar; the federal path afterwards is not.',
+    a: 'An enhanced nomination is aligned with Express Entry: you must already have an eligible Express Entry profile, and the nomination attaches to it. A base nomination sits outside Express Entry — you are nominated by the province and then apply to IRCC through its non-Express Entry process, and IRCC sets how that application is submitted. Under the Ontario Workforce Priority stream, applicants with a TEER 0 to 3 job offer can ask for the Express Entry route if they meet a federal programme’s criteria.',
   },
   {
     q: 'Which Ontario streams are open right now, and what are the criteria?',
-    a: 'We deliberately do not list them. Ontario has restructured its nomination framework before — most recently in 2026, when its existing streams were replaced — and provincial streams open, close, pause and are replaced without much notice. Any page naming streams and their criteria is a page that will mislead somebody. Ontario publishes what is open on its own programme pages — read it there, on the day.',
+    a: 'As of 8 November 2026, one: the Ontario Workforce Priority stream. Ontario says all its other streams are closed. The criteria depend on the TEER category of your job offer and are set out on Ontario’s stream page. They can change, so read them there, on the day.',
   },
   {
     q: 'Do I need a job offer to be nominated by Ontario?',
-    a: 'It depends entirely on the route. Employer-driven routes are built around one; graduate, occupation-targeted and francophone routes may not require one. What is constant is that a job offer used in a provincial application has to be real, verifiable and from an employer who will withstand the province’s scrutiny.',
+    a: 'Almost always, yes. The Ontario Workforce Priority stream requires a qualifying job offer from an Ontario employer; the exception is eligible self-employed physicians. For most people in Pakistan, that means finding an Ontario employer before anything else. The offer has to be real and verifiable, and the employer has to apply for approval of the position.',
   },
   {
     q: 'Can I get nominated by Ontario and then move to another province?',
-    a: 'Legally, permanent residents have mobility rights once status is granted. But you are asked at application stage whether you intend to live in the nominating province, and answering yes when you do not is misrepresentation. Provinces track retention and assess intent seriously. Treat the question as meaning what it says.',
+    a: 'Legally, permanent residents have mobility rights once status is granted. But Ontario’s stream requires an intention to live and work in Ontario, and answering yes when you do not is misrepresentation. Treat the question as meaning what it says.',
   },
   {
-    q: 'My occupation is not on any in-demand list. Is that fatal?',
-    a: 'For occupation-targeted routes, usually yes for now — those lists exist precisely to exclude. It does not necessarily end provincial nomination generally, and it says nothing about federal Express Entry, where the criteria are different. The honest first question is whether a provincial route is the right one for you at all.',
+    q: 'How does Ontario rank candidates now?',
+    a: 'By points on the expression of interest. Ontario scores factors including the TEER level and occupational category of the job offer, the wage, official languages and where in Ontario the job is, with jobs outside Toronto scoring higher on location. Ontario publishes the full scoring and has changed it since the stream opened, so read the current version on its stream page.',
   },
   {
     q: 'Is Ontario easier than other provinces?',
@@ -225,10 +226,10 @@ export default function PnpOntarioPage() {
             application does not give them.
           </p>
           <p>
-            Ontario also has a settlement concern, not only a hiring one. Provinces are measured on
-            whether the people they nominate stay. Evidence that you are connected to the province —
+            Ontario also has a settlement concern, not only a hiring one: its stream requires an
+            intention to live and work in Ontario. Evidence that you are connected to the province —
             you have worked there, studied there, have family there, hold a genuine offer there —
-            is not a bonus. For many routes it is the substance of the case.
+            is not a bonus. It is part of the substance of the case.
           </p>
         </Prose>
       </Section>
@@ -260,18 +261,19 @@ export default function PnpOntarioPage() {
                 sometimes available to candidates federal programmes will not take.
               </p>
               <p>
-                Which mechanic applies is a property of the route, not a choice you make. Check it
-                before you assume your{' '}
+                Under the Ontario Workforce Priority stream, applicants with a TEER 0 to 3 job offer,
+                and self-employed physicians, can ask to be nominated through{' '}
                 <Link href="/express-entry" className="font-semibold text-accent-500 link-underline">
                   Express Entry
-                </Link>{' '}
-                profile is relevant.
+                </Link>
+                . You must meet a federal programme’s criteria and keep a valid profile while Ontario
+                processes your application. Everyone else goes through the base route.
               </p>
             </Prose>
           </div>
 
           <div>
-            <SectionHeading eyebrow="How candidates are selected" title="Interest, or direct application" />
+            <SectionHeading eyebrow="How candidates are selected" title="Invited from a pool" />
             <ul className="mt-6 space-y-4">
               {[
                 [
@@ -279,8 +281,8 @@ export default function PnpOntarioPage() {
                   'You register in a pool describing your profile. The province invites candidates it wants, when it wants them. Registering is not applying, and being in the pool is not a queue you advance in by waiting.',
                 ],
                 [
-                  'Direct application window',
-                  'Some routes open for applications for a defined period and close again, sometimes on volume. Missing a window is a common and entirely avoidable failure.',
+                  'No direct application',
+                  'Under the only open stream you cannot apply unless Ontario invites you. There is no application window to watch for.',
                 ],
                 [
                   'Provincial verification',
@@ -313,12 +315,21 @@ export default function PnpOntarioPage() {
       {/* ===================== KINDS OF STREAM ===================== */}
       <Section tone="alt">
         <SectionHeading
-          eyebrow="Categories, not a current list"
-          title="The kinds of stream a province runs"
-          subtitle="These are the recurring shapes of provincial nomination routes across Canada. They are not a list of what Ontario is running today — for that, read the province’s own page."
+          eyebrow="As of 8 November 2026"
+          title="One open stream: Ontario Workforce Priority"
+          subtitle={
+            <>
+              Ontario says all its other streams are closed. This is what the stream asks for.
+              Criteria can change, so confirm on{' '}
+              <a href={OFFICIAL_OWP} className="font-semibold text-accent-500 link-underline" rel="noopener noreferrer" target="_blank">
+                Ontario’s stream page
+              </a>{' '}
+              before you act.
+            </>
+          }
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {STREAM_KINDS.map((s) => (
+          {STREAM_FACTS.map((s) => (
             <FeatureCard key={s.title} icon={<Icon name={s.icon} />} kicker={s.kicker} title={s.title}>
               {s.body}
             </FeatureCard>
@@ -326,19 +337,16 @@ export default function PnpOntarioPage() {
         </div>
 
         <div className="mt-10">
-          <Callout title="Why we do not list Ontario’s streams here">
+          <Callout title="If someone offers you an older Ontario stream">
             <p>
-              Provincial streams open, pause, close on volume, and are replaced outright. Ontario
-              rebuilt its nomination framework in 2026, replacing the streams it had been running —
-              routes that had been described on hundreds of advisory pages ceased to exist, and
-              those pages did not update. People prepared applications for streams that were no
-              longer there. It has changed before and will change again.
+              Ontario rebuilt its nomination framework in 2026, replacing the streams it had been
+              running. Many advisory pages still describe routes that no longer exist. If an agent
+              offers you anything other than the Ontario Workforce Priority stream, ask them to show
+              it open on ontario.ca.
             </p>
             <p>
-              A page that names streams and their criteria has a shelf life measured in months. This
-              one is written to survive that. The province publishes what is open, what has changed
-              and what the current criteria are on its own site, and that is the only version worth
-              relying on.
+              The province publishes what is open, what has changed and what the current criteria are
+              on its own site, and that is the only version worth relying on.
             </p>
           </Callout>
         </div>
@@ -368,12 +376,12 @@ export default function PnpOntarioPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where these applications go wrong"
         />
         <Prose>
           <p>
-            <strong>Preparing for a stream that no longer exists.</strong> The most expensive mistake
-            on this route, and it has nothing to do with your qualifications. People work from an
+            <strong>Preparing for a stream that no longer exists.</strong> This has nothing to do with
+            your qualifications. People work from an
             agent’s summary or a year-old article, assemble documents for criteria that were
             replaced, and discover it at the point of filing.
           </p>
@@ -385,8 +393,8 @@ export default function PnpOntarioPage() {
           </p>
           <p>
             <strong>Treating registration as application.</strong> An expression of interest is not a
-            filed application and does not accrue seniority. Waiting in a pool while a direct-application
-            window opens and closes elsewhere is a real and recurring loss.
+            filed application and does not accrue seniority. If you are invited the deadlines are short,
+            so have your documents ready before you register.
           </p>
           <p>
             <strong>A job offer that will not survive verification.</strong> Provinces contact employers.
@@ -417,16 +425,14 @@ export default function PnpOntarioPage() {
           <Callout title="If you have no genuine connection to Ontario, this is the wrong province">
             <p>
               Nominating provinces expect you to live there. Choosing a province you have no link to
-              because it appears to have lower requirements this quarter is one of the most common and
-              most expensive mistakes we see. The application asks you to demonstrate intent to settle;
+              because it appears to have lower requirements this quarter is a costly mistake. The application asks you to demonstrate intent to settle;
               with nothing to demonstrate, you are paying a provincial fee to have that gap noticed.
               Answering the intent question untruthfully is worse — that is misrepresentation, and it
-              carries a bar on future applications.
+              carries five years of inadmissibility under section 40 of the Act.
             </p>
             <p>
-              This route also tends not to suit people whose occupation is well supplied in Ontario, or
-              who have no Ontario employer, study or work history and no realistic way to acquire one.
-              If you are strong on age, education and language but have no provincial tie at all,{' '}
+              This route does not suit anyone without an Ontario employer willing to support them,
+              apart from eligible self-employed physicians. If you are strong on age, education and language but have no provincial tie at all,{' '}
               <Link href="/express-entry" className="font-semibold text-accent-500 link-underline">
                 federal Express Entry
               </Link>{' '}
@@ -438,9 +444,8 @@ export default function PnpOntarioPage() {
               rather than assuming the largest province is the best odds.
             </p>
             <p>
-              And if you are running a business rather than seeking employment, an entrepreneur route is
-              a business file with a performance agreement behind it — not a faster version of a skilled
-              worker application.{' '}
+              And if you are running a business rather than seeking employment, no business route is
+              currently open in Ontario.{' '}
               <Link href="/business-immigration" className="font-semibold text-accent-500 link-underline">
                 See business immigration
               </Link>
@@ -462,13 +467,17 @@ export default function PnpOntarioPage() {
         />
         <Prose>
           <p>
-            Everything that changes — which routes are accepting applications, what the criteria are,
-            which occupations are targeted, what the provincial fee is — lives on Ontario’s own site.
-            We do not reproduce it, because a figure or a stream name that is right today is a
-            liability on a page you might read next year.
+            Everything that changes — the criteria, the scoring, the deadlines, what the provincial
+            fee is — lives on Ontario’s own site. We name the current stream above, dated, and leave
+            the rest there, because a figure that is right today is a liability on a page you might
+            read next year.
           </p>
           <p>
-            Ontario publishes the programme and its{' '}
+            Ontario publishes the programme, the{' '}
+            <a href={OFFICIAL_OWP} className="font-semibold text-accent-500 link-underline" rel="noopener noreferrer" target="_blank">
+              stream requirements
+            </a>{' '}
+            and its{' '}
             <a
               href={OFFICIAL_UPDATES}
               className="font-semibold text-accent-500 link-underline"

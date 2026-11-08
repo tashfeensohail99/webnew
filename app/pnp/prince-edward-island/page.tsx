@@ -48,7 +48,7 @@ const WHAT_PEI_LOOKS_FOR = [
     icon: 'user' as const,
     kicker: 'People who stay',
     title: 'Genuine intent to live in PEI',
-    body: 'A nomination is the province spending part of its own allocation on you. Retention is the measure it is judged on, so evidence that you intend to settle on the Island — not use it as an entry point — sits at the centre of the assessment.',
+    body: 'A nomination is the province spending part of its own allocation on you. So evidence that you intend to settle on the Island — not use it as an entry point — sits at the centre of the assessment.',
   },
   {
     icon: 'doc' as const,
@@ -143,7 +143,7 @@ const FAQS = [
   },
   {
     q: 'Can I get nominated by PEI and then move to Toronto?',
-    a: 'A nomination is granted on the basis that you intend to live and work in that province. Signalling otherwise undermines the application, and if the province concludes the stated intent was not genuine, that is a serious problem — potentially a misrepresentation one, which carries a bar on future applications. Choose a province you actually intend to live in.',
+    a: 'A nomination is granted on the basis that you intend to live and work in that province. Signalling otherwise undermines the application, and if the province concludes the stated intent was not genuine, that is a serious problem — potentially a misrepresentation one, which carries five years of inadmissibility under section 40 of the Act. Choose a province you actually intend to live in.',
   },
   {
     q: 'Is PEI easier to get into than a larger province?',
@@ -233,7 +233,7 @@ export default function PeiPnpPage() {
         <SectionHeading
           eyebrow="Categories, not a list"
           title="The kinds of stream a province runs"
-          subtitle="We do not list PEI’s current streams here. They are revised on the province’s own schedule — an entire provincial framework can be replaced in a single year — so any list we published would become wrong without warning. These are the recurring shapes."
+          subtitle="We do not list PEI’s current streams here. The province publishes them on its own site, and that is the version to rely on. These are the recurring shapes."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {STREAM_KINDS.map((s) => (
@@ -335,10 +335,10 @@ export default function PeiPnpPage() {
                 Working out whether you are Express-Entry-eligible at all is the first question, and
                 our{' '}
                 <Link
-                  href="/tools/crs-calculator"
+                  href="/tools/fsw-67-calculator"
                   className="font-semibold text-accent-500 link-underline"
                 >
-                  CRS calculator
+                  FSW points calculator
                 </Link>{' '}
                 is a starting point for it.
               </p>
@@ -348,7 +348,7 @@ export default function PeiPnpPage() {
           <div>
             <SectionHeading
               eyebrow="What commonly goes wrong"
-              title="The failure patterns we see"
+              title="Where these applications go wrong"
             />
             <ul className="mt-6 space-y-4">
               {[
@@ -394,13 +394,12 @@ export default function PeiPnpPage() {
         <div className="mt-8">
           <Callout title="If you have no intention of living in Prince Edward Island, do not apply to it">
             <p>
-              This is the single most expensive mistake in provincial nomination, and it is made
-              constantly. People choose a province because it looks like a shorter queue, not because
+              This is one of the costliest mistakes in provincial nomination. People choose a province because it looks like a shorter queue, not because
               they intend to live there. Nominating provinces are explicitly selecting for people who
               will settle and stay, and they assess intent as a live question — connections, plans,
               why this province and not another. A file with no answer to that question is weak from
-              the start, and stating an intent you do not hold is misrepresentation, which carries a
-              bar on future applications rather than just a refusal.
+              the start, and stating an intent you do not hold is misrepresentation, which carries
+              five years of inadmissibility rather than just a refusal.
             </p>
             <p>
               PEI in particular tends not to suit people whose occupation has almost no employer base

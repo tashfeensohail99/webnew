@@ -165,6 +165,72 @@ export const FACTS: Record<string, Fact> = {
       'Printed on the refusal pages on 8 Nov 2026 on the site owner’s instruction. Read at source, but the wording has not been reviewed by a lawyer.',
   },
 
+  // ── CANADA: PROVINCIAL NOMINEE PROGRAMS (re-check monthly) ─────────────────
+  caPnpIntentToReside: {
+    id: 'ca.pnp.intent-to-reside',
+    claim:
+      'Since 30 March 2026 provinces and territories alone assess a nominee’s intent to reside and ability to establish economically. IRCC refuses the application if the province revokes the nomination.',
+    provenance: 'primary',
+    source: 'IRCC operational instructions, Provincial Nominee Program base applications (page dated 2026-04-17)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/permanent-residence/economic-classes/provincial-nominees/base-determining-membership-class.html',
+    checked: '2026-11-08',
+  },
+  caAlbertaStreams: {
+    id: 'ca.pnp.ab-streams',
+    claim:
+      'Alberta lists four worker streams (Alberta Opportunity, Tourism and Hospitality, Rural Renewal, Alberta Express Entry) and four entrepreneur streams (Rural Entrepreneur, Graduate Entrepreneur, Farm, Foreign Graduate Entrepreneur).',
+    provenance: 'primary',
+    source: 'Alberta Advantage Immigration Program page',
+    sourceUrl: 'https://www.alberta.ca/alberta-advantage-immigration-program',
+    checked: '2026-11-08',
+  },
+  caBritishColumbiaStreams: {
+    id: 'ca.pnp.bc-streams',
+    claim:
+      'British Columbia lists the Skilled Worker and Health Authority streams for workers, both needing a full-time, indeterminate job offer, and the Base and Regional entrepreneur streams and Strategic Projects stream for business.',
+    provenance: 'primary',
+    source: 'WelcomeBC, For workers; WelcomeBC, BC Provincial Nominee Program navigation',
+    sourceUrl: 'https://www.welcomebc.ca/immigrate-to-b-c/for-workers',
+    checked: '2026-11-08',
+  },
+  caManitobaStreams: {
+    id: 'ca.pnp.mb-streams',
+    claim:
+      'Manitoba lists three streams: Skilled Worker (Skilled Worker in Manitoba, Skilled Worker Overseas), International Education and Business Investor. In draws #282 (22 October 2026) and #283 (5 November 2026), Skilled Worker Overseas profiles were considered only where the candidate declared a direct invitation under a strategic recruitment initiative.',
+    provenance: 'primary',
+    source: 'Manitoba Immigration, Expression of Interest draws #282 and #283',
+    sourceUrl: 'https://immigratemanitoba.com/draws/',
+    checked: '2026-11-08',
+  },
+  caNovaScotiaStreams: {
+    id: 'ca.pnp.ns-streams',
+    claim:
+      'Nova Scotia lists four streams: Skilled Worker, Nova Scotia Graduate, Entrepreneur and Nova Scotia: Express Entry. Skilled Worker needs a full-time permanent job offer; Express Entry needs Nova Scotia work experience or a physician opportunity.',
+    provenance: 'primary',
+    source: 'Live in Nova Scotia, Nova Scotia Nominee Program',
+    sourceUrl: 'https://liveinnovascotia.com/nova-scotia-nominee-program',
+    checked: '2026-11-08',
+  },
+  caNewfoundlandCategories: {
+    id: 'ca.pnp.nl-categories',
+    claim:
+      'Newfoundland and Labrador lists five categories (Express Entry Skilled Worker, Skilled Worker, International Graduate, International Entrepreneur, International Graduate Entrepreneur). An expression of interest is the first step, and the model also covers the Atlantic Immigration Program.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, NLPNP overview and Expression of Interest model overview',
+    sourceUrl: 'https://www.gov.nl.ca/immigration/expression-of-interest-model-overview/',
+    checked: '2026-11-08',
+  },
+  caSaskatchewanPrograms: {
+    id: 'ca.pnp.sk-programs',
+    claim:
+      'Saskatchewan lists International Skilled Worker (Employment Offer, Occupation In-Demand, Saskatchewan Express Entry) and Worker with Saskatchewan Work Experience. 2026 nominations are divided by sector, with accommodation and food services, trucking and retail trade capped.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, Browse SINP Programs; SINP Immigration FAQs (updated 19 December 2025)',
+    sourceUrl:
+      'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs',
+    checked: '2026-11-08',
+  },
+
   // ── CANADA: PROGRAMME STATUS (re-check monthly) ──────────────────────────
   caParentsGrandparentsPaused: {
     id: 'ca.pgp.paused',

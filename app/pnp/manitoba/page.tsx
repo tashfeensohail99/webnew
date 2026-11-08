@@ -19,7 +19,8 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * Deliberately structural. Provincial streams open, close and are renamed
  * constantly, so this page describes the KINDS of stream a province runs and
  * how the nomination machinery works — and sends the reader to the province's
- * own programme page for what is actually open on the day they read it.
+ * own programme page for what is actually open on the day they read it. The
+ * stream names and draw facts are dated: re-check them monthly against lib/facts.ts.
  */
 export const metadata: Metadata = {
   title: 'Manitoba Provincial Nomination (MPNP)',
@@ -99,7 +100,7 @@ const STEPS = [
 const FAQS = [
   {
     q: 'What is the difference between a base nomination and an enhanced one?',
-    a: 'An enhanced nomination goes to someone who already has a live Express Entry profile and meets the criteria of a federal Express Entry programme; the provincial nomination is attached to that profile and the permanent residence application then runs through Express Entry. A base nomination is for candidates who are not in Express Entry — the permanent residence application is filed as a paper-based provincial nominee application instead. Provinces run both, and the balance between them shifts. Which one is available to you depends on the stream and on whether you are Express Entry-eligible in the first place.',
+    a: 'An enhanced nomination goes to someone who already has a live Express Entry profile and meets the criteria of a federal Express Entry programme; the provincial nomination is attached to that profile and the permanent residence application then runs through Express Entry. A base nomination is for candidates who are not in Express Entry — you apply to IRCC through its non-Express Entry process instead, and IRCC sets how that application is submitted. Provinces run both, and the balance between them shifts. Which one is available to you depends on the stream and on whether you are Express Entry-eligible in the first place.',
   },
   {
     q: 'Does a nomination guarantee permanent residence?',
@@ -107,7 +108,7 @@ const FAQS = [
   },
   {
     q: 'Which Manitoba streams are open right now, and what are the cut-offs?',
-    a: 'We deliberately do not publish stream lists, point cut-offs or draw scores here. They change constantly and a figure that is right today becomes a liability on a page you might read next year. Manitoba publishes its open streams, its scoring grid and its draw results on its own site. Read them at the source, on the day.',
+    a: 'As of 8 November 2026 Manitoba lists three streams: Skilled Worker (with the Skilled Worker in Manitoba and Skilled Worker Overseas pathways), International Education, and Business Investor. We deliberately do not publish point cut-offs or draw scores here, because they change with every draw. Manitoba publishes its open streams, its scoring grid and its draw results on its own site. Read them at the source, on the day.',
   },
   {
     q: 'Can I be nominated by Manitoba and then move to Toronto or Vancouver?',
@@ -119,7 +120,7 @@ const FAQS = [
   },
   {
     q: 'Do I need a job offer?',
-    a: 'It depends entirely on the stream. Some provincial streams are built around an employer; others are not. What is consistent is that a job offer, where required, must be genuine and from an employer that can withstand verification — a purchased or arranged offer is fraud and carries a bar on future applications.',
+    a: 'It depends entirely on the stream. Some provincial streams are built around an employer; others are not. What is consistent is that a job offer, where required, must be genuine and from an employer that can withstand verification — a purchased or arranged offer is fraud, and a misrepresentation finding carries five years of inadmissibility under section 40 of the Act.',
   },
   {
     q: 'Does a nomination help my Express Entry score?',
@@ -220,16 +221,32 @@ export default function ManitobaPnpPage() {
             a full application. This is why the honest answer to “when will I be selected” is that nobody
             knows: the province decides when it draws and how deep it goes.
           </p>
+          <p>
+            For someone in Pakistan, the draws matter more than the score. In its two most recent
+            draws, on 22 October and 5 November 2026, Manitoba considered Skilled Worker Overseas
+            profiles only where the candidate declared a direct invitation from the province under a
+            strategic recruitment initiative. Being in the pool may not be enough, however high you
+            score. The pathway also requires an established connection to Manitoba: family or friends
+            there, previous education or work in the province, or that direct invitation.{' '}
+            <a
+              href="https://immigratemanitoba.com/draws/"
+              className="font-semibold text-accent-500 link-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Manitoba publishes every draw
+            </a>
+            .
+          </p>
         </Prose>
 
         <div className="mt-10">
           <Callout title="Read the province’s own pages, not ours, for what is open">
             <p>
-              Provincial streams are opened, suspended, replaced and renamed frequently, and provinces
-              have on occasion repealed an entire stream framework at once and rebuilt it from scratch.
-              Any page that lists streams and criteria is out of date within months, and acting on a
-              stale list is how people waste a year. We describe the categories; the province publishes
-              the current programme.
+              As of 8 November 2026 Manitoba lists three streams: <strong>Skilled Worker</strong>,{' '}
+              <strong>International Education</strong> and <strong>Business Investor</strong>.
+              Provincial streams are opened, suspended, replaced and renamed frequently, and acting on
+              a stale list is how people waste a year. The province publishes the current programme.
             </p>
             <p>
               Manitoba’s programme is published at{' '}
@@ -314,12 +331,11 @@ export default function ManitobaPnpPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where these applications go wrong"
         />
         <Prose>
           <p>
-            <strong>Applying to a stream that no longer exists.</strong> The single most common problem.
-            Someone read a blog, or an agent quoted a stream from two years ago, and the file is built
+            <strong>Applying to a stream that no longer exists.</strong> Someone read a blog, or an agent quoted a stream from two years ago, and the file is built
             around criteria that have since been replaced. Provincial programmes move faster than the
             content written about them.
           </p>
@@ -411,8 +427,7 @@ export default function ManitobaPnpPage() {
         />
         <Prose>
           <p>
-            We do not publish stream lists, points cut-offs, draw scores, fees or processing times on
-            this page. Those are the details that change most often and that get repeated most carelessly
+            We do not publish points cut-offs, draw scores, fees or processing times on this page. Those are the details that change most often and that get repeated most carelessly
             elsewhere. A figure that is accurate this month is a trap on a page you read next year.
           </p>
           <p>

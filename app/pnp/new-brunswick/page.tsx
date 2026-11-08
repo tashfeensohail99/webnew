@@ -99,7 +99,7 @@ const STEPS = [
 const FAQS = [
   {
     q: 'Which New Brunswick streams are open right now, and what are the criteria?',
-    a: 'We deliberately do not list them here. Provincial streams open, pause and are replaced, and a list on a consultancy page is out of date faster than anyone updates it. The province publishes what is currently open, with the current criteria, on its own immigration site — that is the only list worth reading.',
+    a: 'We do not list them here. The province publishes what is currently open, with the current criteria, on its own immigration site — that is the only list worth reading. Check its latest notices too, because they can affect which candidates it invites.',
   },
   {
     q: 'What is the difference between an enhanced and a base nomination?',
@@ -111,7 +111,7 @@ const FAQS = [
   },
   {
     q: 'Can I get nominated by New Brunswick and then move to Toronto?',
-    a: 'Nomination is granted on the basis that you intend to live and work in the province. You are asked to demonstrate that intent, and misrepresenting it is misrepresentation like any other — with the same consequences for future applications. Once you hold permanent residence your mobility rights are constitutional, but that is not a plan we will help you build, and provinces have become markedly more careful about assessing intent.',
+    a: 'Nomination is granted on the basis that you intend to live and work in the province. You are asked to demonstrate that intent, and misrepresenting it is misrepresentation like any other — with the same consequences for future applications. Once you hold permanent residence your mobility rights are constitutional, but that is not a plan we will help you build, and since 30 March 2026 provinces alone assess intent to reside.',
   },
   {
     q: 'Does French really matter?',
@@ -123,7 +123,7 @@ const FAQS = [
   },
   {
     q: 'Should I pick New Brunswick because it looks easier than Ontario?',
-    a: 'That reasoning has cost people a great deal of money. A province you have no connection to will read as a province you have no connection to, and the intent-to-settle assessment is where those files come apart. Pick a province because your occupation, your language and your realistic employment prospects point there.',
+    a: 'That reasoning can cost you a great deal of money. A province you have no connection to will read as a province you have no connection to, and the intent-to-settle assessment is where those files come apart. Pick a province because your occupation, your language and your realistic employment prospects point there.',
   },
 ];
 
@@ -265,15 +265,14 @@ export default function NewBrunswickPnpPage() {
         </div>
 
         <div className="mt-10">
-          <Callout title="Why we will not list the current streams">
+          <Callout title="Check the province’s own page for current streams">
             <p>
               Provincial stream frameworks are rebuilt with little warning. Streams are renamed,
               restructured, paused mid-intake or withdrawn, and provinces are not obliged to give notice
-              before doing it. A page that names streams and criteria is not merely stale when that
-              happens; it is actively misleading, because it reads as current.
+              before doing it.
             </p>
             <p>
-              So we describe the categories, which last, and send you to the source for the specifics.
+              So we describe the categories and send you to the source for the specifics.
               If any adviser quotes you stream criteria without opening the province’s own site in front
               of you, treat that as a warning about the adviser.
             </p>
@@ -324,8 +323,8 @@ export default function NewBrunswickPnpPage() {
                 address that appeared the week the application did.
               </p>
               <p>
-                Stating an intention you do not hold is misrepresentation. It carries a bar on future
-                applications, and it is not a risk worth taking on a route you were treating as a
+                Stating an intention you do not hold is misrepresentation. It carries five years of
+                inadmissibility under section 40 of the Act, and it is not a risk worth taking on a route you were treating as a
                 shortcut in the first place.
               </p>
             </Prose>
@@ -361,7 +360,7 @@ export default function NewBrunswickPnpPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where these applications go wrong"
         />
         <Prose>
           <p>
@@ -371,8 +370,8 @@ export default function NewBrunswickPnpPage() {
           </p>
           <p>
             <strong>Province-shopping.</strong> Choosing New Brunswick because it looks less competitive
-            than Ontario, with no occupation match, no employer and no French. This is the most common
-            and most expensive mistake on this route.
+            than Ontario, with no occupation match, no employer and no French. This is a common and
+            costly mistake on this route.
           </p>
           <p>
             <strong>A job offer that will not survive scrutiny.</strong> An offer bought from an agent,
@@ -464,7 +463,7 @@ export default function NewBrunswickPnpPage() {
           <p>
             The province publishes what is currently open, and the criteria attached to it, on{' '}
             <a
-              href="https://www2.gnb.ca/content/gnb/en/corporate/promo/immigration/immigrating-to-nb.html"
+              href="https://www.gnb.ca/en/topic/family-home-community/immigration/provincial-nominee-program.html"
               className="font-semibold text-accent-500 link-underline"
               rel="noopener noreferrer"
               target="_blank"

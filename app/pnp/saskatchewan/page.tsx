@@ -16,9 +16,9 @@ import { ReviewedBy } from '@/components/ReviewedBy';
 /**
  * Saskatchewan provincial nomination (SINP).
  *
- * Deliberately contains no stream names, no point thresholds, no fees and no
+ * Names the current programs with a date, but no point thresholds, fees or
  * processing times. Provincial streams open, close and are rewritten without
- * notice; a page that lists them is worse than useless within a year. What is
+ * notice, so re-check the names monthly against lib/facts.ts. What is
  * durable is the shape of the programme and the intent-to-settle expectation,
  * which is also the thing Pakistani applicants are most often misled about.
  */
@@ -53,8 +53,8 @@ const STREAM_KINDS = [
   {
     icon: 'calculator' as const,
     kicker: 'Entrepreneur and farm',
-    title: 'You will invest and operate',
-    body: 'Business routes ask for capital, a viable plan, and personal management of the venture in the province. Provinces with an agricultural base have also run farm-owner routes at various times — whether any is open, and on what terms, is stated on the province’s own pages.',
+    title: 'Closed to new applicants',
+    body: 'Saskatchewan permanently closed its Entrepreneur and Farm pathways on 27 March 2025. It no longer accepts new applications or expressions of interest and will issue no further invitations. Business owners need to look elsewhere.',
   },
 ];
 
@@ -88,11 +88,11 @@ const SEQUENCE = [
 const FAQS = [
   {
     q: 'Which Saskatchewan streams are open right now, and what do they require?',
-    a: 'We do not publish that here on purpose. Provincial streams are opened, paused, capped and rewritten without much notice, and a list that is right today misleads whoever reads this page next year. The Government of Saskatchewan publishes what is open and what each route requires on its own SINP pages — read it there, on the day you need it.',
+    a: 'As of 8 November 2026 Saskatchewan lists two worker programs: International Skilled Worker (with Employment Offer, Occupation In-Demand and Saskatchewan Express Entry sub-categories) and Worker with Saskatchewan Work Experience. Its Entrepreneur and Farm pathways are permanently closed. What each route requires is on the province’s own SINP pages — read it there, on the day you need it.',
   },
   {
     q: 'What is the difference between an enhanced and a base nomination?',
-    a: 'An enhanced nomination is aligned with the federal Express Entry system: you must already have a valid Express Entry profile, and the nomination attaches to it. A base nomination is not tied to Express Entry — the nomination leads to a paper-based permanent residence application filed directly with IRCC. The practical difference is which federal pathway carries you afterwards, and how the timelines behave.',
+    a: 'An enhanced nomination is aligned with the federal Express Entry system: you must already have a valid Express Entry profile, and the nomination attaches to it. A base nomination is not tied to Express Entry — you apply to IRCC through its non-Express Entry process, and IRCC sets how that application is submitted. In Saskatchewan, the Express Entry-aligned route is the Saskatchewan Express Entry sub-category. Our Provincial Nominee overview explains the difference in full.',
   },
   {
     q: 'Do I need a job offer from a Saskatchewan employer?',
@@ -104,7 +104,7 @@ const FAQS = [
   },
   {
     q: 'Can I take the nomination and then move to Toronto or Vancouver?',
-    a: 'Mobility rights under the Charter apply once you are a permanent resident, so nobody is legally confined to a province after landing. But that is a different question from whether your stated intention was genuine when you applied. Applying to a province you never intended to live in, in order to obtain a nomination, is misrepresentation — and misrepresentation carries a bar on future applications. We will not build a file on that basis.',
+    a: 'Mobility rights under the Charter apply once you are a permanent resident, so nobody is legally confined to a province after landing. But that is a different question from whether your stated intention was genuine when you applied. Applying to a province you never intended to live in, in order to obtain a nomination, is misrepresentation — and misrepresentation carries five years of inadmissibility under section 40 of the Act. We will not build a file on that basis.',
   },
   {
     q: 'Is Saskatchewan easier than Ontario or British Columbia?',
@@ -195,18 +195,27 @@ export default function SaskatchewanPnpPage() {
         </div>
 
         <div className="mt-10">
-          <Callout title="Why we will not list the current streams">
+          <Callout title="Saskatchewan’s programs as of 8 November 2026">
             <p>
-              Provincial streams are among the fastest-moving parts of Canadian immigration. They are
-              paused mid-year, capped without warning, renamed, merged and replaced outright — an
-              entire province’s stream framework can be closed and rebuilt from one intake to the
-              next. Any page that prints a list of streams and their criteria can be quietly wrong,
-              and people make expensive decisions on the strength of it.
+              Saskatchewan lists two worker programs: <strong>International Skilled Worker</strong>,
+              with Employment Offer, Occupation In-Demand and Saskatchewan Express Entry sub-categories,
+              and <strong>Worker with Saskatchewan Work Experience</strong>. Its Entrepreneur and Farm
+              pathways are permanently closed.
             </p>
             <p>
-              So we describe the categories, which are durable, and send you to the source for the
-              specifics, which are not. That is also how we work in a consultation: we check what is
-              open on the day, rather than repeating what was open last year.
+              Saskatchewan divides its 2026 nominations by sector. Priority sectors come first, and
+              accommodation and food services, trucking and retail trade are capped, with limited intake
+              windows for employers. Streams can be paused, capped or replaced, so confirm on{' '}
+              <a
+                href="https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs"
+                className="font-semibold text-accent-500 link-underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                the province’s own program pages
+              </a>{' '}
+              before you act. That is also how we work in a consultation: we check what is open on the
+              day, rather than repeating what was open last year.
             </p>
           </Callout>
         </div>
@@ -232,14 +241,14 @@ export default function SaskatchewanPnpPage() {
                 waiting to be looked at.
               </p>
               <p>
-                Other routes — employer-supported and business routes in particular — are filed
-                directly, without a pool. Which mechanism governs your case depends on the route, and
+                Other routes, employer-supported ones in particular, may be filed without a pool.
+                Saskatchewan’s business routes are not among them, because its Entrepreneur and Farm
+                pathways are permanently closed. Which mechanism governs your case depends on the route, and
                 the province states it on the page for that route.
               </p>
               <p>
                 The scoring grid, the minimum needed to enter a pool, and the scores at which
-                invitations are issued all move. We do not reproduce them here for the same reason we
-                do not list streams.
+                invitations are issued all move. We do not reproduce them here because they change.
               </p>
             </Prose>
           </div>
@@ -258,8 +267,8 @@ export default function SaskatchewanPnpPage() {
               </p>
               <p>
                 <strong>Base nomination</strong> is not connected to Express Entry. The province
-                nominates you, and you file a paper-based permanent residence application with IRCC
-                directly. It is open to people who do not qualify for any Express Entry programme,
+                nominates you, and you apply to IRCC through its non-Express Entry process. IRCC sets how
+                that application is submitted. It is open to people who do not qualify for any Express Entry programme,
                 which is precisely why base routes exist — but the federal processing that follows
                 behaves differently from the Express Entry stream.
               </p>
@@ -324,8 +333,8 @@ export default function SaskatchewanPnpPage() {
             is legally confined to a province. That is a genuine legal fact and it is also how a
             particular kind of agent sells provincial nomination: apply anywhere, land, then move.
             Understand what that advice actually is. If your stated intention was false when you
-            signed the application, that is misrepresentation, and the consequence is a bar on future
-            applications — not a fine, not a delay, a bar. We do not build files on that basis, and we
+            signed the application, that is misrepresentation, and the consequence is
+            five years of inadmissibility under section 40 of the Act — not a fine, not a delay, a ban. We do not build files on that basis, and we
             will tell you so plainly rather than take the fee.
           </p>
         </Prose>
@@ -335,19 +344,18 @@ export default function SaskatchewanPnpPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where these applications go wrong"
         />
         <Prose>
           <p>
-            <strong>Choosing the province that looks easiest.</strong> The single most expensive
-            mistake on this page. Provinces select for their own labour markets; a province that seems
+            <strong>Choosing the province that looks easiest.</strong> A costly mistake. Provinces select for their own labour markets; a province that seems
             less competitive is frequently stricter about connection and intent. Picking one you have
             no relationship with, because someone said the bar is lower there, tends to produce either
             a refusal or a genuineness problem.
           </p>
           <p>
             <strong>Treating a pool profile as an application.</strong> An expression of interest is a
-            scored entry in a queue. It grants nothing, guarantees nothing, and can sit indefinitely.
+            scored entry in a pool. It grants nothing, guarantees nothing, and can sit indefinitely.
             People stop looking at other routes because they believe they are already in process.
           </p>
           <p>

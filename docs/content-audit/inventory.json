@@ -1,7 +1,7 @@
 {
  "summary": {
   "base": "https://tashfeenimmigrationsolutions.com",
-  "crawled": "2026-11-08T11:52:53.542Z",
+  "crawled": "2026-11-08T13:00:43.247Z",
   "total": 93,
   "ok": 93,
   "inSitemap": 93,
@@ -4326,7 +4326,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1511,
+   "wordCount": 1555,
    "avgSentence": 16,
    "hits": {
     "outcome": 1,
@@ -4487,7 +4487,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 1438,
+   "uniqueWords": 1482,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-17",
@@ -12503,7 +12503,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2152,
+   "wordCount": 2195,
    "avgSentence": 21,
    "hits": {
     "outcome": 3,
@@ -12641,6 +12641,7 @@
    ],
    "external": [
     "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/officer-decision-notes.html",
+    "https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-72.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/access-information-privacy/request-privacy-act.html",
     "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=458&top=1",
     "https://atip-aiprp.apps.gc.ca/atip/welcome.do",
@@ -12669,7 +12670,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2085,
+   "uniqueWords": 2128,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -12685,7 +12686,7 @@
    "robotsHeader": null,
    "metaRobots": "index, follow",
    "title": "Judicial Review of a Canada Visa Refusal | Tashfeen",
-   "description": "What judicial review of an IRCC decision is: a check on whether it was reasonable and fair, not a reapplication. Deadlines, and who may act for you.",
+   "description": "What judicial review of an IRCC decision is: a check on whether it was reasonable and fair, not a reapplication. The 15 and 60 day limits, and who may act.",
    "canonical": "https://tashfeenimmigrationsolutions.com/refusals/judicial-review",
    "ogTitle": "Judicial Review of a Canada Visa Refusal | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
@@ -12783,7 +12784,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2841,
+   "wordCount": 2883,
    "avgSentence": 19,
    "hits": {
     "outcome": 2,
@@ -12924,8 +12925,8 @@
     "/terms"
    ],
    "external": [
-    "https://www.fct-cf.ca/en/pages/who-may-represent-you-in-an-immigration-refugee-protection-or-citizenship-matter-in-federal-court",
     "https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-72.html",
+    "https://www.fct-cf.ca/en/pages/who-may-represent-you-in-an-immigration-refugee-protection-or-citizenship-matter-in-federal-court",
     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-93-22/",
     "https://www.fct-cf.ca/",
     "https://laws-lois.justice.gc.ca/eng/acts/I-2.5/section-74.html",
@@ -12946,7 +12947,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2700,
+   "uniqueWords": 2742,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -12962,7 +12963,7 @@
    "robotsHeader": null,
    "metaRobots": "index, follow",
    "title": "Misrepresentation in Canadian Immigration | Tashfeen",
-   "description": "What misrepresentation means under section 40 of the IRPA, why an agent’s actions in your name can bind you, and why not to answer a fairness letter alone.",
+   "description": "What misrepresentation means under section 40 of the IRPA, the five-year ban, how an agent’s acts can bind you, and why not to answer a fairness letter alone.",
    "canonical": "https://tashfeenimmigrationsolutions.com/refusals/misrepresentation",
    "ogTitle": "Misrepresentation in Canadian Immigration | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
@@ -13048,7 +13049,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2189,
+   "wordCount": 2202,
    "avgSentence": 20,
    "hits": {
     "outcome": 4,
@@ -13075,7 +13076,7 @@
      "Immigration consultants are regulated by the College of Immigration and Citizenship Consultants , whose public register lets you check whether anyone advising you is licensed at all.",
      "If this has happened, it is a matter for a licensed representative, not for a self-drafted explanation.",
      "Take it to a licensed representative immediately, and work to the deadline stated in the letter itself rather than any period you have read elsewhere.",
-     "Read section 40 at the source, and have a licensed representative apply it to your facts.",
+     "How the period applies in your particular case is exactly the question people get wrong from summaries, so read section 40 at the source and have a licensed representative apply it to your facts.",
      "That assessment is licensed work."
     ]
    },
@@ -13228,7 +13229,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2090,
+   "uniqueWords": 2105,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -13326,7 +13327,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2460,
+   "wordCount": 2474,
    "avgSentence": 20,
    "hits": {
     "outcome": 1,
@@ -13486,7 +13487,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2381,
+   "uniqueWords": 2397,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -13600,7 +13601,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2990,
+   "wordCount": 3028,
    "avgSentence": 20,
    "hits": {
     "outcome": 7,
@@ -13760,7 +13761,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2849,
+   "uniqueWords": 2887,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -15494,8 +15495,8 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2415,
-   "avgSentence": 20,
+   "wordCount": 2445,
+   "avgSentence": 21,
    "hits": {
     "outcome": 1,
     "superlative": 0,
@@ -15643,6 +15644,7 @@
    "external": [
     "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/officer-decision-notes.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/access-information-privacy.html",
+    "https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-72.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html",
     "https://laws-lois.justice.gc.ca/eng/regulations/sor-2002-227/section-216.html",
     "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=023&top=4",
@@ -15661,7 +15663,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2285,
+   "uniqueWords": 2315,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -15775,7 +15777,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2418,
+   "wordCount": 2421,
    "avgSentence": 19,
    "hits": {
     "outcome": 2,
@@ -15917,6 +15919,7 @@
     "/terms"
    ],
    "external": [
+    "https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-40.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html",
     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/",
@@ -15940,7 +15943,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2300,
+   "uniqueWords": 2303,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -20885,7 +20888,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 994,
+   "wordCount": 1035,
    "avgSentence": 19,
    "hits": {
     "outcome": 1,
@@ -21027,6 +21030,7 @@
    ],
    "external": [
     "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/entrepreneurs-self-employed-seeking-only-temp-residence-r205-c11.html",
+    "https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-40.html",
     "https://wa.me/923350001111?text=Hi%2C%20my%20C11%20work%20permit%20was%20refused%20and%20I%E2%80%99d%20like%20to%20understand%20why%20before%20I%20re-apply.%20%5BRef%3A%20WP-12MV%5D"
    ],
    "images": 0,
@@ -21037,7 +21041,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 911,
+   "uniqueWords": 952,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-23",

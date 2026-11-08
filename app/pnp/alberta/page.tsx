@@ -16,9 +16,9 @@ import { ReviewedBy } from '@/components/ReviewedBy';
 /**
  * Alberta provincial nomination (AAIP).
  *
- * Deliberately contains no stream list and no criteria. Provincial streams are
- * revised, replaced and closed constantly; a page that names them is wrong within
- * months and reads as authoritative while being wrong. The page teaches the
+ * Names the current streams with a date, but no criteria. Provincial streams are
+ * revised, replaced and closed constantly, so re-check the names monthly against
+ * lib/facts.ts. The page teaches the
  * STRUCTURE of provincial nomination — how a province selects, what kinds of
  * stream exist as categories, and what intent to settle actually means — and
  * sends the reader to Alberta's own programme page for what is open today.
@@ -101,11 +101,11 @@ const STEPS = [
 const FAQS = [
   {
     q: 'What is the difference between an enhanced and a base nomination?',
-    a: 'An enhanced nomination is aligned with Express Entry: you hold a profile in the federal pool, the province nominates you inside that system, and an accepted nomination adds points to your federal ranking. IRCC also runs invitation rounds restricted to candidates who already hold a provincial nomination. That combination makes an invitation likely rather than automatic — it is still IRCC that decides when to hold a round and where to set the cut-off, and there is a deadline to accept a nomination once it is issued. A base nomination sits outside Express Entry — you are nominated by the province and then file a permanent residence application directly with IRCC on the paper-based provincial nominee route, which is open to people who do not meet Express Entry criteria. The points value, the acceptance deadline and the processing times for each route are published by IRCC on its provincial nominees pages; read them there rather than relying on a figure quoted on any consultancy site.',
+    a: 'An enhanced nomination is aligned with Express Entry: you hold a profile in the federal pool, the province nominates you inside that system, and an accepted nomination adds points to your federal ranking. IRCC also runs invitation rounds restricted to candidates who already hold a provincial nomination. That combination improves your position but does not make an invitation automatic — it is still IRCC that decides when to hold a round and where to set the cut-off, and there is a deadline to accept a nomination once it is issued. A base nomination sits outside Express Entry — you are nominated by the province and then apply to IRCC through its non-Express Entry process, as IRCC instructs, which is open to people who do not meet Express Entry criteria. The points value, the acceptance deadline and the processing times for each route are published by IRCC on its provincial nominees pages; read them there rather than relying on a figure quoted on any consultancy site.',
   },
   {
     q: 'Which AAIP streams are open right now, and what are the criteria?',
-    a: 'We do not publish that here, on purpose. Provincial streams open, pause, close and are replaced outright — Ontario, for one, has withdrawn its established stream framework and rebuilt it, and provinces routinely suspend intake mid-year. Any list we printed would be a liability the moment it aged. Alberta publishes what is open, what is paused and the current criteria on its own site, and that is the only version worth relying on.',
+    a: 'As of 8 November 2026 Alberta lists four worker streams (Alberta Opportunity, Tourism and Hospitality, Rural Renewal and Alberta Express Entry) and four entrepreneur streams (Rural Entrepreneur, Graduate Entrepreneur, Farm and Foreign Graduate Entrepreneur). Intake can pause and criteria change, so read what is open and the current criteria on Alberta’s own site, which is the only version worth relying on.',
   },
   {
     q: 'Does a nomination guarantee permanent residence?',
@@ -148,7 +148,7 @@ export default function AlbertaPnpPage() {
           <>
             The Alberta Advantage Immigration Program selects for the province’s own labour market and
             its own settlement priorities. This page explains how provincial nomination works
-            structurally — not a stream list that will be wrong by the time you read it.
+            structurally, and names its current streams.
           </>
         }
       >
@@ -203,14 +203,14 @@ export default function AlbertaPnpPage() {
                 own right. The province nominates you inside that system, and an accepted nomination
                 adds points to your federal ranking — enough that nominated candidates sit near the top
                 of the pool. IRCC also holds invitation rounds open only to candidates who already hold
-                a nomination. That makes an invitation likely, but IRCC still decides when to run a
+                a nomination. That improves your position, but IRCC still decides when to run a
                 round and where the cut-off falls. The points value and the deadline for accepting a
                 nomination are set by IRCC and published on its provincial nominees pages.
               </p>
               <p>
                 <strong>Base nomination</strong> sits outside Express Entry. The province nominates
-                you, and you then file a permanent residence application directly with IRCC on the
-                paper-based provincial nominee route. It is open to people who do not meet Express
+                you, and you then apply to IRCC through its non-Express Entry process. IRCC sets how
+                that application is submitted. It is open to people who do not meet Express
                 Entry criteria. The two routes are processed differently and on different timelines;
                 IRCC publishes current processing times for each, and those are the figures to check
                 rather than anything quoted second-hand.
@@ -254,7 +254,7 @@ export default function AlbertaPnpPage() {
         <SectionHeading
           eyebrow="Categories, not a list"
           title="The kinds of stream a province runs"
-          subtitle="These are the shapes provincial streams take. We do not name Alberta’s current streams here — they change, and a stale list is worse than none."
+          subtitle="These are the shapes provincial streams take. Alberta’s current streams are named below, dated."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {STREAM_KINDS.map((s) => (
@@ -265,14 +265,18 @@ export default function AlbertaPnpPage() {
         </div>
 
         <div className="mt-10">
-          <Callout title="Why this page has no stream list">
+          <Callout title="Alberta’s streams as of 8 November 2026">
             <p>
-              Provincial streams are policy instruments, not fixed institutions. They open, pause
-              intake mid-year, change their occupation lists, and are replaced outright — Ontario has
-              withdrawn a long-established set of streams and rebuilt its framework from scratch,
-              cancelling pending expressions of interest in the process. A page that names streams and
-              criteria reads as authoritative for years after it stopped being true, and people make
-              expensive decisions on it.
+              <strong>For workers:</strong> Alberta Opportunity, Tourism and Hospitality, Rural Renewal
+              and Alberta Express Entry, which has dedicated pathways for health care, technology and
+              police occupations. <strong>For entrepreneurs:</strong> Rural Entrepreneur, Graduate
+              Entrepreneur, Farm and Foreign Graduate Entrepreneur.
+            </p>
+            <p>
+              Alberta describes the Opportunity and Tourism and Hospitality streams as being for people
+              who live and work in Alberta, so someone in Pakistan cannot simply apply to them. Alberta
+              Express Entry selects from IRCC’s federal pool: you can be invited, but you cannot apply
+              on your own initiative.
             </p>
             <p>
               Alberta publishes what is open, what is paused, and the criteria for each, on{' '}
@@ -333,8 +337,8 @@ export default function AlbertaPnpPage() {
           <p>
             Once you are a permanent resident, mobility rights apply and nobody is confined to a
             province. That is not the point. The point is what was true when you declared it. Declaring
-            an intention you did not hold is misrepresentation, and misrepresentation carries a bar on
-            future applications that outlasts the plan it was meant to serve.
+            an intention you did not hold is misrepresentation, and misrepresentation carries
+            five years of inadmissibility under section 40 of the Act, which outlasts the plan it was meant to serve.
           </p>
         </Prose>
       </Section>
@@ -343,13 +347,13 @@ export default function AlbertaPnpPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where these applications go wrong"
         />
         <Prose>
           <p>
             <strong>Province shopping.</strong> Choosing whichever province currently looks like the
             softest target, with no tie to it and no intention of staying. It weakens the file at the
-            provincial stage, it invites questions at the federal stage, and if it succeeds it lands
+            provincial stage, it risks the province revoking the nomination or a misrepresentation finding, and if it succeeds it lands
             you somewhere you did not want to be with a declaration on record that you did.
           </p>
           <p>
@@ -382,7 +386,7 @@ export default function AlbertaPnpPage() {
         <div className="mt-8">
           <Callout title="If you have no connection to Alberta, think hard before starting">
             <p>
-              The most common and most expensive mistake in provincial immigration is picking a
+              A common and costly mistake in provincial immigration is picking a
               province you have no relationship with because it appears easier. It rarely is easier,
               and it is structurally weaker: the province is selecting for people who will stay, and
               nothing in your file suggests you will.

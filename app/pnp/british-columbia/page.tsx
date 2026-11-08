@@ -16,9 +16,9 @@ import { ReviewedBy } from '@/components/ReviewedBy';
 /**
  * BC PNP — structural page.
  *
- * Deliberately lists NO current streams, scores, cut-offs or criteria. BC revises
- * its stream set and its selection weighting regularly, and a page that names
- * today's streams is wrong within a year. What does not change is the shape of the
+ * Names the current streams with a date, but no scores, cut-offs or criteria. BC
+ * revises its stream set and selection weighting regularly, so re-check the names
+ * monthly against lib/facts.ts. What does not change is the shape of the
  * programme: registration into a pool, invitation, application, nomination — and
  * the province's underlying interest in who actually stays.
  */
@@ -88,7 +88,7 @@ const SEQUENCE = [
 const FAQS = [
   {
     q: 'Which BC PNP streams are open right now, and what are the requirements?',
-    a: 'We deliberately do not list them here. British Columbia revises its categories, its scoring and its priority occupations as the provincial labour market changes, and a page listing today’s streams misleads whoever reads it next year. The province publishes what is open, and the criteria attached to it, on WelcomeBC. That is the only reliable source, and it should be read on the day you act on it.',
+    a: 'As of 8 November 2026 British Columbia lists the Skilled Worker and Health Authority streams for workers, and the Base and Regional entrepreneur streams and the Strategic Projects stream for business. The province revises its scoring and priority occupations as the labour market changes, and it publishes the criteria on WelcomeBC. That is the only reliable source, and it should be read on the day you act on it.',
   },
   {
     q: 'What is the difference between a base nomination and an Express Entry-aligned one?',
@@ -100,15 +100,15 @@ const FAQS = [
   },
   {
     q: 'Do I need a job offer in British Columbia?',
-    a: 'It depends on the category, and the categories change. As a general matter, a genuine offer from a B.C. employer strengthens most provincial applications considerably and is a hard requirement for some. Categories that require no offer exist in various provinces at various times, but they are usually narrow and competitive.',
+    a: 'For B.C.’s worker streams, yes. As of 8 November 2026 the Skilled Worker and Health Authority streams both need a full-time, indeterminate job offer: from an eligible B.C. employer, or from a B.C. health authority. Check the current requirements on WelcomeBC before you plan around them.',
   },
   {
     q: 'Can I get nominated by B.C. and then move to Ontario or Alberta?',
-    a: 'You should not plan on it. Provincial nomination exists because a province wants the person to settle there, and provinces assess whether your intent to live in the province is genuine. Nominating on an intent you do not hold is a misrepresentation risk, and misrepresentation carries a bar on future applications. If you intend to live elsewhere, apply through a route that matches that intention.',
+    a: 'You should not plan on it. Provincial nomination exists because a province wants the person to settle there, and provinces assess whether your intent to live in the province is genuine. Nominating on an intent you do not hold is a misrepresentation risk, and misrepresentation carries five years of inadmissibility under section 40 of the Act. If you intend to live elsewhere, apply through a route that matches that intention.',
   },
   {
     q: 'Is British Columbia easier than other provinces?',
-    a: 'No province is reliably "easier". Provinces adjust their selection as demand and their federal allocation change, so a province that looks accessible in one year can be substantially harder the next. Choosing a province by perceived ease rather than by where you actually have work, family or a credible plan is one of the more expensive mistakes we see.',
+    a: 'No province is reliably "easier". Provinces adjust their selection as demand and their federal allocation change, so a province that looks accessible in one year can be substantially harder the next. Choosing a province by perceived ease rather than by where you actually have work, family or a credible plan is one of the more expensive mistakes you can make.',
   },
   {
     q: 'Can you tell me my chances of being invited?',
@@ -130,8 +130,8 @@ export default function BritishColumbiaPnpPage() {
         subtitle={
           <>
             The BC PNP is the province choosing workers and business owners it needs, then asking
-            IRCC to grant them permanent residence. Here is how that selection works structurally —
-            and why the streams themselves are the one thing we will not list for you.
+            IRCC to grant them permanent residence. Here is how that selection works structurally,
+            and what its current streams require.
           </>
         }
       >
@@ -185,7 +185,7 @@ export default function BritishColumbiaPnpPage() {
         <SectionHeading
           eyebrow="Categories, not a stream list"
           title="The kinds of stream a province runs"
-          subtitle="These are the recurring shapes of provincial nomination. Which of them B.C. is operating today, under what names and on what criteria, is for the province’s own site to tell you."
+          subtitle="These are the recurring shapes of provincial nomination. B.C.’s current streams are named below, dated. Their criteria are for the province’s own site to tell you."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {STREAM_KINDS.map((s) => (
@@ -196,16 +196,24 @@ export default function BritishColumbiaPnpPage() {
         </div>
 
         <div className="mt-10">
-          <Callout title="Why we will not print a stream list">
+          <Callout title="B.C.’s streams as of 8 November 2026">
             <p>
-              Provincial streams open, close, are renamed and are replaced. Ontario replaced its
-              entire stream framework outright, and every province adjusts its criteria and its
-              priority occupations as its labour market and its federal allocation move. A page that
-              lists streams is a page that quietly becomes false.
+              For workers, B.C. lists the <strong>Skilled Worker</strong> and{' '}
+              <strong>Health Authority</strong> streams, and both need a full-time, indeterminate job
+              offer. For business, it lists the <strong>Base</strong> and <strong>Regional</strong>{' '}
+              entrepreneur streams and the <strong>Strategic Projects</strong> stream.
             </p>
             <p>
-              So read the current categories at the source, on the day you need them, and treat any
-              consultant, agent or website quoting you fixed stream criteria from memory as someone
+              Provincial streams open, close and are renamed, so read the current criteria on{' '}
+              <a
+                href="https://www.welcomebc.ca/immigrate-to-b-c/for-workers"
+                className="font-semibold text-accent-500 link-underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WelcomeBC
+              </a>{' '}
+              on the day you need them, and treat any consultant, agent or website quoting you fixed stream criteria from memory as someone
               working from stale information.
             </p>
           </Callout>
@@ -252,7 +260,7 @@ export default function BritishColumbiaPnpPage() {
                 score. How many, and what that means in practice, is set by IRCC and published on
                 its{' '}
                 <a
-                  href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/comprehensive-ranking-system.html"
+                  href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score/crs-criteria.html"
                   className="font-semibold text-accent-500 link-underline"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -272,8 +280,8 @@ export default function BritishColumbiaPnpPage() {
               <p>
                 If you are unsure whether you are even eligible for Express Entry, work that out
                 first — it determines which door is open to you. Our{' '}
-                <Link href="/tools/crs-calculator" className="font-semibold text-accent-500 link-underline">
-                  CRS calculator
+                <Link href="/tools/fsw-67-calculator" className="font-semibold text-accent-500 link-underline">
+                  FSW points calculator
                 </Link>{' '}
                 and the{' '}
                 <Link href="/express-entry" className="font-semibold text-accent-500 link-underline">
@@ -329,7 +337,7 @@ export default function BritishColumbiaPnpPage() {
             province can police where you live. That fact is widely repeated in agent marketing as
             though it were a strategy. It is not. Signing a declaration of intent you do not hold is
             a misrepresentation — an untrue statement made to obtain a benefit — and misrepresentation
-            findings carry a bar on applying to Canada again. The risk is not that someone tracks
+            findings carry five years of inadmissibility under section 40 of the Act. The risk is not that someone tracks
             your address after landing. The risk is what happens at the file.
           </p>
           <p>

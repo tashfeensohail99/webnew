@@ -16,15 +16,14 @@ import { ReviewedBy } from '@/components/ReviewedBy';
 /**
  * Nova Scotia Nominee Program (NSNP).
  *
- * Deliberately does NOT list current streams, criteria or figures. Provincial
- * stream frameworks get replaced wholesale, and both Nova Scotia and other
- * provinces have consolidated or rebuilt their nominee structures outright. A
- * page that lists them is stale within months and actively misleads. What does
+ * Names the current streams with a date, but no criteria or figures. Provincial
+ * stream frameworks get replaced wholesale, so re-check the names monthly against
+ * lib/facts.ts. What does
  * not change is the shape: what the province is looking for, how nomination is
  * structured, and the settlement expectation behind it.
  */
 export const metadata: Metadata = {
-  title: 'Nova Scotia Provincial Nomination (NSNP)',
+  title: 'Nova Scotia PNP (NSNP): How Nomination Works',
   description:
     'How the Nova Scotia Nominee Program works: expression of interest, Express Entry-aligned and base nomination, and the intent-to-settle expectation.',
   alternates: { canonical: '/pnp/nova-scotia' },
@@ -43,7 +42,7 @@ const STREAM_KINDS = [
     icon: 'permit' as const,
     kicker: 'Occupation-driven',
     title: 'Your occupation is in demand',
-    body: 'Some nominations run on occupation rather than on a named employer, where the province has identified a shortage. Which occupations qualify is revised as the labour market moves, sometimes without much notice.',
+    body: 'Some provinces nominate on occupation rather than a named employer, but Nova Scotia’s Skilled Worker stream requires a job offer, so do not assume an in-demand occupation is enough. Which occupations qualify is revised as the labour market moves, sometimes without much notice.',
   },
   {
     icon: 'doc' as const,
@@ -86,7 +85,7 @@ const STEPS = [
   },
   {
     title: 'You file the nomination application',
-    body: 'If invited, you submit the full application with evidence — employment records, credentials, language testing, identity documents, and whatever demonstrates your connection to and intent to live in Nova Scotia.',
+    body: 'If selected, you have only days to upload updated documents and pay, so have everything ready before you submit an expression of interest. The application needs evidence — employment records, credentials, language testing, identity documents, and whatever demonstrates your connection to and intent to live in Nova Scotia.',
   },
   {
     title: 'The province decides',
@@ -101,11 +100,11 @@ const STEPS = [
 const FAQS = [
   {
     q: 'Which Nova Scotia streams are open right now, and what are the criteria?',
-    a: 'We deliberately do not publish that here. Nova Scotia has restructured and consolidated its nominee streams, and provinces across Canada revise, merge and close streams regularly. Any list we printed would eventually be wrong in a way that costs a reader money. The province publishes what is open, and its own criteria, on its official immigration site at liveinnovascotia.com — read it there on the day you need it.',
+    a: 'As of 8 November 2026 Nova Scotia lists four streams: Skilled Worker, Nova Scotia Graduate, Entrepreneur and Nova Scotia: Express Entry. You submit an expression of interest to a stream, and the province selects from the pool according to its priorities. The province publishes its own criteria on its official immigration site at liveinnovascotia.com — read them there on the day you need them.',
   },
   {
     q: 'Is a Nova Scotia nomination easier to get than one from a larger province?',
-    a: 'That framing is the mistake. Each province nominates against its own labour market and its own allocation, and a smaller province does not mean a lower bar — it often means fewer nominations available and a narrower set of occupations that qualify. Choosing a province because it looks less competitive, rather than because you would actually live and work there, is one of the more expensive errors we see.',
+    a: 'That framing is the mistake. Each province nominates against its own labour market and its own allocation, and a smaller province does not mean a lower bar — it often means fewer nominations available and a narrower set of occupations that qualify. Choosing a province because it looks less competitive, rather than because you would actually live and work there, is an expensive error.',
   },
   {
     q: 'Do I have to actually live in Nova Scotia after landing?',
@@ -117,7 +116,7 @@ const FAQS = [
   },
   {
     q: 'Do I need a job offer from a Nova Scotia employer?',
-    a: 'It depends entirely on the stream, and that is precisely what shifts. Employer-driven categories obviously need one. Occupation-driven and Express Entry-aligned categories may not. Rather than guessing, check what is open and what it requires before you start collecting documents.',
+    a: 'For most people, yes. As of 8 November 2026 the Skilled Worker stream needs a full-time, permanent job offer from a Nova Scotia employer, and the Express Entry stream needs work experience in Nova Scotia or a physician opportunity. So someone in Pakistan realistically needs a Nova Scotia job offer or Nova Scotia work experience. Check the current requirements before you start collecting documents.',
   },
   {
     q: 'How is this different from the Atlantic Immigration Program?',
@@ -144,7 +143,7 @@ export default function NovaScotiaPnpPage() {
           <>
             The Nova Scotia Nominee Program exists to fill the province’s own labour needs and to
             hold on to the people it attracts. This page explains how nomination works structurally
-            — and why we will not print a stream list that goes stale.
+            — and what its current streams require.
           </>
         }
       >
@@ -242,17 +241,26 @@ export default function NovaScotiaPnpPage() {
         </div>
 
         <div className="mt-10">
-          <Callout title="Why there is no stream list on this page">
+          <Callout title="Nova Scotia’s streams as of 8 November 2026">
             <p>
-              Provincial streams are among the fastest-moving parts of Canadian immigration. Nova
-              Scotia has consolidated its nominee streams outright, and other provinces have
-              replaced their stream frameworks wholesale. Criteria, eligible occupations and even
-              stream names change between the day a page is written and the day it is read.
+              Nova Scotia lists four streams: <strong>Skilled Worker</strong>,{' '}
+              <strong>Nova Scotia Graduate</strong>, <strong>Entrepreneur</strong> and{' '}
+              <strong>Nova Scotia: Express Entry</strong>. Skilled Worker needs a full-time, permanent
+              job offer from a Nova Scotia employer. The Express Entry stream needs work experience in
+              Nova Scotia or a physician opportunity.
             </p>
             <p>
-              A page that lists streams is therefore worse than a page that does not, because it
-              gives a reader confidence in something that may already be wrong. What is open today,
-              and on what terms, lives on the province’s own site — and nowhere else is authoritative.
+              Criteria, eligible occupations and even stream names change, so what is open today, and
+              on what terms, is for{' '}
+              <a
+                href="https://liveinnovascotia.com/nova-scotia-nominee-program"
+                className="font-semibold text-accent-500 link-underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                the province’s own site
+              </a>{' '}
+              to tell you.
             </p>
           </Callout>
         </div>
@@ -298,14 +306,14 @@ export default function NovaScotiaPnpPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where these applications go wrong"
         />
         <Prose>
           <p>
             <strong>Province-shopping.</strong> Picking whichever province currently looks least
             competitive, with no connection to it and no intention of living there. Provinces assess
             intent to settle, and a file with no plausible link to Nova Scotia reads exactly as what
-            it is. This is the single most common and most expensive error on this route.
+            it is. This is a common and costly error on this route.
           </p>
           <p>
             <strong>Preparing against criteria that have changed.</strong> Applicants spend months

@@ -16,11 +16,12 @@ import { ReviewedBy } from '@/components/ReviewedBy';
 /**
  * Newfoundland and Labrador Provincial Nominee Program (NLPNP).
  *
- * Deliberately does NOT enumerate current streams or their criteria. Provincial
+ * Names the current categories with a date, but not their criteria. Provincial
  * stream frameworks are revised and sometimes replaced wholesale, so this page
  * teaches the KINDS of stream a province runs and sends the reader to gov.nl.ca
- * for what is open on the day they read it. Do not add stream names, fees,
- * processing times, points values or draw statistics to this file.
+ * for what is open on the day they read it. Re-check the names monthly against
+ * lib/facts.ts. Do not add fees, processing times, points values or draw
+ * statistics to this file.
  */
 export const metadata: Metadata = {
   title: 'Newfoundland & Labrador PNP (NLPNP)',
@@ -80,16 +81,16 @@ const STEPS = [
     body: 'Provincial streams open, pause, close and get replaced. Whatever a third-party page told you last year — including this one — check the current position at gov.nl.ca before you commit money or notice period.',
   },
   {
-    title: 'Register an expression of interest where one is required',
-    body: 'The province operates an expression-of-interest model for parts of the programme: you register a profile, and the province invites candidates from that pool against its own prioritisation criteria rather than processing every registration in turn.',
+    title: 'Register an expression of interest',
+    body: 'The province operates an expression-of-interest model, and it is the first step: you register a profile, and the province invites candidates from that pool against its own prioritisation criteria rather than processing every registration in turn.',
   },
   {
-    title: 'File the nomination application on invitation or directly',
-    body: 'Depending on the stream, you either apply after an invitation or apply directly. This is where the employer documents, credentials, language results and settlement evidence are actually assessed.',
+    title: 'File the nomination application if invited',
+    body: 'If the province invites you, you file the full application within the deadline in your invitation. This is where the employer documents, credentials, language results and settlement evidence are actually assessed.',
   },
   {
     title: 'Nomination — enhanced or base',
-    body: 'An enhanced nomination attaches to an existing Express Entry profile. A base nomination does not, and leads to a paper-based permanent residence application to IRCC instead. Which one you receive depends on the stream you applied under.',
+    body: 'An enhanced nomination attaches to an existing Express Entry profile. A base nomination does not, and leads to an application through IRCC’s non-Express Entry process instead. Which one you receive depends on the stream you applied under.',
   },
   {
     title: 'Apply to IRCC for permanent residence',
@@ -100,7 +101,7 @@ const STEPS = [
 const FAQS = [
   {
     q: 'Which NLPNP streams are open right now, and what are the criteria?',
-    a: 'We deliberately do not list them here. Provincial stream frameworks are revised and sometimes replaced entirely, and a page that names streams becomes actively misleading the moment one closes. The Office of Immigration and Multiculturalism publishes what is open, and the criteria for each, on gov.nl.ca. Read it there on the day you need it.',
+    a: 'As of 8 November 2026 the province lists five categories: Express Entry Skilled Worker, Skilled Worker, International Graduate, International Entrepreneur and International Graduate Entrepreneur. An expression of interest is the first step. The Office of Immigration and Multiculturalism publishes the criteria for each on gov.nl.ca. Read it there on the day you need it.',
   },
   {
     q: 'What is the difference between an enhanced and a base nomination?',
@@ -143,7 +144,7 @@ export default function NewfoundlandLabradorPnpPage() {
           <>
             The NLPNP is a settlement programme before it is an immigration shortcut. Here is how
             provincial nomination works structurally — and why picking a province you have no
-            connection to is one of the more costly mistakes we see.
+            connection to is one of the more costly mistakes you can make.
           </>
         }
       >
@@ -188,7 +189,7 @@ export default function NewfoundlandLabradorPnpPage() {
         <SectionHeading
           eyebrow="Categories, not a stream list"
           title="The kinds of stream a province runs"
-          subtitle="We describe the shapes rather than naming streams. Provincial frameworks are revised and replaced; a list here would be wrong before you read it."
+          subtitle="These are the recurring shapes of provincial nomination. The province’s current categories are named below, dated."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {STREAM_KINDS.map((s) => (
@@ -200,6 +201,14 @@ export default function NewfoundlandLabradorPnpPage() {
 
         <div className="mt-10">
           <Callout title="Check the province’s own page before you rely on anything">
+            <p>
+              As of 8 November 2026 the province lists five categories:{' '}
+              <strong>Express Entry Skilled Worker</strong>, <strong>Skilled Worker</strong>,{' '}
+              <strong>International Graduate</strong>, <strong>International Entrepreneur</strong> and{' '}
+              <strong>International Graduate Entrepreneur</strong>. An expression of interest is the
+              first step, and the same model covers the Atlantic Immigration Program. A Skilled Worker
+              application needs a full-time job offer from a Newfoundland and Labrador employer.
+            </p>
             <p>
               Streams open, pause, close and are replaced — sometimes with little notice, sometimes
               wholesale. Any third-party page listing current criteria, including this one, should be
@@ -270,8 +279,8 @@ export default function NewfoundlandLabradorPnpPage() {
                 Anyone who quotes you a date for an invitation is guessing.
               </p>
               <p>
-                Not every route runs through the pool. Some are filed directly. Which applies to you
-                depends on the stream, which is again a question for the province’s current page.
+                The expression of interest is the first step in the province’s selection process, and
+                only people it invites can file a full application.
               </p>
             </Prose>
           </div>
@@ -329,8 +338,8 @@ export default function NewfoundlandLabradorPnpPage() {
             is where people convince themselves the intent requirement is theoretical. It is not.
             What is assessed is whether the intention you stated was genuine when you stated it. A
             file that shows you were arranging a life elsewhere the entire time is a file with a
-            problem, and a misrepresentation finding carries a bar on applying again — the length of
-            that bar, and how it is applied, is set out by IRCC on its own{' '}
+            problem, and a misrepresentation finding makes you inadmissible for five years under section
+            40 of the Act. How a nomination fits into the federal process is set out by IRCC on its own{' '}
             <a
               href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html"
               className="font-semibold text-accent-500 link-underline"
@@ -353,7 +362,7 @@ export default function NewfoundlandLabradorPnpPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where these applications go wrong"
         />
         <Prose>
           <p>

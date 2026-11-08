@@ -16,11 +16,9 @@ import { ReviewedBy } from '@/components/ReviewedBy';
 /**
  * The PNP explainer.
  *
- * Deliberately lists NO current streams, draws, cut-offs, fees, point values or
- * openings, and no dated examples of them. Provinces redesign and pause streams
- * on weeks of notice, so any page that lists “current openings” quietly misleads
- * people into applying to a stream that no longer exists — and a dated example of
- * that goes stale itself. What does not go stale is the structure: who nominates,
+ * Deliberately lists no draws, cut-offs, fees or point values. Streams are named,
+ * with a date, on each province's own guide, where someone can act on them. What
+ * does not go stale here is the structure: who nominates,
  * who decides, and why enhanced and base are two completely different timelines.
  * Anything live belongs behind a link to the province's own site or IRCC.
  */
@@ -33,6 +31,18 @@ export const metadata: Metadata = {
 
 const PAGE = 'pnp';
 
+const PROVINCES = [
+  ['/pnp/alberta', 'Alberta'],
+  ['/pnp/british-columbia', 'British Columbia'],
+  ['/pnp/manitoba', 'Manitoba'],
+  ['/pnp/new-brunswick', 'New Brunswick'],
+  ['/pnp/newfoundland-labrador', 'Newfoundland and Labrador'],
+  ['/pnp/nova-scotia', 'Nova Scotia'],
+  ['/pnp/ontario', 'Ontario'],
+  ['/pnp/prince-edward-island', 'Prince Edward Island'],
+  ['/pnp/saskatchewan', 'Saskatchewan'],
+];
+
 const PILLARS = [
   {
     icon: 'building' as const,
@@ -43,7 +53,7 @@ const PILLARS = [
   {
     icon: 'scale' as const,
     kicker: 'The federal government',
-    title: 'Decides you',
+    title: 'Makes the final decision',
     body: 'IRCC runs the permanent-residence application: admissibility, medicals, security, criminality and document verification. A nomination does not bind that decision.',
   },
   {
@@ -55,8 +65,8 @@ const PILLARS = [
   {
     icon: 'doc' as const,
     kicker: 'Base streams',
-    title: 'Run on paper, separately',
-    body: 'No Express Entry profile involved. You apply to IRCC directly after nomination, on a slower paper-based track. Same destination, very different journey.',
+    title: 'Run outside Express Entry',
+    body: 'No Express Entry profile involved. You apply to IRCC after nomination through its non-Express Entry process, which is generally slower. Same destination, very different journey.',
   },
 ];
 
@@ -79,7 +89,7 @@ const STEPS = [
   },
   {
     title: 'Federal permanent-residence application',
-    body: 'With a nomination in hand you file with IRCC. Enhanced nominees go through Express Entry; base nominees file a paper application. This stage is where admissibility is actually assessed.',
+    body: 'With a nomination in hand you file with IRCC. Enhanced nominees go through Express Entry; base nominees use IRCC’s non-Express Entry process. This stage is where admissibility is actually assessed.',
   },
   {
     title: 'Decision',
@@ -89,15 +99,15 @@ const STEPS = [
 
 const FAQS = [
   {
-    q: 'Why doesn’t this page list which streams are open right now?',
+    q: 'Which provincial streams are open right now?',
     a: (
       <>
-        Because it would be wrong by the time you read it. Provinces pause, redesign and retire
-        streams frequently, and a province can rebuild its whole framework at once. A page listing
-        “current openings” gives you false confidence in a door that may already be shut. Each
-        province publishes its own live list, and IRCC publishes the federal side — see{' '}
+        Most of our province guides, linked on this page, name the current streams with the date we
+        checked them. Provinces pause, redesign and retire streams frequently, so confirm on the
+        province’s own site before you act. Each province publishes its own live list, and IRCC
+        publishes the federal side — see{' '}
         <a
-          href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/apply.html"
+          href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html"
           className="font-semibold text-accent-500 link-underline"
           target="_blank"
           rel="noopener noreferrer"
@@ -145,7 +155,7 @@ const FAQS = [
   },
   {
     q: 'Am I legally required to live in the province that nominated me?',
-    a: 'The obligation is at the point of application: you must genuinely intend to live and work in that province, and provinces ask you to demonstrate it. Once you are a permanent resident, Canada’s mobility rights mean you cannot be physically confined to one province. But applying with no real intention to settle there is misrepresentation, and misrepresentation carries consequences far worse than a refusal — including a bar on future applications.',
+    a: 'The obligation is at the point of application: you must genuinely intend to live and work in that province, and provinces ask you to demonstrate it. Once you are a permanent resident, Canada’s mobility rights mean you cannot be physically confined to one province. But applying with no real intention to settle there is misrepresentation, and misrepresentation carries consequences far worse than a refusal — including five years of inadmissibility under section 40 of the Act.',
   },
   {
     q: 'Can I apply to several provinces at once?',
@@ -167,7 +177,7 @@ const FAQS = [
         the federal permanent-residence fees set by IRCC. Both change, so we do not print figures
         here that you might rely on months later. The federal side is published on{' '}
         <a
-          href="https://www.canada.ca/en/immigration-refugees-citizenship/services/application/fees.html"
+          href="https://ircc.canada.ca/english/information/fees/fees.asp"
           className="font-semibold text-accent-500 link-underline"
           target="_blank"
           rel="noopener noreferrer"
@@ -192,15 +202,14 @@ export default function PnpPage() {
         eyebrow="Canada · Provincial Nominee Programs"
         title={
           <>
-            A province nominates you.{' '}
-            <span className="text-gold-300">Ottawa decides you.</span>
+            Provincial Nominee Programs:{' '}
+            <span className="text-gold-300">a province nominates, IRCC decides.</span>
           </>
         }
         subtitle={
           <>
-            Provincial Nominee Programs are the widest set of doors into Canadian permanent
-            residence — and the least understood. Two governments are involved, and knowing which
-            one does what is the difference between a route that fits you and a long stretch spent on
+            A province chooses you, then IRCC decides whether you become a permanent resident. Two
+            governments are involved, and knowing which one does what is the difference between a route that fits you and a long stretch spent on
             the wrong one.
           </>
         }
@@ -300,7 +309,7 @@ export default function PnpPage() {
 
           <div className="card p-8 sm:p-10">
             <p className="eyebrow">Base streams</p>
-            <h3 className="mt-4 font-serif text-2xl text-balance">Outside Express Entry, on paper</h3>
+            <h3 className="mt-4 font-serif text-2xl text-balance">Outside Express Entry</h3>
             <div className="mt-4 space-y-4 text-ink-600 text-pretty leading-relaxed">
               <p>
                 A base stream does not touch Express Entry. You do not need a profile, and for many
@@ -308,8 +317,16 @@ export default function PnpPage() {
                 Express Entry’s own criteria still reaches permanent residence.
               </p>
               <p>
-                After nomination you file a paper-based permanent-residence application directly with
-                IRCC. It is a different, slower queue, and it does not benefit from Express Entry’s
+                After nomination you apply for permanent residence through{' '}
+                <a
+                  href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/non-express-entry.html"
+                  className="font-semibold text-accent-500 link-underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  IRCC’s non-Express Entry process
+                </a>
+                , and IRCC sets how that application is submitted. It is a different, slower queue, and it does not benefit from Express Entry’s
                 service standards.
               </p>
               <p>
@@ -368,6 +385,20 @@ export default function PnpPage() {
                 a settlement plan, or a business you are genuinely establishing in that province.
               </p>
               <p>
+                Since 30 March 2026 that judgement belongs to the province alone.{' '}
+                <a
+                  href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/permanent-residence/economic-classes/provincial-nominees/base-determining-membership-class.html"
+                  className="font-semibold text-accent-500 link-underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  IRCC’s instructions to its officers
+                </a>{' '}
+                say provinces are solely responsible for assessing intent to reside and ability to
+                establish economically, and that IRCC will refuse the application if a province
+                revokes the nomination.
+              </p>
+              <p>
                 Some applicants treat a smaller province as a back door: nominate there, land, then
                 move to Toronto or Vancouver. Understand what that is. Once you hold permanent
                 residence, Canada’s mobility rights mean you cannot be physically held in one
@@ -375,8 +406,8 @@ export default function PnpPage() {
                 of application.
               </p>
               <p>
-                The consequence of misrepresentation is not a refusal you can refile after. It is a
-                finding that follows you and bars further applications for years. We will not build a
+                The consequence of misrepresentation is not a refusal you can refile after. It is
+                five years of inadmissibility under section 40 of the Act, with no permanent residence application during that time. We will not build a
                 file on an intention you do not have.
               </p>
             </div>
@@ -452,24 +483,24 @@ export default function PnpPage() {
         </div>
       </Section>
 
-      {/* ===================== WHY THERE'S NO STREAM LIST ===================== */}
+      {/* ===================== PROVINCE BY PROVINCE ===================== */}
       <Section tone="alt">
-        <SectionHeading
-          eyebrow="A deliberate omission"
-          title="Why we don’t publish a list of open streams"
-        />
+        <SectionHeading eyebrow="Province by province" title="Our guide to each province’s program" />
+        <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {PROVINCES.map(([href, name]) => (
+            <li key={href}>
+              <Link href={href} className="font-semibold text-accent-500 link-underline">
+                {name}
+              </Link>
+            </li>
+          ))}
+        </ul>
         <div className="mt-8 max-w-3xl">
           <Prose>
             <p>
-              Provincial streams change constantly. They pause when allocations run low, reopen on
-              short notice, get retired entirely, and occasionally a province rebuilds its whole
-              framework at once. Criteria move with them.
-            </p>
-            <p>
-              So a page listing “streams currently open” is a page that is quietly wrong most of the
-              time — and the harm is not abstract. Someone reads a stale list, builds a plan around a
-              stream that closed two quarters ago, and loses months. We would rather this page stay
-              true.
+              Most of these guides name the province’s current streams, with the date we checked them.
+              Streams pause when allocations run low, reopen on short notice and get retired entirely,
+              so treat that as a starting point and confirm before you spend anything.
             </p>
             <p>
               Current openings, criteria and government charges live on each province’s own website
@@ -477,14 +508,14 @@ export default function PnpPage() {
               are where we check when we assess your file — not against a page we wrote once. Start
               at{' '}
               <a
-                href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/apply.html"
+                href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html"
                 className="font-semibold text-accent-500 link-underline"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 IRCC’s directory of provincial and territorial nominee programs
               </a>
-              , which links to each province’s own stream list.
+              , which links to each province’s own page.
             </p>
           </Prose>
         </div>

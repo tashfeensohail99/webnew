@@ -4,6 +4,19 @@ One entry per batch, newest first. Each entry records the commit, what changed a
 
 To see any page's original wording: `git show 9d17a79:<path to the page>`.
 
+## Statutory figures on the refusal pages, 8 November 2026
+
+- **Commit:** `f365179`. To undo only the page changes, restore the nine `app/` pages and `lib/facts.ts` from `82e5e1f`, because this commit also recorded batch 4 in this ledger.
+- **Decision:** the site owner approved printing figures set in law. Rule added to `README.md`. Figures found only on an official page, such as fees, processing times and fund amounts, stay unprinted.
+- **Printed:** 15 days for a matter arising in Canada and 60 days for a matter arising outside Canada, after the day the person is notified or becomes aware ([IRPA s.72(2)(b)](https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-72.html)); five years of inadmissibility and no permanent residence application during it ([IRPA s.40(2)(a) and (3)](https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-40.html)). Both read at source on 8 November 2026.
+- **Pages:** `/canada-visa-refused`, `/refusals/gcms-notes`, `/refusals/judicial-review`, `/refusals/reconsideration`, `/refusals/re-applying`, `/refusals/misrepresentation`, `/study-in-canada/refusals`, `/work-permit-canada/refusals`, `/study-in-canada/study-permit`. New descriptions on `/refusals/judicial-review` and `/refusals/misrepresentation`.
+- **Kept on every page that prints the court periods:** which period applies to a decision is for Canadian counsel to confirm.
+- **Register:** `caFederalCourtPeriods` and `caMisrepresentationPeriod` in `lib/facts.ts`, both `needsLawyer: true` with a note that they were printed on the owner's instruction. No lawyer has reviewed the wording.
+- **Checked before shipping:** build, typecheck, `test:crs` (66 passed), `test:fsw` (43 passed), local crawl with no regressions. Viewed the `/canada-visa-refused` deadline section on a phone (dark).
+- **Checked on production:** GitHub deployment `success`. 93 of 93 URLs return 200, and the crawl shows no regressions. All 12 withholding statements gone and all 19 figures present; the batch 4 checks still pass. All nine pages load on a phone with no sideways scrolling or script errors.
+- **Search:** IndexNow accepted the nine URLs. Google not asked.
+- **Not yet done:** other figures set in law that batch 3 held back (sponsorship undertaking lengths and the income test), and the numberless "bar on future applications" wording on about 15 other pages.
+
 ## Batch 4: refusal pages and officer decision notes, 8 November 2026
 
 - **Commit:** `82e5e1f`. To undo only the page changes, restore the nine `app/` pages, `components/ui.tsx` and `lib/facts.ts` from `adcbacb`, because this commit also recorded batch 3 in this ledger.
