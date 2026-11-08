@@ -1,0 +1,1694 @@
+{
+ "crawled": "2026-11-08T10:49:43.057Z",
+ "variants": [
+  {
+   "label": "http apex",
+   "url": "http://tashfeenimmigrationsolutions.com/",
+   "hops": [
+    {
+     "url": "http://tashfeenimmigrationsolutions.com/",
+     "status": 301
+    },
+    {
+     "url": "/",
+     "status": 200
+    }
+   ],
+   "final": "/",
+   "status": 200,
+   "redirects": 1
+  },
+  {
+   "label": "www",
+   "url": "https://www.tashfeenimmigrationsolutions.com/",
+   "hops": [
+    {
+     "url": "https://www.tashfeenimmigrationsolutions.com/",
+     "status": 308
+    },
+    {
+     "url": "/",
+     "status": 200
+    }
+   ],
+   "final": "/",
+   "status": 200,
+   "redirects": 1
+  },
+  {
+   "label": "http www",
+   "url": "http://www.tashfeenimmigrationsolutions.com/",
+   "hops": [
+    {
+     "url": "http://www.tashfeenimmigrationsolutions.com/",
+     "status": 301
+    },
+    {
+     "url": "https://www.tashfeenimmigrationsolutions.com/",
+     "status": 308
+    },
+    {
+     "url": "/",
+     "status": 200
+    }
+   ],
+   "final": "/",
+   "status": 200,
+   "redirects": 2
+  },
+  {
+   "label": "www inner page",
+   "url": "https://www.tashfeenimmigrationsolutions.com/fees",
+   "hops": [
+    {
+     "url": "https://www.tashfeenimmigrationsolutions.com/fees",
+     "status": 308
+    },
+    {
+     "url": "/fees",
+     "status": 200
+    }
+   ],
+   "final": "/fees",
+   "status": 200,
+   "redirects": 1
+  },
+  {
+   "label": "trailing slash",
+   "url": "https://tashfeenimmigrationsolutions.com/fees/",
+   "hops": [
+    {
+     "url": "/fees/",
+     "status": 308
+    },
+    {
+     "url": "/fees",
+     "status": 200
+    }
+   ],
+   "final": "/fees",
+   "status": 200,
+   "redirects": 1
+  },
+  {
+   "label": "uppercase path",
+   "url": "https://tashfeenimmigrationsolutions.com/FEES",
+   "hops": [
+    {
+     "url": "/FEES",
+     "status": 404
+    }
+   ],
+   "final": "/FEES",
+   "status": 404,
+   "redirects": 0
+  },
+  {
+   "label": "double slash",
+   "url": "https://tashfeenimmigrationsolutions.com//fees",
+   "hops": [
+    {
+     "url": "//fees",
+     "status": 308
+    },
+    {
+     "url": "/fees",
+     "status": 200
+    }
+   ],
+   "final": "/fees",
+   "status": 200,
+   "redirects": 1
+  },
+  {
+   "label": "index.html",
+   "url": "https://tashfeenimmigrationsolutions.com/index.html",
+   "hops": [
+    {
+     "url": "/index.html",
+     "status": 404
+    }
+   ],
+   "final": "/index.html",
+   "status": 404,
+   "redirects": 0
+  },
+  {
+   "label": "unknown URL",
+   "url": "https://tashfeenimmigrationsolutions.com/this-page-does-not-exist",
+   "hops": [
+    {
+     "url": "/this-page-does-not-exist",
+     "status": 404
+    }
+   ],
+   "final": "/this-page-does-not-exist",
+   "status": 404,
+   "redirects": 0
+  },
+  {
+   "label": "old WordPress feed",
+   "url": "https://tashfeenimmigrationsolutions.com/feed/",
+   "hops": [
+    {
+     "url": "/feed/",
+     "status": 308
+    },
+    {
+     "url": "/feed",
+     "status": 404
+    }
+   ],
+   "final": "/feed",
+   "status": 404,
+   "redirects": 1
+  },
+  {
+   "label": "old WordPress admin",
+   "url": "https://tashfeenimmigrationsolutions.com/wp-admin/",
+   "hops": [
+    {
+     "url": "/wp-admin/",
+     "status": 308
+    },
+    {
+     "url": "/wp-admin",
+     "status": 404
+    }
+   ],
+   "final": "/wp-admin",
+   "status": 404,
+   "redirects": 1
+  },
+  {
+   "label": "query string on page",
+   "url": "https://tashfeenimmigrationsolutions.com/fees?utm_source=test",
+   "hops": [
+    {
+     "url": "/fees?utm_source=test",
+     "status": 200
+    }
+   ],
+   "final": "/fees?utm_source=test",
+   "status": 200,
+   "redirects": 0
+  }
+ ],
+ "queryCanonical": "https://tashfeenimmigrationsolutions.com/fees",
+ "legacy": [
+  {
+   "from": "/what-is-c11-entrepreneur-work-permit",
+   "to": "/work-permit-canada",
+   "hops": [
+    {
+     "url": "/what-is-c11-entrepreneur-work-permit",
+     "status": 308
+    },
+    {
+     "url": "/work-permit-canada",
+     "status": 200
+    }
+   ],
+   "final": "/work-permit-canada",
+   "status": 200,
+   "redirects": 1,
+   "ok": true
+  },
+  {
+   "from": "/the-canadian-c11-work-permit-everything-you-need-to-know",
+   "to": "/work-permit-canada",
+   "hops": [
+    {
+     "url": "/the-canadian-c11-work-permit-everything-you-need-to-know",
+     "status": 308
+    },
+    {
+     "url": "/work-permit-canada",
+     "status": 200
+    }
+   ],
+   "final": "/work-permit-canada",
+   "status": 200,
+   "redirects": 1,
+   "ok": true
+  },
+  {
+   "from": "/what-is-judicial-review",
+   "to": "/refusals/judicial-review",
+   "hops": [
+    {
+     "url": "/what-is-judicial-review",
+     "status": 308
+    },
+    {
+     "url": "/refusals/judicial-review",
+     "status": 200
+    }
+   ],
+   "final": "/refusals/judicial-review",
+   "status": 200,
+   "redirects": 1,
+   "ok": true
+  },
+  {
+   "from": "/reasons-behind-visa-rejection",
+   "to": "/canada-visa-refused",
+   "hops": [
+    {
+     "url": "/reasons-behind-visa-rejection",
+     "status": 308
+    },
+    {
+     "url": "/canada-visa-refused",
+     "status": 200
+    }
+   ],
+   "final": "/canada-visa-refused",
+   "status": 200,
+   "redirects": 1,
+   "ok": true
+  },
+  {
+   "from": "/canada-immigration",
+   "to": "/",
+   "hops": [
+    {
+     "url": "/canada-immigration",
+     "status": 308
+    },
+    {
+     "url": "/",
+     "status": 200
+    }
+   ],
+   "final": "/",
+   "status": 200,
+   "redirects": 1,
+   "ok": true
+  },
+  {
+   "from": "/canadian-programs",
+   "to": "/",
+   "hops": [
+    {
+     "url": "/canadian-programs",
+     "status": 308
+    },
+    {
+     "url": "/",
+     "status": 200
+    }
+   ],
+   "final": "/",
+   "status": 200,
+   "redirects": 1,
+   "ok": true
+  },
+  {
+   "from": "/migrate-to-canada-from-dubai-and-be-a-part-of-a-vibrant-culture",
+   "to": "/",
+   "hops": [
+    {
+     "url": "/migrate-to-canada-from-dubai-and-be-a-part-of-a-vibrant-culture",
+     "status": 308
+    },
+    {
+     "url": "/",
+     "status": 200
+    }
+   ],
+   "final": "/",
+   "status": 200,
+   "redirects": 1,
+   "ok": true
+  },
+  {
+   "from": "/migrate-to-canada-from-uae-in-2022",
+   "to": "/",
+   "hops": [
+    {
+     "url": "/migrate-to-canada-from-uae-in-2022",
+     "status": 308
+    },
+    {
+     "url": "/",
+     "status": 200
+    }
+   ],
+   "final": "/",
+   "status": 200,
+   "redirects": 1,
+   "ok": true
+  },
+  {
+   "from": "/best-immigration-lawyers-in-pakistan",
+   "to": "/canadian-immigration-lawyer-pakistan",
+   "hops": [
+    {
+     "url": "/best-immigration-lawyers-in-pakistan",
+     "status": 308
+    },
+    {
+     "url": "/canadian-immigration-lawyer-pakistan",
+     "status": 200
+    }
+   ],
+   "final": "/canadian-immigration-lawyer-pakistan",
+   "status": 200,
+   "redirects": 1,
+   "ok": true
+  },
+  {
+   "from": "/enquiry-consultation",
+   "to": "/book-consultation",
+   "hops": [
+    {
+     "url": "/enquiry-consultation",
+     "status": 308
+    },
+    {
+     "url": "/book-consultation",
+     "status": 200
+    }
+   ],
+   "final": "/book-consultation",
+   "status": 200,
+   "redirects": 1,
+   "ok": true
+  },
+  {
+   "from": "/privacy-policy-2",
+   "to": "/privacy",
+   "hops": [
+    {
+     "url": "/privacy-policy-2",
+     "status": 308
+    },
+    {
+     "url": "/privacy",
+     "status": 200
+    }
+   ],
+   "final": "/privacy",
+   "status": 200,
+   "redirects": 1,
+   "ok": true
+  },
+  {
+   "from": "/how-to-raise-your-express-entry-crs-score-test",
+   "to": "/tools/crs-calculator",
+   "hops": [
+    {
+     "url": "/how-to-raise-your-express-entry-crs-score-test",
+     "status": 308
+    },
+    {
+     "url": "/tools/crs-calculator",
+     "status": 200
+    }
+   ],
+   "final": "/tools/crs-calculator",
+   "status": 200,
+   "redirects": 1,
+   "ok": true
+  },
+  {
+   "from": "/importance-of-crs-for-canadian-immigration-test",
+   "to": "/tools/crs-calculator",
+   "hops": [
+    {
+     "url": "/importance-of-crs-for-canadian-immigration-test",
+     "status": 308
+    },
+    {
+     "url": "/tools/crs-calculator",
+     "status": 200
+    }
+   ],
+   "final": "/tools/crs-calculator",
+   "status": 200,
+   "redirects": 1,
+   "ok": true
+  }
+ ],
+ "slashLegacy": [
+  {
+   "from": "/what-is-c11-entrepreneur-work-permit/",
+   "hops": [
+    {
+     "url": "/what-is-c11-entrepreneur-work-permit/",
+     "status": 308
+    },
+    {
+     "url": "/what-is-c11-entrepreneur-work-permit",
+     "status": 308
+    },
+    {
+     "url": "/work-permit-canada",
+     "status": 200
+    }
+   ],
+   "final": "/work-permit-canada",
+   "status": 200,
+   "redirects": 2
+  },
+  {
+   "from": "/the-canadian-c11-work-permit-everything-you-need-to-know/",
+   "hops": [
+    {
+     "url": "/the-canadian-c11-work-permit-everything-you-need-to-know/",
+     "status": 308
+    },
+    {
+     "url": "/the-canadian-c11-work-permit-everything-you-need-to-know",
+     "status": 308
+    },
+    {
+     "url": "/work-permit-canada",
+     "status": 200
+    }
+   ],
+   "final": "/work-permit-canada",
+   "status": 200,
+   "redirects": 2
+  },
+  {
+   "from": "/what-is-judicial-review/",
+   "hops": [
+    {
+     "url": "/what-is-judicial-review/",
+     "status": 308
+    },
+    {
+     "url": "/what-is-judicial-review",
+     "status": 308
+    },
+    {
+     "url": "/refusals/judicial-review",
+     "status": 200
+    }
+   ],
+   "final": "/refusals/judicial-review",
+   "status": 200,
+   "redirects": 2
+  },
+  {
+   "from": "/reasons-behind-visa-rejection/",
+   "hops": [
+    {
+     "url": "/reasons-behind-visa-rejection/",
+     "status": 308
+    },
+    {
+     "url": "/reasons-behind-visa-rejection",
+     "status": 308
+    },
+    {
+     "url": "/canada-visa-refused",
+     "status": 200
+    }
+   ],
+   "final": "/canada-visa-refused",
+   "status": 200,
+   "redirects": 2
+  },
+  {
+   "from": "/canada-immigration/",
+   "hops": [
+    {
+     "url": "/canada-immigration/",
+     "status": 308
+    },
+    {
+     "url": "/canada-immigration",
+     "status": 308
+    },
+    {
+     "url": "/",
+     "status": 200
+    }
+   ],
+   "final": "/",
+   "status": 200,
+   "redirects": 2
+  },
+  {
+   "from": "/canadian-programs/",
+   "hops": [
+    {
+     "url": "/canadian-programs/",
+     "status": 308
+    },
+    {
+     "url": "/canadian-programs",
+     "status": 308
+    },
+    {
+     "url": "/",
+     "status": 200
+    }
+   ],
+   "final": "/",
+   "status": 200,
+   "redirects": 2
+  }
+ ],
+ "perPage": [
+  {
+   "path": "/",
+   "count": 4,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 477296
+  },
+  {
+   "path": "/about",
+   "count": 3,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 343524
+  },
+  {
+   "path": "/about/our-team",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 295426
+  },
+  {
+   "path": "/atlantic-immigration-program",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 362198
+  },
+  {
+   "path": "/blog",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 292584
+  },
+  {
+   "path": "/blog/austria-red-white-red-card",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 323853
+  },
+  {
+   "path": "/blog/eb2-niw-pakistan",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 305889
+  },
+  {
+   "path": "/blog/express-entry-2026-so-far",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 310488
+  },
+  {
+   "path": "/blog/mofa-online-attestation",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 303105
+  },
+  {
+   "path": "/blog/ontario-higher-earners-2026",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 306468
+  },
+  {
+   "path": "/book-consultation",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 322725
+  },
+  {
+   "path": "/business-immigration",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 378495
+  },
+  {
+   "path": "/canada-immigration-from-pakistan",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 354101
+  },
+  {
+   "path": "/canada-immigration-from-pakistan/biometrics",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 320789
+  },
+  {
+   "path": "/canada-immigration-from-pakistan/medical-exam",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 323387
+  },
+  {
+   "path": "/canada-immigration-from-pakistan/police-certificate",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 329599
+  },
+  {
+   "path": "/canada-visa-refused",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 324680
+  },
+  {
+   "path": "/canada-visit-visa",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 323589
+  },
+  {
+   "path": "/canadian-immigration-lawyer-pakistan",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 339972
+  },
+  {
+   "path": "/caregivers",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 358791
+  },
+  {
+   "path": "/europe",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 318004
+  },
+  {
+   "path": "/express-entry",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 350824
+  },
+  {
+   "path": "/express-entry/canadian-experience-class",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 351051
+  },
+  {
+   "path": "/express-entry/category-based-draws",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 358045
+  },
+  {
+   "path": "/express-entry/draws",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 425543
+  },
+  {
+   "path": "/express-entry/federal-skilled-trades",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 345647
+  },
+  {
+   "path": "/express-entry/federal-skilled-worker",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 351604
+  },
+  {
+   "path": "/family-sponsorship",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 363790
+  },
+  {
+   "path": "/family-sponsorship/dependent-children",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 370742
+  },
+  {
+   "path": "/family-sponsorship/parents-grandparents",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 368259
+  },
+  {
+   "path": "/family-sponsorship/spouse-partner",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 364793
+  },
+  {
+   "path": "/fees",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 308146
+  },
+  {
+   "path": "/immigration-consultant-islamabad",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 315756
+  },
+  {
+   "path": "/immigration-consultant-lahore",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 315390
+  },
+  {
+   "path": "/immigration-programs",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 347956
+  },
+  {
+   "path": "/no-guarantee-policy",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 317738
+  },
+  {
+   "path": "/pnp",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 352210
+  },
+  {
+   "path": "/pnp/alberta",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 363064
+  },
+  {
+   "path": "/pnp/british-columbia",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 357862
+  },
+  {
+   "path": "/pnp/manitoba",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 360635
+  },
+  {
+   "path": "/pnp/new-brunswick",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 368437
+  },
+  {
+   "path": "/pnp/newfoundland-labrador",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 365578
+  },
+  {
+   "path": "/pnp/nova-scotia",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 358214
+  },
+  {
+   "path": "/pnp/ontario",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 367340
+  },
+  {
+   "path": "/pnp/prince-edward-island",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 363718
+  },
+  {
+   "path": "/pnp/saskatchewan",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 355938
+  },
+  {
+   "path": "/privacy",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 292338
+  },
+  {
+   "path": "/quebec-immigration",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 363838
+  },
+  {
+   "path": "/refusals/gcms-notes",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 339361
+  },
+  {
+   "path": "/refusals/judicial-review",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 358865
+  },
+  {
+   "path": "/refusals/misrepresentation",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 348873
+  },
+  {
+   "path": "/refusals/re-applying",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 363987
+  },
+  {
+   "path": "/refusals/reconsideration",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 366231
+  },
+  {
+   "path": "/rural-community-immigration",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 356341
+  },
+  {
+   "path": "/study-in-canada",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 350663
+  },
+  {
+   "path": "/study-in-canada/bringing-family",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 365403
+  },
+  {
+   "path": "/study-in-canada/designated-learning-institutions",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 363377
+  },
+  {
+   "path": "/study-in-canada/proof-of-funds",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 365115
+  },
+  {
+   "path": "/study-in-canada/provincial-attestation-letter",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 349518
+  },
+  {
+   "path": "/study-in-canada/refusals",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 364919
+  },
+  {
+   "path": "/study-in-canada/study-permit",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 361091
+  },
+  {
+   "path": "/study-in-canada/study-permit-extension",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 364218
+  },
+  {
+   "path": "/study-in-canada/study-to-permanent-residence",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 360222
+  },
+  {
+   "path": "/study-in-canada/working-while-studying",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 359758
+  },
+  {
+   "path": "/terms",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 284829
+  },
+  {
+   "path": "/tools",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 299501
+  },
+  {
+   "path": "/tools/clb-converter",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 304971
+  },
+  {
+   "path": "/tools/crs-calculator",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 338438
+  },
+  {
+   "path": "/tools/fsw-67-calculator",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 314969
+  },
+  {
+   "path": "/tools/visit-visa-refusal-risk",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 305279
+  },
+  {
+   "path": "/tools/work-permit-eligibility",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 305608
+  },
+  {
+   "path": "/uk",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 317744
+  },
+  {
+   "path": "/updates",
+   "count": 12,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [
+    "https://i.ytimg.com/vi/HvmoK38SDe0/hqdefault.jpg",
+    "https://i.ytimg.com/vi/SiZwlPjhJI0/hqdefault.jpg",
+    "https://i.ytimg.com/vi/q4FRhlw3TO8/hqdefault.jpg",
+    "https://i.ytimg.com/vi/8wxUbWE7Gwo/hqdefault.jpg",
+    "https://i.ytimg.com/vi/-RnOMd7b-Iw/hqdefault.jpg",
+    "https://i.ytimg.com/vi/TuqNWX7SYXs/hqdefault.jpg",
+    "https://i.ytimg.com/vi/4pu28RE_7zA/hqdefault.jpg",
+    "https://i.ytimg.com/vi/htho8GLseMc/hqdefault.jpg",
+    "https://i.ytimg.com/vi/f1i4xAn_uqg/hqdefault.jpg",
+    "https://i.ytimg.com/vi/kG4EJrsNH94/hqdefault.jpg"
+   ],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 334013
+  },
+  {
+   "path": "/usa",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 326211
+  },
+  {
+   "path": "/visitor-visa",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 338764
+  },
+  {
+   "path": "/visitor-visa/business-visitor",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 370288
+  },
+  {
+   "path": "/visitor-visa/eta",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 355417
+  },
+  {
+   "path": "/visitor-visa/extension",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 359143
+  },
+  {
+   "path": "/visitor-visa/invitation-letter",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 358577
+  },
+  {
+   "path": "/visitor-visa/super-visa",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 338034
+  },
+  {
+   "path": "/work-permit-canada",
+   "count": 3,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [
+    "https://i.ytimg.com/vi/9cXFhUmFZm4/hqdefault.jpg"
+   ],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 363972
+  },
+  {
+   "path": "/work-permit-canada/business-plan",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 327141
+  },
+  {
+   "path": "/work-permit-canada/refusals",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 323196
+  },
+  {
+   "path": "/work-permits",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 347799
+  },
+  {
+   "path": "/work-permits/bridging-open-work-permit",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 359153
+  },
+  {
+   "path": "/work-permits/caregivers",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 366464
+  },
+  {
+   "path": "/work-permits/global-talent-stream",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 353660
+  },
+  {
+   "path": "/work-permits/international-experience-canada",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 350922
+  },
+  {
+   "path": "/work-permits/intra-company-transfer",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 358806
+  },
+  {
+   "path": "/work-permits/lmia",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 347392
+  },
+  {
+   "path": "/work-permits/lmia-exempt",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 338961
+  },
+  {
+   "path": "/work-permits/post-graduation",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 367934
+  },
+  {
+   "path": "/work-permits/spousal-open-work-permit",
+   "count": 2,
+   "noAlt": 0,
+   "emptyAlt": 0,
+   "noDimensions": [],
+   "lang": "en",
+   "viewport": true,
+   "hreflang": false,
+   "bytes": 362789
+  }
+ ],
+ "images": [
+  {
+   "src": "/logo.png",
+   "status": 200,
+   "type": "image/png",
+   "kb": 11,
+   "pages": 186
+  },
+  {
+   "src": "/home/hero-consultation-720.webp",
+   "status": 200,
+   "type": "image/webp",
+   "kb": 60,
+   "pages": 1
+  },
+  {
+   "src": "/team/tashfeen-sohail-abbas-gondal-720.jpg",
+   "status": 200,
+   "type": "image/jpeg",
+   "kb": 83,
+   "pages": 2
+  },
+  {
+   "src": "https://i.ytimg.com/vi/HvmoK38SDe0/hqdefault.jpg",
+   "status": 200,
+   "type": "image/jpeg",
+   "kb": 12,
+   "pages": 1
+  },
+  {
+   "src": "https://i.ytimg.com/vi/SiZwlPjhJI0/hqdefault.jpg",
+   "status": 200,
+   "type": "image/jpeg",
+   "kb": 9,
+   "pages": 1
+  },
+  {
+   "src": "https://i.ytimg.com/vi/q4FRhlw3TO8/hqdefault.jpg",
+   "status": 200,
+   "type": "image/jpeg",
+   "kb": 13,
+   "pages": 1
+  },
+  {
+   "src": "https://i.ytimg.com/vi/8wxUbWE7Gwo/hqdefault.jpg",
+   "status": 200,
+   "type": "image/jpeg",
+   "kb": 11,
+   "pages": 1
+  },
+  {
+   "src": "https://i.ytimg.com/vi/-RnOMd7b-Iw/hqdefault.jpg",
+   "status": 200,
+   "type": "image/jpeg",
+   "kb": 11,
+   "pages": 1
+  },
+  {
+   "src": "https://i.ytimg.com/vi/TuqNWX7SYXs/hqdefault.jpg",
+   "status": 200,
+   "type": "image/jpeg",
+   "kb": 12,
+   "pages": 1
+  },
+  {
+   "src": "https://i.ytimg.com/vi/4pu28RE_7zA/hqdefault.jpg",
+   "status": 200,
+   "type": "image/jpeg",
+   "kb": 11,
+   "pages": 1
+  },
+  {
+   "src": "https://i.ytimg.com/vi/htho8GLseMc/hqdefault.jpg",
+   "status": 200,
+   "type": "image/jpeg",
+   "kb": 9,
+   "pages": 1
+  },
+  {
+   "src": "https://i.ytimg.com/vi/f1i4xAn_uqg/hqdefault.jpg",
+   "status": 200,
+   "type": "image/jpeg",
+   "kb": 10,
+   "pages": 1
+  },
+  {
+   "src": "https://i.ytimg.com/vi/kG4EJrsNH94/hqdefault.jpg",
+   "status": 200,
+   "type": "image/jpeg",
+   "kb": 10,
+   "pages": 1
+  },
+  {
+   "src": "https://i.ytimg.com/vi/9cXFhUmFZm4/hqdefault.jpg",
+   "status": 200,
+   "type": "image/jpeg",
+   "kb": 12,
+   "pages": 1
+  }
+ ]
+}

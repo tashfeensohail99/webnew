@@ -111,7 +111,7 @@ const FAQS = [
   },
   {
     q: 'Is an “owner-operator” work permit a route to permanent residence?',
-    a: 'First, a correction: “owner-operator” is not the name of a programme. There is no dedicated owner-operator stream — a business owner applies through the ordinary work-permit framework, with a labour market assessment or under an exemption, and IRCC publishes which categories exist and what each requires. Second, whichever route applies, it is a temporary work permit, not residence, and it does not convert on its own. What it can do is put you in Canada lawfully, running a real business, generating Canadian management experience and a trading record — which may support a later provincial or federal application on its own merits. Treat it as a first step that might lead somewhere, not as residence in instalments.',
+    a: 'First, a correction: “owner-operator” is not the name of a programme. There is no dedicated owner-operator stream — a business owner applies through the ordinary work-permit framework, with a labour market assessment or under an exemption, and IRCC publishes which categories exist and what each requires. Second, whichever route applies, it is a temporary work permit, not residence, and it does not convert on its own. What it can do is put you in Canada lawfully, running a real business, generating Canadian management experience and a trading record — which may support a later provincial entrepreneur application on its own merits. Self-employed time in Canada does not count toward the Canadian Experience Class. Treat it as a first step that might lead somewhere, not as residence in instalments.',
   },
   {
     q: 'Which province is easiest for entrepreneurs?',
@@ -141,8 +141,8 @@ export default function BusinessImmigrationPage() {
         subtitle={
           <>
             The federal Start-Up Visa is closed to new applicants and the federal Self-Employed
-            Persons Program is paused. What remains is provincial entrepreneur streams and work
-            permits for people who own and run a business — and both require you to move to Canada
+            Persons Program is paused. What remains is whichever provincial entrepreneur streams are
+            still open, and work permits for people who own and run a business — and both require you to move to Canada
             and actually operate it. Confirm the current status of any route on the IRCC page before
             you pay anyone.
           </>
@@ -254,7 +254,7 @@ export default function BusinessImmigrationPage() {
             <ul className="mt-6 space-y-4">
               {[
                 ['Verifiable personal net worth', 'Not just a balance today — a documented, lawful history of how the money was accumulated.'],
-                ['Traceable source of funds', 'Usually the heaviest part of the file. Gifts, informal lending and undocumented cash cause more refusals here than anywhere else.'],
+                ['Traceable source of funds', 'Usually the heaviest part of the file. Gifts, informal lending and undocumented cash are a frequent cause of refusal.'],
                 ['Business ownership and control', 'A meaningful ownership share and genuine decision-making authority, not a passive stake.'],
                 ['Active day-to-day management', 'You, in the province, running the business. Remote ownership does not satisfy these streams.'],
                 ['Jobs for Canadians', 'Most streams expect the business to create or maintain employment for citizens and permanent residents.'],
@@ -301,8 +301,11 @@ export default function BusinessImmigrationPage() {
             Each province publishes its own criteria, and they diverge sharply — in sector rules,
             required location within the province, capital levels and whether you may buy an existing
             business. Individual streams also open, close, pause and are replaced, so treat the
-            provincial government page as the only reliable statement of what exists today. Start
-            from the provincial page for the place you would genuinely live:{' '}
+            provincial government page as the only reliable statement of what exists today. Two
+            examples, as of 8 November 2026: Ontario says all its streams are closed except the
+            Workforce Priority stream, which is built around job offers rather than business owners,
+            and Saskatchewan permanently closed its Entrepreneur and Farm pathways on 27 March 2025.
+            Start from the provincial page for the place you would genuinely live:{' '}
             <Link href="/pnp/ontario" className="font-semibold text-accent-500 link-underline">
               Ontario
             </Link>
@@ -381,7 +384,8 @@ export default function BusinessImmigrationPage() {
             Two things about it are consistently misrepresented. First, it is a temporary permit. It
             is not permanent residence and it does not become permanent residence by the passage of
             time. What it can do is establish you in Canada with a real, trading, documented business
-            — which may later support a provincial or federal application on its own merits.
+            — which may later support a provincial entrepreneur application on its own merits.
+            Self-employed time in Canada does not count toward the Canadian Experience Class.
           </p>
           <p>
             Second, the business has to be real. Officers assess whether the enterprise is genuine and
@@ -437,8 +441,8 @@ export default function BusinessImmigrationPage() {
             at the top before any money moves.
           </p>
           <p>
-            <strong>Source of funds that cannot be traced.</strong> The single most common reason
-            business files fail. Property sold informally, business income kept outside the banking
+            <strong>Source of funds that cannot be traced.</strong> A frequent reason business files
+            fail. Property sold informally, business income kept outside the banking
             system, large family transfers with no paper behind them. The money may be entirely
             legitimate and still be undocumentable, and undocumentable is treated as unproven.
           </p>

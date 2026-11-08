@@ -55,7 +55,7 @@ const REQUIREMENT_KINDS = [
     icon: 'doc' as const,
     kicker: 'The offer',
     title: 'A genuine offer of home care work',
-    body: 'Work in a private home, from an employer who actually needs the care provided — a family, or in some designs an organisation placing workers into homes. Not agency care, not a facility. How many hours the offer must be for is set by the route in force.',
+    body: 'Work in a private home, from an employer who actually needs the care provided — a family, or a business that directly hires and pays you. A recruitment or placement agency cannot be the employer, and work in a facility is not what these routes cover. How many hours the offer must be for is set by the route in force.',
   },
   {
     icon: 'chat' as const,
@@ -80,7 +80,7 @@ const REQUIREMENT_KINDS = [
 const STEPS = [
   {
     title: 'Establish that a route is actually open',
-    body: 'Caregiver routes are usually run as pilots with a defined application window and a limit on how many applications are accepted. There have been long stretches with no open intake at all. This is the first question, not the last.',
+    body: 'Caregiver routes are usually run as pilots with a defined application window and a limit on how many applications are accepted. Intake for the latest pilots is currently paused. This is the first question, not the last.',
   },
   {
     title: 'Find real work, through a real employer',
@@ -107,7 +107,7 @@ const STEPS = [
 const FAQS = [
   {
     q: 'Someone is offering me a caregiver job in Canada for a fee. Should I pay?',
-    a: 'No. A person who genuinely needs care in their home does not sell the job to the worker. Canadian provinces regulate recruitment and generally prohibit a recruiter from charging a worker to find them employment — the detail varies by province, and the province you would work in publishes its own rules. Separately, where the offer involves a labour market impact assessment, Employment and Social Development Canada prohibits the employer or their representative from recovering that cost from the worker. Caregiver placement is among the most heavily defrauded areas we see from Pakistan. Treat a price attached to a job offer as the reason to stop.',
+    a: 'No. A person who genuinely needs care in their home does not sell the job to the worker. Canadian provinces regulate recruitment and generally prohibit a recruiter from charging a worker to find them employment — the detail varies by province, and the province you would work in publishes its own rules. Separately, where the offer involves a labour market impact assessment, Employment and Social Development Canada prohibits the employer or their representative from recovering that cost from the worker. Caregiver placement is a heavily defrauded area of migration from Pakistan. Treat a price attached to a job offer as the reason to stop.',
   },
   {
     q: 'How do I check whether the job offer is real?',
@@ -115,7 +115,7 @@ const FAQS = [
   },
   {
     q: 'Can I apply as a caregiver without any job offer?',
-    a: 'Generally no. Caregiver routes are built around care that someone in Canada actually needs. Where no caregiver intake is open, the alternatives are the ordinary work permit and permanent residence routes, which assess you on different criteria entirely.',
+    a: 'Generally no. Caregiver routes are built around care that someone in Canada actually needs. With caregiver intake paused, the alternatives are the ordinary work permit and permanent residence routes, which assess you on different criteria entirely.',
   },
   {
     q: 'Does looking after my own parents or children count as experience?',
@@ -152,9 +152,9 @@ export default function CaregiversPage() {
         }
         subtitle={
           <>
-            Canada has long run immigration routes for caregivers working in private homes. The named
-            programmes change often — they open, fill and close. The structure underneath them is
-            stable, and that is what this page explains.
+            Canada has long run immigration routes for caregivers working in private homes, but
+            intake for the latest pilots is paused. The named programmes open, fill and close. The
+            structure underneath them is stable, and that is what this page explains.
           </>
         }
       >
@@ -171,6 +171,24 @@ export default function CaregiversPage() {
           title="Nobody should be selling you a caregiver job"
         />
         <div className="mt-8">
+          <Callout title="Status as of 8 November 2026: no federal caregiver intake is open">
+            IRCC paused intake for the Home Care Worker Immigration Pilots, for child care and home
+            support, on 19 December 2025, until further notice. It continues to process applications
+            already received. The older caregiver programmes IRCC lists are closed too. Anyone
+            selling you a place in a caregiver intake today is selling something that does not
+            exist.{' '}
+            <a
+              href="https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/pausing-home-care-worker-immigration-pilots-application-intake.html"
+              className="font-semibold text-accent-500 link-underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Read IRCC’s notice
+            </a>
+            .
+          </Callout>
+        </div>
+        <div className="mt-6">
           <Callout title="A price attached to a caregiver placement is the warning sign">
             <p>
               A family that needs someone to look after their child, or their elderly mother, does not
@@ -191,8 +209,8 @@ export default function CaregiversPage() {
               from you.
             </p>
             <p>
-              This is, in our experience, the most heavily defrauded area of Pakistani migration to
-              Canada. The recurring patterns are an invented family, a real family who never agreed to
+              This is a heavily defrauded area of Pakistani migration to Canada. The recurring
+              patterns are an invented family, a real family who never agreed to
               anything, a “registration fee” for an intake that is not open, and an offer letter that
               exists only as a PDF. Money paid for these is not recovered. Worse, a file built on
               documents you did not write is misrepresentation, and that carries a bar on applying
@@ -248,8 +266,8 @@ export default function CaregiversPage() {
             <p>
               We do not print the thresholds — the test score, the education level, how much
               experience and over what period — because they have been reset with each version of the
-              programme, and an applicant preparing against an expired pilot’s numbers is the single
-              most common way money gets wasted here. The binding figures for whatever route is open
+              programme, and preparing against an expired pilot’s numbers is a common way money gets
+              wasted here. The binding figures for whatever route is open
               are published by IRCC on its{' '}
               <a
                 href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/caregivers.html"
@@ -270,7 +288,7 @@ export default function CaregiversPage() {
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <SectionHeading
-              eyebrow="Why we will not name a programme"
+              eyebrow="Why the programme names matter less"
               title="These routes are pilots, and pilots end"
             />
             <Prose>
@@ -288,8 +306,9 @@ export default function CaregiversPage() {
                 employer, tested language, assessed education, provable experience.
               </p>
               <p>
-                Whether an intake is open on the day you read this is a question for IRCC’s own pages,
-                and it is the first thing we check before anyone starts spending.
+                Intake is paused as of the date at the top of this page. Whether that has changed on
+                the day you read this is a question for IRCC’s own pages, and it is the first thing
+                we check before anyone starts spending.
               </p>
             </Prose>
           </div>
@@ -440,8 +459,8 @@ export default function CaregiversPage() {
         />
         <Prose>
           <p>
-            Whether an intake is open, what it is called, what the language and education thresholds
-            are, how many applications will be accepted and what it costs — all of that is set by IRCC
+            What any future intake is called, what the language and education thresholds are, how
+            many applications will be accepted and what it costs — all of that is set by IRCC
             and changes with each version of the programme. We deliberately do not reproduce those
             figures, because in this particular area an out-of-date number is what causes people to file
             the wrong thing or pay the wrong person.
@@ -469,7 +488,7 @@ export default function CaregiversPage() {
             publishes the rules on what a recruiter may and may not charge you.
           </p>
           <p>
-            If no caregiver intake is open, the honest alternatives are the ordinary{' '}
+            While no caregiver intake is open, the honest alternatives are the ordinary{' '}
             <Link href="/work-permits" className="font-semibold text-accent-500 link-underline">
               work permit
             </Link>{' '}

@@ -26,9 +26,9 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * them here would be wrong within months.
  */
 export const metadata: Metadata = {
-  title: 'Rural and Northern Immigration Routes to Canada',
+  title: 'Rural Community Immigration Pilot (RCIP)',
   description:
-    'How community-driven immigration works: a job offer from a designated employer, a community recommendation, then a federal PR application.',
+    'How Canada’s Rural and Francophone Community Immigration Pilots work: a designated employer’s job offer, a community recommendation, then a PR application.',
   alternates: { canonical: '/rural-community-immigration' },
 };
 
@@ -64,7 +64,7 @@ const WHO_DOES_WHAT = [
 const STEPS = [
   {
     title: 'Check the community is participating',
-    body: 'These are pilot programmes with a defined list of participating communities, set federally and revised over time. If a place is not on the current list, there is no route there under this heading, whatever a recruiter says.',
+    body: 'The Rural and Francophone Community Immigration Pilots have a defined list of participating communities, set federally and revised over time. If a place is not on the current list, there is no route there under this heading, whatever a recruiter says.',
   },
   {
     title: 'Find a designated employer with a real vacancy',
@@ -127,7 +127,7 @@ export default function RuralCommunityImmigrationPage() {
   return (
     <>
       <PageHero
-        eyebrow="Canada · Rural and northern routes"
+        eyebrow="Canada · Rural and Francophone community pilots"
         title={
           <>
             A community decides first,{' '}
@@ -136,8 +136,9 @@ export default function RuralCommunityImmigrationPage() {
         }
         subtitle={
           <>
-            Canada’s rural and northern routes let a participating community recommend people who
-            have a job offer there and genuinely intend to settle. They are a route to applying for
+            Canada’s Rural Community Immigration Pilot and Francophone Community Immigration Pilot
+            let a participating community recommend people who have a job offer there and genuinely
+            intend to settle. They are a route to applying for
             permanent residence — suited to a narrow group of people, and no one else.
           </>
         }
@@ -155,6 +156,28 @@ export default function RuralCommunityImmigrationPage() {
           title="Immigration designed around a place, not a points score"
         />
         <Prose>
+          <p>
+            IRCC currently runs two of these routes: the{' '}
+            <a
+              href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/rural-immigration.html"
+              className="font-semibold text-accent-500 link-underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Rural Community Immigration Pilot
+            </a>{' '}
+            and the{' '}
+            <a
+              href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/franco-immigration.html"
+              className="font-semibold text-accent-500 link-underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Francophone Community Immigration Pilot
+            </a>
+            , which is for Francophone-minority communities. The earlier Rural and Northern
+            Immigration Pilot has ended, so an offer described in those terms needs checking.
+          </p>
           <p>
             Most of Canada’s economic immigration is national or provincial. You are ranked against
             other candidates, or nominated by a province, and where exactly you end up living is
@@ -327,7 +350,7 @@ export default function RuralCommunityImmigrationPage() {
           </p>
           <p>
             <strong>Assuming a pilot will still be there.</strong> These are time-limited programmes.
-            An earlier rural pilot has already been succeeded, and community lists are revised.
+            The Rural and Northern pilot has already closed, and community lists are revised.
             Confirm what is current at the point you apply, not at the point you first read about it.
           </p>
         </Prose>

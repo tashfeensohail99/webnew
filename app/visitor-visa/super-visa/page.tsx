@@ -33,8 +33,8 @@ const PARTS = [
   {
     icon: 'calculator' as const,
     kicker: 'The income test',
-    title: 'A minimum-income undertaking',
-    body: 'Your host signs a written undertaking to support you, backed by proof their household income reaches a set minimum for a household of your combined size. It is assessed on filed Canadian tax records, not on a bank balance.',
+    title: 'A promise of support, backed by income',
+    body: 'Your host writes a letter of invitation promising financial support, backed by proof their household income reaches a set minimum for a household of your combined size. The usual proof is a Canada Revenue Agency notice of assessment; IRCC accepts other income documents only under its second option, when that notice is unavailable.',
   },
   {
     icon: 'shield' as const,
@@ -57,7 +57,7 @@ const STEPS = [
   },
   {
     title: 'Assemble the host’s side',
-    body: 'The invitation letter, the undertaking of support, proof of status in Canada, and income evidence drawn from Canada Revenue Agency records rather than payslips alone.',
+    body: 'The invitation letter with its promise of financial support, proof of status in Canada, and income evidence, which is normally the Canada Revenue Agency notice of assessment.',
   },
   {
     title: 'Buy compliant insurance',
@@ -80,7 +80,7 @@ const STEPS = [
 const FAQS = [
   {
     q: 'How is this different from a normal visitor visa?',
-    a: 'Two ways that matter. A normal visitor visa is open to anyone with a genuine reason to visit, and the stay authorised at the border is short — measured in months. A Super Visa is only for parents and grandparents of Canadian citizens and permanent residents, and it authorises a continuous stay measured in years per entry, extendable from inside Canada. In exchange, it asks for things an ordinary visitor visa does not: an income-backed undertaking from your host, private medical insurance, and an immigration medical exam.',
+    a: 'Two ways that matter. A normal visitor visa is open to anyone with a genuine reason to visit, and the stay authorised at the border is short — measured in months. A Super Visa is only for parents and grandparents of Canadian citizens and permanent residents, and it authorises a continuous stay measured in years per entry, extendable from inside Canada. In exchange, it asks for things an ordinary visitor visa does not: an income-backed promise of support from your host, private medical insurance, and an immigration medical exam.',
   },
   {
     q: 'How long can my parents stay, and how long is the visa valid?',
@@ -203,7 +203,7 @@ export default function SuperVisaPage() {
               What it is not is a path to staying. It is visitor status. Your parents cannot work on
               it, it does not accumulate toward permanent residence, and it does not convert into
               anything. It also carries conditions an ordinary visitor visa does not — an
-              income-backed undertaking from the inviting child, private medical insurance, and an
+              income-backed promise of support from the inviting child, private medical insurance, and an
               immigration medical exam.
             </p>
             <p>
@@ -240,12 +240,12 @@ export default function SuperVisaPage() {
         <div className="mt-10 max-w-3xl">
           <Prose>
             <p>
-              The undertaking is worth understanding properly, because families read it as paperwork
+              The promise of support is worth understanding properly, because families read it as paperwork
               and it is not. Your child in Canada is putting their name to a promise that they will
               support you financially while you are there, and IRCC tests that promise against their
               filed income for a household counted as if you were already living in it. Adding two
-              parents to a household of four changes the number that has to be met. It is the single
-              most common place a Super Visa file falls over.
+              parents to a household of four changes the number that has to be met, and it is a
+              common place for a Super Visa file to fall over.
             </p>
             <p>
               The insurance is the second. The requirement is not simply “have travel insurance” — the
@@ -312,14 +312,14 @@ export default function SuperVisaPage() {
           </div>
           <div className="card p-8 sm:p-10">
             <p className="eyebrow">Parents and Grandparents sponsorship</p>
-            <h3 className="mt-4 font-serif text-2xl text-balance">Permanent residence, if you get in</h3>
+            <h3 className="mt-4 font-serif text-2xl text-balance">Permanent residence, currently paused</h3>
             <div className="mt-4 space-y-3 text-ink-600 text-pretty">
               <p>
                 This gives permanent residence, with provincial health coverage, the right to work,
-                and eventual eligibility for citizenship. The trade-offs are access and commitment:
-                IRCC opens the intake periodically and selects from a pool of interested sponsors, so
-                you cannot simply decide to apply, and the sponsor signs a support undertaking that
-                runs for many years.
+                and eventual eligibility for citizenship. As of 8 November 2026 IRCC has paused it,
+                with no new interest forms or invitations until further notice. Even when it runs you
+                cannot simply decide to apply, and the sponsor signs a support undertaking that runs
+                for many years.
               </p>
               <p>
                 It suits families whose goal is that the parents live in Canada, not visit it — and
@@ -332,9 +332,9 @@ export default function SuperVisaPage() {
         <div className="mt-10 max-w-3xl">
           <Prose>
             <p>
-              In practice the two are often used together rather than chosen between: submit interest
-              in sponsorship when the intake opens, and apply for the Super Visa so your parents may
-              be able to be in Canada in the meantime. The two are separate applications, each
+              With sponsorship paused, the Super Visa is the route available now. If sponsorship
+              reopens, the two can be used together rather than chosen between: submit interest when
+              IRCC accepts it, while your parents visit on a Super Visa. The two are separate applications, each
               assessed on its own merits by IRCC — and being in Canada as a visitor does not create a
               right to stay if the sponsorship does not come through.
             </p>
@@ -383,7 +383,7 @@ export default function SuperVisaPage() {
 
       <CTASection
         eyebrow="Bring your parents over"
-        title="Find out whether your family qualifies"
+        title="Talk through what your family would need to show"
         subtitle="Tell us who is in Canada, what their household looks like, and what your parents actually want — a long visit or a move. We’ll tell you honestly which route fits, and if neither does, we’ll say that too."
         page={PAGE}
         waMessage="Hi, I’d like to apply for a Super Visa for my parents. My child/I am in Canada."

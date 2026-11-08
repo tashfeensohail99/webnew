@@ -119,6 +119,55 @@ export const FACTS: Record<string, Fact> = {
     note: 'Timing is secondary: Lewis Silkin (3 Nov 2026) reports rule changes from December 2026 and implementation during 2027. Re-check when the rules are laid.',
   },
 
+  // ── CANADA: PROGRAMME STATUS (re-check monthly) ──────────────────────────
+  caParentsGrandparentsPaused: {
+    id: 'ca.pgp.paused',
+    claim:
+      'The Parents and Grandparents Program is paused. IRCC is not accepting new interest to sponsor forms or inviting potential sponsors to apply until further notice, and continues to process existing applications.',
+    provenance: 'primary',
+    source: 'IRCC, Sponsor your parents and grandparents',
+    sourceUrl:
+      'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/sponsor-parents-grandparents.html',
+    checked: '2026-11-08',
+  },
+  caCaregiverPilotsPaused: {
+    id: 'ca.caregiver.paused',
+    claim:
+      'IRCC paused intake for the Home Care Worker Immigration Pilots on 19 December 2025, until further notice, and lists them as closed. Applications already received continue to be processed.',
+    provenance: 'primary',
+    source: 'IRCC notice of 19 December 2025; IRCC caregivers page',
+    sourceUrl:
+      'https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/pausing-home-care-worker-immigration-pilots-application-intake.html',
+    checked: '2026-11-08',
+  },
+  caStartUpVisaClosed: {
+    id: 'ca.suv.closed',
+    claim:
+      'IRCC stopped accepting new Start-Up Visa applications on 31 December 2025, except from applicants holding a 2025 commitment who had not yet applied.',
+    provenance: 'primary',
+    source: 'IRCC notice on immigration measures for entrepreneurs',
+    sourceUrl:
+      'https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/immigration-measures-entrepreneurs.html',
+    checked: '2026-11-08',
+  },
+  caOntarioSingleStream: {
+    id: 'ca.on.single-stream',
+    claim: 'Ontario says its Workforce Priority stream has launched and all other Ontario Immigrant Nominee Program streams are closed.',
+    provenance: 'primary',
+    source: 'Ontario Immigrant Nominee Program page',
+    sourceUrl: 'https://www.ontario.ca/page/ontario-immigrant-nominee-program-oinp',
+    checked: '2026-11-08',
+  },
+  caSaskatchewanEntrepreneurClosed: {
+    id: 'ca.sk.entrepreneur-closed',
+    claim: 'Saskatchewan permanently closed its Entrepreneur and Farm immigration pathways, effective 27 March 2025.',
+    provenance: 'primary',
+    source: 'Saskatchewan Immigrant Nominee Program, Entrepreneur application page',
+    sourceUrl:
+      'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/entrepreneur/applicants-entrepreneurs',
+    checked: '2026-11-08',
+  },
+
   // ── EUROPE / SCHENGEN ────────────────────────────────────────────────────
   portugalTenYears: {
     id: 'pt.citizenship.10y',

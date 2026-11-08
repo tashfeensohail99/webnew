@@ -44,7 +44,7 @@ const IRCC = {
     'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/medical-exams.html',
   proofOfFunds:
     'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html',
-  fees: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/fees.html',
+  fees: 'https://ircc.canada.ca/english/information/fees/fees.asp',
   processingTimes:
     'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html',
 } as const;
@@ -114,7 +114,7 @@ const ROUTES = [
     icon: 'scale' as const,
     kicker: 'If you run a business',
     title: 'C11 work permit',
-    body: 'If you own a business in Pakistan, there is a way to work in Canada by running one there. Most agents never file it.',
+    body: 'If you own a business in Pakistan, there is a way to work in Canada by running one there.',
     cta: 'The C11, explained',
   },
   {
@@ -122,7 +122,7 @@ const ROUTES = [
     icon: 'user' as const,
     kicker: 'Permanent residence',
     title: 'Family sponsorship',
-    body: 'Your spouse, partner, child, parent or grandparent is a Canadian citizen or permanent resident and can sponsor you.',
+    body: 'If your spouse or partner, or your parent if you are their dependent child, is a Canadian citizen or permanent resident, they may be able to sponsor you. Sponsoring parents and grandparents is currently paused.',
     cta: 'How sponsorship works',
   },
   {
@@ -270,7 +270,7 @@ const FAQS = [
   },
   {
     q: 'I live in Saudi Arabia or the UAE. Can I still apply?',
-    a: 'Yes — most of our clients apply from the Gulf. You apply online from where you live, give biometrics there, and include police certificates from the Gulf country as well as Pakistan.',
+    a: 'Yes — many applicants apply from the Gulf. You apply online from where you live, give biometrics there, and include police certificates from the Gulf country as well as Pakistan.',
   },
   {
     q: 'How long does it take?',
@@ -330,12 +330,19 @@ export default function CanadaFromPakistanPage() {
           ))}
         </ol>
         <p className="mt-8 max-w-3xl text-ink-600 text-pretty">
-          And a fourth, if it applies to you: if your spouse, partner, parent or child is already a
-          Canadian citizen or permanent resident,{' '}
+          And a fourth, if it applies to you: if your spouse or partner is already a Canadian citizen
+          or permanent resident,{' '}
           <Link href="/family-sponsorship" className="font-semibold text-accent-500 link-underline">
             family sponsorship
           </Link>{' '}
-          may be the most direct route of all.
+          may be the most direct route of all. The route for sponsoring a parent or grandparent is{' '}
+          <Link
+            href="/family-sponsorship/parents-grandparents"
+            className="font-semibold text-accent-500 link-underline"
+          >
+            currently paused
+          </Link>
+          .
         </p>
       </Section>
 

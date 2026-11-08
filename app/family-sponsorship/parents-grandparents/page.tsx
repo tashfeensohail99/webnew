@@ -60,7 +60,7 @@ const CORE = [
 const STEPS = [
   {
     title: 'IRCC decides whether there is an intake',
-    body: 'There is no application to make until IRCC opens one. Intakes are irregular, they have been paused for extended periods, and there is no obligation on IRCC to run one in any given year. Confirm the current position on canada.ca before you plan around it.',
+    body: 'There is no application to make until IRCC opens one, and the program is currently paused. Intakes are irregular and there is no obligation on IRCC to run one in any given year. Confirm the current position on canada.ca before you plan around it.',
   },
   {
     title: 'An interest form goes into the pool',
@@ -87,7 +87,7 @@ const STEPS = [
 const FAQS = [
   {
     q: 'Can I apply to sponsor my parents whenever I want?',
-    a: 'No. Unlike spousal sponsorship, which you can file at any time, this route depends on IRCC running an intake — and even then, submitting the interest form is not an application. You need to be selected and invited before an application exists. IRCC has at times gone years without accepting new interest forms and has paused the program entirely, so the only reliable answer to "is it open right now" is the one on canada.ca.',
+    a: 'No. Unlike spousal sponsorship, which you can file at any time, this route depends on IRCC running an intake — and even then, submitting the interest form is not an application. You need to be selected and invited before an application exists. As of 8 November 2026 the program is paused: IRCC is not accepting new interest forms or inviting sponsors until further notice. Check canada.ca for any change.',
   },
   {
     q: 'Does applying earlier in the intake window help?',
@@ -115,7 +115,7 @@ const FAQS = [
   },
   {
     q: 'Can you get my parents invited faster?',
-    a: 'No, and neither can anyone else. Selection is IRCC’s and no representative influences it — and in some periods there is no intake to be selected from at all. What we can do is make sure any interest form you submit is correct, that you understand the income position you would need to be in if invited, and that you have looked seriously at the Super Visa in the meantime.',
+    a: 'No, and neither can anyone else. Selection is IRCC’s and no representative influences it — and with the program paused there is currently no intake to be selected from at all. What we can do is make sure you understand the income position you would need to be in if the program reopens, and that you have looked seriously at the Super Visa in the meantime.',
   },
 ];
 
@@ -132,9 +132,9 @@ export default function ParentsGrandparentsPage() {
         }
         subtitle={
           <>
-            This route begins with an expression of interest and a selection you cannot influence.
-            Being eligible, being organised and being represented do not get you invited. Here is
-            how it actually works — and why so many families use the Super Visa instead.
+            This route is paused, with no new interest forms or invitations until further notice.
+            When it runs, it begins with an expression of interest and a selection you cannot
+            influence. Here is how it works — and why the Super Visa is the route available today.
           </>
         }
       >
@@ -150,6 +150,26 @@ export default function ParentsGrandparentsPage() {
           eyebrow="The route, plainly"
           title="An invitation first, an application second"
         />
+        <div className="mt-8">
+          <Callout title="Status as of 8 November 2026: paused">
+            IRCC is not accepting new interest to sponsor forms and will not invite potential
+            sponsors to apply until further notice. It continues to process existing applications.
+            If you have not already applied, there is nothing to file today.{' '}
+            <a
+              href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/sponsor-parents-grandparents.html"
+              className="font-semibold text-accent-500 link-underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Check IRCC’s page for any change
+            </a>
+            , and see the{' '}
+            <Link href="/visitor-visa/super-visa" className="font-semibold text-accent-500 link-underline">
+              Super Visa
+            </Link>{' '}
+            for the route available now.
+          </Callout>
+        </div>
         <Prose>
           <p>
             A Canadian citizen or permanent resident can sponsor a parent or grandparent for
@@ -160,17 +180,18 @@ export default function ParentsGrandparentsPage() {
             , which you can file whenever you are ready, this route runs through a controlled intake.
           </p>
           <p>
-            Prospective sponsors submit a short interest-to-sponsor form, which goes into a pool.
-            IRCC then selects from that pool and issues invitations to apply. Only an invited sponsor
+            When the program is running, prospective sponsors submit a short interest-to-sponsor
+            form, which goes into a pool. IRCC then selects from that pool and issues invitations to
+            apply. Only an invited sponsor
             has an application to make. Everyone else in the pool has nothing to file, nothing to
             appeal and nothing to chase.
           </p>
           <p>
             Two things are worth understanding before you build a plan around this. First, being able
-            to submit a <em>new</em> interest form is not a given: IRCC has gone long stretches
-            without opening a new intake, has drawn invitations from a pool submitted in an earlier
-            year, and has paused the program outright. Second, even a form in the pool is not a
-            queue position. Check on{' '}
+            to submit a <em>new</em> interest form is not a given: besides the current pause, IRCC
+            has gone long stretches without opening a new intake and has drawn invitations from a
+            pool submitted in an earlier year. Second, even a form in the pool is not a queue
+            position. Check on{' '}
             <a
               href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/sponsor-parents-grandparents.html"
               className="font-semibold text-accent-500 link-underline"
@@ -291,7 +312,7 @@ export default function ParentsGrandparentsPage() {
         <SectionHeading
           eyebrow="The real decision"
           title="Sponsorship or Super Visa"
-          subtitle="These are not competing applications. They answer different questions, and most families we speak to actually want the second one."
+          subtitle="These are not competing applications. They answer different questions, and while sponsorship is paused only the second is available."
         />
         <Prose>
           <p>
@@ -326,10 +347,10 @@ export default function ParentsGrandparentsPage() {
             delivers that, and you must accept that it may never become available to you.
           </p>
           <p>
-            The two are not mutually exclusive. Submitting an interest form when an intake opens does
-            not stop a parent visiting on a Super Visa, and for many families the sensible position is
-            to do both: pursue presence now, and keep the status route open in case an invitation ever
-            comes.
+            The two are not mutually exclusive. If IRCC reopens the program, submitting an interest
+            form would not stop a parent visiting on a Super Visa, and for many families the sensible
+            position is to pursue presence now and keep the status route in mind in case it comes
+            back.
           </p>
         </Prose>
 
@@ -423,8 +444,7 @@ export default function ParentsGrandparentsPage() {
                 Super Visa
               </Link>{' '}
               is the route that can actually respond. It also does not suit anyone who needs to start
-              now regardless of policy: there have been periods with no intake at all, in which there
-              was simply nothing to submit.
+              now: with the program paused, there is simply nothing to submit.
             </p>
             <p>
               It also does not suit sponsors whose recent tax years will not stand up to the
@@ -454,9 +474,9 @@ export default function ParentsGrandparentsPage() {
         />
         <Prose>
           <p>
-            Whether an intake is currently open, the minimum necessary income for each family size,
-            the tax years assessed, the length of the undertaking and the fees payable all change, and
-            some of them change without much notice. We deliberately do not print those figures here,
+            The minimum necessary income for each family size, the tax years assessed, the length of
+            the undertaking and the fees payable all change, and some of them change without much
+            notice. We deliberately do not print those figures here,
             because a number that is correct today becomes a liability on a page you might read next
             year.
           </p>
@@ -499,7 +519,7 @@ export default function ParentsGrandparentsPage() {
       <CTASection
         eyebrow="Presence now, or status later"
         title="Work out which route your family actually needs"
-        subtitle="Tell us your status in Canada, your recent tax position and why you need your parents here. We will tell you honestly whether sponsorship is realistic for you — and whether the Super Visa answers the need better."
+        subtitle="Tell us your status in Canada, your recent tax position and why you need your parents here. With sponsorship paused, we will tell you honestly whether the Super Visa answers the need, and what is worth preparing in case the program reopens."
         page={PAGE}
         waMessage="Hi, I’d like to understand whether sponsoring my parents or a Super Visa is the better route for my family."
       />

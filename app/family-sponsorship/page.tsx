@@ -128,17 +128,14 @@ const FAQS = [
         Two separate things: our professional fee, and the government fees paid to IRCC (not to us).
         IRCC publishes its current fees on{' '}
         <a
-          href="https://www.canada.ca/en/immigration-refugees-citizenship/services/application/fee-list.html"
+          href="https://ircc.canada.ca/english/information/fees/fees.asp"
           className="font-semibold text-accent-500 link-underline"
           rel="noopener"
         >
           its fee list
         </a>
-        . Our own fees are set out on our{' '}
-        <Link href="/fees" className="font-semibold text-accent-500 link-underline">
-          fees page
-        </Link>
-        , and we itemise both, in writing, before you sign anything.
+        . We quote our own fee after the consultation, and we itemise both, in writing, before you
+        sign anything.
       </>
     ),
   },
@@ -384,10 +381,20 @@ export default function FamilySponsorshipPage() {
             <h3 className="mt-4 font-serif text-2xl text-balance">Applying from inside Canada</h3>
             <div className="mt-4 space-y-3 text-ink-600 text-pretty">
               <p>
-                Your spouse must already be in Canada with valid temporary status and must generally
-                stay in Canada while the application is processed. Leaving can put re-entry at risk,
-                since a temporary resident returning mid-application still has to satisfy an officer
-                at the border.
+                Your spouse must already be living with you in Canada, normally with valid temporary
+                status, and must generally stay in Canada while the application is processed. A{' '}
+                <a
+                  href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/immigration-refugee-protection-act-spousal-policy.html"
+                  className="font-semibold text-accent-500 link-underline"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  public policy
+                </a>{' '}
+                lets a genuine spouse who has lost status apply this way too, so get advice on your
+                own facts if that is your situation. Leaving can put re-entry at risk, since a
+                temporary resident returning mid-application still has to satisfy an officer at the
+                border.
               </p>
               <p>
                 The advantage is that they’re with you, and they can apply for an open work permit
@@ -426,7 +433,11 @@ export default function FamilySponsorshipPage() {
           it’s an outland application, and the appeal right comes with it. Inland only becomes a real
           choice when your spouse is already in Canada on valid status. Where both are genuinely open,
           the honest trade is: being together sooner and working sooner, against giving up the
-          strongest remedy available if the file goes wrong.
+          strongest remedy available if the file goes wrong.{' '}
+          <Link href="/family-sponsorship/spouse-partner" className="font-semibold text-accent-500 link-underline">
+            Read the full guide to sponsoring a spouse or partner
+          </Link>
+          .
         </p>
       </Section>
 
@@ -440,10 +451,24 @@ export default function FamilySponsorshipPage() {
             />
             <div className="mt-6 space-y-4 text-ink-600 text-pretty leading-relaxed">
               <p>
-                Parent and grandparent sponsorship is capped, and it doesn’t work like the rest of
-                the family class. You cannot simply file when you’re ready. IRCC opens an
-                interest-to-sponsor step — a short form declaring you want to sponsor — during a
-                defined window, and everyone who submits goes into a pool.
+                <strong className="font-semibold text-ink-900">
+                  As of 8 November 2026 this program is paused.
+                </strong>{' '}
+                IRCC is not accepting new interest forms or inviting sponsors to apply until further
+                notice, and it continues to process existing applications.{' '}
+                <Link
+                  href="/family-sponsorship/parents-grandparents"
+                  className="font-semibold text-accent-500 link-underline"
+                >
+                  What that means for your family
+                </Link>
+                .
+              </p>
+              <p>
+                Even when it runs, parent and grandparent sponsorship is capped, and it doesn’t work
+                like the rest of the family class. You cannot simply file when you’re ready. IRCC
+                uses an interest-to-sponsor step — a short form declaring you want to sponsor — and
+                everyone who submits goes into a pool.
               </p>
               <p>
                 Invitations are then issued from that pool. Only people who are invited may submit a
@@ -515,7 +540,14 @@ export default function FamilySponsorshipPage() {
                 Age is generally assessed by reference to a fixed lock-in date rather than the date a
                 decision is made, which is intended to stop a child ageing out purely because
                 processing took time. Which date applies to your file is worth confirming precisely —
-                it is one of the few places where a small factual point changes the whole outcome.
+                it is one of the few places where a small factual point changes the whole outcome.{' '}
+                <Link
+                  href="/family-sponsorship/dependent-children"
+                  className="font-semibold text-accent-500 link-underline"
+                >
+                  Read the guide to sponsoring dependent children
+                </Link>
+                .
               </p>
             </div>
           </div>
@@ -630,7 +662,7 @@ export default function FamilySponsorshipPage() {
         title="Before you sign an undertaking, understand it"
         subtitle="Tell us who you want to sponsor and we’ll tell you honestly whether the relationship qualifies, whether you’re eligible to sponsor, and what you’d be committing to."
         page={PAGE}
-        waMessage="Hi, I’d like to sponsor a family member to Canada. Can you tell me if I qualify?"
+        waMessage="Hi, I’d like to talk through sponsoring a family member to Canada."
       />
     </>
   );

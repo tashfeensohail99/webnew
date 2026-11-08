@@ -103,11 +103,11 @@ const FAQS = [
   },
   {
     q: 'Does the work permit lead to permanent residence?',
-    a: 'Caregiving experience in Canada has historically been a route to permanent residence, but the federal caregiver pathways have been redesigned more than once and their intake status changes. Do not accept a caregiver posting on the assumption that permanent residence automatically follows — check what is actually open at the time you would be applying.',
+    a: 'Caregiving experience in Canada has historically been a route to permanent residence, but IRCC paused intake for its Home Care Worker Immigration Pilots on 19 December 2025, until further notice. Do not accept a caregiver posting on the assumption that permanent residence automatically follows — check what is actually open at the time you would be applying.',
   },
   {
     q: 'Can I bring my spouse and children?',
-    a: 'Whether family members can accompany you, and whether your spouse can obtain an open work permit, depends on the occupation, the wage level and the rules in force when you apply. Some caregiver postings support family accompaniment and some do not, so establish this before you accept a job rather than after you arrive.',
+    a: 'Home child care and home support jobs (NOC 44100 and 44101) are in skill level TEER 4. IRCC gives open work permits to the spouses of temporary workers in TEER 0 and 1 and in selected TEER 2 and 3 jobs, or where the worker is on an eligible route to permanent residence. So on a caregiver work permit alone, your spouse generally cannot get an open work permit. Check IRCC’s eligibility questions for your own case before you accept a job rather than after you arrive.',
   },
   {
     q: 'Can I change employers if the household is not what I expected?',
@@ -383,9 +383,9 @@ export default function CaregiverWorkPermitsPage() {
               can file on your own, and nothing you can buy that creates one.
             </p>
             <p>
-              It does not suit someone taking the job purely as a route to permanent residence. The
-              federal caregiver pathways have been redesigned more than once and their intake status
-              changes; committing years of your life to a household on the assumption that a specific
+              It does not suit someone taking the job purely as a route to permanent residence. IRCC
+              paused intake for its federal caregiver pilots on 19 December 2025, until further
+              notice; committing years of your life to a household on the assumption that a specific
               pathway will be open at the end of it is a risk you should take with your eyes open. See{' '}
               <Link href="/caregivers" className="font-semibold text-accent-500 link-underline">
                 the permanent residence side of caregiving

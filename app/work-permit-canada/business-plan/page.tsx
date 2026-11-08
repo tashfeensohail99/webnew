@@ -202,7 +202,8 @@ export default function C11BusinessPlanPage() {
             </p>
             <p className="mt-4">
               If what you really want is to settle in Canada, IRCC points business owners to other
-              routes — provincial business programmes and the Start-up Visa among them.{' '}
+              routes, such as provincial business programmes. The Start-Up Visa, which those
+              instructions also name, closed to new applicants on 31 December 2025.{' '}
               <Link href="/business-immigration" className="font-semibold text-accent-500 link-underline">
                 See the business immigration routes
               </Link>

@@ -1,0 +1,22 @@
+id,severity,area,issue,evidence,source,next,status
+C01,Critical,Trust,The site promises lawyers but names no licensed person,"59 pages promise a lawyer; the header and homepage H1 say so; no name, regulator or licence number appears",Crawl of all 93 pages,Firm supplies licence details; Canadian counsel reviews the claims,Open
+C02,Critical,Accuracy,Facts contradicted by a source remain on 31 pages,"Closed or paused programmes, officer decision notes, provincial streams. CRS, UK and privacy errors already fixed",Page-by-page audit; 31 findings re-read at source,Content batches 3 to 7,Open
+H03,High,Crawling,"Search Console reports the sitemap as ""Couldn't fetch""","Last read 4 Nov. The file returns 200 and valid XML with 93 URLs on 6 of 6 tests with a Googlebot user agent, so the cause is not visible from here","Search Console, Sitemaps; live test",Resubmit the sitemap and recheck in a few days,Open
+H04,High,Speed,All measured mobile pages miss the LCP target,"86 URLs need improvement, none good. Field group LCP 3.0s against a 2.5s target. Lab LCP above 2.5s on 5 of 6 page types",Search Console Core Web Vitals; Lighthouse,"Diagnose render delay, then fix",Open
+H05,High,Authority,Very few real links from other sites,"67 external links reported: 58 are wa.me, leaving 9. 66 of the 67 point at the homepage","Search Console, Links",Step 9 backlink plan,Open
+H06,High,Visibility,Almost no clicks from people who do not already know the firm,81 of 83 clicks tied to a named search were for the firm's name,"Search Console, Queries",Steps 2 and 3,Open
+H07,High,Trust,"""Reviewed by the Tashfeen legal team"" cannot be verified",77 pages carry this line with a date and no named reviewer,Crawl of all 93 pages,"Firm confirms who reviewed, or the byline changes",Open
+M08,Medium,Speed,Mobile pages wait a long time to render after the first byte,"Lab render delay around 1.8s on four page types, with 127KB of JavaScript. Cause not yet confirmed",Lighthouse,Trace during the speed fix,Open
+M09,Medium,Speed,Pages pre-load many other pages on arrival,"Homepage made 14 route prefetches totalling 314KB in the lab run, on a page whose HTML is 60KB compressed",Lighthouse network log,Test limiting prefetch on mobile,Open
+M10,Medium,Speed,HTML is heavy compared with the content in it,"Median page is 343KB uncompressed. On /fees: 301KB total, 170KB framework data, 78KB header and menus, 14KB main content",Crawl; HTML breakdown,Review with the speed fix,Open
+M11,Medium,Crawling,Google has not seen recent corrections yet,"Index report's last crawl date for live pages: median 20 days ago, oldest 65. 19 pages over 30 days","Search Console, Page indexing",Request indexing of corrected key pages,Open
+M12,Medium,Links,7 guides have no link from another page's text,They are reachable only through menus. Includes four visitor visa pages,Crawl; in-copy link map,Internal linking step,Open
+M13,Medium,Links,Seven official links on live pages are dead,Return 404. Includes IRCC fee pages and a Sindh police service,External link test of 191 URLs,Fixed in each page's content batch,Open
+L14,Low,Indexing,Four old URLs are still indexed,"/test/, /elements/pages/ and two old posts. All four return 404 today, so they should drop out",Search Console; live test,No action; recheck,Open
+L15,Low,Indexing,11 old URLs were recorded as server errors,Crawled May to June 2026. Those sampled now return a normal 404,Search Console; live test,No action; recheck,Open
+L16,Low,Video,No videos are indexed as video results,"2 videos, reason ""Video isn't on a watch page"". 7 valid video items","Search Console, Video indexing",Decide whether video search matters,Open
+L17,Low,Mobile,Breadcrumb links are short tap targets,20px high on 93 pages; 24px is the accessibility minimum,Phone test of all 93 pages,Padding change,Open
+L18,Low,Mobile,Small labels on most pages,11.5px eyebrow labels on 91 pages. Body text is not affected,Phone test of all 93 pages,Raise to 12px,Open
+L19,Low,Structure,Two calculators skip a heading level,H1 jumps to H3 on the CRS and FSW calculators,Crawl,Add an H2,Open
+L20,Low,Images,Some YouTube thumbnails have no dimensions,11 images on /updates and /work-permit-canada. Lab layout shift is near zero,Image audit of all 93 pages,Add width and height,Open
+L21,Low,Redirects,Old URLs with a trailing slash take two redirects,"308 to the no-slash path, then to the destination. Both end correctly",Redirect test,Optional,Open

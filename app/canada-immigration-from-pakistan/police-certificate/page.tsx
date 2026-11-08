@@ -53,7 +53,7 @@ const PROVINCES: { name: string; href: string; body: ReactNode }[] = [
   },
   {
     name: 'Sindh',
-    href: 'https://prvs.sindhpolice.gov.pk/site/addRequest',
+    href: 'https://prvs.sindhpolice.gov.pk/',
     body: 'Requests go through Sindh Police’s own online request service.',
   },
   {

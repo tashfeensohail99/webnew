@@ -1,7 +1,7 @@
 {
  "summary": {
   "base": "https://tashfeenimmigrationsolutions.com",
-  "crawled": "2026-11-08T09:42:01.459Z",
+  "crawled": "2026-11-08T10:47:31.180Z",
   "total": 93,
   "ok": 93,
   "inSitemap": 93,
@@ -2167,8 +2167,8 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 790,
-   "avgSentence": 25,
+   "wordCount": 826,
+   "avgSentence": 24,
    "hits": {
     "outcome": 0,
     "superlative": 0,
@@ -2179,7 +2179,7 @@
    },
    "hitLines": {
     "volatile": [
-     "Published 23 October 2026 By 16 October 2026, IRCC had held 62 Express Entry rounds this year and issued 143,467 invitations to apply — almost double the 74,183 it had issued by the same point in 2025, across 43 rounds."
+     "By 16 October 2026, IRCC had held 62 Express Entry rounds this year and issued 143,467 invitations to apply — almost double the 74,183 it had issued by the same point in 2025, across 43 rounds."
     ]
    },
    "schema": [
@@ -2202,10 +2202,10 @@
     "modified": "2026-10-23"
    },
    "internalInCopy": [
+    "/tools/crs-calculator",
     "/express-entry/category-based-draws",
     "/pnp",
     "/express-entry/draws",
-    "/tools/crs-calculator",
     "/express-entry",
     "/about/our-team",
     "/blog",
@@ -2310,11 +2310,14 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/blog",
+    "/express-entry",
+    "/express-entry/draws",
+    "/express-entry/federal-skilled-worker",
     "/updates"
    ],
-   "inboundAll": 2,
+   "inboundAll": 5,
    "brokenInternal": [],
-   "uniqueWords": 726,
+   "uniqueWords": 762,
    "repeatedBlocks": 2,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-23",
@@ -5462,10 +5465,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "Express Entry | Tashfeen",
+   "title": "Express Entry from Pakistan: How It Works | Tashfeen",
    "description": "Express Entry is a system for three federal programmes, not one you apply to. How the pool, the CRS ranking and the invitation actually work.",
    "canonical": "https://tashfeenimmigrationsolutions.com/express-entry",
-   "ogTitle": "Express Entry | Tashfeen",
+   "ogTitle": "Express Entry from Pakistan: How It Works | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "Express Entry is a system , not a programme"
@@ -5545,7 +5548,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2054,
+   "wordCount": 2147,
    "avgSentence": 18,
    "hits": {
     "outcome": 1,
@@ -5582,6 +5585,11 @@
    "internalInCopy": [
     "/book-consultation",
     "/tools/crs-calculator",
+    "/express-entry/federal-skilled-worker",
+    "/express-entry/canadian-experience-class",
+    "/express-entry/federal-skilled-trades",
+    "/blog/express-entry-2026-so-far",
+    "/express-entry/category-based-draws",
     "/work-permit-canada",
     "/no-guarantee-policy",
     "/express-entry/draws",
@@ -5675,16 +5683,18 @@
     "/book-consultation",
     "/immigration-consultant-lahore",
     "/immigration-consultant-islamabad",
+    "/blog/express-entry-2026-so-far",
     "/privacy",
     "/terms"
    ],
    "external": [
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply.html",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/changes.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score/crs-criteria.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations/category-based-selection.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html",
-    "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/fees.html",
+    "https://ircc.canada.ca/english/information/fees/fees.asp",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html",
     "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20know%20whether%20Express%20Entry%20is%20realistic%20for%20me.%20Can%20you%20assess%20my%20profile%3F%20%5BRef%3A%20WP-1L8G%5D"
    ],
@@ -5725,7 +5735,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 1985,
+   "uniqueWords": 2073,
    "repeatedBlocks": 1,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -5823,7 +5833,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1753,
+   "wordCount": 1776,
    "avgSentence": 16,
    "hits": {
     "outcome": 2,
@@ -5962,13 +5972,14 @@
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
+    "/express-entry",
     "/express-entry/category-based-draws",
     "/study-in-canada/study-to-permanent-residence",
     "/work-permits/post-graduation"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 1656,
+   "uniqueWords": 1680,
    "repeatedBlocks": 1,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -6050,7 +6061,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2273,
+   "wordCount": 2296,
    "avgSentence": 18,
    "hits": {
     "outcome": 3,
@@ -6203,12 +6214,14 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/blog/express-entry-2026-so-far",
+    "/express-entry",
     "/express-entry/draws",
+    "/express-entry/federal-skilled-worker",
     "/pnp/manitoba"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2217,
+   "uniqueWords": 2238,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -6278,8 +6291,8 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1772,
-   "avgSentence": 33,
+   "wordCount": 1871,
+   "avgSentence": 31,
    "hits": {
     "outcome": 1,
     "superlative": 0,
@@ -6318,6 +6331,7 @@
    "internalInCopy": [
     "/tools/crs-calculator",
     "/book-consultation",
+    "/blog/express-entry-2026-so-far",
     "/express-entry",
     "/express-entry/category-based-draws",
     "/pnp",
@@ -6410,10 +6424,12 @@
     "/book-consultation",
     "/immigration-consultant-lahore",
     "/immigration-consultant-islamabad",
+    "/blog/express-entry-2026-so-far",
     "/privacy",
     "/terms"
    ],
    "external": [
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/changes.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds.html",
     "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99m%20in%20the%20Express%20Entry%20pool%20and%20would%20like%20my%20CRS%20score%20and%20profile%20reviewed.%20%5BRef%3A%20WP-TV5L%5D"
    ],
@@ -6429,7 +6445,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 1328,
+   "uniqueWords": 1429,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-23",
@@ -6531,8 +6547,8 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1930,
-   "avgSentence": 18,
+   "wordCount": 1964,
+   "avgSentence": 19,
    "hits": {
     "outcome": 2,
     "superlative": 0,
@@ -6664,6 +6680,7 @@
     "/terms"
    ],
    "external": [
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/offer-employment.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-trades.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html",
     "https://ircc.canada.ca/english/information/fees/fees.asp",
@@ -6672,11 +6689,12 @@
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
+    "/express-entry",
     "/express-entry/category-based-draws"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 1824,
+   "uniqueWords": 1859,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -6798,7 +6816,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1886,
+   "wordCount": 1923,
    "avgSentence": 16,
    "hits": {
     "outcome": 2,
@@ -6838,7 +6856,10 @@
    },
    "internalInCopy": [
     "/book-consultation",
+    "/blog/express-entry-2026-so-far",
+    "/express-entry/category-based-draws",
     "/tools/crs-calculator",
+    "/tools/fsw-67-calculator",
     "/no-guarantee-policy",
     "/about/our-team"
    ],
@@ -6929,6 +6950,7 @@
     "/book-consultation",
     "/immigration-consultant-lahore",
     "/immigration-consultant-islamabad",
+    "/blog/express-entry-2026-so-far",
     "/privacy",
     "/terms"
    ],
@@ -6942,11 +6964,12 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/",
+    "/express-entry",
     "/express-entry/category-based-draws"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 1800,
+   "uniqueWords": 1838,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -11361,8 +11384,7 @@
     "/",
     "/blog/ontario-higher-earners-2026",
     "/business-immigration",
-    "/pnp/manitoba",
-    "/updates"
+    "/pnp/manitoba"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
@@ -16894,7 +16916,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 418,
+   "wordCount": 422,
    "avgSentence": 26,
    "hits": {
     "outcome": 0,
@@ -17029,7 +17051,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 363,
+   "uniqueWords": 367,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-18",
@@ -17224,7 +17246,7 @@
    "robotsHeader": null,
    "metaRobots": "index, follow",
    "title": "CRS Calculator — Express Entry Points | Tashfeen",
-   "description": "A free Express Entry CRS estimate, what IRCC changed on 3 November 2026, and how to check any calculator against IRCC’s own points table.",
+   "description": "Free Express Entry CRS calculator on the grid in force since 3 November 2026, with high-wage work and job offers. Check it against IRCC’s own tables.",
    "canonical": "https://tashfeenimmigrationsolutions.com/tools/crs-calculator",
    "ogTitle": "CRS Calculator — Express Entry Points | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
@@ -17266,8 +17288,8 @@
     }
    ],
    "headingSkips": 1,
-   "wordCount": 1375,
-   "avgSentence": 18,
+   "wordCount": 2603,
+   "avgSentence": 32,
    "hits": {
     "outcome": 2,
     "superlative": 0,
@@ -17282,7 +17304,8 @@
      "Can you guarantee an invitation if I improve my score?"
     ],
     "firmClaim": [
-     "None or less than a year 1 year 2 years 3 years 4 years 5 years or more Skilled work experience OUTSIDE Canada None or less than a year 1 year 2 years 3 years or more Do you hold a Canadian certificate of qualification in a trade?"
+     "None or less than a year 1 year 2 years 3 years 4 years 5 years or more Do you have a valid job offer in Canada in one of these high-wage occupations?",
+     "No, or the job is not on the list Accommodation service managers (NOC 60031) Administrators - post-secondary education and vocational training (NOC 40020) Advertising, marketing and public relations managers (NOC 10022) Aerospace engineers (NOC 21390) Agricultural representatives, consultants and specialists (NOC 21112) Air pilots, flight engineers and flying instructors (NOC 72600) Air traffic controllers and related occupations (NOC 72601) Aircraft instrument, electrical and avionics mechanics, technicians and inspectors (NOC 22313) Aircraft mechanics and aircraft inspectors (NOC 72404) Architects (NOC 21200) Architecture and science managers (NOC 20011) Archivists (NOC 51102) Assessors, business valuators and appraisers (NOC 12203) Audiologists and speech-language pathologists (NOC 31112) Authors and writers (except technical) (NOC 51111) Banking, credit and other investment managers (NOC 10021) Biologists and related scientists (NOC 21110) Boilermakers (NOC 72103) Border services, customs, and immigration officers (NOC 43203) Bricklayers (NOC 72320) Broadcast technicians (NOC 52112) Business development officers and market researchers and analysts (NOC 41402) Business systems specialists (NOC 21221) Central control and process operators, mineral and metal processing (NOC 93100) Central control and process operators, petroleum, gas and chemical processing (NOC 93101) Chemical engineers (NOC 21320) Chemists (NOC 21101) Civil engineers (NOC 21300) College and other vocational instructors (NOC 41210) Commissioned officers of the Canadian Armed Forces (NOC 40042) Commissioned police officers and related occupations in public protection services (NOC 40040) Computer and information systems managers (NOC 20012) Computer engineers (except software engineers and designers) (NOC 21311) Computer systems developers and programmers (NOC 21230) Conservators and curators (NOC 51101) Construction inspectors (NOC 22233) Construction managers (NOC 70010) Contractors and supervisors, carpentry trades (NOC 72013) Contractors and supervisors, electrical trades and telecommunications occupations (NOC 72011) Contractors and supervisors, heavy equipment operator crews (NOC 72021) Contractors and supervisors, machining, metal forming, shaping and erecting trades and related occupations (NOC 72010) Contractors and supervisors, mechanic trades (NOC 72020) Contractors and supervisors, oil and gas drilling and services (NOC 82021) Contractors and supervisors, other construction trades, installers, repairers and servicers (NOC 72014) Contractors and supervisors, pipefitting trades (NOC 72012) Corporate sales managers (NOC 60010) Correctional service officers (NOC 43201) Crane operators (NOC 72500) Cybersecurity specialists (NOC 21220) Data scientists (NOC 21211) Database analysts and data administrators (NOC 21223) Deck officers, water transport (NOC 72602) Dental hygienists and dental therapists (NOC 32111) Dentists (NOC 31110) Dietitians and nutritionists (NOC 31121) Economists and economic policy researchers and analysts (NOC 41401) Education policy researchers, consultants and program officers (NOC 41405) Educational counsellors (NOC 41320) Electrical and electronics engineering technologists and technicians (NOC 22310) Electrical and electronics engineers (NOC 21310) Electrical power line and cable workers (NOC 72203) Elementary school and kindergarten teachers (NOC 41221) Elevator constructors and mechanics (NOC 72406) Engineer officers, water transport (NOC 72603) Engineering inspectors and regulatory officers (NOC 22231) Engineering managers (NOC 20010) Facility operation and maintenance managers (NOC 70012) Financial advisors (NOC 11102) Financial and investment analysts (NOC 11101) Financial auditors and accountants (NOC 11100) Financial managers (NOC 10010) Fire chiefs and senior firefighting officers (NOC 40041) Firefighters (NOC 42101) Fishing masters and officers (NOC 83120) Forestry professionals (NOC 21111) Gas fitters (NOC 72302) General practitioners and family physicians (NOC 31102) Geological engineers (NOC 21331) Geoscientists and oceanographers (NOC 21102) Government managers - economic analysis, policy development and program administration (NOC 40011) Government managers - education policy development and program administration (NOC 40012) Government managers - health and social policy development and program administration (NOC 40010) Health policy researchers, consultants and program officers (NOC 41404) Heavy-duty equipment mechanics (NOC 72401) Human resources managers (NOC 10011) Human resources professionals (NOC 11200) Industrial and manufacturing engineers (NOC 21321) Industrial electricians (NOC 72201) Industrial instrument technicians and mechanics (NOC 22312) Information systems specialists (NOC 21222) Insulators (NOC 72321) Insurance adjusters and claims examiners (NOC 12201) Insurance, real estate and financial brokerage managers (NOC 10020) Ironworkers (NOC 72105) Judges (NOC 41100) Land surveyors (NOC 21203) Landscape architects (NOC 21201) Lawyers and Quebec notaries (NOC 41101) Legislators (NOC 00010) Librarians (NOC 51100) Library, archive, museum and art gallery managers (NOC 50010) Managers - publishing, motion pictures, broadcasting and performing arts (NOC 50011) Managers in customer and personal services (NOC 60040) Managers in health care (NOC 30010) Managers in natural resources production and fishing (NOC 80010) Managers in social, community and correctional services (NOC 40030) Managers in transportation (NOC 70020) Manufacturing managers (NOC 90010) Mathematicians, statisticians and actuaries (NOC 21210) Mechanical engineers (NOC 21301) Medical laboratory technologists (NOC 32120) Medical radiation technologists (NOC 32121) Medical sonographers (NOC 32122) Metallurgical and materials engineers (NOC 21322) Meteorologists and climatologists (NOC 21103) Mining engineers (NOC 21330) Natural and applied science policy researchers, consultants and program officers (NOC 41400) Nurse practitioners (NOC 31302) Nursing coordinators and supervisors (NOC 31300) Occupational health and safety specialists (NOC 22232) Occupational therapists (NOC 31203) Oil and gas well drillers, servicers, testers and related workers (NOC 83101) Other administrative services managers (NOC 10019) Other business services managers (NOC 10029) Other financial officers (NOC 11109) Other managers in public administration (NOC 40019) Other professional engineers (NOC 21399) Other professional occupations in physical sciences (NOC 21109) Other professional occupations in social science (NOC 41409) Paramedical occupations (NOC 32102) Petroleum engineers (NOC 21332) Pharmacists (NOC 31120) Physician assistants, midwives and allied health professionals (NOC 31303) Physicists and astronomers (NOC 21100) Physiotherapists (NOC 31202) Police investigators and other investigative occupations (NOC 41310) Police officers (except commissioned) (NOC 42100) Postal and courier services managers (NOC 70021) Power engineers and power systems operators (NOC 92100) Power system electricians (NOC 72202) Probation and parole officers (NOC 41311) Producers, directors, choreographers and related occupations (NOC 51120) Professional occupations in business management consulting (NOC 11201) Program officers unique to government (NOC 41407) Psychologists (NOC 31200) Public and environmental health and safety professionals (NOC 21120) Pulping, papermaking and coating control operators (NOC 93102) Purchasing managers (NOC 10012) Railway and yard locomotive engineers (NOC 73310) Railway carmen/women (NOC 72403) Railway conductors and brakemen/women (NOC 73311) Railway traffic controllers and marine traffic regulators (NOC 72604) Recreation, sports and fitness program and service directors (NOC 50012) Registered nurses and registered psychiatric nurses (NOC 31301) Respiratory therapists, clinical perfusionists and cardiopulmonary technologists (NOC 32103) Retail and wholesale trade managers (NOC 60020) School principals and administrators of elementary and secondary education (NOC 40021) Secondary school teachers (NOC 41220) Securities agents, investment dealers and brokers (NOC 11103) Senior government managers and officials (NOC 00011) Senior managers - construction, transportation, production and utilities (NOC 00015) Senior managers - financial, communications and other business services (NOC 00012) Senior managers - health, education, social and community services and membership organizations (NOC 00013) Senior managers - trade, broadcasting and other services (NOC 00014) Sheet metal workers (NOC 72102) Social policy researchers, consultants and program officers (NOC 41403) Social workers (NOC 41300) Software developers and programmers (NOC 21232) Software engineers and designers (NOC 21231) Specialists in clinical and laboratory medicine (NOC 31100) Specialists in surgery (NOC 31101) Steamfitters, pipefitters and sprinkler system installers (NOC 72301) Supervisors, logging and forestry (NOC 82010) Supervisors, mineral and metal processing (NOC 92010) Supervisors, mining and quarrying (NOC 82020) Supervisors, petroleum, gas and chemical processing and utilities (NOC 92011) Supervisors, railway transport operations (NOC 72023) Technical occupations in geomatics and meteorology (NOC 22214) Technical writers (NOC 51112) Telecommunication carriers managers (NOC 10030) Underground production and development miners (NOC 83100) University professors and lecturers (NOC 41200) Urban and land use planners (NOC 21202) Utilities managers (NOC 90011) Veterinarians (NOC 31103) Web developers and programmers (NOC 21234) Skilled work experience OUTSIDE Canada None or less than a year 1 year 2 years 3 years or more Do you hold a Canadian certificate of qualification in a trade?"
     ],
     "volatile": [
      "Job-offer points had been gone since March 2025."
@@ -17403,10 +17426,11 @@
     "/terms"
    ],
    "external": [
-    "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score/crs-criteria.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score.html",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score/high-wage.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/submit-profile/rounds-invitations.html",
     "https://wa.me/923350001111?text=Hi%2C%20I%20used%20the%20CRS%20calculator%20on%20your%20site.%0A%0AIndicative%20CRS%20score%3A%20225%0AAge%2030%20%C2%B7%20Bachelor%27s%20degree%20%2F%20three-or-more-year%20programme%0ACanadian%20work%3A%200%20yr%20%C2%B7%20Foreign%20work%3A%200%20yr%0AApplying%20as%20a%20single%20applicant%0A%0AI%E2%80%99d%20like%20to%20know%20what%20my%20realistic%20options%20are.%0A%0A%5BRef%3A%20CRS-TOOL%5D",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/offer-employment.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/changes.html",
     "https://wa.me/923350001111?text=Hi%2C%20I%20used%20the%20CRS%20calculator%20on%20your%20site%20and%20I%E2%80%99d%20like%20to%20discuss%20my%20options.%20%5BRef%3A%20WP-1S1S%5D"
    ],
@@ -17432,7 +17456,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 1389,
+   "uniqueWords": 2621,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -17492,7 +17516,7 @@
     }
    ],
    "headingSkips": 1,
-   "wordCount": 1123,
+   "wordCount": 1141,
    "avgSentence": 20,
    "hits": {
     "outcome": 0,
@@ -17631,11 +17655,12 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/",
+    "/express-entry/federal-skilled-worker",
     "/tools"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 1108,
+   "uniqueWords": 1126,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -18266,11 +18291,35 @@
     },
     {
      "level": 2,
-     "text": "Pakistan MOFA Online Document Attestation — No More Long Queues or Office Visits!"
+     "text": "Canada Visa Refused? — How Judicial Review Can Challenge an Unfair Decision"
     },
     {
      "level": 2,
      "text": "More updates"
+    },
+    {
+     "level": 3,
+     "text": "USA E-2 Investor Visa — Start or Buy a Business in America!"
+    },
+    {
+     "level": 3,
+     "text": "الحمدللہ! پشاور ایونٹ کامیاب، بہت جلد پشاور میں Tashfeen Immigration Solutions کی نئی برانچ کا قیام!"
+    },
+    {
+     "level": 3,
+     "text": "kaha sy aty hai ya log"
+    },
+    {
+     "level": 3,
+     "text": "Does PKR 50 Lakh in Your Bank Account Guarantee a US Visit Visa? — The Truth About Bank Statements"
+    },
+    {
+     "level": 3,
+     "text": "Canada Visa Refused Again? — Copy-Paste Reasons? Explore Judicial Review!"
+    },
+    {
+     "level": 3,
+     "text": "Pakistan MOFA Online Document Attestation — No More Long Queues or Office Visits!"
     },
     {
      "level": 3,
@@ -18283,14 +18332,6 @@
     {
      "level": 3,
      "text": "Canada LMIA Processing Time Update — Major Changes in Processing Times!"
-    },
-    {
-     "level": 3,
-     "text": "Ontario PR Update 2026: Higher Earners Could Get More Points! — $80,000 Income Rule Explained"
-    },
-    {
-     "level": 3,
-     "text": "U.S. Green Card Without a Job Offer? — EB-2 NIW Explained"
     },
     {
      "level": 2,
@@ -18306,10 +18347,10 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 447,
-   "avgSentence": 19,
+   "wordCount": 529,
+   "avgSentence": 18,
    "hits": {
-    "outcome": 0,
+    "outcome": 1,
     "superlative": 0,
     "firmClaim": 0,
     "stock": 0,
@@ -18317,8 +18358,11 @@
     "placeholder": 0
    },
    "hitLines": {
+    "outcome": [
+     "Update 2 November 2026 kaha sy aty hai ya log USA 31 October 2026 Does PKR 50 Lakh in Your Bank Account Guarantee a US Visit Visa?"
+    ],
     "volatile": [
-     "— $80,000 Income Rule Explained Read our Ontario PNP guide → USA 14 October 2026 U.S.",
+     "Update 2 November 2026 kaha sy aty hai ya log USA 31 October 2026 Does PKR 50 Lakh in Your Bank Account Guarantee a US Visit Visa?",
      "Austria Red-White-Red Card from Pakistan in 2026 MOFA Online Attestation in Pakistan: How It Works EB-2 NIW Green Card from Pakistan: Where It Stands Express Entry in 2026 So Far: What 62 Rounds Show Ontario’s $80,000 Points Change: Who It Helps What we cover The topics behind the videos A video is a quick update."
     ]
    },
@@ -18342,19 +18386,18 @@
    },
    "internalInCopy": [
     "/book-consultation",
+    "/canada-visa-refused",
+    "/usa",
     "/work-permit-canada",
     "/europe",
     "/canada-immigration-from-pakistan",
-    "/pnp/ontario",
-    "/usa",
     "/blog/austria-red-white-red-card",
     "/blog/mofa-online-attestation",
     "/blog/eb2-niw-pakistan",
     "/blog/express-entry-2026-so-far",
     "/blog/ontario-higher-earners-2026",
     "/express-entry/draws",
-    "/pnp",
-    "/canada-visa-refused"
+    "/pnp"
    ],
    "internalAll": [
     "/immigration-programs",
@@ -18455,7 +18498,7 @@
     "https://www.youtube.com/channel/UC7yaY91cb22ZPnBPJyGBNBg",
     "https://wa.me/923350001111?text=Hi%2C%20I%20watched%20one%20of%20your%20videos%20and%20would%20like%20to%20ask%20about%20my%20case.%20%5BRef%3A%20WP-7ZW7%5D"
    ],
-   "images": 6,
+   "images": 10,
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/",
@@ -18463,7 +18506,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 358,
+   "uniqueWords": 389,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-23",
