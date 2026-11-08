@@ -1,7 +1,7 @@
 {
  "summary": {
   "base": "https://tashfeenimmigrationsolutions.com",
-  "crawled": "2026-11-08T13:19:44.964Z",
+  "crawled": "2026-11-08T13:36:28.142Z",
   "total": 93,
   "ok": 93,
   "inSitemap": 93,
@@ -14060,10 +14060,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "Study in Canada | Tashfeen",
+   "title": "Study in Canada from Pakistan: Full Route | Tashfeen",
    "description": "The Canadian study route end to end: choosing a DLI, the attestation letter, the study permit, proof of funds, working while studying, and the PGWP.",
    "canonical": "https://tashfeenimmigrationsolutions.com/study-in-canada",
-   "ogTitle": "Study in Canada | Tashfeen",
+   "ogTitle": "Study in Canada from Pakistan: Full Route | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "Study in Canada — without the fairy tale"
@@ -14163,8 +14163,8 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2093,
-   "avgSentence": 19,
+   "wordCount": 2082,
+   "avgSentence": 18,
    "hits": {
     "outcome": 2,
     "superlative": 0,
@@ -14200,6 +14200,7 @@
    },
    "internalInCopy": [
     "/book-consultation",
+    "/study-in-canada/working-while-studying",
     "/no-guarantee-policy",
     "/about/our-team"
    ],
@@ -14314,7 +14315,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 1998,
+   "uniqueWords": 1986,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -14380,7 +14381,7 @@
     },
     {
      "level": 2,
-     "text": "The failure patterns we see from Pakistan"
+     "text": "Where these applications go wrong"
     },
     {
      "level": 2,
@@ -14428,14 +14429,14 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2681,
+   "wordCount": 2704,
    "avgSentence": 18,
    "hits": {
     "outcome": 3,
     "superlative": 0,
     "firmClaim": 1,
     "stock": 0,
-    "volatile": 0,
+    "volatile": 1,
     "placeholder": 0
    },
    "hitLines": {
@@ -14446,6 +14447,9 @@
     ],
     "firmClaim": [
      "Both are matters to put to a licensed representative on the facts, not to resolve from a web page."
+    ],
+    "volatile": [
+     "The list changed on 21 January 2025, so check IRCC’s page for spouses of students before you commit to a programme, and re-check before you file."
     ]
    },
    "schema": [
@@ -14573,7 +14577,7 @@
    "external": [
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/help-your-spouse-common-law-partner-work-canada.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/prepare/minor-children.html",
-    "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/entry-requirements-by-country.html",
+    "https://ircc.canada.ca/english/visit/visas.asp",
     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/",
     "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20know%20whether%20my%20spouse%20and%20children%20can%20come%20with%20me%20while%20I%20study%20in%20Canada.%20%5BRef%3A%20WP-1XTY%5D"
    ],
@@ -14584,7 +14588,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2601,
+   "uniqueWords": 2633,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -14710,7 +14714,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2245,
+   "wordCount": 2274,
    "avgSentence": 19,
    "hits": {
     "outcome": 3,
@@ -14870,7 +14874,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2109,
+   "uniqueWords": 2138,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -14956,7 +14960,7 @@
     },
     {
      "level": 2,
-     "text": "The failure patterns we see from Pakistan"
+     "text": "Where these applications go wrong"
     },
     {
      "level": 2,
@@ -14976,7 +14980,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2555,
+   "wordCount": 2563,
    "avgSentence": 19,
    "hits": {
     "outcome": 3,
@@ -15120,7 +15124,7 @@
     "/terms"
    ],
    "external": [
-    "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html",
     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/",
     "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20know%20whether%20my%20proof%20of%20funds%20is%20strong%20enough%20for%20a%20Canadian%20study%20permit.%20%5BRef%3A%20WP-YBD3%5D"
    ],
@@ -15137,7 +15141,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2452,
+   "uniqueWords": 2461,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -15223,7 +15227,7 @@
     },
     {
      "level": 2,
-     "text": "The failure patterns we see from Pakistan"
+     "text": "Where these applications go wrong"
     },
     {
      "level": 2,
@@ -15243,11 +15247,11 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2151,
+   "wordCount": 2309,
    "avgSentence": 18,
    "hits": {
     "outcome": 2,
-    "superlative": 0,
+    "superlative": 1,
     "firmClaim": 0,
     "stock": 0,
     "volatile": 0,
@@ -15257,6 +15261,9 @@
     "outcome": [
      "We publish a no-guarantee policy for the same reason.",
      "Is the attestation letter a guarantee my study permit will be approved?"
+    ],
+    "superlative": [
+     "IRCC also lists the Francophone Minority Communities Student Pilot, federally designated military colleges, and Quebec vocational programmes leading to a DVS, AVS or STC."
     ]
    },
    "schema": [
@@ -15396,7 +15403,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2023,
+   "uniqueWords": 2184,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -16064,7 +16071,7 @@
     },
     {
      "level": 2,
-     "text": "The failure patterns we see"
+     "text": "Where extensions go wrong"
     },
     {
      "level": 2,
@@ -16084,8 +16091,8 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2635,
-   "avgSentence": 18,
+   "wordCount": 2750,
+   "avgSentence": 19,
    "hits": {
     "outcome": 3,
     "superlative": 0,
@@ -16237,7 +16244,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2505,
+   "uniqueWords": 2621,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -16525,10 +16532,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "Working While Studying in Canada | Tashfeen",
-   "description": "How work permission follows the conditions on your study permit: on-campus and off-campus work, placements, and why exceeding them breaches status.",
+   "title": "Working While Studying in Canada: Hour Limits | Tashfeen",
+   "description": "How many hours international students can work in Canada, when the limit lifts, on-campus and co-op rules, and how students lose status by overstepping.",
    "canonical": "https://tashfeenimmigrationsolutions.com/study-in-canada/working-while-studying",
-   "ogTitle": "Working While Studying in Canada | Tashfeen",
+   "ogTitle": "Working While Studying in Canada: Hour Limits | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "Permission to work is a condition on your permit"
@@ -16596,8 +16603,8 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2585,
-   "avgSentence": 21,
+   "wordCount": 2630,
+   "avgSentence": 20,
    "hits": {
     "outcome": 0,
     "superlative": 0,
@@ -16731,6 +16738,7 @@
     "/terms"
    ],
    "external": [
+    "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-186.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/work-off-campus.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/after-you-apply.html",
@@ -16740,13 +16748,14 @@
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
+    "/study-in-canada",
     "/study-in-canada/bringing-family",
     "/study-in-canada/study-permit-extension",
     "/work-permits/post-graduation"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2543,
+   "uniqueWords": 2596,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",

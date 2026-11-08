@@ -18,14 +18,15 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  *
  * This page exists to prevent one specific, expensive mistake: letting a work
  * permit run out while a permanent residence application is in the queue. The
- * BOWP is a narrow, conditional bridge — not a general extension — and the
- * window to use it is defined by the expiry of the permit you already hold.
+ * BOWP is a narrow, conditional bridge — not a general extension. Who can use it
+ * turns on the class, the stage the PR file has reached and the applicant's status.
+ * IRCC publishes no timing window before expiry, so this page must not imply one.
  * Everything here is structural. No fees, no processing times, no thresholds.
  */
 export const metadata: Metadata = {
   title: 'Bridging Open Work Permit (BOWP) for Canada',
   description:
-    'What a bridging open work permit does, which PR applicants it covers, the timing rule tied to your current permit’s expiry, and who it does not help.',
+    'A bridging open work permit lets eligible PR applicants keep working. Which classes qualify, the stage your file must reach, and options if your permit expired.',
   alternates: { canonical: '/work-permits/bridging-open-work-permit' },
 };
 
@@ -36,13 +37,13 @@ const CONDITIONS = [
     icon: 'globe' as const,
     kicker: 'Where you are',
     title: 'Physically in Canada',
-    body: 'The bridging permit is for people already inside Canada with temporary status. It is not a route you can start from Pakistan, and leaving at the wrong moment can complicate it.',
+    body: 'You must live in Canada when you apply and, for most classes, intend to live outside Quebec. It is not a route you can start from Pakistan, and leaving at the wrong moment can complicate it.',
   },
   {
     icon: 'permit' as const,
     kicker: 'What you hold',
-    title: 'A valid work permit now',
-    body: 'You must already hold authorisation to work — an employer-specific permit, a post-graduation permit, or another open permit. A visitor record or a study permit is not the same thing.',
+    title: 'A work permit, maintained status or restoration',
+    body: 'You must have valid temporary resident status and a valid work permit, have an expired permit but have maintained your status as a worker, or be eligible to restore your status and get a work permit.',
   },
   {
     icon: 'doc' as const,
@@ -52,28 +53,28 @@ const CONDITIONS = [
   },
   {
     icon: 'refresh' as const,
-    kicker: 'When you apply',
-    title: 'Inside the expiry window',
-    body: 'The application is tied to the remaining life of your current permit. Apply too early and it is premature; apply after expiry and you are no longer bridging anything.',
+    kicker: 'Whose application',
+    title: 'You are the principal applicant',
+    body: 'The bridging permit is for the principal applicant on the permanent residence application, not for a spouse or dependant listed on it.',
   },
 ];
 
 const STEPS = [
   {
     title: 'You are working in Canada on a permit',
-    body: 'The bridge assumes an existing lawful basis to work. Everything below depends on that permit still being alive when you act.',
+    body: 'The bridge assumes a lawful basis to work. Everything below is far simpler if that permit is still valid when you act.',
   },
   {
     title: 'You file for permanent residence',
     body: 'Under an economic class that the bridging measure covers. Filing starts the clock but does not by itself make you eligible.',
   },
   {
-    title: 'IRCC acknowledges or clears the file',
-    body: 'Each class has its own trigger point, and they are not the same: some classes open the bridge once the application is acknowledged as received, others only once the file has cleared a completeness check or reached an approval-in-principle stage. IRCC also introduces temporary measures that move these trigger points. Confirm the trigger for your own class on IRCC’s current page rather than assuming.',
+    title: 'Your file reaches the required stage',
+    body: 'Each class has its own trigger point: a completeness check, an eligibility assessment, or approval in principle. An acknowledgement of receipt alone is not enough. IRCC also introduces temporary measures that move these trigger points, so confirm the trigger for your own class on IRCC’s current page.',
   },
   {
     title: 'You apply for the bridging permit online',
-    body: 'Before your current permit expires, and within the window IRCC defines relative to that expiry. You apply from inside Canada, as an extension of your work authorisation.',
+    body: 'Ideally before your current permit expires, because that is what lets you keep working. You apply from inside Canada, following IRCC’s instructions for extending or changing a work permit, and select an open work permit.',
   },
   {
     title: 'You keep working while it is assessed',
@@ -92,7 +93,7 @@ const FAQS = [
   },
   {
     q: 'Which permanent residence applicants does it cover?',
-    a: 'As a category, it is aimed at economic-class applicants — the federal Express Entry programs, provincial nominee applicants, Quebec’s own economic selection, and a rotating set of federal pilots. It is not a general measure for every route to permanent residence: family class and humanitarian applicants are dealt with under different rules. We deliberately do not publish the list of covered classes here. Pilots open and close, classes are added and removed, and each class has its own stage requirement, so a list copied onto a law-firm page ages badly. Check your own class against IRCC’s current page for this permit rather than against any summary, including this one.',
+    a: 'As of 8 November 2026, IRCC lists the Federal Skilled Worker Program, Canadian Experience Class and Federal Skilled Trades Program; the Provincial Nominee Program, through Express Entry or outside it; Quebec skilled workers and investors; the caring for children and high medical needs classes; the Home Child Care Provider and Home Support Worker pilots that opened from 2019 to 2024; and the Agri-Food Pilot. Applicants under the Home Care Worker Immigration pilots that opened in 2025 are not eligible. Family class and humanitarian applicants are dealt with under different rules. Each class has its own stage requirement, so check yours against IRCC’s current page for this permit.',
   },
   {
     q: 'I have a provincial nomination. Am I automatically eligible for an open permit?',
@@ -100,11 +101,11 @@ const FAQS = [
   },
   {
     q: 'When exactly should I apply?',
-    a: 'Relative to your current permit’s expiry, inside the window IRCC publishes. Applying far too early tends to result in refusal as premature; applying after your permit has already expired means there is nothing left to bridge. The safe practice is to diarise your expiry date the day you receive your permit and take advice well before the window opens.',
+    a: 'IRCC does not set a window before your permit expires. Apply once your permanent residence file has reached the stage your class requires and, if you can, before your current permit expires, because that is what normally lets you keep working while the application is decided. If you are not yet eligible, IRCC’s advice is to extend your work permit rather than let it expire.',
   },
   {
     q: 'What happens if I let my permit expire first?',
-    a: 'You lose the ability to keep working, and you are out of status. Restoration of status exists but is discretionary, time-limited and not a substitute for filing on time — and in the meantime you cannot work. It is one of the more damaging and most avoidable outcomes we see.',
+    a: 'You lose the ability to keep working. You may still be able to apply if you maintained your status, or if you are eligible to restore your status and get a work permit. Restoration must be applied for within 90 days after losing status under section 182 of the Regulations, has its own fee, and you cannot work until you are authorised. It is one of the more damaging and avoidable outcomes.',
   },
   {
     q: 'Does the bridging permit improve my chances of permanent residence?',
@@ -134,8 +135,8 @@ export default function BridgingOpenWorkPermitPage() {
         subtitle={
           <>
             A bridging open work permit closes the gap between a work permit that is running out and a
-            permanent residence decision that has not arrived. It is narrow, conditional, and tied to
-            the expiry date of the permit you already hold.
+            permanent residence decision that has not arrived. It is narrow and conditional: it depends
+            on your class, the stage your application has reached, and your status.
           </>
         }
       >
@@ -169,7 +170,7 @@ export default function BridgingOpenWorkPermitPage() {
             Two things are worth being blunt about. First, it is a bridge and nothing more — it does not
             advance, strengthen or accelerate the permanent residence application underneath it.
             Second, it is not a general safety net. It covers particular classes of applicant, at a
-            particular stage, within a particular window. Falling outside any of those means it does not
+            particular stage, with particular status. Falling outside any of those means it does not
             apply to you.
           </p>
         </Prose>
@@ -191,18 +192,27 @@ export default function BridgingOpenWorkPermitPage() {
         </div>
 
         <div className="mt-10">
-          <Callout title="The expiry date is the whole game">
+          <Callout title="Do not let your permit lapse while you wait">
             <p>
-              Almost every serious problem with this route reduces to timing. The right to apply is
-              defined by reference to when your current permit expires, and the protection that lets you
-              keep working while the new application is assessed depends on having filed before that
-              expiry — not after it.
+              IRCC does not publish a window before expiry in which you must apply. What it does say is
+              not to let your work permit expire while you wait to become eligible: extend it if you
+              can, even if your employer needs a new LMIA or offer of employment to do so. Filing before
+              expiry is also what normally lets you keep working while the application is assessed.
             </p>
             <p>
-              Miss it and the consequences are immediate and real: you must stop working, your employer
-              must stop employing you, and you are relying on a discretionary restoration process that
-              nobody should plan around. Treat the expiry date on your permit as a hard deadline you work
-              backwards from, not a date you notice when it arrives.
+              If your permit has already expired you may still have options, because IRCC accepts
+              applicants who have maintained their status or are eligible to restore it. But restoration
+              must be applied for within 90 days after losing status, under{' '}
+              <a
+                href="https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-182.html"
+                className="font-semibold text-accent-500 link-underline"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                section 182 of the Regulations
+              </a>
+              , it has its own fee, and you must stop working until you are authorised. Treat the expiry
+              date on your permit as a hard deadline you work backwards from.
             </p>
           </Callout>
         </div>
@@ -256,8 +266,30 @@ export default function BridgingOpenWorkPermitPage() {
                 pilots are expressly outside it.
               </p>
               <p>
-                We do not reproduce the covered list, because it is adjusted as pilots begin and end and
-                each class carries its own stage requirement. Check your own class against{' '}
+                As of 8 November 2026, IRCC sets these stages:
+              </p>
+              <ul>
+                <li>
+                  <strong>Express Entry programs, and provincial nominees through Express Entry:</strong>{' '}
+                  completeness check passed.
+                </li>
+                <li>
+                  <strong>Provincial nominees outside Express Entry:</strong> eligibility assessment
+                  passed.
+                </li>
+                <li>
+                  <strong>Quebec skilled workers and investors:</strong> completeness check passed.
+                </li>
+                <li>
+                  <strong>Caring classes, the 2019 to 2024 home care pilots and the Agri-Food Pilot:</strong>{' '}
+                  approval in principle.
+                </li>
+                <li>
+                  <strong>Home Care Worker Immigration pilots opened in 2025:</strong> not eligible.
+                </li>
+              </ul>
+              <p>
+                These are adjusted as pilots begin and end. Check your own class against{' '}
                 <a
                   href="https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/pr-work-permits/bridging.html"
                   className="font-semibold text-accent-500 link-underline"
@@ -304,9 +336,9 @@ export default function BridgingOpenWorkPermitPage() {
         />
         <Prose>
           <p>
-            <strong>Applying after the permit has already expired.</strong> The single most damaging
-            error, and the least recoverable. Once expiry has passed there is no bridge, only a
-            discretionary restoration process during which you cannot work.
+            <strong>Letting the permit expire while you wait.</strong> A damaging error. IRCC can still
+            accept someone who maintained status or is eligible to restore it, but restoration has its
+            own 90-day limit and you cannot work until you are authorised.
           </p>
           <p>
             <strong>Applying before the bridge has opened.</strong> Filing the moment the permanent
@@ -358,9 +390,8 @@ export default function BridgingOpenWorkPermitPage() {
             </p>
             <p>
               It also does not help people whose permanent residence application sits outside the covered
-              economic classes, people whose current status is something other than a work permit, people
-              whose permit has already expired, and people whose permanent residence application has not
-              reached the stage that opens the bridge. In each of those cases the answer is not a
+              economic classes, people with no work permit and no route to restoring one, and people whose
+              permanent residence application has not reached the stage that opens the bridge. In each of those cases the answer is not a
               bridging permit — and pretending otherwise wastes the little time that is left.
             </p>
             <p>
@@ -379,13 +410,12 @@ export default function BridgingOpenWorkPermitPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="Where the current details live"
-          title="Windows, fees and covered classes"
+          title="Fees and covered classes"
         />
         <Prose>
           <p>
-            The window relative to your permit’s expiry, the application fee, the open-work-permit
-            holder fee where it applies, and the exact list of covered permanent residence classes are
-            all published by IRCC and all change. We deliberately do not reproduce them here, because a
+            The application fee and the open-work-permit holder fee where it applies are published by
+            IRCC and change. We deliberately do not reproduce them here, because a
             figure that is correct today becomes a trap on a page you might read next year.
           </p>
           <p>

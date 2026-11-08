@@ -87,7 +87,7 @@ const FITS = [
     icon: 'refresh' as const,
     kicker: 'Told “no”, wrongly',
     title: 'You were told to stop',
-    body: 'You’ve been told “you need a job offer first” and stopped there — when this route needs no employer at all.',
+    body: 'You’ve been told “you need a job offer first” and stopped there — when this route needs no third-party employer at all.',
   },
 ];
 
@@ -103,7 +103,7 @@ const STEPS = [
   },
   {
     title: 'Assemble the evidence',
-    body: 'Proof you’ve run a business, and funds documented in your own name over the holding period your case requires. We tell you the exact figures for you.',
+    body: 'Proof you’ve run a business, and funds that are transferable, available and not tied up by debts or other obligations, as IRCC requires. We tell you the exact figures for you.',
   },
   {
     title: 'Lawyer review',
@@ -111,7 +111,7 @@ const STEPS = [
   },
   {
     title: 'File with IRCC',
-    body: 'We submit the application and the business case together, and pay the government fees to IRCC on your behalf, itemised for you in advance.',
+    body: 'We submit the application and the business case together, with the offer of employment you submit for yourself through IRCC’s Employer Portal, and pay the government fees, including the employer compliance fee, on your behalf, itemised for you in advance.',
   },
   {
     title: 'Decision',
@@ -136,7 +136,7 @@ const FAQS = [
   },
   {
     q: 'Do I really not need a job offer?',
-    a: 'Correct — the C11 is a route that needs no employer, no LMIA, and no job offer to chase. You are the applicant and, in effect, the employer. That does not make it easy: it is a real business case argued on “significant benefit” to Canada, with real money behind it.',
+    a: 'Correct — the C11 is a route that needs no third-party employer, no LMIA, and no job offer to chase. You are the applicant and, in effect, the employer, so you submit an offer of employment for yourself through IRCC’s Employer Portal and pay the employer compliance fee. That does not make it easy: it is a real business case argued on “significant benefit” to Canada, with real money behind it.',
   },
   {
     q: 'What is a C11 work permit?',
@@ -160,7 +160,11 @@ const FAQS = [
   },
   {
     q: 'Can a C11 lead to permanent residence?',
-    a: 'Not on its own. The C11 is a temporary permit for business owners, and IRCC’s guidance directs owners who intend to settle permanently to other routes, such as provincial entrepreneur streams. Some people go on to qualify for permanent residence through a separate application on their own merits — whether that is realistic for you depends on your profile, and we will tell you straight.',
+    a: 'Not on its own. The C11 is a temporary permit for business owners, and IRCC’s guidance directs owners who intend to settle permanently to other routes, such as provincial entrepreneur streams. Self-employed time on a C11 does not count as work experience for the Canadian Experience Class. Some people go on to qualify for permanent residence through a separate application on their own merits — whether that is realistic for you depends on your profile, and we will tell you straight.',
+  },
+  {
+    q: 'Can my spouse work and my children study?',
+    a: 'A spouse does not get work rights automatically. Whether they qualify for an open work permit depends on IRCC’s rules for spouses of workers, which our spousal open work permit page explains. Minor children who intend to study should generally apply for a study permit before entering Canada.',
   },
   {
     q: 'What does it cost?',
@@ -191,8 +195,7 @@ export default function WorkPermitPage() {
           <>
             If you run a business in Pakistan or the Gulf and will own and run one in Canada, the{' '}
             <strong className="font-semibold text-white">C11</strong> lets you work there with no
-            employer, no LMIA and no fixed IELTS score. It is argued on one thing — significant
-            benefit to Canada — and most agents never file one properly.
+            employer, no LMIA and no fixed IELTS score. It is argued on one thing — significant benefit to Canada.
           </>
         }
       >
@@ -315,8 +318,8 @@ export default function WorkPermitPage() {
             />
             <div className="mt-6 space-y-4 text-ink-600 text-pretty leading-relaxed">
               <p>
-                Most Canadian work permits need an employer to prove no Canadian could do the job — an
-                LMIA. It’s slow, it’s expensive, and you can’t even start it without an employer who
+                Many employer-sponsored permits need an employer to show no Canadian could do the job —
+                an LMIA. It’s slow, it’s expensive, and you can’t even start it without an employer who
                 already wants you.
               </p>
               <p>
@@ -327,7 +330,14 @@ export default function WorkPermitPage() {
               </p>
               <p>
                 It is not a shortcut and it is not easy. It’s a real business case, argued properly,
-                with real money behind it. That’s precisely why most agents don’t touch it.
+                with real money behind it.
+              </p>
+              <p>
+                Not a business owner? Start with our{' '}
+                <Link href="/work-permits" className="font-semibold text-accent-500 link-underline">
+                  overview of Canadian work permits
+                </Link>
+                .
               </p>
             </div>
           </div>
@@ -393,7 +403,7 @@ export default function WorkPermitPage() {
           </div>
           <div className="card p-8 sm:p-10">
             <p className="eyebrow">How long it takes</p>
-            <h3 className="mt-4 font-serif text-2xl text-balance">A realistic range, never a promise</h3>
+            <h3 className="mt-4 font-serif text-2xl text-balance">No fixed date, and no promise</h3>
             <p className="mt-4 text-ink-600 text-pretty">
               Timelines depend on your case and on IRCC processing. Anyone quoting you a fixed date is
               guessing — once we understand your file, we’ll give you an honest range rather than a

@@ -91,7 +91,7 @@ const FAQS = [
   },
   {
     q: 'Someone is offering to sell me an LMIA. Should I pay?',
-    a: 'No. An employer is legally prohibited from recovering the assessment fee from the worker, so a payment to obtain one is either outright fraud or is inducing an employer to break the conditions they are bound by. The usual outcomes are that you lose the money, or you arrive to a job that was never real, or you are found to have misrepresented and face a bar on future applications. Report it rather than pay it.',
+    a: 'No. An employer is legally prohibited from recovering the assessment fee from the worker, so a payment to obtain one is either outright fraud or is inducing an employer to break the conditions they are bound by. The usual outcomes are that you lose the money, or you arrive to a job that was never real, or you are found to have misrepresented and face five years of inadmissibility. Report it rather than pay it; IRCC’s fraud page, linked on this page, explains how.',
   },
   {
     q: 'Is a job offer the same as an LMIA?',
@@ -148,8 +148,8 @@ export default function LmiaPage() {
         />
         <Prose>
           <p>
-            Most Canadian work permits rest on a simple principle: a Canadian employer should hire a
-            Canadian first. A Labour Market Impact Assessment — an LMIA — is the mechanism that tests
+            Employer-sponsored permits under the Temporary Foreign Worker Program rest on a simple
+            principle: a Canadian employer should hire a Canadian first. A Labour Market Impact Assessment — an LMIA — is the mechanism that tests
             whether that has genuinely been tried.
           </p>
           <p>
@@ -195,8 +195,18 @@ export default function LmiaPage() {
               So an offer to sell you an LMIA for a fee is one of three things — a straightforward
               theft, an invented employer, or a real employer being induced to break the conditions
               they are legally bound by. All three end badly for you, and misrepresentation on an
-              immigration application carries a bar on applying again. If someone quotes you a price
-              for an LMIA, that is the moment to walk away, not to negotiate.
+              immigration application makes you inadmissible for five years under section 40 of the Act.
+              If someone quotes you a price for an LMIA, that is the moment to walk away, not to
+              negotiate. IRCC explains{' '}
+              <a
+                href="https://www.canada.ca/en/immigration-refugees-citizenship/services/protect-fraud/report-fraud.html"
+                className="font-semibold text-accent-500 link-underline"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                how to report fraud
+              </a>
+              .
             </p>
           </Callout>
         </div>
@@ -279,7 +289,7 @@ export default function LmiaPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where these applications go wrong"
         />
         <Prose>
           <p>
@@ -359,6 +369,21 @@ export default function LmiaPage() {
             rules all change, sometimes at short notice. We deliberately do not publish those figures
             here, because a number that is right today is a liability on a page you might read next
             year.
+          </p>
+          <p>
+            One limit matters now for anyone being sold a low-paid job. Service Canada can refuse to
+            process an LMIA for a low-wage position in a metropolitan area with high unemployment, and
+            it caps the share of low-wage positions an employer can have. A low-paid offer in such a
+            city may be impossible rather than merely slow. ESDC’s{' '}
+            <a
+              href="https://www.canada.ca/en/employment-social-development/services/foreign-workers/refusal.html"
+              className="font-semibold text-accent-500 link-underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              refusal-to-process rules
+            </a>{' '}
+            list the current areas.
           </p>
           <p>
             ESDC and IRCC publish the current requirements on{' '}

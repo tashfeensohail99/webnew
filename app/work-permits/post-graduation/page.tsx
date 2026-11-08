@@ -56,7 +56,7 @@ const TESTS = [
     icon: 'chat' as const,
     kicker: 'Test four',
     title: 'Language',
-    body: 'A language result in English or French is now part of the application, at a level that depends on your level of study. There is no exemption for first-language speakers. IRCC publishes the accepted tests and the required level.',
+    body: 'A language result in English or French is now part of the application, at a level that depends on your level of study. There is no exemption for first-language speakers; the one exception is for graduates of eligible flight schools. IRCC publishes the accepted tests and the required level.',
   },
 ];
 
@@ -269,7 +269,7 @@ export default function PostGraduationWorkPermitPage() {
         <SectionHeading
           eyebrow="The sequence"
           title="Six steps, and the first one is years before the last"
-          subtitle="Almost every problem we see on this permit was created at step one and discovered at step five."
+          subtitle="Most problems on this permit are created at step one and discovered at step five."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {STEPS.map((s, i) => (
@@ -288,13 +288,13 @@ export default function PostGraduationWorkPermitPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where these applications go wrong"
         />
         <Prose>
           <p>
             <strong>Choosing the course on a recruiter’s word.</strong> The commission is paid on
-            enrolment, not on your permit. We have sat with graduates who were told a programme
-            qualified, kept no written confirmation, and had no recourse once the refusal arrived.
+            enrolment, not on your permit. A graduate who was told a programme qualified and kept no
+            written confirmation has no recourse once a refusal arrives.
           </p>
           <p>
             <strong>Enrolling on rules that applied to someone else.</strong> Eligibility depends in

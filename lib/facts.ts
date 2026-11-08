@@ -165,6 +165,35 @@ export const FACTS: Record<string, Fact> = {
       'Printed on the refusal pages on 8 Nov 2026 on the site owner’s instruction. Read at source, but the wording has not been reviewed by a lawyer.',
   },
 
+  // ── CANADA: WORK PERMITS (re-check monthly) ────────────────────────────────
+  caBridgingOpenWorkPermit: {
+    id: 'ca.work.bowp',
+    claim:
+      'A bridging open work permit needs the principal applicant in Canada with a valid permit, maintained status, or eligibility to restore status and get a work permit, and a PR application at the stage set for the class: completeness check (Express Entry, PNP through Express Entry, Quebec), eligibility assessment (PNP outside Express Entry) or approval in principle (caring classes, 2019 to 2024 home care pilots, Agri-Food Pilot). Applicants under the Home Care Worker Immigration pilots opened in 2025 are not eligible.',
+    provenance: 'primary',
+    source: 'IRCC, Bridging open work permit (page dated 2026-10-16)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/pr-work-permits/bridging.html',
+    checked: '2026-11-08',
+  },
+  caIctControllingOwners: {
+    id: 'ca.work.ict-owners',
+    claim:
+      'Foreign nationals, and their immediate family, who own a controlling interest in the foreign enterprise and seek entry to start a new business are not eligible as intra-company transferees unless the enterprise is a multinational, meaning it has revenue-generating operations in at least one country other than its home country.',
+    provenance: 'primary',
+    source: 'IRCC operational instructions, Intra-company transferees',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/intra-company-transferees.html',
+    checked: '2026-11-08',
+  },
+  caLowWageLmiaRefusal: {
+    id: 'ca.work.low-wage-lmia',
+    claim:
+      'Service Canada may refuse to process an LMIA for positions above the cap on low-wage positions, and for low-wage positions in census metropolitan areas with high unemployment.',
+    provenance: 'primary',
+    source: 'ESDC, Refusal to process',
+    sourceUrl: 'https://www.canada.ca/en/employment-social-development/services/foreign-workers/refusal.html',
+    checked: '2026-11-08',
+  },
+
   // ── CANADA: STUDY (re-check monthly) ───────────────────────────────────────
   caStudyPermitInvalidity: {
     id: 'ca.study.permit-invalid',

@@ -34,6 +34,8 @@ const FAMILIES = [
     kicker: 'Intra-company transfer',
     title: 'Moving within your own company',
     body: 'A company outside Canada moves an executive, a senior manager or a specialised-knowledge employee into a Canadian parent, branch, subsidiary or affiliate. The relationship between the two companies, and your role and length of service in the foreign one, are what the officer examines.',
+    href: '/work-permits/intra-company-transfer',
+    cta: 'How transfers work',
   },
   {
     icon: 'scale' as const,
@@ -45,25 +47,31 @@ const FAMILIES = [
     icon: 'star' as const,
     kicker: 'Significant benefit',
     title: 'Benefit to Canada',
-    body: 'A discretionary category for work whose social, cultural or economic benefit to Canada is clear enough that testing the labour market would be counterproductive. It is argued, not ticked off — and it is the family most often narrowed by policy changes.',
+    body: 'A discretionary category for work whose social, cultural or economic benefit to Canada is clear enough that testing the labour market would be counterproductive. It is argued, not ticked off.',
   },
   {
     icon: 'refresh' as const,
     kicker: 'Reciprocal',
     title: 'Reciprocal employment',
     body: 'Work that gives Canadians comparable opportunities abroad — exchange arrangements, some academic and research exchanges, and youth mobility arrangements with participating countries. Reciprocity has to be real and demonstrable, not merely asserted.',
+    href: '/work-permits/international-experience-canada',
+    cta: 'International Experience Canada',
   },
   {
     icon: 'user' as const,
-    kicker: 'Owner-operator',
+    kicker: 'Business owners (C11)',
     title: 'Running your own Canadian business',
-    body: 'You start or buy a Canadian business and operate it yourself. This sits inside the significant-benefit family rather than beside it, and it has been tightened repeatedly — ownership, genuine senior control and funding are all examined.',
+    body: 'You start a Canadian business and run it yourself. IRCC calls this route C11; “owner-operator” is a sales term, not the name of a programme. It sits inside the significant-benefit family rather than beside it — ownership, genuine senior control and funding are all examined.',
+    href: '/work-permit-canada',
+    cta: 'The C11 route',
   },
   {
     icon: 'doc' as const,
     kicker: 'Status-based',
     title: 'Permits tied to your status',
     body: 'Some open work permits flow from a person’s situation rather than a job: certain spouses and partners, some post-graduation situations, and applicants already in a defined immigration process. Eligibility here is about status, not about an employer.',
+    href: '/work-permits/spousal-open-work-permit',
+    cta: 'Spousal open work permits',
   },
 ];
 
@@ -101,11 +109,11 @@ const FAQS = [
   },
   {
     q: 'Do I still need a job offer?',
-    a: 'It depends on the family. Intra-company transfers and treaty categories are employer-specific and need an employer behind them. Owner-operator files have no third-party employer at all — you are the business. Status-based open permits need no employer.',
+    a: 'It depends on the family. Intra-company transfers and treaty categories are employer-specific and need an employer behind them. C11 business owners have no third-party employer at all — you are the business. Status-based open permits need no employer.',
   },
   {
     q: 'Is this a permanent residence route?',
-    a: 'It is a temporary work authorisation. Canadian work experience can strengthen a later permanent residence application, but a work permit does not convert into PR on its own and no one can promise you that it will. Treat them as two separate applications.',
+    a: 'It is a temporary work authorisation. Canadian work experience can strengthen a later permanent residence application, though self-employed time generally does not count for the Canadian Experience Class, and a work permit does not convert into PR on its own and no one can promise you that it will. Treat them as two separate applications.',
   },
   {
     q: 'What are the government fees?',
@@ -115,7 +123,7 @@ const FAQS = [
         an employer compliance fee on employer-specific exempt permits. We won’t print figures that
         can change — IRCC publishes the current amounts in its{' '}
         <a
-          href="https://www.canada.ca/en/immigration-refugees-citizenship/services/application/fees.html"
+          href="https://ircc.canada.ca/english/information/fees/fees.asp"
           target="_blank"
           rel="noopener noreferrer"
           className="font-semibold text-accent-500 link-underline"
@@ -209,7 +217,14 @@ export default function LmiaExemptPage() {
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {FAMILIES.map((f) => (
-            <FeatureCard key={f.title} icon={<Icon name={f.icon} />} kicker={f.kicker} title={f.title}>
+            <FeatureCard
+              key={f.title}
+              icon={<Icon name={f.icon} />}
+              kicker={f.kicker}
+              title={f.title}
+              href={f.href}
+              cta={f.cta}
+            >
               {f.body}
             </FeatureCard>
           ))}
@@ -295,13 +310,12 @@ export default function LmiaExemptPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="Where to go next"
-          title="The route most Pakistani applicants ask about"
+          title="A route many business owners ask about"
         />
         <Prose>
           <p>
-            Of the families above, the one we are asked about most often is the owner-operator
-            situation — a business owner or self-employed professional in Pakistan who can build a
-            credible case for a Canadian business. Our Canadian work permit page covers what a file
+            A business owner or self-employed professional in Pakistan who can build a credible case
+            for a Canadian business may fit the C11 route. Our C11 work permit page covers what a file
             without a conventional job offer actually requires, and who it doesn’t suit.
           </p>
         </Prose>

@@ -52,7 +52,7 @@ const CATEGORIES = [
 ];
 
 const RELATIONSHIP = [
-  ['Parent', 'The foreign company owns and controls the Canadian entity.'],
+  ['Parent', 'The Canadian entity owns and controls the foreign company.'],
   ['Subsidiary', 'The Canadian entity is owned and controlled by the foreign company.'],
   ['Branch', 'The Canadian operation is an office or division of the same legal entity, not a separate company.'],
   ['Affiliate', 'Both entities are owned and controlled by the same parent, or by the same group of owners in substantially the same proportions.'],
@@ -92,7 +92,7 @@ const FAQS = [
   },
   {
     q: 'Does LMIA-exempt mean this route is easier?',
-    a: 'No, and treating it that way is the most common reason files fail. The evidentiary burden simply moves. Instead of an employer proving a labour shortage, you and the group have to prove a real corporate relationship, real operations on both sides, and real qualifying employment. Officers scrutinise exactly the places where the story is most often thin.',
+    a: 'No, and treating it that way is a common reason files fail. The evidentiary burden simply moves. Instead of an employer proving a labour shortage, you and the group have to prove a real corporate relationship, real operations on both sides, and real qualifying employment. Officers scrutinise exactly the places where the story is most often thin.',
   },
   {
     q: 'Can my employer open a Canadian company so I can transfer there?',
@@ -100,11 +100,11 @@ const FAQS = [
   },
   {
     q: 'I own the foreign company. Can I transfer myself?',
-    a: 'Ownership is not a bar in itself, and owner-managers do transfer. But it raises the standard of evidence considerably, because the arrangement is entirely within your control. You will need to show the foreign business genuinely operates and will continue to, that your own role there was substantive, and that the Canadian entity has a real commercial purpose beyond your relocation.',
+    a: 'Not if you are starting a new business and your company operates only in Pakistan. IRCC’s instructions say people who own a controlling interest in the foreign enterprise, and their immediate family, are not eligible as intra-company transferees to start a new business unless the enterprise is a multinational, meaning it has revenue-generating operations in at least one country other than its home country. IRCC points those applicants to other routes, including the C11 work permit for business owners, which our C11 page explains. If your business is a genuine multinational, you will need to show the foreign business genuinely operates and will continue to, that your own role there was substantive, and that the Canadian entity has a real commercial purpose beyond your relocation.',
   },
   {
     q: 'What counts as specialised knowledge?',
-    a: 'Knowledge that is genuinely uncommon within the industry and proprietary to that organisation — its own methods, systems, products, research or equipment — combined with an advanced level of expertise built inside the company. Ordinary professional competence, familiarity with widely used commercial software, or seniority alone do not qualify, however capable you are. It is the category IRCC gives officers the most detailed assessment instructions for, and in our own casework it is the one where files most often come apart.',
+    a: 'Knowledge that is genuinely uncommon within the industry and proprietary to that organisation — its own methods, systems, products, research or equipment — combined with an advanced level of expertise built inside the company. Ordinary professional competence, familiarity with widely used commercial software, or seniority alone do not qualify, however capable you are. It is the category IRCC gives officers the most detailed assessment instructions for. IRCC also says wages should not be lower than the prevailing wage for the occupation where you will work, which you can check on Job Bank.',
   },
   {
     q: 'How long can I stay, and can it lead to permanent residence?',
@@ -250,7 +250,7 @@ export default function IntraCompanyTransferPage() {
               specialised-knowledge transferee.
             </p>
             <p>
-              This is where we see files come apart. Applications describe general competence in
+              This is where files come apart. Applications describe general competence in
               elevated language and an officer reads it as exactly that. If the knowledge cannot be
               named — this system, this process, this product line, developed here — the category is
               probably the wrong one.
@@ -311,7 +311,7 @@ export default function IntraCompanyTransferPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see"
+          title="Where these applications go wrong"
         />
         <Prose>
           <p>

@@ -23,7 +23,7 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * thing and send the reader to IRCC.
  */
 export const metadata: Metadata = {
-  title: 'Canadian work permits',
+  title: 'Canada Work Permits: Open or Employer-Specific',
   description:
     'How Canadian work permits work: employer-specific versus open, LMIA-based versus exempt, and why buying a job offer risks a misrepresentation bar.',
   alternates: { canonical: '/work-permits' },
@@ -45,30 +45,38 @@ const ROUTES = [
     kicker: 'LMIA-exempt · intra-company',
     title: 'Intra-company transfer',
     body: 'For executives, managers and specialised-knowledge staff moved from a qualifying business abroad to a related Canadian entity. The relationship between the two companies has to be real and documented.',
+    href: '/work-permits/intra-company-transfer',
+    cta: 'How transfers work',
   },
   {
     icon: 'scale' as const,
     kicker: 'LMIA-exempt · trade agreements',
     title: 'Trade-agreement professionals',
-    body: 'Canada’s free-trade agreements carry work-permit provisions for nationals of the countries they cover. Pakistan is not party to those agreements, so this route is relevant only if you hold another nationality.',
+    body: 'Canada’s free-trade agreements carry work-permit provisions for nationals of the countries they cover. Canada has no bilateral trade agreement with Pakistan, so this route is generally relevant only if you hold another nationality. Any access under the wider General Agreement on Trade in Services would be narrow and needs checking by a licensed representative.',
   },
   {
     icon: 'doc' as const,
     kicker: 'LMIA-based',
     title: 'Employer-sponsored, with an LMIA',
     body: 'A Canadian employer tests the labour market, receives a positive LMIA, and you apply on the strength of it. The employer starts this — you cannot buy your way into it.',
+    href: '/work-permits/lmia',
+    cta: 'How an LMIA works',
   },
   {
     icon: 'user' as const,
     kicker: 'Open · status-derived',
     title: 'Spousal and family open permits',
     body: 'Open permits that flow from someone else’s status in Canada — a spouse working or studying there, in the categories IRCC specifies. You qualify through the relationship, not through a job.',
+    href: '/work-permits/spousal-open-work-permit',
+    cta: 'Spousal open work permits',
   },
   {
     icon: 'permit' as const,
     kicker: 'Open · after study',
     title: 'Post-graduation work permit',
     body: 'For people who complete an eligible programme at an eligible Canadian institution. The eligibility rules attach to the school and the programme, so they must be checked before you enrol, not after.',
+    href: '/work-permits/post-graduation',
+    cta: 'Post-graduation rules',
   },
 ];
 
@@ -279,6 +287,14 @@ export default function WorkPermitsPage() {
             </FeatureCard>
           ))}
         </div>
+        <p className="mx-auto mt-10 max-w-3xl text-center text-ink-600 text-pretty">
+          Other routes:{' '}
+          <Link href="/work-permits/lmia-exempt" className="font-semibold text-accent-500 link-underline">LMIA-exempt permits</Link>,{' '}
+          <Link href="/work-permits/global-talent-stream" className="font-semibold text-accent-500 link-underline">Global Talent Stream</Link>,{' '}
+          <Link href="/work-permits/international-experience-canada" className="font-semibold text-accent-500 link-underline">International Experience Canada</Link>,{' '}
+          <Link href="/work-permits/bridging-open-work-permit" className="font-semibold text-accent-500 link-underline">bridging open work permits</Link> and{' '}
+          <Link href="/work-permits/caregivers" className="font-semibold text-accent-500 link-underline">caregiver work permits</Link>.
+        </p>
       </Section>
 
       {/* ============ THE SCAM ============ */}
@@ -286,7 +302,7 @@ export default function WorkPermitsPage() {
         <SectionHeading
           eyebrow="Read this before you pay anyone"
           title="The LMIA-for-sale trap"
-          subtitle="This pattern targets Pakistani applicants heavily, and it is the single most expensive mistake we see."
+          subtitle="This pattern targets Pakistani applicants heavily, and it is one of the most expensive mistakes you can make."
         />
         <Prose>
           <p>
@@ -303,11 +319,10 @@ export default function WorkPermitsPage() {
             misrepresentation under the Immigration and Refugee Protection Act.
           </p>
           <p>
-            The consequence is not simply a refusal. A misrepresentation finding carries a bar on
-            entering Canada that runs for years, attaches to you personally, and follows you into
-            every future application — including ones you would otherwise have qualified for
-            honestly. The bar period is set by the Immigration and Refugee Protection Act and stated
-            by IRCC at{' '}
+            The consequence is not simply a refusal. A misrepresentation finding makes you inadmissible for
+            five years under section 40 of the Immigration and Refugee Protection Act, attaches to you
+            personally, and follows you into every future application — including ones you would
+            otherwise have qualified for honestly. IRCC sets this out at{' '}
             <a
               href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/inadmissibility/reasons.html"
               target="_blank"
@@ -315,7 +330,7 @@ export default function WorkPermitsPage() {
             >
               canada.ca
             </a>
-            ; read it there rather than take our word or anyone else’s for the length. People lose the study permit, the visit visa and the spouse’s application too.
+            . People lose the study permit, the visit visa and the spouse’s application too.
             Meanwhile the money is gone and there is no one to recover it from, because you paid a
             person in Pakistan for an illegal act in Canada.
           </p>

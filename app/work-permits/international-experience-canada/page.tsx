@@ -65,7 +65,7 @@ const OPEN_ROUTES = [
     icon: 'refresh' as const,
     kicker: 'Without a labour market test',
     title: 'LMIA-exempt categories',
-    body: 'Intra-company transfers, treaty professionals and significant-benefit cases sit outside the assessment entirely. They are narrow, but they are open on merit rather than nationality.',
+    body: 'Intra-company transfers and significant-benefit cases sit outside the assessment entirely. They are narrow, but they turn on merit rather than nationality.',
     href: '/work-permits/lmia-exempt',
     cta: 'See the exempt categories',
   },
@@ -190,9 +190,11 @@ export default function IecPage() {
         <div className="mt-10">
           <Callout title="What the Recognized Organization route actually involves">
             <p>
-              A recognised organisation is approved by IRCC to support IEC participants. Some of them
-              run placement, internship and exchange programmes that are open to citizens of
-              countries with no agreement of their own. What each organisation offers, and which
+              A recognised organisation is approved by IRCC to support IEC participants. Most take only
+              citizens of IEC countries. Of the organisations on IRCC’s list, IAESTE is the only one
+              that could reach a Pakistani citizen, through its own member countries, for technical
+              students and professionals. Confirm directly with IAESTE that Pakistan is a current
+              member before you pay anyone. What each organisation offers, and which
               nationalities and fields it will consider, differs from one organisation to the next and
               is set by that organisation — so the only reliable answer comes from IRCC’s published
               list and from the organisation itself.
@@ -337,7 +339,7 @@ export default function IecPage() {
             <p>
               What we would rather do is spend the consultation on a route that is actually open to
               you.{' '}
-              <Link href="/work-permit-canada" className="font-semibold text-accent-500 link-underline">
+              <Link href="/work-permits" className="font-semibold text-accent-500 link-underline">
                 Start with the Canadian work permit overview
               </Link>
               , and see our{' '}

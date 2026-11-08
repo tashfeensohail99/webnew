@@ -4,6 +4,31 @@ One entry per batch, newest first. Each entry records the commit, what changed a
 
 To see any page's original wording: `git show 9d17a79:<path to the page>`.
 
+## Batch 6: study pages, 8 November 2026
+
+- **Commit:** `7adc00d`. To undo only the page changes, restore `app/study-in-canada/` and `lib/facts.ts` from `0c3b924`, because this commit also recorded batch 5 in this ledger.
+- **Why:** the pages misstated when a study permit ends and how restoration works, described a co-op permit IRCC removed, and withheld limits set in the Regulations.
+
+| Page | Change | Source |
+| --- | --- | --- |
+| `/study-in-canada/study-permit-extension` | Permit invalid 90 days after completion, or when enrolment at the named school ends. Restoration within 90 days, and what an officer must find; "discretionary" removed. | [IRPR s.222](https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-222.html); [IRPR s.182](https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-182.html) |
+| `/study-in-canada/working-while-studying` | 24 hours a week off campus, no limit on campus or in scheduled breaks, the older 20-hour wording, last-semester part-time students, and the 1 April 2026 co-op change. New title and description. | [IRPR s.186(v)](https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-186.html); [IRCC off campus](https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/work-off-campus.html); [IRCC co-op notice](https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/simplifying-co-op-work-permit-requirement-post-secondary-international-students.html) |
+| `/study-in-canada/provincial-attestation-letter` | Validity and reuse. Master's and doctoral exemption from 1 January 2026, and other listed exemptions. Quebec carve-out. What happens to an application without a letter. | [IRCC attestation letters](https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/provincial-attestation-letter.html) |
+| `/study-in-canada/bringing-family` | Programmes that qualify a spouse. IRCC's separate test for extensions. Dead link replaced. | [IRCC spouses of students](https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/help-your-spouse-common-law-partner-work-canada.html) |
+| `/study-in-canada/designated-learning-institutions` | IRCC's list linked early. Exception if a school closes or loses designation. New attestation letter when changing schools. Consequences stated as IRCC states them. | [IRCC changing schools](https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/change-schools.html) |
+| `/study-in-canada/proof-of-funds` | Decision note replaces "order the notes". Direct link to IRCC's financial support page. | [IRCC financial support](https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html) |
+| `/study-in-canada` | Work hours and co-op rule corrected. New title. | As above |
+
+- **Across the cluster:** claims about what the firm sees and rankings of refusal grounds removed, because nothing on file supports them.
+- **Register:** six entries added to `lib/facts.ts`. The three set in the Regulations carry `needsLawyer: true`, printed under the site owner's rule on figures set in law.
+- **Checked before shipping:** build, typecheck, `test:crs` (66 passed), `test:fsw` (43 passed), local crawl with no regressions. Viewed the weekly limit box on desktop (light).
+- **Checked on production:** GitHub deployment `success`. 93 of 93 URLs return 200, and the crawl shows no regressions. All 27 removed statements gone and all 19 new ones present. All seven pages load on a phone with no sideways scrolling or script errors.
+- **External links re-tested after the deploy:** 200 unique. None on the study pages failed. Two dead links remain elsewhere: `/visitor-visa` and `/work-permits/lmia-exempt`.
+- **Search:** IndexNow accepted the seven URLs. Google not asked.
+- **Needs a lawyer:** the restoration wording (`shall restore`, s.182(2)) and how the January 2025 spouse rules apply at renewal. The audit asked for both to be approved.
+- **Deliberately left alone, under the rule on figures:** the living-cost amount, the 16-month master's minimum, IRCC's advice on how early to apply, and the number of months of bank statements. These appear only on IRCC's pages.
+- **Other items left:** review dates; "Talk to a lawyer" buttons; overlap between `/study-in-canada` and `/study-in-canada/study-permit`, and the repeated "we would rather tell you on the first call" closing lines.
+
 ## Batch 5: provincial nominee program pages, 8 November 2026
 
 - **Commit:** `0c3b924`. To undo only the page changes, restore `app/pnp/` and `lib/facts.ts` from `f365179`, because this commit also recorded the statutory figures change in this ledger.
