@@ -82,6 +82,8 @@ export default async function ExpressEntryDrawsPage() {
     else byType.set(k, { draw: d, count: 1 });
   }
   const types = [...byType.values()];
+  const noGeneralRound =
+    lastYear.length > 0 && !lastYear.some((d) => ['general', 'no program specified'].includes(typeKey(d.type)));
 
   const pool = data?.pool;
   const poolMax = pool ? Math.max(...pool.bands.map((b) => b.count)) : 0;
@@ -164,6 +166,23 @@ export default async function ExpressEntryDrawsPage() {
                 their profile before {latest.tieBreak}.
               </p>
             ) : null}
+            <div className="mt-8 max-w-3xl">
+              <Callout title="Scoring changed on 3 November 2026">
+                IRCC added a Labour Market Integration factor and changed how job offers score. Rounds
+                held before that date used the old points, so their cut-offs are not directly
+                comparable with a score worked out today. IRCC also said it would pause rounds for up
+                to two weeks while it recalculates existing profiles.{' '}
+                <a
+                  href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/changes.html"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className={official}
+                >
+                  Read IRCC’s explanation
+                </a>
+                .
+              </Callout>
+            </div>
           </Section>
 
           {/* ===================== BY ROUND TYPE ===================== */}
@@ -197,6 +216,17 @@ export default async function ExpressEntryDrawsPage() {
                 </tbody>
               </table>
             </div>
+            {noGeneralRound ? (
+              <p className="mt-6 max-w-3xl text-ink-600 text-pretty">
+                No round in these 12 months was open to the whole pool. Each one invited a single
+                group, so for someone applying from abroad the first question is which group they
+                belong to.{' '}
+                <Link href="/blog/express-entry-2026-so-far" className={official}>
+                  What the 2026 rounds show
+                </Link>
+                .
+              </p>
+            ) : null}
           </Section>
 
           {/* ===================== THE POOL ===================== */}

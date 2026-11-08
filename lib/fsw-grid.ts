@@ -31,9 +31,9 @@
  *    their father or mother, other than their father or mother" — an aunt or
  *    uncle. An automated summary glossed this as "cousins". It is not.
  *
- * 3. ARRANGED EMPLOYMENT IS STILL WORTH 10 HERE. March 2025 removed the CRS
- *    bonus for a job offer. It did NOT touch s.82(2), which is part of this
- *    grid and confirmed in the current consolidation. A qualifying offer is
+ * 3. ARRANGED EMPLOYMENT IS WORTH 10 HERE. What the CRS does with a job offer is
+ *    a separate question (lib/crs-grid.ts, trap 6). Changes to it did NOT touch
+ *    s.82(2), which is part of this grid. A qualifying offer is
  *    worth 10 here plus 5 under adaptability s.83(1)(e) — 15 in total, subject
  *    to the adaptability cap.
  *

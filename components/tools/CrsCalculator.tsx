@@ -12,6 +12,7 @@ import {
   type LanguageTest,
   type AbilityScores,
 } from '@/lib/crs-grid';
+import { HIGH_WAGE_OCCUPATIONS, HIGH_WAGE_LIST_URL, highWageLevel } from '@/lib/crs-high-wage';
 
 /**
  * The CRS calculator.
@@ -56,6 +57,11 @@ const ABILITIES: { key: keyof AbilityScores; label: string }[] = [
 
 const EMPTY: AbilityScores = { speaking: '', listening: '', reading: '', writing: '' };
 
+/** Sorted by job title: people know what they do before they know its NOC code. */
+const OCCUPATION_OPTIONS: [string, string][] = [...HIGH_WAGE_OCCUPATIONS]
+  .sort((a, b) => a.title.localeCompare(b.title))
+  .map((o) => [o.noc, `${o.title} (NOC ${o.noc})`]);
+
 const initial: CrsInput = {
   maritalStatus: 'single',
   spouseComingAlong: false,
@@ -67,6 +73,8 @@ const initial: CrsInput = {
   hasSecondLanguage: false,
   second: EMPTY,
   canadianWorkYears: 0,
+  canadianHighWageLevel: 0,
+  jobOfferLevel: 0,
   foreignWorkYears: 0,
   certificateOfQualification: false,
   spouseEducation: 'secondary',
@@ -80,13 +88,23 @@ const initial: CrsInput = {
 export function CrsCalculator({ digits }: { digits: string }) {
   const [input, setInput] = useState<CrsInput>(initial);
   const [showBreakdown, setShowBreakdown] = useState(false);
+  const [workNoc, setWorkNoc] = useState('');
+  const [offerNoc, setOfferNoc] = useState('');
 
   const set = <K extends keyof CrsInput>(key: K, value: CrsInput[K]) =>
     setInput((s) => ({ ...s, [key]: value }));
 
   const usesSpouseColumn = input.maritalStatus === 'partnered' && input.spouseComingAlong;
 
-  const result = useMemo(() => scoreCrs(input), [input]);
+  const result = useMemo(
+    () =>
+      scoreCrs({
+        ...input,
+        canadianHighWageLevel: highWageLevel(workNoc),
+        jobOfferLevel: highWageLevel(offerNoc),
+      }),
+    [input, workNoc, offerNoc],
+  );
 
   const waMessage = [
     'Hi, I used the CRS calculator on your site.',
@@ -94,6 +112,7 @@ export function CrsCalculator({ digits }: { digits: string }) {
     `Indicative CRS score: ${result.total}`,
     `Age ${input.age} · ${EDUCATION.find((e) => e.value === input.education)?.label ?? ''}`,
     `Canadian work: ${input.canadianWorkYears} yr · Foreign work: ${input.foreignWorkYears} yr`,
+    ...(offerNoc ? [`Job offer in high-wage occupation: NOC ${offerNoc}`] : []),
     usesSpouseColumn ? 'Applying with an accompanying spouse' : 'Applying as a single applicant',
     '',
     'I’d like to know what my realistic options are.',
@@ -109,8 +128,8 @@ export function CrsCalculator({ digits }: { digits: string }) {
       <div className="mb-8 rounded-2xl border border-l-[3px] border-l-gold-500 bg-paper-alt p-5 sm:p-6">
         <p className="font-serif text-lg">This is an unofficial estimate</p>
         <p className="mt-2 text-sm leading-relaxed text-ink-600 text-pretty">
-          We rebuild this from IRCC’s published grid and check it by hand — last checked{' '}
-          <strong className="text-ink-900">{CRS_GRID_VERIFIED_ON}</strong>. It is not run by
+          We build this from IRCC’s published grid and compare it with IRCC’s tables — last
+          checked <strong className="text-ink-900">{CRS_GRID_VERIFIED_ON}</strong>. It is not run by
           IRCC and it is not advice. Before you rely on a number, run it through{' '}
           <a
             href={OFFICIAL_CALCULATOR_URL}
@@ -241,6 +260,42 @@ export function CrsCalculator({ digits }: { digits: string }) {
                 ]}
               />
             </Row>
+            {input.canadianWorkYears >= 1 ? (
+              <Row
+                label="Was at least 12 months of that work in one of these high-wage occupations?"
+                help="What counts is the occupation’s NOC code, whatever your own salary. If your 12 months are spread across listed jobs, choose the one with the lowest pay level."
+              >
+                <Select
+                  value={workNoc}
+                  onChange={setWorkNoc}
+                  options={[['', 'No, or my job is not on the list'], ...OCCUPATION_OPTIONS]}
+                />
+              </Row>
+            ) : null}
+            <Row
+              label="Do you have a valid job offer in Canada in one of these high-wage occupations?"
+              help={
+                <>
+                  Any other job offer earns no CRS points, and an LMIA adds nothing. You get the
+                  higher of this or your Canadian work experience, never both.{' '}
+                  <a
+                    href={HIGH_WAGE_LIST_URL}
+                    rel="noopener nofollow"
+                    target="_blank"
+                    className="font-semibold text-accent-500 link-underline"
+                  >
+                    See IRCC’s list
+                  </a>
+                  .
+                </>
+              }
+            >
+              <Select
+                value={offerNoc}
+                onChange={setOfferNoc}
+                options={[['', 'No, or the job is not on the list'], ...OCCUPATION_OPTIONS]}
+              />
+            </Row>
             <Row label="Skilled work experience OUTSIDE Canada">
               <Select
                 value={String(input.foreignWorkYears)}
@@ -347,8 +402,7 @@ export function CrsCalculator({ digits }: { digits: string }) {
             <p className="eyebrow eyebrow--light">Indicative CRS score</p>
             <p className="mt-2 font-serif text-6xl leading-none text-gold-300">{result.total}</p>
             <p className="mt-3 text-sm leading-relaxed text-ink-300">
-              Worked out on the grid IRCC used before 3 November 2026. Canadian work in a
-              high-wage occupation, or a high-wage job offer, would add points not counted here.
+              Worked out on the grid IRCC has used since 3 November 2026.
             </p>
 
             <button
@@ -414,7 +468,7 @@ export function CrsCalculator({ digits }: { digits: string }) {
         Express Entry is not the route we mainly file, and we will say so if it isn’t yours. A
         score here is an arithmetic estimate from the answers you gave — it is not an
         assessment of your eligibility, not advice, and not a prediction of any outcome. Grid
-        last checked by hand on {CRS_GRID_VERIFIED_ON}.
+        last compared with IRCC’s tables on {CRS_GRID_VERIFIED_ON}.
       </p>
     </div>
   );
@@ -446,7 +500,7 @@ function Row({
   children,
 }: {
   label: string;
-  help?: string;
+  help?: React.ReactNode;
   children: React.ReactNode;
 }) {
   return (

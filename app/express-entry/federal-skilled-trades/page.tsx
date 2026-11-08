@@ -68,7 +68,7 @@ const STEPS = [
   },
   {
     title: 'Build the evidence',
-    body: 'Employment letters that describe duties rather than titles, proof of hours, credentials, and settlement funds where they are required. Weak reference letters refuse more trades files than weak trades do.',
+    body: 'Employment letters that describe duties rather than titles, proof of hours, credentials, and settlement funds where they are required. A weak reference letter can sink an otherwise good trades file.',
   },
   {
     title: 'Profile, pool and decision',
@@ -95,7 +95,7 @@ const FAQS = [
   },
   {
     q: 'How many people actually come through this programme?',
-    a: 'Comparatively few. It is the narrowest of the three federal Express Entry programmes, and rounds of invitations aimed at it alone are occasional rather than routine. Many tradespeople who do get invited come in through other paths — category-based rounds aimed at trade occupations, or a provincial nomination. IRCC publishes the full record of rounds of invitations on canada.ca, so you can check the pattern yourself rather than take our word for it.',
+    a: 'Comparatively few. It is the narrowest of the three federal Express Entry programmes, and IRCC has not recently held rounds of invitations for it alone. Tradespeople who do get invited generally come in through other paths — category-based rounds aimed at trade occupations, or a provincial nomination. IRCC publishes the full record of rounds of invitations on canada.ca, so you can check the pattern yourself rather than take our word for it.',
   },
   {
     q: 'What will it cost me?',
@@ -184,9 +184,20 @@ export default function FederalSkilledTradesPage() {
             <Prose>
               <p>
                 The alternative is a genuine offer of full-time employment in your skilled trade
-                from a Canadian employer, of a specified minimum duration, and supported in the way
-                the regulations require. In practice that usually means a labour market impact
-                assessment behind it, or an equivalent employer-specific work permit position.
+                from a Canadian employer, in writing and for at least a year. Since 3 November 2026
+                the offer no longer needs a labour market impact assessment, but an officer still
+                has to be satisfied it is genuine: that the employer is active, can keep to the
+                terms, and needs the work done. IRCC’s online profile may still ask for LMIA details,
+                so{' '}
+                <a
+                  href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/offer-employment.html"
+                  className="font-semibold text-accent-500 link-underline"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  follow IRCC’s instructions
+                </a>{' '}
+                when you enter an offer.
               </p>
               <p>
                 An offer has to be real. An email saying “we’ll hire you” is not an offer for these
@@ -284,18 +295,18 @@ export default function FederalSkilledTradesPage() {
             The bottleneck is not the language test and it is not the experience requirement. It is
             the certificate-or-offer condition. Provincial certification is designed around people
             who are already in Canada and can be assessed, examined or supervised there. A
-            qualifying job offer requires a Canadian employer willing to go through a formal hiring
-            process for someone abroad. Most tradespeople in Pakistan can produce neither, so they
-            never enter the pool under this programme at all.
+            qualifying job offer requires a Canadian employer willing to commit to hiring someone
+            abroad, and dropping the LMIA does not make that employer easier to find. Most
+            tradespeople in Pakistan can produce neither, so they never enter the pool under this
+            programme at all.
           </p>
           <p>
             There is a second reason. Even candidates who qualify are ranked alongside everyone else
-            in the pool, and rounds of invitations aimed specifically at the trades stream are
-            occasional rather than routine. Alongside them IRCC also runs category-based rounds
-            targeting trade occupations, and the provinces run their own nomination streams for
-            tradespeople — in our experience those are the routes that more often carry a trades
-            candidate through. Which rounds have actually been held, and under what selection, is a
-            matter of public record on the IRCC page linked above.
+            in the pool, and IRCC has not recently held rounds of invitations for this programme
+            alone. It does run category-based rounds targeting trade occupations, and the provinces
+            run their own nomination streams for tradespeople, and those are the routes open to a
+            trades candidate in practice. Which rounds have actually been held, and under what
+            selection, is a matter of public record on the IRCC page linked above.
           </p>
           <p>
             None of that makes it a bad route. It makes it a narrow one. If you are already working

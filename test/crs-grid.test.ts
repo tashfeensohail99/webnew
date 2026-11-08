@@ -9,13 +9,14 @@
  * and quietly changes what an applicant is told.
  *
  * The strongest assertions here are the four maxima. A maxed-out profile must
- * land EXACTLY on the totals IRCC publishes (500 / 460 / 500 / 695 / 1200).
+ * land EXACTLY on the section totals IRCC publishes (570 / 530 / 570 / 765 / 1270).
  * Almost any single mistyped cell in any table breaks at least one of them, so
  * if these five pass, the tables are very unlikely to contain a transcription
  * error. The rest of the tests pin the specific traps documented in the grid.
  */
 
 import { scoreCrs, clbFromTest, type CrsInput, type AbilityScores } from '../lib/crs-grid.ts';
+import { highWageLevel, HIGH_WAGE_OCCUPATIONS } from '../lib/crs-high-wage.ts';
 
 let pass = 0;
 let fail = 0;
@@ -38,6 +39,8 @@ const base: CrsInput = {
   hasSecondLanguage: false,
   second: { speaking: '', listening: '', reading: '', writing: '' },
   canadianWorkYears: 0,
+  canadianHighWageLevel: 0,
+  jobOfferLevel: 0,
   foreignWorkYears: 0,
   certificateOfQualification: false,
   spouseEducation: 'secondary',
@@ -61,6 +64,7 @@ const CORE = [
   'First official language',
   'Second official language',
   'Canadian work experience',
+  'High-wage occupation experience',
 ];
 const sum = (r: ReturnType<typeof scoreCrs>, keys: string[]) =>
   r.lines.filter((l) => keys.includes(l.label)).reduce((a, b) => a + b.points, 0);
@@ -77,9 +81,10 @@ const maxSingle: CrsInput = {
   hasSecondLanguage: true,
   second: clb(10),
   canadianWorkYears: 5,
+  canadianHighWageLevel: 3,
 };
 const rs = scoreCrs(maxSingle);
-t('core max, single = 500', sum(rs, CORE), 500);
+t('core max, single = 570', sum(rs, CORE), 570);
 
 const maxSpouse: CrsInput = {
   ...maxSingle,
@@ -93,9 +98,9 @@ const rp = scoreCrs(maxSpouse);
 const spouseSection = rp.lines
   .filter((l) => l.label.startsWith('Spouse'))
   .reduce((a, b) => a + b.points, 0);
-t('core max, with spouse = 460', sum(rp, CORE), 460);
+t('core max, with spouse = 530', sum(rp, CORE), 530);
 t('spouse section = 40', spouseSection, 40);
-t('core + spouse = 500', sum(rp, CORE) + spouseSection, 500);
+t('core + spouse = 570', sum(rp, CORE) + spouseSection, 570);
 
 const maxNoPnp: CrsInput = {
   ...base,
@@ -106,13 +111,42 @@ const maxNoPnp: CrsInput = {
   hasSecondLanguage: true,
   second: clb(10),
   canadianWorkYears: 5,
+  canadianHighWageLevel: 3,
   foreignWorkYears: 3,
   certificateOfQualification: true,
   siblingInCanada: true,
   canadianStudy: 'long',
 };
-t('max without a nomination = 695', scoreCrs(maxNoPnp).total, 695);
-t('max with a nomination = 1200', scoreCrs({ ...maxNoPnp, provincialNomination: true }).total, 1200);
+t('max without a nomination = 765', scoreCrs(maxNoPnp).total, 765);
+t('max with a nomination = 1270', scoreCrs({ ...maxNoPnp, provincialNomination: true }).total, 1270);
+
+/* --- trap 6: job offer or Canadian work, the higher one, never both --- */
+const lmi = (input: Partial<CrsInput>) => {
+  const r = scoreCrs({ ...base, ...input });
+  return one(r, 'Canadian work experience') + one(r, 'High-wage occupation experience') + one(r, 'High-wage job offer');
+};
+t('offer at level 3, no Canadian work = 100', lmi({ jobOfferLevel: 3 }), 100);
+t('offer at level 2 = 70', lmi({ jobOfferLevel: 2 }), 70);
+t('offer at level 1 = 50', lmi({ jobOfferLevel: 1 }), 50);
+t('offer not on the list = 0', lmi({ jobOfferLevel: 0 }), 0);
+t('work beats a smaller offer: 3y (64) vs level 1 (50)', lmi({ canadianWorkYears: 3, jobOfferLevel: 1 }), 64);
+t('offer beats less work: 1y (40) vs level 2 (70)', lmi({ canadianWorkYears: 1, jobOfferLevel: 2 }), 70);
+t('never the sum: 5y + level 3 work + level 3 offer = 150', lmi({ canadianWorkYears: 5, canadianHighWageLevel: 3, jobOfferLevel: 3 }), 150);
+t('with spouse, 5y + level 3 work = 140', lmi({ maritalStatus: 'partnered', spouseComingAlong: true, canadianWorkYears: 5, canadianHighWageLevel: 3 }), 140);
+
+/* --- trap 7: high-wage points sit on top of length, and need a year --- */
+t('1y at level 1 = 40 + 20', lmi({ canadianWorkYears: 1, canadianHighWageLevel: 1 }), 60);
+t('2y at level 2 = 53 + 40', lmi({ canadianWorkYears: 2, canadianHighWageLevel: 2 }), 93);
+t('level with no year of work adds nothing', lmi({ canadianWorkYears: 0, canadianHighWageLevel: 3 }), 0);
+t('a job offer adds nothing to transferability', one(scoreCrs({ ...base, education: 'doctoral', jobOfferLevel: 3 }), 'Skill transferability'), 0);
+
+/* --- the occupation list --- */
+t('186 occupations', HIGH_WAGE_OCCUPATIONS.length, 186);
+t('software engineers are level 2', highWageLevel('21231'), 2);
+t('lawyers are level 3', highWageLevel('41101'), 3);
+t('auditors and accountants are level 1', highWageLevel('11100'), 1);
+t('an unlisted NOC is level 0', highWageLevel('65200'), 0);
+t('an empty answer is level 0', highWageLevel(''), 0);
 
 /* --- trap 1: CLB 4 and 5 are one band; only below CLB 4 is zero --- */
 t('CLB 4 first language = 24, not 0', one(scoreCrs({ ...base, first: clb(4) }), 'First official language'), 24);
@@ -242,9 +276,6 @@ t(
   ).length,
   0,
 );
-
-/* --- trap 7: job-offer points no longer exist as an input at all --- */
-t('no job-offer field on the input model', /job|arranged|lmia/i.test(Object.keys(base).join(',')), false);
 
 /* --- degenerate input must not throw or produce NaN --- */
 const empty = scoreCrs(base);

@@ -213,9 +213,10 @@ export default function CategoryBasedDrawsPage() {
             />
             <Prose>
               <p>
-                A great many Pakistani candidates sit in the pool with a respectable score that is
-                nonetheless short of the cut-offs recent general rounds have produced — you can read
-                those cut-offs yourself in IRCC’s published{' '}
+                Many candidates sit in the pool with a respectable score and no round to use it in.
+                IRCC has not recently held rounds open to the whole pool, so for someone applying
+                from abroad, a category may be the only round within reach without a nomination. You
+                can see this for yourself in IRCC’s published{' '}
                 <a
                   href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html"
                   className="font-semibold text-accent-500 link-underline"
@@ -224,7 +225,7 @@ export default function CategoryBasedDrawsPage() {
                 >
                   record of rounds of invitations
                 </a>
-                , and they move. The conventional advice is
+                , and the pattern can change. The conventional advice is
                 to raise the score: retake the language test, add a credential, secure a provincial
                 nomination.
               </p>

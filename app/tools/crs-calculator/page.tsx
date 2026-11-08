@@ -22,28 +22,25 @@ import { CRS_GRID_VERIFIED_ON, OFFICIAL_CALCULATOR_URL } from '@/lib/crs-grid';
  * changed, and it hands the reader a test they can run against ANY calculator
  * including ours. That is stronger anyway: it invites the reader to audit us.
  *
- * The notice above the calculator stays until lib/crs-grid.ts carries the
- * Labour Market Integration factor IRCC added on 3 November 2026.
- *
  * Do not reintroduce a comparative claim without evidence verified down to the
  * scoring behaviour of each named tool.
  */
 export const metadata: Metadata = {
   title: 'CRS Calculator — Express Entry Points',
   description:
-    'A free Express Entry CRS estimate, what IRCC changed on 3 November 2026, and how to check any calculator against IRCC’s own points table.',
+    'Free Express Entry CRS calculator on the grid in force since 3 November 2026, with high-wage work and job offers. Check it against IRCC’s own tables.',
   alternates: { canonical: '/tools/crs-calculator' },
 };
 
-const CRS_CRITERIA_URL =
-  'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score/crs-criteria.html';
 const CRS_CHANGES_URL =
   'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/changes.html';
+const JOB_OFFER_URL =
+  'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/offer-employment.html';
 
 const FAQS = [
   {
     q: 'Why is my score different from another calculator?',
-    a: 'Right now the likeliest reason is the change IRCC made on 3 November 2026. A calculator built on the new grid counts high-wage Canadian work experience and high-wage job offers. Ours does not yet, so if either applies to you, go by IRCC’s published points table rather than our result.',
+    a: 'The likeliest reason is the change IRCC made on 3 November 2026. A calculator not yet rebuilt for it will ignore high-wage Canadian work experience and high-wage job offers, or still treat every job offer the same. You can test any calculator yourself, including ours, using the check on this page.',
   },
   {
     q: 'Does a job offer earn CRS points?',
@@ -51,11 +48,11 @@ const FAQS = [
   },
   {
     q: 'What score do I need?',
-    a: 'There is no fixed number. The cut-off changes with almost every round of invitations and differs between general draws and category-based draws. Anyone quoting you a single guaranteed number is guessing. IRCC publishes the result of each round, and that is the only honest place to look.',
+    a: 'There is no fixed number. The cut-off changes with almost every round of invitations and differs between types of round. Rounds held before 3 November 2026 also used the old points. Anyone quoting you a single guaranteed number is guessing. IRCC publishes the result of each round, and that is the only honest place to look.',
   },
   {
     q: 'Is this the official calculator?',
-    a: 'No, and you should not treat it as one. We build the grid from IRCC’s published tables and check it by hand, and this version predates the November 2026 change. Run your numbers through IRCC’s own calculator before relying on them — if the two disagree, IRCC is right.',
+    a: 'No, and you should not treat it as one. We build the grid from IRCC’s published tables and compare it with them cell by cell. Run your numbers through IRCC’s own calculator before relying on them — if the two disagree, IRCC is right.',
   },
   {
     q: 'My score is low. Is that the end of it?',
@@ -79,24 +76,11 @@ export default async function CrsCalculatorPage() {
             Express Entry CRS calculator, <span className="text-gold-300">and how to check it</span>
           </>
         }
-        subtitle="Estimate your Comprehensive Ranking System score, then test our arithmetic against IRCC’s own calculator. We will show you how."
+        subtitle="Work out your Comprehensive Ranking System score on the grid IRCC has used since 3 November 2026, then test our arithmetic against IRCC’s own calculator. We will show you how."
       />
 
       <Section tone="paper">
         <div className="mx-auto max-w-5xl">
-          <div className="mb-8">
-            <Callout title="IRCC changed the scoring on 3 November 2026, and this calculator has not caught up yet">
-              IRCC added a Labour Market Integration factor worth up to 150 points. It covers
-              Canadian work experience, with extra points for high-wage occupations, or a
-              high-wage job offer. We are rebuilding this tool for it. If you have neither, the
-              change does not affect your result here. If you have either, your real score may be
-              higher than this shows, so go by{' '}
-              <a href={CRS_CRITERIA_URL} rel="noopener noreferrer" target="_blank" className="font-semibold text-accent-500 link-underline">
-                IRCC’s published points table
-              </a>
-              .
-            </Callout>
-          </div>
           <CrsCalculator digits={digits} />
           <p className="mt-6 text-center text-ink-600">
             Got your score?{' '}
@@ -124,8 +108,13 @@ export default async function CrsCalculatorPage() {
             </p>
             <p>
               A job offer no longer needs an LMIA for Express Entry, and having one adds no extra
-              points. An offer outside IRCC’s high-wage lists earns no CRS points at all, though
-              an officer still has to be satisfied that any offer is genuine.
+              points. An offer outside IRCC’s high-wage lists earns no CRS points at all, and an
+              officer still has to be satisfied that any offer is genuine. IRCC’s online profile
+              has not caught up with this and may still ask for LMIA details, so{' '}
+              <a href={JOB_OFFER_URL} rel="noopener noreferrer" target="_blank" className="font-semibold text-accent-500 link-underline">
+                follow IRCC’s instructions
+              </a>{' '}
+              when you enter an offer.
             </p>
             <p>
               If someone is selling you a job offer for the points, ask which occupation it is
@@ -143,10 +132,11 @@ export default async function CrsCalculatorPage() {
           </div>
           <div className="mt-8">
             <Callout title="How to test any CRS calculator, including this one">
-              See whether it asks about high-wage occupations. If it treats every job offer as
-              zero, or gives points for any job offer, it is not on the grid IRCC has used since
-              3 November 2026. Ours is in that position until we finish rebuilding it, and this
-              page will say so until then.
+              With no Canadian work experience entered, add a job offer in an occupation on IRCC’s
+              high-wage list. The total should rise by 50, 70 or 100, depending on the occupation’s
+              level. An offer in any other job should add nothing. If a calculator does something
+              else, it is not on the grid IRCC has used since 3 November 2026. Do it to ours. We
+              would rather you checked than trusted us.
             </Callout>
           </div>
           <div className="mt-8">

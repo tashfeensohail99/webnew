@@ -23,6 +23,14 @@ export default function ExpressEntry2026() {
   return (
     <>
       <p>
+        <strong>Update, 8 November 2026:</strong> IRCC changed how CRS points work on 3 November, after
+        this post was written. The rounds below were all scored under the old points.{' '}
+        <Link href="/tools/crs-calculator" className={a}>
+          Our CRS calculator
+        </Link>{' '}
+        now uses the new grid.
+      </p>
+      <p>
         By 16 October 2026, IRCC had held <strong>62 Express Entry rounds</strong> this year and issued{' '}
         <strong>143,467 invitations to apply</strong> — almost double the 74,183 it had issued by the same
         point in 2025, across 43 rounds. More invitations sounds like good news, and for some candidates

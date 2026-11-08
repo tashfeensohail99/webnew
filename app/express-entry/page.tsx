@@ -24,7 +24,7 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * every bad decision downstream follows from it.
  */
 export const metadata: Metadata = {
-  title: 'Express Entry',
+  title: 'Express Entry from Pakistan: How It Works',
   description:
     'Express Entry is a system for three federal programmes, not one you apply to. How the pool, the CRS ranking and the invitation actually work.',
   alternates: { canonical: '/express-entry' },
@@ -46,7 +46,9 @@ const IRCC = {
   crs: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score/crs-criteria.html',
   proofOfFunds:
     'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html',
-  fees: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/fees.html',
+  crsChanges:
+    'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/changes.html',
+  fees: 'https://ircc.canada.ca/english/information/fees/fees.asp',
   processingTimes:
     'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html',
   whoCanApply:
@@ -72,18 +74,21 @@ const PROGRAMMES = [
     icon: 'globe' as const,
     kicker: 'Federal Skilled Worker',
     title: 'Skilled work experience abroad',
-    body: 'The route most of the people who write to us from Pakistan fall under. Skilled work experience in a qualifying occupation, language testing, and an education assessment for a foreign degree. No Canadian work history is required.',
+    href: '/express-entry/federal-skilled-worker',
+    body: 'The usual route for people in Pakistan without Canadian work experience. Skilled work experience in a qualifying occupation, language testing, and an education assessment for a foreign degree. No Canadian work history is required.',
   },
   {
     icon: 'building' as const,
     kicker: 'Canadian Experience Class',
     title: 'Skilled work already done in Canada',
+    href: '/express-entry/canadian-experience-class',
     body: 'For people who have already worked in Canada in a skilled occupation — usually former students or work-permit holders. If you’ve never worked in Canada, this one isn’t open to you.',
   },
   {
     icon: 'permit' as const,
     kicker: 'Federal Skilled Trades',
     title: 'A qualified skilled trade',
+    href: '/express-entry/federal-skilled-trades',
     body: 'For qualified tradespeople. It carries its own requirement: a certificate of qualification issued by a Canadian provincial, territorial or federal authority, or a qualifying job offer in the trade. Getting certified is itself a process, and it is done through the province, not through IRCC.',
   },
 ];
@@ -108,7 +113,7 @@ const STEPS = [
   },
   {
     title: 'Receive an Invitation to Apply',
-    body: 'IRCC holds rounds of invitations. In a general round it invites from the top of the pool down. In a category-based round it first filters the pool to a targeted group, then invites from the top of that group.',
+    body: 'IRCC holds rounds of invitations. A general round invites from the top of the whole pool, but IRCC has not recently held any. Recent rounds have each targeted one group: provincial nominees, people with Canadian experience, French speakers or a named occupation category. IRCC filters the pool to that group, then invites from the top of it.',
   },
   {
     title: 'File the actual application',
@@ -263,11 +268,18 @@ export default function ExpressEntryPage() {
         <SectionHeading
           eyebrow="The three programmes"
           title="Which one might you fall under?"
-          subtitle="You need to meet the criteria of at least one. Most people writing to us from Pakistan are looking at the first."
+          subtitle="You need to meet the criteria of at least one. People applying from Pakistan without Canadian experience usually fall under the first."
         />
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {PROGRAMMES.map((p) => (
-            <FeatureCard key={p.title} icon={<Icon name={p.icon} />} kicker={p.kicker} title={p.title}>
+            <FeatureCard
+              key={p.title}
+              icon={<Icon name={p.icon} />}
+              kicker={p.kicker}
+              title={p.title}
+              href={p.href}
+              cta="Read the guide"
+            >
               {p.body}
             </FeatureCard>
           ))}
@@ -324,8 +336,11 @@ export default function ExpressEntryPage() {
                 else in the pool. Broadly it rewards being younger, more educated, more proficient in
                 English or French, and more experienced — plus specific additional factors such as a
                 provincial nomination, French ability, a sibling in Canada, or study completed in
-                Canada. We don’t reproduce the points table here — IRCC maintains it and revises it,
-                so read it at source: <Official href={IRCC.crs}>the CRS criteria on canada.ca</Official>.
+                Canada. Since 3 November 2026 it also has a Labour Market Integration factor, which
+                scores Canadian work experience or a job offer in a high-wage occupation:{' '}
+                <Official href={IRCC.crsChanges}>IRCC explains the change</Official>. We don’t
+                reproduce the points table here — IRCC maintains it and revises it, so read it at
+                source: <Official href={IRCC.crs}>the CRS criteria on canada.ca</Official>.
               </p>
               <p>
                 It is a relative ranking, not a pass mark. Your score doesn’t need to be “good”; it
@@ -355,7 +370,17 @@ export default function ExpressEntryPage() {
               <p>
                 IRCC runs two kinds of rounds. A general round invites from the top of the whole pool.
                 A category-based round first narrows the pool to a targeted group set by ministerial
-                instruction, then invites from the top of that group.
+                instruction, then invites from the top of that group. IRCC has not recently held
+                general rounds, so a good score on its own may not reach any round at all. The useful
+                question is which group you belong to:{' '}
+                <Link href="/blog/express-entry-2026-so-far" className="font-semibold text-accent-500 link-underline">
+                  what the 2026 rounds show
+                </Link>{' '}
+                and{' '}
+                <Link href="/express-entry/category-based-draws" className="font-semibold text-accent-500 link-underline">
+                  how category-based draws work
+                </Link>
+                .
               </p>
               <p>
                 Categories have covered things like strong French-language ability and work experience

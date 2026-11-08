@@ -24,6 +24,8 @@ const base: CrsInput = {
   hasSecondLanguage: false,
   second: blank,
   canadianWorkYears: 0,
+  canadianHighWageLevel: 0,
+  jobOfferLevel: 0,
   foreignWorkYears: 0,
   certificateOfQualification: false,
   spouseEducation: 'secondary',

@@ -85,7 +85,7 @@ const STEPS = [
   },
   {
     title: 'Invitation, then the real application',
-    body: 'If you are invited to apply, you then file the permanent residence application itself with full documents, medicals, police certificates and proof of funds. In our experience this stage — not the profile — is where files come under real scrutiny.',
+    body: 'If you are invited to apply, you then file the permanent residence application itself with full documents, medicals, police certificates and proof of funds. This stage — not the profile — is where files come under real scrutiny.',
   },
 ];
 
@@ -103,6 +103,10 @@ const FAQS = [
           className="font-semibold text-accent-500 link-underline"
         >
           Read it on canada.ca
+        </Link>
+        , or work out your own points with our{' '}
+        <Link href="/tools/fsw-67-calculator" className="font-semibold text-accent-500 link-underline">
+          selection grid calculator
         </Link>
         .
       </>
@@ -282,9 +286,17 @@ export default function FederalSkilledWorkerPage() {
             </h3>
             <p className="mt-4 text-ink-600 text-pretty">
               Inside the pool, the Comprehensive Ranking System scores you against every other
-              candidate. IRCC then invites from the top down, and sometimes within specific
-              categories. A high grid score with a weak CRS means you are eligible and still
-              waiting. Our{' '}
+              candidate. IRCC then invites from the top down within whichever group a round
+              targets, and recent rounds have each been limited to a specific group. So ask which
+              group you belong to:{' '}
+              <Link href="/blog/express-entry-2026-so-far" className="font-semibold text-accent-500 link-underline">
+                what the 2026 rounds show
+              </Link>{' '}
+              and{' '}
+              <Link href="/express-entry/category-based-draws" className="font-semibold text-accent-500 link-underline">
+                how category-based draws work
+              </Link>
+              . A high grid score with a weak CRS means you are eligible and still waiting. Our{' '}
               <Link href="/tools/crs-calculator" className="font-semibold text-accent-500 link-underline">
                 CRS calculator
               </Link>{' '}

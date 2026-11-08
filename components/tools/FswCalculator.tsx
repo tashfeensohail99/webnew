@@ -145,7 +145,7 @@ export function FswCalculator({ digits }: { digits: string }) {
           <Group title="Arranged employment">
             <Toggle
               label="I have a qualifying job offer from a Canadian employer"
-              help="Worth points on THIS grid. The CRS is separate: since 3 November 2026 only job offers in IRCC’s high-wage occupations earn CRS points."
+              help="Worth points on THIS grid. It must be in writing and for at least a year, and it no longer needs an LMIA. The CRS is separate: since 3 November 2026 only job offers in IRCC’s high-wage occupations earn CRS points."
               value={input.arrangedEmployment}
               onChange={(v) => set('arrangedEmployment', v)}
             />

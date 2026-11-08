@@ -4,22 +4,17 @@
  * ─────────────────────────────────────────────────────────────────────────────
  * PROVENANCE — read this before changing a single number.
  *
- * Every table below was derived TWICE independently and then reconciled cell by
- * cell (2026-07-20). The controlling primary text is the Ministerial Instructions
- * respecting the Express Entry system, as reproduced in Canada Gazette Part I,
- * Vol. 148, Extra No. 10, plus the amending instruction of March 2025.
+ * Every table below is compared cell by cell with IRCC's CRS criteria page by
+ * `npm run test:crs:ircc`. Run it after any IRCC announcement. Last run against
+ * the grid in force from 3 November 2026, which added the Labour Market
+ * Integration factor. Arithmetic checks that must also close:
  *
- * IMPORTANT CAVEAT: canada.ca returns HTTP 403 to automated fetching, so NO cell
- * here was read off a live IRCC web page. Values rest on the Gazette text plus
- * multi-source corroboration. Four independent arithmetic checks close exactly,
- * which is strong evidence against transcription error:
+ *     110 + 150 + 136 + 24 + 150 = 570   (IRCC's stated core max, no spouse)
+ *     100 + 140 + 128 + 22 + 140 = 530   (IRCC's stated core max, with spouse)
+ *     530 + 40                   = 570   (core + spouse section)
+ *     570 + 100 + 50 + 30 + 15   = 765   (max attainable without a nomination)
  *
- *     110 + 150 + 136 + 24 + 80 = 500   (IRCC's stated core max, no spouse)
- *     100 + 140 + 128 + 22 + 70 = 460   (IRCC's stated core max, with spouse)
- *     460 + 40                  = 500   (core + spouse section)
- *     500 + 100 + 50 + 30 + 15  = 695   (max attainable without a nomination)
- *
- * The 460 only closes because the with-spouse second-language section is capped
+ * The 530 only closes because the with-spouse second-language section is capped
  * at 22 even though 6 × 4 abilities = 24. That cap is real — see LANG2_CAP.
  *
  * ─────────────────────────────────────────────────────────────────────────────
@@ -38,11 +33,17 @@
  *     Listening 6.5 and 7.0 are both CLB 7. Rounding up silently over-scores.
  *  5. Abilities are scored INDEPENDENTLY and never averaged. The IELTS overall
  *     band is irrelevant and must be ignored.
- *  6. Arranged employment / job offer is worth ZERO since March 2025. Many
- *     published calculators still award 50-200 points. Do not "restore" it.
+ *  6. Job offers earn points again since 3 November 2026, but ONLY in an occupation
+ *     on IRCC's high-wage list. Any other offer is worth zero, and an LMIA adds
+ *     nothing. The offer and Canadian work experience are alternatives inside one
+ *     factor: the applicant gets the HIGHER score, never the sum.
+ *  7. High-wage experience points sit ON TOP of work-length points and need at
+ *     least a year of Canadian work. A job offer adds nothing to transferability.
  */
 
-export const CRS_GRID_VERIFIED_ON = '20 July 2026';
+import type { HighWageLevel } from './crs-high-wage';
+
+export const CRS_GRID_VERIFIED_ON = '8 November 2026';
 
 export const OFFICIAL_CALCULATOR_URL =
   'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score.html';
@@ -81,6 +82,10 @@ export type CrsInput = {
   hasSecondLanguage: boolean;
   second: AbilityScores;
   canadianWorkYears: number;
+  /** Level reached by at least 12 months of that Canadian work. 0 if none. */
+  canadianHighWageLevel: HighWageLevel;
+  /** Level of the occupation in a valid job offer. 0 if none, or not on the list. */
+  jobOfferLevel: HighWageLevel;
   foreignWorkYears: number;
   certificateOfQualification: boolean;
   spouseEducation: EducationLevel;
@@ -93,7 +98,6 @@ export type CrsInput = {
 
 export type CrsBreakdown = {
   total: number;
-  realisticMax: number;
   lines: { label: string; points: number }[];
 };
 
@@ -259,6 +263,12 @@ const CANADIAN_WORK: [number, number][] = [
   [80, 70], // 5+
 ];
 
+/** Extra points for 12+ months of Canadian work at each high-wage level. */
+const HIGH_WAGE_EXPERIENCE: Record<HighWageLevel, number> = { 0: 0, 1: 20, 2: 40, 3: 70 };
+
+/** Points for a valid job offer at each high-wage level. */
+const HIGH_WAGE_JOB_OFFER: Record<HighWageLevel, number> = { 0: 0, 1: 50, 2: 70, 3: 100 };
+
 const SPOUSE_CANADIAN_WORK = [0, 5, 7, 8, 9, 10];
 
 /* -------------------------- skill transferability -------------------------- */
@@ -295,22 +305,34 @@ export function scoreCrs(input: CrsInput): CrsBreakdown {
     if (points > 0) lines.push({ label, points });
   };
 
-  /* --- A. Core / human capital (cap 500 without spouse, 460 with) --- */
+  /* --- A. Core / human capital (cap 570 without spouse, 530 with) --- */
   const age = agePoints(input.age, withSpouse);
   const edu = EDUCATION[input.education][withSpouse ? 1 : 0];
   const lang1 = ABILITIES.reduce((t, a) => t + lang1PerAbility(first[a], withSpouse), 0);
   const lang2Raw = second ? ABILITIES.reduce((t, a) => t + lang2PerAbility(second[a]), 0) : 0;
   const lang2 = Math.min(lang2Raw, withSpouse ? LANG2_CAP.withSpouse : LANG2_CAP.withoutSpouse);
-  const cdnWork = CANADIAN_WORK[clampIdx(input.canadianWorkYears, 5)][withSpouse ? 1 : 0];
 
-  const coreRaw = age + edu + lang1 + lang2 + cdnWork;
-  const core = Math.min(coreRaw, withSpouse ? 460 : 500);
+  // Labour Market Integration: Canadian work experience OR a job offer, whichever
+  // scores higher (see trap 6).
+  const workLength = CANADIAN_WORK[clampIdx(input.canadianWorkYears, 5)][withSpouse ? 1 : 0];
+  const highWageWork = input.canadianWorkYears >= 1 ? HIGH_WAGE_EXPERIENCE[input.canadianHighWageLevel] : 0;
+  const jobOffer = HIGH_WAGE_JOB_OFFER[input.jobOfferLevel];
+  const usesOffer = jobOffer > workLength + highWageWork;
+  const labourMarket = usesOffer ? jobOffer : workLength + highWageWork;
+
+  const coreRaw = age + edu + lang1 + lang2 + labourMarket;
+  const core = Math.min(coreRaw, withSpouse ? 530 : 570);
 
   push('Age', age);
   push('Education', edu);
   push('First official language', lang1);
   push('Second official language', lang2);
-  push('Canadian work experience', cdnWork);
+  if (usesOffer) {
+    push('High-wage job offer', jobOffer);
+  } else {
+    push('Canadian work experience', workLength);
+    push('High-wage occupation experience', highWageWork);
+  }
 
   /* --- B. Spouse factors (cap 40) --- */
   let spouse = 0;
@@ -377,7 +399,6 @@ export function scoreCrs(input: CrsInput): CrsBreakdown {
 
   return {
     total: core + spouse + transfer + additional,
-    realisticMax: input.provincialNomination ? 1200 : 695,
     lines,
   };
 }

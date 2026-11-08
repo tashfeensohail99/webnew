@@ -41,7 +41,7 @@ const TOOLS = [
     icon: 'calculator' as const,
     kicker: 'Canada · Express Entry',
     title: 'CRS points calculator',
-    body: 'An estimate of your Comprehensive Ranking System score, with a clear note on what IRCC changed on 3 November 2026 and who that affects.',
+    body: 'Your Comprehensive Ranking System score on the grid IRCC has used since 3 November 2026, plus a simple test you can run to check any calculator — including ours.',
     cta: 'Calculate my score',
   },
   {

@@ -9,6 +9,7 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "test:crs": "node test/crs-grid.test.ts",
+    "test:crs:ircc": "node test/crs-against-ircc.ts",
     "test:profiles": "node test/crs-profiles.ts",
     "test:clb": "node test/clb.test.ts",
     "test:fsw": "node test/fsw-grid.test.ts"

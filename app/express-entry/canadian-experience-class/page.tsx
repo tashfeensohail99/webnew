@@ -72,7 +72,7 @@ const STEPS = [
   },
   {
     title: 'Create the Express Entry profile',
-    body: 'You enter the pool with a Comprehensive Ranking System score. Being eligible for CEC gets you into the pool; it does not by itself get you an invitation.',
+    body: 'You enter the pool with a Comprehensive Ranking System score. Since 3 November 2026 that score adds extra points if at least a year of your Canadian work was in a high-wage occupation. Being eligible for CEC gets you into the pool; it does not by itself get you an invitation.',
   },
   {
     title: 'Wait for an invitation to apply',
