@@ -12,6 +12,7 @@ import {
   Icon,
 } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { SERVICE } from '@/lib/site';
 
 /**
  * Extending a study permit.
@@ -496,6 +497,7 @@ export default function StudyPermitExtensionPage() {
         title="Get the extension filed in time"
         subtitle="Tell us your permit expiry date, your programme end date and whether anything has changed since the permit was issued. If you have already lost status, say so on the first message — the window for restoration is short."
         page={PAGE}
+        service={SERVICE.STUDY_VISA}
         waMessage="Hi, I need help extending my Canadian study permit."
       />
     </>

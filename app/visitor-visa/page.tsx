@@ -12,6 +12,7 @@ import {
   Icon,
 } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { SERVICE } from '@/lib/site';
 
 /**
  * The hub page for temporary visits to Canada.
@@ -30,7 +31,7 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * year to year. Link the dataset instead.
  */
 export const metadata: Metadata = {
-  title: 'Visiting Canada',
+  title: 'Visiting Canada: Visa, eTA, Super Visa Routes',
   description:
     'Visitor visa or eTA, Super Visa, business visitors and extensions: how these routes work, and the one question underneath every application.',
   alternates: { canonical: '/visitor-visa' },
@@ -52,18 +53,24 @@ const ROUTES = [
     kicker: 'eTA',
     title: 'For visa-exempt nationalities only',
     body: 'An electronic authorisation linked to a passport, for citizens of visa-exempt countries flying to Canada. It is not a cheaper visitor visa — it is a different regime you either fall into or you don’t.',
+    href: '/visitor-visa/eta',
+    cta: 'What an eTA is',
   },
   {
     icon: 'user' as const,
     kicker: 'Super Visa',
     title: 'Parents and grandparents',
     body: 'A multiple-entry route for parents and grandparents of Canadian citizens and permanent residents, allowing a materially longer stay per entry than an ordinary visitor visa — with its own medical-insurance and host-income conditions.',
+    href: '/visitor-visa/super-visa',
+    cta: 'Super Visa rules',
   },
   {
     icon: 'building' as const,
     kicker: 'Business visitor',
     title: 'Meetings, not employment',
     body: 'You may attend meetings, conferences, negotiations and after-sales work as a visitor. What you may not do is enter the Canadian labour market. That line is narrower than most people assume.',
+    href: '/visitor-visa/business-visitor',
+    cta: 'Business visitors',
   },
 ];
 
@@ -82,7 +89,7 @@ const REALITY = [
   ],
   [
     'A consistent story',
-    'What you tell the officer must match your forms, your bank record, your employer’s letter and your host’s letter. Contradictions get read as misrepresentation, not as clerical error.',
+    'What you tell the officer must match your forms, your bank record, your employer’s letter and your host’s letter. Contradictions can be read as misrepresentation, not as clerical error.',
   ],
 ];
 
@@ -105,7 +112,7 @@ const FAQS = [
   },
   {
     q: 'What does it cost and how long does it take?',
-    a: 'Two separate things: the government fee paid to IRCC, and our professional fee. Both the fee schedule and the current processing times are published by IRCC and both change, so we point you at the source rather than print a number here that may be wrong by the time you read it — see the IRCC fee list at canada.ca/en/immigration-refugees-citizenship/services/application/fees.html and the processing-times tool at canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html. Our own fee is quoted in writing for your file before you commit.',
+    a: 'Two separate things: the government fee paid to IRCC, and our professional fee. Both the fee schedule and the current processing times are published by IRCC and both change, so we point you at the source rather than print a number here that may be wrong by the time you read it — see the IRCC fee list at ircc.canada.ca/english/information/fees/fees.asp and the processing-times tool at canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html. Our own fee is quoted in writing for your file before you commit.',
   },
   {
     q: 'Can I work or study on a visitor visa?',
@@ -130,9 +137,10 @@ export default function VisitorVisaPage() {
         }
         subtitle={
           <>
-            Visitor visa, eTA, Super Visa, business visitor, extension — different names for the
-            same regime. Every one of them turns on whether an officer believes you will{' '}
-            <strong className="font-semibold text-white">leave at the end of your stay</strong>.
+            Visitor visa, Super Visa, business visitor, extension: all fall under the same visitor
+            rules, and all turn on whether an officer believes you will{' '}
+            <strong className="font-semibold text-white">leave at the end of your stay</strong>. The
+            eTA is a separate screening for visa-exempt travellers.
           </>
         }
       >
@@ -207,6 +215,10 @@ export default function VisitorVisaPage() {
                 </li>
               ))}
             </ul>
+            <p className="mt-6 text-ink-600 text-pretty">
+              Two things that can help: <Link href="/visitor-visa/invitation-letter" className="font-semibold text-accent-500 link-underline">what an invitation letter can and cannot do</Link>, and our{' '}
+              <Link href="/tools/visit-visa-refusal-risk" className="font-semibold text-accent-500 link-underline">refusal-risk questionnaire</Link>.
+            </p>
           </div>
         </div>
       </Section>
@@ -225,23 +237,23 @@ export default function VisitorVisaPage() {
             published, and you meet them or you don’t. A visitor application is not scored at all.
             It is judged on an officer’s assessment of your intentions under the temporary resident
             rules, and it carries no appeal to the Immigration Appeal Division — only judicial
-            review in the Federal Court. IRCC publishes its own approval and refusal figures, which
-            move year to year; if you want the current picture, read it from the source rather than
+            review in the Federal Court. IRCC publishes operational data on visitor visas, including
+            by source country, which moves year to year; if you want the current picture, read it from the source rather than
             from a consultant’s website, including ours.{' '}
             <a
-              href="https://open.canada.ca/data/en/dataset/adad3e30-2872-4a4d-a5a5-b3ca1e2ce29d"
+              href="https://open.canada.ca/data/en/dataset/9b34e712-513f-44e9-babf-9df4f7256550"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-accent-500 link-underline"
             >
-              IRCC temporary residence data on the Open Government portal
+              IRCC operational data on the Open Government portal
             </a>
             .
           </p>
           <p>
             That subjectivity cuts both ways. It means a genuine applicant with a thin travel
             history can be refused. It also means a case that was refused once can succeed later on
-            better evidence, or be overturned where the decision was unreasonable. What it never
+            better evidence, or be set aside and sent back to be decided again where the decision was unreasonable. What it never
             means is that anyone can guarantee you an outcome.{' '}
             <Link href="/no-guarantee-policy" className="font-semibold text-accent-500 link-underline">
               Read our no-guarantee policy
@@ -291,7 +303,7 @@ export default function VisitorVisaPage() {
             >
               IRCC guidance on extending your stay as a visitor
             </a>
-            .
+            . Our guide to <Link href="/visitor-visa/extension" className="font-semibold text-accent-500 link-underline">extending your stay</Link> covers it in more detail.
           </p>
         </Prose>
 
@@ -353,6 +365,7 @@ export default function VisitorVisaPage() {
         title="Find out whether your visit application is worth filing"
         subtitle="Tell us why you’re travelling, what you can evidence and what your history looks like, and we’ll tell you honestly how your case reads to an officer — including when the answer is to wait."
         page={PAGE}
+        service={SERVICE.VISIT_VISA}
         waMessage="Hi, I’d like to apply for a Canada visitor visa. Can you assess my case?"
       />
     </>

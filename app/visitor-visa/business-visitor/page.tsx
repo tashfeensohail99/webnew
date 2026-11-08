@@ -12,6 +12,7 @@ import {
   Icon,
 } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { SERVICE } from '@/lib/site';
 
 /**
  * Business visitors.
@@ -457,6 +458,7 @@ export default function BusinessVisitorPage() {
         title="Have the activity assessed before you travel, not at the counter"
         subtitle="Tell us what you will be doing in Canada, who is paying you for it and under what contract. We will tell you honestly whether it sits inside the business visitor definition — and if it does not, what you actually need."
         page={PAGE}
+        service={SERVICE.VISIT_VISA}
         waMessage="Hi, I’d like to check whether my planned activity in Canada counts as a business visit or needs a work permit."
       />
     </>

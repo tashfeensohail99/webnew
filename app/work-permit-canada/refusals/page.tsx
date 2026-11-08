@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { PageHero, Section, SectionHeading, FeatureCard, Callout, FAQ, CTASection, Icon, type IconName } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { SERVICE } from '@/lib/site';
 
 /**
  * C11 spoke: refusals.
@@ -222,6 +223,7 @@ export default function C11RefusalsPage() {
         title="Find out which rule your C11 failed"
         subtitle="Send us the refusal letter, your business plan and anything that came with the decision. We’ll tell you what the refusal does and doesn’t establish, and which way forward makes sense. No one can guarantee an outcome, and we won’t."
         page={PAGE}
+        service={SERVICE.JR_RESUBMISSION}
         waMessage="Hi, my C11 work permit was refused and I’d like to understand why before I re-apply."
       />
     </>

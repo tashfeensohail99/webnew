@@ -105,11 +105,11 @@ export function VisitVisaRiskChecker({ digits }: { digits: string }) {
       : pct >= 45
         ? {
             title: 'Mixed — there are things an officer will question',
-            body: 'There is a real case here, but also specific weak points. Most refusals we see were avoidable: the evidence existed, it just wasn’t put in front of the officer properly.',
+            body: 'There is a real case here, but also specific weak points. Evidence that exists but is not put in front of the officer properly cannot help you.',
           }
         : {
             title: 'On this picture, refusal risk looks high',
-            body: 'We would rather say that plainly. Filing now would likely put a refusal on your record — which makes every future application harder. Fix the weak points first.',
+            body: 'We would rather say that plainly. Filing in this state carries a real risk of refusal, and a refusal can make future applications harder. Fix the weak points first.',
           };
 
   const weaknesses = picked.filter((p) => p.choice?.weak).map((p) => p.choice!.weak!);

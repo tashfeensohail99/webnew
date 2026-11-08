@@ -45,7 +45,7 @@ const REFUSALS = [
     icon: 'user' as const,
     kicker: 'Whose funds',
     title: 'Funds in someone else’s name',
-    body: 'Your father’s account, your brother’s account. The officer wants to see that YOU can pay for this trip.',
+    body: 'Your father’s account, your brother’s account. Money from a relative or host is not disqualifying, but it needs a documented source and a clear reason.',
   },
   {
     icon: 'plane' as const,
@@ -102,8 +102,8 @@ const FAQ_ITEMS = [
     a: (
       <>
         <strong className="text-ink-900">IRCC does not publish a Pakistan-specific approval rate</strong>{' '}
-        — so anyone quoting you a precise “rate for Pakistanis” is repeating a number they cannot
-        source. Global rates also move from year to year and say nothing about your file. What
+        as such — so anyone quoting you a precise “rate for Pakistanis” should be able to show how
+        they worked it out from IRCC’s data. Global rates also move from year to year and say nothing about your file. What
         actually decides it is the strength of your specific application, not a statistic.
       </>
     ),
@@ -112,7 +112,7 @@ const FAQ_ITEMS = [
     q: 'The bank balance is really the whole thing?',
     a: (
       <>
-        It’s the most common single reason we see files fall down, but it is never the whole thing. The
+        It matters, but it is never the whole thing. The
         officer weighs your funds, your ties, your travel history and whether the trip makes sense —
         together. A strong balance with a weak reason to return home does not save an application.
       </>
@@ -133,9 +133,9 @@ const FAQ_ITEMS = [
     q: 'My visa was already refused — should I just reapply?',
     a: (
       <>
-        Not blindly. The refusal letter doesn’t tell you the real reason — the officer’s actual notes
-        are in a separate file you are entitled to request. Reapplying without reading them is guessing,
-        and a second refusal makes the third attempt harder.{' '}
+        Not blindly. Refusals since July 2025 usually come with a note from the officer, so check
+        everything IRCC sent you first. If you need more, you can request the fuller GCMS notes.
+        Reapplying without reading the officer’s reasons is guessing, and a second refusal makes the third attempt harder.{' '}
         <Link href="/canada-visa-refused" className="font-semibold text-accent-500 link-underline">
           Start with what to do after a refusal
         </Link>
@@ -155,7 +155,7 @@ export default function VisitVisaPage() {
             Canada visit visa, <span className="text-gold-300">from Pakistan.</span>
           </>
         }
-        subtitle="The most common Canadian visa — and the most commonly refused. Most of the refusals we see were avoidable with the right file."
+        subtitle="What a Canadian visitor visa asks of you, what an officer has to be satisfied about, and what to do if you have been refused."
       >
         <WhatsAppCta
           variant="ghost"
@@ -186,14 +186,22 @@ export default function VisitVisaPage() {
             <p>
               Visitor-visa approval rates move from year to year, and{' '}
               <strong className="text-ink-900">
-                IRCC does not publish a Pakistan-specific figure at all.
+                IRCC does not publish a Pakistan approval rate as such.
               </strong>{' '}
-              So anyone who quotes you a precise “approval rate for Pakistanis” is repeating a number
-              they cannot source. What decides your case is not a statistic — it is how well your
+              So anyone who quotes you a precise “approval rate for Pakistanis” should be able to show
+              how they worked it out from IRCC’s data. What decides your case is not a statistic — it is how well your
               application answers the one doubt in the officer’s mind.
             </p>
           </Callout>
         </div>
+        <p className="mt-8 text-ink-600 text-pretty">
+          Related guides: <Link href="/visitor-visa" className="font-semibold text-accent-500 link-underline">all the ways to visit Canada</Link>,{' '}
+          <Link href="/visitor-visa/eta" className="font-semibold text-accent-500 link-underline">why an eTA is not an option on a Pakistani passport</Link>,{' '}
+          <Link href="/visitor-visa/invitation-letter" className="font-semibold text-accent-500 link-underline">what an invitation letter can and cannot do</Link>, the{' '}
+          <Link href="/visitor-visa/super-visa" className="font-semibold text-accent-500 link-underline">Super Visa for parents and grandparents</Link>,{' '}
+          <Link href="/visitor-visa/business-visitor" className="font-semibold text-accent-500 link-underline">business visitors</Link> and{' '}
+          <Link href="/visitor-visa/extension" className="font-semibold text-accent-500 link-underline">extending your stay once you are in Canada</Link>.
+        </p>
       </Section>
 
       {/* ================== THE REAL QUESTION (stat band) ================== */}
@@ -207,7 +215,7 @@ export default function VisitVisaPage() {
           {
             big: 'Evidence',
             label: 'over assertion',
-            desc: 'Most people assemble documents. The ones who get approved build an argument the officer can follow.',
+            desc: 'Most people assemble documents. An officer has to be able to follow why your evidence shows you will leave.',
           },
           {
             big: 'You',
@@ -252,7 +260,7 @@ export default function VisitVisaPage() {
         <SectionHeading
           eyebrow="What it takes"
           title="How we put your file together"
-          subtitle="A visit visa is won or lost before it is filed. Here is what the work actually looks like."
+          subtitle="What is within your control is the file itself. Here is what the work actually looks like."
         />
         <ol className="mt-12 grid gap-6 md:grid-cols-3">
           {STEPS.map((s) => (
@@ -303,9 +311,9 @@ export default function VisitVisaPage() {
             Then don’t reapply yet — start somewhere else
           </h2>
           <p className="mt-5 max-w-2xl text-ink-600 text-pretty">
-            The letter you received doesn’t tell you the real reason — the officer’s actual notes are in
-            a separate file you are entitled to request. Reapplying without reading them is guessing,
-            and a second refusal makes the third attempt harder.
+            Check everything IRCC sent you first: refusals since July 2025 usually include a note from
+            the officer. If you need more, you can request the fuller GCMS notes. Reapplying without
+            reading the officer’s reasons is guessing, and a second refusal makes the third attempt harder.
           </p>
           <Link
             href="/canada-visa-refused"
@@ -337,6 +345,7 @@ export default function VisitVisaPage() {
         title="Where you’re going, why, and who’s paying"
         subtitle="And whether you’ve ever been refused — by any country. That last one changes everything. The consultation is free, and you leave with our read in writing."
         page={PAGE}
+        service={SERVICE.VISIT_VISA}
         waMessage="Hi, I’d like to apply for a Canada visit visa."
       />
     </>

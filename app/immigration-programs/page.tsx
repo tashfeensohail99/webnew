@@ -39,24 +39,32 @@ const FAMILIES = [
     kicker: 'Economic — federal',
     title: 'Express Entry',
     body: 'A ranked pool for skilled workers. You submit a profile, you are scored against everyone else in the pool, and rounds of invitations are issued from the top. Age, education, language test results, skilled work history and whether your spouse contributes all feed the score. It is competitive by design — being eligible to enter the pool is not the same as being invited from it.',
+    href: '/express-entry',
+    cta: 'How Express Entry works',
   },
   {
     icon: 'building' as const,
     kicker: 'Economic — provincial',
     title: 'Provincial nomination',
     body: 'Each province runs its own streams for the workers and business people it wants, and can nominate you. Some nominations attach to an Express Entry profile and lift it substantially; others run entirely outside it. Provinces open, close and redesign these streams frequently, sometimes replacing an entire stream set at once — so what qualified last year may not exist now. The province’s own programme page is the only reliable statement of what is currently open.',
+    href: '/pnp',
+    cta: 'Provincial nomination',
   },
   {
     icon: 'user' as const,
     kicker: 'Family',
     title: 'Family sponsorship',
     body: 'A Canadian citizen or permanent resident sponsors a relative. Spouses and partners, dependent children, and parents and grandparents each run on different rules. The sponsor is assessed as seriously as the applicant — their income, their undertaking to support you, and their own eligibility to sponsor at all.',
+    href: '/family-sponsorship',
+    cta: 'Family sponsorship',
   },
   {
     icon: 'doc' as const,
     kicker: 'Study first',
     title: 'Study, then work, then PR',
     body: 'A study permit, then a post-graduation work permit, then Canadian work experience that can feed an economic application. It is a real pathway, but it is a chain — each link has its own conditions, and a break anywhere (wrong institution, wrong programme length, wrong work) can end the chain with the tuition already spent.',
+    href: '/study-in-canada',
+    cta: 'Study in Canada',
   },
   {
     icon: 'permit' as const,
@@ -71,6 +79,8 @@ const FAMILIES = [
     kicker: 'Business',
     title: 'Business and entrepreneur routes',
     body: 'Federal and provincial routes for people who will start, buy or invest in a Canadian business. They generally require capital you can prove is yours and lawfully sourced, a credible plan, and often a commitment to a specific province or region. They suit operators, not passive investors looking to buy a status.',
+    href: '/business-immigration',
+    cta: 'Business routes',
   },
 ];
 
@@ -181,7 +191,7 @@ export default function ImmigrationProgramsPage() {
           <Prose>
             <p>
               An agent who only files one kind of application will find that you qualify for it. That
-              is the single most expensive thing that happens to applicants from Pakistan — not fraud,
+              is one of the most expensive things that happens to applicants from Pakistan — not fraud,
               just narrowness. You spend a year and a fee on the one route the person in front of you
               knew how to sell.
             </p>

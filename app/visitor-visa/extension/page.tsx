@@ -12,6 +12,7 @@ import {
   Icon,
 } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { SERVICE } from '@/lib/site';
 
 /**
  * Extending a visit to Canada.
@@ -473,6 +474,7 @@ export default function VisitorExtensionPage() {
         title="Find out where you actually stand"
         subtitle="Tell us the date on your visitor record or entry stamp, when you entered Canada, and why you need longer. We will tell you honestly whether an extension is realistic — and if your status has already lapsed, what your remaining options are."
         page={PAGE}
+        service={SERVICE.VISIT_VISA}
         waMessage="Hi, I’m in Canada as a visitor and I need advice about extending my stay."
       />
     </>

@@ -12,6 +12,7 @@ import {
   Icon,
 } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { SERVICE } from '@/lib/site';
 
 /**
  * Invitation letters for Canadian visitor visa applications.
@@ -60,11 +61,11 @@ const WHAT_IT_IS_NOT = [
 const CONTENTS = [
   {
     title: 'Who is writing, and their status',
-    body: 'The host’s full name, date of birth, address and contact details, and whether they are a Canadian citizen, a permanent resident, or in Canada on a temporary status. Status should be evidenced, not merely asserted.',
+    body: 'The host’s complete name, date of birth, address and telephone number in Canada, job title, and whether they are a Canadian citizen or a permanent resident, with a copy of a document proving it. IRCC also lists details of the host’s family, such as the names and dates of birth of a spouse and dependants. Status should be evidenced, not merely asserted.',
   },
   {
     title: 'Who is being invited',
-    body: 'Your full name as it appears in your passport, date of birth, address, and your relationship to the host — stated precisely rather than as “family friend” or “relative”.',
+    body: 'Your full name as it appears in your passport, date of birth, address and telephone number, and your relationship to the host — stated precisely rather than as “family friend” or “relative”.',
   },
   {
     title: 'Why you are coming',
@@ -72,7 +73,7 @@ const CONTENTS = [
   },
   {
     title: 'How long, and where you will stay',
-    body: 'The intended arrival and departure period, and whether you will stay with the host or elsewhere. If the host is providing accommodation, that should be said plainly.',
+    body: 'How long you plan to stay, when you plan to leave Canada, and whether you will stay with the host or elsewhere. If the host is providing accommodation, that should be said plainly.',
   },
   {
     title: 'Who is paying for what',
@@ -80,7 +81,7 @@ const CONTENTS = [
   },
   {
     title: 'Signature and date',
-    body: 'Signed and dated by the host. IRCC notes that some visa offices ask for the letter to be notarised and advises contacting the office handling your application to find out — check what applies before assuming it is optional.',
+    body: 'Signed and dated by the host. IRCC’s page on invitation letters does not mention notarisation, but some visa offices can ask for it, so check with the office handling your application.',
   },
 ];
 
@@ -99,7 +100,7 @@ const FAQS = [
   },
   {
     q: 'Does the letter need to be notarised?',
-    a: 'IRCC does not impose a blanket notarisation requirement, but its guidance says some visa offices do, and it tells hosts to contact the office handling the visitor’s application to find out. Check the instructions that apply to the office handling applications from Pakistan before deciding. Notarising a letter proves who signed it — it does not make the contents more persuasive.',
+    a: 'IRCC’s page on invitation letters does not mention notarisation, but some visa offices can ask for it. Check the instructions that apply to the office handling applications from Pakistan before deciding. Notarising a letter proves who signed it — it does not make the contents more persuasive.',
   },
   {
     q: 'My host has a strong income. Is that enough?',
@@ -165,8 +166,7 @@ export default function InvitationLetterPage() {
           <p>
             The reason this needs saying is that a great many applicants from Pakistan treat the
             letter as the centre of the file. Considerable effort goes into its wording, and
-            comparatively little into the evidence that officers actually weigh. In our consultations
-            that inversion is a recurring shape in refused visitor applications.
+            comparatively little into the evidence that officers actually weigh.
           </p>
         </Prose>
       </Section>
@@ -255,7 +255,7 @@ export default function InvitationLetterPage() {
           </div>
 
           <div>
-            <SectionHeading eyebrow="What the host is showing" title="In kind, not in numbers" />
+            <SectionHeading eyebrow="What the host is showing" title="What the host should be able to show" />
             <ul className="mt-6 space-y-4">
               {[
                 ['Status in Canada', 'Evidence of citizenship, permanent residence, or the temporary status the host actually holds.'],
@@ -380,6 +380,33 @@ export default function InvitationLetterPage() {
         </div>
       </Section>
 
+      {/* ===================== SAMPLE LAYOUT ===================== */}
+      <Section tone="alt">
+        <SectionHeading eyebrow="A simple layout" title="How the letter can be set out" />
+        <Prose>
+          <p>
+            IRCC says this information is only a guide and that the host must write the letter
+            themselves. Replace everything in brackets with the true details, in the host’s own words.
+          </p>
+          <ul>
+            <li>[Date] and [the visa office handling the application]</li>
+            <li>I am [full name], born [date], of [address and telephone number in Canada]. I work as [job title].</li>
+            <li>I am a [Canadian citizen or permanent resident]. A copy of my [document proving status] is enclosed.</li>
+            <li>My family: [names and dates of birth of spouse and dependants].</li>
+            <li>I am inviting [visitor’s full name], born [date], of [address and telephone number], who is my [relationship].</li>
+            <li>The purpose of the visit is [reason]. [Visitor] plans to stay for [length of stay] and leave Canada on [date].</li>
+            <li>[Visitor] will stay at [address] and [who will pay for what].</li>
+            <li>[Signature]</li>
+          </ul>
+          <p>
+            A{' '}
+            <Link href="/visitor-visa/super-visa" className="font-semibold text-accent-500 link-underline">Super Visa</Link> letter must also include a promise of
+            financial support for the visit, and the list and number of people in the family size
+            calculation.
+          </p>
+        </Prose>
+      </Section>
+
       {/* ===================== SOURCES ===================== */}
       <Section tone="paper">
         <SectionHeading eyebrow="Where the current details live" title="Guidance, forms and office instructions" />
@@ -459,6 +486,7 @@ export default function InvitationLetterPage() {
         title="Find out whether the letter is really what is holding your application back"
         subtitle="Tell us who is inviting you, why you are travelling, and whether you have been refused before. We will give you our honest read of where your file is weakest. We cannot promise an outcome, and no one who does is being straight with you."
         page={PAGE}
+        service={SERVICE.VISIT_VISA}
         waMessage="Hi, I’d like help with an invitation letter for a Canadian visitor visa application."
       />
     </>

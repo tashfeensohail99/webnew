@@ -4,6 +4,32 @@ One entry per batch, newest first. Each entry records the commit, what changed a
 
 To see any page's original wording: `git show 9d17a79:<path to the page>`.
 
+## Batch 7: work permit pages, 8 November 2026
+
+- **Commit:** `b490511`. To undo only the page changes, restore `app/work-permit-canada/`, `app/work-permits/` and `lib/facts.ts` from `7adc00d`, because this commit also recorded batch 6 in this ledger.
+- **Why:** the bridging permit page was built on a timing rule IRCC does not publish, the intra-company page gave business owners the wrong answer, and the hub linked to only one of its routes.
+
+| Page | Change | Source |
+| --- | --- | --- |
+| `/work-permits/bridging-open-work-permit` | Expiry window removed. Real conditions: maintained status or restoration count. Required stage for each class. Eligible classes named. New description. | [IRCC BOWP](https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/pr-work-permits/bridging.html) (2026-10-16); [IRPR s.182](https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-182.html) |
+| `/work-permits/intra-company-transfer` | Controlling owners of a single-country business are not eligible, and are pointed to C11. "Parent" corrected. Prevailing wage added. | [IRCC ICT instructions](https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/intra-company-transferees.html) |
+| `/work-permits/international-experience-canada` | Treaty professionals removed from routes open regardless of nationality. IAESTE named as the only listed organization that could reach a Pakistani citizen. Overview link repointed to `/work-permits`. | [IRCC recognized organizations](https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/recognized-organizations.html) |
+| `/work-permits` | Every route card links to its page; other routes listed. Trade agreement wording corrected. Five-year ban stated. New title. | [IRCC business people](https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/special-instructions/business-people.html); IRPA s.40 |
+| `/work-permits/lmia` | Framing corrected. Low-wage limits added. Fraud reporting linked. Five-year ban stated. | [ESDC refusal to process](https://www.canada.ca/en/employment-social-development/services/foreign-workers/refusal.html); [IRCC report fraud](https://www.canada.ca/en/immigration-refugees-citizenship/services/protect-fraud/report-fraud.html) |
+| `/work-permits/lmia-exempt` | Each family links to its page. "Owner-operator" explained as a sales term. Canadian Experience Class caveat. Dead link replaced. | [IRCC CEC](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html) |
+| `/work-permit-canada` | Employer Portal step and compliance fee. Funds test in IRCC's terms. Canadian Experience Class caveat. Family FAQ. Claims about other agents removed. Link to `/work-permits`. | [IRCC C11 instructions](https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/entrepreneurs-self-employed-seeking-only-temp-residence-r205-c11.html); IRCC CEC |
+| `/work-permits/post-graduation` | Flight school exception. Unsupported claims about the firm's experience removed. | [IRCC PGWP eligibility](https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html) |
+
+- **Register:** three entries added to `lib/facts.ts`. Re-check monthly.
+- **Checked before shipping:** build, typecheck, `test:crs` (66 passed), `test:fsw` (43 passed), local crawl. Viewed the hub's route cards on desktop (light) and the bridging permit warning box on a phone (dark).
+- **Checked on production:** GitHub deployment `success`. 93 of 93 URLs return 200. The crawl flags only the deliberate repointing of the overview link on `/work-permits/international-experience-canada`. All 28 removed statements gone and all 19 new ones present. All eight pages load on a phone with no sideways scrolling or script errors.
+- **External links re-tested after the deploy:** 201 unique. None on these pages failed. One dead link remains on the site, on `/visitor-visa`.
+- **Search:** IndexNow accepted the eight URLs. Google not asked.
+- **Waiting on the firm:** on `/work-permit-canada`, "reviewed by our lawyers", "We've filed these before" and what the Mississauga office does.
+- **Needs a licensed representative:** whether GATS gives Pakistani citizens any work permit access; the rewritten bridging permit eligibility.
+- **Deliberately left alone, under the rule on figures:** the PGWP minimum length, application window and language levels, the C11 18-month and 51% rules already on the page aside, the intra-company qualifying period, and ESDC's unemployment and low-wage percentages. These appear only on official pages.
+- **Other items left:** review dates; repeated section headings across the cluster.
+
 ## Batch 6: study pages, 8 November 2026
 
 - **Commit:** `7adc00d`. To undo only the page changes, restore `app/study-in-canada/` and `lib/facts.ts` from `0c3b924`, because this commit also recorded batch 5 in this ledger.

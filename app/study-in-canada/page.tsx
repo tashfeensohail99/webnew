@@ -13,6 +13,7 @@ import {
   Icon,
 } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { SERVICE } from '@/lib/site';
 
 /**
  * The study route, written structurally.
@@ -462,6 +463,7 @@ export default function StudyInCanadaPage() {
         title="Find out whether studying is the right route for you"
         subtitle="Tell us what you want to study, what you can fund, and what you are really hoping happens afterwards. We’ll tell you honestly whether the study route fits — and if another route fits better, we’ll tell you that instead."
         page={PAGE}
+        service={SERVICE.STUDY_VISA}
         waMessage="Hi, I’d like to talk about studying in Canada and whether it’s the right route for me."
       />
     </>

@@ -12,6 +12,7 @@ import {
   Icon,
 } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { SERVICE } from '@/lib/site';
 
 /**
  * Study → PR.
@@ -497,6 +498,7 @@ export default function StudyToPermanentResidencePage() {
         title="Find out whether studying is the right instrument for your goal"
         subtitle="Tell us your qualifications, your work history and your budget. We will tell you honestly whether the study route makes sense for you, whether a direct economic application is the better question, and what the realistic sequence looks like."
         page={PAGE}
+        service={SERVICE.STUDY_VISA}
         waMessage="Hi, I’d like to understand whether studying in Canada is a realistic route to permanent residence in my situation."
       />
     </>

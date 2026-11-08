@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { PageHero, Section, SectionHeading, Callout, CTASection } from '@/components/ui';
 import { LiteYouTube } from '@/components/LiteYouTube';
 import { SocialIcon } from '@/components/SocialIcon';
-import { followersHeadline } from '@/components/SocialProof';
 import { latestUpdates, type Video } from '@/lib/youtube';
 import { site } from '@/lib/site';
 import { sortedPosts } from '@/lib/blog';
@@ -96,10 +95,10 @@ export default async function UpdatesPage() {
         eyebrow="Updates · from our YouTube channel"
         title={
           <>
-            What’s changed, <span className="text-gold-300">explained.</span>
+            What’s changed, <span className="text-gold-300">on video.</span>
           </>
         }
-        subtitle={`Draw results, new rules and plain-language explainers — the videos ${followersHeadline()} people follow us for, each paired with the guide on this site that covers it in full.`}
+        subtitle="Draw results, new rules and plain-language explainers from our YouTube channel, each paired with the guide on this site that covers it in full."
       >
         <a href={youtube} rel="me noopener" target="_blank" className="btn btn-gold">
           <SocialIcon name="youtube" className="h-5 w-5" />

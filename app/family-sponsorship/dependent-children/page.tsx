@@ -42,7 +42,7 @@ const QUALIFYING = [
     icon: 'scale' as const,
     kicker: 'The age rule',
     title: 'Under the age set in the Regulations',
-    body: 'There is an upper age in the definition of “dependent child”. It has been changed more than once, so we do not print it here — IRCC publishes the current figure and the date it applies from.',
+    body: 'A dependent child must be under 22 and not a spouse or common-law partner (section 2 of the Regulations, read on 8 November 2026). The age has been changed more than once, so check which version applies to your application.',
   },
   {
     icon: 'shield' as const,
@@ -96,7 +96,7 @@ const FAQS = [
   },
   {
     q: 'What is the age limit?',
-    a: 'We do not publish it here. The definition in the Immigration and Refugee Protection Regulations has been amended more than once in recent years, and which version applies depends on when the application was received. IRCC publishes the current rule and the transitional dates on its own site. Read it there, on the day you need it.',
+    a: 'Under 22, and not a spouse or common-law partner, under section 2 of the Immigration and Refugee Protection Regulations (read at the source on 8 November 2026). A child aged 22 or older can qualify only if they have depended substantially on a parent’s financial support since before 22 and cannot support themselves because of a physical or mental condition. The definition has been amended more than once in recent years, and which version applies depends on when the application was received, so check IRCC’s transitional dates on the day you need them.',
   },
   {
     q: 'Can my child’s own child come too?',
@@ -120,7 +120,7 @@ const FAQS = [
   },
   {
     q: 'The other parent will not consent. Does that stop the application?',
-    a: 'It can. Where the other parent has custody or access rights, an officer will want to see that the child’s removal from the country is lawful — a custody order, a consent, or a court decision. Sponsoring a child out of a shared-custody situation without addressing this is one of the more predictable refusals we see.',
+    a: 'It can. Where the other parent has custody or access rights, an officer will want to see that the child’s removal from the country is lawful — a custody order, a consent, or a court decision. Sponsoring a child out of a shared-custody situation without addressing this invites refusal.',
   },
 ];
 
@@ -140,7 +140,7 @@ export default function DependentChildrenPage() {
             Whether a child qualifies is fixed at a date set by the Regulations — usually the day a
             complete application is received, not the day an officer opens the file. Understanding
             which date governs your route, and declaring every child on your own application in the
-            first place, avoids a large share of the problems we see on these files.
+            first place, avoids many of the problems on these files.
           </>
         }
       >
@@ -240,7 +240,7 @@ export default function DependentChildrenPage() {
           </div>
 
           <div>
-            <SectionHeading eyebrow="What is frozen, what is not" title="Read this carefully" />
+            <SectionHeading eyebrow="What is frozen, what is not" title="What the age lock-in freezes, and what it does not" />
             <ul className="mt-6 space-y-4">
               {[
                 ['Age — frozen', 'Fixed at the lock-in date that applies to your program. Later birthdays do not remove the child.'],
@@ -305,7 +305,7 @@ export default function DependentChildrenPage() {
         <div className="mt-10">
           <Callout title="Declare every child, every time, even the ones not coming">
             <p>
-              This is among the most damaging errors we see in family immigration files, and it is
+              This is among the most damaging errors in family immigration files, and it is
               usually made in good faith. A child from an earlier marriage who will stay with
               their mother. A child born between the medical examination and the flight. A child the
               parent did not know about at the time. An agent who advised that leaving a name off
@@ -315,12 +315,14 @@ export default function DependentChildrenPage() {
               The Regulations do not generally weigh the reason. If the child was a non-accompanying
               family member and was not examined, the sponsorship route to reunite is normally
               closed, subject to the narrow exceptions the Regulations themselves set out. Where the
-              omission was deliberate, there may be misrepresentation on top of it, which carries its
-              own bar on future applications — IRCC publishes the current period and consequences.
+              omission was deliberate, there may be 
+              {' '}<Link href="/refusals/misrepresentation" className="font-semibold text-accent-500 link-underline">misrepresentation</Link>{' '}
+              on top of it, which carries five years of inadmissibility under section 40 of the Act.
             </p>
             <p>
-              Relief measures have existed at different times, and humanitarian and compassionate
-              submissions are sometimes possible, but neither is something to plan around. If this
+              IRCC’s public policy for undeclared family members ended on 10 September 2026, though
+              IRCC still applies it to eligible applications received before then. Humanitarian and
+              compassionate submissions are sometimes possible, but that is not something to plan around. If this
               has already happened in your family, bring the actual file to a consultation rather
               than a summary of it — the outcome depends on precisely what was declared, when, and on
               which form.
@@ -388,7 +390,7 @@ export default function DependentChildrenPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see"
+          title="Where these applications go wrong"
         />
         <Prose>
           <p>
@@ -437,7 +439,7 @@ export default function DependentChildrenPage() {
               this route is closed, and no filing strategy reopens it. If your child is married or in
               a common-law relationship, they are not a dependent child, whatever their age and
               whatever your support. If your child was a non-accompanying family member on your own
-              application and was not examined, sponsorship is barred.
+              application and was not examined, sponsorship is barred, subject to the narrow exceptions above.
             </p>
             <p>
               An over-age adult child who is simply unemployed, studying, or financially reliant on

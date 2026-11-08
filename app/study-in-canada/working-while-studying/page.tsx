@@ -12,6 +12,7 @@ import {
   Icon,
 } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { SERVICE } from '@/lib/site';
 
 /**
  * Working while studying in Canada.
@@ -489,6 +490,7 @@ export default function WorkingWhileStudyingPage() {
         title="Check what your permit actually allows"
         subtitle="Send us the conditions printed on your study permit and tell us what you are enrolled in. We will go through what those conditions appear to allow, against the rules in force at the time — and point you to the IRCC source for each one so you can verify it yourself."
         page={PAGE}
+        service={SERVICE.STUDY_VISA}
         waMessage="Hi, I’d like to check what work my study permit conditions allow while I’m studying in Canada."
       />
     </>

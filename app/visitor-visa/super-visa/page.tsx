@@ -12,6 +12,7 @@ import {
   Icon,
 } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { SERVICE } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Super Visa for parents and grandparents',
@@ -386,6 +387,7 @@ export default function SuperVisaPage() {
         title="Talk through what your family would need to show"
         subtitle="Tell us who is in Canada, what their household looks like, and what your parents actually want — a long visit or a move. We’ll tell you honestly which route fits, and if neither does, we’ll say that too."
         page={PAGE}
+        service={SERVICE.VISIT_VISA}
         waMessage="Hi, I’d like to apply for a Super Visa for my parents. My child/I am in Canada."
       />
     </>

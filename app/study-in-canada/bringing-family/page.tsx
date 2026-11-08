@@ -12,6 +12,7 @@ import {
   Icon,
 } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { SERVICE } from '@/lib/site';
 
 /**
  * Bringing family while you study in Canada.
@@ -501,6 +502,7 @@ export default function BringingFamilyPage() {
         title="Check whether your programme actually allows your spouse to work"
         subtitle="Tell us the programme, the institution and who is coming with you. We will go through the current IRCC criteria against your situation and give you our honest read on whether the finances hold up. What we cannot do is promise you an outcome."
         page={PAGE}
+        service={SERVICE.STUDY_VISA}
         waMessage="Hi, I’d like to know whether my spouse and children can come with me while I study in Canada."
       />
     </>

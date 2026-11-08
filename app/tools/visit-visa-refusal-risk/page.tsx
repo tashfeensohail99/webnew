@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { PageHero, Section, SectionHeading, Callout, FAQ, CTASection } from '@/components/ui';
+import { SERVICE } from '@/lib/site';
 import { VisitVisaRiskChecker } from '@/components/tools/VisitVisaRiskChecker';
 import { getWhatsAppChannel } from '@/lib/wa-channel';
 
@@ -30,7 +31,7 @@ const FAQS = [
   },
   {
     q: 'I was refused before. Is that the end of it?',
-    a: 'No. But you need to know the officer’s actual reasons, which are in your GCMS notes, before re-applying. Guessing at the reason is how people collect a second refusal.',
+    a: 'No. But you need to know the officer’s actual reasons before re-applying. Check for the decision note IRCC now sends with most refusals, and order your GCMS notes if you need more. Guessing at the reason is how people collect a second refusal.',
   },
   {
     q: 'Is this legal advice?',
@@ -50,7 +51,7 @@ export default async function VisitVisaToolPage() {
             What would a visa officer <span className="text-gold-300">question about your file?</span>
           </>
         }
-        subtitle="The Canadian visitor visa is the most commonly refused. This check looks for the specific weak points that cause it — honestly, and before you spend the application fee."
+        subtitle="This check looks for the specific weak points that cause it — honestly, and before you spend the application fee."
       />
 
       <Section tone="paper">
@@ -69,18 +70,19 @@ export default async function VisitVisaToolPage() {
           <div className="mt-8 space-y-4 text-ink-600 text-pretty leading-relaxed">
             <p>
               Officers are not looking for a reason to say no. They are looking for enough to be
-              satisfied you are a genuine visitor who will go home. Almost every refusal we read
-              comes down to that question being left unanswered — not to a rule being broken.
+              satisfied you are a genuine visitor who will go home. A refusal usually means that
+              question was left unanswered, not that a rule was broken.
             </p>
             <p>
-              Most people assemble documents. The applications that get approved build an argument
-              the officer can follow, and put the evidence exactly where the doubt is.
+              Most people assemble documents. An officer has to be able to follow your argument, with
+              the evidence exactly where the doubt is.
             </p>
           </div>
           <div className="mt-8">
             <Callout title="A refusal is expensive in a way the fee isn’t">
-              The application fee is the small cost. The real cost is the refusal sitting on your
-              record, which every future officer — Canadian or otherwise — will see. That is why we
+              The application fee is the small cost. The real cost is the refusal itself: you may
+              have to declare it on future applications, and Canadian officers can see earlier
+              Canadian applications. That is why we
               would rather tell you to wait than take your money today.
             </Callout>
           </div>
@@ -110,6 +112,7 @@ export default async function VisitVisaToolPage() {
         title="Know what’s weak before an officer tells you"
         subtitle="Bring your result to a consultation and we’ll tell you honestly whether to file now, fix first, or not at all."
         page="tool-visit-visa"
+        service={SERVICE.VISIT_VISA}
         waMessage="Hi, I used the visit-visa risk checker and I’d like to talk through my case."
       />
     </>

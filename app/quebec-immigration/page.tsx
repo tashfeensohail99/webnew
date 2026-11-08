@@ -24,7 +24,7 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * more money than any amount of encouragement.
  */
 export const metadata: Metadata = {
-  title: 'Quebec Immigration',
+  title: 'Quebec Immigration: PSTQ, Arrima and French',
   description:
     'Quebec selects its own economic immigrants. The two-stage structure, why the Quebec certificate sits outside Express Entry, and why French is decisive.',
   alternates: { canonical: '/quebec-immigration' },
@@ -70,11 +70,11 @@ const STEPS = [
   },
   {
     title: 'Identify which Quebec route, if any, fits',
-    body: 'Quebec runs its own economic routes — skilled worker selection, routes built around graduating or working in Quebec, and business categories. Each has its own conditions. Quebec opens, closes and restructures these itself.',
+    body: 'Quebec runs its own economic routes, including the Skilled Worker Selection Program (Programme de sélection des travailleurs qualifiés, or PSTQ). The Programme de l’expérience québécoise for graduates and workers in Quebec closed on 31 October 2026, and Quebec has not decided on a new intake. Each route has its own conditions, and Quebec opens, closes and restructures them itself.',
   },
   {
     title: 'Enter Quebec’s expression-of-interest system',
-    body: 'Skilled worker selection currently runs through an expression-of-interest portal operated by Quebec’s immigration ministry, which you file a profile into and enter a pool. Being in the pool is not an application. Quebec invites from it on its own terms; nobody outside Quebec controls or predicts that. Confirm the current portal and process on quebec.ca before you begin.',
+    body: 'The PSTQ currently runs through Arrima, the expression-of-interest portal operated by Quebec’s immigration ministry, which you file a profile into and enter a pool. Being in the pool is not an application. Quebec invites from it on its own terms; nobody outside Quebec controls or predicts that. Confirm the current portal and process on quebec.ca before you begin.',
   },
   {
     title: 'File the selection application if invited',
@@ -381,8 +381,8 @@ export default function QuebecImmigrationPage() {
           <p>
             <strong>Treating Quebec as the back door.</strong> Applicants who cannot reach a competitive
             federal profile are told Quebec is easier. It is not easier; it is different, and its
-            central requirement — French — is one most applicants from Pakistan do not meet on the day
-            they are sold the idea.
+            central requirement — French — is one many applicants do not meet on the day they are sold
+            the idea.
           </p>
           <p>
             <strong>Paying for a Quebec profile before testing French.</strong> Money spent on

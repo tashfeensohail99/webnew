@@ -12,6 +12,7 @@ import {
   Icon,
 } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { SERVICE } from '@/lib/site';
 
 /**
  * Electronic Travel Authorisation (eTA).
@@ -26,7 +27,7 @@ import { ReviewedBy } from '@/components/ReviewedBy';
 export const metadata: Metadata = {
   title: 'Electronic Travel Authorisation (eTA) for Canada',
   description:
-    'What an eTA is, and why a Pakistani passport holder normally needs a visitor visa — plus the narrow case where a visa-required national may use one.',
+    'What an eTA is, why a Pakistani passport holder needs a visitor visa instead, and what a US green card holder should check before travelling.',
   alternates: { canonical: '/visitor-visa/eta' },
 };
 
@@ -85,11 +86,11 @@ const STEPS = [
 const FAQS = [
   {
     q: 'I hold a Pakistani passport. Can I apply for an eTA instead of a visitor visa?',
-    a: 'Normally no. Pakistan is a visa-required nationality for Canada, which means the visitor visa is the route. The eTA exists for travellers whose nationality does not require a visa, and applying for one you are not eligible for does not create eligibility. No usable authorisation results from it.',
+    a: 'No. Pakistan is a visa-required nationality for Canada, which means the visitor visa is the route. The eTA exists for travellers whose nationality does not require a visa, and applying for one you are not eligible for does not create eligibility. If you also hold a passport from a visa-exempt country, or US permanent residence, the position is different, as this page explains.',
   },
   {
     q: 'I was refused a visitor visa. Can I use an eTA instead?',
-    a: 'No. This is the most common reason people reach this page, and it is worth being blunt: the eTA is not an alternative channel, an appeal, or a second attempt. If you were refused, the honest next step is to understand why the officer refused you and whether that concern can be answered.',
+    a: 'No, and it is worth being blunt: the eTA is not an alternative channel, an appeal, or a second attempt. If you were refused, the honest next step is to understand why the officer refused you and whether that concern can be answered.',
   },
   {
     q: 'I am a Pakistani citizen but a permanent resident of the United States. What applies to me?',
@@ -227,7 +228,7 @@ export default function EtaPage() {
           <div>
             <SectionHeading
               eyebrow="Being precise about exceptions"
-              title="When a visa-required national might use an eTA"
+              title="Who does not need a visitor visa"
             />
             <Prose>
               <p>
@@ -237,16 +238,23 @@ export default function EtaPage() {
                 wasted money.
               </p>
               <p>
-                The first concerns lawful permanent residents of the United States. Documented US
-                permanent residence changes what Canada requires of a traveller regardless of their
-                nationality. What exactly is required has itself been revised in recent years and
-                differs by mode of arrival, so this is a case to confirm against IRCC’s current
-                published requirements rather than against anything you were told previously.
+                The first concerns lawful permanent residents of the United States. Since 26 April
+                2022 they have been exempt from the eTA requirement and need neither a visa nor an eTA:
+                for all methods of travel to Canada they show a valid passport from their country of
+                nationality and a valid green card, or equivalent proof of status. Confirm this against
+                IRCC’s current published requirements before you travel.
               </p>
               <p>
                 The second concerns a designated list of visa-required countries whose citizens may,
                 if they hold certain other documents, apply for an eTA instead of a visa for air travel
-                only. That list is set by IRCC and changes. Pakistan is not on it.
+                only. That list is set by IRCC and changes. Pakistan is not on it, so no eTA route exists
+                for someone travelling on a Pakistani passport.
+              </p>
+              <p>
+                Dual nationals are the other case. If you also hold a passport from a visa-exempt
+                country, such as the United Kingdom, what matters is the passport you travel on: an eTA
+                is linked to that passport. A dual Canadian citizen must travel with a valid Canadian
+                passport instead.
               </p>
               <p>
                 Both exceptions share a shape: they are documentary, they are checkable, and neither
@@ -462,6 +470,7 @@ export default function EtaPage() {
         title="Find out which document your situation actually requires"
         subtitle="Tell us your nationality, where you are travelling from, what status you hold there and how you plan to arrive. We will tell you plainly whether an eTA is even available to you — and if it is not, what the realistic route is."
         page={PAGE}
+        service={SERVICE.VISIT_VISA}
         waMessage="Hi, I’d like to know whether I need a Canadian eTA or a visitor visa in my situation."
       />
     </>

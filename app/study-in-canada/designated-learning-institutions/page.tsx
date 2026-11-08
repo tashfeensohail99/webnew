@@ -12,6 +12,7 @@ import {
   Icon,
 } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { SERVICE } from '@/lib/site';
 
 /**
  * Designated learning institutions.
@@ -447,6 +448,7 @@ export default function DliPage() {
         title="Have the school and the programme checked first"
         subtitle="Send us the institution, the campus and the exact programme name on your offer. We will go through IRCC’s list and its current published requirements with you, show you what the institution and the programme do and do not establish, and tell you honestly where the plan looks weak. We cannot promise an outcome, and we will not pretend otherwise."
         page={PAGE}
+        service={SERVICE.STUDY_VISA}
         waMessage="Hi, I’d like to check whether a school and programme I’ve been offered is a DLI and what it means for a work permit afterwards."
       />
     </>

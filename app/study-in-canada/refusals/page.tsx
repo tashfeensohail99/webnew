@@ -12,6 +12,7 @@ import {
   Icon,
 } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { SERVICE } from '@/lib/site';
 
 /**
  * Study permit refusals.
@@ -479,6 +480,7 @@ export default function StudyPermitRefusalsPage() {
         title="Have the refusal read properly before you spend money again"
         subtitle="Send us the refusal letter and, if you have them, the officer’s notes. We will tell you what the finding actually was and whether a second attempt is realistic — or whether it is not."
         page={PAGE}
+        service={SERVICE.JR_RESUBMISSION}
         waMessage="Hi, my Canadian study permit was refused and I’d like to understand the reasons before re-applying."
       />
     </>

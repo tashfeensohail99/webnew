@@ -26,7 +26,7 @@ const FAQS = [
   },
   {
     q: 'Which of my four numbers matters most?',
-    a: 'The lowest one, almost always. Programme requirements are usually expressed as a minimum in each of the four abilities, so a strong reading score does not compensate for weak writing. If you are trying to decide what to work on before a retake, work on your weakest ability.',
+    a: 'The lowest one, almost always. Programme requirements are usually expressed as a minimum in each of the four abilities, so a strong reading score does not compensate for weak writing. If you are trying to decide what to work on before a full retake, work on your weakest ability.',
   },
   {
     q: 'I took the TEF and my certificate shows two different numbers.',
@@ -77,8 +77,9 @@ export default function ClbConverterPage() {
             <p>
               It is also why language is usually the most improvable part of an application.
               You cannot change your age and you cannot quickly change your work history,
-              but a focused retake on one weak ability is a real, available option — and it
-              is generally the cheapest thing on the list.
+              but retaking the full test after focusing on your weakest ability is a real, available
+              option — and it is generally the cheapest thing on the list. IRCC does not accept IELTS
+              One Skill Retake for Express Entry.
             </p>
           </div>
           <div className="mt-8">

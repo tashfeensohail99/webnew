@@ -16,7 +16,7 @@ export const CHANNEL_ID = 'UC7yaY91cb22ZPnBPJyGBNBg';
 const FEED = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
 
 /** Promotions, events and approval posts — not updates. */
-const NOT_AN_UPDATE = /\bOFF\b|discount|meet-?up|we[’']?re coming|approv|celebrate|apply early/i;
+const NOT_AN_UPDATE = /\bOFF\b|discount|meet-?up|we[’']?re coming|approv|celebrate|apply early|پشاور|peshawar|kaha sy aty/i;
 
 export type Video = {
   id: string;
@@ -33,6 +33,8 @@ export type Video = {
 /** Most specific first — the first match wins. */
 const TOPICS: [RegExp, string, Video['guide']?][] = [
   [/c-?11/i, 'Canada', { href: '/work-permit-canada', label: 'C11 work permit guide' }],
+  [/\blmia\b/i, 'Canada', { href: '/work-permits/lmia', label: 'LMIA guide' }],
+  [/\bmofa\b|attestation/i, 'Pakistan', { href: '/blog/mofa-online-attestation', label: 'MOFA attestation guide' }],
   [/\bdraws?\b|\binvites?\b|invitations to apply/i, 'Canada', { href: '/express-entry/draws', label: 'Express Entry draws tracker' }],
   [/express entry|\bcrs\b/i, 'Canada', { href: '/express-entry', label: 'Express Entry guide' }],
   [/ontario/i, 'Canada', { href: '/pnp/ontario', label: 'Ontario PNP guide' }],

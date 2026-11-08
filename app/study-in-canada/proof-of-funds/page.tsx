@@ -12,6 +12,7 @@ import {
   Icon,
 } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { SERVICE } from '@/lib/site';
 
 /**
  * Proof of funds for a study permit.
@@ -486,6 +487,7 @@ export default function ProofOfFundsPage() {
         title="Have your financial position looked at honestly"
         subtitle="Tell us where the money is, whose it is and how it got there. We will give you our honest assessment of how it is likely to read, what is missing, and whether this is the right intake to apply for. We cannot promise an approval, and we will say so if we think you should wait."
         page={PAGE}
+        service={SERVICE.STUDY_VISA}
         waMessage="Hi, I’d like to know whether my proof of funds is strong enough for a Canadian study permit."
       />
     </>

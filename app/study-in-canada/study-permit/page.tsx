@@ -12,6 +12,7 @@ import {
   Icon,
 } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { SERVICE } from '@/lib/site';
 
 /**
  * Canadian study permit — the application end to end.
@@ -460,6 +461,7 @@ export default function StudyPermitPage() {
         title="Find out whether your study plan holds together"
         subtitle="Tell us your education, your work history and the programme you are considering. We will go through the plan with you, show you where it is weak against the things officers assess, and say plainly if we think it does not hold together. The decision is always the officer’s, and we cannot predict it."
         page={PAGE}
+        service={SERVICE.STUDY_VISA}
         waMessage="Hi, I’d like to know whether my study permit plan for Canada is realistic."
       />
     </>

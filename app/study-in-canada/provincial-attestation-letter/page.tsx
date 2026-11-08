@@ -12,6 +12,7 @@ import {
   Icon,
 } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { SERVICE } from '@/lib/site';
 
 /**
  * Provincial / territorial attestation letters (PAL / TAL).
@@ -470,6 +471,7 @@ export default function ProvincialAttestationLetterPage() {
         title="Check the whole application, not just the letter"
         subtitle="Tell us the institution, the programme and how your studies will be funded. We will tell you honestly whether the application is worth filing — and if it is not, what would need to change first."
         page={PAGE}
+        service={SERVICE.STUDY_VISA}
         waMessage="Hi, I have a question about the provincial attestation letter for my Canadian study permit."
       />
     </>

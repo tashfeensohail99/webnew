@@ -165,6 +165,43 @@ export const FACTS: Record<string, Fact> = {
       'Printed on the refusal pages on 8 Nov 2026 on the site owner’s instruction. Read at source, but the wording has not been reviewed by a lawyer.',
   },
 
+  // ── CANADA: VISITORS AND FAMILY (re-check monthly) ─────────────────────────
+  caDependentChildAge: {
+    id: 'ca.family.dependent-child-age',
+    claim:
+      'A dependent child is less than 22 years of age and not a spouse or common-law partner, or is 22 or older and has depended substantially on a parent’s financial support since before 22 and cannot be financially self-supporting due to a physical or mental condition.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s.2',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-2.html',
+    checked: '2026-11-08',
+    needsLawyer: true,
+    note: 'Printed on /family-sponsorship/dependent-children on 8 Nov 2026 under the site owner’s rule on figures set in law.',
+  },
+  caUndeclaredFamilyPolicyEnded: {
+    id: 'ca.family.undeclared-policy',
+    claim: 'The public policy allowing certain undeclared family members to be sponsored ended on 10 September 2026. IRCC continues to apply it to eligible applications received between 31 May 2019 and that date.',
+    provenance: 'primary',
+    source: 'IRCC, Public policy for undeclared family members',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/spouse-partner-children/who-you-can-sponsor/undeclared-family.html',
+    checked: '2026-11-08',
+  },
+  caUsPermanentResidentsEta: {
+    id: 'ca.visit.us-lpr',
+    claim: 'Since 26 April 2022, lawful permanent residents of the United States are exempt from the eTA requirement and must show a valid passport and a valid green card or equivalent proof of status.',
+    provenance: 'primary',
+    source: 'IRCC, eTA eligibility (page dated 2026-08-06)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/eligibility.html',
+    checked: '2026-11-08',
+  },
+  caQuebecPeqClosed: {
+    id: 'ca.qc.peq-closed',
+    claim: 'Quebec’s Programme de l’expérience québécoise took applications from 2 July 2026 and closed on 31 October 2026, with no decision on a new intake.',
+    provenance: 'primary',
+    source: 'Gouvernement du Québec, Programme de l’expérience québécoise',
+    sourceUrl: 'https://www.quebec.ca/immigration/permanente/travailleurs-qualifies/programme-experience-quebecoise',
+    checked: '2026-11-08',
+  },
+
   // ── CANADA: WORK PERMITS (re-check monthly) ────────────────────────────────
   caBridgingOpenWorkPermit: {
     id: 'ca.work.bowp',

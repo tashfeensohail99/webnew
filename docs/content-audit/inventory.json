@@ -1,7 +1,7 @@
 {
  "summary": {
   "base": "https://tashfeenimmigrationsolutions.com",
-  "crawled": "2026-11-08T13:36:28.142Z",
+  "crawled": "2026-11-08T13:47:11.028Z",
   "total": 93,
   "ok": 93,
   "inSitemap": 93,
@@ -292,12 +292,6 @@
     "b": "/immigration-consultant-lahore",
     "shared": 19,
     "share": 0.06
-   },
-   {
-    "a": "/work-permits/global-talent-stream",
-    "b": "/work-permits/lmia",
-    "shared": 70,
-    "share": 0.05
    }
   ]
  },
@@ -20417,7 +20411,7 @@
     },
     {
      "level": 3,
-     "text": "A realistic range, never a promise"
+     "text": "No fixed date, and no promise"
     },
     {
      "level": 2,
@@ -20437,7 +20431,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1889,
+   "wordCount": 1998,
    "avgSentence": 17,
    "hits": {
     "outcome": 3,
@@ -20489,6 +20483,7 @@
     "/business-immigration",
     "/work-permit-canada/business-plan",
     "/work-permit-canada/refusals",
+    "/work-permits",
     "/about/our-team",
     "/no-guarantee-policy"
    ],
@@ -20610,13 +20605,12 @@
     "/work-permit-canada/business-plan",
     "/work-permits",
     "/work-permits/caregivers",
-    "/work-permits/international-experience-canada",
     "/work-permits/lmia",
     "/work-permits/lmia-exempt"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 1807,
+   "uniqueWords": 1921,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-23",
@@ -21092,10 +21086,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "Canadian work permits | Tashfeen",
+   "title": "Canada Work Permits: Open or Employer-Specific | Tashfeen",
    "description": "How Canadian work permits work: employer-specific versus open, LMIA-based versus exempt, and why buying a job offer risks a misrepresentation bar.",
    "canonical": "https://tashfeenimmigrationsolutions.com/work-permits",
-   "ogTitle": "Canadian work permits | Tashfeen",
+   "ogTitle": "Canada Work Permits: Open or Employer-Specific | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "Canadian work permits, explained properly"
@@ -21187,12 +21181,12 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2116,
+   "wordCount": 2152,
    "avgSentence": 18,
    "hits": {
     "outcome": 4,
     "superlative": 0,
-    "firmClaim": 0,
+    "firmClaim": 1,
     "stock": 0,
     "volatile": 0,
     "placeholder": 0
@@ -21203,6 +21197,9 @@
      "Nobody can guarantee an officer’s decision.",
      "We cannot guarantee an outcome and we do not claim to — the decision belongs to an IRCC officer.",
      "Read our no-guarantee policy ."
+    ],
+    "firmClaim": [
+     "Any access under the wider General Agreement on Trade in Services would be narrow and needs checking by a licensed representative."
     ]
    },
    "schema": [
@@ -21228,6 +21225,15 @@
     "/book-consultation",
     "/tools/work-permit-eligibility",
     "/work-permit-canada",
+    "/work-permits/intra-company-transfer",
+    "/work-permits/lmia",
+    "/work-permits/spousal-open-work-permit",
+    "/work-permits/post-graduation",
+    "/work-permits/lmia-exempt",
+    "/work-permits/global-talent-stream",
+    "/work-permits/international-experience-canada",
+    "/work-permits/bridging-open-work-permit",
+    "/work-permits/caregivers",
     "/no-guarantee-policy",
     "/canada-visa-refused",
     "/about/our-team"
@@ -21339,11 +21345,13 @@
     "/study-in-canada/study-permit",
     "/visitor-visa/business-visitor",
     "/visitor-visa/extension",
-    "/work-permits/bridging-open-work-permit"
+    "/work-permit-canada",
+    "/work-permits/bridging-open-work-permit",
+    "/work-permits/international-experience-canada"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2044,
+   "uniqueWords": 2081,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -21359,7 +21367,7 @@
    "robotsHeader": null,
    "metaRobots": "index, follow",
    "title": "Bridging Open Work Permit (BOWP) for Canada | Tashfeen",
-   "description": "What a bridging open work permit does, which PR applicants it covers, the timing rule tied to your current permit’s expiry, and who it does not help.",
+   "description": "A bridging open work permit lets eligible PR applicants keep working. Which classes qualify, the stage your file must reach, and options if your permit expired.",
    "canonical": "https://tashfeenimmigrationsolutions.com/work-permits/bridging-open-work-permit",
    "ogTitle": "Bridging Open Work Permit (BOWP) for Canada | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
@@ -21385,7 +21393,7 @@
     },
     {
      "level": 3,
-     "text": "A valid work permit now"
+     "text": "A work permit, maintained status or restoration"
     },
     {
      "level": 3,
@@ -21393,7 +21401,7 @@
     },
     {
      "level": 3,
-     "text": "Inside the expiry window"
+     "text": "You are the principal applicant"
     },
     {
      "level": 2,
@@ -21409,7 +21417,7 @@
     },
     {
      "level": 3,
-     "text": "IRCC acknowledges or clears the file"
+     "text": "Your file reaches the required stage"
     },
     {
      "level": 3,
@@ -21441,7 +21449,7 @@
     },
     {
      "level": 2,
-     "text": "Windows, fees and covered classes"
+     "text": "Fees and covered classes"
     },
     {
      "level": 2,
@@ -21453,20 +21461,26 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2276,
+   "wordCount": 2371,
    "avgSentence": 19,
    "hits": {
     "outcome": 2,
     "superlative": 0,
     "firmClaim": 0,
     "stock": 0,
-    "volatile": 0,
+    "volatile": 4,
     "placeholder": 0
    },
    "hitLines": {
     "outcome": [
      "Nothing about it is automatic or guaranteed.",
      "No application outcome is ours to promise, which is why we publish a no-guarantee policy ."
+    ],
+    "volatile": [
+     "Caring classes, the 2019 to 2024 home care pilots and the Agri-Food Pilot: approval in principle.",
+     "Home Care Worker Immigration pilots opened in 2025: not eligible.",
+     "+ As of 8 November 2026, IRCC lists the Federal Skilled Worker Program, Canadian Experience Class and Federal Skilled Trades Program; the Provincial Nominee Program, through Express Entry or outside it; Quebec skilled workers and investors; the caring for children and high medical needs classes; the Home Child Care Provider and Home Support Worker pilots that opened from 2019 to 2024; and the Agri-Food Pilot.",
+     "Applicants under the Home Care Worker Immigration pilots that opened in 2025 are not eligible."
     ]
    },
    "schema": [
@@ -21591,6 +21605,7 @@
     "/terms"
    ],
    "external": [
+    "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-182.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/pr-work-permits/bridging.html",
     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/",
     "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20advice%20on%20a%20bridging%20open%20work%20permit%20while%20my%20PR%20application%20is%20in%20process.%20%5BRef%3A%20WP-1B29%5D"
@@ -21598,12 +21613,13 @@
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
+    "/work-permits",
     "/work-permits/post-graduation",
     "/work-permits/spousal-open-work-permit"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2165,
+   "uniqueWords": 2253,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -21864,7 +21880,8 @@
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
-    "/caregivers"
+    "/caregivers",
+    "/work-permits"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
@@ -22115,7 +22132,9 @@
    ],
    "images": 0,
    "imagesNoAlt": 0,
-   "inboundCopy": [],
+   "inboundCopy": [
+    "/work-permits"
+   ],
    "inboundAll": 92,
    "brokenInternal": [],
    "uniqueWords": 2113,
@@ -22124,9 +22143,7 @@
    "sitemapLastmod": "2026-07-20",
    "reviewed": "2026-07-20",
    "inCode": true,
-   "issues": [
-    "no in-copy inbound links"
-   ]
+   "issues": []
   },
   {
    "path": "/work-permits/international-experience-canada",
@@ -22226,7 +22243,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1943,
+   "wordCount": 1966,
    "avgSentence": 18,
    "hits": {
     "outcome": 1,
@@ -22263,7 +22280,7 @@
    "internalInCopy": [
     "/book-consultation",
     "/refusals/misrepresentation",
-    "/work-permit-canada",
+    "/work-permits",
     "/no-guarantee-policy",
     "/work-permits/lmia",
     "/work-permits/lmia-exempt",
@@ -22370,18 +22387,19 @@
    ],
    "images": 0,
    "imagesNoAlt": 0,
-   "inboundCopy": [],
+   "inboundCopy": [
+    "/work-permits",
+    "/work-permits/lmia-exempt"
+   ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 1855,
+   "uniqueWords": 1879,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
    "reviewed": "2026-07-20",
    "inCode": true,
-   "issues": [
-    "no in-copy inbound links"
-   ]
+   "issues": []
   },
   {
    "path": "/work-permits/intra-company-transfer",
@@ -22465,7 +22483,7 @@
     },
     {
      "level": 2,
-     "text": "The failure patterns we see"
+     "text": "Where these applications go wrong"
     },
     {
      "level": 2,
@@ -22485,7 +22503,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2398,
+   "wordCount": 2470,
    "avgSentence": 20,
    "hits": {
     "outcome": 2,
@@ -22630,11 +22648,13 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/business-immigration",
-    "/visitor-visa/business-visitor"
+    "/visitor-visa/business-visitor",
+    "/work-permits",
+    "/work-permits/lmia-exempt"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2299,
+   "uniqueWords": 2373,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -22724,7 +22744,7 @@
     },
     {
      "level": 2,
-     "text": "The failure patterns we see from Pakistan"
+     "text": "Where these applications go wrong"
     },
     {
      "level": 2,
@@ -22744,7 +22764,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1907,
+   "wordCount": 1992,
    "avgSentence": 18,
    "hits": {
     "outcome": 2,
@@ -22876,6 +22896,8 @@
     "/terms"
    ],
    "external": [
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/protect-fraud/report-fraud.html",
+    "https://www.canada.ca/en/employment-social-development/services/foreign-workers/refusal.html",
     "https://www.canada.ca/en/employment-social-development/services/foreign-workers.html",
     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/",
     "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20understand%20whether%20an%20LMIA-based%20work%20permit%20is%20realistic%20in%20my%20situation.%20%5BRef%3A%20WP-1B2F%5D"
@@ -22888,6 +22910,7 @@
     "/business-immigration",
     "/quebec-immigration",
     "/rural-community-immigration",
+    "/work-permits",
     "/work-permits/bridging-open-work-permit",
     "/work-permits/caregivers",
     "/work-permits/global-talent-stream",
@@ -22896,7 +22919,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 1788,
+   "uniqueWords": 1884,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -22990,7 +23013,7 @@
     },
     {
      "level": 2,
-     "text": "The route most Pakistani applicants ask about"
+     "text": "A route many business owners ask about"
     },
     {
      "level": 2,
@@ -23002,7 +23025,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1493,
+   "wordCount": 1507,
    "avgSentence": 19,
    "hits": {
     "outcome": 2,
@@ -23039,7 +23062,10 @@
    },
    "internalInCopy": [
     "/book-consultation",
+    "/work-permits/intra-company-transfer",
+    "/work-permits/international-experience-canada",
     "/work-permit-canada",
+    "/work-permits/spousal-open-work-permit",
     "/no-guarantee-policy",
     "/about/our-team"
    ],
@@ -23134,7 +23160,7 @@
     "/terms"
    ],
    "external": [
-    "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/fees.html",
+    "https://ircc.canada.ca/english/information/fees/fees.asp",
     "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20know%20whether%20I%20qualify%20for%20an%20LMIA-exempt%20Canadian%20work%20permit.%20%5BRef%3A%20WP-TGSF%5D"
    ],
    "images": 0,
@@ -23143,13 +23169,14 @@
     "/",
     "/business-immigration",
     "/visitor-visa/business-visitor",
+    "/work-permits",
     "/work-permits/global-talent-stream",
     "/work-permits/international-experience-canada",
     "/work-permits/intra-company-transfer"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 1434,
+   "uniqueWords": 1447,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -23239,7 +23266,7 @@
     },
     {
      "level": 2,
-     "text": "The failure patterns we see from Pakistan"
+     "text": "Where these applications go wrong"
     },
     {
      "level": 2,
@@ -23275,7 +23302,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2498,
+   "wordCount": 2500,
    "avgSentence": 19,
    "hits": {
     "outcome": 2,
@@ -23425,12 +23452,13 @@
     "/study-in-canada/study-permit-extension",
     "/study-in-canada/study-to-permanent-residence",
     "/study-in-canada/working-while-studying",
+    "/work-permits",
     "/work-permits/bridging-open-work-permit",
     "/work-permits/spousal-open-work-permit"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2385,
+   "uniqueWords": 2389,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -23689,7 +23717,9 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/",
-    "/work-permits/bridging-open-work-permit"
+    "/work-permits",
+    "/work-permits/bridging-open-work-permit",
+    "/work-permits/lmia-exempt"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
