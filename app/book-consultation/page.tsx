@@ -67,7 +67,7 @@ const FAQ_ITEMS = [
     a: (
       <>
         No — and neither can anyone else. Your application is decided by a visa officer, and no firm
-        can overrule that. What the consultation buys you is an honest read on whether your case is
+        can overrule that. What the consultation gives you is an honest read on whether your case is
         worth filing at all.{' '}
         <Link href="/no-guarantee-policy" className="link-underline font-semibold text-accent-500">
           Read our no-guarantee policy
@@ -77,12 +77,12 @@ const FAQ_ITEMS = [
     ),
   },
   {
-    q: 'What does the fee actually get me?',
-    a: 'A qualified lawyer’s honest assessment of your options — which routes are realistically open, which are not, roughly what it would cost and how long. If you go ahead, the fee comes straight off your bill.',
+    q: 'What do I actually get from a free consultation?',
+    a: 'A qualified lawyer’s honest assessment of your options — which routes are realistically open, which are not, roughly what it would cost and how long — and a written summary of where you stand. The consultation itself costs nothing.',
   },
   {
     q: 'What if you tell me not to apply?',
-    a: 'Then that’s what the fee earned — you avoided a refusal on your record, and those stay with you for years. You leave knowing exactly where you stand, and you owe us nothing further.',
+    a: 'Then you have avoided a refusal on your record, and those stay with you for years. You leave knowing exactly where you stand, and you owe us nothing.',
   },
   {
     q: 'Do I need to come to an office?',

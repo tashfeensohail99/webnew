@@ -347,8 +347,8 @@ export function CrsCalculator({ digits }: { digits: string }) {
             <p className="eyebrow eyebrow--light">Indicative CRS score</p>
             <p className="mt-2 font-serif text-6xl leading-none text-gold-300">{result.total}</p>
             <p className="mt-3 text-sm leading-relaxed text-ink-300">
-              Out of a realistic maximum of {result.realisticMax}
-              {input.provincialNomination ? '' : ' without a provincial nomination'}.
+              Worked out on the grid IRCC used before 3 November 2026. Canadian work in a
+              high-wage occupation, or a high-wage job offer, would add points not counted here.
             </p>
 
             <button

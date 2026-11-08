@@ -20,8 +20,10 @@ import { CRS_GRID_VERIFIED_ON, OFFICIAL_CALCULATOR_URL } from '@/lib/crs-grid';
  *
  * So this page makes NO aggregate claim about competitors. It states what IRCC
  * changed, and it hands the reader a test they can run against ANY calculator
- * including ours. That is stronger anyway: it invites the reader to audit us,
- * and it needs no maintenance.
+ * including ours. That is stronger anyway: it invites the reader to audit us.
+ *
+ * The notice above the calculator stays until lib/crs-grid.ts carries the
+ * Labour Market Integration factor IRCC added on 3 November 2026.
  *
  * Do not reintroduce a comparative claim without evidence verified down to the
  * scoring behaviour of each named tool.
@@ -29,18 +31,23 @@ import { CRS_GRID_VERIFIED_ON, OFFICIAL_CALCULATOR_URL } from '@/lib/crs-grid';
 export const metadata: Metadata = {
   title: 'CRS Calculator — Express Entry Points',
   description:
-    'Free Express Entry CRS calculator on IRCC’s current grid, including the March 2025 removal of job-offer points. Check our arithmetic against IRCC’s tool.',
+    'A free Express Entry CRS estimate, what IRCC changed on 3 November 2026, and how to check any calculator against IRCC’s own points table.',
   alternates: { canonical: '/tools/crs-calculator' },
 };
+
+const CRS_CRITERIA_URL =
+  'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score/crs-criteria.html';
+const CRS_CHANGES_URL =
+  'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/changes.html';
 
 const FAQS = [
   {
     q: 'Why is my score different from another calculator?',
-    a: 'The most common reason is job-offer points. On 25 March 2025 IRCC stopped awarding the CRS bonus for arranged employment — previously 50 or 200 points depending on the occupation. If a calculator still adds points for a job offer, it is applying a rule that no longer exists. You can test that yourself: run any calculator twice with identical answers, changing only the job-offer question. If the total moves, that tool is out of date. Run the same test on ours.',
+    a: 'Right now the likeliest reason is the change IRCC made on 3 November 2026. A calculator built on the new grid counts high-wage Canadian work experience and high-wage job offers. Ours does not yet, so if either applies to you, go by IRCC’s published points table rather than our result.',
   },
   {
-    q: 'So a job offer counts for nothing now?',
-    a: 'Not quite, and this is a distinction worth getting right. What was removed was the CRS bonus — the score that ranks you inside the Express Entry pool. Arranged employment still earns up to 10 points on the separate Federal Skilled Worker 67-point eligibility grid, which decides whether you qualify at all. A calculator showing "arranged employment — 10 points" on the 67-point grid is correct, not stale. A job offer can also still matter for some provincial streams.',
+    q: 'Does a job offer earn CRS points?',
+    a: 'Since 3 November 2026 it can, if the job is in an occupation on IRCC’s high-wage lists: 50, 70 or 100 points depending on the level. Any other job offer earns no CRS points. A job offer no longer needs an LMIA for Express Entry, and having one adds nothing. A valid offer still counts separately on the Federal Skilled Worker 67-point eligibility grid, and it can still matter for some provincial streams.',
   },
   {
     q: 'What score do I need?',
@@ -48,7 +55,7 @@ const FAQS = [
   },
   {
     q: 'Is this the official calculator?',
-    a: 'No, and you should not treat it as one. We rebuild the grid from IRCC’s published tables and check it by hand. Run your numbers through IRCC’s own calculator before relying on them — if the two disagree, IRCC is right.',
+    a: 'No, and you should not treat it as one. We build the grid from IRCC’s published tables and check it by hand, and this version predates the November 2026 change. Run your numbers through IRCC’s own calculator before relying on them — if the two disagree, IRCC is right.',
   },
   {
     q: 'My score is low. Is that the end of it?',
@@ -72,11 +79,24 @@ export default async function CrsCalculatorPage() {
             Express Entry CRS calculator, <span className="text-gold-300">and how to check it</span>
           </>
         }
-        subtitle="Work out your Comprehensive Ranking System score against the grid as it stands today — then test our arithmetic against IRCC’s own calculator. We will show you how."
+        subtitle="Estimate your Comprehensive Ranking System score, then test our arithmetic against IRCC’s own calculator. We will show you how."
       />
 
       <Section tone="paper">
         <div className="mx-auto max-w-5xl">
+          <div className="mb-8">
+            <Callout title="IRCC changed the scoring on 3 November 2026, and this calculator has not caught up yet">
+              IRCC added a Labour Market Integration factor worth up to 150 points. It covers
+              Canadian work experience, with extra points for high-wage occupations, or a
+              high-wage job offer. We are rebuilding this tool for it. If you have neither, the
+              change does not affect your result here. If you have either, your real score may be
+              higher than this shows, so go by{' '}
+              <a href={CRS_CRITERIA_URL} rel="noopener noreferrer" target="_blank" className="font-semibold text-accent-500 link-underline">
+                IRCC’s published points table
+              </a>
+              .
+            </Callout>
+          </div>
           <CrsCalculator digits={digits} />
           <p className="mt-6 text-center text-ink-600">
             Got your score?{' '}
@@ -91,34 +111,42 @@ export default async function CrsCalculatorPage() {
         <div className="mx-auto max-w-3xl">
           <SectionHeading
             eyebrow="What changed"
-            title="The CRS bonus for a job offer was removed"
-            subtitle="On 25 March 2025 IRCC stopped awarding the arranged-employment bonus — previously 50 or 200 points depending on the occupation."
+            title="Job offers can earn CRS points again, but only some of them"
+            subtitle="On 3 November 2026 IRCC added a Labour Market Integration factor worth up to 150 points. Job-offer points had been gone since March 2025."
           />
           <div className="mt-8 space-y-4 leading-relaxed text-ink-600 text-pretty">
             <p>
-              If you have been told your score sits comfortably above the cut-off because of
-              a job offer, it is worth recalculating. People have paid real money for
-              LMIA-backed offers partly for points that no longer apply to the CRS.
+              The new factor looks at two things and gives you the higher score, never both.
+              One is Canadian work experience: the same length-of-work points as before, plus up
+              to 70 for at least a year in an eligible high-wage occupation. The other is a job
+              offer in an eligible high-wage occupation, worth 50, 70 or 100 points depending on
+              its level.
             </p>
             <p>
-              Be careful with the opposite mistake too. A job offer was not deleted from
-              Canadian immigration scoring altogether — it still earns up to 10 points on the
-              Federal Skilled Worker 67-point eligibility grid, and it can still matter for
-              some provincial streams. Only the CRS bonus went.
+              A job offer no longer needs an LMIA for Express Entry, and having one adds no extra
+              points. An offer outside IRCC’s high-wage lists earns no CRS points at all, though
+              an officer still has to be satisfied that any offer is genuine.
             </p>
             <p>
-              IRCC called the removal temporary and has not set an end date. It has since
-              signalled an interest in reintroducing job-offer points for high-wage
-              occupations only, and consulted on it in 2026 — but nothing is settled: no
-              values, no date, and any change has to appear in the Canada Gazette first. We
-              would not plan around the points coming back.
+              If someone is selling you a job offer for the points, ask which occupation it is
+              and check it against IRCC’s list yourself. The level depends on the occupation’s
+              NOC code, not on the salary you are promised.{' '}
+              <a href={CRS_CHANGES_URL} rel="noopener noreferrer" target="_blank" className="font-semibold text-accent-500 link-underline">
+                Read IRCC’s explanation of the change
+              </a>
+              .
+            </p>
+            <p>
+              A valid job offer also counts separately on the Federal Skilled Worker 67-point
+              eligibility grid, and it can still matter for some provincial streams.
             </p>
           </div>
           <div className="mt-8">
             <Callout title="How to test any CRS calculator, including this one">
-              Run it twice with identical answers, changing only the job-offer question. If
-              your total moves, that tool is still applying a rule IRCC removed in March 2025.
-              Do it to ours. We would rather you checked than trusted us.
+              See whether it asks about high-wage occupations. If it treats every job offer as
+              zero, or gives points for any job offer, it is not on the grid IRCC has used since
+              3 November 2026. Ours is in that position until we finish rebuilding it, and this
+              page will say so until then.
             </Callout>
           </div>
           <div className="mt-8">

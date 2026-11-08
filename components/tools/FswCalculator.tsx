@@ -68,7 +68,7 @@ export function FswCalculator({ digits }: { digits: string }) {
         <p className="mt-2 text-sm leading-relaxed text-ink-600 text-pretty">
           This is the pass/fail eligibility test for the Federal Skilled Worker class,
           set in the Immigration and Refugee Protection Regulations. Clearing it is what
-          lets you into the Express Entry pool. Your CRS score — the one out of 1,200 —
+          lets you into the Express Entry pool. Your CRS score
           is a separate ranking applied afterwards. People confuse the two constantly and
           it is an expensive mistake. Grid checked {FSW_GRID_VERIFIED_ON} against{' '}
           <a href={IRPR_URL} rel="noopener nofollow" target="_blank" className="font-semibold text-accent-500 link-underline">
@@ -145,7 +145,7 @@ export function FswCalculator({ digits }: { digits: string }) {
           <Group title="Arranged employment">
             <Toggle
               label="I have a qualifying job offer from a Canadian employer"
-              help="Still worth points on THIS grid. The March 2025 change removed the job-offer bonus from the CRS score only — it did not touch the eligibility grid."
+              help="Worth points on THIS grid. The CRS is separate: since 3 November 2026 only job offers in IRCC’s high-wage occupations earn CRS points."
               value={input.arrangedEmployment}
               onChange={(v) => set('arrangedEmployment', v)}
             />

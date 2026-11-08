@@ -80,10 +80,10 @@ const FAQ_ITEMS = [
     q: 'Is UK settlement now 10 years instead of 5?',
     a: (
       <>
-        As things stand it is a <strong className="text-ink-900">proposal, not law</strong>. The
-        consultation closed in February 2026, no government response has been published, and no rules
-        have been laid. A House of Lords committee came out against it in June. Anyone telling you it
-        is already law is wrong; anyone telling you it definitely won’t happen is also guessing.
+        Not yet, but that is where it is going. On 2 November 2026 the government confirmed that the{' '}
+        <strong className="text-ink-900">starting point will rise from 5 years to 10</strong>, with
+        faster and slower routes depending on contribution and conduct. The detailed rules still have
+        to be written, so exact thresholds and who is protected are not settled.
       </>
     ),
   },
@@ -215,19 +215,44 @@ export default function UkPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="In the news"
-          title="On the “10-year settlement” news"
-          subtitle="A proposal is not a law — and the difference matters before you plan around it."
+          title="UK settlement is moving from 5 years to 10"
+          subtitle="The government has confirmed the policy. The detailed rules are still to come."
         />
         <div className="mt-10 max-w-3xl space-y-4 text-ink-600 text-pretty">
           <p>
-            You may have read that the UK is extending settlement from 5 years to 10. As things stand
-            it is a <strong className="text-ink-900">proposal, not law</strong>. The consultation
-            closed in February 2026, no government response has been published, and no rules have been
-            laid. A House of Lords committee came out against it in June.
+            On 2 November 2026 the UK government published its response to the earned settlement
+            consultation. The starting point for settlement will rise from 5 years to 10. People who
+            make a sustained contribution will be able to qualify sooner. People who break the law or
+            immigration rules may face a longer route, or may not be able to settle at all.
           </p>
           <p>
-            Anyone telling you it is already the law is wrong. Anyone telling you it definitely won’t
-            happen is also guessing. We’ll update this page when there is something real to report.
+            It is <strong className="text-ink-900">government policy, not yet law</strong>. The
+            detailed rules still have to be written, and the government says it will publish technical
+            guidance and a full impact assessment first. It also says there will be transitional
+            protections for some people already in the UK, including care workers and certain health
+            and education workers. The law firm{' '}
+            <a
+              href="https://www.lewissilkin.com/insights/2026/11/03/home-office-sets-out-revised-earned-settlement-framework-102o7co"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="font-semibold text-accent-500 link-underline"
+            >
+              Lewis Silkin reports
+            </a>{' '}
+            that the rule changes are due to begin in December 2026, with implementation during 2027.
+          </p>
+          <p>
+            If you are planning a UK route from Pakistan, do not count on 5 years. Be careful with
+            anyone quoting exact thresholds or exemptions before the rules exist. You can read{' '}
+            <a
+              href="https://www.gov.uk/government/consultations/earned-settlement"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="font-semibold text-accent-500 link-underline"
+            >
+              the government’s own summary
+            </a>
+            . We’ll update this page when the rules are published.
           </p>
         </div>
       </Section>

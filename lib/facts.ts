@@ -108,14 +108,15 @@ export const FACTS: Record<string, Fact> = {
     source: 'Absence from the gov.uk visa list; Skilled Worker rules',
     checked: '2026-07-17',
   },
-  ukTenYearIlrIsProposal: {
-    id: 'uk.10yearilr.proposal',
+  ukTenYearIlrConfirmed: {
+    id: 'uk.10yearilr.response',
     claim:
-      'The proposed extension of UK settlement (ILR) to 10 years is a PROPOSAL, not law. The consultation closed 12 February 2026; no government response has been published and no rules have been laid.',
-    provenance: 'secondary',
-    source: 'UK consultation record; Lords Justice and Home Affairs Committee opposition, 23 June 2026',
-    checked: '2026-07-17',
-    note: 'Ship as a dated tracker, never as current law. It is wrong today and could be wrong the other way by autumn.',
+      'The UK government response of 2 November 2026 says the starting point for settlement (ILR) will rise from 5 to 10 years, with faster and slower routes. It is policy, not yet in the Immigration Rules; technical guidance and a full impact assessment come first.',
+    provenance: 'primary',
+    source: 'GOV.UK, Earned settlement consultation outcome, updated 2 November 2026',
+    sourceUrl: 'https://www.gov.uk/government/consultations/earned-settlement',
+    checked: '2026-11-08',
+    note: 'Timing is secondary: Lewis Silkin (3 Nov 2026) reports rule changes from December 2026 and implementation during 2027. Re-check when the rules are laid.',
   },
 
   // ── EUROPE / SCHENGEN ────────────────────────────────────────────────────

@@ -13,9 +13,9 @@ import { PageHero, Section, SectionHeading, FeatureCard, Callout, CTASection, Ic
  * file. Each tool maps to something we actually handle.
  */
 export const metadata: Metadata = {
-  title: 'Free Immigration Tools & Eligibility Checkers',
+  title: 'Free Immigration Tools and Calculators',
   description:
-    'Free self-assessment tools: a current Express Entry CRS calculator, a work-without-a-job-offer check, and a visitor-visa refusal-risk gauge. No sign-up.',
+    'Free self-assessment tools: CRS and FSW 67-point calculators, a CLB converter, a work-without-a-job-offer check and a visit-visa weak-point check. No sign-up.',
   alternates: { canonical: '/tools' },
 };
 
@@ -26,7 +26,7 @@ const TOOLS = [
     kicker: 'Canada · Work permit',
     title: 'Work permit without a job offer',
     body: 'Six questions on what you own, run and could fund — and an honest read on whether the owner-operator route fits you at all.',
-    cta: 'Check eligibility',
+    cta: 'Try the checker',
   },
   {
     href: '/tools/visit-visa-refusal-risk',
@@ -41,7 +41,7 @@ const TOOLS = [
     icon: 'calculator' as const,
     kicker: 'Canada · Express Entry',
     title: 'CRS points calculator',
-    body: 'Your Comprehensive Ranking System score against the grid as it stands today, plus a simple test you can run to check any calculator — including ours.',
+    body: 'An estimate of your Comprehensive Ranking System score, with a clear note on what IRCC changed on 3 November 2026 and who that affects.',
     cta: 'Calculate my score',
   },
   {

@@ -7,10 +7,10 @@ import { site } from '@/lib/site';
  * ⚠️ LAWYER REVIEW REQUIRED BEFORE LAUNCH.
  *
  * What follows is an accurate description of what THIS WEBSITE does, which is
- * almost nothing: it is statically generated, sets no cookies, runs no analytics,
- * ships no client JavaScript and has no forms. That is unusual and worth stating
- * plainly — it is verifiable by anyone who opens dev tools, and this audience has
- * good reason to be suspicious.
+ * very little: it is statically generated, sets no cookies and runs no analytics.
+ * It has one form, on /book-consultation, described below. That is unusual and
+ * worth stating plainly — it is verifiable by anyone who opens dev tools, and this
+ * audience has good reason to be suspicious.
  *
  * What it does NOT cover, and a lawyer must supply:
  *   • how the firm handles client data once someone becomes a client (passports,
@@ -40,7 +40,7 @@ export default function PrivacyPage() {
       <PageHero
         eyebrow="Privacy"
         title="Privacy"
-        subtitle="Short version: this website collects nothing about you. Here is the longer version."
+        subtitle="Short version: reading this website collects nothing about you. If you fill in our form or message us, we receive what you send. Here is the longer version."
       />
 
       <Prose>
@@ -51,8 +51,9 @@ export default function PrivacyPage() {
 
         <h2>What this website collects</h2>
         <p>
-          Nothing. There are no forms on this site, no cookies, no analytics, no tracking pixels and
-          no advertising scripts. Every page is a static file. We do not know you visited.
+          If you are only reading it, nothing. There are no cookies, no analytics, no tracking pixels
+          and no advertising scripts. We do not know you visited. If you choose the light or dark
+          theme, that choice is saved in your own browser and is not sent to us.
         </p>
         <p>
           You do not have to take our word for that — open your browser’s developer tools and look.
@@ -61,6 +62,22 @@ export default function PrivacyPage() {
         <p>
           Our hosting provider keeps ordinary server logs, as every web host does. We do not use them
           to identify anyone.
+        </p>
+
+        <h2>When you use our consultation form</h2>
+        <p>
+          The form on our{' '}
+          <Link href="/book-consultation" className="link-underline font-semibold text-accent-500">
+            consultation page
+          </Link>{' '}
+          sends us what you type: your name and phone number, your email if you give it, where you
+          hope to go, what you are asking about, who would be going, how far along you are, whether
+          you have been refused before, and anything else you choose to write. We receive nothing
+          until you press send.
+        </p>
+        <p>
+          It goes into our client management system so that someone on our team can read it and reply
+          to you. The form does not ask for your CNIC or passport.
         </p>
 
         <h2>When you message us on WhatsApp</h2>
