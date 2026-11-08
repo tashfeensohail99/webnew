@@ -284,6 +284,15 @@ export const FACTS: Record<string, Fact> = {
     sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/medical-exams/requirements-temporary-residents.html',
     checked: '2026-11-08',
   },
+  caC11StillPublished: {
+    id: 'ca.work.c11-status',
+    claim:
+      'On 9 November 2026 IRCC still published its C11 instructions. Its notice on entrepreneurs closes the Start-Up Visa and its work permit and extends the Self-Employed Persons Program pause, and does not mention the C11.',
+    provenance: 'primary',
+    source: 'IRCC, C11 program delivery instructions; IRCC notice on immigration measures for entrepreneurs',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/immigration-measures-entrepreneurs.html',
+    checked: '2026-11-09',
+  },
   caBridgingOpenWorkPermit: {
     id: 'ca.work.bowp',
     claim:

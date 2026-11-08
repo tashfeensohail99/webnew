@@ -105,10 +105,6 @@ const STEPS = [
 
 const FAQS = [
   {
-    q: 'What actually is an LMIA?',
-    a: 'A Labour Market Impact Assessment is a decision by Employment and Social Development Canada on whether hiring a foreign worker for a specific job would help, harm, or have no effect on the Canadian labour market. The employer applies for it, advertises the role, and has to show they tried to fill it locally. It exists to protect Canadian workers — it is not a document about you, and it is not something you can obtain yourself.',
-  },
-  {
     q: 'Can I buy an LMIA or a job offer?',
     a: 'No. Selling a job offer or an LMIA position is illegal in Canada, and paying for one puts you on the wrong side of the Immigration and Refugee Protection Act as well. Employers are also barred from recovering LMIA or recruitment costs from the worker — ESDC sets that out in the Temporary Foreign Worker Program requirements on canada.ca. Submitting a purchased or fabricated offer is misrepresentation, which carries a bar on entering Canada in addition to the refusal; IRCC publishes the current bar period on its inadmissibility pages. If someone in Pakistan is quoting you a price for an LMIA, that is the scam, not a shortcut.',
   },
@@ -224,44 +220,16 @@ export default function WorkPermitsPage() {
         <SectionHeading eyebrow="The thing everyone asks about" title="What an LMIA actually is" />
         <Prose>
           <p>
-            A Labour Market Impact Assessment is a decision made by Employment and Social Development
-            Canada about a job, not about a person. The employer applies. The employer advertises the
-            role in Canada, documents that recruitment effort, and asks for a ruling on whether
-            hiring a foreign worker for that position would have a positive, neutral or negative
-            effect on the Canadian labour market.
+            A Labour Market Impact Assessment is a decision by Employment and Social Development
+            Canada about a job, not about a person: the employer applies, after advertising the role
+            in Canada. A positive LMIA is evidence you then use in your own work permit application
+            to IRCC, and you cannot start one yourself or move it to another job.
           </p>
           <p>
-            It exists for one reason: to protect the Canadian labour market. That framing explains
-            almost everything that frustrates applicants about it. The employer bears the cost and
-            the paperwork, so employers only do it when they genuinely cannot fill a role. It cannot
-            be initiated by you. It is issued for a particular position at a particular business, so
-            it is not portable and not a personal asset. And it is not a work permit — a positive
-            LMIA is evidence you then use in your own application to IRCC, which is decided
-            separately.
-          </p>
-          <p>
-            Government fees, wage requirements and processing times attached to the LMIA process are
-            set by Employment and Social Development Canada and IRCC and are revised from time to
-            time. We do not reproduce them here, because a stale figure on a website is worse than no
-            figure. Check them at the source: ESDC publishes the employer requirements and the LMIA
-            application fee under{' '}
-            <a
-              href="https://www.canada.ca/en/employment-social-development/services/foreign-workers.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Hire a temporary foreign worker
-            </a>
-            , and IRCC publishes application fees and current processing times on{' '}
-            <a
-              href="https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              canada.ca
-            </a>
-            . Check those before you rely on any figure quoted to you by anyone, including an
-            employer or a recruiter.
+            <Link href="/work-permits/lmia" className="font-semibold text-accent-500 link-underline">
+              Read how an LMIA works, who pays and why it cannot be bought
+            </Link>
+            .
           </p>
         </Prose>
       </Section>

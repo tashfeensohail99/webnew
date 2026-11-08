@@ -1,0 +1,391 @@
+# Google Search Console, read 8 Nov 2026. Data covers 21 Oct to 6 Nov 2026. Verified from the owner's account.
+# Format: query|clicks|impressions|average position. Rows under one impression and no click are left out.
+# 340 queries in total, 9 of them brand. Under #PAGES, brand rows are summed into brandImp and non-brand rows are listed.
+# A page with total=0 has impressions but Google withheld its queries ("No data").
+#ALL
+tashfeen immigration solutions|57|184|1.0
+tashfeen immigration|9|62|1.0
+tashfeen immigration solutions islamabad|7|35|1.0
+tashfeen immigration solutions lahore|5|71|1.2
+tashfeen immigration solutions lahore reviews|1|21|2.5
+tashfeen immigration solutions pvt ltd 2|1|20|1.0
+tashfeen immigration solutions pvt ltd 2 reviews|1|19|3.5
+immigration lawyer lahore|1|17|13.3
+where in mississauga|1|1|1.0
+crs calculator|0|93|49.5
+canada visa consultant in lahore|0|69|58.4
+nova scotia nominee program|0|27|55.6
+tashfeen|0|26|3.0
+extend study permit|0|23|81.8
+work while studying in canada|0|22|30.0
+designated learning institution|0|20|30.1
+newfoundland provincial nominee program|0|19|40.7
+c11 business plan|0|18|63.6
+immigration consultants in islamabad|0|17|64.1
+c11 work permit|0|15|17.3
+c11 visa business plan|0|15|60.7
+crs calculator express entry|0|13|69.2
+study permit extension|0|13|80.9
+nova scotia provincial nominee program|0|12|74.4
+provincial nominee program nova scotia|0|12|80.8
+crscalculator.net|0|11|8.3
+ces score calculator|0|11|15.5
+provincial nominee program in nova scotia|0|11|83.2
+nlpnp|0|9|37.6
+canada consultant pakistan|0|9|57.1
+c11 work permit canada|0|8|13.0
+designated learning institution canada|0|8|31.9
+reconsideration request|0|8|44.1
+dli canada|0|7|40.4
+oinp|0|7|63.9
+immigration|0|6|4.2
+site.canada.ca "business owners seeking only temporary residence" "c11"|0|6|10.2
+immigration lawyer islamabad|0|6|17.0
+best immigration lawyer in karachi|0|6|34.8
+instant crs calculator|0|6|62.8
+canada consultant in karachi|0|6|65.8
+entry express points calculator|0|6|69.0
+immigrant nominee program ontario|0|6|75.5
+crs score calculator|0|6|77.5
+calculate crs score|0|6|78.5
+ontario immigrant nominee program contact|0|6|91.2
+tashfeen barristers and solicitors|0|5|1.0
+pakistan|0|5|3.2
+clb to dha level conversion|0|5|5.2
+immigration lawyer karachi|0|5|10.6
+محاسبه آنلاین امتیاز اکسپرس انتری|0|5|15.4
+immigration lawyer in karachi|0|5|24.0
+newfoundland and labrador pnp|0|5|28.0
+best canadian immigration consultant in lahore|0|5|46.6
+express entry points calculator|0|5|46.6
+can i stay in canada while waiting for study permit extension|0|5|52.2
+immigration lawyers in lahore pakistan|0|5|66.8
+immigration to ontario nominee program|0|5|67.6
+best immigration consultant in karachi|0|5|72.8
+ontario immigration nominee program|0|5|77.0
+pakistan visa immigration legislation october 2026|0|4|3.8
+cre calculator|0|4|8.8
+mofa online attestation pakistan|0|4|9.2
+c11 canada|0|4|10.2
+eb-2 niw visa for pakistani|0|4|10.5
+immigration consultant near me|0|4|14.2
+designated learning institution number|0|4|14.5
+arrange marriage spouse sponsorship canada|0|4|20.8
+محاسبه امتیاز اکسپرس انتری|0|4|24.5
+mofa attestation portal|0|4|26.2
+immigration lawyers in karachi pakistan|0|4|30.5
+newfoundland immigration|0|4|40.0
+authorized canadian immigration consultants in pakistan|0|4|42.2
+ee calculator|0|4|53.8
+newfoundland and labrador immigration|0|4|61.8
+ielts to clb converter|0|4|69.5
+calculator points express entry|0|4|81.2
+immigration firms|0|3|1.7
+pakistan visa immigration legislation policy october 2026|0|3|3.0
+visa consultant near me|0|3|3.3
+nbpnp|0|3|6.3
+mofa pakistan attestation online|0|3|7.3
+c11 visa|0|3|9.7
+site.canada.ca "business owners seeking only temporary residence" "51%"|0|3|10.0
+dli meaning|0|3|11.0
+eb2 niw pakistan|0|3|14.7
+tms immigration|0|3|15.0
+pakistan green card|0|3|18.0
+self-employed c11 r205 a|0|3|19.7
+dli number|0|3|20.3
+newfoundland provincial nominee|0|3|27.7
+designated learning institute|0|3|28.7
+newfoundland pnp|0|3|35.3
+designated learning institution in canada|0|3|37.3
+us immigration lawyers in karachi|0|3|41.0
+asylum lawyers in karachi|0|3|41.3
+uscis lawyer in islamabad|0|3|45.0
+pei pnp|0|3|47.0
+canada consultant in pakistan|0|3|50.3
+uk crs score calculator|0|3|56.0
+prince edward island pnp|0|3|59.0
+best canadian immigration consultant in islamabad|0|3|61.0
+mofa attestation pakistan|0|3|64.3
+calculator crs score|0|3|65.3
+police certificate from pakistan|0|3|66.3
+crs calculator canada|0|3|67.3
+immigration consultants|0|3|67.7
+study visa extension canada|0|3|69.3
+best immigration consultants in pakistan|0|3|70.3
+crs score calculator india|0|3|74.7
+immigration consultants in karachi|0|3|76.0
+extending study permit in canada|0|3|79.3
+best immigration lawyer in lahore|0|2|1.0
+is pakistan included|0|2|3.5
+ministry of foreign affairs pakistan online attestation|0|2|8.0
+province letter|0|2|8.5
+canada c11 visa from pakistan|0|2|9.5
+immigration solicitors near me|0|2|10.0
+site.canada.ca "business owners seeking only temporary residence" c11|0|2|10.0
+c11 visa canada requirements|0|2|10.5
+ircc c11|0|2|11.0
+best immigration lawyer in islamabad|0|2|11.5
+immigration near me office|0|2|11.5
+immigration lawyer in islamabad|0|2|12.0
+cra calculator|0|2|13.0
+mofa pakistan attestation online check|0|2|14.5
+mofa attestation online pakistan|0|2|15.0
+immigration lawyer in karachi for canada|0|2|17.5
+express entry calculator|0|2|18.0
+mofa online attestation|0|2|18.0
+pakistan mofa attestation online|0|2|20.0
+immigration lawyer pakistan|0|2|22.5
+new brunswick provincial nominee program|0|2|27.5
+fsw points calculator|0|2|28.5
+pal/tal|0|2|32.0
+pal tal|0|2|33.5
+canada immigration lawyer in karachi|0|2|34.5
+dli schools in canada|0|2|36.0
+محاسبه امتیاز اکسپرس اینتری|0|2|36.0
+lettre d'attestation provinciale ou territoriale|0|2|38.0
+newfoundland immigration program|0|2|38.0
+crs tool|0|2|39.5
+best immigration lawyers in karachi|0|2|40.0
+provincial nomination nova scotia|0|2|40.0
+ns immigration|0|2|47.5
+ontario nominee immigration program|0|2|51.0
+crs calculator'|0|2|54.5
+pnp ontario process|0|2|56.5
+police certificate pakistan|0|2|57.0
+best canadian immigration consultant in pakistan|0|2|59.0
+prince edward island provincial nominee program|0|2|59.0
+top canadian immigration consultants in pakistan|0|2|59.5
+canada immigration consultants in lahore pakistan|0|2|60.0
+immigration calculator|0|2|62.0
+best consultant for canada in pakistan|0|2|67.5
+traveling to canada for business|0|2|68.5
+study permit extension canada|0|2|71.0
+police clearance certificate from pakistan|0|2|73.0
+extending study permit|0|2|76.0
+provincial nomination ontario|0|2|76.0
+best immigration consultants in islamabad|0|2|78.0
+best visa consultant in islamabad|0|2|79.0
+celpip to ielts score converter|0|2|81.0
+crs score calculate|0|2|87.0
+immigration consultants in pakistan|0|2|91.5
+canada immigration from pakistan|0|2|94.0
+#PAGES
+@/ total=81 brandImp=432
+immigration lawyer lahore|1|14|4.6
+where in mississauga|1|1|1.0
+canada visa consultant in lahore|0|69|58.4
+immigration consultants in islamabad|0|12|54.9
+canada consultant pakistan|0|9|57.1
+immigration|0|6|4.2
+best immigration lawyer in karachi|0|6|34.8
+canada consultant in karachi|0|6|65.8
+immigration lawyer islamabad|0|5|9.0
+immigration lawyer karachi|0|5|10.6
+immigration lawyer in karachi|0|5|24.0
+best canadian immigration consultant in lahore|0|5|46.6
+best immigration consultant in karachi|0|5|72.8
+immigration consultant near me|0|4|14.2
+immigration lawyers in karachi pakistan|0|4|30.5
+authorized canadian immigration consultants in pakistan|0|4|42.2
+immigration firms|0|3|1.7
+visa consultant near me|0|3|3.3
+tms immigration|0|3|15.0
+us immigration lawyers in karachi|0|3|41.0
+asylum lawyers in karachi|0|3|41.3
+uscis lawyer in islamabad|0|3|45.0
+canada consultant in pakistan|0|3|50.3
+best canadian immigration consultant in islamabad|0|3|61.0
+immigration consultants|0|3|67.7
+best immigration consultants in pakistan|0|3|70.3
+immigration consultants in karachi|0|3|76.0
+best immigration lawyer in lahore|0|2|1.0
+best immigration lawyer in islamabad|0|2|11.5
+immigration lawyer in islamabad|0|2|12.0
+immigration lawyer in karachi for canada|0|2|17.5
+immigration lawyer pakistan|0|2|22.5
+canada immigration lawyer in karachi|0|2|34.5
+best immigration lawyers in karachi|0|2|40.0
+best canadian immigration consultant in pakistan|0|2|59.0
+top canadian immigration consultants in pakistan|0|2|59.5
+canada immigration consultants in lahore pakistan|0|2|60.0
+best consultant for canada in pakistan|0|2|67.5
+best visa consultant in islamabad|0|2|79.0
+immigration consultants in pakistan|0|2|91.5
+@/about total=11 brandImp=392
+@/about/our-team total=7 brandImp=247
+@/fees total=8 brandImp=220
+@/tools/crs-calculator total=41 brandImp=0
+crs calculator|0|93|49.5
+crs calculator express entry|0|13|69.2
+crscalculator.net|0|11|8.3
+ces score calculator|0|11|15.5
+instant crs calculator|0|6|62.8
+entry express points calculator|0|6|69.0
+crs score calculator|0|6|77.5
+calculate crs score|0|6|78.5
+محاسبه آنلاین امتیاز اکسپرس انتری|0|5|15.4
+express entry points calculator|0|5|46.6
+cre calculator|0|4|8.8
+محاسبه امتیاز اکسپرس انتری|0|4|24.5
+ee calculator|0|4|53.8
+calculator points express entry|0|4|81.2
+uk crs score calculator|0|3|56.0
+calculator crs score|0|3|65.3
+crs calculator canada|0|3|67.3
+crs score calculator india|0|3|74.7
+cra calculator|0|2|13.0
+express entry calculator|0|2|18.0
+محاسبه امتیاز اکسپرس اینتری|0|2|36.0
+crs tool|0|2|39.5
+crs calculator'|0|2|54.5
+immigration calculator|0|2|62.0
+crs score calculate|0|2|87.0
+@/immigration-consultant-lahore total=17 brandImp=116
+immigration lawyers in lahore pakistan|0|5|66.8
+immigration lawyer lahore|0|4|41.5
+@/immigration-consultant-islamabad total=11 brandImp=95
+immigration consultants in islamabad|0|6|81.8
+@/blog/eb2-niw-pakistan total=10 brandImp=0
+pakistan visa immigration legislation october 2026|0|4|3.8
+eb-2 niw visa for pakistani|0|4|10.5
+pakistan|0|3|2.3
+pakistan visa immigration legislation policy october 2026|0|3|3.0
+eb2 niw pakistan|0|3|14.7
+pakistan green card|0|3|18.0
+@/study-in-canada/designated-learning-institutions total=27 brandImp=0
+designated learning institution|0|20|30.1
+designated learning institution canada|0|8|31.9
+dli canada|0|7|40.4
+designated learning institution number|0|4|14.5
+dli meaning|0|3|11.0
+dli number|0|3|20.3
+designated learning institute|0|3|28.7
+designated learning institution in canada|0|3|37.3
+dli schools in canada|0|2|36.0
+@/book-consultation total=6 brandImp=107
+@/blog/austria-red-white-red-card total=2 brandImp=0
+@/study-in-canada/provincial-attestation-letter total=19 brandImp=0
+province letter|0|2|8.5
+pal/tal|0|2|32.0
+pal tal|0|2|33.5
+lettre d'attestation provinciale ou territoriale|0|2|38.0
+@/work-permit-canada total=20 brandImp=0
+c11 work permit|0|15|17.3
+c11 work permit canada|0|8|13.0
+c11 canada|0|4|10.2
+c11 visa|0|3|9.7
+self-employed c11 r205 a|0|3|19.7
+canada c11 visa from pakistan|0|2|9.5
+c11 visa canada requirements|0|2|10.5
+ircc c11|0|2|11.0
+@/blog/mofa-online-attestation total=18 brandImp=0
+mofa online attestation pakistan|0|4|9.2
+mofa attestation portal|0|4|26.2
+mofa pakistan attestation online|0|3|7.3
+mofa attestation pakistan|0|3|64.3
+ministry of foreign affairs pakistan online attestation|0|2|8.0
+mofa pakistan attestation online check|0|2|14.5
+mofa attestation online pakistan|0|2|15.0
+mofa online attestation|0|2|18.0
+pakistan mofa attestation online|0|2|20.0
+@/pnp/nova-scotia total=12 brandImp=0
+nova scotia nominee program|0|27|55.6
+nova scotia provincial nominee program|0|12|74.4
+provincial nominee program nova scotia|0|12|80.8
+provincial nominee program in nova scotia|0|11|83.2
+provincial nomination nova scotia|0|2|40.0
+ns immigration|0|2|47.5
+@/study-in-canada/study-permit-extension total=9 brandImp=0
+extend study permit|0|23|81.8
+study permit extension|0|13|80.9
+can i stay in canada while waiting for study permit extension|0|5|52.2
+study visa extension canada|0|3|69.3
+extending study permit in canada|0|3|79.3
+study permit extension canada|0|2|71.0
+extending study permit|0|2|76.0
+@/pnp/newfoundland-labrador total=15 brandImp=0
+newfoundland provincial nominee program|0|19|40.7
+nlpnp|0|9|37.6
+newfoundland and labrador pnp|0|5|28.0
+newfoundland immigration|0|4|40.0
+newfoundland and labrador immigration|0|4|61.8
+newfoundland provincial nominee|0|3|27.7
+newfoundland pnp|0|3|35.3
+newfoundland immigration program|0|2|38.0
+@/work-permit-canada/business-plan total=5 brandImp=0
+c11 business plan|0|18|63.6
+c11 visa business plan|0|15|60.7
+site.canada.ca "business owners seeking only temporary residence" "c11"|0|6|10.2
+site.canada.ca "business owners seeking only temporary residence" "51%"|0|3|10.0
+site.canada.ca "business owners seeking only temporary residence" c11|0|2|10.0
+@/pnp/ontario total=12 brandImp=0
+oinp|0|7|63.9
+immigrant nominee program ontario|0|6|75.5
+ontario immigrant nominee program contact|0|6|91.2
+immigration to ontario nominee program|0|5|67.6
+ontario immigration nominee program|0|5|77.0
+ontario nominee immigration program|0|2|51.0
+pnp ontario process|0|2|56.5
+provincial nomination ontario|0|2|76.0
+@/refusals/gcms-notes total=0 brandImp=0
+@/study-in-canada/working-while-studying total=2 brandImp=0
+work while studying in canada|0|22|30.0
+@/canadian-immigration-lawyer-pakistan total=4 brandImp=21
+@/work-permits/international-experience-canada total=3 brandImp=0
+is pakistan included|0|2|3.5
+pakistan|0|2|4.5
+@/canada-immigration-from-pakistan/biometrics total=4 brandImp=0
+@/refusals/reconsideration total=2 brandImp=0
+reconsideration request|0|8|44.1
+@/canada-immigration-from-pakistan/police-certificate total=5 brandImp=0
+police certificate from pakistan|0|3|66.3
+police certificate pakistan|0|2|57.0
+police clearance certificate from pakistan|0|2|73.0
+@/tools/clb-converter total=11 brandImp=0
+clb to dha level conversion|0|5|5.2
+ielts to clb converter|0|4|69.5
+celpip to ielts score converter|0|2|81.0
+@/study-in-canada/bringing-family total=0 brandImp=0
+@/work-permits/caregivers total=2 brandImp=0
+@/canada-immigration-from-pakistan/medical-exam total=0 brandImp=0
+@/pnp/new-brunswick total=6 brandImp=0
+nbpnp|0|3|6.3
+new brunswick provincial nominee program|0|2|27.5
+@/usa total=3 brandImp=9
+@/tools/fsw-67-calculator total=3 brandImp=0
+fsw points calculator|0|2|28.5
+@/refusals/misrepresentation total=0 brandImp=0
+@/visitor-visa/invitation-letter total=0 brandImp=0
+@/work-permit-canada/refusals total=0 brandImp=0
+@/no-guarantee-policy total=1 brandImp=0
+@/uk total=1 brandImp=4
+@/refusals/judicial-review total=4 brandImp=0
+@/pnp/prince-edward-island total=3 brandImp=0
+pei pnp|0|3|47.0
+prince edward island pnp|0|3|59.0
+prince edward island provincial nominee program|0|2|59.0
+@/work-permits/lmia-exempt total=3 brandImp=0
+@/canada-immigration-from-pakistan total=2 brandImp=0
+canada immigration from pakistan|0|2|94.0
+@/refusals/re-applying total=0 brandImp=0
+@/blog/ontario-higher-earners-2026 total=0 brandImp=0
+@/work-permits/bridging-open-work-permit total=1 brandImp=0
+@/work-permits/intra-company-transfer total=2 brandImp=0
+@/express-entry/draws total=0 brandImp=0
+@/pnp/british-columbia total=0 brandImp=0
+@/work-permits total=1 brandImp=0
+@/europe total=1 brandImp=1
+@/visitor-visa/business-visitor total=1 brandImp=0
+traveling to canada for business|0|2|68.5
+@/rural-community-immigration total=0 brandImp=0
+@/caregivers total=0 brandImp=0
+@/canada-visa-refused total=0 brandImp=0
+@/pnp/alberta total=0 brandImp=0
+@/study-in-canada/study-to-permanent-residence total=0 brandImp=0
+@/visitor-visa/extension total=0 brandImp=0
+@/express-entry/canadian-experience-class total=0 brandImp=0
+@/visitor-visa/eta total=1 brandImp=0
+@/updates total=0 brandImp=0
+@/canada-visit-visa total=1 brandImp=0
+@/work-permits/global-talent-stream total=0 brandImp=0
+@/atlantic-immigration-program total=0 brandImp=0

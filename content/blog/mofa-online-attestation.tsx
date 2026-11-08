@@ -23,7 +23,7 @@ export default function MofaOnlineAttestation() {
         you an electronic certificate instead of stamping paper at a counter.
       </p>
 
-      <h2>What changed</h2>
+      <h2>What changed with MOFA online attestation</h2>
       <p>
         Under a notice on MOFA’s consular services page, the Ministry in Islamabad and its liaison
         offices in <strong>Lahore, Karachi, Peshawar, Quetta and Gujrat</strong> adopted a Digital
@@ -126,7 +126,7 @@ export default function MofaOnlineAttestation() {
         , which is a separate process again.
       </p>
 
-      <h2>Two practical notes</h2>
+      <h2>Using the MOFA attestation portal: two practical notes</h2>
       <p>
         <strong>MOFA’s help pages lag the notice.</strong> The attestation portal’s step-by-step pages
         still describe the earlier flow — book an appointment after approval, bring the originals, collect

@@ -147,7 +147,7 @@ export default function WorkingWhileStudyingPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="Where the permission comes from"
-          title="Read your permit before you read anything else"
+          title="Can you work while studying in Canada? Read your permit first"
         />
         <Prose>
           <p>

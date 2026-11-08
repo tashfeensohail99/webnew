@@ -166,6 +166,11 @@ const OFFICE_PAGES: Record<string, string> = {
   Lahore: '/immigration-consultant-lahore',
   Islamabad: '/immigration-consultant-islamabad',
 };
+/** Link text uses the words people search for each city. */
+const OFFICE_LINK_TEXT: Record<string, string> = {
+  Lahore: 'Canada visa consultants in Lahore',
+  Islamabad: 'Immigration consultants in Islamabad',
+};
 const OFFICES = site.offices
   .filter((o) => o.address && OFFICE_PAGES[o.city])
   .map((o) => ({ ...o, page: OFFICE_PAGES[o.city]! }));
@@ -740,7 +745,7 @@ export default function HomePage() {
               <p className="mt-3 text-sm text-ink-600">{o.hours}</p>
               <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
                 <Link href={o.page} className="tap font-semibold text-accent-500 link-underline">
-                  About the {o.city} office →
+                  {OFFICE_LINK_TEXT[o.city]} →
                 </Link>
                 {o.mapUrl ? (
                   <a href={o.mapUrl} rel="noopener noreferrer" target="_blank" className="tap font-semibold text-ink-700 link-underline">

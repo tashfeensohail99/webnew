@@ -1,7 +1,7 @@
 {
  "summary": {
   "base": "https://tashfeenimmigrationsolutions.com",
-  "crawled": "2026-11-08T14:01:01.185Z",
+  "crawled": "2026-11-08T18:19:38.436Z",
   "total": 93,
   "ok": 93,
   "inSitemap": 93,
@@ -199,8 +199,8 @@
    {
     "a": "/immigration-consultant-islamabad",
     "b": "/immigration-consultant-lahore",
-    "shared": 105,
-    "share": 0.35
+    "shared": 120,
+    "share": 0.26
    },
    {
     "a": "/blog",
@@ -245,45 +245,15 @@
     "share": 0.09
    },
    {
-    "a": "/",
-    "b": "/immigration-consultant-lahore",
-    "shared": 23,
-    "share": 0.08
-   },
-   {
     "a": "/blog/express-entry-2026-so-far",
     "b": "/blog/ontario-higher-earners-2026",
     "shared": 36,
     "share": 0.07
    },
    {
-    "a": "/book-consultation",
-    "b": "/immigration-consultant-islamabad",
-    "shared": 20,
-    "share": 0.07
-   },
-   {
-    "a": "/",
-    "b": "/immigration-consultant-islamabad",
-    "shared": 19,
-    "share": 0.06
-   },
-   {
-    "a": "/about",
-    "b": "/immigration-consultant-islamabad",
-    "shared": 17,
-    "share": 0.06
-   },
-   {
     "a": "/blog/eb2-niw-pakistan",
     "b": "/usa",
     "shared": 37,
-    "share": 0.06
-   },
-   {
-    "a": "/book-consultation",
-    "b": "/immigration-consultant-lahore",
-    "shared": 19,
     "share": 0.06
    }
   ]
@@ -8339,6 +8309,10 @@
     },
     {
      "level": 2,
+     "text": "Where each step happens in the twin cities"
+    },
+    {
+     "level": 2,
      "text": "About the Islamabad office"
     },
     {
@@ -8347,8 +8321,8 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 598,
-   "avgSentence": 17,
+   "wordCount": 835,
+   "avgSentence": 16,
    "hits": {
     "outcome": 0,
     "superlative": 0,
@@ -8488,6 +8462,9 @@
    "external": [
     "https://share.google/vJcS1ctTiwpKproPU",
     "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20visit%20your%20Islamabad%20office.%20%5BRef%3A%20WP-OBZB%5D",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/biometrics/where-to-give.html",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/police-certificates/how/pakistan.html",
+    "https://secure.cic.gc.ca/PanelPhysicianMedecinDesigne/en/Home",
     "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20book%20a%20consultation%20at%20your%20Islamabad%20office.%20%5BRef%3A%20WP-OBZB%5D"
    ],
    "images": 0,
@@ -8498,7 +8475,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 545,
+   "uniqueWords": 777,
    "repeatedBlocks": 8,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-22",
@@ -8544,6 +8521,10 @@
     },
     {
      "level": 2,
+     "text": "Where each step happens if you apply from Lahore"
+    },
+    {
+     "level": 2,
      "text": "About the Lahore office"
     },
     {
@@ -8552,7 +8533,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 593,
+   "wordCount": 839,
    "avgSentence": 17,
    "hits": {
     "outcome": 1,
@@ -8697,6 +8678,10 @@
    "external": [
     "https://share.google/I0o72EndCryNvMrvV",
     "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20visit%20your%20Lahore%20office.%20%5BRef%3A%20WP-JR5A%5D",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/biometrics/where-to-give.html",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/find-visa-application-centre.html",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/police-certificates/how/pakistan.html",
+    "https://secure.cic.gc.ca/PanelPhysicianMedecinDesigne/en/Home",
     "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20book%20a%20consultation%20at%20your%20Lahore%20office.%20%5BRef%3A%20WP-JR5A%5D"
    ],
    "images": 0,
@@ -8708,7 +8693,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 542,
+   "uniqueWords": 781,
    "repeatedBlocks": 8,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-22",
@@ -20358,10 +20343,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "C11 Work Permit Canada: Run Your Own Business | Tashfeen",
-   "description": "The C11 work permit lets you run your own Canadian business with no job offer or LMIA. IRCC’s real rules: 51% ownership, significant benefit, funds.",
+   "title": "C11 Work Permit Canada: Requirements and Process | Tashfeen",
+   "description": "What IRCC requires for a C11 work permit: 51% ownership, significant benefit, support and business funds, the Employer Portal offer and an exit plan.",
    "canonical": "https://tashfeenimmigrationsolutions.com/work-permit-canada",
-   "ogTitle": "C11 Work Permit Canada: Run Your Own Business | Tashfeen",
+   "ogTitle": "C11 Work Permit Canada: Requirements and Process | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "C11 work permit: work in Canada without a job offer or an LMIA"
@@ -20374,6 +20359,10 @@
     {
      "level": 2,
      "text": "What the C11 is, in IRCC’s own terms"
+    },
+    {
+     "level": 2,
+     "text": "What IRCC asks you to file"
     },
     {
      "level": 2,
@@ -20405,6 +20394,26 @@
     },
     {
      "level": 2,
+     "text": "Self-employed or entrepreneur: IRCC treats them differently"
+    },
+    {
+     "level": 3,
+     "text": "Self-employed"
+    },
+    {
+     "level": 3,
+     "text": "Entrepreneur"
+    },
+    {
+     "level": 2,
+     "text": "It is about effect, not how much you spend"
+    },
+    {
+     "level": 2,
+     "text": "You need a plan to leave, and a plan for the business"
+    },
+    {
+     "level": 2,
      "text": "From first conversation to a decision"
     },
     {
@@ -20432,12 +20441,20 @@
      "text": "Decision"
     },
     {
+     "level": 2,
+     "text": "Applying for a C11 from Pakistan"
+    },
+    {
      "level": 3,
      "text": "Two fees, both itemised in writing"
     },
     {
      "level": 3,
      "text": "No fixed date, and no promise"
+    },
+    {
+     "level": 2,
+     "text": "Where to look instead"
     },
     {
      "level": 2,
@@ -20457,14 +20474,14 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1998,
+   "wordCount": 3232,
    "avgSentence": 17,
    "hits": {
     "outcome": 3,
     "superlative": 0,
     "firmClaim": 1,
     "stock": 0,
-    "volatile": 5,
+    "volatile": 8,
     "placeholder": 0
    },
    "hitLines": {
@@ -20479,7 +20496,10 @@
     "volatile": [
      "Ownership You must control at least 51% of the Canadian business.",
      "Source: IRCC program delivery instructions for C11 (last updated by IRCC on 27 May 2025).",
+     "IRCC considers a C11 only where you control at least 51% of the business.",
      "Majority owner You’ll control the Canadian business At least 51% of it, and you will be the one running it day to day — not a passive or minority investor.",
+     "You own less than 51% LMIA work permits → A smaller owner who works in the business applies as an employee, which may mean an LMIA or another LMIA-exempt category.",
+     "+ IRCC asks for an offer of employment you submit for yourself through its Employer Portal, proof you paid the employer compliance fee, a work permit application, documents showing you control at least 51% of the business, evidence that your stay is temporary, evidence of significant benefit to Canada, proof of support funds, and separate proof of business funds.",
      "+ At least 51%.",
      "IRCC’s instructions say a C11 should be considered only when the applicant controls at least 51% of the business."
     ]
@@ -20510,6 +20530,8 @@
     "/work-permit-canada/business-plan",
     "/work-permit-canada/refusals",
     "/work-permits",
+    "/work-permits/lmia",
+    "/work-permits/intra-company-transfer",
     "/about/our-team",
     "/no-guarantee-policy"
    ],
@@ -20605,7 +20627,17 @@
    ],
    "external": [
     "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20apply%20for%20a%20Canada%20work%20permit%20without%20a%20job%20offer.%20I%20run%20my%20own%20business.%20%5BRef%3A%20WP-UQJK%5D",
+    "https://laws-lois.justice.gc.ca/eng/regulations/sor-2002-227/section-205.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/entrepreneurs-self-employed-seeking-only-temp-residence-r205-c11.html",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/partners-service-providers/employer-portal/enrolment-guide.html",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/biometrics/where-to-give.html",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/find-visa-application-centre.html",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/medical-exams/requirements-temporary-residents.html",
+    "https://secure.cic.gc.ca/PanelPhysicianMedecinDesigne/en/Home",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/police-certificates/how/pakistan.html",
+    "https://ircc.canada.ca/english/information/fees/fees.asp",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html",
     "https://www.youtube.com/watch?v=9cXFhUmFZm4"
    ],
    "images": 1,
@@ -20636,7 +20668,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 1921,
+   "uniqueWords": 3124,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-23",
@@ -22675,6 +22707,7 @@
    "inboundCopy": [
     "/business-immigration",
     "/visitor-visa/business-visitor",
+    "/work-permit-canada",
     "/work-permits",
     "/work-permits/lmia-exempt"
    ],
@@ -22937,6 +22970,7 @@
     "/quebec-immigration",
     "/rural-community-immigration",
     "/updates",
+    "/work-permit-canada",
     "/work-permits",
     "/work-permits/bridging-open-work-permit",
     "/work-permits/caregivers",

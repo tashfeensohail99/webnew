@@ -375,70 +375,38 @@ export default function FamilySponsorshipPage() {
           title="Inland or outland — the choice that matters most"
           subtitle="Both are routes to permanent residence. They differ in where your spouse must be, what they can do while they wait, and what happens if it’s refused."
         />
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
-          <div className="card p-8 sm:p-10">
-            <p className="eyebrow">Inland</p>
-            <h3 className="mt-4 font-serif text-2xl text-balance">Applying from inside Canada</h3>
-            <div className="mt-4 space-y-3 text-ink-600 text-pretty">
-              <p>
-                Your spouse must already be living with you in Canada, normally with valid temporary
-                status, and must generally stay in Canada while the application is processed. A{' '}
-                <a
-                  href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/immigration-refugee-protection-act-spousal-policy.html"
-                  className="font-semibold text-accent-500 link-underline"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  public policy
-                </a>{' '}
-                lets a genuine spouse who has lost status apply this way too, so get advice on your
-                own facts if that is your situation. Leaving can put re-entry at risk, since a
-                temporary resident returning mid-application still has to satisfy an officer at the
-                border.
-              </p>
-              <p>
-                The advantage is that they’re with you, and they can apply for an open work permit
-                while the application is in process, so the household need not live on one income.
-              </p>
-              <p>
-                The disadvantage is decisive: a refused inland application carries no appeal to the
-                Immigration Appeal Division. You’re left with judicial review or refiling.
-              </p>
-            </div>
-          </div>
-
-          <div className="card p-8 sm:p-10">
-            <p className="eyebrow">Outland</p>
-            <h3 className="mt-4 font-serif text-2xl text-balance">Applying from outside Canada</h3>
-            <div className="mt-4 space-y-3 text-ink-600 text-pretty">
-              <p>
-                Processed through a visa office abroad. Despite the name, your spouse can often
-                still visit or be in Canada during processing — outland is about which office decides,
-                not about being forbidden from entering.
-              </p>
-              <p>
-                The advantage is the safety net: a refused outland family-class application generally
-                carries a right of appeal to the Immigration Appeal Division, which can hear evidence
-                afresh.
-              </p>
-              <p>
-                The disadvantage is separation, and no automatic open work permit tied to the
-                application while your spouse is abroad.
-              </p>
-            </div>
-          </div>
+        <div className="mt-8 max-w-3xl space-y-4 text-ink-600 text-pretty leading-relaxed">
+          <p>
+            <strong className="font-semibold text-ink-900">Inland</strong> means your spouse is already
+            living with you in Canada, normally with valid temporary status, and generally stays while
+            the application is processed. A{' '}
+            <a
+              href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/immigration-refugee-protection-act-spousal-policy.html"
+              className="font-semibold text-accent-500 link-underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              public policy
+            </a>{' '}
+            lets a genuine spouse who has lost status apply this way too. They can apply for an open
+            work permit while they wait, but a refused inland application carries no appeal to the
+            Immigration Appeal Division.
+          </p>
+          <p>
+            <strong className="font-semibold text-ink-900">Outland</strong> is processed through a visa
+            office abroad, and your spouse can often still visit or be in Canada during processing. A
+            refused outland family-class application generally carries a right of appeal to the
+            Immigration Appeal Division.
+          </p>
+          <p>
+            For most Pakistani applicants the question does not arise: the spouse is in Pakistan, so
+            it’s an outland application, and the appeal right comes with it.{' '}
+            <Link href="/family-sponsorship/spouse-partner" className="font-semibold text-accent-500 link-underline">
+              Read the full guide to sponsoring a spouse or partner
+            </Link>
+            .
+          </p>
         </div>
-        <p className="mt-8 max-w-3xl text-ink-600 text-pretty leading-relaxed">
-          For most Pakistani applicants the question does not arise — the spouse is in Pakistan, so
-          it’s an outland application, and the appeal right comes with it. Inland only becomes a real
-          choice when your spouse is already in Canada on valid status. Where both are genuinely open,
-          the honest trade is: being together sooner and working sooner, against giving up the
-          strongest remedy available if the file goes wrong.{' '}
-          <Link href="/family-sponsorship/spouse-partner" className="font-semibold text-accent-500 link-underline">
-            Read the full guide to sponsoring a spouse or partner
-          </Link>
-          .
-        </p>
       </Section>
 
       {/* ===================== PARENTS & GRANDPARENTS ===================== */}
@@ -465,30 +433,10 @@ export default function FamilySponsorshipPage() {
                 .
               </p>
               <p>
-                Even when it runs, parent and grandparent sponsorship is capped, and it doesn’t work
-                like the rest of the family class. You cannot simply file when you’re ready. IRCC
-                uses an interest-to-sponsor step — a short form declaring you want to sponsor — and
-                everyone who submits goes into a pool.
-              </p>
-              <p>
-                Invitations are then issued from that pool. Only people who are invited may submit a
-                full application. Submitting interest is not applying, and being in the pool is not a
-                queue position you can rely on — in the years IRCC has drawn from an existing pool
-                rather than opening a fresh one, people who never registered had no way in at all.
-              </p>
-              <p>
-                This stream also carries an income requirement measured over several consecutive tax
-                years and assessed against family size — a materially higher bar than spousal
-                sponsorship. The figures and the tax years they are measured against are published
-                by IRCC on its{' '}
-                <a
-                  href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/sponsor-parents-grandparents.html"
-                  className="font-semibold text-accent-500 link-underline"
-                  rel="noopener"
-                >
-                  sponsor your parents and grandparents page
-                </a>
-                , and we confirm which apply to you rather than print a number here.
+                Even when it runs, the program is capped and works differently from the rest of the
+                family class: IRCC takes interest-to-sponsor forms into a pool, and only people invited
+                from it may apply. It also carries a higher income requirement, measured over several
+                tax years.
               </p>
             </div>
           </div>
@@ -537,10 +485,8 @@ export default function FamilySponsorshipPage() {
                 support since before that age because of a physical or mental condition.
               </p>
               <p>
-                Age is generally assessed by reference to a fixed lock-in date rather than the date a
-                decision is made, which is intended to stop a child ageing out purely because
-                processing took time. Which date applies to your file is worth confirming precisely —
-                it is one of the few places where a small factual point changes the whole outcome.{' '}
+                Age is generally assessed at a fixed lock-in date rather than the date a decision is
+                made.{' '}
                 <Link
                   href="/family-sponsorship/dependent-children"
                   className="font-semibold text-accent-500 link-underline"

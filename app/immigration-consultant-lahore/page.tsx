@@ -34,7 +34,11 @@ export default function LahoreOfficePage() {
                 Lahore has one of Pakistan’s three Canada visa application centres; the others are in
                 Islamabad and Karachi.{' '}
                 <LocalSource href={LOCAL_SOURCES.biometrics}>IRCC says the appointment is free</LocalSource>, so do
-                not pay anyone for one.
+                not pay anyone for one.{' '}
+                <Link href="/canada-immigration-from-pakistan/biometrics" className="font-semibold text-accent-500 link-underline">
+                  Read our biometrics guide
+                </Link>
+                .
               </>
             ),
           },
@@ -56,7 +60,11 @@ export default function LahoreOfficePage() {
                 In Punjab you apply at a Police Khidmat Markaz, and{' '}
                 <LocalSource href={LOCAL_SOURCES.police}>IRCC says</LocalSource> Lahore has more than one. You can
                 use any centre in Punjab, so if you live in Lahore now and used to live in Rawalpindi, you
-                can apply in Lahore.
+                can apply in Lahore.{' '}
+                <Link href="/canada-immigration-from-pakistan/police-certificate" className="font-semibold text-accent-500 link-underline">
+                  Read our police certificate guide
+                </Link>
+                .
               </>
             ),
           },
@@ -66,7 +74,11 @@ export default function LahoreOfficePage() {
               <>
                 If your application needs one, it must be done by a doctor on{' '}
                 <LocalSource href={LOCAL_SOURCES.panel}>IRCC’s panel physician list</LocalSource>. Your own doctor
-                cannot do it, so check the list before you book.
+                cannot do it, so check the list before you book.{' '}
+                <Link href="/canada-immigration-from-pakistan/medical-exam" className="font-semibold text-accent-500 link-underline">
+                  Read our medical exam guide
+                </Link>
+                .
               </>
             ),
           },

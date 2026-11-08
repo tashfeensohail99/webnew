@@ -33,7 +33,11 @@ export default function IslamabadOfficePage() {
                 Islamabad has one of Pakistan’s three Canada visa application centres, and for most people
                 in Rawalpindi it is the nearest.{' '}
                 <LocalSource href={LOCAL_SOURCES.biometrics}>IRCC says the appointment is free</LocalSource>, so do
-                not pay anyone for one.
+                not pay anyone for one.{' '}
+                <Link href="/canada-immigration-from-pakistan/biometrics" className="font-semibold text-accent-500 link-underline">
+                  Read our biometrics guide
+                </Link>
+                .
               </>
             ),
           },
@@ -43,7 +47,11 @@ export default function IslamabadOfficePage() {
               <>
                 <LocalSource href={LOCAL_SOURCES.police}>IRCC lists a separate procedure</LocalSource> for Islamabad,
                 so follow that one if you live in the capital. IRCC also says the Canadian High Commission
-                in Islamabad cannot help you get a police certificate.
+                in Islamabad cannot help you get a police certificate.{' '}
+                <Link href="/canada-immigration-from-pakistan/police-certificate" className="font-semibold text-accent-500 link-underline">
+                  Read our police certificate guide
+                </Link>
+                .
               </>
             ),
           },
@@ -57,7 +65,11 @@ export default function IslamabadOfficePage() {
               <>
                 Book only with a doctor on{' '}
                 <LocalSource href={LOCAL_SOURCES.panel}>IRCC’s panel physician list</LocalSource>, if your
-                application needs an exam. An exam from your own doctor will not count.
+                application needs an exam. An exam from your own doctor will not count.{' '}
+                <Link href="/canada-immigration-from-pakistan/medical-exam" className="font-semibold text-accent-500 link-underline">
+                  Read our medical exam guide
+                </Link>
+                .
               </>
             ),
           },

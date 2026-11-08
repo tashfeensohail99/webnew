@@ -156,7 +156,7 @@ export default function NewBrunswickPnpPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="Start here"
-          title="What New Brunswick is trying to solve"
+          title="What the New Brunswick PNP (NBPNP) is trying to solve"
         />
         <Prose>
           <p>

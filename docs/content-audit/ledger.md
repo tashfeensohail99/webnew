@@ -4,6 +4,25 @@ One entry per batch, newest first. Each entry records the commit, what changed a
 
 To see any page's original wording: `git show 9d17a79:<path to the page>`.
 
+
+## Batch 10: C11 requirements and city page local steps (8 November 2026)
+
+- **Commit:** `24626dd`, live on production the same day.
+- **Why these pages:** SEO Step 2 and Search Console's query table. The C11 guide gets generic C11 searches at positions 10 to 17. The Lahore and Islamabad averages (9.5, 8.3) are mostly searches for the firm's name; their generic searches sit at positions 41 to 82. Saved in `competitors/serp-2026-11-08.json`.
+
+| Page | Change | Source |
+| --- | --- | --- |
+| `/work-permit-canada` | New title and description. Added IRCC's documentary evidence list, self-employed and entrepreneur roles, significant benefit, temporary stay and exit plan, steps from Pakistan, government costs, processing times tool, other routes, four new FAQ answers. Words 1,998 to 3,232, official links 1 to 12. | [IRCC C11 instructions](https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/entrepreneurs-self-employed-seeking-only-temp-residence-r205-c11.html), R205, IRCC fee list, biometrics, medical and police certificate pages |
+| `/immigration-consultant-lahore` | Added in-person steps for Lahore and two FAQ answers. "Most of them" became "Many of them". Words 593 to 839. | IRCC biometrics, visa application centre, police certificate (Pakistan) and panel physician pages |
+| `/immigration-consultant-islamabad` | Added in-person steps, including the Islamabad and Rawalpindi police certificate split, and two FAQ answers. "The most common story" became "a common story". Words 598 to 835. | As above |
+| `lib/facts.ts` | Nine new entries, checked 8 November 2026. | As above |
+
+- **Checked before shipping:** typecheck, build, `test:crs` (66), `test:fsw` (43), `test:clb` (34). On the local build: 4 removed phrases gone, 20 new phrases present, 93 URLs crawled with no regressions, nothing scrolls sideways at phone width, no JS errors.
+- **Checked on production:** the same 24 text checks pass, 93 of 93 URLs return 200, no regressions, nothing scrolls sideways at phone width on the three pages. 204 external links tested: no 404s; 14 others are bot blocks, timeouts or certificate errors on links that were already there.
+- **Search:** IndexNow accepted the three URLs. Google not asked.
+- **Deliberately left alone:** review dates and the "reviewed by" lines (no lawyer reviewed these edits), every claim about the firm's lawyers, the Mississauga office, past C11 filings, the "Immigration lawyers in" headings and city page titles. All wait on the firm (batch 8). Fee amounts and processing times stay unprinted under the figures rule.
+- **Not done:** who works at each office and how a visit works (needs the firm); links from the city pages to the site's own biometrics and police certificate guides (Step 7).
+
 ## Batch 9: visitor pages, hubs and remaining corrections, 8 November 2026
 
 Batch 8 (trust pages) is blocked on the firm and has not been done.

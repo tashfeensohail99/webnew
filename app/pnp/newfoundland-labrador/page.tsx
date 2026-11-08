@@ -158,7 +158,7 @@ export default function NewfoundlandLabradorPnpPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="The province, plainly"
-          title="What Newfoundland and Labrador is actually looking for"
+          title="What the Newfoundland and Labrador PNP (NLPNP) is looking for"
         />
         <Prose>
           <p>

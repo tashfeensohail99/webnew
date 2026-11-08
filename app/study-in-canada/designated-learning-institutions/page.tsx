@@ -150,7 +150,7 @@ export default function DliPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="The term, plainly"
-          title="What a designated learning institution is"
+          title="What a designated learning institution (DLI) is"
         />
         <Prose>
           <p>
@@ -227,7 +227,7 @@ export default function DliPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="Verification"
-          title="How to check a school properly"
+          title="How to check a school and find its DLI number"
           subtitle="Six steps, in this order. None of them takes long, and each is a check you can do yourself at the source."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

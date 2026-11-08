@@ -4,38 +4,695 @@
   "status": "observed: one location, one day; not tracked rankings",
   "positionNote": "Order among organic results Google showed on page one. Places packs and AI Overviews are not counted. Social posts are.",
   "queries": [
-    { "id": 1, "q": "best canadian immigration lawyer in pakistan", "intent": "Choosing a lawyer", "ownPage": "/canadian-immigration-lawyer-pakistan", "aio": true, "places": [],
-      "results": [["euroimmiconsultant.pk","site"],["amirismail.com","site"],["lalaniassociates.com","site"],["zallp.com","site"],["canadavisa.com","reference"],["ma-law.org.pk","site"],["sunconsulting.pk","site"],["YouTube: MAK RCIC","social"],["immigrationexperts.pk","site"]] },
-    { "id": 2, "q": "canada immigration lawyer pakistan", "intent": "Choosing a lawyer", "ownPage": "/canadian-immigration-lawyer-pakistan", "aio": true, "places": [],
-      "results": [["amirismail.com","site"],["saadahsan.com","site"],["Rizwan Ul Haque (social)","social"],["zallp.com","site"],["visawala.pk","site"],["euroimmiconsultant.pk","site"],["lalaniassociates.com","site"],["ma-law.org.pk","site"],["sjlawexperts.com","site"]] },
-    { "id": 3, "q": "canada immigration consultant lahore", "intent": "Local provider", "ownPage": "/immigration-consultant-lahore", "aio": false, "places": ["MAK 4.9 (170)", "The Immigration House 4.8 (83)"],
-      "results": [["euroimmiconsultant.pk","site"],["amirismail.com","site"],["makimmigration.ca","site"],["visawala.pk","site"],["SA Immigration (social)","social"],["atwicsgroup.com","site"],["veritasconsultants.org","site"],["fascic.com","site"],["euroimmiconsultant.pk","site"]] },
-    { "id": 4, "q": "canada immigration consultant islamabad", "intent": "Local provider", "ownPage": "/immigration-consultant-islamabad", "aio": true, "places": ["Canada visa consultant services 4.6 (17)", "Canada Visa Services 4.9 (67)"],
-      "results": [["amirismail.com","site"],["visawala.pk","site"],["Rizwan Ul Haque (social)","social"],["euroimmiconsultant.pk","site"],["immigration.wanderer.com.pk","site"],["migracon.com","site"],["immigrationexperts.pk","site"],["aircs.pk","site"],["Rizwan Ul Haque (social)","social"]] },
-    { "id": 5, "q": "c11 work permit canada from pakistan", "intent": "Programme research", "ownPage": "/work-permit-canada", "aio": true, "places": [],
-      "results": [["immigrationexperts.pk","site"],["canada.ca","gov"],["Social post","social"],["sobirovs.com","site"],["amirismail.com","site"],["Social post","social"],["oneworldimmigrations.com","site"],["Social post","social"]] },
-    { "id": 6, "q": "canada visa refused what to do pakistan", "intent": "Problem after refusal", "ownPage": "/canada-visa-refused", "aio": true, "places": [],
-      "results": [["canada.ca","gov"],["reddit.com","forum"],["migracon","site"],["amirismail.com","site"],["reddit.com","forum"],["canadavisa.com","reference"],["ivspakistan.com","site"],["evisaimmigration.com","site"]] },
-    { "id": 7, "q": "canada visit visa from pakistan", "intent": "Government how-to", "ownPage": "/canada-visit-visa", "aio": true, "places": [],
-      "results": [["canada.ca","gov"],["canada.ca","gov"],["canada.ca","gov"],["canada.ca","gov"],["canada.ca","gov"],["vfsglobal.com","gov"],["vfsglobal.com","gov"],["international.gc.ca","gov"],["pakconsulate.ca","gov"]] },
-    { "id": 8, "q": "express entry consultant pakistan", "intent": "Choosing a provider", "ownPage": "/express-entry", "aio": true, "places": ["Express Global 4.4 (44)"],
-      "results": [["amirismail.com","site"],["migracon","site"],["euroimmiconsultant.pk","site"],["aircs.pk","site"],["crossbordermigrations.com","site"],["atwicsgroup.com","site"],["saadahsan.com","site"],["veritasconsultants.org","site"],["Rizwan Ul Haque (social)","social"]] },
-    { "id": 9, "q": "canada study visa consultant lahore", "intent": "Local provider", "ownPage": "/study-in-canada", "aio": true, "places": [],
-      "results": [["timesconsultant.com","site"],["veritasconsultants.org","site"],["visawala.pk","site"],["euroimmiconsultant.pk","site"],["vicpakconsultant.com","site"],["idp.com","site"],["migracon","site"],["jnsedu.com","site"],["mrconsultants.org","site"]] },
-    { "id": 10, "q": "how to immigrate to canada from pakistan", "intent": "General how-to", "ownPage": "/canada-immigration-from-pakistan", "aio": true, "places": [],
-      "results": [["canadavisa.com","reference"],["canadavisa.com","reference"],["canada.ca","gov"],["canada.ca","gov"],["amirismail.com","site"],["cicnews.com","reference"],["ainit.net","site"],["easyvisa.pk","site"],["saadahsan.com","site"]] },
-    { "id": 11, "q": "judicial review canada visa refusal lawyer pakistan", "intent": "Problem after refusal", "ownPage": "/refusals/judicial-review", "aio": true, "places": [],
-      "results": [["imranlaw.ca","site"],["Social post","social"],["Tashfeen Barristers & Solicitors (Facebook video)","own-social"],["sobirovs.com","site"],["vittiimmigration.com","site"],["ghasemilaw.com","site"],["navratanfateh.com","site"],["dadkhah.ca","site"]] }
+    {
+      "id": 1,
+      "q": "best canadian immigration lawyer in pakistan",
+      "intent": "Choosing a lawyer",
+      "ownPage": "/canadian-immigration-lawyer-pakistan",
+      "aio": true,
+      "places": [],
+      "results": [
+        [
+          "euroimmiconsultant.pk",
+          "site"
+        ],
+        [
+          "amirismail.com",
+          "site"
+        ],
+        [
+          "lalaniassociates.com",
+          "site"
+        ],
+        [
+          "zallp.com",
+          "site"
+        ],
+        [
+          "canadavisa.com",
+          "reference"
+        ],
+        [
+          "ma-law.org.pk",
+          "site"
+        ],
+        [
+          "sunconsulting.pk",
+          "site"
+        ],
+        [
+          "YouTube: MAK RCIC",
+          "social"
+        ],
+        [
+          "immigrationexperts.pk",
+          "site"
+        ]
+      ]
+    },
+    {
+      "id": 2,
+      "q": "canada immigration lawyer pakistan",
+      "intent": "Choosing a lawyer",
+      "ownPage": "/canadian-immigration-lawyer-pakistan",
+      "aio": true,
+      "places": [],
+      "results": [
+        [
+          "amirismail.com",
+          "site"
+        ],
+        [
+          "saadahsan.com",
+          "site"
+        ],
+        [
+          "Rizwan Ul Haque (social)",
+          "social"
+        ],
+        [
+          "zallp.com",
+          "site"
+        ],
+        [
+          "visawala.pk",
+          "site"
+        ],
+        [
+          "euroimmiconsultant.pk",
+          "site"
+        ],
+        [
+          "lalaniassociates.com",
+          "site"
+        ],
+        [
+          "ma-law.org.pk",
+          "site"
+        ],
+        [
+          "sjlawexperts.com",
+          "site"
+        ]
+      ]
+    },
+    {
+      "id": 3,
+      "q": "canada immigration consultant lahore",
+      "intent": "Local provider",
+      "ownPage": "/immigration-consultant-lahore",
+      "aio": false,
+      "places": [
+        "MAK 4.9 (170)",
+        "The Immigration House 4.8 (83)"
+      ],
+      "results": [
+        [
+          "euroimmiconsultant.pk",
+          "site"
+        ],
+        [
+          "amirismail.com",
+          "site"
+        ],
+        [
+          "makimmigration.ca",
+          "site"
+        ],
+        [
+          "visawala.pk",
+          "site"
+        ],
+        [
+          "SA Immigration (social)",
+          "social"
+        ],
+        [
+          "atwicsgroup.com",
+          "site"
+        ],
+        [
+          "veritasconsultants.org",
+          "site"
+        ],
+        [
+          "fascic.com",
+          "site"
+        ],
+        [
+          "euroimmiconsultant.pk",
+          "site"
+        ]
+      ]
+    },
+    {
+      "id": 4,
+      "q": "canada immigration consultant islamabad",
+      "intent": "Local provider",
+      "ownPage": "/immigration-consultant-islamabad",
+      "aio": true,
+      "places": [
+        "Canada visa consultant services 4.6 (17)",
+        "Canada Visa Services 4.9 (67)"
+      ],
+      "results": [
+        [
+          "amirismail.com",
+          "site"
+        ],
+        [
+          "visawala.pk",
+          "site"
+        ],
+        [
+          "Rizwan Ul Haque (social)",
+          "social"
+        ],
+        [
+          "euroimmiconsultant.pk",
+          "site"
+        ],
+        [
+          "immigration.wanderer.com.pk",
+          "site"
+        ],
+        [
+          "migracon.com",
+          "site"
+        ],
+        [
+          "immigrationexperts.pk",
+          "site"
+        ],
+        [
+          "aircs.pk",
+          "site"
+        ],
+        [
+          "Rizwan Ul Haque (social)",
+          "social"
+        ]
+      ]
+    },
+    {
+      "id": 5,
+      "q": "c11 work permit canada from pakistan",
+      "intent": "Programme research",
+      "ownPage": "/work-permit-canada",
+      "aio": true,
+      "places": [],
+      "results": [
+        [
+          "immigrationexperts.pk",
+          "site"
+        ],
+        [
+          "canada.ca",
+          "gov"
+        ],
+        [
+          "Social post",
+          "social"
+        ],
+        [
+          "sobirovs.com",
+          "site"
+        ],
+        [
+          "amirismail.com",
+          "site"
+        ],
+        [
+          "Social post",
+          "social"
+        ],
+        [
+          "oneworldimmigrations.com",
+          "site"
+        ],
+        [
+          "Social post",
+          "social"
+        ]
+      ]
+    },
+    {
+      "id": 6,
+      "q": "canada visa refused what to do pakistan",
+      "intent": "Problem after refusal",
+      "ownPage": "/canada-visa-refused",
+      "aio": true,
+      "places": [],
+      "results": [
+        [
+          "canada.ca",
+          "gov"
+        ],
+        [
+          "reddit.com",
+          "forum"
+        ],
+        [
+          "migracon",
+          "site"
+        ],
+        [
+          "amirismail.com",
+          "site"
+        ],
+        [
+          "reddit.com",
+          "forum"
+        ],
+        [
+          "canadavisa.com",
+          "reference"
+        ],
+        [
+          "ivspakistan.com",
+          "site"
+        ],
+        [
+          "evisaimmigration.com",
+          "site"
+        ]
+      ]
+    },
+    {
+      "id": 7,
+      "q": "canada visit visa from pakistan",
+      "intent": "Government how-to",
+      "ownPage": "/canada-visit-visa",
+      "aio": true,
+      "places": [],
+      "results": [
+        [
+          "canada.ca",
+          "gov"
+        ],
+        [
+          "canada.ca",
+          "gov"
+        ],
+        [
+          "canada.ca",
+          "gov"
+        ],
+        [
+          "canada.ca",
+          "gov"
+        ],
+        [
+          "canada.ca",
+          "gov"
+        ],
+        [
+          "vfsglobal.com",
+          "gov"
+        ],
+        [
+          "vfsglobal.com",
+          "gov"
+        ],
+        [
+          "international.gc.ca",
+          "gov"
+        ],
+        [
+          "pakconsulate.ca",
+          "gov"
+        ]
+      ]
+    },
+    {
+      "id": 8,
+      "q": "express entry consultant pakistan",
+      "intent": "Choosing a provider",
+      "ownPage": "/express-entry",
+      "aio": true,
+      "places": [
+        "Express Global 4.4 (44)"
+      ],
+      "results": [
+        [
+          "amirismail.com",
+          "site"
+        ],
+        [
+          "migracon",
+          "site"
+        ],
+        [
+          "euroimmiconsultant.pk",
+          "site"
+        ],
+        [
+          "aircs.pk",
+          "site"
+        ],
+        [
+          "crossbordermigrations.com",
+          "site"
+        ],
+        [
+          "atwicsgroup.com",
+          "site"
+        ],
+        [
+          "saadahsan.com",
+          "site"
+        ],
+        [
+          "veritasconsultants.org",
+          "site"
+        ],
+        [
+          "Rizwan Ul Haque (social)",
+          "social"
+        ]
+      ]
+    },
+    {
+      "id": 9,
+      "q": "canada study visa consultant lahore",
+      "intent": "Local provider",
+      "ownPage": "/study-in-canada",
+      "aio": true,
+      "places": [],
+      "results": [
+        [
+          "timesconsultant.com",
+          "site"
+        ],
+        [
+          "veritasconsultants.org",
+          "site"
+        ],
+        [
+          "visawala.pk",
+          "site"
+        ],
+        [
+          "euroimmiconsultant.pk",
+          "site"
+        ],
+        [
+          "vicpakconsultant.com",
+          "site"
+        ],
+        [
+          "idp.com",
+          "site"
+        ],
+        [
+          "migracon",
+          "site"
+        ],
+        [
+          "jnsedu.com",
+          "site"
+        ],
+        [
+          "mrconsultants.org",
+          "site"
+        ]
+      ]
+    },
+    {
+      "id": 10,
+      "q": "how to immigrate to canada from pakistan",
+      "intent": "General how-to",
+      "ownPage": "/canada-immigration-from-pakistan",
+      "aio": true,
+      "places": [],
+      "results": [
+        [
+          "canadavisa.com",
+          "reference"
+        ],
+        [
+          "canadavisa.com",
+          "reference"
+        ],
+        [
+          "canada.ca",
+          "gov"
+        ],
+        [
+          "canada.ca",
+          "gov"
+        ],
+        [
+          "amirismail.com",
+          "site"
+        ],
+        [
+          "cicnews.com",
+          "reference"
+        ],
+        [
+          "ainit.net",
+          "site"
+        ],
+        [
+          "easyvisa.pk",
+          "site"
+        ],
+        [
+          "saadahsan.com",
+          "site"
+        ]
+      ]
+    },
+    {
+      "id": 11,
+      "q": "judicial review canada visa refusal lawyer pakistan",
+      "intent": "Problem after refusal",
+      "ownPage": "/refusals/judicial-review",
+      "aio": true,
+      "places": [],
+      "results": [
+        [
+          "imranlaw.ca",
+          "site"
+        ],
+        [
+          "Social post",
+          "social"
+        ],
+        [
+          "Tashfeen Barristers & Solicitors (Facebook video)",
+          "own-social"
+        ],
+        [
+          "sobirovs.com",
+          "site"
+        ],
+        [
+          "vittiimmigration.com",
+          "site"
+        ],
+        [
+          "ghasemilaw.com",
+          "site"
+        ],
+        [
+          "navratanfateh.com",
+          "site"
+        ],
+        [
+          "dadkhah.ca",
+          "site"
+        ]
+      ]
+    }
   ],
   "ownSearchConsole": {
     "source": "Google Search Console, 21 Oct to 6 Nov 2026, page level across all queries",
     "pages": {
-      "/immigration-consultant-lahore": { "impressions": 204, "position": 9.5 },
-      "/immigration-consultant-islamabad": { "impressions": 167, "position": 8.3 },
-      "/work-permit-canada": { "impressions": 108, "position": 10.6 },
-      "/canadian-immigration-lawyer-pakistan": { "impressions": 39, "position": 3.4 }
+      "/immigration-consultant-lahore": {
+        "impressions": 204,
+        "position": 9.5,
+        "note": "mostly firm-name searches"
+      },
+      "/immigration-consultant-islamabad": {
+        "impressions": 167,
+        "position": 8.3,
+        "note": "mostly firm-name searches"
+      },
+      "/work-permit-canada": {
+        "impressions": 108,
+        "position": 10.6
+      },
+      "/canadian-immigration-lawyer-pakistan": {
+        "impressions": 39,
+        "position": 3.4
+      }
+    },
+    "queries": {
+      "source": "Google Search Console, query table per page, read 8 Nov 2026 (data runs 21 Oct to 6 Nov). Top ten rows, as impressions and average position.",
+      "/work-permit-canada": [
+        [
+          "c11 work permit",
+          15,
+          17.3
+        ],
+        [
+          "c11 work permit canada",
+          8,
+          13
+        ],
+        [
+          "c11 canada",
+          4,
+          10.2
+        ],
+        [
+          "c11 visa",
+          3,
+          9.7
+        ],
+        [
+          "self-employed c11 r205 a",
+          3,
+          19.7
+        ],
+        [
+          "canada c11 visa from pakistan",
+          2,
+          9.5
+        ],
+        [
+          "c11 visa canada requirements",
+          2,
+          10.5
+        ],
+        [
+          "ircc c11",
+          2,
+          11
+        ],
+        [
+          "c 11 visa canada",
+          1,
+          1
+        ],
+        [
+          "what is c11 visa",
+          1,
+          8
+        ]
+      ],
+      "/immigration-consultant-lahore": [
+        [
+          "tashfeen immigration solutions",
+          43,
+          1.7
+        ],
+        [
+          "tashfeen immigration solutions lahore",
+          44,
+          2
+        ],
+        [
+          "tashfeen immigration solutions lahore reviews",
+          17,
+          6.5
+        ],
+        [
+          "tashfeen immigration",
+          8,
+          5.8
+        ],
+        [
+          "immigration lawyers in lahore pakistan",
+          5,
+          66.8
+        ],
+        [
+          "immigration lawyer lahore",
+          4,
+          41.5
+        ],
+        [
+          "tashfeen immigration solutions islamabad",
+          2,
+          2
+        ],
+        [
+          "tashfeen immigration solutions pvt ltd 2",
+          2,
+          7
+        ],
+        [
+          "spanish immigration lawyer near me",
+          1,
+          1
+        ],
+        [
+          "immigration advisor near me",
+          1,
+          7
+        ]
+      ],
+      "/immigration-consultant-islamabad": [
+        [
+          "tashfeen immigration solutions",
+          61,
+          2
+        ],
+        [
+          "tashfeen immigration solutions islamabad",
+          18,
+          2.1
+        ],
+        [
+          "tashfeen immigration",
+          12,
+          3.9
+        ],
+        [
+          "immigration consultants in islamabad",
+          6,
+          81.8
+        ],
+        [
+          "tashfeen immigration solutions pvt ltd 2",
+          2,
+          5.5
+        ],
+        [
+          "tashfeen immigration solutions pvt ltd 2 reviews",
+          2,
+          8
+        ],
+        [
+          "us immigration consultant near me",
+          1,
+          11
+        ],
+        [
+          "immigration solicitors near me",
+          1,
+          19
+        ],
+        [
+          "immigration lawyer islamabad",
+          1,
+          57
+        ],
+        [
+          "uscis lawyer in islamabad",
+          1,
+          57
+        ]
+      ]
     }
   },
-  "brandCheck": { "q": "tashfeen immigration solutions lahore", "ownSite": 1, "googleRating": "5.0 (17)" },
+  "brandCheck": {
+    "q": "tashfeen immigration solutions lahore",
+    "ownSite": 1,
+    "googleRating": "5.0 (17)"
+  },
   "aiOverviewOnQuery1": "Stresses checking for an RCIC/CICC licence or a licensed Canadian lawyer; named Euro Immigration Consultants 4.4 (63) and Migracon 4.4 (109)."
 }

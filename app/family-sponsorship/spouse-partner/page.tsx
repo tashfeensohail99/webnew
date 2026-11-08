@@ -273,7 +273,7 @@ export default function SpousePartnerSponsorshipPage() {
           <div>
             <SectionHeading
               eyebrow="The actual test"
-              title="What genuineness means in practice"
+              title="What genuineness means in practice, including arranged marriages"
             />
             <Prose>
               <p>

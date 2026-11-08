@@ -223,6 +223,10 @@ const FAQS = [
     a: 'It can, but not automatically. You apply in Canada and show what you did to carry out your business plan, the benefit your work delivered, why you need more time, and that you will still leave Canada. IRCC warns that repeated permits over several years with no break may no longer meet the requirement.',
   },
   {
+    q: 'Is the C11 work permit still open?',
+    a: 'When we read IRCC’s instructions on 9 November 2026, the C11 category was still published. IRCC’s closures for entrepreneurs name the Start-Up Visa and the Self-Employed Persons Program, not the C11. Rules can change, so check IRCC’s page before you apply.',
+  },
+  {
     q: 'Can a C11 lead to permanent residence?',
     a: 'Not on its own. The C11 is a temporary permit for business owners, and IRCC’s guidance directs owners who intend to settle permanently to other routes, such as provincial entrepreneur streams. Neither self-employed nor entrepreneur time on a C11 counts as work experience for the Canadian Experience Class. Some people go on to qualify for permanent residence through a separate application on their own merits — whether that is realistic for you depends on your profile, and we will tell you straight.',
   },

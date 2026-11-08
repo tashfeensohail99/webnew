@@ -49,10 +49,6 @@ function Src({ href, children }: { href: string; children: ReactNode }) {
 }
 
 const IRCC = {
-  studyPermit:
-    'https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html',
-  dliList:
-    'https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/prepare/designated-learning-institutions-list.html',
   pal: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/provincial-attestation-letter.html',
   funds:
     'https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html',
@@ -92,54 +88,31 @@ const FITS = [
   },
 ];
 
+/** A routing overview. The full application sequence lives on /study-in-canada/study-permit. */
 const STEPS = [
   {
-    title: 'Choose the programme, then the school',
-    body: 'Work out what you actually want to study and where that qualification is respected. Picking a school because it is easy to get into is how people end up with a credential nobody values.',
+    title: 'Choose the programme, then check the school',
+    body: 'Work out what you want to study first. Only a designated learning institution can host an international student, and not every programme leads to a post-graduation work permit.',
+    href: '/study-in-canada/designated-learning-institutions',
+    cta: 'How to check a school',
   },
   {
-    title: 'Confirm the institution is a DLI',
-    body: (
-      <>
-        Only a designated learning institution can host an international student. Check the school
-        yourself against{' '}
-        <Src href={IRCC.dliList}>IRCC’s designated learning institutions list</Src>, and check
-        separately whether the specific programme leads to a post-graduation work permit.
-      </>
-    ),
+    title: 'Get admission and the attestation letter',
+    body: 'You normally need a letter of acceptance first. Most applicants then need a provincial or territorial attestation letter, which the school requests for you.',
+    href: '/study-in-canada/provincial-attestation-letter',
+    cta: 'What a PAL or TAL is',
   },
   {
-    title: 'Apply for admission and accept the offer',
-    body: 'Admission comes first. You normally need a letter of acceptance, and often a tuition deposit, before the immigration side can begin at all.',
-  },
-  {
-    title: 'Obtain the attestation letter',
-    body: (
-      <>
-        Most study permit applicants need a provincial or territorial attestation letter (a PAL or
-        TAL). The school requests it from the province on your behalf once you have accepted. Some
-        categories are exempt, and the exempt list has changed more than once —{' '}
-        <Src href={IRCC.pal}>IRCC sets out who needs one</Src>.
-      </>
-    ),
-  },
-  {
-    title: 'Assemble funds and intent evidence',
-    body: 'Proof you can pay tuition and live in Canada, documented and explained, plus the material that shows an officer you are a genuine student. This is the part most refused applications get wrong.',
+    title: 'Prove your funds and your intent',
+    body: 'Documented, explained funds, plus the material that shows an officer you are a genuine student. This is the part most refused applications get wrong.',
+    href: '/study-in-canada/proof-of-funds',
+    cta: 'Proof of funds',
   },
   {
     title: 'File the study permit application',
-    body: (
-      <>
-        Biometrics and a medical exam may be required depending on your situation. Government fees
-        are paid to IRCC, not to us, and the current amounts are published on{' '}
-        <Src href={IRCC.studyPermit}>IRCC’s study permit pages</Src>.
-      </>
-    ),
-  },
-  {
-    title: 'Decision, then arrival',
-    body: 'An approval abroad is a port-of-entry letter, not the permit itself — the study permit is issued when you enter Canada. Keep the paperwork you travel with.',
+    body: 'An approval abroad is a port-of-entry letter. The permit itself is issued when you enter Canada.',
+    href: '/study-in-canada/study-permit',
+    cta: 'The full application, in order',
   },
 ];
 
@@ -341,9 +314,9 @@ export default function StudyInCanadaPage() {
         <SectionHeading
           eyebrow="How it works"
           title="From choosing a course to landing"
-          subtitle="Seven stages, in order. Skipping the second one is what turns a study plan into a wasted year."
+          subtitle="Four stages, each with its own guide. The full sequence is in our study permit guide."
         />
-        <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {STEPS.map((s, i) => (
             <li key={s.title} className="card flex flex-col p-7">
               <span className="flex h-11 w-11 items-center justify-center rounded-full bg-gold-500 font-serif text-lg font-medium text-ink-950">
@@ -351,6 +324,9 @@ export default function StudyInCanadaPage() {
               </span>
               <h3 className="mt-5 font-serif text-xl text-ink-900">{s.title}</h3>
               <p className="mt-2 flex-1 text-ink-600 text-pretty">{s.body}</p>
+              <Link href={s.href} className="tap mt-4 font-semibold text-accent-500 link-underline">
+                {s.cta} →
+              </Link>
             </li>
           ))}
         </ol>

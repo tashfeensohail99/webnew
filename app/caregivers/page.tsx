@@ -209,12 +209,12 @@ export default function CaregiversPage() {
               from you.
             </p>
             <p>
-              This is a heavily defrauded area of Pakistani migration to Canada. The recurring
-              patterns are an invented family, a real family who never agreed to
-              anything, a “registration fee” for an intake that is not open, and an offer letter that
-              exists only as a PDF. Money paid for these is not recovered. Worse, a file built on
-              documents you did not write is misrepresentation, and that carries a bar on applying
-              again — which lands on you, not on the agent.
+              This is a heavily defrauded area of Pakistani migration to Canada, and a file built on
+              documents you did not write is misrepresentation, which carries a bar on applying again.{' '}
+              <Link href="/work-permits/caregivers" className="font-semibold text-accent-500 link-underline">
+                How caregiver job offers are sold, and how to check one
+              </Link>
+              .
             </p>
           </Callout>
         </div>

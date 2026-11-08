@@ -158,7 +158,7 @@ export default function ProvincialAttestationLetterPage() {
             capacity among the provinces and territories. Each province and territory then decides how
             its share is used across its own institutions. A provincial attestation letter — a
             territorial attestation letter, in the territories — is the document that records that you
-            have been counted within that share.
+            have been counted within that share. Applicants sometimes call it the province letter.
           </p>
           <p>
             It is a short letter. It identifies you by name, date of birth and current residential
