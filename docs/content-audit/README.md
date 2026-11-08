@@ -69,6 +69,11 @@ A batch is at most about ten pages, one commit, one deploy.
 - Remove redirects, change canonicals, or alter `robots.txt` or sitemap behaviour without a stated reason.
 - Report something as done before it has been checked on production.
 
+**Figures.** Figures set in law (an Act or a regulation) may be printed, with the section
+linked, the date it was read, and an entry in `lib/facts.ts`. The site owner decided this on
+8 November 2026. Figures that appear only on an official page, such as fees, processing times
+and fund amounts, stay unprinted until decided otherwise.
+
 **Review dates.** `reviewed` in `lib/routes.ts` means a human checked the content. An
 automated edit does not count, and doesn't move that date.
 

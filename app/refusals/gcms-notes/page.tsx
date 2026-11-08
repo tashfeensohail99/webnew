@@ -91,7 +91,7 @@ const FAQS = [
   },
   {
     q: 'Does requesting the notes pause the Federal Court deadline?',
-    a: 'No. The time limit to apply to the Federal Court for leave and judicial review runs from when you are notified of the decision or otherwise become aware of it, and it is short. A request for your notes does not pause it, and waiting for a reply can use up much of the time you have. If you may want a court to look at the decision, speak to a Canadian lawyer now and order the notes alongside that, not before it.',
+    a: 'No. The time limit to apply to the Federal Court for leave and judicial review is 15 days for a matter arising in Canada and 60 days for a matter arising outside Canada, after the day you are notified of the decision or otherwise become aware of it. A request for your notes does not pause it, and waiting for a reply can use up much of the time you have. If you may want a court to look at the decision, speak to a Canadian lawyer now and order the notes alongside that, not before it.',
   },
   {
     q: 'How long does a request take?',
@@ -170,10 +170,19 @@ export default function GcmsNotesPage() {
         <div className="mt-10">
           <Callout title="Asking for your notes does not stop the court clock">
             <p>
-              An application to the Federal Court for leave and judicial review has a short time
-              limit, running from when you are notified of the decision or otherwise become aware of
-              it. Requesting your notes does not pause it, and waiting for a reply can use up much of
-              it. If you may want a court to look at this decision, read about{' '}
+              An application to the Federal Court for leave and judicial review must be filed within
+              15 days for a matter arising in Canada, or 60 days for a matter arising outside Canada,
+              after the day you are notified of the decision or otherwise become aware of it (
+              <a
+                href="https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-72.html"
+                className="font-semibold text-accent-500 link-underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                section 72 of the Act
+              </a>
+              , read at the source on 8 November 2026). Requesting your notes does not pause that, and
+              waiting for a reply can use up much of it. If you may want a court to look at this decision, read about{' '}
               <Link href="/refusals/judicial-review" className="font-semibold text-accent-500 link-underline">
                 judicial review
               </Link>{' '}

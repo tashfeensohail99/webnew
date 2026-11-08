@@ -328,7 +328,16 @@ export default function StudyPermitPage() {
           <p>
             <strong>Documents obtained rather than earned.</strong> An arranged experience letter, an
             inflated transcript, an unearned language result. This is misrepresentation, and it makes
-            you inadmissible for a period set by law that can outlast the course you were applying for.
+            you inadmissible for five years under{' '}
+            <a
+              href="https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-40.html"
+              className="font-semibold text-accent-500 link-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              section 40 of the Act
+            </a>
+            , which can outlast the course you were applying for.
           </p>
           <p>
             <strong>Reapplying without knowing why you were refused.</strong> Since 29 July 2025 IRCC

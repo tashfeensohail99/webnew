@@ -4,6 +4,33 @@ One entry per batch, newest first. Each entry records the commit, what changed a
 
 To see any page's original wording: `git show 9d17a79:<path to the page>`.
 
+## Batch 4: refusal pages and officer decision notes, 8 November 2026
+
+- **Commit:** `82e5e1f`. To undo only the page changes, restore the nine `app/` pages, `components/ui.tsx` and `lib/facts.ts` from `adcbacb`, because this commit also recorded batch 3 in this ledger.
+- **Why:** the refusal pages described the process before IRCC began sending officer decision notes, and two of them gave wrong rules on who can request GCMS notes and what it costs.
+
+| Page | Change | Source |
+| --- | --- | --- |
+| `/canada-visa-refused` | Opens with the decision note. No Canadian filer or government fee for a Privacy Act request. Links to all five refusal guides. Deadline wording follows the Act and links to section 72. Unsupported claims about the firm's caseload and the most common ground removed. | [IRCC decision notes](https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/officer-decision-notes.html); [IRCC Privacy Act](https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/access-information-privacy/request-privacy-act.html); [IRPA s.72](https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-72.html) |
+| `/refusals/gcms-notes` | Decision notes moved to the top, with dates and exclusions. Court-deadline warning box. New FAQs on the deadline and on timing. Consent form is IMM 5744 at age 16 or older. Direct Privacy Act link. | As above |
+| `/refusals/judicial-review` | "Requires a lawyer" corrected: the Court allows self-representation, and a consultant may not act. What to state about reasons under Rule 9. Unverified claim about the record on redetermination removed. New title. | [Federal Court](https://www.fct-cf.ca/en/pages/who-may-represent-you-in-an-immigration-refugee-protection-or-citizenship-matter-in-federal-court); IRCC decision notes |
+| `/refusals/reconsideration` | "Exceptional" attributed to IRCC's guidance and linked. Officers must consider a request and enter reasons in GCMS. Promise to tell readers their deadline removed. Says reconsideration is not on the fee list. | [IRCC guidance](https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/service-delivery/reconsideration-after-refusal.html) |
+| `/refusals/re-applying` | Starts from the decision note. Section 40 bar stated as inadmissibility and no permanent residence application. Warns that re-applying does not stop the court clock. | IRCC decision notes; [IRPA s.40](https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-40.html) |
+| `/refusals/misrepresentation` | Readers told to check any representative on a public register first. Unsourced claim about the firm's clients removed. Shorter title. | IRPA s.40 |
+| `/study-in-canada/refusals` | Rebuilt around the decision note. Privacy Act route open from outside Canada. Attestation letter cannot be reused after a refusal. Purpose-of-visit claim corrected. | IRCC decision notes; [IRCC attestation letters](https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/provincial-attestation-letter.html) |
+| `/work-permit-canada/refusals` | Decision note. Start-Up Visa closed. Bar wording. Who may act in court. Four descriptive link labels. Link to business routes. | IRCC decision notes; [IRCC C11](https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/entrepreneurs-self-employed-seeking-only-temp-residence-r205-c11.html); `lib/facts.ts` |
+| `/study-in-canada/study-permit` | Decision note. Dual intent explained and linked. "In our experience" ranking removed. Direct link to IRCC's financial support page. New title. | [IRPA s.22(2)](https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-22.html); IRCC decision notes |
+| `components/ui.tsx` | `CTASection` takes a service. The five `/refusals` pages now tag WhatsApp enquiries as refusal work (`JR-`), not work permits. | `lib/wa.ts` |
+
+- **Register:** two entries added to `lib/facts.ts` (decision notes; Privacy Act access). Re-check monthly.
+- **Checked before shipping:** build, typecheck, `test:crs` (66 passed), `test:fsw` (43 passed), local crawl with no regressions, no sideways scrolling at phone width. Viewed `/canada-visa-refused` on desktop (light) and the `/refusals/gcms-notes` warning box on a phone (dark).
+- **Checked on production:** GitHub deployment `success`. 93 of 93 URLs return 200, and the crawl shows no regressions. All 37 removed statements gone and all 27 new ones present, including the `JR-` tag on the five pages. All nine pages load on a phone with no sideways scrolling or script errors.
+- **External links re-tested after the deploy:** 196 unique. None of the nine pages has a 404. `college-ic.ca` redirects (307), which is normal.
+- **Search:** IndexNow accepted the nine URLs. Google not asked.
+- **Deliberately left alone, waiting on the firm:** every claim about who does this work ("refusals are handled by our lawyers", "That includes us", "Speak to someone licensed", showing clients redacted outcome files, "Two of these earn us less"); the judicial review prices on `/fees` against "We do not publish figures"; the promises to tell readers which option is theirs; review dates.
+- **Deliberately left alone, waiting on the figures decision:** the 15-day and 60-day court periods (s.72(2)(b)) and the five-year period (s.40(2)(a)). Both were re-read at source on 8 November and are not printed. Pages link to the sections instead.
+- **Left for later batches:** lighter mentions of GCMS notes on the homepage, `/tools/visit-visa-refusal-risk`, the refusal decoder, `/study-in-canada` and `/study-in-canada/proof-of-funds`; "bar on future applications" wording on about 15 other pages; shortening `/canada-visa-refused` and `/refusals/reconsideration`; the `/study-in-canada/refusals` WhatsApp tag.
+
 ## Batch 3: programmes that have closed or paused, 8 November 2026
 
 - **Commit:** `adcbacb`. To undo only the page changes, restore the changed `app/` files and `lib/facts.ts` from `11cef34`, because this commit also added the SEO baseline evidence.

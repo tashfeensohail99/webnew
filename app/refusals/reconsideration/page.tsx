@@ -23,8 +23,9 @@ import { SERVICE } from '@/lib/site';
  * treated as exceptional rather than routine, and asking for it stops nothing.
  * Everything on the page is written to make those three points land.
  *
- * No success rates, response times, filing deadlines or fee figures appear on
- * this page by design — those move, and the official source is linked instead.
+ * No success rates, response times or fee figures appear on this page by
+ * design — those move, and the official source is linked instead. The two
+ * statutory filing periods are printed, with IRPA s.72 linked.
  */
 export const metadata: Metadata = {
   title: 'Reconsideration requests after an IRCC refusal',
@@ -101,7 +102,7 @@ const FAQS = [
   },
   {
     q: 'Does asking for reconsideration pause the judicial review deadline?',
-    a: 'No, and this is the single most expensive misunderstanding on this page. The deadline for applying to the Federal Court for leave and judicial review is set by statute and runs from the decision. Sending a letter to the visa office does not stop it, suspend it or extend it. An extension is possible only where the Court grants one, and that is a separate application you have to persuade a judge to allow. People routinely wait months for a reply that never comes and find the review route has closed behind them.',
+    a: 'No, and this is the single most expensive misunderstanding on this page. The deadline for applying to the Federal Court for leave and judicial review is set by statute: 15 days for a matter arising in Canada and 60 days for a matter arising outside Canada. Sending a letter to the visa office does not stop it, suspend it or extend it. An extension is possible only where the Court grants one, and that is a separate application you have to persuade a judge to allow. People routinely wait months for a reply that never comes and find the review route has closed behind them.',
   },
   {
     q: 'Should I ask for reconsideration or just apply again?',
@@ -210,8 +211,9 @@ export default function ReconsiderationPage() {
           <p>
             The statutory route for challenging an IRCC decision is an application to the Federal
             Court for leave and judicial review. That route has a filing deadline fixed by
-            legislation, running from when the decision was communicated to you, and it is short.
-            The period differs depending on whether the matter arose inside or outside Canada —{' '}
+            legislation, and it is short: 15 days for a matter arising in Canada and 60 days for a
+            matter arising outside Canada, after the day you are notified of the decision or
+            otherwise become aware of it. Both periods are in{' '}
             <a
               href="https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-72.html"
               className="font-semibold text-accent-500 link-underline"
@@ -219,8 +221,9 @@ export default function ReconsiderationPage() {
               rel="noopener noreferrer"
             >
               section 72 of the Immigration and Refugee Protection Act
-            </a>{' '}
-            sets both, and it is the only place worth reading them.
+            </a>
+            , read at the source on 8 November 2026. A Canadian lawyer should confirm which one
+            applies to you and work out the date.
           </p>
           <p>
             Sending a reconsideration request has no effect on that deadline whatsoever. It does not

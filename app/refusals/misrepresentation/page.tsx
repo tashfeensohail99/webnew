@@ -22,14 +22,14 @@ import { SERVICE } from '@/lib/site';
  * response to a procedural fairness letter is squarely licensed-representative
  * work. The page therefore explains WHAT the provision is and WHY an agent's
  * conduct binds the applicant — and then stops, and routes the reader to a
- * licensed representative. It does not tell anyone how to answer a letter, and
- * it does not print the length of the bar as though it were settled on their
- * particular facts.
+ * licensed representative. It does not tell anyone how to answer a letter. It
+ * states the five-year period from s.40(2)(a) and leaves how that applies to
+ * someone's facts to a licensed representative.
  */
 export const metadata: Metadata = {
   title: 'Misrepresentation in Canadian Immigration',
   description:
-    'What misrepresentation means under section 40 of the IRPA, why an agent’s actions in your name can bind you, and why not to answer a fairness letter alone.',
+    'What misrepresentation means under section 40 of the IRPA, the five-year ban, how an agent’s acts can bind you, and why not to answer a fairness letter alone.',
   alternates: { canonical: '/refusals/misrepresentation' },
 };
 
@@ -108,7 +108,7 @@ const FAQS = [
   },
   {
     q: 'How long does inadmissibility last?',
-    a: 'The Act sets a period of inadmissibility, and for a foreign national it also restricts applying for permanent resident status during that period. Note that the clock does not simply run from the decision: section 40 sets out different starting points depending on whether the person is inside or outside Canada, and getting that wrong is how people miscount by years. We do not print the length or the start date here, because the period that applies, when it begins, and what it bars in your particular case are exactly the questions people get wrong from summaries. Read section 40 at the source, and have a licensed representative apply it to your facts.',
+    a: 'Five years, under section 40(2)(a) of the Immigration and Refugee Protection Act (read at the source on 8 November 2026), and a foreign national may not apply for permanent resident status during that time. Note that the clock does not simply run from the decision: for a determination made outside Canada the five years follow a final determination of inadmissibility, and for one made in Canada they follow the date the removal order is enforced. Getting that wrong is how people miscount by years. How the period applies in your particular case is exactly the question people get wrong from summaries, so read section 40 at the source and have a licensed representative apply it to your facts.',
   },
   {
     q: 'Can a misrepresentation finding be challenged?',
@@ -137,8 +137,8 @@ export default function MisrepresentationPage() {
         }
         subtitle={
           <>
-            A finding under section 40 of the Immigration and Refugee Protection Act carries a period
-            of inadmissibility. It can arise from something an agent did in your name. This page
+            A finding under section 40 of the Immigration and Refugee Protection Act carries a
+            five-year period of inadmissibility. It can arise from something an agent did in your name. This page
             explains what the provision is — and then tells you to stop reading and speak to a
             licensed representative.
           </>
@@ -342,10 +342,10 @@ export default function MisrepresentationPage() {
         <SectionHeading eyebrow="Where the authority lives" title="Read it at the source" />
         <Prose>
           <p>
-            We do not publish the length of the inadmissibility period, the deadline on a fairness
-            letter, or any figure attached to this subject. Those things are set out in the
-            legislation and in the correspondence you receive, and a number remembered from a website
-            is exactly how people miss a window that mattered.
+            The five-year period on this page comes from section 40(2)(a) of the Act, read at the
+            source on 8 November 2026. We do not publish a deadline for a fairness letter, because
+            that is set by the letter you receive, and a number remembered from a website is exactly
+            how people miss a window that mattered.
           </p>
           <p>
             The provision is{' '}

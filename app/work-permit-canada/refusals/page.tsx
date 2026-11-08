@@ -11,8 +11,9 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * statistic and not a summary of court cases. We name no decisions: we could
  * not read them at source, and a case cited wrongly is worse than none.
  *
- * Same evergreen rule as /refusals/*: no deadlines or bar lengths printed here.
- * Those live on the pages this one links to, which point to the source.
+ * The Federal Court periods and the misrepresentation period are set by statute
+ * and printed with their section of the Act. Anything that moves stays on the
+ * pages this one links to.
  */
 export const metadata: Metadata = {
   title: 'C11 Work Permit Refused? The Usual Reasons',
@@ -88,7 +89,7 @@ const AFTER: { href: string; title: string; body: string; cta: string }[] = [
   {
     href: '/refusals/judicial-review',
     title: 'Challenge it in Federal Court',
-    body: 'For an unreasonable or unfair decision. The deadline is short and runs from the day you are told — decide quickly.',
+    body: 'For an unreasonable or unfair decision. The Act allows 15 days for a matter arising in Canada and 60 days for one arising outside Canada, after the day you are notified — decide quickly.',
     cta: 'How judicial review works',
   },
 ];
@@ -96,7 +97,7 @@ const AFTER: { href: string; title: string; body: string; cta: string }[] = [
 const FAQS = [
   {
     q: 'Can I re-apply after a C11 refusal?',
-    a: 'IRCC states that if an application is refused you can apply again at any time unless your decision letter says otherwise — so read your own letter first. The exception that matters is misrepresentation: a finding makes you inadmissible for a period set by law, and re-applying during it makes things worse.',
+    a: 'IRCC states that if an application is refused you can apply again at any time unless your decision letter says otherwise — so read your own letter first. The exception that matters is misrepresentation: a finding makes you inadmissible for five years under section 40 of the Act, and re-applying during it makes things worse.',
   },
   {
     q: 'Will showing more money fix a C11 refusal?',
@@ -108,7 +109,7 @@ const FAQS = [
   },
   {
     q: 'Is judicial review worth it for a C11 refusal?',
-    a: 'Sometimes. The Federal Court does not re-decide your application or grant a permit; it asks whether the officer’s decision was reasonable and fair. If it was not, the usual result is that a different officer decides the file again. A consultant cannot run it for you, a Canadian lawyer is strongly advised, and the filing deadline is short.',
+    a: 'Sometimes. The Federal Court does not re-decide your application or grant a permit; it asks whether the officer’s decision was reasonable and fair. If it was not, the usual result is that a different officer decides the file again. A consultant cannot run it for you, a Canadian lawyer is strongly advised, and the filing deadline is short: 15 days for a matter arising in Canada and 60 days for one arising outside Canada, under section 72 of the Act.',
   },
   {
     q: 'Should I switch to a different route instead?',
@@ -164,7 +165,16 @@ export default function C11RefusalsPage() {
           <Callout title="The serious one: a document IRCC doubts">
             A concern that a document is not genuine, or that something material was left out, is a
             different order of problem from a weak plan — it can lead to a finding of
-            misrepresentation, which makes you inadmissible for a period set by law.{' '}
+            misrepresentation, which makes you inadmissible for five years under{' '}
+            <a
+              href="https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-40.html"
+              className="font-semibold text-accent-500 link-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              section 40 of the Act
+            </a>
+            .{' '}
             <Link href="/refusals/misrepresentation" className="font-semibold text-accent-500 link-underline">
               Read about misrepresentation
             </Link>{' '}

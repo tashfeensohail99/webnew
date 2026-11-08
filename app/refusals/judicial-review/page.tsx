@@ -22,15 +22,14 @@ import { SERVICE } from '@/lib/site';
  * can run. It is neither. The Court reviews the decision, not the application,
  * and litigation before the Federal Court is a lawyer's work.
  *
- * Deliberately no fee figures, no cost estimates, no leave-grant rates, and no
- * day counts printed on the page — the statutory periods are short, differ by
- * where the decision was made, and must be read at the source on the day you
- * need them.
+ * Deliberately no fee figures, no cost estimates and no leave-grant rates. The two
+ * statutory filing periods are printed with their source, IRPA s.72(2)(b). Which
+ * one applies to a given decision stays with Canadian counsel.
  */
 export const metadata: Metadata = {
   title: 'Judicial Review of a Canada Visa Refusal',
   description:
-    'What judicial review of an IRCC decision is: a check on whether it was reasonable and fair, not a reapplication. Deadlines, and who may act for you.',
+    'What judicial review of an IRCC decision is: a check on whether it was reasonable and fair, not a reapplication. The 15 and 60 day limits, and who may act.',
   alternates: { canonical: '/refusals/judicial-review' },
 };
 
@@ -70,7 +69,7 @@ const STEPS = [
   },
   {
     title: 'The application for leave is filed in time',
-    body: 'Judicial review is commenced by an application for leave to the Federal Court. The statutory period is short and begins running from when you are notified of, or otherwise become aware of, the decision — not from when you decide to act.',
+    body: 'Judicial review is commenced by an application for leave to the Federal Court. The Act allows 15 days for a matter arising in Canada and 60 days for a matter arising outside Canada, after the day you are notified of, or otherwise become aware of, the decision — not from when you decide to act.',
   },
   {
     title: 'The record and written argument are perfected',
@@ -101,7 +100,7 @@ const FAQS = [
   },
   {
     q: 'How long do I have to file?',
-    a: 'Not long, and the period differs depending on whether the matter arose inside or outside Canada. The clock starts when you are notified of the decision or otherwise become aware of it. We do not print either period here, and we will not tell you which one applies to you — both are set by statute, both are unforgiving, and getting that wrong ends the remedy. Read them at the source in section 72 of the Immigration and Refugee Protection Act, linked below, and put the question to Canadian counsel immediately rather than after you have finished thinking it over. A judge may allow an extended time for special reasons, but that is an argument counsel has to win, not an entitlement.',
+    a: 'Section 72(2)(b) of the Immigration and Refugee Protection Act allows 15 days for a matter arising in Canada and 60 days for a matter arising outside Canada (read at the source, linked below, on 8 November 2026). The count starts after the day you are notified of the decision or otherwise become aware of it. We will not tell you which period applies to you — both are unforgiving, and getting that wrong ends the remedy. Put the question to Canadian counsel immediately rather than after you have finished thinking it over, and have them work out the exact date. A judge may allow an extended time for special reasons, but that is an argument counsel has to win, not an entitlement.',
   },
   {
     q: 'Can an immigration consultant file this for me?',
@@ -242,11 +241,11 @@ export default function JudicialReviewPage() {
             <SectionHeading eyebrow="The second gate" title="Time, and why it is already running" />
             <div className="mt-6 space-y-4 text-ink-600 text-pretty leading-relaxed">
               <p>
-                The Act sets a filing period for the application for leave, and it is short. Two
-                different periods exist: one for matters arising <strong>inside Canada</strong> and
-                one for matters arising <strong>outside Canada</strong>. We do not print either
-                period here, and we will not tell you which applies to your decision — that is a
-                legal question, and getting it wrong ends the remedy. Counsel answers it.
+                The Act sets a filing period for the application for leave, and it is short:{' '}
+                <strong>15 days</strong> for a matter arising <strong>inside Canada</strong> and{' '}
+                <strong>60 days</strong> for a matter arising <strong>outside Canada</strong>. We
+                will not tell you which applies to your decision — that is a legal question, and
+                getting it wrong ends the remedy. Counsel answers it, and works out the date.
               </p>
               <p>
                 The period runs from the day you are notified of the decision, or otherwise become
@@ -260,8 +259,17 @@ export default function JudicialReviewPage() {
                 advice is not a strong reason. Treat the deadline as real.
               </p>
               <p>
-                Because both periods are statutory and unforgiving, read them at the source rather
-                than from any website, this one included.
+                Both periods come from{' '}
+                <a
+                  href="https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-72.html"
+                  className="font-semibold text-accent-500 link-underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  section 72(2)(b) of the Act
+                </a>
+                , read at the source on 8 November 2026. Because they are unforgiving, check them
+                there yourself rather than relying on any website, this one included.
               </p>
             </div>
           </div>
@@ -483,10 +491,11 @@ export default function JudicialReviewPage() {
             says what to state in your application to the Court about the reasons.
           </p>
           <p>
-            We deliberately do not print court fees, cost estimates or the day counts here. The
-            periods are short enough that a stale or mis-transcribed number on a website could cost
-            you the remedy entirely — read them at the source, on the day, and confirm with counsel
-            which one applies to your decision.
+            We deliberately do not print court fees or cost estimates here. The two filing periods
+            on this page were read at section 72(2)(b) on 8 November 2026. They are short enough that
+            a stale or mis-transcribed number on a website could cost you the remedy entirely — check
+            them at the source, on the day, and confirm with counsel which one applies to your
+            decision.
           </p>
         </Prose>
       </Section>

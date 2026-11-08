@@ -140,6 +140,30 @@ export const FACTS: Record<string, Fact> = {
       'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/access-information-privacy/request-privacy-act.html',
     checked: '2026-11-08',
   },
+  caFederalCourtPeriods: {
+    id: 'ca.refusal.jr-periods',
+    claim:
+      'An application for leave and judicial review must be filed within 15 days for a matter arising in Canada, or 60 days for a matter arising outside Canada, after the day the applicant is notified of or otherwise becomes aware of the matter. A judge may allow an extended time for special reasons.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Act, s.72(2)(b) and (c)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-72.html',
+    checked: '2026-11-08',
+    needsLawyer: true,
+    note:
+      'Printed on the refusal pages on 8 Nov 2026 on the site owner’s instruction. Read at source, but the wording has not been reviewed by a lawyer. Every page leaves which period applies to a given decision to Canadian counsel.',
+  },
+  caMisrepresentationPeriod: {
+    id: 'ca.refusal.misrep-period',
+    claim:
+      'A person inadmissible for misrepresentation remains so for five years following a final determination (if made outside Canada) or the date the removal order is enforced (if made in Canada), and a foreign national may not apply for permanent resident status during that period.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Act, s.40(2)(a) and s.40(3)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-40.html',
+    checked: '2026-11-08',
+    needsLawyer: true,
+    note:
+      'Printed on the refusal pages on 8 Nov 2026 on the site owner’s instruction. Read at source, but the wording has not been reviewed by a lawyer.',
+  },
 
   // ── CANADA: PROGRAMME STATUS (re-check monthly) ──────────────────────────
   caParentsGrandparentsPaused: {

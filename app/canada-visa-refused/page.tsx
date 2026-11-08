@@ -63,7 +63,7 @@ const REFUSAL_REASONS: { icon: IconName; term: string; def: string }[] = [
   {
     icon: 'shield',
     term: 'Misrepresentation',
-    def: 'The serious one. Even an “adjustment” someone else made to your file can carry a long ban — and this is where a lawyer stops being optional.',
+    def: 'The serious one. Even an “adjustment” someone else made to your file can make you inadmissible for five years under section 40 of the Act — and this is where a lawyer stops being optional.',
   },
 ];
 
@@ -170,14 +170,15 @@ const FAQS = [
     q: 'How long do I have to go to the Federal Court?',
     a: (
       <>
-        There is a strict deadline that runs from the day you are notified of the decision or
-        otherwise become aware of it, and it is short. The period depends on whether the matter arose
-        inside or outside Canada, and both are set out in{' '}
+        15 days for a matter arising in Canada, or 60 days for a matter arising outside Canada, after
+        the day you are notified of the decision or otherwise become aware of it. Those periods are
+        in{' '}
         <a href={IRPA_S72} className="font-semibold text-accent-500 link-underline" target="_blank" rel="noopener noreferrer">
           section 72 of the Act
         </a>
-        . Requesting GCMS notes does not pause it. If your refusal is recent, talk to someone this
-        week, even if that someone isn’t us.
+        , read at the source on 8 November 2026. A Canadian lawyer should confirm which one applies
+        to you and work out the date. Requesting GCMS notes does not pause it. If your refusal is
+        recent, talk to someone this week, even if that someone isn’t us.
       </>
     ),
   },
@@ -356,14 +357,16 @@ export default function VisaRefusedPage() {
           <SectionHeading eyebrow="Timing" title="The clock is real" />
           <div className="mt-6 space-y-4 text-ink-600 text-pretty">
             <p>
-              There is a strict deadline to apply to the Federal Court for leave and judicial review,
-              and it runs from the day you are notified of the decision or otherwise become aware of
-              it. It is short, and it is different depending on whether the matter arose inside or
-              outside Canada. The periods are in{' '}
+              There is a strict deadline to apply to the Federal Court for leave and judicial review:{' '}
+              <strong className="text-ink-900">15 days</strong> for a matter arising in Canada, or{' '}
+              <strong className="text-ink-900">60 days</strong> for a matter arising outside Canada,
+              after the day you are notified of the decision or otherwise become aware of it. Those
+              periods are in{' '}
               <a href={IRPA_S72} className="font-semibold text-accent-500 link-underline" target="_blank" rel="noopener noreferrer">
                 section 72 of the Act
               </a>
-              .
+              , read at the source on 8 November 2026. A Canadian lawyer should confirm which one
+              applies to your decision and work out the date.
             </p>
             <p>
               Waiting for GCMS notes does not pause it. Miss it and the door usually closes. Extensions exist but are not granted for the
@@ -373,9 +376,8 @@ export default function VisaRefusedPage() {
               </strong>
             </p>
           </div>
-          {/* TODO(tashfeen): state the exact figures (in-Canada vs outside-Canada) here once
-              a lawyer on the team has confirmed the numbers and the wording. Deliberately
-              left qualitative rather than risk publishing a deadline that is wrong. */}
+          {/* Periods printed on the site owner's instruction, 8 November 2026. A lawyer on
+              the team has not yet confirmed the wording: see caFederalCourtPeriods in lib/facts.ts. */}
         </div>
       </Section>
 

@@ -1,7 +1,7 @@
 {
  "summary": {
   "base": "https://tashfeenimmigrationsolutions.com",
-  "crawled": "2026-11-08T11:27:26.703Z",
+  "crawled": "2026-11-08T11:52:53.542Z",
   "total": 93,
   "ok": 93,
   "inSitemap": 93,
@@ -3322,6 +3322,7 @@
     "/quebec-immigration",
     "/work-permit-canada",
     "/work-permit-canada/business-plan",
+    "/work-permit-canada/refusals",
     "/work-permits/intra-company-transfer"
    ],
    "inboundAll": 92,
@@ -4247,7 +4248,7 @@
    "robotsHeader": null,
    "metaRobots": "index, follow",
    "title": "Canada Visa Refused? Your Real Options | Tashfeen",
-   "description": "Your refusal letter doesn’t tell you the real reason. How to get your GCMS notes, what actually caused the refusal, and whether to reapply or seek review.",
+   "description": "Refused a Canadian visa? How to read the officer’s decision note, when GCMS notes still help, and whether to reapply, seek review or stop.",
    "canonical": "https://tashfeenimmigrationsolutions.com/canada-visa-refused",
    "ogTitle": "Canada Visa Refused? Your Real Options | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
@@ -4261,7 +4262,7 @@
     },
     {
      "level": 2,
-     "text": "Your refusal letter is not your refusal reason"
+     "text": "Find the officer’s reasons before you do anything else"
     },
     {
      "level": 2,
@@ -4325,19 +4326,22 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1286,
+   "wordCount": 1511,
    "avgSentence": 16,
    "hits": {
     "outcome": 1,
     "superlative": 0,
     "firmClaim": 0,
     "stock": 0,
-    "volatile": 0,
+    "volatile": 1,
     "placeholder": 0
    },
    "hitLines": {
     "outcome": [
      "If the officer applied the law correctly and simply wasn’t persuaded by your evidence, court is the wrong tool — and anyone selling it to you as a guaranteed fix is taking your money."
+    ],
+    "volatile": [
+     "IRCC now sends an officer decision note with most refusal letters: for most temporary resident applications since 29 July 2025, including visitor visas, study permits and work permits, and for most permanent resident applications since 26 May 2026."
     ]
    },
    "schema": [
@@ -4358,6 +4362,11 @@
    },
    "internalInCopy": [
     "/book-consultation",
+    "/refusals/gcms-notes",
+    "/refusals/re-applying",
+    "/refusals/judicial-review",
+    "/refusals/reconsideration",
+    "/refusals/misrepresentation",
     "/about/our-team"
    ],
    "internalAll": [
@@ -4451,7 +4460,8 @@
     "/terms"
    ],
    "external": [
-    "https://wa.me/923350001111?text=Hi%2C%20my%20Canadian%20visa%20was%20refused.%20I%E2%80%99d%20like%20someone%20to%20look%20at%20the%20refusal%20letter.%20%5BRef%3A%20JR-1WL7%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20my%20Canadian%20visa%20was%20refused.%20I%E2%80%99d%20like%20someone%20to%20look%20at%20the%20refusal%20letter.%20%5BRef%3A%20JR-1WL7%5D",
+    "https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-72.html"
    ],
    "images": 0,
    "imagesNoAlt": 0,
@@ -4477,7 +4487,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 1211,
+   "uniqueWords": 1438,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-17",
@@ -12431,7 +12441,7 @@
    "robotsHeader": null,
    "metaRobots": "index, follow",
    "title": "GCMS Notes After a Canada Refusal: What They Show | Tashfeen",
-   "description": "GCMS notes are the officer’s own record of your IRCC file, and they say more than the refusal letter. Why they matter, what they settle, who may ask for them.",
+   "description": "Most IRCC refusals now come with an officer decision note. When GCMS notes still help, what they settle, who may request them and the court deadline risk.",
    "canonical": "https://tashfeenimmigrationsolutions.com/refusals/gcms-notes",
    "ogTitle": "GCMS Notes After a Canada Refusal: What They Show | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
@@ -12493,14 +12503,14 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1756,
-   "avgSentence": 20,
+   "wordCount": 2152,
+   "avgSentence": 21,
    "hits": {
     "outcome": 3,
     "superlative": 0,
     "firmClaim": 0,
     "stock": 0,
-    "volatile": 0,
+    "volatile": 2,
     "placeholder": 0
    },
    "hitLines": {
@@ -12508,6 +12518,10 @@
      "We cannot guarantee an outcome on any application, and no consultant can.",
      "Read our no-guarantee policy .",
      "Fixing the right weakness is your own work after that, and there is still no guaranteed outcome."
+    ],
+    "volatile": [
+     "Since 29 July 2025 for most temporary resident applications, and since 26 May 2026 for most permanent resident applications, IRCC also sends an officer decision note written by the officer who made the final decision.",
+     "IRCC now sends an officer decision note with the refusal letter for most temporary resident applications (since 29 July 2025) and most permanent resident applications (since 26 May 2026)."
     ]
    },
    "schema": [
@@ -12531,6 +12545,7 @@
    },
    "internalInCopy": [
     "/book-consultation",
+    "/refusals/judicial-review",
     "/no-guarantee-policy",
     "/about/our-team"
    ],
@@ -12625,15 +12640,17 @@
     "/terms"
    ],
    "external": [
-    "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=459&top=1",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/officer-decision-notes.html",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/access-information-privacy/request-privacy-act.html",
     "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=458&top=1",
     "https://atip-aiprp.apps.gc.ca/atip/welcome.do",
-    "https://wa.me/923350001111?text=Hi%2C%20my%20Canada%20application%20was%20refused%20and%20I%E2%80%99d%20like%20to%20understand%20the%20real%20reason%20before%20I%20reapply.%20%5BRef%3A%20WP-1C8X%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20my%20Canada%20application%20was%20refused%20and%20I%E2%80%99d%20like%20to%20understand%20the%20real%20reason%20before%20I%20reapply.%20%5BRef%3A%20JR-1C8X%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/",
+    "/canada-visa-refused",
     "/family-sponsorship/parents-grandparents",
     "/family-sponsorship/spouse-partner",
     "/pnp/new-brunswick",
@@ -12652,7 +12669,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 1690,
+   "uniqueWords": 2085,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -12667,10 +12684,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "Judicial review at the Federal Court | Tashfeen",
-   "description": "What judicial review of an IRCC decision is: a check on whether it was reasonable and fair, not a reapplication. Deadlines, and why it needs a lawyer.",
+   "title": "Judicial Review of a Canada Visa Refusal | Tashfeen",
+   "description": "What judicial review of an IRCC decision is: a check on whether it was reasonable and fair, not a reapplication. Deadlines, and who may act for you.",
    "canonical": "https://tashfeenimmigrationsolutions.com/refusals/judicial-review",
-   "ogTitle": "Judicial review at the Federal Court | Tashfeen",
+   "ogTitle": "Judicial Review of a Canada Visa Refusal | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "The Court reviews the decision. It does not make a new one."
@@ -12766,8 +12783,8 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2757,
-   "avgSentence": 18,
+   "wordCount": 2841,
+   "avgSentence": 19,
    "hits": {
     "outcome": 2,
     "superlative": 1,
@@ -12912,12 +12929,15 @@
     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-93-22/",
     "https://www.fct-cf.ca/",
     "https://laws-lois.justice.gc.ca/eng/acts/I-2.5/section-74.html",
-    "https://wa.me/923350001111?text=Hi%2C%20my%20Canada%20application%20was%20refused%20and%20I%20want%20to%20know%20whether%20judicial%20review%20at%20the%20Federal%20Court%20is%20realistic%20in%20my%20case.%20%5BRef%3A%20WP-IKEM%5D"
+    "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/officer-decision-notes.html",
+    "https://wa.me/923350001111?text=Hi%2C%20my%20Canada%20application%20was%20refused%20and%20I%20want%20to%20know%20whether%20judicial%20review%20at%20the%20Federal%20Court%20is%20realistic%20in%20my%20case.%20%5BRef%3A%20JR-IKEM%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/",
+    "/canada-visa-refused",
+    "/refusals/gcms-notes",
     "/refusals/misrepresentation",
     "/refusals/re-applying",
     "/refusals/reconsideration",
@@ -12926,7 +12946,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2615,
+   "uniqueWords": 2700,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -12941,10 +12961,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "Misrepresentation Findings in Canadian Immigration | Tashfeen",
+   "title": "Misrepresentation in Canadian Immigration | Tashfeen",
    "description": "What misrepresentation means under section 40 of the IRPA, why an agent’s actions in your name can bind you, and why not to answer a fairness letter alone.",
    "canonical": "https://tashfeenimmigrationsolutions.com/refusals/misrepresentation",
-   "ogTitle": "Misrepresentation Findings in Canadian Immigration | Tashfeen",
+   "ogTitle": "Misrepresentation in Canadian Immigration | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "Misrepresentation is the one finding you should never handle alone"
@@ -13028,12 +13048,12 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2154,
+   "wordCount": 2189,
    "avgSentence": 20,
    "hits": {
     "outcome": 4,
     "superlative": 0,
-    "firmClaim": 13,
+    "firmClaim": 15,
     "stock": 0,
     "volatile": 0,
     "placeholder": 0
@@ -13048,6 +13068,7 @@
      "This page explains what the provision is — and then tells you to stop reading and speak to a licensed representative.",
      "Speak to someone licensed → This is not a page to act on by yourself If you have received a letter raising a concern about the truth or completeness of your application, or a decision that refers to misrepresentation, that is the point to obtain representation from someone licensed to give Canadian immigration advice — a member in good standing of the College of Immigration and Citizenship Consultants, or a lawyer entitled to practise in a Canadian province or territory.",
      "The response often shapes the outcome, the deadline is set out in the letter itself, and a well-intentioned self-drafted reply can close options that a licensed representative would have kept open.",
+     "If your matter is at that stage, take it to a licensed representative rather than reading further and acting on it, and check them on the College’s public register or with a Canadian law society first, whoever they are.",
      "This is the honest reason to care whether your representative is licensed.",
      "Take the letter, with your full application file, to a licensed representative.",
      "What we can do is look at what was actually filed, tell you plainly what stage you are at, and help you get it in front of the right licensed person.",
@@ -13055,8 +13076,7 @@
      "If this has happened, it is a matter for a licensed representative, not for a self-drafted explanation.",
      "Take it to a licensed representative immediately, and work to the deadline stated in the letter itself rather than any period you have read elsewhere.",
      "Read section 40 at the source, and have a licensed representative apply it to your facts.",
-     "That assessment is licensed work.",
-     "Reviewed by the Tashfeen legal team · Last reviewed July 2026 Do not wait on this one Bring us the letter and the full file If a concern has been raised about the truth or completeness of your application, the useful first step is a licensed person reading what was actually submitted in your name."
+     "That assessment is licensed work."
     ]
    },
    "schema": [
@@ -13180,7 +13200,7 @@
    "external": [
     "https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-40.html",
     "https://college-ic.ca/",
-    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99ve%20received%20a%20letter%20about%20my%20application%20that%20mentions%20misrepresentation%20and%20I%20need%20to%20speak%20to%20someone%20licensed.%20%5BRef%3A%20WP-1W1W%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99ve%20received%20a%20letter%20about%20my%20application%20that%20mentions%20misrepresentation%20and%20I%20need%20to%20speak%20to%20someone%20licensed.%20%5BRef%3A%20JR-1W1W%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
@@ -13188,6 +13208,7 @@
     "/",
     "/business-immigration",
     "/canada-immigration-from-pakistan",
+    "/canada-visa-refused",
     "/canadian-immigration-lawyer-pakistan",
     "/express-entry/category-based-draws",
     "/family-sponsorship/spouse-partner",
@@ -13207,15 +13228,13 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2054,
+   "uniqueWords": 2090,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
    "reviewed": "2026-07-20",
    "inCode": true,
-   "issues": [
-    "title 61 chars"
-   ]
+   "issues": []
   },
   {
    "path": "/refusals/re-applying",
@@ -13307,8 +13326,8 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2431,
-   "avgSentence": 19,
+   "wordCount": 2460,
+   "avgSentence": 20,
    "hits": {
     "outcome": 1,
     "superlative": 0,
@@ -13452,12 +13471,13 @@
     "https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-16.html",
     "https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-40.html",
     "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=023&top=4",
-    "https://wa.me/923350001111?text=Hi%2C%20my%20Canadian%20application%20was%20refused%20and%20I%E2%80%99d%20like%20to%20know%20whether%20re-applying%20makes%20sense%20in%20my%20situation.%20%5BRef%3A%20WP-GPYK%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20my%20Canadian%20application%20was%20refused%20and%20I%E2%80%99d%20like%20to%20know%20whether%20re-applying%20makes%20sense%20in%20my%20situation.%20%5BRef%3A%20JR-GPYK%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/",
+    "/canada-visa-refused",
     "/refusals/judicial-review",
     "/refusals/misrepresentation",
     "/refusals/reconsideration",
@@ -13466,7 +13486,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2352,
+   "uniqueWords": 2381,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -13580,10 +13600,10 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2908,
+   "wordCount": 2990,
    "avgSentence": 20,
    "hits": {
-    "outcome": 5,
+    "outcome": 7,
     "superlative": 0,
     "firmClaim": 0,
     "stock": 0,
@@ -13592,8 +13612,10 @@
    },
    "hitLines": {
     "outcome": [
+     "There is no obligation to reopen the file and no guarantee of a reply.",
      "If someone offers a reconsideration package and talks about success rates, ask them to put the discretionary nature of it in writing.",
      "The discretion is not ours to exercise, which is why we publish a no-guarantee policy .",
+     "IRCC is not obliged to reopen your file, and you have no guarantee of a reply.",
      "+ We will not put a figure on it, and you should distrust anyone who does — nobody publishes reliable success rates for a discretionary request that generates no formal decision.",
      "Can you guarantee a reconsideration will succeed?",
      "Nobody can, and a discretionary request is about the least guaranteeable thing in this field."
@@ -13720,14 +13742,16 @@
     "/terms"
    ],
    "external": [
-    "https://laws-lois.justice.gc.ca/eng/acts/i-2.5/",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/service-delivery/reconsideration-after-refusal.html",
+    "https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-72.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/web-form.html",
-    "https://wa.me/923350001111?text=Hi%2C%20my%20Canada%20application%20was%20refused%20and%20I%E2%80%99d%20like%20to%20know%20whether%20a%20reconsideration%20request%20is%20worth%20sending.%20%5BRef%3A%20WP-1IFS%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20my%20Canada%20application%20was%20refused%20and%20I%E2%80%99d%20like%20to%20know%20whether%20a%20reconsideration%20request%20is%20worth%20sending.%20%5BRef%3A%20JR-1IFS%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
+    "/canada-visa-refused",
     "/refusals/judicial-review",
     "/refusals/misrepresentation",
     "/refusals/re-applying",
@@ -13736,7 +13760,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2766,
+   "uniqueWords": 2849,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -15360,17 +15384,17 @@
    "robotsHeader": null,
    "metaRobots": "index, follow",
    "title": "Canada Study Permit Refusals | Tashfeen",
-   "description": "What each ticked box on a study permit refusal means, why the officer’s notes say far more, and why resubmitting the same file rarely changes it.",
+   "description": "What each ground on a Canadian study permit refusal means, how to use the officer’s decision note sent with your letter, and when re-applying makes sense.",
    "canonical": "https://tashfeenimmigrationsolutions.com/study-in-canada/refusals",
    "ogTitle": "Canada Study Permit Refusals | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
-    "The letter tells you the headings. The notes tell you the reason."
+    "The letter tells you the headings. The officer’s note tells you the reason."
    ],
    "headings": [
     {
      "level": 1,
-     "text": "The letter tells you the headings. The notes tell you the reason."
+     "text": "The letter tells you the headings. The officer’s note tells you the reason."
     },
     {
      "level": 2,
@@ -15422,7 +15446,7 @@
     },
     {
      "level": 3,
-     "text": "Get the officer’s notes"
+     "text": "Read the officer’s decision note"
     },
     {
      "level": 3,
@@ -15470,14 +15494,14 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2315,
+   "wordCount": 2415,
    "avgSentence": 20,
    "hits": {
     "outcome": 1,
     "superlative": 0,
     "firmClaim": 2,
     "stock": 0,
-    "volatile": 0,
+    "volatile": 3,
     "placeholder": 0
    },
    "hitLines": {
@@ -15486,6 +15510,11 @@
     ],
     "firmClaim": [
      "If your notes point in that direction, treat it as urgent, do not simply re-file, and get advice from a licensed representative — a Canadian immigration lawyer or an RCIC — before you respond to anything."
+    ],
+    "volatile": [
+     "Since July 2025 it should also come with a note written by the officer.",
+     "Since 29 July 2025, IRCC has sent an officer decision note with refusal letters for study permits and study permit extensions, written by the officer who made the final decision.",
+     "2 Read the officer’s decision note Since 29 July 2025 IRCC has sent a note written by the deciding officer with study permit refusals, though it may remove portions."
     ]
    },
    "schema": [
@@ -15612,6 +15641,7 @@
     "/terms"
    ],
    "external": [
+    "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/officer-decision-notes.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/access-information-privacy.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html",
     "https://laws-lois.justice.gc.ca/eng/regulations/sor-2002-227/section-216.html",
@@ -15631,7 +15661,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2197,
+   "uniqueWords": 2285,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -15646,10 +15676,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "Canadian Study Permit | Tashfeen",
+   "title": "Canadian Study Permit from Pakistan: How It Works | Tashfeen",
    "description": "How a study permit application works: acceptance from a DLI, the attestation letter, proof of funds, medicals, and the study plan officers assess.",
    "canonical": "https://tashfeenimmigrationsolutions.com/study-in-canada/study-permit",
-   "ogTitle": "Canadian Study Permit | Tashfeen",
+   "ogTitle": "Canadian Study Permit from Pakistan: How It Works | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "The documents get you considered. The plan is what gets assessed."
@@ -15745,20 +15775,23 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2342,
+   "wordCount": 2418,
    "avgSentence": 19,
    "hits": {
     "outcome": 2,
     "superlative": 0,
     "firmClaim": 0,
     "stock": 0,
-    "volatile": 0,
+    "volatile": 1,
     "placeholder": 0
    },
    "hitLines": {
     "outcome": [
      "We would rather say this on the first call than take a fee for a file that was never going to work, which is why we publish a no-guarantee policy .",
      "Can you guarantee my study permit will be approved?"
+    ],
+    "volatile": [
+     "Since 29 July 2025 IRCC has sent an officer decision note with study permit refusals."
     ]
    },
    "schema": [
@@ -15782,6 +15815,7 @@
    },
    "internalInCopy": [
     "/book-consultation",
+    "/study-in-canada/study-to-permanent-residence",
     "/study-in-canada/designated-learning-institutions",
     "/study-in-canada/provincial-attestation-letter",
     "/study-in-canada/proof-of-funds",
@@ -15884,6 +15918,7 @@
    ],
    "external": [
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html",
     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/",
     "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20know%20whether%20my%20study%20permit%20plan%20for%20Canada%20is%20realistic.%20%5BRef%3A%20WP-1GPH%5D"
    ],
@@ -15905,7 +15940,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2225,
+   "uniqueWords": 2300,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -16437,6 +16472,7 @@
     "/",
     "/express-entry/category-based-draws",
     "/study-in-canada/designated-learning-institutions",
+    "/study-in-canada/study-permit",
     "/study-in-canada/study-permit-extension",
     "/study-in-canada/working-while-studying",
     "/work-permits/international-experience-canada",
@@ -20849,14 +20885,14 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 911,
-   "avgSentence": 18,
+   "wordCount": 994,
+   "avgSentence": 19,
    "hits": {
     "outcome": 1,
     "superlative": 0,
     "firmClaim": 0,
     "stock": 0,
-    "volatile": 2,
+    "volatile": 4,
     "placeholder": 0
    },
    "hitLines": {
@@ -20864,7 +20900,9 @@
      "No one can guarantee an outcome, and we won’t."
     ],
     "volatile": [
-     "Control Less than 51% — or control not proven C11 is only for owners who control at least 51% of the business."
+     "Control Less than 51% — or control not proven C11 is only for owners who control at least 51% of the business.",
+     "Since 29 July 2025 IRCC has sent an officer decision note with most work permit refusals, so look for it first.",
+     "The Start-Up Visa, which those instructions also name, stopped taking new applications on 31 December 2025."
     ]
    },
    "schema": [
@@ -20894,6 +20932,7 @@
     "/refusals/re-applying",
     "/refusals/reconsideration",
     "/refusals/judicial-review",
+    "/business-immigration",
     "/about/our-team"
    ],
    "internalAll": [
@@ -20998,7 +21037,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 818,
+   "uniqueWords": 911,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-23",

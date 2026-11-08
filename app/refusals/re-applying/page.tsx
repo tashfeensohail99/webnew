@@ -120,7 +120,7 @@ const FAQS = [
   },
   {
     q: 'What happens if I do not disclose a previous refusal?',
-    a: 'The Immigration and Refugee Protection Act requires applicants to answer questions truthfully and to produce the evidence an officer reasonably requires. Withholding a material fact that could induce an error in administering the Act can support a finding of misrepresentation, which carries a period of inadmissibility set out in the Act, including a bar on applying for permanent residence during it, not merely a refusal. Assume the previous application is visible. Hiding a refusal converts a survivable problem into a serious one.',
+    a: 'The Immigration and Refugee Protection Act requires applicants to answer questions truthfully and to produce the evidence an officer reasonably requires. Withholding a material fact that could induce an error in administering the Act can support a finding of misrepresentation, which carries a five-year period of inadmissibility under section 40 of the Act, including a bar on applying for permanent residence during it, not merely a refusal. Assume the previous application is visible. Hiding a refusal converts a survivable problem into a serious one.',
   },
   {
     q: 'Should I ask for reconsideration instead of re-applying?',
@@ -128,7 +128,7 @@ const FAQS = [
   },
   {
     q: 'The refusal seems unfair. Can I challenge it rather than re-apply?',
-    a: 'Possibly. Where the concern is that the decision was legally unreasonable or the process was unfair, the route runs through the Federal Court rather than through another application. That is a legal proceeding with its own deadlines and requirements and it is not a substitute for fixing a weak file. Re-applying does not stop that clock, so if you might want a court to look at the decision, settle that first.',
+    a: 'Possibly. Where the concern is that the decision was legally unreasonable or the process was unfair, the route runs through the Federal Court rather than through another application. That is a legal proceeding with its own requirements and short deadlines (15 days for a matter arising in Canada, 60 days for one arising outside Canada), and it is not a substitute for fixing a weak file. Re-applying does not stop that clock, so if you might want a court to look at the decision, settle that first.',
   },
   {
     q: 'Can you tell me whether my new application will succeed?',
@@ -321,9 +321,9 @@ export default function ReApplyingPage() {
             obliges applicants to answer truthfully and to produce the evidence an officer reasonably
             requires, and withholding a material fact that could induce an error in administering the
             Act can support a finding of misrepresentation. That finding does not simply refuse the
-            application — it carries a fixed period of inadmissibility set out in section 40 of the
-            Act, during which you remain inadmissible and cannot apply for permanent residence. Read the current period at the source
-            rather than taking anyone’s word for it. The refusal you were trying to hide was
+            application — it carries a five-year period of inadmissibility under section 40 of the
+            Act, during which you cannot apply for permanent residence. Read the section itself for
+            when the five years start, rather than taking anyone’s word for it. The refusal you were trying to hide was
             survivable on its own terms; a misrepresentation finding is a different order of problem,
             and it is one a licensed representative should look at before you file anything.
           </p>
@@ -454,7 +454,7 @@ export default function ReApplyingPage() {
         <SectionHeading eyebrow="Where the rules live" title="The primary sources" />
         <Prose>
           <p>
-            We do not publish processing times, fees or waiting periods on this page, because those
+            We do not publish processing times or fees on this page, because those
             figures change and a number that is right today becomes a liability on a page you might
             read next year. Read them at the source on the day you need them.
           </p>

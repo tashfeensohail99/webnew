@@ -116,7 +116,7 @@ const FAQS = [
   },
   {
     q: 'The officer doubted a document. Is that the same as any other refusal?',
-    a: 'No. A concern about the genuineness of a document is a materially more serious matter than an unconvincing study plan, because a finding of misrepresentation carries a period of inadmissibility set by law. If your notes point in that direction, treat it as urgent, do not simply re-file, and get advice from a licensed representative — a Canadian immigration lawyer or an RCIC — before you respond to anything.',
+    a: 'No. A concern about the genuineness of a document is a materially more serious matter than an unconvincing study plan, because a finding of misrepresentation carries a five-year period of inadmissibility under section 40 of the Act. If your notes point in that direction, treat it as urgent, do not simply re-file, and get advice from a licensed representative — a Canadian immigration lawyer or an RCIC — before you respond to anything.',
   },
   {
     q: 'Can you tell me my chances of success on a second application?',
@@ -345,10 +345,10 @@ export default function StudyPermitRefusalsPage() {
             title="Challenge the decision"
           >
             A court application about whether the decision was reasonable and fairly made — not a
-            second chance to present a better file. It runs to strict filing deadlines that differ
-            depending on where you applied from, and it is work for a Canadian lawyer rather than a
-            consultancy. Check the current deadline on the Federal Court’s own materials and take
-            legal advice early.
+            second chance to present a better file. The Act sets strict filing deadlines: 15 days for
+            a matter arising in Canada and 60 days for one arising outside Canada. It is work for a
+            Canadian lawyer rather than a consultancy, so take legal advice early and have the lawyer
+            confirm which period applies.
           </FeatureCard>
         </div>
         <Prose>
@@ -408,9 +408,18 @@ export default function StudyPermitRefusalsPage() {
         <SectionHeading eyebrow="Where the current details live" title="Requirements, forms and deadlines" />
         <Prose>
           <p>
-            Fees, processing standards, form versions and the deadlines that apply to court
-            applications all change. We deliberately do not print those figures here, because a number
-            that is correct today is a liability on a page you might read next year.
+            Fees, processing standards and form versions all change. We deliberately do not print
+            those figures here, because a number that is correct today is a liability on a page you
+            might read next year. The court filing periods above are different: they are set by{' '}
+            <a
+              href="https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-72.html"
+              className="font-semibold text-accent-500 link-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              section 72 of the Immigration and Refugee Protection Act
+            </a>
+            , read at the source on 8 November 2026.
           </p>
           <p>
             IRCC publishes the current study permit requirements and application steps on{' '}
