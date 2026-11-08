@@ -47,7 +47,7 @@ const THREE_TESTS = [
     icon: 'doc' as const,
     kicker: 'Test three',
     title: 'Its origin is explainable',
-    body: 'The balance has a history that matches the story you have told about who your family is and what they do. In our experience this is the test applicants prepare for least, and it is worth as much attention as the amount itself.',
+    body: 'The balance has a history that matches the story you have told about who your family is and what they do. Prepare for this test as carefully as you prepare the amount itself.',
   },
 ];
 
@@ -62,7 +62,7 @@ const EVIDENCE = [
     icon: 'doc' as const,
     kicker: 'Held at home',
     title: 'Bank statements and account histories',
-    body: 'Statements covering a meaningful run of months, showing movement consistent with declared income — not a single closing-balance certificate issued the week you applied.',
+    body: 'Statements covering a meaningful run of months — IRCC lists recent bank statements among its common proofs — showing movement consistent with declared income — not a single closing-balance certificate issued the week you applied.',
   },
   {
     icon: 'scale' as const,
@@ -140,7 +140,7 @@ const FAQS = [
   },
   {
     q: 'I was refused for insufficient funds. Can I just add more money and reapply?',
-    a: 'Sometimes, but usually the refusal was about the origin or the availability of the money rather than its quantity, and adding more of the same kind of evidence changes nothing. Order the officer’s notes and read what was actually said before you reapply. See our pages on GCMS notes and on re-applying.',
+    a: 'Sometimes, but usually the refusal was about the origin or the availability of the money rather than its quantity, and adding more of the same kind of evidence changes nothing. Read the officer decision note IRCC now sends with study permit refusals, and order the fuller notes if you need them, before you reapply. See our pages on GCMS notes and on re-applying.',
   },
   {
     q: 'Does showing strong funds mean I will be approved?',
@@ -328,7 +328,7 @@ export default function ProofOfFundsPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where these applications go wrong"
         />
         <Prose>
           <p>
@@ -424,7 +424,7 @@ export default function ProofOfFundsPage() {
           <p>
             The current amount, and the current document checklist, are published by IRCC on its{' '}
             <a
-              href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html"
+              href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html"
               className="font-semibold text-accent-500 link-underline"
               rel="noopener noreferrer"
               target="_blank"

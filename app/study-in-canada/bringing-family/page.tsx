@@ -18,8 +18,9 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  *
  * The belief this page has to correct: that a Canadian study permit
  * automatically comes with a work permit for the spouse. It does not, and the
- * grounds on which a spouse may qualify have been narrowed. Deliberately no
- * programme list, no fees, no fund amounts, no processing times — those are the
+ * grounds on which a spouse may qualify have been narrowed. IRCC's programme
+ * categories are named with a date. Deliberately no fees, no fund amounts and no
+ * processing times — those are the
  * parts that change and the parts people wrongly rely on.
  */
 export const metadata: Metadata = {
@@ -92,11 +93,11 @@ const FAQS = [
   },
   {
     q: 'Which programmes let a spouse qualify for an open work permit?',
-    a: 'IRCC defines this by study level, programme type and institution, and it has changed more than once in recent years. We will not print the list here, because a list that is correct today becomes a costly mistake on a page you read next year. Check the current criteria on IRCC’s own page for spouses of students before you commit to a programme, and re-check before you file.',
+    a: 'As of 8 November 2026, IRCC lists master’s degree programmes above a minimum length it sets, doctoral programmes, certain other eligible programmes it names, and listed professional degrees at a university: dentistry, law, medicine, optometry, pharmacy, veterinary medicine, nursing, education and engineering. Other programmes do not qualify a spouse for this permit. The list changed on 21 January 2025, so check IRCC’s page for spouses of students before you commit to a programme, and re-check before you file.',
   },
   {
     q: 'My spouse was approved for an open work permit before the rules changed. Is it still valid?',
-    a: 'A permit that was issued remains valid on its own terms until it expires. The question that catches people is renewal: an extension is assessed against the criteria in force at the time you apply, not the ones that applied when the first permit was granted. Plan the second permit before the first one runs out.',
+    a: 'A permit that was issued remains valid on its own terms until it expires. The question that catches people is renewal. IRCC says the spouse can extend under this route only if you hold a valid study permit, are in Canada, are a full-time student in a PGWP-eligible programme at a designated learning institution, and are not in the last term of your programme. The permit cannot outlast your study permit. Plan the second permit before the first one runs out.',
   },
   {
     q: 'Does my child need their own study permit?',
@@ -108,7 +109,7 @@ const FAQS = [
   },
   {
     q: 'Will bringing my family make my own study permit harder to get?',
-    a: 'It changes what an officer is assessing. The financial requirement is larger, and the officer is weighing whether an entire household will leave at the end of the authorised stay. Those two grounds are the ones we most often see cited on the refusal letters clients bring us. It is not a reason to hide family members — that is misrepresentation — but it is a reason to prepare the file properly.',
+    a: 'It changes what an officer is assessing. The financial requirement is larger, and the officer is weighing whether an entire household will leave at the end of the authorised stay. It is not a reason to hide family members — that is misrepresentation — but it is a reason to prepare the file properly.',
   },
   {
     q: 'Can I bring my parents on my study permit?',
@@ -248,7 +249,7 @@ export default function BringingFamilyPage() {
                 ['What kind of institution?', 'The type of institution delivering the programme matters, not only the credential printed on the certificate.'],
                 ['How long is it?', 'Programme duration is part of how eligibility is defined for some categories, and short programmes tend to fall outside.'],
                 ['Where are you in the programme?', 'Timing within your studies can affect a spouse’s eligibility, particularly near completion or on an extension.'],
-                ['What happens at renewal?', 'An extension is judged against the rules in force when you apply for it, not when the first permit was issued.'],
+                ['What happens at renewal?', 'IRCC has a separate test for extensions, including that you are not in your last term, and the spouse’s permit cannot outlast your study permit.'],
               ].map(([term, def]) => (
                 <li key={term} className="flex gap-4">
                   <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gold-500 text-ink-950">
@@ -303,7 +304,7 @@ export default function BringingFamilyPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where these applications go wrong"
         />
         <Prose>
           <p>
@@ -335,8 +336,9 @@ export default function BringingFamilyPage() {
             only one member of the household, are a routine cause of people losing status quietly.
           </p>
           <p>
-            <strong>Assuming a refusal for one is a refusal for all — or is unreviewable.</strong> It is
-            neither. Where a family member is refused,{' '}
+            <strong>Assuming a family member’s refusal ends everything.</strong> It does not
+            necessarily sink the student’s application, although a refusal of the student generally
+            does end the family’s. Where a family member is refused,{' '}
             <Link href="/refusals/gcms-notes" className="font-semibold text-accent-500 link-underline">
               the officer’s notes
             </Link>{' '}
@@ -413,9 +415,9 @@ export default function BringingFamilyPage() {
         />
         <Prose>
           <p>
-            Spousal work permit criteria, the financial requirement for accompanying family members,
-            application fees and processing times all change, and the criteria for spouses of students
-            have changed more than most. We deliberately do not publish those figures or lists here,
+            The financial requirement for accompanying family members, application fees and processing
+            times all change, and the criteria for spouses of students have changed more than most. We
+            deliberately do not publish those figures here,
             because something that is right today becomes a liability on a page you read next year.
           </p>
           <p>
@@ -439,7 +441,7 @@ export default function BringingFamilyPage() {
             </a>
             . Whether a given family member needs a visitor visa or an eTA to enter is set out on{' '}
             <a
-              href="https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/entry-requirements-by-country.html"
+              href="https://ircc.canada.ca/english/visit/visas.asp"
               className="font-semibold text-accent-500 link-underline"
               rel="noopener noreferrer"
               target="_blank"

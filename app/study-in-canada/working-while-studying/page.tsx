@@ -20,14 +20,13 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * ON THE STUDY PERMIT, not a right that comes with being a student. Everything
  * else — on-campus, off-campus, placements, breaks — is downstream of that.
  *
- * Deliberately no weekly hour figure anywhere on this page. The limit has moved
- * more than once, sources contradict each other, and a stale number here would
- * be read as advice. IRCC is linked instead.
+ * The weekly hour limit is printed because it is set in the Regulations, s.186(v).
+ * It has moved more than once, so re-check it against lib/facts.ts every month.
  */
 export const metadata: Metadata = {
-  title: 'Working While Studying in Canada',
+  title: 'Working While Studying in Canada: Hour Limits',
   description:
-    'How work permission follows the conditions on your study permit: on-campus and off-campus work, placements, and why exceeding them breaches status.',
+    'How many hours international students can work in Canada, when the limit lifts, on-campus and co-op rules, and how students lose status by overstepping.',
   alternates: { canonical: '/study-in-canada/working-while-studying' },
 };
 
@@ -50,7 +49,7 @@ const KINDS_OF_WORK = [
     icon: 'doc' as const,
     kicker: 'Part of the programme',
     title: 'Co-op, internship, practicum',
-    body: 'Work that your programme requires you to complete in order to graduate. This is treated differently from an ordinary job, because it is coursework that happens to be paid. Whether a separate document is needed on top of the study permit depends on your level of study and on IRCC policy in force at the time — confirm it on the IRCC page linked below rather than from older guidance.',
+    body: 'Work that your programme requires you to complete in order to graduate. This is treated differently from an ordinary job, because it is coursework that happens to be paid. Since 1 April 2026, eligible post-secondary students no longer need a separate work permit for a placement their programme requires. Check IRCC’s criteria, linked below, rather than older guidance.',
   },
   {
     icon: 'permit' as const,
@@ -86,7 +85,7 @@ const CONDITION_CHECKS = [
 const FAQS = [
   {
     q: 'How many hours a week can I work?',
-    a: 'There is a weekly ceiling during academic sessions and a different treatment during scheduled breaks, but the figure has changed more than once in recent years and secondary sources routinely quote outdated numbers. We will not print one here that you might rely on a year from now. Read the current limit on the IRCC page linked on this page, on the day you need it, and re-check it before each academic year.',
+    a: 'As of 8 November 2026, up to 24 hours a week off campus during regular academic sessions, under section 186(v) of the Immigration and Refugee Protection Regulations. IRCC says there is no hour limit during scheduled breaks and none on campus. This applies only if you meet the eligibility conditions and your permit carries the work condition. If an older permit says 20 hours, IRCC says you can work up to 24 as long as you stay eligible. The figure has changed more than once, so re-check it on the IRCC page linked here before each academic year.',
   },
   {
     q: 'Does my study permit automatically let me work?',
@@ -94,7 +93,7 @@ const FAQS = [
   },
   {
     q: 'Can I work more hours during summer or winter break?',
-    a: 'Scheduled breaks between academic sessions are treated differently from sessions in progress, provided you were studying full-time before the break and are enrolled to continue after it. A break you take for your own reasons is not a scheduled break, and a break at the very start or very end of your programme is not one either.',
+    a: 'IRCC says there is no hour limit during a scheduled break, provided you were studying full-time before the break and are enrolled to continue after it. A break you take for your own reasons is not a scheduled break, and a break at the very start or very end of your programme is not one either.',
   },
   {
     q: 'What counts as on-campus work?',
@@ -102,7 +101,7 @@ const FAQS = [
   },
   {
     q: 'Do I need a separate permit for my co-op or internship?',
-    a: 'It depends on your level of study and on the policy in force when the placement starts — this is an area IRCC has changed, and a great deal of published advice about it is now out of date. The general shape is that a placement genuinely required to complete the programme, and forming only part of it rather than the bulk, is assessed differently from an ordinary job. Whether that means your study permit is enough, or a separate document is still needed, must be read on IRCC’s own student-work pages and confirmed with your institution’s international student office before the placement starts — not after.',
+    a: 'As of 1 April 2026, eligible post-secondary students no longer need a separate work permit for a placement their programme requires, such as a co-op or internship, and may work for employers approved by their school as part of those requirements. A great deal of published advice about this is now out of date. Check IRCC’s full criteria on its student-work pages and confirm with your institution’s international student office before the placement starts — not after. If you are not a post-secondary student, check whether a separate permit is still needed.',
   },
   {
     q: 'What actually happens if I work beyond my conditions?',
@@ -186,15 +185,26 @@ export default function WorkingWhileStudyingPage() {
           ))}
         </div>
         <div className="mt-10">
-          <Callout title="We do not publish the weekly hour limit here">
+          <Callout title="The weekly limit, as of 8 November 2026">
             <p>
-              The ceiling on off-campus hours during an academic session has been changed more than
-              once in recent years, and a great deal of what is written about it online — including on
-              consultancy sites and student forums — is out of date. Sources currently in circulation
-              contradict each other outright.
+              During regular academic sessions you can work up to <strong>24 hours a week</strong> off
+              campus, under{' '}
+              <a
+                href="https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-186.html"
+                className="font-semibold text-accent-500 link-underline"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                section 186(v) of the Regulations
+              </a>
+              . IRCC says there is no hour limit during scheduled breaks and none on campus. If your
+              permit still says 20 hours, IRCC says you can work up to 24 as long as you stay eligible.
+              A part-time student can work off campus only if they are in the last semester of their
+              programme and meet IRCC’s other conditions.
             </p>
             <p>
-              We will not add another number to that pile. IRCC publishes the current limit on its own{' '}
+              The limit has changed more than once, and much of what is written about it online is out
+              of date. IRCC publishes the current limit on its own{' '}
               <a
                 href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/work-off-campus.html"
                 className="font-semibold text-accent-500 link-underline"
@@ -273,10 +283,11 @@ export default function WorkingWhileStudyingPage() {
           <p>
             Because the work is part of the curriculum, it is treated separately from ordinary
             off-campus employment. For a long time it required its own document, applied for alongside
-            or after the study permit. IRCC has since revised that position, and it has not applied the
-            same way at every level of study — so this is precisely the point on which older advice,
-            including advice from people who studied in Canada a few years ago, goes wrong. Whether a
-            separate permit is needed for your placement is a question to answer today, from{' '}
+            or after the study permit. Since 1 April 2026, eligible post-secondary students no longer
+            need a separate work permit for a placement their programme requires, and may work for
+            employers approved by their school. Older advice, including from people who studied in
+            Canada a few years ago, is now wrong on this point. If you are not a post-secondary student,
+            or are unsure you meet the criteria, check{' '}
             <a
               href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work.html"
               className="font-semibold text-accent-500 link-underline"
@@ -285,7 +296,7 @@ export default function WorkingWhileStudyingPage() {
             >
               IRCC’s own student-work pages
             </a>
-            , not from anything written a year ago — including this page.
+            .
           </p>
           <p>
             The conditions that have remained stable in kind are these: the placement must be genuinely
@@ -351,7 +362,7 @@ export default function WorkingWhileStudyingPage() {
             before you accept anything.
           </p>
           <p>
-            <strong>Prioritising the job over the studies.</strong> The most damaging pattern we see is
+            <strong>Prioritising the job over the studies.</strong> One of the most damaging patterns is
             not a technical breach at all. It is a student working the maximum permitted hours,
             failing terms, losing full-time enrolment, and losing both the work permission and the
             study permit that depended on it. The permit exists to let you study.
@@ -365,8 +376,8 @@ export default function WorkingWhileStudyingPage() {
         <div className="mt-8">
           <Callout title="If the plan is to fund the degree from part-time work, the plan is wrong">
             <p>
-              We are asked regularly whether a student can cover tuition and living costs from
-              permitted work in Canada. Realistically, no. Permitted student work is part-time during
+              Can a student cover tuition and living costs from permitted work in Canada?
+              Realistically, no. Permitted student work is part-time during
               sessions, usually at entry-level wages, and Canadian tuition for international students
               plus rent in Toronto, Vancouver or Mississauga is not a part-time-wage problem. Students
               who arrive on that assumption tend to end up either in financial trouble or working
@@ -406,7 +417,8 @@ export default function WorkingWhileStudyingPage() {
           <p>
             Hour ceilings, placement-permit requirements and eligibility criteria for off-campus work
             are all revised from time to time, sometimes with little notice and sometimes mid-academic
-            year. We publish the structure here and deliberately leave the figures to IRCC.
+            year. The weekly limit on this page was read at section 186(v) of the Regulations on
+            8 November 2026. Check it before you rely on it.
           </p>
           <p>
             IRCC sets out the current position on{' '}

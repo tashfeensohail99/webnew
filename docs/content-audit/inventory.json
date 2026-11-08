@@ -1,7 +1,7 @@
 {
  "summary": {
   "base": "https://tashfeenimmigrationsolutions.com",
-  "crawled": "2026-11-08T13:00:43.247Z",
+  "crawled": "2026-11-08T13:19:44.964Z",
   "total": 93,
   "ok": 93,
   "inSitemap": 93,
@@ -9275,12 +9275,12 @@
    "ogTitle": "Provincial Nominee Programs (PNP) | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
-    "A province nominates you. Ottawa decides you."
+    "Provincial Nominee Programs: a province nominates, IRCC decides."
    ],
    "headings": [
     {
      "level": 1,
-     "text": "A province nominates you. Ottawa decides you."
+     "text": "Provincial Nominee Programs: a province nominates, IRCC decides."
     },
     {
      "level": 2,
@@ -9292,7 +9292,7 @@
     },
     {
      "level": 3,
-     "text": "Decides you"
+     "text": "Makes the final decision"
     },
     {
      "level": 3,
@@ -9300,7 +9300,7 @@
     },
     {
      "level": 3,
-     "text": "Run on paper, separately"
+     "text": "Run outside Express Entry"
     },
     {
      "level": 2,
@@ -9312,7 +9312,7 @@
     },
     {
      "level": 3,
-     "text": "Outside Express Entry, on paper"
+     "text": "Outside Express Entry"
     },
     {
      "level": 2,
@@ -9356,7 +9356,7 @@
     },
     {
      "level": 2,
-     "text": "Why we don’t publish a list of open streams"
+     "text": "Our guide to each province’s program"
     },
     {
      "level": 2,
@@ -9368,8 +9368,8 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2114,
-   "avgSentence": 15,
+   "wordCount": 2140,
+   "avgSentence": 16,
    "hits": {
     "outcome": 4,
     "superlative": 0,
@@ -9409,6 +9409,15 @@
     "/book-consultation",
     "/work-permit-canada",
     "/canada-visa-refused",
+    "/pnp/alberta",
+    "/pnp/british-columbia",
+    "/pnp/manitoba",
+    "/pnp/new-brunswick",
+    "/pnp/newfoundland-labrador",
+    "/pnp/nova-scotia",
+    "/pnp/ontario",
+    "/pnp/prince-edward-island",
+    "/pnp/saskatchewan",
     "/no-guarantee-policy",
     "/fees",
     "/about/our-team"
@@ -9506,9 +9515,11 @@
    "external": [
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/submit-profile/rounds-invitations.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html",
-    "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/apply.html",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/non-express-entry.html",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/permanent-residence/economic-classes/provincial-nominees/base-determining-membership-class.html",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/criteria-comprehensive-ranking-system/grid.html",
-    "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/fees.html",
+    "https://ircc.canada.ca/english/information/fees/fees.asp",
     "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20know%20whether%20a%20Provincial%20Nominee%20Program%20is%20a%20realistic%20route%20for%20me.%20%5BRef%3A%20WP-1P8Y%5D"
    ],
    "images": 0,
@@ -9546,7 +9557,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2018,
+   "uniqueWords": 2050,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -9648,7 +9659,7 @@
     },
     {
      "level": 2,
-     "text": "The failure patterns we see from Pakistan"
+     "text": "Where these applications go wrong"
     },
     {
      "level": 2,
@@ -9668,7 +9679,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2714,
+   "wordCount": 2704,
    "avgSentence": 18,
    "hits": {
     "outcome": 4,
@@ -9811,11 +9822,12 @@
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
-    "/business-immigration"
+    "/business-immigration",
+    "/pnp"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2600,
+   "uniqueWords": 2592,
    "repeatedBlocks": 1,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -9925,7 +9937,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2307,
+   "wordCount": 2298,
    "avgSentence": 18,
    "hits": {
     "outcome": 2,
@@ -9962,7 +9974,7 @@
    },
    "internalInCopy": [
     "/book-consultation",
-    "/tools/crs-calculator",
+    "/tools/fsw-67-calculator",
     "/express-entry",
     "/pnp",
     "/no-guarantee-policy",
@@ -10059,7 +10071,8 @@
     "/terms"
    ],
    "external": [
-    "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/comprehensive-ranking-system.html",
+    "https://www.welcomebc.ca/immigrate-to-b-c/for-workers",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score/crs-criteria.html",
     "https://www.welcomebc.ca/immigrate-to-b-c/about-the-bc-provincial-nominee-program",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html",
     "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20understand%20whether%20the%20BC%20PNP%20is%20realistic%20in%20my%20situation.%20%5BRef%3A%20WP-1V4S%5D"
@@ -10067,11 +10080,12 @@
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
-    "/business-immigration"
+    "/business-immigration",
+    "/pnp"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2184,
+   "uniqueWords": 2176,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -10165,7 +10179,7 @@
     },
     {
      "level": 2,
-     "text": "The failure patterns we see from Pakistan"
+     "text": "Where these applications go wrong"
     },
     {
      "level": 2,
@@ -10185,7 +10199,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2507,
+   "wordCount": 2589,
    "avgSentence": 19,
    "hits": {
     "outcome": 3,
@@ -10323,6 +10337,7 @@
     "/terms"
    ],
    "external": [
+    "https://immigratemanitoba.com/draws/",
     "https://immigratemanitoba.com/",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html",
     "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20know%20whether%20the%20Manitoba%20Provincial%20Nominee%20Program%20is%20realistic%20in%20my%20situation.%20%5BRef%3A%20WP-ZZFQ%5D"
@@ -10330,11 +10345,12 @@
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
-    "/business-immigration"
+    "/business-immigration",
+    "/pnp"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2414,
+   "uniqueWords": 2498,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -10436,7 +10452,7 @@
     },
     {
      "level": 2,
-     "text": "The failure patterns we see from Pakistan"
+     "text": "Where these applications go wrong"
     },
     {
      "level": 2,
@@ -10456,7 +10472,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2676,
+   "wordCount": 2642,
    "avgSentence": 18,
    "hits": {
     "outcome": 1,
@@ -10593,7 +10609,7 @@
    "external": [
     "https://www.statcan.gc.ca/",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/criteria-comprehensive-ranking-system.html",
-    "https://www2.gnb.ca/content/gnb/en/corporate/promo/immigration/immigrating-to-nb.html",
+    "https://www.gnb.ca/en/topic/family-home-community/immigration/provincial-nominee-program.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html",
     "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20know%20whether%20a%20New%20Brunswick%20provincial%20nomination%20is%20realistic%20in%20my%20situation.%20%5BRef%3A%20WP-11P1%5D"
    ],
@@ -10601,11 +10617,12 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/atlantic-immigration-program",
-    "/business-immigration"
+    "/business-immigration",
+    "/pnp"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2555,
+   "uniqueWords": 2524,
    "repeatedBlocks": 1,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -10679,11 +10696,11 @@
     },
     {
      "level": 3,
-     "text": "Register an expression of interest where one is required"
+     "text": "Register an expression of interest"
     },
     {
      "level": 3,
-     "text": "File the nomination application on invitation or directly"
+     "text": "File the nomination application if invited"
     },
     {
      "level": 3,
@@ -10707,7 +10724,7 @@
     },
     {
      "level": 2,
-     "text": "The failure patterns we see from Pakistan"
+     "text": "Where these applications go wrong"
     },
     {
      "level": 2,
@@ -10727,7 +10744,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2518,
+   "wordCount": 2560,
    "avgSentence": 18,
    "hits": {
     "outcome": 2,
@@ -10871,11 +10888,12 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/atlantic-immigration-program",
-    "/business-immigration"
+    "/business-immigration",
+    "/pnp"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2373,
+   "uniqueWords": 2426,
    "repeatedBlocks": 1,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -10890,10 +10908,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "Nova Scotia Provincial Nomination (NSNP) | Tashfeen",
+   "title": "Nova Scotia PNP (NSNP): How Nomination Works | Tashfeen",
    "description": "How the Nova Scotia Nominee Program works: expression of interest, Express Entry-aligned and base nomination, and the intent-to-settle expectation.",
    "canonical": "https://tashfeenimmigrationsolutions.com/pnp/nova-scotia",
-   "ogTitle": "Nova Scotia Provincial Nomination (NSNP) | Tashfeen",
+   "ogTitle": "Nova Scotia PNP (NSNP): How Nomination Works | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "Nova Scotia nominates people who intend to stay"
@@ -10969,7 +10987,7 @@
     },
     {
      "level": 2,
-     "text": "The failure patterns we see from Pakistan"
+     "text": "Where these applications go wrong"
     },
     {
      "level": 2,
@@ -10989,8 +11007,8 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2264,
-   "avgSentence": 18,
+   "wordCount": 2270,
+   "avgSentence": 19,
    "hits": {
     "outcome": 2,
     "superlative": 0,
@@ -11131,11 +11149,12 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/atlantic-immigration-program",
-    "/business-immigration"
+    "/business-immigration",
+    "/pnp"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2147,
+   "uniqueWords": 2156,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -11151,7 +11170,7 @@
    "robotsHeader": null,
    "metaRobots": "index, follow",
    "title": "Ontario Provincial Nomination (OINP) | Tashfeen",
-   "description": "How Ontario’s nominee programme works: what the province looks for, enhanced versus base nomination, and the intent-to-settle expectation.",
+   "description": "Ontario replaced its OINP streams in 2026 with one, the Ontario Workforce Priority stream. What that means from Pakistan, and who it does not suit.",
    "canonical": "https://tashfeenimmigrationsolutions.com/pnp/ontario",
    "ogTitle": "Ontario Provincial Nomination (OINP) | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
@@ -11177,35 +11196,35 @@
     },
     {
      "level": 2,
-     "text": "Interest, or direct application"
+     "text": "Invited from a pool"
     },
     {
      "level": 2,
-     "text": "The kinds of stream a province runs"
+     "text": "One open stream: Ontario Workforce Priority"
     },
     {
      "level": 3,
-     "text": "Employer-driven"
+     "text": "A job offer from an Ontario employer"
     },
     {
      "level": 3,
-     "text": "In-demand occupation"
+     "text": "An expression of interest"
     },
     {
      "level": 3,
-     "text": "Graduate and student"
+     "text": "Points for the job and for you"
     },
     {
      "level": 3,
-     "text": "Entrepreneur and investment"
+     "text": "Set by the TEER level of the job"
     },
     {
      "level": 3,
-     "text": "Francophone"
+     "text": "An option for TEER 0 to 3"
     },
     {
      "level": 3,
-     "text": "Regional and community"
+     "text": "No other stream"
     },
     {
      "level": 2,
@@ -11213,7 +11232,7 @@
     },
     {
      "level": 3,
-     "text": "Establish the connection first"
+     "text": "Find an Ontario employer first"
     },
     {
      "level": 3,
@@ -11221,11 +11240,11 @@
     },
     {
      "level": 3,
-     "text": "Register interest, or apply directly"
+     "text": "Your employer submits, then you register interest"
     },
     {
      "level": 3,
-     "text": "Submit the provincial application"
+     "text": "If invited, both of you apply"
     },
     {
      "level": 3,
@@ -11237,7 +11256,7 @@
     },
     {
      "level": 2,
-     "text": "The failure patterns we see from Pakistan"
+     "text": "Where these applications go wrong"
     },
     {
      "level": 2,
@@ -11257,7 +11276,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2531,
+   "wordCount": 2511,
    "avgSentence": 17,
    "hits": {
     "outcome": 2,
@@ -11396,6 +11415,7 @@
    ],
    "external": [
     "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/reports-statistics.html",
+    "https://www.ontario.ca/page/ontario-workforce-priority-stream",
     "https://www.ontario.ca/page/2026-ontario-immigrant-nominee-program-updates",
     "https://www.ontario.ca/page/ontario-immigrant-nominee-program-oinp",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html",
@@ -11407,11 +11427,12 @@
     "/",
     "/blog/ontario-higher-earners-2026",
     "/business-immigration",
+    "/pnp",
     "/pnp/manitoba"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2426,
+   "uniqueWords": 2384,
    "repeatedBlocks": 1,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -11525,7 +11546,7 @@
     },
     {
      "level": 2,
-     "text": "The failure patterns we see"
+     "text": "Where these applications go wrong"
     },
     {
      "level": 2,
@@ -11541,7 +11562,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2212,
+   "wordCount": 2191,
    "avgSentence": 19,
    "hits": {
     "outcome": 3,
@@ -11580,7 +11601,7 @@
    "internalInCopy": [
     "/book-consultation",
     "/express-entry",
-    "/tools/crs-calculator",
+    "/tools/fsw-67-calculator",
     "/atlantic-immigration-program",
     "/pnp",
     "/no-guarantee-policy",
@@ -11686,11 +11707,12 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/atlantic-immigration-program",
-    "/business-immigration"
+    "/business-immigration",
+    "/pnp"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2094,
+   "uniqueWords": 2072,
    "repeatedBlocks": 1,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -11740,7 +11762,7 @@
     },
     {
      "level": 3,
-     "text": "You will invest and operate"
+     "text": "Closed to new applicants"
     },
     {
      "level": 2,
@@ -11784,7 +11806,7 @@
     },
     {
      "level": 2,
-     "text": "The failure patterns we see from Pakistan"
+     "text": "Where these applications go wrong"
     },
     {
      "level": 2,
@@ -11804,14 +11826,14 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2615,
-   "avgSentence": 19,
+   "wordCount": 2621,
+   "avgSentence": 18,
    "hits": {
     "outcome": 3,
     "superlative": 0,
     "firmClaim": 1,
     "stock": 0,
-    "volatile": 0,
+    "volatile": 1,
     "placeholder": 0
    },
    "hitLines": {
@@ -11822,6 +11844,9 @@
     ],
     "firmClaim": [
      "The province tends to favour occupations its employers genuinely cannot fill locally, skilled trades and licensed professions among them, and it gives real weight to connection — people who have studied there, worked there, or have close family there."
+    ],
+    "volatile": [
+     "Entrepreneur and farm Closed to new applicants Saskatchewan permanently closed its Entrepreneur and Farm pathways on 27 March 2025."
     ]
    },
    "schema": [
@@ -11943,6 +11968,7 @@
     "/terms"
    ],
    "external": [
+    "https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs",
     "https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html",
     "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20know%20whether%20a%20Saskatchewan%20provincial%20nomination%20is%20realistic%20in%20my%20situation.%20%5BRef%3A%20WP-14FV%5D"
@@ -11951,11 +11977,12 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/business-immigration",
+    "/pnp",
     "/pnp/manitoba"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2507,
+   "uniqueWords": 2521,
    "repeatedBlocks": 1,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -17497,11 +17524,9 @@
     "/express-entry",
     "/express-entry/draws",
     "/express-entry/federal-skilled-worker",
-    "/pnp/british-columbia",
     "/pnp/manitoba",
     "/pnp/new-brunswick",
     "/pnp/newfoundland-labrador",
-    "/pnp/prince-edward-island",
     "/pnp/saskatchewan",
     "/tools",
     "/tools/clb-converter",
@@ -17710,6 +17735,8 @@
    "inboundCopy": [
     "/",
     "/express-entry/federal-skilled-worker",
+    "/pnp/british-columbia",
+    "/pnp/prince-edward-island",
     "/tools"
    ],
    "inboundAll": 92,

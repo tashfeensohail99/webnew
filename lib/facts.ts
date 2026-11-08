@@ -165,6 +165,67 @@ export const FACTS: Record<string, Fact> = {
       'Printed on the refusal pages on 8 Nov 2026 on the site owner’s instruction. Read at source, but the wording has not been reviewed by a lawyer.',
   },
 
+  // ── CANADA: STUDY (re-check monthly) ───────────────────────────────────────
+  caStudyPermitInvalidity: {
+    id: 'ca.study.permit-invalid',
+    claim:
+      'A study permit becomes invalid on the first of: 90 days after the holder completes their studies; the day the holder is no longer enrolled at the DLI named in the permit, other than by completing their studies; cancellation; and its expiry.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s.222(1)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-222.html',
+    checked: '2026-11-08',
+    needsLawyer: true,
+    note: 'Printed on the study pages on 8 Nov 2026 under the site owner’s rule on figures set in law. Wording not reviewed by a lawyer.',
+  },
+  caRestorationOfStatus: {
+    id: 'ca.study.restoration',
+    claim:
+      'On application within 90 days after losing temporary resident status, an officer shall restore status if, following an examination, the person meets the initial requirements for their stay, has not breached other conditions and is not subject to a s.22.1 declaration. Status cannot be restored for a student not complying with s.220.1(1).',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s.182',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-182.html',
+    checked: '2026-11-08',
+    needsLawyer: true,
+    note: 'Printed on /study-in-canada/study-permit-extension on 8 Nov 2026 under the site owner’s rule on figures set in law. The audit asked for a lawyer to approve this wording.',
+  },
+  caOffCampusHours: {
+    id: 'ca.study.off-campus-hours',
+    claim:
+      'Eligible students may work off campus up to 24 hours per week during a regular academic session. IRCC says there is no hour limit during scheduled breaks and none on campus.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s.186(v); IRCC, Work off campus and Work on campus',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-186.html',
+    checked: '2026-11-08',
+    needsLawyer: true,
+    note: 'Printed on the study pages on 8 Nov 2026 under the site owner’s rule on figures set in law.',
+  },
+  caCoopPermitRemoved: {
+    id: 'ca.study.coop-permit',
+    claim: 'As of 1 April 2026, eligible post-secondary students no longer need a separate work permit for work placements their program requires.',
+    provenance: 'primary',
+    source: 'IRCC notice on simplifying the co-op work permit requirement',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/simplifying-co-op-work-permit-requirement-post-secondary-international-students.html',
+    checked: '2026-11-08',
+  },
+  caPalExemptionsAndReuse: {
+    id: 'ca.study.pal',
+    claim:
+      'No attestation letter is needed for degree-granting master’s or doctoral programs at a public DLI starting 1 January 2026, among other exemptions. A letter is valid until the end of its cap year unless it shows an earlier date, and cannot be reused after an application was approved or refused.',
+    provenance: 'primary',
+    source: 'IRCC, Provincial attestation letters',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/provincial-attestation-letter.html',
+    checked: '2026-11-08',
+  },
+  caStudentSpouseWorkPermit: {
+    id: 'ca.study.spouse-owp',
+    claim:
+      'Since 21 January 2025 a student’s spouse may qualify for an open work permit where the student is in a master’s program above a minimum length, a doctoral program, a listed eligible program or a listed professional degree at a university. Extensions need a valid study permit, full-time study in a PGWP-eligible program at a DLI, not being in the last term, and cannot outlast the study permit.',
+    provenance: 'primary',
+    source: 'IRCC, Help your spouse or common-law partner work in Canada',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/help-your-spouse-common-law-partner-work-canada.html',
+    checked: '2026-11-08',
+  },
+
   // ── CANADA: PROVINCIAL NOMINEE PROGRAMS (re-check monthly) ─────────────────
   caPnpIntentToReside: {
     id: 'ca.pnp.intent-to-reside',

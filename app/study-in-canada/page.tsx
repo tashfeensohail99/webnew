@@ -24,7 +24,7 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * name the thing and send the reader to IRCC or the province.
  */
 export const metadata: Metadata = {
-  title: 'Study in Canada',
+  title: 'Study in Canada from Pakistan: Full Route',
   description:
     'The Canadian study route end to end: choosing a DLI, the attestation letter, the study permit, proof of funds, working while studying, and the PGWP.',
   alternates: { canonical: '/study-in-canada' },
@@ -176,9 +176,9 @@ const FAQS = [
     q: 'Can I work while I study?',
     a: (
       <>
-        Generally yes — eligible full-time students at eligible institutions may work off campus
-        during class terms up to a weekly cap set by IRCC, and typically full time during scheduled
-        breaks. That cap has changed, so check the current number on{' '}
+        Generally yes — eligible full-time students at eligible institutions may work off campus up
+        to 24 hours a week during class terms (section 186(v) of the Regulations, read on 8 November 2026),
+        and IRCC says there is no hour limit during scheduled breaks. Check{' '}
         <Src href={IRCC.workOffCampus}>IRCC’s work off campus page</Src> rather than assuming.
         Working beyond what your permit allows is a status violation, not a technicality.
       </>
@@ -268,7 +268,7 @@ export default function StudyInCanadaPage() {
               places. An officer who does not believe you are a genuine student refuses the permit,
               and a refusal sits on your record for years. And if the permit is granted, you have
               bought a qualification you did not want, at foreign-student prices, with no PR at the
-              end of it. This is the single most expensive mistake we see Pakistani families make.
+              end of it. It is an expensive mistake.
             </p>
           </Callout>
         </div>
@@ -289,7 +289,7 @@ export default function StudyInCanadaPage() {
                 An officer is deciding two things. First, whether you meet the requirements: a real
                 acceptance from a designated institution, an attestation letter where one is
                 required, the money to pay for it, and admissibility on medical and security grounds.
-                Second, and this is where most Pakistani applications fail, whether you are a genuine
+                Second, and this is where many applications fail, whether you are a genuine
                 student who will leave at the end of the authorised stay.
               </p>
               <p>
@@ -313,7 +313,7 @@ export default function StudyInCanadaPage() {
                 ],
                 [
                   'Ties to Pakistan',
-                  'Family, property, employment, a business — the reasons you have to come back. Weak ties are the most common reason a genuine-student test is failed.',
+                  'Family, property, employment, a business — the reasons you have to come back.',
                 ],
                 [
                   'A consistent story',
@@ -366,11 +366,15 @@ export default function StudyInCanadaPage() {
             <p className="eyebrow">While you study</p>
             <h3 className="mt-4 font-serif text-2xl text-balance">Work is allowed, within limits</h3>
             <p className="mt-4 text-ink-600 text-pretty">
-              Eligible full-time students may generally work on campus and off campus during class
-              terms up to a weekly cap IRCC sets, and full time during scheduled breaks. That cap has
-              been changed more than once — check the current figure on{' '}
-              <Src href={IRCC.workOffCampus}>IRCC’s work off campus page</Src>. Some programmes also
-              require a separate co-op or intern work permit for a mandatory placement.
+              Eligible full-time students may generally work on campus, and off campus up to 24 hours
+              a week during class terms. IRCC says there is no hour limit during scheduled breaks. Check{' '}
+              <Src href={IRCC.workOffCampus}>IRCC’s work off campus page</Src> for the current
+              position. Since 1 April 2026, eligible post-secondary students no longer need a separate
+              work permit for a placement their programme requires.{' '}
+              <Link href="/study-in-canada/working-while-studying" className="font-semibold text-accent-500 link-underline">
+                How student work is assessed
+              </Link>
+              .
             </p>
           </div>
           <div className="card p-8">

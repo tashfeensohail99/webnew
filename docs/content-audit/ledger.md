@@ -4,6 +4,35 @@ One entry per batch, newest first. Each entry records the commit, what changed a
 
 To see any page's original wording: `git show 9d17a79:<path to the page>`.
 
+## Batch 5: provincial nominee program pages, 8 November 2026
+
+- **Commit:** `0c3b924`. To undo only the page changes, restore `app/pnp/` and `lib/facts.ts` from `f365179`, because this commit also recorded the statutory figures change in this ledger.
+- **Why:** the pages described base nominations as paper-based, offered closed routes, and refused to name what is open. Ontario's page warned about streams that no longer exist without naming the one that does.
+- **Policy change:** province pages now name current streams with a date, as the batch plan set out. Names are not figures, so the rule in `README.md` on figures is unaffected. Each name is registered in `lib/facts.ts` and needs a monthly re-check.
+
+| Page | Change | Source |
+| --- | --- | --- |
+| `/pnp` | "Paper-based" removed. Province list added. Provinces alone assess intent since 30 March 2026. Two dead links replaced. New H1 and opening. | [IRCC non-Express Entry](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/non-express-entry.html); [IRCC instructions](https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/permanent-residence/economic-classes/provincial-nominees/base-determining-membership-class.html) |
+| `/pnp/ontario` | Rebuilt around the Ontario Workforce Priority stream: job offer, physician exception, employer portal, expression of interest, scoring, Express Entry option. Closed routes removed. New description. | [Ontario stream page](https://www.ontario.ca/page/ontario-workforce-priority-stream); [Ontario updates](https://www.ontario.ca/page/2026-ontario-immigrant-nominee-program-updates) |
+| `/pnp/saskatchewan` | Entrepreneur and Farm pathways shown as permanently closed. Programs named. Capped sectors. | [SINP programs](https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs); SINP FAQs (updated 19 December 2025) |
+| `/pnp/nova-scotia` | Four streams named. Job offer answer corrected. Warning about the short window after selection. New title. | [Live in Nova Scotia](https://liveinnovascotia.com/nova-scotia-nominee-program) |
+| `/pnp/manitoba` | Three streams named. Recent draws considered Skilled Worker Overseas profiles only with a direct invitation. | [Manitoba draws #282 and #283](https://immigratemanitoba.com/draws/) |
+| `/pnp/newfoundland-labrador` | Five categories named. Expression of interest described as the first step. | [NL EOI model](https://www.gov.nl.ca/immigration/expression-of-interest-model-overview/) |
+| `/pnp/alberta` | Eight streams named. Says which assume you are already in Alberta and that Express Entry selects from the federal pool. Corrected risk at the federal stage. | [AAIP](https://www.alberta.ca/alberta-advantage-immigration-program) |
+| `/pnp/british-columbia` | Streams named. Plain answer that worker streams need a job offer. Dead link replaced. Eligibility now points to the FSW calculator. | [WelcomeBC, For workers](https://www.welcomebc.ca/immigrate-to-b-c/for-workers) |
+| `/pnp/new-brunswick` | Unsupported claims removed. Link updated to the address IRCC uses. | IRCC non-Express Entry and provincial nominees pages |
+| `/pnp/prince-edward-island` | Unsupported claims removed. Eligibility now points to the FSW calculator. | None needed |
+
+- **Across the cluster:** "The failure patterns we see from Pakistan" and rankings of mistakes replaced, because nothing on file supports them. "Bar on future applications" replaced with five years of inadmissibility under section 40.
+- **Register:** seven entries added to `lib/facts.ts`. Re-check monthly.
+- **Checked before shipping:** build, typecheck, `test:crs` (66 passed), `test:fsw` (43 passed), local crawl. Viewed the Ontario stream section on desktop (light) and the Alberta stream box on a phone (dark).
+- **Checked on production:** GitHub deployment `success`. 93 of 93 URLs return 200. The crawl flags only the deliberate move of the eligibility link on `/pnp/british-columbia` and `/pnp/prince-edward-island` from the CRS to the FSW calculator. All 40 removed statements gone and all 25 new ones present. All ten pages load on a phone with no sideways scrolling or script errors.
+- **External links re-tested after the deploy:** 199 unique. None of the ten pages has a 404. `www.gnb.ca` returns 403 to automated checks; IRCC links to that address.
+- **Search:** IndexNow accepted the ten URLs. Google not asked.
+- **Could not verify:** New Brunswick's and PEI's sites showed bot checks on 8 November 2026. They were not bypassed, so their streams stay unnamed and need a person to read them.
+- **Deliberately left alone:** deadlines and amounts that appear only on provincial pages, such as Ontario's and Nova Scotia's invitation windows; "Talk to a lawyer" buttons; review dates; repeated explanations of enhanced and base nominations; the Francophone and Mobility cards on `/pnp/nova-scotia`.
+- **Noticed, not changed:** paragraphs inside `Callout` boxes have no gap between them. This affects every page that uses the component.
+
 ## Statutory figures on the refusal pages, 8 November 2026
 
 - **Commit:** `f365179`. To undo only the page changes, restore the nine `app/` pages and `lib/facts.ts` from `82e5e1f`, because this commit also recorded batch 4 in this ledger.

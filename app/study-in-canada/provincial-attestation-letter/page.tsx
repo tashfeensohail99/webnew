@@ -88,11 +88,15 @@ const STEPS = [
 const FAQS = [
   {
     q: 'Can you get a PAL for me?',
-    a: 'No, and neither can any other consultant. The letter is issued by a province or territory and delivered through the institution that admitted you. There is no side channel, no fee that produces one, and no application you or we can file directly for it. Anyone quoting you a price for a PAL is selling something that does not work the way they are describing.',
+    a: 'No, and neither can any other consultant. The letter is issued by a province or territory and delivered through the institution that admitted you. There is no side channel, no fee that produces one, and, outside Quebec, no application you or we can file directly for it. Anyone quoting you a price for a PAL is selling something that does not work the way they are describing.',
   },
   {
     q: 'Can I file my study permit application and add the letter later?',
     a: 'Where the letter is required, no. An application submitted without it is treated as incomplete and is not accepted into processing — it is returned rather than assessed. Practically, that means lost time in an admissions cycle you may not be able to recover.',
+  },
+  {
+    q: 'How long is the letter valid, and can I reuse it?',
+    a: 'In most cases it must be used in the year it was issued. Unless it shows an earlier expiry date, it is valid until the end of the study permit cap year it was issued for, and you cannot apply with a letter from a previous cap year. It has to be valid when you apply, not when you start studying. You can reapply with the same letter if it is still valid and you withdrew your application before a decision, or your application was not accepted for processing. You cannot reuse it if your application was approved or refused, so someone who is refused generally needs a new letter.',
   },
   {
     q: 'Do I need one if I am applying to extend a permit I already hold?',
@@ -178,7 +182,7 @@ export default function ProvincialAttestationLetterPage() {
         <SectionHeading
           eyebrow="Whose document is whose"
           title="Four parties, and none of them is your consultant"
-          subtitle="This is the point applicants from Pakistan are most often misled about before they reach us."
+          subtitle="Applicants are often misled on this point."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {WHO_DOES_WHAT.map((w) => (
@@ -192,8 +196,8 @@ export default function ProvincialAttestationLetterPage() {
           <Callout title="No one can obtain an attestation letter for you">
             <p>
               The letter is issued under provincial or territorial authority and handed to admitted
-              students through their institution. There is no separate application an individual or a
-              representative can file, and no fee that produces one outside that route.
+              students through their institution. Outside Quebec, there is no separate application an
+              individual or a representative can file, and no fee that produces one outside that route.
             </p>
             <p>
               So an offer to supply a PAL for a price is either a charge for something that will arrive
@@ -232,8 +236,9 @@ export default function ProvincialAttestationLetterPage() {
           </p>
           <p>
             Second, an incomplete application is not a slow application. Where the letter is required
-            and absent, the file is not queued behind others — it is returned, and you begin again in a
-            later cycle.
+            and absent, the file is not queued behind others — it is not accepted for processing, and
+            your fee is refunded. You can file again once you have a valid letter, if your intake still
+            allows it.
           </p>
         </Prose>
       </Section>
@@ -255,10 +260,15 @@ export default function ProvincialAttestationLetterPage() {
               the post-secondary level have sat outside the requirement.
             </li>
             <li>
-              <strong>Certain graduate-level applicants.</strong> IRCC has narrowed the requirement for
-              some master’s and doctoral applicants at public institutions. This is precisely the kind
-              of exception that has been revised more than once — confirm it against the current
-              official page before you rely on it.
+              <strong>Master’s and doctoral students at public institutions.</strong> As of 1 January
+              2026, IRCC says no letter is needed for a degree-granting master’s or doctoral programme
+              at a public designated learning institution. This kind of exception has been revised more
+              than once — confirm it against the current official page before you rely on it.
+            </li>
+            <li>
+              <strong>A few named programmes.</strong> IRCC also lists the Francophone Minority
+              Communities Student Pilot, federally designated military colleges, and Quebec vocational
+              programmes leading to a DVS, AVS or STC.
             </li>
             <li>
               <strong>Exchange students.</strong> Students studying under an exchange arrangement
@@ -315,7 +325,7 @@ export default function ProvincialAttestationLetterPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where these applications go wrong"
         />
         <Prose>
           <p>
@@ -367,8 +377,7 @@ export default function ProvincialAttestationLetterPage() {
         <div className="mt-8">
           <Callout title="If the letter is your only obstacle, you may be looking at the wrong problem">
             <p>
-              We regularly speak to people who have organised their entire plan around obtaining an
-              attestation letter, when the weaker part of their file is elsewhere: funds that cannot be
+              Some people organise their entire plan around obtaining an attestation letter, when the weaker part of their file is elsewhere: funds that cannot be
               explained, a programme that does not follow from anything they have studied or done, or a
               refusal history that has not been addressed.
             </p>
@@ -406,8 +415,8 @@ export default function ProvincialAttestationLetterPage() {
         <SectionHeading eyebrow="Where the current details live" title="Allocations, exceptions and provincial rules" />
         <Prose>
           <p>
-            Allocation totals, the distribution between institutions, and the list of exceptions are all
-            revised — sometimes between intakes. We deliberately do not print those figures here,
+            Allocation totals and the distribution between institutions are revised — sometimes
+            between intakes. We deliberately do not print those figures here,
             because a number that is correct today becomes a liability on a page you might read a year
             from now.
           </p>

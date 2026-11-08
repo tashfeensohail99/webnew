@@ -104,11 +104,11 @@ const FAQS = [
   },
   {
     q: 'How do I know my agent is not steering me?',
-    a: 'Ask a direct question: how are you paid if I enrol here. Recruiters are commonly paid a commission by the institution, and the schools that pay the most are not usually the ones with the strongest outcomes. If the answer is evasive, or if every student in the office is being sent to the same two colleges, you are being placed rather than advised.',
+    a: 'Ask a direct question: how are you paid if I enrol here. Recruiters are commonly paid a commission by the institution, and that can shape what you are told. If the answer is evasive, or if every student in the office is being sent to the same two colleges, you are being placed rather than advised.',
   },
   {
     q: 'What happens if my school loses its designation while I am studying?',
-    a: 'It affects you directly, and the practical consequences fall on the permit and on the credential rather than being resolved by the school. This is a situation to get advice on immediately rather than to wait out, because the options narrow as your permit runs down. IRCC publishes guidance on what students in this position should do.',
+    a: 'It affects you directly, and the practical consequences fall on the permit and on the credential rather than being resolved by the school. IRCC gives one specific answer: if your school closed, discontinued your programme, was placed on the suspension list or lost its designated status before you finished, you may start at a new school while your application is pending, provided you have not left Canada since receiving the new letter of acceptance and still meet your permit conditions. Get advice immediately rather than waiting it out, because the options narrow as your permit runs down. IRCC’s page on changing schools sets this out.',
   },
   {
     q: 'Does the DLI number matter on the application?',
@@ -116,7 +116,7 @@ const FAQS = [
   },
   {
     q: 'Can I change schools after I arrive?',
-    a: 'Not by simply telling IRCC you have moved. For post-secondary students, IRCC’s rules require you to apply for — and be approved for — a new study permit before you begin studying at a different designated institution; carrying on at a new school without that approval puts you out of status. The current procedure is set out on IRCC’s "Changing your school or program" page, and it should be read there rather than taken from an agent. Moving can also affect your later work permit eligibility, so it is not an administrative transfer and it should not be your fallback for a school you already doubt.',
+    a: 'Not by simply telling IRCC you have moved. Post-secondary students generally need to apply for, and get, an extended study permit for the new school before they start there, with a new provincial attestation letter unless exempt. IRCC says changing schools without telling it can mean breaking your permit conditions, an invalid or cancelled permit, being asked to leave, and refusals later. The current procedure is set out on IRCC’s "Changing your school or program" page, and it should be read there rather than taken from an agent. Moving can also affect your later work permit eligibility, so it is not an administrative transfer and it should not be your fallback for a school you already doubt.',
   },
 ];
 
@@ -161,8 +161,16 @@ export default function DliPage() {
           <p>
             Every designated institution is given a DLI number. That number goes on your acceptance
             letter and on your application, and it is how IRCC identifies where you say you are
-            going. IRCC publishes the full list of designated institutions, arranged by province and
-            territory, on its own site.
+            going. IRCC publishes{' '}
+            <a
+              href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/prepare/designated-learning-institutions-list.html"
+              className="font-semibold text-accent-500 link-underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              the full list of designated institutions
+            </a>
+            , arranged by province and territory, on its own site.
           </p>
           <p>
             What designation is not: it is not a quality rating, it is not an assurance that the
@@ -285,8 +293,8 @@ export default function DliPage() {
           <p>
             <strong>Commission, not fit.</strong> International student recruitment runs on
             commission paid by institutions to agents. That is legal and openly practised. But it
-            means the recommendation you receive is shaped by what the school pays, and the schools
-            that pay most are rarely the ones with the strongest graduate outcomes. If every student
+            means the recommendation you receive can be shaped by what the school pays, so ask how the
+            person recommending it is paid. If every student
             walking out of an office is heading to the same two private colleges, the selection was
             not made on merit.
           </p>
@@ -327,7 +335,7 @@ export default function DliPage() {
         <div className="mt-8">
           <Callout title="If the point is immigration, study may be the expensive way round">
             <p>
-              A great many people we speak to do not want to study. They want to live in Canada, and
+              Some people considering study do not actually want to study. They want to live in Canada, and
               study has been sold to them as the way in. It can be a route, but it is one of the
               most expensive and least certain ones: tuition at international rates, living costs,
               years out of the workforce, and a work permit at the end that is conditional rather
@@ -342,9 +350,8 @@ export default function DliPage() {
               than a study permit would ever take them. It does not suit someone who cannot fund the
               programme without borrowing against the assumption of a work permit that may not
               arrive. And it does not suit someone whose genuine intention will not withstand an
-              officer’s scrutiny — purpose of visit and a weak study plan are among the refusal
-              grounds we see most often in the files clients bring us, and they are grounds IRCC
-              sets out in its own study permit guidance.
+              officer’s scrutiny — purpose of visit and a weak study plan are grounds IRCC sets out
+              in its own study permit guidance.
             </p>
             <p>
               We would rather tell you on the first call that a college diploma is not your best

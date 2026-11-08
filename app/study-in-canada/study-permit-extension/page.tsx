@@ -52,7 +52,7 @@ const WHEN_TO_EXTEND = [
     icon: 'plane' as const,
     kicker: 'Onward plans',
     title: 'Your studies are ending and nothing is lined up',
-    body: 'Graduating does not extend anything — a study permit stops being valid once you finish, and often earlier than the printed date. Staying on means holding some other status. That is usually a work permit or visitor status rather than an extension, which is why this is a planning conversation to have before the permit runs down, not after.',
+    body: 'Graduating does not extend anything — a study permit becomes invalid 90 days after you complete your studies, or on its printed expiry date if that comes first. Staying on means holding some other status. That is usually a work permit or visitor status rather than an extension, which is why this is a planning conversation to have before the permit runs down, not after.',
   },
 ];
 
@@ -98,7 +98,7 @@ const FAQS = [
   },
   {
     q: 'My permit expired before I applied. What now?',
-    a: 'You are out of status, and you should get advice the same week rather than the same month. The Immigration and Refugee Protection Regulations provide for restoration — an application to have status restored — but it is available only within a short fixed window after status is lost, and only if you still meet the requirements of the stay and have not breached other conditions. It is discretionary. Nobody can promise it will succeed.',
+    a: 'You are out of status, and you should get advice the same week rather than the same month. Section 182 of the Immigration and Refugee Protection Regulations provides for restoration, but you must apply within 90 days after losing status. An officer must restore status if, after examining your application, you meet the initial requirements for your stay, have not breached other conditions and are not subject to a declaration under section 22.1 of the Act. A student who is not complying with the conditions in section 220.1(1) cannot be restored. Nobody can promise it will succeed.',
   },
   {
     q: 'Can I keep studying or working while out of status?',
@@ -196,10 +196,11 @@ export default function StudyPermitExtensionPage() {
             </p>
             <p>
               There is a second trap underneath that. A study permit does not always run to its printed
-              date: under IRCC’s rules it also stops being valid a set period after you complete your
-              programme, whichever comes first — and completion can be triggered by something as
-              ordinary as your school issuing final results. Students who finish early are the ones
-              this catches. Check the current rule on{' '}
+              date: under section 222 of the Regulations it becomes invalid 90 days after you complete
+              your studies, whichever comes first — and completion can be triggered by something as
+              ordinary as your school issuing final results. It also becomes invalid on the day you
+              are no longer enrolled at the school named in the permit, other than by completing your
+              studies. Students who finish early are the ones this catches. Check the current rule on{' '}
               <a
                 href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/extend-study-permit.html"
                 className="font-semibold text-accent-500 link-underline"
@@ -302,12 +303,15 @@ export default function StudyPermitExtensionPage() {
             a fallback plan.
           </p>
           <p>
-            Three features of restoration matter. It is <strong>time-limited</strong> — the Regulations
-            set a short fixed window after status is lost, and once that window closes the route closes
-            with it. It is <strong>conditional</strong> — you must still meet the requirements of the
-            stay you are asking to have restored, and you must not have breached other conditions
-            imposed on you. And it is <strong>discretionary</strong> — an officer decides. A complete,
-            timely restoration application is not the same thing as a restored status.
+            Three features of restoration matter. It is <strong>time-limited</strong> — you must apply
+            within 90 days after losing status, and once that window closes the route closes with it.
+            It is <strong>conditional</strong> — you must still meet the requirements of the stay you
+            are asking to have restored, you must not have breached other conditions imposed on you,
+            and you must not be subject to a declaration under section 22.1 of the Act. And it is{' '}
+            <strong>examined</strong> — an officer must restore status only if, after looking at your
+            application, those conditions are met. A student who is not complying with the conditions
+            in section 220.1(1) cannot be restored. A complete, timely restoration application is not
+            the same thing as a restored status.
           </p>
           <p>
             While you are out of status you have no authorisation to study and no authorisation to work.
@@ -316,8 +320,8 @@ export default function StudyPermitExtensionPage() {
             working first, then get advice — in that order, and quickly, because the window is short.
           </p>
           <p>
-            The specific window, the current fee and the current process are published by IRCC and set
-            out in{' '}
+            The 90-day window was read at the source on 8 November 2026. The current fee and process are
+            published by IRCC, and the rule itself is in{' '}
             <a
               href="https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-182.html"
               className="font-semibold text-accent-500 link-underline"
@@ -335,7 +339,7 @@ export default function StudyPermitExtensionPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see"
+          title="Where extensions go wrong"
         />
         <Prose>
           <p>
@@ -358,9 +362,10 @@ export default function StudyPermitExtensionPage() {
             booked before the application was filed, ends the protection that was doing the work.
           </p>
           <p>
-            <strong>Changing institution quietly.</strong> Moving school or level of study without
-            addressing the conditions on the permit is treated as a compliance issue, not a paperwork
-            one — and it surfaces later, at exactly the wrong moment. The requirements here have been
+            <strong>Changing institution quietly.</strong> A study permit becomes invalid on the day you
+            are no longer enrolled at the school named in it, other than by completing your studies,
+            so moving school is not a paperwork matter — and it surfaces later, at exactly the wrong
+            moment. The requirements here have been
             tightened, and there are exceptions; read{' '}
             <a
               href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/change-schools.html"
@@ -431,8 +436,7 @@ export default function StudyPermitExtensionPage() {
         <SectionHeading eyebrow="Where the current details live" title="Fees, timelines and requirements" />
         <Prose>
           <p>
-            Application fees, processing times, the exact restoration window and the current rules on
-            maintained status all change. We deliberately do not publish those figures here — a number
+            Application fees, processing times and the current rules on maintained status all change. We deliberately do not publish those figures here — a number
             that is correct today becomes a liability on a page you might read next year, and a student
             planning around a stale timeline is exactly how status gets lost.
           </p>
