@@ -12,6 +12,7 @@ import {
   Icon,
 } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { SERVICE } from '@/lib/site';
 
 /**
  * Reconsideration requests.
@@ -65,7 +66,7 @@ const WORTH_TRYING = [
 const STEPS = [
   {
     title: 'Read the actual reasoning first',
-    body: 'You cannot argue that something was overlooked until you know what was considered. That means the refusal letter, everything attached to it, and where necessary the officer’s notes.',
+    body: 'You cannot argue that something was overlooked until you know what was considered. That means the refusal letter, the officer decision note that now comes with most refusals, and where necessary the fuller GCMS notes.',
   },
   {
     title: 'Identify the deadline, not the argument',
@@ -92,11 +93,11 @@ const STEPS = [
 const FAQS = [
   {
     q: 'Is a reconsideration request an appeal?',
-    a: 'No. There is no right to it. In Canada (MCI) v. Kurukkal, 2010 FCA 230, the Federal Court of Appeal held that the doctrine of functus officio does not rigidly bar an immigration officer from revisiting a decision — the officer remains free to exercise discretion to reconsider, or to refuse to. Discretion is exactly what it is. IRCC is not obliged to reopen your file, is not obliged to give reasons for declining, and in many cases is not obliged to reply at all.',
+    a: 'No. There is no right to it. In Canada (MCI) v. Kurukkal, 2010 FCA 230, the Federal Court of Appeal held that the doctrine of functus officio does not rigidly bar an immigration officer from revisiting a decision — the officer remains free to exercise discretion to reconsider, or to refuse to. Discretion is exactly what it is. IRCC is not obliged to reopen your file, and you have no guarantee of a reply. Its guidance does tell officers to consider a request and to enter the request, the decision and the reasons in the GCMS notes, so later notes may show what happened.',
   },
   {
     q: 'How likely is it to work?',
-    a: 'We will not put a figure on it, and you should distrust anyone who does — nobody publishes reliable success rates for a discretionary request that generates no formal decision. What we can say is what the case law says: the discretion is understood to be for exceptional circumstances, and dissatisfaction or disagreement with the officer’s assessment does not by itself make a case exceptional. A request built on disagreement gives the discretion nothing to act on. Plan the file on the assumption that it will not be reopened.',
+    a: 'We will not put a figure on it, and you should distrust anyone who does — nobody publishes reliable success rates for a discretionary request that generates no formal decision. What we can say is what IRCC’s guidance to its officers says: reconsideration should happen only in exceptional cases, and dissatisfaction or disagreement with the decision does not by itself make a case exceptional. A request built on disagreement gives the discretion nothing to act on. Plan the file on the assumption that it will not be reopened.',
   },
   {
     q: 'Does asking for reconsideration pause the judicial review deadline?',
@@ -138,9 +139,9 @@ export default function ReconsiderationPage() {
         subtitle={
           <>
             A reconsideration request asks the deciding officer to revisit a decision, usually
-            because something was overlooked or misapprehended. It is discretionary, the courts have
-            described it as reserved for exceptional circumstances rather than routine second looks,
-            and it does not stop the clock on your right to go to court.
+            because something was overlooked or misapprehended. It is discretionary, IRCC’s own
+            guidance reserves it for exceptional cases rather than routine second looks, and it does
+            not stop the clock on your right to go to court.
           </>
         }
       >
@@ -176,9 +177,19 @@ export default function ReconsiderationPage() {
             you asking the office to exercise that discretion.
           </p>
           <p>
-            Note the shape of that. It is a request, not a filing. It creates no obligation on IRCC
-            to reopen anything, no obligation to explain a decision not to, and no entitlement to a
-            reply. It is not adjudicated by anyone independent of the office that refused you. And
+            Note the shape of that. It is a request, not a filing. IRCC’s{' '}
+            <a
+              href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/service-delivery/reconsideration-after-refusal.html"
+              className="font-semibold text-accent-500 link-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              guidance to its officers
+            </a>{' '}
+            says an officer must consider a request and decide whether to reconsider, but that
+            reconsideration should happen only in exceptional cases, and the onus is on you. There is
+            no obligation to reopen the file and no guarantee of a reply. It is not adjudicated by
+            anyone independent of the office that refused you. And
             because it is not an application, nothing about it is on a timetable you can rely on.
           </p>
           <p>
@@ -200,14 +211,14 @@ export default function ReconsiderationPage() {
             The statutory route for challenging an IRCC decision is an application to the Federal
             Court for leave and judicial review. That route has a filing deadline fixed by
             legislation, running from when the decision was communicated to you, and it is short.
-            The period differs depending on whether the matter arose inside or outside Canada — the{' '}
+            The period differs depending on whether the matter arose inside or outside Canada —{' '}
             <a
-              href="https://laws-lois.justice.gc.ca/eng/acts/i-2.5/"
+              href="https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-72.html"
               className="font-semibold text-accent-500 link-underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Immigration and Refugee Protection Act
+              section 72 of the Immigration and Refugee Protection Act
             </a>{' '}
             sets both, and it is the only place worth reading them.
           </p>
@@ -448,9 +459,10 @@ export default function ReconsiderationPage() {
         <SectionHeading eyebrow="How we work on this" title="Deadline first, then strategy, then drafting" />
         <Prose>
           <p>
-            We start with the refusal and its date, and establish what your remaining options are and
-            how long each of them is open for. That is a short conversation and it frequently changes
-            what people were about to do.
+            We start with the refusal and its date, and work through what your remaining options are.
+            The Federal Court time limit is a question for a Canadian lawyer, so if that route may
+            matter we will tell you to speak to one straight away. That is a short conversation and it
+            can change what people were about to do.
           </p>
           <p>
             Then we read the reasoning — the letter, its attachments, and where it is warranted the
@@ -464,11 +476,11 @@ export default function ReconsiderationPage() {
             and we do not charge you to write it anyway.
           </p>
           <p>
-            Our fees are published, and we do not take a file we do not think has a route.{' '}
+            Reconsideration requests are not on our{' '}
             <Link href="/fees" className="font-semibold text-accent-500 link-underline">
-              See our fees
+              published fee list
             </Link>
-            .
+            , so ask for the cost in writing before you commit.
           </p>
         </Prose>
       </Section>
@@ -487,8 +499,9 @@ export default function ReconsiderationPage() {
       <CTASection
         eyebrow="Before you send a letter"
         title="Find out whether you have anything worth reconsidering"
-        subtitle="Send us the refusal, its date, and anything that came with it. We will tell you what your deadline is, whether a request has a real error to work with, and whether a fresh application or the Federal Court is the better use of your money."
+        subtitle="Send us the refusal, its date, and anything that came with it. We will tell you whether a request has a real error to work with, and whether a fresh application looks like the better use of your money. If the Federal Court may be the right route, speak to a Canadian lawyer straight away, because that deadline will not wait."
         page={PAGE}
+        service={SERVICE.JR_RESUBMISSION}
         waMessage="Hi, my Canada application was refused and I’d like to know whether a reconsideration request is worth sending."
       />
     </>

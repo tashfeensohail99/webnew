@@ -12,6 +12,7 @@ import {
   Icon,
 } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { SERVICE } from '@/lib/site';
 
 /**
  * The refusal-letter-vs-officer-notes page.
@@ -25,7 +26,7 @@ import { ReviewedBy } from '@/components/ReviewedBy';
 export const metadata: Metadata = {
   title: 'GCMS Notes After a Canada Refusal: What They Show',
   description:
-    'GCMS notes are the officer’s own record of your IRCC file, and they say more than the refusal letter. Why they matter, what they settle, who may ask for them.',
+    'Most IRCC refusals now come with an officer decision note. When GCMS notes still help, what they settle, who may request them and the court deadline risk.',
   alternates: { canonical: '/refusals/gcms-notes' },
 };
 
@@ -66,7 +67,7 @@ const FAQS = [
   },
   {
     q: 'Why doesn’t the refusal letter just say all that?',
-    a: 'Refusal letters are built from a fixed set of standard grounds, often as ticked boxes. That format is efficient for IRCC and nearly useless for diagnosis, because one ground can cover several very different findings. The letter tells you the category. The notes tell you the finding.',
+    a: 'The grounds on a refusal letter come from a standard list, often as ticked boxes, and one ground can cover several very different findings. That is why IRCC now sends an officer decision note with most refusals. The letter tells you the category. The decision note explains the decision, and the GCMS record can add more detail.',
   },
   {
     q: 'Will the notes tell me how to win next time?',
@@ -86,7 +87,15 @@ const FAQS = [
   },
   {
     q: 'Do I always need to order them?',
-    a: 'Not always. IRCC has begun attaching short officer decision notes to some refusal letters in certain temporary-residence streams — it does not cover every application type, and it does not replace the fuller case-management record. So read everything IRCC actually sent you, attachments included, before you pay anyone to fetch anything. Bring us the full letter and any attachments and we’ll tell you whether there is anything left worth requesting.',
+    a: 'Not always. IRCC now sends an officer decision note with the refusal letter for most temporary resident applications (since 29 July 2025) and most permanent resident applications (since 26 May 2026). Electronic travel authorizations, temporary resident permits and humanitarian and compassionate applications are not covered, and IRCC says it may remove portions of a note to protect secure, private or other sensitive information. So read everything IRCC actually sent you, attachments included, before you pay anyone to fetch anything. Order the GCMS notes if your refusal is older, if no note came with it, or if you need the fuller record. Bring us the full letter and any attachments and we’ll tell you whether there is anything left worth requesting.',
+  },
+  {
+    q: 'Does requesting the notes pause the Federal Court deadline?',
+    a: 'No. The time limit to apply to the Federal Court for leave and judicial review runs from when you are notified of the decision or otherwise become aware of it, and it is short. A request for your notes does not pause it, and waiting for a reply can use up much of the time you have. If you may want a court to look at the decision, speak to a Canadian lawyer now and order the notes alongside that, not before it.',
+  },
+  {
+    q: 'How long does a request take?',
+    a: 'The Privacy Act sets a time limit for responding, but IRCC warns that high request volumes may affect its ability to meet it. Plan for a wait, and do not build anything time-sensitive around a reply arriving by a certain date.',
   },
 ];
 
@@ -104,8 +113,9 @@ export default function GcmsNotesPage() {
         subtitle={
           <>
             Behind every IRCC decision there is a record of what the officer actually did and
-            actually thought. It is almost always more specific than the letter you were sent — and
-            without it, most people fix the wrong thing.
+            actually thought. Most refusals now come with a decision note written by the officer,
+            and the full record can say more. Read what you were sent before you pay anyone for
+            anything.
           </>
         }
       >
@@ -129,18 +139,48 @@ export default function GcmsNotesPage() {
             have had entirely different things go wrong.
           </p>
           <p>
-            Separately, and continuously while your file was being worked, the officer was writing
+            Since 29 July 2025 for most temporary resident applications, and since 26 May 2026 for
+            most permanent resident applications, IRCC also sends an{' '}
+            <a
+              href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/officer-decision-notes.html"
+              className="font-semibold text-accent-500 link-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              officer decision note
+            </a>{' '}
+            written by the officer who made the final decision. If you were refused recently, look
+            for it first: you may already hold the reasoning. It does not cover eTAs, temporary
+            resident permits or humanitarian and compassionate applications, and IRCC says it may
+            remove portions of a note.
+          </p>
+          <p>
+            Behind that, and continuously while your file was being worked, the officer was writing
             in IRCC’s Global Case Management System — which is why these are usually called GCMS
             notes: what documents were opened, what was checked against what, where the file was
             sent for further review, which specific element raised doubt, and the reasoning that
             closed the case. That record exists whether or not you ever ask for it.
           </p>
           <p>
-            The gap between those two things is where money gets wasted. People read a one-line
+            The gap between a standard ground and the actual reasoning is where money gets wasted. People read a one-line
             ground, form a theory about what it meant, and spend the next several months and a
             significant amount of money building a solution to a problem they guessed at.
           </p>
         </Prose>
+        <div className="mt-10">
+          <Callout title="Asking for your notes does not stop the court clock">
+            <p>
+              An application to the Federal Court for leave and judicial review has a short time
+              limit, running from when you are notified of the decision or otherwise become aware of
+              it. Requesting your notes does not pause it, and waiting for a reply can use up much of
+              it. If you may want a court to look at this decision, read about{' '}
+              <Link href="/refusals/judicial-review" className="font-semibold text-accent-500 link-underline">
+                judicial review
+              </Link>{' '}
+              and speak to a Canadian lawyer now.
+            </p>
+          </Callout>
+        </div>
       </Section>
 
       {/* ===================== THE AMBIGUOUS GROUNDS ===================== */}
@@ -229,14 +269,14 @@ export default function GcmsNotesPage() {
             The practical upshot is the opposite of what a lot of agents will tell you: if you are
             in Pakistan asking about your own refused application, the personal-information route is
             very likely open to you directly. Whose information you are asking for is the real
-            constraint — a file that names your spouse or your adult children is not simply yours to
-            request, and IRCC requires a signed consent form from each adult concerned.
+            constraint — a file that names your spouse or a child aged 16 or older is not simply
+            yours to request, and IRCC requires a signed consent form (IMM 5744) for each of them.
           </p>
           <p>
             Check the current rules, forms and fees on IRCC’s own pages before relying on anything
             else — a forum post or an older step-by-step guide can be confidently wrong:{' '}
             <a
-              href={'https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=459&top=1'}
+              href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/access-information-privacy/request-privacy-act.html"
               className="font-semibold text-accent-500 link-underline"
               target="_blank"
               rel="noopener noreferrer"
@@ -261,7 +301,8 @@ export default function GcmsNotesPage() {
             >
               ATIP online request service
             </a>
-            .
+            . IRCC warns that high request volumes may affect its ability to respond on time, so
+            allow for a wait.
           </p>
         </Prose>
 
@@ -270,9 +311,9 @@ export default function GcmsNotesPage() {
             <p>
               This route doesn’t suit you if any of the following is true. If you already know
               precisely why you were refused — the officer said it plainly, you recognise it, and
-              you can state it in one sentence — you may not need the notes at all. If IRCC already
-              attached officer notes to your refusal letter, you are holding them; don’t pay anyone,
-              including us, to fetch a document you already have. If you are comfortable filing the
+              you can state it in one sentence — you may not need the notes at all. If IRCC sent an
+              officer decision note with your refusal letter and it answers your question, you are
+              already holding the reasoning; don’t pay anyone, including us, to fetch more. If you are comfortable filing the
               personal-information request yourself, do that — it is your own record and the
               official pages linked above set out how.
             </p>
@@ -327,6 +368,7 @@ export default function GcmsNotesPage() {
         title="Find out what your refusal actually said"
         subtitle="Send us the refusal letter and anything that came with it. We’ll tell you what it does and doesn’t establish, whether the officer’s notes are worth obtaining, and whether reapplying makes sense at all."
         page={PAGE}
+        service={SERVICE.JR_RESUBMISSION}
         waMessage="Hi, my Canada application was refused and I’d like to understand the real reason before I reapply."
       />
     </>

@@ -31,17 +31,19 @@ import { site, SERVICE } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Canada Visa Refused? Your Real Options',
   description:
-    'Your refusal letter doesn’t tell you the real reason. How to get your GCMS notes, what actually caused the refusal, and whether to reapply or seek review.',
+    'Refused a Canadian visa? How to read the officer’s decision note, when GCMS notes still help, and whether to reapply, seek review or stop.',
   alternates: { canonical: '/canada-visa-refused' },
 };
 
 const PAGE = 'canada-visa-refused';
 
+const IRPA_S72 = 'https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-72.html';
+
 const REFUSAL_REASONS: { icon: IconName; term: string; def: string }[] = [
   {
     icon: 'globe',
     term: 'Ties to Pakistan judged too weak',
-    def: 'The officer isn’t satisfied you’d come back. This is the most common one by far, and it’s about how you evidenced your job, property and family — not about who you are.',
+    def: 'The officer isn’t satisfied you’d come back. It’s about how you evidenced your job, property and family — not about who you are.',
   },
   {
     icon: 'building',
@@ -70,9 +72,14 @@ const OPTIONS = [
     title: 'Reapply, properly',
     body: (
       <>
-        If the notes show a fixable evidence problem — weak ties, thin funds history, a bad
-        employment letter — reapplying with that fixed is usually faster, cheaper and more likely to
-        work than court. <em>For most people, this is the right answer.</em>
+        If the officer’s reasons show a fixable evidence problem, such as weak ties, a thin funds
+        history or a bad employment letter, a fresh application lets you put in evidence a court
+        would not look at. It is usually faster and cheaper too.{' '}
+        <em>For many people, this is the right answer.</em>{' '}
+        <Link href="/refusals/re-applying" className="font-semibold text-accent-500 link-underline">
+          When re-applying makes sense
+        </Link>
+        .
       </>
     ),
   },
@@ -81,8 +88,12 @@ const OPTIONS = [
     body: (
       <>
         If the officer made a legal error — ignored evidence, breached procedural fairness, reached a
-        decision the record doesn’t support — you can ask a judge to review it. This is a court case.
-        It needs a lawyer.
+        decision the record doesn’t support — you can ask a judge to review it. This is a court case,
+        so you need a Canadian lawyer or must represent yourself. A consultant cannot do it for you.{' '}
+        <Link href="/refusals/judicial-review" className="font-semibold text-accent-500 link-underline">
+          How judicial review works
+        </Link>
+        .
       </>
     ),
   },
@@ -103,8 +114,8 @@ const FAQS = [
     a: (
       <>
         A refusal is part of your history, and future officers can see it. Reapplying blind and being
-        refused again makes the next attempt harder, not easier — which is exactly why reading your
-        GCMS notes before you do anything matters so much.
+        refused again makes the next attempt harder, not easier — which is exactly why reading the
+        officer’s reasons before you do anything matters so much.
       </>
     ),
   },
@@ -112,10 +123,14 @@ const FAQS = [
     q: 'Can I get my GCMS notes myself?',
     a: (
       <>
-        Yes. Anyone can request them for a small fee paid to the Canadian government. The one part
-        most applicants can’t do alone is that a Canadian citizen or permanent resident has to file
-        the request on your behalf. We’d genuinely rather you read your notes than pay us for a
-        strategy built on a guess.
+        Yes, and you may not need to. IRCC now sends an officer decision note with most refusals, so
+        read everything it sent you first. If you want the fuller record, you can request your own
+        file from Pakistan under the Privacy Act, and IRCC charges no fee for that. Someone in Canada
+        is only needed for the separate Access to Information route.{' '}
+        <Link href="/refusals/gcms-notes" className="font-semibold text-accent-500 link-underline">
+          How GCMS requests work
+        </Link>
+        . We’d genuinely rather you read your notes than pay us for a strategy built on a guess.
       </>
     ),
   },
@@ -134,9 +149,10 @@ const FAQS = [
     q: 'Should I just reapply?',
     a: (
       <>
-        For most people, yes — if the notes show a fixable evidence problem, reapplying is usually
-        faster, cheaper and more likely to work than court. But that only holds if you’ve read the
-        notes first. We’ll tell you honestly which of the three options is genuinely yours.
+        For many people, yes, if the officer’s reasons show a fixable evidence problem. A fresh
+        application lets you put in new evidence, which a court case does not, and it is usually
+        faster and cheaper. But that only holds if you’ve read the reasons first. We’ll tell you
+        honestly which of the three options is genuinely yours.
       </>
     ),
   },
@@ -154,9 +170,14 @@ const FAQS = [
     q: 'How long do I have to go to the Federal Court?',
     a: (
       <>
-        There is a strict deadline that runs from the day you receive the decision, and it is short —
-        and different depending on whether the decision was made inside or outside Canada. If your
-        refusal is recent, talk to someone this week, even if that someone isn’t us.
+        There is a strict deadline that runs from the day you are notified of the decision or
+        otherwise become aware of it, and it is short. The period depends on whether the matter arose
+        inside or outside Canada, and both are set out in{' '}
+        <a href={IRPA_S72} className="font-semibold text-accent-500 link-underline" target="_blank" rel="noopener noreferrer">
+          section 72 of the Act
+        </a>
+        . Requesting GCMS notes does not pause it. If your refusal is recent, talk to someone this
+        week, even if that someone isn’t us.
       </>
     ),
   },
@@ -175,9 +196,10 @@ export default function VisaRefusedPage() {
         }
         subtitle={
           <>
-            Start with this: <strong className="font-semibold text-white">the letter you received
-            does not tell you the real reason.</strong> It’s a template with boxes ticked. The
-            officer’s actual reasoning is written somewhere else — and you’re entitled to read it.
+            Start with this: <strong className="font-semibold text-white">read everything IRCC sent
+            you, not only the letter.</strong> Most refusals now come with a note written by the
+            officer who decided your file. If yours didn’t, or you need the fuller record, you’re
+            entitled to ask for it.
           </>
         }
       >
@@ -204,36 +226,48 @@ export default function VisaRefusedPage() {
           <div className="lg:col-span-3">
             <SectionHeading
               eyebrow="First, the truth"
-              title="Your refusal letter is not your refusal reason"
+              title="Find the officer’s reasons before you do anything else"
             />
             <div className="mt-6 space-y-4 text-ink-600 text-pretty">
               <p>
                 The letter says something like <em>“I am not satisfied that you will leave Canada at
-                the end of your stay.”</em> That’s a checkbox. It’s on thousands of letters this
-                month.
+                the end of your stay.”</em> That’s a standard ground. On its own it can’t tell you
+                what went wrong.
               </p>
               <p>
-                Behind it sit the <strong className="text-ink-900">GCMS notes</strong> — the visa
-                officer’s actual notes on your file. That’s where you find out whether it was your
-                bank statements, your travel history, your employment letter, an inconsistency
-                between two documents, or something you never even thought about.
+                IRCC now sends an <strong className="text-ink-900">officer decision note</strong>{' '}
+                with most refusal letters: for most temporary resident applications since 29 July
+                2025, including visitor visas, study permits and work permits, and for most permanent
+                resident applications since 26 May 2026. It’s written by the officer who made the
+                decision. That’s where you find out whether it was your bank statements, your travel
+                history, your employment letter, an inconsistency between two documents, or something
+                you never even thought about.
               </p>
               <p>
-                <strong className="text-ink-900">Reapplying without reading those notes is
+                Behind it sit the <strong className="text-ink-900">GCMS notes</strong>, the fuller
+                record on your file. You’ll want them if your refusal is older, if no note came with
+                it, or if IRCC removed parts of the note.
+              </p>
+              <p>
+                <strong className="text-ink-900">Reapplying without reading the officer’s reasons is
                 guessing.</strong>{' '}
-                Most of the refused applicants who come to us have already reapplied once, blind, and
-                been refused again — which makes the third attempt harder, not easier.
+                A second refusal on the same facts makes the next attempt harder, not easier.
               </p>
             </div>
           </div>
 
           {/* The tripwire: cheap, genuinely useful, and it self-qualifies. */}
           <div className="mt-10 lg:col-span-2 lg:mt-0">
-            <Callout title="Step one: get your GCMS notes">
+            <Callout title="If you still need your GCMS notes">
               <p>
-                Anyone can request them. It costs a small fee paid to the Canadian government and
-                takes several weeks. You need a Canadian citizen or permanent resident to file the
-                request on your behalf — that’s the only part most applicants can’t do alone.
+                You can request your own file yourself from Pakistan under the Privacy Act, and IRCC
+                charges no fee for that. Only the separate Access to Information route needs someone
+                in Canada and has a fee. Allow time for a reply, and remember that asking for notes
+                does not pause the Federal Court time limit.{' '}
+                <Link href="/refusals/gcms-notes" className="font-semibold text-accent-500 link-underline">
+                  How GCMS requests work
+                </Link>
+                .
               </p>
               <p className="mt-3">
                 We’ll do it for you for a fixed fee — or you can do it yourself. We’d genuinely rather
@@ -249,7 +283,7 @@ export default function VisaRefusedPage() {
         <SectionHeading
           eyebrow="What actually happened"
           title="Why Pakistani applications actually get refused"
-          subtitle="Almost every refusal we read comes down to one of these five. None of them is about who you are — all of them are about how the file was built."
+          subtitle="Five grounds that come up often. None of them is about who you are — all of them are about how the file was built."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {REFUSAL_REASONS.map((r) => (
@@ -265,7 +299,7 @@ export default function VisaRefusedPage() {
         <SectionHeading
           eyebrow="Your move"
           title="You have three options. Not one."
-          subtitle="Which one is yours depends entirely on what the GCMS notes say. Two of these earn us less than a court case would — and we’ll still tell you when they’re the right answer."
+          subtitle="Which one is yours depends entirely on what the officer’s reasons say. Two of these earn us less than a court case would — and we’ll still tell you when they’re the right answer."
         />
         <ol className="mt-12 grid gap-6 lg:grid-cols-3">
           {OPTIONS.map((o, i) => (
@@ -278,6 +312,17 @@ export default function VisaRefusedPage() {
             </li>
           ))}
         </ol>
+        <p className="mx-auto mt-10 max-w-3xl text-center text-ink-600 text-pretty">
+          Two narrower situations have their own pages:{' '}
+          <Link href="/refusals/reconsideration" className="font-semibold text-accent-500 link-underline">
+            asking the office to look again
+          </Link>{' '}
+          when something on file was plainly overlooked, and{' '}
+          <Link href="/refusals/misrepresentation" className="font-semibold text-accent-500 link-underline">
+            a misrepresentation finding
+          </Link>
+          , which you should read about before you file anything else.
+        </p>
       </Section>
 
       {/* ================== What judicial review is NOT (weight) ================== */}
@@ -312,11 +357,16 @@ export default function VisaRefusedPage() {
           <div className="mt-6 space-y-4 text-ink-600 text-pretty">
             <p>
               There is a strict deadline to apply to the Federal Court for leave and judicial review,
-              and it runs from the day you receive the decision. It is short — and it is different
-              depending on whether the decision was made inside or outside Canada.
+              and it runs from the day you are notified of the decision or otherwise become aware of
+              it. It is short, and it is different depending on whether the matter arose inside or
+              outside Canada. The periods are in{' '}
+              <a href={IRPA_S72} className="font-semibold text-accent-500 link-underline" target="_blank" rel="noopener noreferrer">
+                section 72 of the Act
+              </a>
+              .
             </p>
             <p>
-              Miss it and the door usually closes. Extensions exist but are not granted for the
+              Waiting for GCMS notes does not pause it. Miss it and the door usually closes. Extensions exist but are not granted for the
               asking.{' '}
               <strong className="text-ink-900">
                 If your refusal is recent, talk to someone this week — even if that someone isn’t us.

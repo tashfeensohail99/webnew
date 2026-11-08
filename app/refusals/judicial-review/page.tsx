@@ -12,6 +12,7 @@ import {
   Icon,
 } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { SERVICE } from '@/lib/site';
 
 /**
  * Judicial review at the Federal Court.
@@ -27,9 +28,9 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * need them.
  */
 export const metadata: Metadata = {
-  title: 'Judicial review at the Federal Court',
+  title: 'Judicial Review of a Canada Visa Refusal',
   description:
-    'What judicial review of an IRCC decision is: a check on whether it was reasonable and fair, not a reapplication. Deadlines, and why it needs a lawyer.',
+    'What judicial review of an IRCC decision is: a check on whether it was reasonable and fair, not a reapplication. Deadlines, and who may act for you.',
   alternates: { canonical: '/refusals/judicial-review' },
 };
 
@@ -108,7 +109,7 @@ const FAQS = [
   },
   {
     q: 'Should I wait for the officer’s notes before deciding?',
-    a: 'Counsel will usually want to see them, because the refusal letter alone rarely shows whether there is a reviewable error. But the filing period runs regardless of whether you have obtained anything. Do not let a pending notes request consume your deadline — raise both with a lawyer at the same time.',
+    a: 'No. IRCC now sends an officer decision note with most refusals, so you may already hold some of the reasoning, and counsel will want to see it. The filing period runs regardless of whether you have obtained anything further. Do not let a pending notes request consume your deadline — raise both with a lawyer at the same time. IRCC also tells people who apply to the Court to state in their application that they have not received the reasons, even if they received a decision note, so that the Court can request the complete reasons under Rule 9 and check whether anything was removed.',
   },
   {
     q: 'What does it cost?',
@@ -139,8 +140,8 @@ export default function JudicialReviewPage() {
           <>
             Judicial review asks whether an IRCC officer decided your case reasonably and fairly. If
             it succeeds, your file usually goes back to be decided again by a different officer — it
-            does not produce a visa. It requires a lawyer, and the deadline is short and already
-            running.
+            does not produce a visa. It is court litigation that a consultant cannot do for you, a
+            Canadian lawyer is strongly advised, and the deadline is short and already running.
           </>
         }
       >
@@ -204,8 +205,7 @@ export default function JudicialReviewPage() {
               It has not been granted.
             </p>
             <p>
-              The new officer decides on the record as it stands, and can refuse again — sometimes on
-              the same broad ground, better reasoned. People who go into this expecting a court to
+              The new officer can refuse again, sometimes on the same broad ground, better reasoned. People who go into this expecting a court to
               hand them a visa come out of a technical success feeling cheated. Go in understanding
               what the remedy is.
             </p>
@@ -273,7 +273,7 @@ export default function JudicialReviewPage() {
         <SectionHeading
           eyebrow="The sequence"
           title="How a judicial review runs"
-          subtitle="Each stage is a filter. Most applications do not reach the last one."
+          subtitle="Each stage is a filter, and many applications stop before the last one."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {STEPS.map((s, i) => (
@@ -471,6 +471,18 @@ export default function JudicialReviewPage() {
             this page, take that one.
           </p>
           <p>
+            If you received an officer decision note, IRCC’s page on{' '}
+            <a
+              href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/officer-decision-notes.html"
+              className="font-semibold text-accent-500 link-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              officer decision notes
+            </a>{' '}
+            says what to state in your application to the Court about the reasons.
+          </p>
+          <p>
             We deliberately do not print court fees, cost estimates or the day counts here. The
             periods are short enough that a stale or mis-transcribed number on a website could cost
             you the remedy entirely — read them at the source, on the day, and confirm with counsel
@@ -495,6 +507,7 @@ export default function JudicialReviewPage() {
         title="Find out whether this is a decision problem or an evidence problem"
         subtitle="Send us the refusal letter, the date you were notified, and anything else IRCC sent you. We will tell you honestly whether this looks like something for Canadian counsel — or whether a better application is the real answer."
         page={PAGE}
+        service={SERVICE.JR_RESUBMISSION}
         waMessage="Hi, my Canada application was refused and I want to know whether judicial review at the Federal Court is realistic in my case."
       />
     </>

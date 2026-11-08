@@ -18,14 +18,14 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  *
  * The job of this page is to translate the refusal letter. Applicants read the
  * ticked boxes as the reasons; they are categories, not reasoning. The reasoning
- * is in the officer's notes. Second job: kill the reflex to re-file the same
+ * is in the officer's decision note and the fuller GCMS notes. Second job: kill the reflex to re-file the same
  * file the following week, which is the single most common and most expensive
  * mistake we see after a study permit refusal.
  */
 export const metadata: Metadata = {
   title: 'Canada Study Permit Refusals',
   description:
-    'What each ticked box on a study permit refusal means, why the officer’s notes say far more, and why resubmitting the same file rarely changes it.',
+    'What each ground on a Canadian study permit refusal means, how to use the officer’s decision note sent with your letter, and when re-applying makes sense.',
   alternates: { canonical: '/study-in-canada/refusals' },
 };
 
@@ -36,7 +36,7 @@ const GROUNDS = [
     icon: 'doc' as const,
     kicker: 'Purpose of visit',
     title: 'The study plan did not convince',
-    body: 'The officer was not persuaded that studying is the real reason for the trip, or that this programme makes sense for you. This is the ground with no visitor-visa equivalent, and it is the one people misread most.',
+    body: 'The officer was not persuaded that studying is the real reason for the trip, or that this programme makes sense for you. Visitor refusals can cite purpose of visit too, but this analysis of the study plan is particular to study permits, and it is the one people misread most.',
   },
   {
     icon: 'plane' as const,
@@ -76,8 +76,8 @@ const STEPS = [
     body: 'The ticked boxes are categories drawn from a standard list. They tell you the headings under which the officer had concerns. They do not tell you what the officer actually thought.',
   },
   {
-    title: 'Get the officer’s notes',
-    body: 'The reasoning sits in the officer’s entry in IRCC’s case management system, obtained through an access-to-information request. Applicants outside Canada usually cannot file that request themselves and go through a representative in Canada — check the current eligibility rules on the ATIP portal before you start.',
+    title: 'Read the officer’s decision note',
+    body: 'Since 29 July 2025 IRCC has sent a note written by the deciding officer with study permit refusals, though it may remove portions. If your refusal is older, no note came, or you need the fuller record, you can request your GCMS notes. A Privacy Act request for your own information is open to people outside Canada.',
   },
   {
     title: 'Identify what is fixable',
@@ -89,18 +89,18 @@ const STEPS = [
   },
   {
     title: 'Rebuild rather than resubmit',
-    body: 'If a fresh application is right, it should answer the officer’s finding directly, on the face of the file. Any adviser who tells you to re-file the same package with a new fee receipt is not giving you advice.',
+    body: 'If a fresh application is right, it should answer the officer’s finding directly, on the face of the file. IRCC does not let you reuse a provincial attestation letter after an application was refused, so unless you are exempt you will need a new one. Any adviser who tells you to re-file the same package with a new fee receipt is not giving you advice.',
   },
 ];
 
 const FAQS = [
   {
     q: 'The letter has four boxes ticked. Are those my four reasons?',
-    a: 'Those are four headings. Refusal letters are generated from a fixed list, and an officer ticks the categories their concerns fall under. The reasoning — the sentence or two explaining what the officer actually concluded about your file — is recorded separately in the officer’s notes. Reading only the letter, most people guess wrong about which concern was decisive.',
+    a: 'Those are four headings. Refusal letters are generated from a fixed list, and an officer ticks the categories their concerns fall under. The reasoning — the sentence or two explaining what the officer actually concluded about your file — is in the officer decision note IRCC now sends with study permit refusals. Read that before you decide which concern was decisive; the letter alone cannot tell you.',
   },
   {
     q: 'What does "purpose of visit" mean on a study permit refusal?',
-    a: 'It means the officer was not satisfied that the study itself makes sense as the reason for coming. Typically the concern is that the programme does not follow from your existing education or career, that it repeats a qualification you already hold, that it represents a step backwards, or that a comparable programme was available closer to home. It is a reasonableness assessment of the study plan, and it has no equivalent on a visitor visa file — which is why applicants who have been refused a visit visa before often do not recognise it.',
+    a: 'It means the officer was not satisfied that the study itself makes sense as the reason for coming. Typically the concern is that the programme does not follow from your existing education or career, that it repeats a qualification you already hold, that it represents a step backwards, or that a comparable programme was available closer to home. Visitor refusals can cite purpose of visit too, but this reasonableness assessment of the study plan is particular to study permit files — which is why applicants who have been refused a visit visa before often do not recognise it.',
   },
   {
     q: 'Can I just apply again with the same documents?',
@@ -132,14 +132,15 @@ export default function StudyPermitRefusalsPage() {
         title={
           <>
             The letter tells you the headings.{' '}
-            <span className="text-gold-300">The notes tell you the reason.</span>
+            <span className="text-gold-300">The officer’s note tells you the reason.</span>
           </>
         }
         subtitle={
           <>
-            A study permit refusal arrives as a page of ticked boxes. Those boxes are categories, not
-            reasoning. Until you have read what the officer actually wrote, you are guessing at what
-            to fix — and re-filing the same file usually produces the same answer.
+            A study permit refusal letter lists categories, often as ticked boxes. Since July 2025 it
+            should also come with a note written by the officer. Until you have read what the officer
+            actually wrote, you are guessing at what to fix — and re-filing the same file usually
+            produces the same answer.
           </>
         }
       >
@@ -163,17 +164,26 @@ export default function StudyPermitRefusalsPage() {
             or a court would use the term.
           </p>
           <p>
-            The decision itself lives in the officer’s entry in IRCC’s case management system. That
-            entry is typically brief — often a few sentences — but it is where the officer sets out
-            what they weighed and what they concluded. Two applicants can receive letters with
+            The reasoning is in what the officer wrote. Since 29 July 2025, IRCC has sent an{' '}
+            <a
+              href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/officer-decision-notes.html"
+              className="font-semibold text-accent-500 link-underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              officer decision note
+            </a>{' '}
+            with refusal letters for study permits and study permit extensions, written by the officer
+            who made the final decision. Look for it first. IRCC says it may remove portions of a note
+            to protect sensitive information. Two applicants can receive letters with
             identical boxes ticked and have entirely different underlying findings.
           </p>
           <p>
             This matters because almost every decision you make next depends on which finding was
-            decisive. Those notes are released through an access-to-information request rather than
-            handed to you with the letter, and applicants outside Canada generally need a
-            representative in Canada to file it — the eligibility rules and the current process are
-            set out on the{' '}
+            decisive. If your refusal is older, no note came with it, or you need the fuller record,
+            you can request your GCMS notes. A request for your own information falls under the
+            Privacy Act and is open to people outside Canada — the eligibility rules and the current
+            process are set out on the{' '}
             <a
               href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/access-information-privacy.html"
               className="font-semibold text-accent-500 link-underline"

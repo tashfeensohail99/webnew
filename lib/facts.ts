@@ -119,6 +119,28 @@ export const FACTS: Record<string, Fact> = {
     note: 'Timing is secondary: Lewis Silkin (3 Nov 2026) reports rule changes from December 2026 and implementation during 2027. Re-check when the rules are laid.',
   },
 
+  // ── CANADA: AFTER A REFUSAL (re-check monthly) ─────────────────────────────
+  caOfficerDecisionNotes: {
+    id: 'ca.refusal.decision-notes',
+    claim:
+      'IRCC includes an officer decision note with the refusal letter for most temporary resident applications since 29 July 2025 and most permanent resident applications since 26 May 2026. eTAs, temporary resident permits and H&C applications are excluded, and IRCC may remove portions of a note.',
+    provenance: 'primary',
+    source: 'IRCC, Explaining application refusals: Officer decision note (page dated 2026-08-27)',
+    sourceUrl:
+      'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/officer-decision-notes.html',
+    checked: '2026-11-08',
+  },
+  caPrivacyActAccess: {
+    id: 'ca.refusal.privacy-act',
+    claim:
+      'Foreign nationals, wherever they are located, can request their own personal information from IRCC under the Privacy Act, with no fee. The Access to Information route is limited to Canadian citizens, permanent residents and individuals or corporations in Canada, and carries a fee.',
+    provenance: 'primary',
+    source: 'IRCC, How to make a request under the Privacy Act; IRCC, How to make a request under the Access to Information Act',
+    sourceUrl:
+      'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/access-information-privacy/request-privacy-act.html',
+    checked: '2026-11-08',
+  },
+
   // ── CANADA: PROGRAMME STATUS (re-check monthly) ──────────────────────────
   caParentsGrandparentsPaused: {
     id: 'ca.pgp.paused',

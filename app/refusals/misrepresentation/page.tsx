@@ -12,6 +12,7 @@ import {
   Icon,
 } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { SERVICE } from '@/lib/site';
 
 /**
  * Misrepresentation findings under IRPA s.40.
@@ -26,7 +27,7 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * particular facts.
  */
 export const metadata: Metadata = {
-  title: 'Misrepresentation Findings in Canadian Immigration',
+  title: 'Misrepresentation in Canadian Immigration',
   description:
     'What misrepresentation means under section 40 of the IRPA, why an agent’s actions in your name can bind you, and why not to answer a fairness letter alone.',
   alternates: { canonical: '/refusals/misrepresentation' },
@@ -163,11 +164,14 @@ export default function MisrepresentationPage() {
             We do not publish model answers, template explanations or strategy for these letters.
             That is deliberate. The response often shapes the outcome, the deadline is set out in the
             letter itself, and a well-intentioned self-drafted reply can close options that a licensed
-            representative would have kept open. If your matter is at that stage,{' '}
+            representative would have kept open. If your matter is at that stage, take it to a
+            licensed representative rather than reading further and acting on it, and check them on
+            the College’s public register or with a Canadian law society first, whoever they are.
+            You can{' '}
             <Link href="/book-consultation" className="font-semibold text-accent-500 link-underline">
               book a consultation
             </Link>{' '}
-            rather than reading further and acting on it.
+            with us to talk through where you stand.
           </p>
         </Callout>
       </Section>
@@ -213,7 +217,7 @@ export default function MisrepresentationPage() {
         <SectionHeading
           eyebrow="How people arrive here"
           title="The situations that produce these findings"
-          subtitle="Very few of the people who reach us set out to deceive anyone. That is the point of the section below."
+          subtitle="You do not have to set out to deceive anyone to end up here. That is the point of the section below."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {HOW_IT_ARISES.map((s, i) => (
@@ -400,6 +404,7 @@ export default function MisrepresentationPage() {
         title="Bring us the letter and the full file"
         subtitle="If a concern has been raised about the truth or completeness of your application, the useful first step is a licensed person reading what was actually submitted in your name. Deadlines in these matters are short."
         page={PAGE}
+        service={SERVICE.JR_RESUBMISSION}
         waMessage="Hi, I’ve received a letter about my application that mentions misrepresentation and I need to speak to someone licensed."
       />
     </>

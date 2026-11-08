@@ -24,7 +24,7 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * list is revised periodically. Everything volatile is linked to IRCC instead.
  */
 export const metadata: Metadata = {
-  title: 'Canadian Study Permit',
+  title: 'Canadian Study Permit from Pakistan: How It Works',
   description:
     'How a study permit application works: acceptance from a DLI, the attestation letter, proof of funds, medicals, and the study plan officers assess.',
   alternates: { canonical: '/study-in-canada/study-permit' },
@@ -99,11 +99,11 @@ const STEPS = [
 const FAQS = [
   {
     q: 'What is the most common reason study permits from Pakistan are refused?',
-    a: 'In our experience the reasoning most often turns on purpose of visit — the officer is not satisfied the studies are the real reason for the trip, or that the programme is a sensible step for someone with your record. Financial reasoning and weak ties to Pakistan appear frequently as well, and often alongside it. These are judgement findings, not missing-document findings, which is why they cannot be cured by adding paperwork.',
+    a: 'Officers’ reasoning commonly turns on purpose of visit — the officer is not satisfied the studies are the real reason for the trip, or that the programme is a sensible step for someone with your record — and on financial reasoning and weak ties to Pakistan, often together. These are judgement findings, not missing-document findings, which is why they cannot be cured by adding paperwork.',
   },
   {
     q: 'How much money do I need to show?',
-    a: 'There is a required amount, it varies by circumstances such as where you will study and how many people are coming with you, and IRCC revises it. We do not print it here because a figure that is correct today becomes a trap on a page you read next year. Read the current requirement on IRCC’s own site on the day you prepare your file — and understand that meeting the number is the floor, not the argument.',
+    a: 'There is a required amount, it varies by circumstances such as where you will study and how many people are coming with you, and IRCC revises it. We do not print it here because a figure that is correct today becomes a trap on a page you read next year. Read the current requirement on IRCC’s financial support page on the day you prepare your file — and understand that meeting the number is the floor, not the argument.',
   },
   {
     q: 'How long does a study permit take?',
@@ -123,7 +123,7 @@ const FAQS = [
   },
   {
     q: 'My previous study permit was refused. Can I apply again?',
-    a: 'Yes, but only if something has genuinely changed. Re-filing the same file with a longer letter attached usually produces the same result, and a pattern of refusals becomes its own problem. The first step is to obtain the officer’s actual reasoning through the notes before deciding anything.',
+    a: 'Yes, but only if something has genuinely changed. Re-filing the same file with a longer letter attached usually produces the same result, and a pattern of refusals becomes its own problem. The first step is to read the officer decision note IRCC now sends with study permit refusals, and to order the fuller notes if you need them, before deciding anything.',
   },
   {
     q: 'Can you guarantee my study permit will be approved?',
@@ -170,8 +170,15 @@ export default function StudyPermitPage() {
             That last point is where most applicants are surprised. The governing regulation requires
             the officer to be satisfied that you will depart Canada by the end of your authorised
             stay. So the officer is weighing two things at once: that you are a genuine student, and
-            that you are a temporary one. Applicants who present the permit as a first step to
-            settling in Canada are answering the second question badly without realising it.
+            that you are a temporary one. Hoping to settle in Canada one day is not itself a problem:
+            the Act says an intention to become a permanent resident does not stop you becoming a
+            temporary resident, as long as the officer is satisfied you will leave when your stay
+            ends. But applicants whose file reads as if the permit is only a way into Canada are
+            answering the second question badly without realising it.{' '}
+            <Link href="/study-in-canada/study-to-permanent-residence" className="font-semibold text-accent-500 link-underline">
+              How study can lead to permanent residence
+            </Link>
+            .
           </p>
           <p>
             The permit is also not a visa on its own. Where a visa or electronic authorisation is
@@ -320,15 +327,15 @@ export default function StudyPermitPage() {
           </p>
           <p>
             <strong>Documents obtained rather than earned.</strong> An arranged experience letter, an
-            inflated transcript, an unearned language result. This is misrepresentation, and it carries
-            a bar on future applications that outlasts the course you were applying for.
+            inflated transcript, an unearned language result. This is misrepresentation, and it makes
+            you inadmissible for a period set by law that can outlast the course you were applying for.
           </p>
           <p>
-            <strong>Reapplying without knowing why you were refused.</strong> The letter you receive is
-            a summary. The officer’s reasoning sits in the notes on file, and reapplying without it is
-            guessing.{' '}
+            <strong>Reapplying without knowing why you were refused.</strong> Since 29 July 2025 IRCC
+            has sent an officer decision note with study permit refusals. Read it first, because
+            reapplying without the officer’s reasoning is guessing.{' '}
             <Link href="/refusals/gcms-notes" className="font-semibold text-accent-500 link-underline">
-              Get the notes first
+              When the fuller notes are worth ordering
             </Link>
             .
           </p>
@@ -404,6 +411,15 @@ export default function StudyPermitPage() {
               target="_blank"
             >
               canada.ca
+            </a>
+            , including the{' '}
+            <a
+              href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html"
+              className="font-semibold text-accent-500 link-underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              financial support requirement
             </a>
             , and the test the officer applies sits in the{' '}
             <a

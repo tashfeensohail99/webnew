@@ -4,6 +4,31 @@ One entry per batch, newest first. Each entry records the commit, what changed a
 
 To see any page's original wording: `git show 9d17a79:<path to the page>`.
 
+## Batch 3: programmes that have closed or paused, 8 November 2026
+
+- **Commit:** `adcbacb`. To undo only the page changes, restore the changed `app/` files and `lib/facts.ts` from `11cef34`, because this commit also added the SEO baseline evidence.
+- **Why:** these pages described closed or paused programmes as available, or kept their status vague.
+
+| Page | Change | Source |
+| --- | --- | --- |
+| `/family-sponsorship` | Parents' program paused; public policy for spouses without status; links to all detail pages; dead fee link replaced; no longer points to a fee page with no family prices; WhatsApp prefill reworded. | [IRCC, parents](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/sponsor-parents-grandparents.html); [IRCC public policy](https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/immigration-refugee-protection-act-spousal-policy.html) |
+| `/family-sponsorship/parents-grandparents` | Dated status box; steps, FAQs and call to action rewritten around the pause; unsupported caseload claim removed. | IRCC, parents |
+| `/visitor-visa/super-visa` | Sponsorship described as paused; IRCC's term "promise of financial support" used; both income options reflected; banned wording replaced. | IRCC, parents; [IRCC host support](https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/forms-documents/host-financial-support.html) |
+| `/canada-immigration-from-pakistan` | Sponsorship card and text limited to routes available now; dead fee link replaced; unsupported claims removed. | IRCC, parents |
+| `/canada-immigration-from-pakistan/police-certificate` | Dead Sindh Police link replaced with the service's home page. | Live test |
+| `/caregivers` | Dated status box; who may be the employer corrected; superlatives removed. | [IRCC notice](https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/pausing-home-care-worker-immigration-pilots-application-intake.html); [IRCC job offer](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/caregivers/home-care-worker-immigration-pilots/child-care-home-support/job-offer.html) |
+| `/work-permits/caregivers` | Pilots paused; spouse rule stated by skill level. | IRCC notice; [IRCC spouse rules](https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/special-instructions/spouses-dependent-children/eligibility.html) |
+| `/work-permit-canada/business-plan` | Start-Up Visa no longer offered as a route. | [IRCC notice](https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/immigration-measures-entrepreneurs.html) |
+| `/business-immigration` | Ontario and Saskatchewan closures; self-employed time and the Canadian Experience Class; unsupported claims softened. | [Ontario](https://www.ontario.ca/page/ontario-immigrant-nominee-program-oinp); Saskatchewan; [IRCC CEC](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html) |
+| `/rural-community-immigration` | Both current pilots named; retitled away from the closed Rural and Northern pilot. | [IRCC pilots](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots.html) |
+
+- **Register:** five dated programme statuses added to `lib/facts.ts`. Re-check monthly.
+- **Checked before shipping:** build, typecheck, `test:crs`, `test:fsw`.
+- **Checked on production:** 93 of 93 URLs return 200; the crawl shows no regressions other than the deliberate removal of the `/fees` link from `/family-sponsorship`; all 19 removed statements gone and all 13 new ones present; all ten pages load on a phone with no sideways scrolling or script errors. Status boxes viewed on desktop (light) and phone (dark).
+- **External links re-tested after the deploy:** 194 unique. None of the ten pages has a 404. Two unchanged links on `/canada-immigration-from-pakistan/police-certificate` (Punjab and Islamabad police) timed out from the test machine on both tries, so they are neither confirmed nor ruled out. Five dead links remain on pages outside this batch: `/pnp`, `/pnp/british-columbia`, `/work-permits/lmia-exempt`, `/study-in-canada/bringing-family` and `/visitor-visa`.
+- **Search:** IndexNow accepted the ten URLs.
+- **Deliberately left alone:** review dates (no lawyer reviewed these edits); "Talk to a lawyer" buttons; the undertaking lengths, income test, Super Visa stay length and community list (all wait on the figures decision); merging overlapping sections.
+
 ## Batch 2: CRS rebuild and Express Entry guides, 8 November 2026
 
 - **Commit:** `11cef34`. Rollback: `git revert 11cef34`, then push to `webnew` main and `origin` main.

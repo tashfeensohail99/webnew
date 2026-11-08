@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { ReactNode } from 'react';
 import { WhatsAppCta } from '@/components/WhatsAppCta';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
-import { SERVICE } from '@/lib/site';
+import { SERVICE, type ServiceCode } from '@/lib/site';
 
 /**
  * The premium component library. Every page composes these so the whole site
@@ -280,12 +280,15 @@ export function CTASection({
   subtitle,
   waMessage = 'Hi, I’d like to book a consultation.',
   page = 'cta',
+  service = SERVICE.WORK_PERMIT,
 }: {
   eyebrow?: string;
   title: ReactNode;
   subtitle?: ReactNode;
   waMessage?: string;
   page?: string;
+  /** Which CRM service an enquiry from this button is tagged with. */
+  service?: ServiceCode;
 }) {
   return (
     <section className="relative overflow-hidden bg-hero text-white">
@@ -301,7 +304,7 @@ export function CTASection({
           </Link>
           <WhatsAppCta
             variant="ghost"
-            intent={{ service: SERVICE.WORK_PERMIT, page, targetCountry: 'Canada', message: waMessage }}
+            intent={{ service, page, targetCountry: 'Canada', message: waMessage }}
           >
             Ask on WhatsApp
           </WhatsAppCta>

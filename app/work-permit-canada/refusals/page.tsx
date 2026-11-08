@@ -66,33 +66,37 @@ const REASONS: { icon: IconName; kicker: string; title: string; body: string }[]
   },
 ];
 
-const AFTER: { href: string; title: string; body: string }[] = [
+const AFTER: { href: string; title: string; body: string; cta: string }[] = [
   {
     href: '/refusals/gcms-notes',
     title: 'Read the officer’s notes',
-    body: 'The letter names a ground. The notes say what the officer actually found — usually the difference between fixing the right thing and the wrong one.',
+    body: 'The letter names a ground. The decision note that now comes with most refusals says what the officer actually found — usually the difference between fixing the right thing and the wrong one.',
+    cta: 'How officer notes work',
   },
   {
     href: '/refusals/re-applying',
     title: 'Re-apply with the weakness fixed',
     body: 'Often the right move, but only once you can say in one sentence what went wrong — and the new file answers it.',
+    cta: 'When re-applying makes sense',
   },
   {
     href: '/refusals/reconsideration',
     title: 'Ask IRCC to look again',
     body: 'A narrow route for a clear mistake, such as a document the officer overlooked. Not a second chance to argue the same file.',
+    cta: 'When reconsideration can work',
   },
   {
     href: '/refusals/judicial-review',
     title: 'Challenge it in Federal Court',
     body: 'For an unreasonable or unfair decision. The deadline is short and runs from the day you are told — decide quickly.',
+    cta: 'How judicial review works',
   },
 ];
 
 const FAQS = [
   {
     q: 'Can I re-apply after a C11 refusal?',
-    a: 'IRCC states that if an application is refused you can apply again at any time unless your decision letter says otherwise — so read your own letter first. The exception that matters is misrepresentation: a finding of misrepresentation carries a statutory bar, and re-applying into it makes things worse.',
+    a: 'IRCC states that if an application is refused you can apply again at any time unless your decision letter says otherwise — so read your own letter first. The exception that matters is misrepresentation: a finding makes you inadmissible for a period set by law, and re-applying during it makes things worse.',
   },
   {
     q: 'Will showing more money fix a C11 refusal?',
@@ -100,15 +104,15 @@ const FAQS = [
   },
   {
     q: 'My refusal letter just ticks boxes. How do I know the real reason?',
-    a: 'Refusal letters are built from standard grounds, and one ground can cover several different findings. The officer’s notes on your file usually say more. For your own information you can generally request them yourself; our page on the officer’s notes explains how.',
+    a: 'Refusal letters are built from standard grounds, and one ground can cover several different findings. Since 29 July 2025 IRCC has sent an officer decision note with most work permit refusals, so look for it first. If your refusal is older, no note came, or you need the fuller record, you can generally request the notes on your file yourself; our page on the officer’s notes explains how.',
   },
   {
     q: 'Is judicial review worth it for a C11 refusal?',
-    a: 'Sometimes. The Federal Court does not re-decide your application or grant a permit; it asks whether the officer’s decision was reasonable and fair. If it was not, the usual result is that a different officer decides the file again. It needs a lawyer, and the filing deadline is short.',
+    a: 'Sometimes. The Federal Court does not re-decide your application or grant a permit; it asks whether the officer’s decision was reasonable and fair. If it was not, the usual result is that a different officer decides the file again. A consultant cannot run it for you, a Canadian lawyer is strongly advised, and the filing deadline is short.',
   },
   {
     q: 'Should I switch to a different route instead?',
-    a: 'Possibly. If you intend to settle in Canada, IRCC itself points business owners away from C11 to permanent routes such as provincial business programmes or the Start-up Visa. A refusal is a good moment to ask whether C11 was ever the right fit.',
+    a: 'Possibly. If you intend to settle in Canada, IRCC’s C11 instructions say applicants seeking permanent residence should be assessed under other categories, such as provincial business candidates. The Start-Up Visa, which those instructions also name, stopped taking new applications on 31 December 2025. A refusal is a good moment to ask whether C11 was ever the right fit.',
   },
 ];
 
@@ -160,7 +164,7 @@ export default function C11RefusalsPage() {
           <Callout title="The serious one: a document IRCC doubts">
             A concern that a document is not genuine, or that something material was left out, is a
             different order of problem from a weak plan — it can lead to a finding of
-            misrepresentation, which carries a bar on applying again.{' '}
+            misrepresentation, which makes you inadmissible for a period set by law.{' '}
             <Link href="/refusals/misrepresentation" className="font-semibold text-accent-500 link-underline">
               Read about misrepresentation
             </Link>{' '}
@@ -178,11 +182,18 @@ export default function C11RefusalsPage() {
         />
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {AFTER.map((a) => (
-            <FeatureCard key={a.href} title={a.title} href={a.href} cta="Read the guide">
+            <FeatureCard key={a.href} title={a.title} href={a.href} cta={a.cta}>
               {a.body}
             </FeatureCard>
           ))}
         </div>
+        <p className="mx-auto mt-10 max-w-3xl text-center text-ink-600 text-pretty">
+          If your real goal is to settle in Canada, see{' '}
+          <Link href="/business-immigration" className="font-semibold text-accent-500 link-underline">
+            which business routes are still open
+          </Link>
+          .
+        </p>
       </Section>
 
       {/* ===================== FAQ ===================== */}

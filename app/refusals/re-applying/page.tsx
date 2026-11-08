@@ -12,6 +12,7 @@ import {
   Icon,
 } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
+import { SERVICE } from '@/lib/site';
 
 /**
  * Re-applying after a refusal.
@@ -36,7 +37,7 @@ const BEFORE_YOU_REFILE = [
     icon: 'doc' as const,
     kicker: 'First',
     title: 'Read the actual reasons',
-    body: 'The refusal letter is a summary with boxes ticked. The officer’s reasoning sits in the notes on file. Without those you are guessing at what to fix, and a guess is how people re-file the same weakness twice.',
+    body: 'Start with the officer decision note that now comes with most refusals, and order the fuller notes on file if you need them. Without the reasoning you are guessing at what to fix, and a guess is how people re-file the same weakness twice.',
   },
   {
     icon: 'scale' as const,
@@ -119,7 +120,7 @@ const FAQS = [
   },
   {
     q: 'What happens if I do not disclose a previous refusal?',
-    a: 'The Immigration and Refugee Protection Act requires applicants to answer questions truthfully and to produce the evidence an officer reasonably requires. Withholding a material fact that could induce an error in administering the Act can support a finding of misrepresentation, which carries a period of inadmissibility set out in the Act — a bar on applying again, not merely a refusal. Assume the previous application is visible. Hiding a refusal converts a survivable problem into a serious one.',
+    a: 'The Immigration and Refugee Protection Act requires applicants to answer questions truthfully and to produce the evidence an officer reasonably requires. Withholding a material fact that could induce an error in administering the Act can support a finding of misrepresentation, which carries a period of inadmissibility set out in the Act, including a bar on applying for permanent residence during it, not merely a refusal. Assume the previous application is visible. Hiding a refusal converts a survivable problem into a serious one.',
   },
   {
     q: 'Should I ask for reconsideration instead of re-applying?',
@@ -127,7 +128,7 @@ const FAQS = [
   },
   {
     q: 'The refusal seems unfair. Can I challenge it rather than re-apply?',
-    a: 'Possibly. Where the concern is that the decision was legally unreasonable or the process was unfair, the route runs through the Federal Court rather than through another application. That is a legal proceeding with its own deadlines and requirements and it is not a substitute for fixing a weak file.',
+    a: 'Possibly. Where the concern is that the decision was legally unreasonable or the process was unfair, the route runs through the Federal Court rather than through another application. That is a legal proceeding with its own deadlines and requirements and it is not a substitute for fixing a weak file. Re-applying does not stop that clock, so if you might want a court to look at the decision, settle that first.',
   },
   {
     q: 'Can you tell me whether my new application will succeed?',
@@ -216,10 +217,11 @@ export default function ReApplyingPage() {
         <div className="mt-10">
           <Callout title="Read the reasons before you rewrite anything">
             <p>
-              The refusal letter tells you which category of concern applied. It rarely tells you why
-              the officer reached that view on your particular facts. Those working notes sit on the
-              file and can be requested, and they routinely reveal that the real concern was something
-              nobody guessed from the letter — a document that read as inconsistent, an employment
+              The refusal letter tells you which category of concern applied. IRCC now sends an
+              officer decision note with most refusals, and that is the first place to look for why
+              the officer reached that view on your particular facts. The fuller notes on the file can
+              be requested, and they can reveal that the real concern was something nobody guessed
+              from the letter — a document that read as inconsistent, an employment
               history the officer did not accept, a sponsor’s circumstances rather than yours.
             </p>
             <p>
@@ -265,7 +267,7 @@ export default function ReApplyingPage() {
             <SectionHeading
               eyebrow="What does not count"
               title="Better presentation of the same facts"
-              subtitle="Each of these is something we are regularly asked to do after a refusal. None of them changes what the officer was assessing."
+              subtitle="None of these changes what the officer was assessing."
             />
             <ul className="mt-6 space-y-4">
               {NOT_CHANGE.map(([term, def]) => (
@@ -320,7 +322,7 @@ export default function ReApplyingPage() {
             requires, and withholding a material fact that could induce an error in administering the
             Act can support a finding of misrepresentation. That finding does not simply refuse the
             application — it carries a fixed period of inadmissibility set out in section 40 of the
-            Act, during which further applications are barred. Read the current period at the source
+            Act, during which you remain inadmissible and cannot apply for permanent residence. Read the current period at the source
             rather than taking anyone’s word for it. The refusal you were trying to hide was
             survivable on its own terms; a misrepresentation finding is a different order of problem,
             and it is one a licensed representative should look at before you file anything.
@@ -330,8 +332,8 @@ export default function ReApplyingPage() {
         <div className="mt-10">
           <Callout title="If an agent told you to leave the refusal off the form">
             <p>
-              This is among the most damaging advice an applicant can be given, and we are asked
-              about it regularly. It is offered as a practical shortcut. It is not one. IRCC can see
+              This is among the most damaging advice an applicant can be given. It is offered as a
+              practical shortcut. It is not one. IRCC can see
               its own record of your prior applications, and the person who
               signs the declaration is you, not the agent who drafted it. The consequence lands on
               you and it lasts far longer than a refusal would have.
@@ -525,6 +527,7 @@ export default function ReApplyingPage() {
         title="Find out whether anything has actually changed"
         subtitle="Send us the refusal letter and, if you have them, the notes from your file. We will tell you honestly whether a new application is worth making now, later, or at all."
         page={PAGE}
+        service={SERVICE.JR_RESUBMISSION}
         waMessage="Hi, my Canadian application was refused and I’d like to know whether re-applying makes sense in my situation."
       />
     </>
