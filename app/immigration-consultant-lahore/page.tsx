@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { OfficeLanding } from '@/components/OfficeLanding';
+import { OfficeLanding, LocalSource, LOCAL_SOURCES } from '@/components/OfficeLanding';
 import { site } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -22,10 +22,60 @@ export default function LahoreOfficePage() {
       eyebrow="Lahore office · DHA Phase 2"
       subtitle="An office you can walk into — Haly Tower, DHA Phase 2. The consultation is free, and you leave with a written summary of where you stand."
       other={{ href: '/immigration-consultant-islamabad', city: 'Islamabad' }}
+      local={{
+        eyebrow: 'Applying from Lahore',
+        title: 'Where each step happens if you apply from Lahore',
+        subtitle: 'Most Canadian applications are filed online. These are the parts that need you in person, as IRCC describes them.',
+        items: [
+          {
+            term: 'Biometrics',
+            body: (
+              <>
+                Lahore has one of Pakistan’s three Canada visa application centres; the others are in
+                Islamabad and Karachi.{' '}
+                <LocalSource href={LOCAL_SOURCES.biometrics}>IRCC says the appointment is free</LocalSource>, so do
+                not pay anyone for one.
+              </>
+            ),
+          },
+          {
+            term: 'The visa application centre',
+            body: (
+              <>
+                It handles biometrics, photos, copies and returning your passport.{' '}
+                <LocalSource href={LOCAL_SOURCES.vac}>IRCC says these centres</LocalSource> play no role in
+                decisions and are forbidden from giving visa advice, so treat anyone offering to influence
+                your case there as a warning sign.
+              </>
+            ),
+          },
+          {
+            term: 'Police certificate',
+            body: (
+              <>
+                In Punjab you apply at a Police Khidmat Markaz, and{' '}
+                <LocalSource href={LOCAL_SOURCES.police}>IRCC says</LocalSource> Lahore has more than one. You can
+                use any centre in Punjab, so if you live in Lahore now and used to live in Rawalpindi, you
+                can apply in Lahore.
+              </>
+            ),
+          },
+          {
+            term: 'Medical exam',
+            body: (
+              <>
+                If your application needs one, it must be done by a doctor on{' '}
+                <LocalSource href={LOCAL_SOURCES.panel}>IRCC’s panel physician list</LocalSource>. Your own doctor
+                cannot do it, so check the list before you book.
+              </>
+            ),
+          },
+        ],
+      }}
       intro={
         <>
           <p>
-            Lahore has no shortage of immigration consultants. Most of them are agents: anyone can
+            Lahore has no shortage of immigration consultants. Many of them are agents: anyone can
             rent a room, print a banner with a maple leaf and start taking deposits, because Pakistan
             has no licensing body for immigration advice. That is how so many families here have lost
             money to a “guaranteed” visa.
@@ -45,6 +95,14 @@ export default function LahoreOfficePage() {
         </>
       }
       faqs={[
+        {
+          q: 'Where do I give biometrics for Canada in Lahore?',
+          a: 'At the Canada visa application centre in Lahore, by appointment. IRCC says biometrics appointments are free, so do not pay anyone to book one.',
+        },
+        {
+          q: 'Where do I get a police certificate in Lahore?',
+          a: 'At a Police Khidmat Markaz. IRCC says you can apply at any centre in Punjab, even for a district you used to live in.',
+        },
         {
           q: 'Is the consultation at the Lahore office really free?',
           a: 'Yes. You pay nothing for the consultation and nothing unless you decide to go ahead — and you leave with a written summary of where you stand either way.',

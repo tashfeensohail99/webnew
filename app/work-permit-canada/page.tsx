@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
 import Link from 'next/link';
 import {
   PageHero,
@@ -31,9 +32,9 @@ import { site, SERVICE } from '@/lib/site';
  * 2025-05-27). Re-check that page when reviewing this one.
  */
 export const metadata: Metadata = {
-  title: 'C11 Work Permit Canada: Run Your Own Business',
+  title: 'C11 Work Permit Canada: Requirements and Process',
   description:
-    'The C11 work permit lets you run your own Canadian business with no job offer or LMIA. IRCC’s real rules: 51% ownership, significant benefit, funds.',
+    'What IRCC requires for a C11 work permit: 51% ownership, significant benefit, support and business funds, the Employer Portal offer and an exit plan.',
   alternates: { canonical: '/work-permit-canada' },
 };
 
@@ -41,7 +42,26 @@ const PAGE = 'work-permit-canada';
 
 const IRCC = {
   c11: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/entrepreneurs-self-employed-seeking-only-temp-residence-r205-c11.html',
+  r205: 'https://laws-lois.justice.gc.ca/eng/regulations/sor-2002-227/section-205.html',
+  portal: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/partners-service-providers/employer-portal/enrolment-guide.html',
+  lico: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html',
+  fees: 'https://ircc.canada.ca/english/information/fees/fees.asp',
+  times: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html',
+  biometrics: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/biometrics/where-to-give.html',
+  vac: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/find-visa-application-centre.html',
+  medical: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/medical-exams/requirements-temporary-residents.html',
+  panel: 'https://secure.cic.gc.ca/PanelPhysicianMedecinDesigne/en/Home',
+  police: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/police-certificates/how/pakistan.html',
 } as const;
+
+/** An official source, opened in a new tab. */
+function Source({ href, children }: { href: string; children: ReactNode }) {
+  return (
+    <a href={href} rel="noopener noreferrer" target="_blank" className="font-semibold text-accent-500 link-underline">
+      {children}
+    </a>
+  );
+}
 
 /** The firm's own explainer on its YouTube channel (published 2026-10-11). */
 const VIDEO = {
@@ -61,6 +81,34 @@ const GLANCE: [string, string][] = [
   ['Your funds', 'Business money kept separate from your family’s living funds, which must be at least the low-income cut-off for your family size for 18 months — with proof of where the money came from.'],
   ['Length of stay', 'The work should normally not exceed 18 months. Longer needs a definite plan to hand over the running of the business.'],
   ['Settling permanently', 'The C11 is a temporary permit. IRCC’s guidance points business owners who intend to settle to other routes, such as provincial entrepreneur streams.'],
+];
+
+/** What IRCC's instructions list under "Documentary evidence" for this category. */
+const REQUIREMENTS: [string, ReactNode][] = [
+  ['Offer of employment number', <>You submit an offer of employment for yourself through IRCC’s <Source href={IRCC.portal}>Employer Portal</Source>, choosing “C11 – Business Owner – Temporary Purpose”, and give the number it generates.</>],
+  ['Employer compliance fee', 'Proof that you have paid it. You are the employer as well as the employee.'],
+  ['Work permit application', 'Filed online under code C11, unless you are exempt from applying online.'],
+  ['Proof of ownership', 'Documents showing your degree of ownership. IRCC considers a C11 only where you control at least 51% of the business.'],
+  ['Evidence your stay is temporary', 'Enough to satisfy an officer that you will leave and are not trying to become a de facto resident.'],
+  ['Evidence of significant benefit', 'How your work will create or maintain a significant economic, social or cultural benefit, such as market expansion, jobs in the area or advances in a Canadian industry.'],
+  ['Support funds', <>Transferable, available and free of debts or other obligations, equal to the <Source href={IRCC.lico}>low-income cut-off</Source> for your family size for 18 months, or your stay if shorter.</>],
+  ['Business funds', 'Separate from your support funds, with proof of where the money came from. Officers have discretion over how much a business needs.'],
+];
+
+/** The in-person steps for someone applying from Pakistan, each from an IRCC page. */
+const FROM_PAKISTAN: [string, ReactNode][] = [
+  ['Biometrics', <>Given at a visa application centre in Islamabad, Karachi or Lahore. <Source href={IRCC.biometrics}>IRCC says the appointment is free</Source>, so do not pay anyone for one.</>],
+  ['The visa centre does not decide', <><Source href={IRCC.vac}>IRCC says visa application centres</Source> play no role in decisions and are forbidden from giving visa advice.</>],
+  ['Medical exam', <>IRCC lists Pakistan among the countries where <Source href={IRCC.medical}>a medical exam applies to longer stays</Source>. Only a doctor on its <Source href={IRCC.panel}>panel physician list</Source> can do it.</>],
+  ['Police certificate', <>IRCC requires one for some temporary residence programs, so check your application package. <Source href={IRCC.police}>The procedure in Pakistan</Source> depends on your province.</>],
+];
+
+/** Where to go when the C11 is the wrong route. */
+const NOT_C11 = [
+  { href: '/business-immigration', kicker: 'You plan to settle', title: 'Business immigration to Canada', body: 'IRCC’s instructions send owners who intend to become permanent residents to other routes, such as provincial and territorial business programs.' },
+  { href: '/work-permits/lmia', kicker: 'You own less than 51%', title: 'LMIA work permits', body: 'A smaller owner who works in the business applies as an employee, which may mean an LMIA or another LMIA-exempt category.' },
+  { href: '/work-permits/intra-company-transfer', kicker: 'Your company is sending you', title: 'Intra-company transfers', body: 'If an overseas company is moving you to a related Canadian business, this route may fit better.' },
+  { href: '/work-permits', kicker: 'You are not an owner', title: 'All Canadian work permits', body: 'Start here if you are looking for a job in Canada or already have an employer.' },
 ];
 
 /* Who this route actually fits — the qualify-in profiles. */
@@ -140,7 +188,19 @@ const FAQS = [
   },
   {
     q: 'What is a C11 work permit?',
-    a: 'The C11 is a Canadian work permit that needs no LMIA and no job offer. It is issued under paragraph 205(a) of the Immigration and Refugee Protection Regulations to a business owner whose work in Canada brings a significant economic, social or cultural benefit. IRCC lists it under business owners seeking only temporary residence.',
+    a: 'The C11 is a Canadian work permit that needs no LMIA and no job offer. It is issued under paragraph 205(a) of the Immigration and Refugee Protection Regulations to a business owner whose work in Canada brings a significant economic, social or cultural benefit. IRCC lists it under business owners seeking only temporary residence. People often call it the C11 visa, but C11 is IRCC’s code for a category of work permit.',
+  },
+  {
+    q: 'What are the C11 work permit requirements?',
+    a: 'IRCC asks for an offer of employment you submit for yourself through its Employer Portal, proof you paid the employer compliance fee, a work permit application, documents showing you control at least 51% of the business, evidence that your stay is temporary, evidence of significant benefit to Canada, proof of support funds, and separate proof of business funds.',
+  },
+  {
+    q: 'Can I apply for a C11 from Pakistan?',
+    a: 'Yes. IRCC’s C11 instructions do not limit the route by nationality, and they expect applications to be filed online. If you apply from Pakistan, you give your biometrics at a visa application centre in Islamabad, Karachi or Lahore.',
+  },
+  {
+    q: 'Am I self-employed or an entrepreneur for a C11?',
+    a: 'IRCC treats you as self-employed if the business only employs you and your family, even if it is incorporated. An entrepreneur hires people outside the family to do the work while managing the business. The difference changes the occupation code on your offer and how the benefit to Canada is assessed.',
   },
   {
     q: 'What percentage of the business do I need to own?',
@@ -159,8 +219,12 @@ const FAQS = [
     a: 'IRCC’s guidance says the work should normally not exceed 18 months. A longer period needs a definite plan for handing over the running of the business, such as hiring a manager.',
   },
   {
+    q: 'Can a C11 work permit be extended?',
+    a: 'It can, but not automatically. You apply in Canada and show what you did to carry out your business plan, the benefit your work delivered, why you need more time, and that you will still leave Canada. IRCC warns that repeated permits over several years with no break may no longer meet the requirement.',
+  },
+  {
     q: 'Can a C11 lead to permanent residence?',
-    a: 'Not on its own. The C11 is a temporary permit for business owners, and IRCC’s guidance directs owners who intend to settle permanently to other routes, such as provincial entrepreneur streams. Self-employed time on a C11 does not count as work experience for the Canadian Experience Class. Some people go on to qualify for permanent residence through a separate application on their own merits — whether that is realistic for you depends on your profile, and we will tell you straight.',
+    a: 'Not on its own. The C11 is a temporary permit for business owners, and IRCC’s guidance directs owners who intend to settle permanently to other routes, such as provincial entrepreneur streams. Neither self-employed nor entrepreneur time on a C11 counts as work experience for the Canadian Experience Class. Some people go on to qualify for permanent residence through a separate application on their own merits — whether that is realistic for you depends on your profile, and we will tell you straight.',
   },
   {
     q: 'Can my spouse work and my children study?',
@@ -246,8 +310,9 @@ export default function WorkPermitPage() {
           title="What the C11 is, in IRCC’s own terms"
         />
         <p className="lede mt-6 max-w-3xl">
-          The C11 is an LMIA-exempt Canadian work permit, issued under paragraph 205(a) of the
-          Immigration and Refugee Protection Regulations, for a business owner whose work in Canada
+          The C11 is an LMIA-exempt Canadian work permit, issued under{' '}
+          <Source href={IRCC.r205}>paragraph 205(a) of the Immigration and Refugee Protection Regulations</Source>
+          , for a business owner whose work in Canada
           will bring a <strong className="font-semibold text-ink-900">significant economic, social or cultural benefit</strong>.
           IRCC files it under business owners seeking only temporary residence.
         </p>
@@ -280,6 +345,37 @@ export default function WorkPermitPage() {
             <p className="mt-2 font-serif text-xl">Why C11 applications are refused →</p>
           </Link>
         </div>
+      </Section>
+
+      {/* ===================== C11 REQUIREMENTS =====================
+          IRCC's "Documentary evidence" list, in order. Answers "c11 requirements". */}
+      <Section tone="alt">
+        <SectionHeading
+          eyebrow="C11 requirements"
+          title="What IRCC asks you to file"
+          subtitle="You are both the employer and the employee on a C11, so you meet the requirements of both roles. It is on you to give the officer enough evidence."
+        />
+        <ul className="mt-10 grid gap-x-10 gap-y-6 sm:grid-cols-2">
+          {REQUIREMENTS.map(([term, def]) => (
+            <li key={term} className="flex gap-4">
+              <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gold-500 text-ink-950">
+                <Icon name="check" className="h-4 w-4" />
+              </span>
+              <div>
+                <p className="font-serif text-lg text-ink-900">{term}</p>
+                <p className="mt-1 text-ink-600 text-pretty">{def}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-8 max-w-3xl text-ink-600 text-pretty">
+          In the offer itself, the “requirements exemptions met” field is where you explain how the
+          business will benefit Canada and not only you and your family. You can upload a longer
+          explanation there, and your business plan with the work permit application.
+        </p>
+        <p className="mt-6 text-sm text-ink-500">
+          Source: <Source href={IRCC.c11}>IRCC program delivery instructions for C11</Source>, read on 8 November 2026.
+        </p>
       </Section>
 
       {/* ===================== WHO IT FITS (qualify-in) ===================== */}
@@ -369,6 +465,92 @@ export default function WorkPermitPage() {
         </div>
       </Section>
 
+      {/* ===================== SELF-EMPLOYED OR ENTREPRENEUR ===================== */}
+      <Section tone="paper">
+        <SectionHeading
+          eyebrow="Which are you?"
+          title="Self-employed or entrepreneur: IRCC treats them differently"
+        />
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          <div className="card p-8">
+            <h3 className="font-serif text-2xl text-balance">Self-employed</h3>
+            <p className="mt-4 text-ink-600 text-pretty">
+              You work for yourself as the owner, usually do the operational work yourself, and rarely
+              hire anyone outside your family. If the business only employs you and your family, IRCC
+              treats you as self-employed even if it is incorporated.
+            </p>
+            <p className="mt-4 text-ink-600 text-pretty">
+              Your job title and occupation code should match your real duties. Because a one-person
+              business rarely benefits more than its owner, an officer may also weigh the benefit to
+              your Canadian customers, particularly if you offer a service not normally found in that area.
+            </p>
+          </div>
+          <div className="card p-8">
+            <h3 className="font-serif text-2xl text-balance">Entrepreneur</h3>
+            <p className="mt-4 text-ink-600 text-pretty">
+              You organise and run the business, take on greater than normal financial risk, and hire
+              people outside your family to do the work while you manage it.
+            </p>
+            <p className="mt-4 text-ink-600 text-pretty">
+              IRCC’s instructions use the generic occupation code 88888 and the job title
+              “Entrepreneur”. The officer looks at how many jobs you will create, what they pay and
+              what the business does for the local economy.
+            </p>
+          </div>
+        </div>
+        <p className="mt-6 max-w-3xl text-ink-600 text-pretty">
+          Neither kind of work counts toward the Canadian Experience Class.
+        </p>
+      </Section>
+
+      {/* ===================== SIGNIFICANT BENEFIT & TEMPORARY STAY ===================== */}
+      <Section tone="alt">
+        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+          <div>
+            <SectionHeading eyebrow="Significant benefit" title="It is about effect, not how much you spend" />
+            <div className="mt-6 space-y-4 text-ink-600 text-pretty leading-relaxed">
+              <p>
+                IRCC tells officers that neither the type of business nor the amount spent makes it
+                significant. What counts is how your work creates opportunities for Canadians or
+                permanent residents, or benefits a local or regional economy, during the period of the
+                work permit and not at some later time.
+              </p>
+              <p>
+                Its own example is a small convenience store. On a busy Toronto street, hiring two
+                people and competing with established shops, it may make no real difference. In a small
+                rural area far from the nearest grocery store, it may be a benefit, because it hires
+                from a small local pool and brings people to the businesses around it.
+              </p>
+              <p>
+                Read{' '}
+                <Link href="/work-permit-canada/business-plan" className="font-semibold text-accent-500 link-underline">
+                  what a C11 business plan has to show
+                </Link>{' '}
+                for the questions officers are told to ask.
+              </p>
+            </div>
+          </div>
+          <div>
+            <SectionHeading eyebrow="Temporary stay" title="You need a plan to leave, and a plan for the business" />
+            <div className="mt-6 space-y-4 text-ink-600 text-pretty leading-relaxed">
+              <p>
+                The offer of employment should be for no more than 18 months. A longer stay needs a
+                definite plan to step back from running the business.
+              </p>
+              <p>
+                IRCC gives seasonal businesses as examples of temporary work. Year-round businesses,
+                such as auto repair shops, salons and IT companies, need more evidence that you only
+                intend to stay for a temporary period.
+              </p>
+              <p>
+                Either way, give a transition or exit plan, such as hiring a manager to run the business
+                after you leave, and show that your stronger ties are outside Canada.
+              </p>
+            </div>
+          </div>
+        </div>
+      </Section>
+
       {/* ===================== HOW IT WORKS (numbered) ===================== */}
       <Section tone="paper">
         <SectionHeading
@@ -389,8 +571,25 @@ export default function WorkPermitPage() {
         </ol>
       </Section>
 
-      {/* ===================== COST & TIME ===================== */}
+      {/* ===================== FROM PAKISTAN ===================== */}
       <Section tone="alt">
+        <SectionHeading
+          eyebrow="From Pakistan"
+          title="Applying for a C11 from Pakistan"
+          subtitle="IRCC’s C11 instructions do not limit the route by nationality, and they expect applications to be filed online unless you are exempt. These are the in-person steps."
+        />
+        <dl className="mt-10 grid gap-x-10 gap-y-7 sm:grid-cols-2">
+          {FROM_PAKISTAN.map(([term, def]) => (
+            <div key={term} className="border-l-2 border-gold-500/60 pl-5">
+              <dt className="font-serif text-xl">{term}</dt>
+              <dd className="mt-1.5 text-ink-600 text-pretty">{def}</dd>
+            </div>
+          ))}
+        </dl>
+      </Section>
+
+      {/* ===================== COST & TIME ===================== */}
+      <Section tone="paper">
         <div className="grid gap-6 md:grid-cols-2">
           <div className="card p-8 sm:p-10">
             <p className="eyebrow">What it costs</p>
@@ -399,6 +598,11 @@ export default function WorkPermitPage() {
               Our professional fee is quoted for your own file — not a number pulled off a page you’d
               base a life decision on. Separately, government fees are paid to IRCC, not to us. We put
               both in front of you, in writing, before you sign anything.
+            </p>
+            <p className="mt-4 text-ink-600 text-pretty">
+              The government costs to expect are the work permit fee, the employer compliance fee and
+              the biometrics fee, all on <Source href={IRCC.fees}>IRCC’s fee list</Source>. A medical
+              exam, if you need one, is paid to the doctor at your appointment.
             </p>
           </div>
           <div className="card p-8 sm:p-10">
@@ -409,7 +613,25 @@ export default function WorkPermitPage() {
               guessing — once we understand your file, we’ll give you an honest range rather than a
               comfortable one.
             </p>
+            <p className="mt-4 text-ink-600 text-pretty">
+              IRCC publishes its current averages in its{' '}
+              <Source href={IRCC.times}>processing times tool</Source>.
+            </p>
           </div>
+        </div>
+      </Section>
+
+      {/* ===================== NOT THE RIGHT ROUTE ===================== */}
+      <Section tone="alt">
+        <SectionHeading eyebrow="Not the right fit?" title="Where to look instead" />
+        <div className="mt-10 grid gap-4 sm:grid-cols-2">
+          {NOT_C11.map((r) => (
+            <Link key={r.href} href={r.href} className="card group block p-6 transition-transform hover:-translate-y-0.5">
+              <p className="text-xs font-semibold uppercase tracking-[0.15em] text-gold-600">{r.kicker}</p>
+              <p className="mt-2 font-serif text-xl">{r.title} →</p>
+              <p className="mt-2 text-ink-600 text-pretty">{r.body}</p>
+            </Link>
+          ))}
         </div>
       </Section>
 

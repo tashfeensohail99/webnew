@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-08",
+  "own": {
+    "source": "Google Search Console, Links report (a sample, not a full list)",
+    "status": "verified from the site owner's own account",
+    "externalLinksTotal": 67,
+    "internalLinksTotal": 7313,
+    "linkingSites": [
+      { "site": "wa.me", "linkingPages": 58, "note": "WhatsApp short links, not editorial" },
+      { "site": "markyto.com", "linkingPages": 4 },
+      { "site": "apkavisa.pk", "linkingPages": 2 },
+      { "site": "bebee.com", "linkingPages": 1 },
+      { "site": "linkedin.com", "linkingPages": 1 },
+      { "site": "vikramlaw.ca", "linkingPages": 1 }
+    ],
+    "targets": { "/": 66, "/canada-visa-refused": 1 }
+  },
+  "rivals": {
+    "status": "unavailable",
+    "why": "Ahrefs and Similarweb connectors need authorizing via /mcp. Bing Webmaster Tools was not signed in on the Chrome profile used. No rival backlink counts, referring-domain counts, authority scores or traffic figures were collected or estimated."
+  },
+  "publicMentions": {
+    "method": "Google.com.pk search for the quoted domain, excluding the site itself. Shows pages mentioning the domain; a mention is not a confirmed link.",
+    "status": "observed",
+    "amirismail.com": ["myconsultant.ca", "amirismailassociates.enic.pk", "podcasts.apple.com", "social profiles"],
+    "euroimmiconsultant.pk": ["studyabroad.pk", "linktr.ee", "jeewaconsulting.com", "sur.ly", "linkedin.com", "social profiles"],
+    "migracon.com": ["urdupoint.com", "pakistanplaces.com", "pinterest.com", "zoominfo.com", "signalhire.com", "social profiles"],
+    "tashfeenimmigrationsolutions.com": ["wa.me", "social profiles and posts"],
+    "visawalaListingCheck": "site:visawala.pk tashfeen returned no results"
+  }
+}

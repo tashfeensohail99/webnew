@@ -4,6 +4,38 @@ One entry per batch, newest first. Each entry records the commit, what changed a
 
 To see any page's original wording: `git show 9d17a79:<path to the page>`.
 
+## Batch 9: visitor pages, hubs and remaining corrections, 8 November 2026
+
+Batch 8 (trust pages) is blocked on the firm and has not been done.
+
+- **Commit:** `c253a05`. To undo only the page changes, restore `app/`, `components/` and `lib/` from `b490511`, because this commit also recorded batch 7 in this ledger.
+- **Merges:** none. `/visitor-visa` and `/immigration-programs` stay as separate pages, each now linking to its guides.
+
+| Page | Change | Source |
+| --- | --- | --- |
+| `/visitor-visa/eta` | Exceptions corrected: US green card holders need neither a visa nor an eTA; no eTA route on a Pakistani passport; dual nationals added. New description. | [IRCC eTA eligibility](https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/eligibility.html) (2026-08-06) |
+| `/visitor-visa/invitation-letter` | Contents match IRCC's list. Notarisation no longer attributed to IRCC's visitor page. Sample layout with placeholders. Super Visa line. | [IRCC invitation letter](https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/letter-invitation.html) |
+| `/canada-visit-visa` | Decision notes. Approval-rate wording corrected. Funds from a relative. Outcome language and caseload claims removed. Links to all visitor guides. | IRCC decision notes |
+| `/visitor-visa` | Links to all sub-pages. eTA described as separate. Dead data link replaced. New title. | [IRCC operational data](https://open.canada.ca/data/en/dataset/9b34e712-513f-44e9-babf-9df4f7256550) |
+| `/family-sponsorship/dependent-children` | Under 22 stated. Undeclared family policy ended 10 September 2026. Five-year ban stated. Unsupported claims removed. | [IRPR s.2](https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-2.html); [IRCC public policy](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/spouse-partner-children/who-you-can-sponsor/undeclared-family.html) |
+| `/quebec-immigration` | PSTQ and Arrima named. PEQ closed 31 October 2026. New title. | [Quebec PEQ](https://www.quebec.ca/immigration/permanente/travailleurs-qualifies/programme-experience-quebecoise); [Quebec PSTQ](https://www.quebec.ca/en/immigration/permanent/skilled-workers/skilled-worker-selection-program) |
+| `/immigration-programs` | Every route links to its guide. Superlative removed. | None needed |
+| `/tools/visit-visa-refusal-risk`, `VisitVisaRiskChecker.tsx` | Overstated consequences and caseload claims corrected, including the high-risk result text. | IRCC decision notes |
+| `/tools/clb-converter` | Retake advice corrected: IRCC does not accept IELTS One Skill Retake for Express Entry. | [IRCC language tests](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html) |
+| `/updates`, `lib/youtube.ts` | The Peshawar branch video and one untitled video filtered out. LMIA and MOFA videos link to the right guide. Follower claim removed. | `lib/site.ts` |
+
+- **WhatsApp tags:** enquiries from all visitor pages now arrive as `VV-`, study pages as `SV-`, and the study and C11 refusal pages as `JR-`.
+- **Internal links:** only `/`, `/privacy` and `/terms` now have no in-copy links pointing at them.
+- **Register:** four entries added to `lib/facts.ts`. Re-check monthly.
+- **Checked before shipping:** build, typecheck, `test:crs` (66 passed), `test:fsw` (43 passed), `test:clb` (34 passed), local crawl. Viewed the letter layout on desktop (light) and the visit visa links on a phone (dark).
+- **Checked on production:** GitHub deployment `success`. 93 of 93 URLs return 200. The crawl flags only `/updates`, whose links come from the YouTube feed and changed because LMIA videos now go to the LMIA guide. All 32 removed statements gone and all 23 new ones present. All ten pages load on a phone with no sideways scrolling or script errors. The two filtered videos no longer appear.
+- **External links re-tested after the deploy:** 201 unique, with no 404s anywhere on the site.
+- **Search:** IndexNow accepted the ten URLs. Google not asked.
+- **Needs the firm:** whether a Peshawar branch is planned (the video stays filtered until confirmed); "Talk to a lawyer" buttons.
+- **Deliberately left alone, under the rule on figures:** Quebec's French levels.
+- **Not re-checked:** the CLB conversion date stays at 20 July 2026. Only the TEF table was compared with IRCC this time, and it matched.
+- **Other items left:** what documents a visitor visa needs on `/canada-visit-visa`; shortening `/visitor-visa/eta`; the status of Quebec's business categories.
+
 ## Batch 7: work permit pages, 8 November 2026
 
 - **Commit:** `b490511`. To undo only the page changes, restore `app/work-permit-canada/`, `app/work-permits/` and `lib/facts.ts` from `7adc00d`, because this commit also recorded batch 6 in this ledger.

@@ -203,6 +203,87 @@ export const FACTS: Record<string, Fact> = {
   },
 
   // ── CANADA: WORK PERMITS (re-check monthly) ────────────────────────────────
+  caC11Documents: {
+    id: 'ca.work.c11-documents',
+    claim:
+      'A C11 applicant provides an Employer Portal offer of employment number, proof of paying the employer compliance fee, a work permit application, proof of degree of ownership, an indication of temporary stay, evidence of significant benefit, proof of support funds and proof of separate business funds.',
+    provenance: 'primary',
+    source: 'IRCC, C11 program delivery instructions (page dated 2025-05-27)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/entrepreneurs-self-employed-seeking-only-temp-residence-r205-c11.html',
+    checked: '2026-11-08',
+  },
+  caC11Ownership: {
+    id: 'ca.work.c11-ownership',
+    claim:
+      'IRCC considers a C11 only where the applicant controls at least 51% of the business. A smaller owner applies as an employee.',
+    provenance: 'primary',
+    source: 'IRCC, C11 program delivery instructions (page dated 2025-05-27)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/entrepreneurs-self-employed-seeking-only-temp-residence-r205-c11.html',
+    checked: '2026-11-08',
+  },
+  caC11Funds: {
+    id: 'ca.work.c11-funds',
+    claim:
+      'Support funds must be transferable, available and unencumbered, equal to the low-income cut-off for the family size for 18 months or the stay if shorter. Business funds are separate, officers have discretion over the amount, and provenance must be shown.',
+    provenance: 'primary',
+    source: 'IRCC, C11 program delivery instructions (page dated 2025-05-27)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/entrepreneurs-self-employed-seeking-only-temp-residence-r205-c11.html',
+    checked: '2026-11-08',
+  },
+  caC11Duration: {
+    id: 'ca.work.c11-duration',
+    claim:
+      'C11 work normally does not exceed 18 months. Longer needs a definite plan to transition out. Extensions need evidence of efforts made, benefit delivered and continued intent to leave.',
+    provenance: 'primary',
+    source: 'IRCC, C11 program delivery instructions (page dated 2025-05-27)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/entrepreneurs-self-employed-seeking-only-temp-residence-r205-c11.html',
+    checked: '2026-11-08',
+  },
+  caC11Roles: {
+    id: 'ca.work.c11-roles',
+    claim:
+      'A business that only employs the owner and family makes the owner self-employed. An entrepreneur hires others. Neither kind of work counts toward the Canadian Experience Class.',
+    provenance: 'primary',
+    source: 'IRCC, C11 program delivery instructions (page dated 2025-05-27)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/entrepreneurs-self-employed-seeking-only-temp-residence-r205-c11.html',
+    checked: '2026-11-08',
+  },
+  caC11Benefit: {
+    id: 'ca.work.c11-benefit',
+    claim:
+      'Neither the type of business nor the amount spent makes it significant; the test is opportunities for Canadians or permanent residents, or benefit to a local or regional economy, during the permit period.',
+    provenance: 'primary',
+    source: 'IRCC, C11 program delivery instructions (page dated 2025-05-27)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/entrepreneurs-self-employed-seeking-only-temp-residence-r205-c11.html',
+    checked: '2026-11-08',
+  },
+  caPakistanVacs: {
+    id: 'ca.pk.vacs',
+    claim:
+      'IRCC lists visa application centres in Islamabad, Karachi and Lahore. Biometrics appointments are free. Visa application centres play no role in decisions and are forbidden from giving visa advice.',
+    provenance: 'primary',
+    source: 'IRCC, Where to give biometrics; IRCC, Find a visa application centre',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/biometrics/where-to-give.html',
+    checked: '2026-11-08',
+  },
+  caPakistanPoliceCertificate: {
+    id: 'ca.pk.police-certificate',
+    claim:
+      'In Punjab, police certificates are handled at Police Khidmat Markaz centres, with multiple offices in Lahore and Rawalpindi, and a person can apply at any centre in Punjab. Procedures differ by province. The Canadian High Commission in Islamabad cannot help.',
+    provenance: 'primary',
+    source: 'IRCC, How to get a police certificate: Pakistan (page dated 2025-09-04)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/police-certificates/how/pakistan.html',
+    checked: '2026-11-08',
+  },
+  caPakistanMedicalExam: {
+    id: 'ca.pk.medical-exam',
+    claim:
+      'Pakistan is on the list of countries where IRCC requires an immigration medical exam for longer stays. Only a panel physician can do it.',
+    provenance: 'primary',
+    source: 'IRCC, Medical exam requirements for temporary residents',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/medical-exams/requirements-temporary-residents.html',
+    checked: '2026-11-08',
+  },
   caBridgingOpenWorkPermit: {
     id: 'ca.work.bowp',
     claim:

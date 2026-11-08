@@ -1,7 +1,7 @@
 {
  "summary": {
   "base": "https://tashfeenimmigrationsolutions.com",
-  "crawled": "2026-11-08T13:47:11.028Z",
+  "crawled": "2026-11-08T14:01:01.185Z",
   "total": 93,
   "ok": 93,
   "inSitemap": 93,
@@ -59,13 +59,6 @@
      "/express-entry",
      "/express-entry/canadian-experience-class",
      "/visitor-visa"
-    ]
-   },
-   {
-    "text": "the most common canadian visa and the most commonly refused most of the refusals we see were avoidable with the right file",
-    "urls": [
-     "/",
-     "/canada-visit-visa"
     ]
    },
    {
@@ -675,7 +668,7 @@
    "inboundAll": 92,
    "brokenInternal": [],
    "uniqueWords": 1474,
-   "repeatedBlocks": 7,
+   "repeatedBlocks": 6,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-22",
    "reviewed": "2026-10-22",
@@ -3312,6 +3305,7 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/",
+    "/immigration-programs",
     "/pnp/ontario",
     "/quebec-immigration",
     "/work-permit-canada",
@@ -3600,8 +3594,7 @@
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/police-certificate",
     "/immigration-consultant-islamabad",
-    "/immigration-consultant-lahore",
-    "/updates"
+    "/immigration-consultant-lahore"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
@@ -4575,19 +4568,23 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1109,
+   "wordCount": 1186,
    "avgSentence": 17,
    "hits": {
     "outcome": 1,
     "superlative": 0,
     "firmClaim": 0,
     "stock": 0,
-    "volatile": 0,
+    "volatile": 2,
     "placeholder": 0
    },
    "hitLines": {
     "outcome": [
      "What to do after a refusal → Straight answers Questions people actually ask us Can you guarantee my visa will be approved?"
+    ],
+    "volatile": [
+     "Then don’t reapply yet — start somewhere else Check everything IRCC sent you first: refusals since July 2025 usually include a note from the officer.",
+     "Refusals since July 2025 usually come with a note from the officer, so check everything IRCC sent you first."
     ]
    },
    "schema": [
@@ -4608,6 +4605,12 @@
    },
    "internalInCopy": [
     "/book-consultation",
+    "/visitor-visa",
+    "/visitor-visa/eta",
+    "/visitor-visa/invitation-letter",
+    "/visitor-visa/super-visa",
+    "/visitor-visa/business-visitor",
+    "/visitor-visa/extension",
     "/canada-visa-refused",
     "/about/our-team"
    ],
@@ -4702,8 +4705,7 @@
     "/terms"
    ],
    "external": [
-    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20apply%20for%20a%20Canada%20visit%20visa.%20%5BRef%3A%20VV-AX47%5D",
-    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20apply%20for%20a%20Canada%20visit%20visa.%20%5BRef%3A%20WP-AX47%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20apply%20for%20a%20Canada%20visit%20visa.%20%5BRef%3A%20VV-AX47%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
@@ -4721,8 +4723,8 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 1015,
-   "repeatedBlocks": 1,
+   "uniqueWords": 1090,
+   "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-17",
    "reviewed": "2026-07-17",
@@ -5724,6 +5726,7 @@
     "/family-sponsorship/spouse-partner",
     "/immigration-consultant-islamabad",
     "/immigration-consultant-lahore",
+    "/immigration-programs",
     "/pnp/alberta",
     "/pnp/british-columbia",
     "/pnp/manitoba",
@@ -7270,6 +7273,7 @@
     "/family-sponsorship/parents-grandparents",
     "/immigration-consultant-islamabad",
     "/immigration-consultant-lahore",
+    "/immigration-programs",
     "/quebec-immigration",
     "/refusals/reconsideration",
     "/study-in-canada/bringing-family"
@@ -7330,7 +7334,7 @@
     },
     {
      "level": 2,
-     "text": "Read this carefully"
+     "text": "What the age lock-in freezes, and what it does not"
     },
     {
      "level": 2,
@@ -7370,7 +7374,7 @@
     },
     {
      "level": 2,
-     "text": "The failure patterns we see"
+     "text": "Where these applications go wrong"
     },
     {
      "level": 2,
@@ -7386,7 +7390,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2968,
+   "wordCount": 3021,
    "avgSentence": 19,
    "hits": {
     "outcome": 1,
@@ -7432,6 +7436,7 @@
     "/book-consultation",
     "/express-entry",
     "/pnp",
+    "/refusals/misrepresentation",
     "/study-in-canada/study-permit",
     "/work-permit-canada",
     "/no-guarantee-policy",
@@ -7541,7 +7546,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2877,
+   "uniqueWords": 2928,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -8813,7 +8818,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1825,
+   "wordCount": 1839,
    "avgSentence": 19,
    "hits": {
     "outcome": 5,
@@ -8853,7 +8858,12 @@
    "internalInCopy": [
     "/book-consultation",
     "/fees",
+    "/express-entry",
+    "/pnp",
+    "/family-sponsorship",
+    "/study-in-canada",
     "/work-permit-canada",
+    "/business-immigration",
     "/no-guarantee-policy",
     "/about/our-team"
    ],
@@ -8964,7 +8974,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 1721,
+   "uniqueWords": 1735,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -9531,6 +9541,7 @@
     "/family-sponsorship/dependent-children",
     "/immigration-consultant-islamabad",
     "/immigration-consultant-lahore",
+    "/immigration-programs",
     "/pnp/alberta",
     "/pnp/british-columbia",
     "/pnp/manitoba",
@@ -12193,10 +12204,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "Quebec Immigration | Tashfeen",
+   "title": "Quebec Immigration: PSTQ, Arrima and French | Tashfeen",
    "description": "Quebec selects its own economic immigrants. The two-stage structure, why the Quebec certificate sits outside Express Entry, and why French is decisive.",
    "canonical": "https://tashfeenimmigrationsolutions.com/quebec-immigration",
-   "ogTitle": "Quebec Immigration | Tashfeen",
+   "ogTitle": "Quebec Immigration: PSTQ, Arrima and French | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "Quebec runs its own immigration system"
@@ -12292,8 +12303,8 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2418,
-   "avgSentence": 17,
+   "wordCount": 2443,
+   "avgSentence": 18,
    "hits": {
     "outcome": 2,
     "superlative": 0,
@@ -12446,7 +12457,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2321,
+   "uniqueWords": 2347,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -13233,6 +13244,7 @@
     "/canada-visa-refused",
     "/canadian-immigration-lawyer-pakistan",
     "/express-entry/category-based-draws",
+    "/family-sponsorship/dependent-children",
     "/family-sponsorship/spouse-partner",
     "/pnp/ontario",
     "/quebec-immigration",
@@ -14297,7 +14309,7 @@
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/help-your-spouse-common-law-partner-work-canada.html",
-    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20talk%20about%20studying%20in%20Canada%20and%20whether%20it%E2%80%99s%20the%20right%20route%20for%20me.%20%5BRef%3A%20WP-1TVH%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20talk%20about%20studying%20in%20Canada%20and%20whether%20it%E2%80%99s%20the%20right%20route%20for%20me.%20%5BRef%3A%20SV-1TVH%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
@@ -14305,7 +14317,8 @@
     "/",
     "/canada-immigration-from-pakistan",
     "/immigration-consultant-islamabad",
-    "/immigration-consultant-lahore"
+    "/immigration-consultant-lahore",
+    "/immigration-programs"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
@@ -14573,7 +14586,7 @@
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/prepare/minor-children.html",
     "https://ircc.canada.ca/english/visit/visas.asp",
     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/",
-    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20know%20whether%20my%20spouse%20and%20children%20can%20come%20with%20me%20while%20I%20study%20in%20Canada.%20%5BRef%3A%20WP-1XTY%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20know%20whether%20my%20spouse%20and%20children%20can%20come%20with%20me%20while%20I%20study%20in%20Canada.%20%5BRef%3A%20SV-1XTY%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
@@ -14854,7 +14867,7 @@
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/prepare/designated-learning-institutions-list.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/change-schools.html",
-    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20check%20whether%20a%20school%20and%20programme%20I%E2%80%99ve%20been%20offered%20is%20a%20DLI%20and%20what%20it%20means%20for%20a%20work%20permit%20afterwards.%20%5BRef%3A%20WP-17Z8%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20check%20whether%20a%20school%20and%20programme%20I%E2%80%99ve%20been%20offered%20is%20a%20DLI%20and%20what%20it%20means%20for%20a%20work%20permit%20afterwards.%20%5BRef%3A%20SV-17Z8%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
@@ -15120,7 +15133,7 @@
    "external": [
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html",
     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/",
-    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20know%20whether%20my%20proof%20of%20funds%20is%20strong%20enough%20for%20a%20Canadian%20study%20permit.%20%5BRef%3A%20WP-YBD3%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20know%20whether%20my%20proof%20of%20funds%20is%20strong%20enough%20for%20a%20Canadian%20study%20permit.%20%5BRef%3A%20SV-YBD3%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
@@ -15383,7 +15396,7 @@
    ],
    "external": [
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/provincial-attestation-letter.html",
-    "https://wa.me/923350001111?text=Hi%2C%20I%20have%20a%20question%20about%20the%20provincial%20attestation%20letter%20for%20my%20Canadian%20study%20permit.%20%5BRef%3A%20WP-177T%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20I%20have%20a%20question%20about%20the%20provincial%20attestation%20letter%20for%20my%20Canadian%20study%20permit.%20%5BRef%3A%20SV-177T%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
@@ -15676,7 +15689,7 @@
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html",
     "https://laws-lois.justice.gc.ca/eng/regulations/sor-2002-227/section-216.html",
     "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=023&top=4",
-    "https://wa.me/923350001111?text=Hi%2C%20my%20Canadian%20study%20permit%20was%20refused%20and%20I%E2%80%99d%20like%20to%20understand%20the%20reasons%20before%20re-applying.%20%5BRef%3A%20WP-145G%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20my%20Canadian%20study%20permit%20was%20refused%20and%20I%E2%80%99d%20like%20to%20understand%20the%20reasons%20before%20re-applying.%20%5BRef%3A%20JR-145G%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
@@ -15951,7 +15964,7 @@
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html",
     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/",
-    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20know%20whether%20my%20study%20permit%20plan%20for%20Canada%20is%20realistic.%20%5BRef%3A%20WP-1GPH%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20know%20whether%20my%20study%20permit%20plan%20for%20Canada%20is%20realistic.%20%5BRef%3A%20SV-1GPH%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
@@ -16228,7 +16241,7 @@
     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-182.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/change-schools.html",
     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/",
-    "https://wa.me/923350001111?text=Hi%2C%20I%20need%20help%20extending%20my%20Canadian%20study%20permit.%20%5BRef%3A%20WP-YRHQ%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20I%20need%20help%20extending%20my%20Canadian%20study%20permit.%20%5BRef%3A%20SV-YRHQ%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
@@ -16495,7 +16508,7 @@
     "https://laws.justice.gc.ca/eng/acts/i-2.5/section-22.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html",
     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/",
-    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20understand%20whether%20studying%20in%20Canada%20is%20a%20realistic%20route%20to%20permanent%20residence%20in%20my%20situation.%20%5BRef%3A%20WP-1XA8%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20understand%20whether%20studying%20in%20Canada%20is%20a%20realistic%20route%20to%20permanent%20residence%20in%20my%20situation.%20%5BRef%3A%20SV-1XA8%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
@@ -16737,7 +16750,7 @@
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/after-you-apply.html",
     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/",
-    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20check%20what%20work%20my%20study%20permit%20conditions%20allow%20while%20I%E2%80%99m%20studying%20in%20Canada.%20%5BRef%3A%20WP-17KX%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20check%20what%20work%20my%20study%20permit%20conditions%20allow%20while%20I%E2%80%99m%20studying%20in%20Canada.%20%5BRef%3A%20SV-17KX%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
@@ -17177,7 +17190,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 573,
+   "wordCount": 588,
    "avgSentence": 15,
    "hits": {
     "outcome": 0,
@@ -17314,7 +17327,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 547,
+   "uniqueWords": 562,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -17788,7 +17801,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 569,
+   "wordCount": 572,
    "avgSentence": 13,
    "hits": {
     "outcome": 0,
@@ -17914,18 +17927,19 @@
     "/terms"
    ],
    "external": [
-    "https://wa.me/923350001111?text=Hi%2C%20I%20used%20the%20visit-visa%20risk%20checker%20and%20I%E2%80%99d%20like%20to%20talk%20through%20my%20case.%20%5BRef%3A%20WP-DPB0%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20I%20used%20the%20visit-visa%20risk%20checker%20and%20I%E2%80%99d%20like%20to%20talk%20through%20my%20case.%20%5BRef%3A%20VV-DPB0%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/",
     "/refusals/re-applying",
-    "/tools"
+    "/tools",
+    "/visitor-visa"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 552,
+   "uniqueWords": 555,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-18",
@@ -18366,12 +18380,12 @@
    "ogTitle": "Immigration Updates & Videos: Canada, USA, UK | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
-    "What’s changed, explained."
+    "What’s changed, on video."
    ],
    "headings": [
     {
      "level": 1,
-     "text": "What’s changed, explained."
+     "text": "What’s changed, on video."
     },
     {
      "level": 2,
@@ -18384,14 +18398,6 @@
     {
      "level": 3,
      "text": "USA E-2 Investor Visa — Start or Buy a Business in America!"
-    },
-    {
-     "level": 3,
-     "text": "الحمدللہ! پشاور ایونٹ کامیاب، بہت جلد پشاور میں Tashfeen Immigration Solutions کی نئی برانچ کا قیام!"
-    },
-    {
-     "level": 3,
-     "text": "kaha sy aty hai ya log"
     },
     {
      "level": 3,
@@ -18431,7 +18437,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 529,
+   "wordCount": 500,
    "avgSentence": 18,
    "hits": {
     "outcome": 1,
@@ -18443,10 +18449,10 @@
    },
    "hitLines": {
     "outcome": [
-     "Update 2 November 2026 kaha sy aty hai ya log USA 31 October 2026 Does PKR 50 Lakh in Your Bank Account Guarantee a US Visit Visa?"
+     "Read our USA guide → USA 31 October 2026 Does PKR 50 Lakh in Your Bank Account Guarantee a US Visit Visa?"
     ],
     "volatile": [
-     "Update 2 November 2026 kaha sy aty hai ya log USA 31 October 2026 Does PKR 50 Lakh in Your Bank Account Guarantee a US Visit Visa?",
+     "Read our USA guide → USA 31 October 2026 Does PKR 50 Lakh in Your Bank Account Guarantee a US Visit Visa?",
      "Austria Red-White-Red Card from Pakistan in 2026 MOFA Online Attestation in Pakistan: How It Works EB-2 NIW Green Card from Pakistan: Where It Stands Express Entry in 2026 So Far: What 62 Rounds Show Ontario’s $80,000 Points Change: Who It Helps What we cover The topics behind the videos A video is a quick update."
     ]
    },
@@ -18472,11 +18478,11 @@
     "/book-consultation",
     "/canada-visa-refused",
     "/usa",
+    "/blog/mofa-online-attestation",
     "/work-permit-canada",
     "/europe",
-    "/canada-immigration-from-pakistan",
+    "/work-permits/lmia",
     "/blog/austria-red-white-red-card",
-    "/blog/mofa-online-attestation",
     "/blog/eb2-niw-pakistan",
     "/blog/express-entry-2026-so-far",
     "/blog/ontario-higher-earners-2026",
@@ -18570,8 +18576,8 @@
     "/book-consultation",
     "/immigration-consultant-lahore",
     "/immigration-consultant-islamabad",
-    "/blog/austria-red-white-red-card",
     "/blog/mofa-online-attestation",
+    "/blog/austria-red-white-red-card",
     "/blog/eb2-niw-pakistan",
     "/blog/express-entry-2026-so-far",
     "/blog/ontario-higher-earners-2026",
@@ -18582,7 +18588,7 @@
     "https://www.youtube.com/channel/UC7yaY91cb22ZPnBPJyGBNBg",
     "https://wa.me/923350001111?text=Hi%2C%20I%20watched%20one%20of%20your%20videos%20and%20would%20like%20to%20ask%20about%20my%20case.%20%5BRef%3A%20WP-7ZW7%5D"
    ],
-   "images": 10,
+   "images": 8,
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/",
@@ -18590,7 +18596,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 389,
+   "uniqueWords": 381,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-23",
@@ -18827,10 +18833,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "Visiting Canada | Tashfeen",
+   "title": "Visiting Canada: Visa, eTA, Super Visa Routes | Tashfeen",
    "description": "Visitor visa or eTA, Super Visa, business visitors and extensions: how these routes work, and the one question underneath every application.",
    "canonical": "https://tashfeenimmigrationsolutions.com/visitor-visa",
-   "ogTitle": "Visiting Canada | Tashfeen",
+   "ogTitle": "Visiting Canada: Visa, eTA, Super Visa Routes | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "Visiting Canada, and the one question underneath every application"
@@ -18890,7 +18896,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1716,
+   "wordCount": 1771,
    "avgSentence": 19,
    "hits": {
     "outcome": 2,
@@ -18928,7 +18934,13 @@
    "internalInCopy": [
     "/book-consultation",
     "/canada-visit-visa",
+    "/visitor-visa/eta",
+    "/visitor-visa/super-visa",
+    "/visitor-visa/business-visitor",
+    "/visitor-visa/invitation-letter",
+    "/tools/visit-visa-refusal-risk",
     "/no-guarantee-policy",
+    "/visitor-visa/extension",
     "/work-permit-canada",
     "/canada-visa-refused",
     "/about/our-team"
@@ -19024,24 +19036,24 @@
     "/terms"
    ],
    "external": [
-    "https://open.canada.ca/data/en/dataset/adad3e30-2872-4a4d-a5a5-b3ca1e2ce29d",
+    "https://open.canada.ca/data/en/dataset/9b34e712-513f-44e9-babf-9df4f7256550",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/extend-stay.html",
-    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20apply%20for%20a%20Canada%20visitor%20visa.%20Can%20you%20assess%20my%20case%3F%20%5BRef%3A%20WP-JH4K%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20apply%20for%20a%20Canada%20visitor%20visa.%20Can%20you%20assess%20my%20case%3F%20%5BRef%3A%20VV-JH4K%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
-   "inboundCopy": [],
+   "inboundCopy": [
+    "/canada-visit-visa"
+   ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 1658,
+   "uniqueWords": 1713,
    "repeatedBlocks": 1,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
    "reviewed": "2026-07-20",
    "inCode": true,
-   "issues": [
-    "no in-copy inbound links"
-   ]
+   "issues": []
   },
   {
    "path": "/visitor-visa/business-visitor",
@@ -19281,11 +19293,14 @@
     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-187.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/business.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/entry-requirements-country.html",
-    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20check%20whether%20my%20planned%20activity%20in%20Canada%20counts%20as%20a%20business%20visit%20or%20needs%20a%20work%20permit.%20%5BRef%3A%20WP-1R8Q%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20check%20whether%20my%20planned%20activity%20in%20Canada%20counts%20as%20a%20business%20visit%20or%20needs%20a%20work%20permit.%20%5BRef%3A%20VV-1R8Q%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
-   "inboundCopy": [],
+   "inboundCopy": [
+    "/canada-visit-visa",
+    "/visitor-visa"
+   ],
    "inboundAll": 92,
    "brokenInternal": [],
    "uniqueWords": 2433,
@@ -19294,9 +19309,7 @@
    "sitemapLastmod": "2026-07-20",
    "reviewed": "2026-07-20",
    "inCode": true,
-   "issues": [
-    "no in-copy inbound links"
-   ]
+   "issues": []
   },
   {
    "path": "/visitor-visa/eta",
@@ -19306,7 +19319,7 @@
    "robotsHeader": null,
    "metaRobots": "index, follow",
    "title": "Electronic Travel Authorisation (eTA) for Canada | Tashfeen",
-   "description": "What an eTA is, and why a Pakistani passport holder normally needs a visitor visa — plus the narrow case where a visa-required national may use one.",
+   "description": "What an eTA is, why a Pakistani passport holder needs a visitor visa instead, and what a US green card holder should check before travelling.",
    "canonical": "https://tashfeenimmigrationsolutions.com/visitor-visa/eta",
    "ogTitle": "Electronic Travel Authorisation (eTA) for Canada | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
@@ -19344,7 +19357,7 @@
     },
     {
      "level": 2,
-     "text": "When a visa-required national might use an eTA"
+     "text": "Who does not need a visitor visa"
     },
     {
      "level": 2,
@@ -19396,14 +19409,14 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2231,
+   "wordCount": 2300,
    "avgSentence": 18,
    "hits": {
     "outcome": 2,
     "superlative": 1,
     "firmClaim": 0,
     "stock": 0,
-    "volatile": 0,
+    "volatile": 1,
     "placeholder": 0
    },
    "hitLines": {
@@ -19413,6 +19426,9 @@
     ],
     "superlative": [
      "At best you have overpaid for something you could do yourself."
+    ],
+    "volatile": [
+     "Since 26 April 2022 they have been exempt from the eTA requirement and need neither a visa nor an eTA: for all methods of travel to Canada they show a valid passport from their country of nationality and a valid green card, or equivalent proof of status."
     ]
    },
    "schema": [
@@ -19538,22 +19554,23 @@
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/eligibility.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/transit.html",
     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/",
-    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20know%20whether%20I%20need%20a%20Canadian%20eTA%20or%20a%20visitor%20visa%20in%20my%20situation.%20%5BRef%3A%20WP-LJD8%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20know%20whether%20I%20need%20a%20Canadian%20eTA%20or%20a%20visitor%20visa%20in%20my%20situation.%20%5BRef%3A%20VV-LJD8%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
-   "inboundCopy": [],
+   "inboundCopy": [
+    "/canada-visit-visa",
+    "/visitor-visa"
+   ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2130,
+   "uniqueWords": 2202,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
    "reviewed": "2026-07-20",
    "inCode": true,
-   "issues": [
-    "no in-copy inbound links"
-   ]
+   "issues": []
   },
   {
    "path": "/visitor-visa/extension",
@@ -19796,11 +19813,14 @@
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/extend-stay/after-apply.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/extend-stay.html",
     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/",
-    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99m%20in%20Canada%20as%20a%20visitor%20and%20I%20need%20advice%20about%20extending%20my%20stay.%20%5BRef%3A%20WP-T8D0%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99m%20in%20Canada%20as%20a%20visitor%20and%20I%20need%20advice%20about%20extending%20my%20stay.%20%5BRef%3A%20VV-T8D0%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
-   "inboundCopy": [],
+   "inboundCopy": [
+    "/canada-visit-visa",
+    "/visitor-visa"
+   ],
    "inboundAll": 92,
    "brokenInternal": [],
    "uniqueWords": 2298,
@@ -19809,9 +19829,7 @@
    "sitemapLastmod": "2026-07-20",
    "reviewed": "2026-07-20",
    "inCode": true,
-   "issues": [
-    "no in-copy inbound links"
-   ]
+   "issues": []
   },
   {
    "path": "/visitor-visa/invitation-letter",
@@ -19891,7 +19909,7 @@
     },
     {
      "level": 2,
-     "text": "In kind, not in numbers"
+     "text": "What the host should be able to show"
     },
     {
      "level": 2,
@@ -19900,6 +19918,10 @@
     {
      "level": 2,
      "text": "When an invitation letter is the wrong focus"
+    },
+    {
+     "level": 2,
+     "text": "How the letter can be set out"
     },
     {
      "level": 2,
@@ -19915,8 +19937,8 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2357,
-   "avgSentence": 19,
+   "wordCount": 2532,
+   "avgSentence": 18,
    "hits": {
     "outcome": 4,
     "superlative": 0,
@@ -20057,16 +20079,18 @@
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/business/bring-business-guests/letter-invitation.html",
     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/",
     "https://laws-lois.justice.gc.ca/eng/acts/i-2.5/",
-    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20help%20with%20an%20invitation%20letter%20for%20a%20Canadian%20visitor%20visa%20application.%20%5BRef%3A%20WP-8JKN%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20help%20with%20an%20invitation%20letter%20for%20a%20Canadian%20visitor%20visa%20application.%20%5BRef%3A%20VV-8JKN%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
-    "/"
+    "/",
+    "/canada-visit-visa",
+    "/visitor-visa"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2237,
+   "uniqueWords": 2406,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -20305,13 +20329,15 @@
    ],
    "external": [
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa.html",
-    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20apply%20for%20a%20Super%20Visa%20for%20my%20parents.%20My%20child%2FI%20am%20in%20Canada.%20%5BRef%3A%20WP-XVHO%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20apply%20for%20a%20Super%20Visa%20for%20my%20parents.%20My%20child%2FI%20am%20in%20Canada.%20%5BRef%3A%20VV-XVHO%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/",
+    "/canada-visit-visa",
     "/family-sponsorship/parents-grandparents",
+    "/visitor-visa",
     "/visitor-visa/extension",
     "/visitor-visa/invitation-letter"
    ],
@@ -21061,7 +21087,7 @@
    "external": [
     "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/entrepreneurs-self-employed-seeking-only-temp-residence-r205-c11.html",
     "https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-40.html",
-    "https://wa.me/923350001111?text=Hi%2C%20my%20C11%20work%20permit%20was%20refused%20and%20I%E2%80%99d%20like%20to%20understand%20why%20before%20I%20re-apply.%20%5BRef%3A%20WP-12MV%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20my%20C11%20work%20permit%20was%20refused%20and%20I%E2%80%99d%20like%20to%20understand%20why%20before%20I%20re-apply.%20%5BRef%3A%20JR-12MV%5D"
    ],
    "images": 0,
    "imagesNoAlt": 0,
@@ -22910,6 +22936,7 @@
     "/business-immigration",
     "/quebec-immigration",
     "/rural-community-immigration",
+    "/updates",
     "/work-permits",
     "/work-permits/bridging-open-work-permit",
     "/work-permits/caregivers",

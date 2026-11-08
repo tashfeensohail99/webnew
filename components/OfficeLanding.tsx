@@ -19,6 +19,23 @@ import { site, SERVICE } from '@/lib/site';
 
 type Office = (typeof site.offices)[number];
 
+/** IRCC pages behind the local steps on both city pages. */
+export const LOCAL_SOURCES = {
+  biometrics: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/biometrics/where-to-give.html',
+  vac: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/find-visa-application-centre.html',
+  police: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/police-certificates/how/pakistan.html',
+  panel: 'https://secure.cic.gc.ca/PanelPhysicianMedecinDesigne/en/Home',
+} as const;
+
+/** An official source, opened in a new tab. */
+export function LocalSource({ href, children }: { href: string; children: ReactNode }) {
+  return (
+    <a href={href} rel="noopener noreferrer" target="_blank" className="font-semibold text-accent-500 link-underline">
+      {children}
+    </a>
+  );
+}
+
 /** What we handle — the same list from either office. */
 const SERVICES: [string, string][] = [
   ['/canada-immigration-from-pakistan', 'Immigrating to Canada'],
@@ -50,6 +67,7 @@ export function OfficeLanding({
   intro,
   faqs,
   other,
+  local,
 }: {
   office: Office;
   page: string;
@@ -58,6 +76,8 @@ export function OfficeLanding({
   intro: ReactNode;
   faqs: { q: string; a: ReactNode }[];
   other: { href: string; city: string };
+  /** City-specific in-person steps, written per page so the two do not read alike. */
+  local: { eyebrow: string; title: string; subtitle: string; items: { term: string; body: ReactNode }[] };
 }) {
   return (
     <>
@@ -191,8 +211,21 @@ export function OfficeLanding({
         </div>
       </Section>
 
-      {/* ============================ FAQ ============================ */}
+      {/* ===================== LOCAL STEPS ===================== */}
       <Section tone="alt">
+        <SectionHeading eyebrow={local.eyebrow} title={local.title} subtitle={local.subtitle} />
+        <dl className="mt-10 grid gap-x-10 gap-y-7 sm:grid-cols-2">
+          {local.items.map((item) => (
+            <div key={item.term} className="border-l-2 border-gold-500/60 pl-5">
+              <dt className="font-serif text-xl">{item.term}</dt>
+              <dd className="mt-1.5 text-ink-600 text-pretty">{item.body}</dd>
+            </div>
+          ))}
+        </dl>
+      </Section>
+
+      {/* ============================ FAQ ============================ */}
+      <Section tone="paper">
         <SectionHeading eyebrow="Questions" title={`About the ${office.city} office`} />
         <div className="mt-10">
           <FAQ items={faqs} />
