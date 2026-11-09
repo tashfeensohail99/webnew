@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { PageHero, Section } from '@/components/ui';
-import { sortedPosts } from '@/lib/blog';
+import { sortedPosts, schemaDate } from '@/lib/blog';
 import { site } from '@/lib/site';
 
 /**
@@ -31,8 +31,8 @@ export default function BlogIndexPage() {
       '@type': 'BlogPosting',
       headline: p.title,
       url: `${site.url}/blog/${p.slug}`,
-      datePublished: p.published,
-      dateModified: p.updated ?? p.published,
+      datePublished: schemaDate(p.published),
+      dateModified: schemaDate(p.updated ?? p.published),
       image: `${site.url}/opengraph-image`,
       author: { '@type': 'Organization', '@id': `${site.url}/#organization`, name: site.name, url: site.url },
     })),

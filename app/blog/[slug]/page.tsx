@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { PageHero, Section, Callout, CTASection } from '@/components/ui';
 import { ReviewedBy } from '@/components/ReviewedBy';
-import { POSTS, postBySlug } from '@/lib/blog';
+import { POSTS, postBySlug, schemaDate } from '@/lib/blog';
 import { site } from '@/lib/site';
 import ExpressEntry2026 from '@/content/blog/express-entry-2026-so-far';
 import OntarioHigherEarners from '@/content/blog/ontario-higher-earners-2026';
@@ -66,8 +66,8 @@ export default async function BlogPostPage({ params }: Props) {
     '@type': 'BlogPosting',
     headline: p.title,
     description: p.description,
-    datePublished: p.published,
-    dateModified: p.updated ?? p.published,
+    datePublished: schemaDate(p.published),
+    dateModified: schemaDate(p.updated ?? p.published),
     url,
     mainEntityOfPage: url,
     inLanguage: 'en',

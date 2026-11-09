@@ -139,5 +139,11 @@ export const POSTS: Post[] = [
 
 export const postBySlug = (slug: string) => POSTS.find((p) => p.slug === slug);
 
+/**
+ * A post date for structured data. Google flags a date with no time zone, and
+ * the posts carry only a day, so this states the start of that day in Pakistan.
+ */
+export const schemaDate = (day: string) => `${day}T00:00:00+05:00`;
+
 /** Newest first. */
-export const sortedPosts = () => [...POSTS].sort((a, b) => b.published.localeCompare(a.published));
+export const sortedPosts =() => [...POSTS].sort((a, b) => b.published.localeCompare(a.published));
