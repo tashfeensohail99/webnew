@@ -32,7 +32,7 @@ import { SERVICE } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'How to Immigrate to Canada from Pakistan',
   description:
-    'Every realistic route from Pakistan to Canada — Express Entry, provincial nomination, study, work and family sponsorship — and what each one asks of you.',
+    'Every realistic route from Pakistan to Canada, from Express Entry and provincial nomination to study, work, business and family sponsorship, and how to choose.',
   alternates: { canonical: '/canada-immigration-from-pakistan' },
 };
 

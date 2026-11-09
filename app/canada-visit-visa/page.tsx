@@ -33,7 +33,7 @@ import { site, SERVICE } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Canada Visit Visa from Pakistan',
   description:
-    'What a Canadian visitor visa actually requires from Pakistani applicants, why most refusals happen, and what to do if yours was refused.',
+    'What a Canadian visitor visa requires from Pakistani applicants, the four ways to visit Canada, why applications are refused, and what to do after a refusal.',
   alternates: { canonical: '/canada-visit-visa' },
 };
 

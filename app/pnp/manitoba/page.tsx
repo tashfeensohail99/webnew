@@ -23,9 +23,9 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * stream names and draw facts are dated: re-check them monthly against lib/facts.ts.
  */
 export const metadata: Metadata = {
-  title: 'Manitoba Provincial Nomination (MPNP)',
+  title: 'Manitoba Provincial Nominee Program (MPNP)',
   description:
-    'How Manitoba’s nomination works: the expression-of-interest pool, base versus Express Entry-aligned streams, and the weight it gives a genuine connection.',
+    'How the Manitoba PNP works: its Skilled Worker, International Education and Business Investor streams, the expression-of-interest pool and a genuine connection.',
   alternates: { canonical: '/pnp/manitoba' },
 };
 

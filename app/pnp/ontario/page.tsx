@@ -23,7 +23,7 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * nomination differ, and the intent-to-settle expectation.
  */
 export const metadata: Metadata = {
-  title: 'Ontario Provincial Nomination (OINP)',
+  title: 'Ontario Immigrant Nominee Program (OINP)',
   description:
     'Ontario replaced its OINP streams in 2026 with one, the Ontario Workforce Priority stream. What that means from Pakistan, and who it does not suit.',
   alternates: { canonical: '/pnp/ontario' },

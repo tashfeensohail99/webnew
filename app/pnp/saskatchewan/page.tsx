@@ -23,9 +23,9 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * which is also the thing Pakistani applicants are most often misled about.
  */
 export const metadata: Metadata = {
-  title: 'Saskatchewan Provincial Nomination (SINP)',
+  title: 'Saskatchewan Immigrant Nominee Program (SINP)',
   description:
-    'How the Saskatchewan Immigrant Nominee Program works: expression of interest and direct application, base versus enhanced nomination, and intent to settle.',
+    'How the Saskatchewan PNP works: International Skilled Worker and Worker with Saskatchewan Work Experience, 2026 sector caps, and the intent to settle.',
   alternates: { canonical: '/pnp/saskatchewan' },
 };
 

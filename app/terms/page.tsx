@@ -18,7 +18,7 @@ import { site } from '@/lib/site';
  */
 export const metadata: Metadata = {
   title: 'Terms of Use',
-  description: 'Terms for using this website, and the limits of what is published here.',
+  description: 'The terms for using the Tashfeen Immigration Solutions website, what the information here is and is not, and the limits of what is published.',
   alternates: { canonical: '/terms' },
 };
 

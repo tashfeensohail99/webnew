@@ -23,9 +23,9 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * the province's underlying interest in who actually stays.
  */
 export const metadata: Metadata = {
-  title: 'British Columbia Provincial Nomination (BC PNP)',
+  title: 'BC Provincial Nominee Program (BC PNP)',
   description:
-    'How British Columbia selects immigrants: how registration, invitation and nomination work, and base versus Express Entry-aligned nomination.',
+    'How the BC PNP works: the Skilled Worker and Health Authority streams, both needing a job offer, entrepreneur streams, and registration and invitation.',
   alternates: { canonical: '/pnp/british-columbia' },
 };
 

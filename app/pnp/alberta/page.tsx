@@ -24,9 +24,9 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * sends the reader to Alberta's own programme page for what is open today.
  */
 export const metadata: Metadata = {
-  title: 'Alberta Provincial Nomination (AAIP)',
+  title: 'Alberta PNP: Advantage Immigration Program (AAIP)',
   description:
-    'How the Alberta Advantage Immigration Program works: expression of interest and invitation, enhanced versus base nomination, and the intent to settle.',
+    'How the Alberta PNP (AAIP) works: Alberta Opportunity, Rural Renewal and other worker streams, entrepreneur streams, and the expression-of-interest step.',
   alternates: { canonical: '/pnp/alberta' },
 };
 

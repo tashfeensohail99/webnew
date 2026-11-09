@@ -22,7 +22,7 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * so it sits high on the page rather than buried near the FAQ.
  */
 export const metadata: Metadata = {
-  title: 'Canadian Experience Class (CEC)',
+  title: 'Canadian Experience Class (CEC) Requirements',
   description:
     'The Express Entry stream for people who have worked in Canada: what counts as Canadian experience, what does not, and the language requirement by TEER.',
   alternates: { canonical: '/express-entry/canadian-experience-class' },

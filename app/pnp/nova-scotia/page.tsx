@@ -23,9 +23,9 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * structured, and the settlement expectation behind it.
  */
 export const metadata: Metadata = {
-  title: 'Nova Scotia PNP (NSNP): How Nomination Works',
+  title: 'Nova Scotia Nominee Program (NSNP): How It Works',
   description:
-    'How the Nova Scotia Nominee Program works: expression of interest, Express Entry-aligned and base nomination, and the intent-to-settle expectation.',
+    'How the Nova Scotia Nominee Program works: its Skilled Worker, Nova Scotia Graduate, Entrepreneur and Express Entry streams, and the intent to settle there.',
   alternates: { canonical: '/pnp/nova-scotia' },
 };
 

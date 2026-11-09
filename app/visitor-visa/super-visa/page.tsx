@@ -15,7 +15,7 @@ import { ReviewedBy } from '@/components/ReviewedBy';
 import { SERVICE } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Super Visa for parents and grandparents',
+  title: 'Super Visa for Parents and Grandparents',
   description:
     'How the Super Visa differs from a visitor visa, what the inviting child or grandchild must prove, and how it compares with sponsoring parents for PR.',
   alternates: { canonical: '/visitor-visa/super-visa' },

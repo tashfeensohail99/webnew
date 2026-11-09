@@ -1,11 +1,11 @@
 {
  "summary": {
   "base": "https://tashfeenimmigrationsolutions.com",
-  "crawled": "2026-11-09T07:30:11.292Z",
-  "total": 93,
-  "ok": 93,
-  "inSitemap": 93,
-  "routesInCode": 88,
+  "crawled": "2026-11-09T07:43:53.472Z",
+  "total": 91,
+  "ok": 91,
+  "inSitemap": 91,
+  "routesInCode": 86,
   "sitemapOnly": [],
   "notInSitemap": [],
   "notInRouteTable": [],
@@ -15,7 +15,7 @@
   "boilerplate": [
    {
     "text": "reviewed by the tashfeen legal team last reviewed july 2026",
-    "pages": 60
+    "pages": 58
    },
    {
     "text": "reviewed by the tashfeen legal team last reviewed october 2026",
@@ -56,9 +56,9 @@
    {
     "text": "what does it cost and how long does it take",
     "urls": [
+     "/canada-visit-visa",
      "/express-entry",
-     "/express-entry/canadian-experience-class",
-     "/visitor-visa"
+     "/express-entry/canadian-experience-class"
     ]
    },
    {
@@ -181,7 +181,7 @@
     ]
    },
    {
-    "text": "consultations can also be held remotely useful if you are in the gulf or simply cannot get away during office hours",
+    "text": "consultations can also be held remotely useful if you are in karachi or the gulf or simply cannot get away during office hours",
     "urls": [
      "/immigration-consultant-islamabad",
      "/immigration-consultant-lahore"
@@ -199,8 +199,8 @@
    {
     "a": "/immigration-consultant-islamabad",
     "b": "/immigration-consultant-lahore",
-    "shared": 124,
-    "share": 0.26
+    "shared": 126,
+    "share": 0.27
    },
    {
     "a": "/blog",
@@ -433,8 +433,8 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1670,
-   "avgSentence": 20,
+   "wordCount": 1703,
+   "avgSentence": 19,
    "hits": {
     "outcome": 4,
     "superlative": 0,
@@ -476,7 +476,7 @@
    "internalInCopy": [
     "/immigration-consultant-islamabad",
     "/immigration-consultant-lahore",
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/express-entry",
     "/pnp",
     "/study-in-canada/study-permit",
@@ -492,7 +492,6 @@
     "/europe",
     "/about/our-team",
     "/work-permit-canada",
-    "/canada-immigration-from-pakistan",
     "/express-entry/federal-skilled-worker",
     "/pnp/ontario",
     "/atlantic-immigration-program",
@@ -527,7 +526,7 @@
     "/canadian-immigration-lawyer-pakistan"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -548,7 +547,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -590,7 +588,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -635,9 +632,9 @@
    "images": 2,
    "imagesNoAlt": 0,
    "inboundCopy": [],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
-   "uniqueWords": 1475,
+   "uniqueWords": 1508,
    "repeatedBlocks": 6,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-22",
@@ -782,7 +779,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -803,7 +800,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -845,7 +841,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -885,7 +880,7 @@
     "/immigration-consultant-lahore",
     "/privacy"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 1241,
    "repeatedBlocks": 5,
@@ -977,7 +972,7 @@
     "/canadian-immigration-lawyer-pakistan"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -998,7 +993,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -1040,7 +1034,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -1104,7 +1097,6 @@
     "/family-sponsorship/spouse-partner",
     "/immigration-consultant-islamabad",
     "/immigration-consultant-lahore",
-    "/immigration-programs",
     "/no-guarantee-policy",
     "/pnp",
     "/pnp/alberta",
@@ -1135,7 +1127,6 @@
     "/study-in-canada/working-while-studying",
     "/uk",
     "/usa",
-    "/visitor-visa",
     "/visitor-visa/business-visitor",
     "/visitor-visa/eta",
     "/visitor-visa/extension",
@@ -1155,7 +1146,7 @@
     "/work-permits/post-graduation",
     "/work-permits/spousal-open-work-permit"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 345,
    "repeatedBlocks": 0,
@@ -1304,7 +1295,7 @@
    },
    "internalInCopy": [
     "/book-consultation",
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/work-permits/lmia",
     "/pnp/nova-scotia",
     "/pnp/new-brunswick",
@@ -1317,7 +1308,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -1338,7 +1329,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -1380,7 +1370,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -1425,7 +1414,7 @@
     "/pnp/prince-edward-island",
     "/rural-community-immigration"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2228,
    "repeatedBlocks": 1,
@@ -1521,7 +1510,7 @@
     "/blog/rss.xml"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -1542,7 +1531,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -1584,7 +1572,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -1627,7 +1614,7 @@
     "/blog/mofa-online-attestation",
     "/blog/ontario-higher-earners-2026"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [
     "/blog/rss.xml"
    ],
@@ -1741,7 +1728,7 @@
     "/book-consultation"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -1762,7 +1749,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -1804,7 +1790,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -1960,7 +1945,7 @@
     "/book-consultation"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -1981,7 +1966,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -2023,7 +2007,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -2169,7 +2152,7 @@
     "/book-consultation"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -2190,7 +2173,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -2232,7 +2214,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -2366,7 +2347,7 @@
     "/book-consultation"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -2387,7 +2368,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -2429,7 +2409,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -2582,7 +2561,7 @@
     "/book-consultation"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -2603,7 +2582,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -2645,7 +2623,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -2762,8 +2739,8 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1125,
-   "avgSentence": 17,
+   "wordCount": 1161,
+   "avgSentence": 16,
    "hits": {
     "outcome": 3,
     "superlative": 0,
@@ -2807,7 +2784,7 @@
     "/book-consultation"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -2828,7 +2805,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -2870,7 +2846,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -2934,7 +2909,6 @@
     "/fees",
     "/immigration-consultant-islamabad",
     "/immigration-consultant-lahore",
-    "/immigration-programs",
     "/no-guarantee-policy",
     "/pnp",
     "/pnp/alberta",
@@ -2974,7 +2948,6 @@
     "/uk",
     "/updates",
     "/usa",
-    "/visitor-visa",
     "/visitor-visa/business-visitor",
     "/visitor-visa/eta",
     "/visitor-visa/extension",
@@ -2994,9 +2967,9 @@
     "/work-permits/post-graduation",
     "/work-permits/spousal-open-work-permit"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
-   "uniqueWords": 1093,
+   "uniqueWords": 1129,
    "repeatedBlocks": 1,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-17",
@@ -3174,7 +3147,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -3195,7 +3168,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -3237,7 +3209,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -3275,7 +3246,7 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/",
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/pnp/ontario",
     "/quebec-immigration",
     "/work-permit-canada",
@@ -3283,7 +3254,7 @@
     "/work-permit-canada/refusals",
     "/work-permits/intra-company-transfer"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 3020,
    "repeatedBlocks": 0,
@@ -3355,6 +3326,10 @@
     },
     {
      "level": 3,
+     "text": "Business and entrepreneur routes"
+    },
+    {
+     "level": 3,
      "text": "Family sponsorship"
     },
     {
@@ -3364,6 +3339,38 @@
     {
      "level": 3,
      "text": "Visit visa"
+    },
+    {
+     "level": 2,
+     "text": "Start from yourself, not from the programme"
+    },
+    {
+     "level": 2,
+     "text": "Six steps for choosing a route, in this order"
+    },
+    {
+     "level": 3,
+     "text": "Start from your facts, not the programme"
+    },
+    {
+     "level": 3,
+     "text": "Find the routes you plausibly fit"
+    },
+    {
+     "level": 3,
+     "text": "Rule out the ones you don’t"
+    },
+    {
+     "level": 3,
+     "text": "Fix what is weak before you file"
+    },
+    {
+     "level": 3,
+     "text": "File one route properly"
+    },
+    {
+     "level": 3,
+     "text": "Live with the decision timeline"
     },
     {
      "level": 2,
@@ -3403,10 +3410,10 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1510,
-   "avgSentence": 17,
+   "wordCount": 2339,
+   "avgSentence": 18,
    "hits": {
-    "outcome": 1,
+    "outcome": 4,
     "superlative": 0,
     "firmClaim": 0,
     "stock": 0,
@@ -3415,6 +3422,8 @@
    },
    "hitLines": {
     "outcome": [
+     "Who none of this suits If you are looking for a route with no requirements, a guaranteed outcome, or a way to buy status without operating anything, none of these routes will serve you and we are not the firm for you.",
+     "Anyone giving you a guaranteed date, or a guaranteed outcome, is selling you something they cannot deliver.",
      "Can you guarantee my visa?"
     ]
    },
@@ -3446,6 +3455,7 @@
     "/study-in-canada",
     "/work-permits",
     "/work-permit-canada",
+    "/business-immigration",
     "/atlantic-immigration-program",
     "/canada-visit-visa",
     "/canada-immigration-from-pakistan/police-certificate",
@@ -3456,7 +3466,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -3477,7 +3487,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -3519,7 +3528,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -3547,6 +3555,8 @@
    ],
    "external": [
     "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20know%20which%20route%20to%20Canada%20fits%20me.%20%5BRef%3A%20WP-9BCK%5D",
+    "https://www.canada.ca/en/services/immigration-citizenship.html",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-requirements/language-testing.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessed.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/police-certificates.html",
@@ -3559,16 +3569,22 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/",
+    "/atlantic-immigration-program",
     "/blog/mofa-online-attestation",
     "/canada-immigration-from-pakistan/biometrics",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/police-certificate",
     "/immigration-consultant-islamabad",
-    "/immigration-consultant-lahore"
+    "/immigration-consultant-lahore",
+    "/updates",
+    "/visitor-visa/extension",
+    "/visitor-visa/invitation-letter",
+    "/work-permits/bridging-open-work-permit",
+    "/work-permits/intra-company-transfer"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
-   "uniqueWords": 1379,
+   "uniqueWords": 2155,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-23",
@@ -3669,7 +3685,7 @@
     "/book-consultation"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -3690,7 +3706,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -3732,7 +3747,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -3774,7 +3788,7 @@
     "/immigration-consultant-islamabad",
     "/immigration-consultant-lahore"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 730,
    "repeatedBlocks": 0,
@@ -3871,7 +3885,7 @@
     "/book-consultation"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -3892,7 +3906,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -3934,7 +3947,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -3977,7 +3989,7 @@
     "/immigration-consultant-islamabad",
     "/immigration-consultant-lahore"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 915,
    "repeatedBlocks": 0,
@@ -4084,7 +4096,7 @@
     "/book-consultation"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -4105,7 +4117,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -4147,7 +4158,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -4193,7 +4203,7 @@
     "/immigration-consultant-islamabad",
     "/immigration-consultant-lahore"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 1070,
    "repeatedBlocks": 0,
@@ -4333,7 +4343,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -4354,7 +4364,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -4396,7 +4405,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -4440,7 +4448,6 @@
     "/study-in-canada/refusals",
     "/tools/visit-visa-refusal-risk",
     "/updates",
-    "/visitor-visa",
     "/visitor-visa/business-visitor",
     "/visitor-visa/eta",
     "/visitor-visa/extension",
@@ -4448,7 +4455,7 @@
     "/visitor-visa/super-visa",
     "/work-permits"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 1482,
    "repeatedBlocks": 0,
@@ -4481,6 +4488,26 @@
     {
      "level": 2,
      "text": "A visa to visit — not a route to stay"
+    },
+    {
+     "level": 2,
+     "text": "Four ways people visit Canada"
+    },
+    {
+     "level": 3,
+     "text": "The route for Pakistani passport holders"
+    },
+    {
+     "level": 3,
+     "text": "For visa-exempt nationalities only"
+    },
+    {
+     "level": 3,
+     "text": "Parents and grandparents"
+    },
+    {
+     "level": 3,
+     "text": "Meetings, not employment"
     },
     {
      "level": 2,
@@ -4528,6 +4555,10 @@
     },
     {
      "level": 2,
+     "text": "Status, extensions and the visitor record"
+    },
+    {
+     "level": 2,
      "text": "Apply from where you live — we handle the Pakistan side"
     },
     {
@@ -4536,7 +4567,7 @@
     },
     {
      "level": 2,
-     "text": "Questions people actually ask us"
+     "text": "Questions about the Canada visit visa"
     },
     {
      "level": 2,
@@ -4544,8 +4575,8 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1186,
-   "avgSentence": 17,
+   "wordCount": 2148,
+   "avgSentence": 18,
    "hits": {
     "outcome": 1,
     "superlative": 0,
@@ -4556,7 +4587,7 @@
    },
    "hitLines": {
     "outcome": [
-     "What to do after a refusal → Straight answers Questions people actually ask us Can you guarantee my visa will be approved?"
+     "What to do after a refusal → Straight answers Questions about the Canada visit visa Can you guarantee my visa will be approved?"
     ],
     "volatile": [
      "Then don’t reapply yet — start somewhere else Check everything IRCC sent you first: refusals since July 2025 usually include a note from the officer.",
@@ -4564,14 +4595,17 @@
     ]
    },
    "schema": [
+    "Answer",
     "BreadcrumbList",
     "ContactPoint",
+    "FAQPage",
     "ListItem",
     "LocalBusiness",
     "OpeningHoursSpecification",
     "Person",
     "PostalAddress",
     "ProfessionalService",
+    "Question",
     "WebPage",
     "WebSite"
    ],
@@ -4581,17 +4615,18 @@
    },
    "internalInCopy": [
     "/book-consultation",
-    "/visitor-visa",
     "/visitor-visa/eta",
-    "/visitor-visa/invitation-letter",
     "/visitor-visa/super-visa",
     "/visitor-visa/business-visitor",
+    "/visitor-visa/invitation-letter",
+    "/tools/visit-visa-refusal-risk",
     "/visitor-visa/extension",
+    "/work-permits",
     "/canada-visa-refused",
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -4612,7 +4647,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -4654,7 +4688,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -4681,7 +4714,8 @@
     "/terms"
    ],
    "external": [
-    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20apply%20for%20a%20Canada%20visit%20visa.%20%5BRef%3A%20VV-AX47%5D"
+    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20apply%20for%20a%20Canada%20visit%20visa.%20%5BRef%3A%20VV-AX47%5D",
+    "https://open.canada.ca/data/en/dataset/9b34e712-513f-44e9-babf-9df4f7256550"
    ],
    "images": 0,
    "imagesNoAlt": 0,
@@ -4691,16 +4725,15 @@
     "/immigration-consultant-islamabad",
     "/immigration-consultant-lahore",
     "/tools/visit-visa-refusal-risk",
-    "/visitor-visa",
     "/visitor-visa/business-visitor",
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/invitation-letter"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
-   "uniqueWords": 1090,
-   "repeatedBlocks": 0,
+   "uniqueWords": 2043,
+   "repeatedBlocks": 1,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-17",
    "reviewed": "2026-07-17",
@@ -4824,7 +4857,7 @@
     "/fees"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -4845,7 +4878,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -4887,7 +4919,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -4928,7 +4959,7 @@
     "/immigration-consultant-islamabad",
     "/immigration-consultant-lahore"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 1544,
    "repeatedBlocks": 0,
@@ -5103,7 +5134,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -5124,7 +5155,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -5166,7 +5196,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -5204,7 +5233,7 @@
    "inboundCopy": [
     "/work-permits/caregivers"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2435,
    "repeatedBlocks": 0,
@@ -5336,7 +5365,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -5357,7 +5386,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -5399,7 +5427,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -5438,7 +5465,7 @@
     "/immigration-consultant-lahore",
     "/updates"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 963,
    "repeatedBlocks": 0,
@@ -5587,7 +5614,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -5608,7 +5635,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -5650,7 +5676,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -5702,7 +5727,6 @@
     "/family-sponsorship/spouse-partner",
     "/immigration-consultant-islamabad",
     "/immigration-consultant-lahore",
-    "/immigration-programs",
     "/pnp/alberta",
     "/pnp/british-columbia",
     "/pnp/manitoba",
@@ -5724,7 +5748,7 @@
     "/work-permits/international-experience-canada",
     "/work-permits/intra-company-transfer"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2073,
    "repeatedBlocks": 1,
@@ -5866,7 +5890,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -5887,7 +5911,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -5929,7 +5952,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -5968,7 +5990,7 @@
     "/study-in-canada/study-to-permanent-residence",
     "/work-permits/post-graduation"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 1680,
    "repeatedBlocks": 1,
@@ -6105,7 +6127,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -6126,7 +6148,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -6168,7 +6189,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -6210,7 +6230,7 @@
     "/express-entry/federal-skilled-worker",
     "/pnp/manitoba"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2238,
    "repeatedBlocks": 0,
@@ -6329,7 +6349,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -6350,7 +6370,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -6392,7 +6411,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -6434,7 +6452,7 @@
     "/tools/crs-calculator",
     "/updates"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 1429,
    "repeatedBlocks": 0,
@@ -6581,7 +6599,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -6602,7 +6620,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -6644,7 +6661,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -6683,7 +6699,7 @@
     "/express-entry",
     "/express-entry/category-based-draws"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 1859,
    "repeatedBlocks": 0,
@@ -6855,7 +6871,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -6876,7 +6892,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -6918,7 +6933,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -6958,7 +6972,7 @@
     "/express-entry",
     "/express-entry/category-based-draws"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 1838,
    "repeatedBlocks": 0,
@@ -7133,7 +7147,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -7154,7 +7168,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -7196,7 +7209,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -7241,12 +7253,11 @@
     "/family-sponsorship/parents-grandparents",
     "/immigration-consultant-islamabad",
     "/immigration-consultant-lahore",
-    "/immigration-programs",
     "/quebec-immigration",
     "/refusals/reconsideration",
     "/study-in-canada/bringing-family"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2310,
    "repeatedBlocks": 0,
@@ -7413,7 +7424,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -7434,7 +7445,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -7476,7 +7486,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -7512,7 +7521,7 @@
    "inboundCopy": [
     "/family-sponsorship"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2928,
    "repeatedBlocks": 0,
@@ -7682,7 +7691,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -7703,7 +7712,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -7745,7 +7753,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -7784,7 +7791,7 @@
     "/canada-immigration-from-pakistan",
     "/family-sponsorship"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2696,
    "repeatedBlocks": 0,
@@ -7945,7 +7952,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -7966,7 +7973,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -8008,7 +8014,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -8049,7 +8054,7 @@
     "/family-sponsorship/parents-grandparents",
     "/work-permits/spousal-open-work-permit"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2506,
    "repeatedBlocks": 1,
@@ -8154,7 +8159,7 @@
     "/no-guarantee-policy"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -8175,7 +8180,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -8217,7 +8221,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -8255,11 +8258,10 @@
     "/express-entry",
     "/express-entry/canadian-experience-class",
     "/express-entry/federal-skilled-trades",
-    "/immigration-programs",
     "/pnp",
     "/refusals/reconsideration"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 628,
    "repeatedBlocks": 0,
@@ -8319,7 +8321,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 849,
+   "wordCount": 851,
    "avgSentence": 16,
    "hits": {
     "outcome": 0,
@@ -8371,7 +8373,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -8392,7 +8394,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -8434,7 +8435,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -8474,9 +8474,9 @@
     "/",
     "/immigration-consultant-lahore"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
-   "uniqueWords": 791,
+   "uniqueWords": 793,
    "repeatedBlocks": 8,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-22",
@@ -8534,7 +8534,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 853,
+   "wordCount": 855,
    "avgSentence": 16,
    "hits": {
     "outcome": 1,
@@ -8590,7 +8590,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -8611,7 +8611,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -8653,7 +8652,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -8695,279 +8693,13 @@
     "/about",
     "/immigration-consultant-islamabad"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
-   "uniqueWords": 795,
+   "uniqueWords": 797,
    "repeatedBlocks": 8,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-22",
    "reviewed": "2026-10-22",
-   "inCode": true,
-   "issues": []
-  },
-  {
-   "path": "/immigration-programs",
-   "url": "https://tashfeenimmigrationsolutions.com/immigration-programs",
-   "status": 200,
-   "location": null,
-   "robotsHeader": null,
-   "metaRobots": "index, follow",
-   "title": "Canada Immigration Programs: An Honest Overview | Tashfeen",
-   "description": "The main routes to Canada: economic immigration, provincial nomination, family sponsorship, study-then-work, work permits and business routes.",
-   "canonical": "https://tashfeenimmigrationsolutions.com/immigration-programs",
-   "ogTitle": "Canada Immigration Programs: An Honest Overview | Tashfeen",
-   "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
-   "h1s": [
-    "Canadian immigration programs: which route actually applies to you"
-   ],
-   "headings": [
-    {
-     "level": 1,
-     "text": "Canadian immigration programs: which route actually applies to you"
-    },
-    {
-     "level": 2,
-     "text": "Most people are sold a route, not matched to one"
-    },
-    {
-     "level": 2,
-     "text": "Six routes, described plainly"
-    },
-    {
-     "level": 3,
-     "text": "Express Entry"
-    },
-    {
-     "level": 3,
-     "text": "Provincial nomination"
-    },
-    {
-     "level": 3,
-     "text": "Family sponsorship"
-    },
-    {
-     "level": 3,
-     "text": "Study, then work, then PR"
-    },
-    {
-     "level": 3,
-     "text": "Work permits"
-    },
-    {
-     "level": 3,
-     "text": "Business and entrepreneur routes"
-    },
-    {
-     "level": 2,
-     "text": "Start from yourself, not from the programme"
-    },
-    {
-     "level": 2,
-     "text": "Six steps, in this order"
-    },
-    {
-     "level": 3,
-     "text": "Start from your facts, not the programme"
-    },
-    {
-     "level": 3,
-     "text": "Find the families you plausibly fit"
-    },
-    {
-     "level": 3,
-     "text": "Rule out the ones you don’t"
-    },
-    {
-     "level": 3,
-     "text": "Fix what is weak before you file"
-    },
-    {
-     "level": 3,
-     "text": "File one route properly"
-    },
-    {
-     "level": 3,
-     "text": "Live with the decision timeline"
-    },
-    {
-     "level": 3,
-     "text": "Figures go stale; structure doesn’t"
-    },
-    {
-     "level": 3,
-     "text": "Including when the answer is no"
-    },
-    {
-     "level": 2,
-     "text": "Questions about Canadian immigration programs"
-    },
-    {
-     "level": 2,
-     "text": "One conversation, an honest shortlist"
-    }
-   ],
-   "headingSkips": 0,
-   "wordCount": 1841,
-   "avgSentence": 19,
-   "hits": {
-    "outcome": 5,
-    "superlative": 0,
-    "firmClaim": 0,
-    "stock": 0,
-    "volatile": 0,
-    "placeholder": 0
-   },
-   "hitLines": {
-    "outcome": [
-     "Who none of this suits If you are looking for a route with no requirements, a guaranteed outcome, or a way to buy status without operating anything, none of these families will serve you and we are not the firm for you.",
-     "Anyone giving you a guaranteed date, or a guaranteed outcome, is selling you something they cannot deliver.",
-     "Can you guarantee permanent residence?",
-     "Read our no-guarantee policy ."
-    ]
-   },
-   "schema": [
-    "Answer",
-    "BreadcrumbList",
-    "ContactPoint",
-    "FAQPage",
-    "ListItem",
-    "LocalBusiness",
-    "OpeningHoursSpecification",
-    "Person",
-    "PostalAddress",
-    "ProfessionalService",
-    "Question",
-    "WebPage",
-    "WebSite"
-   ],
-   "schemaInvalid": 0,
-   "schemaDates": {
-    "modified": "2026-07-20"
-   },
-   "internalInCopy": [
-    "/book-consultation",
-    "/fees",
-    "/express-entry",
-    "/pnp",
-    "/family-sponsorship",
-    "/study-in-canada",
-    "/work-permit-canada",
-    "/business-immigration",
-    "/no-guarantee-policy",
-    "/about/our-team"
-   ],
-   "internalAll": [
-    "/immigration-programs",
-    "/uk",
-    "/usa",
-    "/europe",
-    "/",
-    "/express-entry",
-    "/express-entry/draws",
-    "/express-entry/federal-skilled-worker",
-    "/express-entry/canadian-experience-class",
-    "/express-entry/federal-skilled-trades",
-    "/express-entry/category-based-draws",
-    "/pnp",
-    "/pnp/ontario",
-    "/pnp/british-columbia",
-    "/pnp/alberta",
-    "/pnp/saskatchewan",
-    "/pnp/manitoba",
-    "/pnp/nova-scotia",
-    "/pnp/new-brunswick",
-    "/pnp/prince-edward-island",
-    "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
-    "/canada-immigration-from-pakistan/police-certificate",
-    "/canada-immigration-from-pakistan/medical-exam",
-    "/canada-immigration-from-pakistan/biometrics",
-    "/atlantic-immigration-program",
-    "/rural-community-immigration",
-    "/caregivers",
-    "/business-immigration",
-    "/quebec-immigration",
-    "/work-permits/lmia",
-    "/work-permits/global-talent-stream",
-    "/work-permits/intra-company-transfer",
-    "/work-permits/post-graduation",
-    "/work-permits/caregivers",
-    "/work-permit-canada",
-    "/work-permit-canada/business-plan",
-    "/work-permit-canada/refusals",
-    "/work-permits/lmia-exempt",
-    "/work-permits/spousal-open-work-permit",
-    "/work-permits/international-experience-canada",
-    "/work-permits/bridging-open-work-permit",
-    "/work-permits",
-    "/study-in-canada/study-permit",
-    "/study-in-canada/provincial-attestation-letter",
-    "/study-in-canada/designated-learning-institutions",
-    "/study-in-canada/proof-of-funds",
-    "/study-in-canada/refusals",
-    "/study-in-canada/working-while-studying",
-    "/study-in-canada/study-permit-extension",
-    "/study-in-canada/bringing-family",
-    "/study-in-canada/study-to-permanent-residence",
-    "/study-in-canada",
-    "/family-sponsorship",
-    "/family-sponsorship/spouse-partner",
-    "/family-sponsorship/parents-grandparents",
-    "/family-sponsorship/dependent-children",
-    "/visitor-visa/super-visa",
-    "/visitor-visa/invitation-letter",
-    "/canada-visit-visa",
-    "/visitor-visa/eta",
-    "/visitor-visa/extension",
-    "/visitor-visa/business-visitor",
-    "/visitor-visa",
-    "/canada-visa-refused",
-    "/refusals/gcms-notes",
-    "/refusals/reconsideration",
-    "/refusals/judicial-review",
-    "/refusals/re-applying",
-    "/refusals/misrepresentation",
-    "/tools/crs-calculator",
-    "/tools/fsw-67-calculator",
-    "/tools/clb-converter",
-    "/tools/work-permit-eligibility",
-    "/tools/visit-visa-refusal-risk",
-    "/tools",
-    "/about",
-    "/about/our-team",
-    "/canadian-immigration-lawyer-pakistan",
-    "/updates",
-    "/blog",
-    "/fees",
-    "/no-guarantee-policy",
-    "/book-consultation",
-    "/immigration-consultant-lahore",
-    "/immigration-consultant-islamabad",
-    "/privacy",
-    "/terms"
-   ],
-   "external": [
-    "https://www.canada.ca/en/services/immigration-citizenship.html",
-    "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html",
-    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99m%20not%20sure%20which%20Canadian%20immigration%20route%20applies%20to%20me.%20Can%20you%20help%20me%20work%20it%20out%3F%20%5BRef%3A%20WP-1C36%5D"
-   ],
-   "images": 0,
-   "imagesNoAlt": 0,
-   "inboundCopy": [
-    "/",
-    "/atlantic-immigration-program",
-    "/visitor-visa/extension",
-    "/visitor-visa/invitation-letter",
-    "/work-permits/bridging-open-work-permit",
-    "/work-permits/intra-company-transfer"
-   ],
-   "inboundAll": 92,
-   "brokenInternal": [],
-   "uniqueWords": 1735,
-   "repeatedBlocks": 0,
-   "inSitemap": true,
-   "sitemapLastmod": "2026-07-20",
-   "reviewed": "2026-07-20",
    "inCode": true,
    "issues": []
   },
@@ -9087,7 +8819,7 @@
     "/book-consultation"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -9108,7 +8840,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -9150,7 +8881,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -9198,7 +8928,6 @@
     "/family-sponsorship/parents-grandparents",
     "/family-sponsorship/spouse-partner",
     "/fees",
-    "/immigration-programs",
     "/pnp",
     "/pnp/alberta",
     "/pnp/british-columbia",
@@ -9227,7 +8956,6 @@
     "/study-in-canada/study-to-permanent-residence",
     "/terms",
     "/tools/work-permit-eligibility",
-    "/visitor-visa",
     "/visitor-visa/business-visitor",
     "/visitor-visa/eta",
     "/visitor-visa/extension",
@@ -9245,7 +8973,7 @@
     "/work-permits/post-graduation",
     "/work-permits/spousal-open-work-permit"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 828,
    "repeatedBlocks": 0,
@@ -9416,7 +9144,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -9437,7 +9165,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -9479,7 +9206,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -9530,7 +9256,6 @@
     "/family-sponsorship/dependent-children",
     "/immigration-consultant-islamabad",
     "/immigration-consultant-lahore",
-    "/immigration-programs",
     "/pnp/alberta",
     "/pnp/british-columbia",
     "/pnp/manitoba",
@@ -9549,7 +9274,7 @@
     "/work-permits/intra-company-transfer",
     "/work-permits/post-graduation"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2050,
    "repeatedBlocks": 0,
@@ -9718,7 +9443,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -9739,7 +9464,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -9781,7 +9505,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -9819,7 +9542,7 @@
     "/business-immigration",
     "/pnp"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2592,
    "repeatedBlocks": 1,
@@ -9975,7 +9698,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -9996,7 +9719,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -10038,7 +9760,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -10077,7 +9798,7 @@
     "/business-immigration",
     "/pnp"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2176,
    "repeatedBlocks": 0,
@@ -10241,7 +9962,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -10262,7 +9983,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -10304,7 +10024,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -10342,7 +10061,7 @@
     "/business-immigration",
     "/pnp"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2498,
    "repeatedBlocks": 0,
@@ -10511,7 +10230,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -10532,7 +10251,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -10574,7 +10292,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -10614,7 +10331,7 @@
     "/business-immigration",
     "/pnp"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2524,
    "repeatedBlocks": 1,
@@ -10784,7 +10501,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -10805,7 +10522,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -10847,7 +10563,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -10885,7 +10600,7 @@
     "/business-immigration",
     "/pnp"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2426,
    "repeatedBlocks": 1,
@@ -11045,7 +10760,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -11066,7 +10781,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -11108,7 +10822,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -11146,7 +10859,7 @@
     "/business-immigration",
     "/pnp"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2156,
    "repeatedBlocks": 0,
@@ -11318,7 +11031,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -11339,7 +11052,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -11381,7 +11093,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -11424,7 +11135,7 @@
     "/pnp",
     "/pnp/manitoba"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2384,
    "repeatedBlocks": 1,
@@ -11602,7 +11313,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -11623,7 +11334,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -11665,7 +11375,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -11704,7 +11413,7 @@
     "/business-immigration",
     "/pnp"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2072,
    "repeatedBlocks": 1,
@@ -11872,7 +11581,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -11893,7 +11602,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -11935,7 +11643,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -11974,7 +11681,7 @@
     "/pnp",
     "/pnp/manitoba"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2521,
    "repeatedBlocks": 1,
@@ -12078,7 +11785,7 @@
     "/about"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -12099,7 +11806,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -12141,7 +11847,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -12174,7 +11879,7 @@
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 816,
    "repeatedBlocks": 0,
@@ -12344,7 +12049,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -12365,7 +12070,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -12407,7 +12111,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -12444,7 +12147,7 @@
     "/business-immigration",
     "/study-in-canada/provincial-attestation-letter"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2347,
    "repeatedBlocks": 0,
@@ -12571,7 +12274,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -12592,7 +12295,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -12634,7 +12336,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -12689,7 +12390,7 @@
     "/visitor-visa/invitation-letter",
     "/work-permit-canada/refusals"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2128,
    "repeatedBlocks": 0,
@@ -12856,7 +12557,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -12877,7 +12578,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -12919,7 +12619,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -12966,7 +12665,7 @@
     "/study-in-canada/refusals",
     "/work-permit-canada/refusals"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2742,
    "repeatedBlocks": 0,
@@ -13130,7 +12829,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -13151,7 +12850,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -13193,7 +12891,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -13249,7 +12946,7 @@
     "/work-permits/international-experience-canada",
     "/work-permits/spousal-open-work-permit"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2105,
    "repeatedBlocks": 0,
@@ -13399,7 +13096,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -13420,7 +13117,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -13462,7 +13158,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -13507,7 +13202,7 @@
     "/study-in-canada/refusals",
     "/work-permit-canada/refusals"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2397,
    "repeatedBlocks": 0,
@@ -13675,7 +13370,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -13696,7 +13391,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -13738,7 +13432,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -13781,7 +13474,7 @@
     "/study-in-canada/refusals",
     "/work-permit-canada/refusals"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2887,
    "repeatedBlocks": 0,
@@ -13938,7 +13631,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -13959,7 +13652,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -14001,7 +13693,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -14038,7 +13729,7 @@
    "inboundCopy": [
     "/pnp/newfoundland-labrador"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2195,
    "repeatedBlocks": 0,
@@ -14192,7 +13883,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -14213,7 +13904,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -14255,7 +13945,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -14296,10 +13985,9 @@
     "/",
     "/canada-immigration-from-pakistan",
     "/immigration-consultant-islamabad",
-    "/immigration-consultant-lahore",
-    "/immigration-programs"
+    "/immigration-consultant-lahore"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 1861,
    "repeatedBlocks": 0,
@@ -14471,7 +14159,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -14492,7 +14180,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -14534,7 +14221,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -14572,7 +14258,7 @@
    "inboundCopy": [
     "/work-permits/spousal-open-work-permit"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2633,
    "repeatedBlocks": 0,
@@ -14753,7 +14439,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -14774,7 +14460,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -14816,7 +14501,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -14859,7 +14543,7 @@
     "/study-in-canada/working-while-studying",
     "/work-permits/post-graduation"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2138,
    "repeatedBlocks": 0,
@@ -15021,7 +14705,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -15042,7 +14726,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -15084,7 +14767,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -15127,7 +14809,7 @@
     "/study-in-canada/study-permit",
     "/study-in-canada/working-while-studying"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2461,
    "repeatedBlocks": 0,
@@ -15286,7 +14968,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -15307,7 +14989,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -15349,7 +15030,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -15390,7 +15070,7 @@
     "/study-in-canada/study-permit",
     "/study-in-canada/study-permit-extension"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2191,
    "repeatedBlocks": 0,
@@ -15575,7 +15255,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -15596,7 +15276,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -15638,7 +15317,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -15684,7 +15362,7 @@
     "/study-in-canada/study-permit-extension",
     "/study-in-canada/study-to-permanent-residence"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2315,
    "repeatedBlocks": 0,
@@ -15852,7 +15530,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -15873,7 +15551,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -15915,7 +15592,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -15965,7 +15641,7 @@
     "/visitor-visa/extension",
     "/work-permits/spousal-open-work-permit"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2303,
    "repeatedBlocks": 0,
@@ -16130,7 +15806,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -16151,7 +15827,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -16193,7 +15868,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -16232,7 +15906,7 @@
     "/study-in-canada/bringing-family",
     "/study-in-canada/study-to-permanent-residence"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2621,
    "repeatedBlocks": 0,
@@ -16396,7 +16070,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -16417,7 +16091,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -16459,7 +16132,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -16505,7 +16177,7 @@
     "/work-permits/international-experience-canada",
     "/work-permits/post-graduation"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2298,
    "repeatedBlocks": 0,
@@ -16638,7 +16310,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -16659,7 +16331,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -16701,7 +16372,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -16743,7 +16413,7 @@
     "/study-in-canada/study-permit-extension",
     "/work-permits/post-graduation"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2596,
    "repeatedBlocks": 0,
@@ -16835,7 +16505,7 @@
     "/book-consultation"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -16856,7 +16526,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -16898,7 +16567,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -16930,7 +16598,7 @@
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 352,
    "repeatedBlocks": 0,
@@ -17032,7 +16700,7 @@
     "/book-consultation"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -17053,7 +16721,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -17095,7 +16762,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -17129,7 +16795,7 @@
    "inboundCopy": [
     "/"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 367,
    "repeatedBlocks": 0,
@@ -17209,7 +16875,7 @@
     "/book-consultation"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -17230,7 +16896,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -17272,7 +16937,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -17308,7 +16972,7 @@
     "/tools",
     "/tools/fsw-67-calculator"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 562,
    "repeatedBlocks": 0,
@@ -17420,7 +17084,7 @@
     "/book-consultation"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -17441,7 +17105,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -17483,7 +17146,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -17536,7 +17198,7 @@
     "/tools/fsw-67-calculator",
     "/work-permits/international-experience-canada"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2621,
    "repeatedBlocks": 0,
@@ -17640,7 +17302,7 @@
     "/book-consultation"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -17661,7 +17323,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -17703,7 +17364,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -17744,7 +17404,7 @@
     "/pnp/prince-edward-island",
     "/tools"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 1126,
    "repeatedBlocks": 0,
@@ -17824,7 +17484,7 @@
     "/book-consultation"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -17845,7 +17505,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -17887,7 +17546,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -17920,11 +17578,11 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/",
+    "/canada-visit-visa",
     "/refusals/re-applying",
-    "/tools",
-    "/visitor-visa"
+    "/tools"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 555,
    "repeatedBlocks": 0,
@@ -18014,7 +17672,7 @@
     "/book-consultation"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -18035,7 +17693,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -18077,7 +17734,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -18115,7 +17771,7 @@
     "/work-permits",
     "/work-permits/international-experience-canada"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 590,
    "repeatedBlocks": 0,
@@ -18241,7 +17897,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -18262,7 +17918,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -18304,7 +17959,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -18344,7 +17998,7 @@
     "/immigration-consultant-islamabad",
     "/immigration-consultant-lahore"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 981,
    "repeatedBlocks": 0,
@@ -18376,42 +18030,6 @@
     },
     {
      "level": 2,
-     "text": "Canada Visa Refused? — How Judicial Review Can Challenge an Unfair Decision"
-    },
-    {
-     "level": 2,
-     "text": "More updates"
-    },
-    {
-     "level": 3,
-     "text": "USA E-2 Investor Visa — Start or Buy a Business in America!"
-    },
-    {
-     "level": 3,
-     "text": "Does PKR 50 Lakh in Your Bank Account Guarantee a US Visit Visa? — The Truth About Bank Statements"
-    },
-    {
-     "level": 3,
-     "text": "Canada Visa Refused Again? — Copy-Paste Reasons? Explore Judicial Review!"
-    },
-    {
-     "level": 3,
-     "text": "Pakistan MOFA Online Document Attestation — No More Long Queues or Office Visits!"
-    },
-    {
-     "level": 3,
-     "text": "Canada C-11 Business Work Permit — Move to Canada with Your Family Through Business Immigration!"
-    },
-    {
-     "level": 3,
-     "text": "Austria Red-White-Red Card — Work and Build Your Future in Europe!"
-    },
-    {
-     "level": 3,
-     "text": "Canada LMIA Processing Time Update — Major Changes in Processing Times!"
-    },
-    {
-     "level": 2,
      "text": "From the blog"
     },
     {
@@ -18424,36 +18042,30 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 502,
-   "avgSentence": 19,
+   "wordCount": 314,
+   "avgSentence": 20,
    "hits": {
-    "outcome": 1,
+    "outcome": 0,
     "superlative": 0,
     "firmClaim": 0,
     "stock": 0,
-    "volatile": 2,
+    "volatile": 1,
     "placeholder": 0
    },
    "hitLines": {
-    "outcome": [
-     "Read our USA guide → USA 31 October 2026 Does PKR 50 Lakh in Your Bank Account Guarantee a US Visit Visa?"
-    ],
     "volatile": [
-     "Read our USA guide → USA 31 October 2026 Does PKR 50 Lakh in Your Bank Account Guarantee a US Visit Visa?",
      "Austria Red-White-Red Card from Pakistan in 2026 MOFA Online Attestation in Pakistan: How It Works EB-2 NIW Green Card from Pakistan: Where It Stands Express Entry in 2026 So Far: What 62 Rounds Show Ontario’s $80,000 Points Change: Who It Helps What we cover The topics behind the videos A video is a quick update."
     ]
    },
    "schema": [
     "BreadcrumbList",
     "ContactPoint",
-    "ItemList",
     "ListItem",
     "LocalBusiness",
     "OpeningHoursSpecification",
     "Person",
     "PostalAddress",
     "ProfessionalService",
-    "VideoObject",
     "WebPage",
     "WebSite"
    ],
@@ -18463,21 +18075,21 @@
    },
    "internalInCopy": [
     "/book-consultation",
-    "/canada-visa-refused",
-    "/usa",
-    "/blog/mofa-online-attestation",
-    "/work-permit-canada",
-    "/europe",
-    "/work-permits/lmia",
+    "/canada-immigration-from-pakistan",
     "/blog/austria-red-white-red-card",
+    "/blog/mofa-online-attestation",
     "/blog/eb2-niw-pakistan",
     "/blog/express-entry-2026-so-far",
     "/blog/ontario-higher-earners-2026",
     "/express-entry/draws",
-    "/pnp"
+    "/pnp",
+    "/work-permit-canada",
+    "/canada-visa-refused",
+    "/usa",
+    "/europe"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -18498,7 +18110,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -18540,7 +18151,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -18563,8 +18173,8 @@
     "/book-consultation",
     "/immigration-consultant-lahore",
     "/immigration-consultant-islamabad",
-    "/blog/mofa-online-attestation",
     "/blog/austria-red-white-red-card",
+    "/blog/mofa-online-attestation",
     "/blog/eb2-niw-pakistan",
     "/blog/express-entry-2026-so-far",
     "/blog/ontario-higher-earners-2026",
@@ -18575,15 +18185,15 @@
     "https://www.youtube.com/channel/UC7yaY91cb22ZPnBPJyGBNBg",
     "https://wa.me/923350001111?text=Hi%2C%20I%20watched%20one%20of%20your%20videos%20and%20would%20like%20to%20ask%20about%20my%20case.%20%5BRef%3A%20WP-7ZW7%5D"
    ],
-   "images": 8,
+   "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/",
     "/blog"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
-   "uniqueWords": 381,
+   "uniqueWords": 296,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-23",
@@ -18698,7 +18308,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -18719,7 +18329,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -18761,7 +18370,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -18803,242 +18411,13 @@
     "/immigration-consultant-lahore",
     "/updates"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 1146,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-24",
    "reviewed": "2026-10-24",
-   "inCode": true,
-   "issues": []
-  },
-  {
-   "path": "/visitor-visa",
-   "url": "https://tashfeenimmigrationsolutions.com/visitor-visa",
-   "status": 200,
-   "location": null,
-   "robotsHeader": null,
-   "metaRobots": "index, follow",
-   "title": "Visiting Canada: Visa, eTA, Super Visa Routes | Tashfeen",
-   "description": "Visitor visa or eTA, Super Visa, business visitors and extensions: how these routes work, and the one question underneath every application.",
-   "canonical": "https://tashfeenimmigrationsolutions.com/visitor-visa",
-   "ogTitle": "Visiting Canada: Visa, eTA, Super Visa Routes | Tashfeen",
-   "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
-   "h1s": [
-    "Canada visitor visa: the one question underneath every application"
-   ],
-   "headings": [
-    {
-     "level": 1,
-     "text": "Canada visitor visa: the one question underneath every application"
-    },
-    {
-     "level": 2,
-     "text": "Four ways people visit Canada"
-    },
-    {
-     "level": 3,
-     "text": "The route for Pakistani passport holders"
-    },
-    {
-     "level": 3,
-     "text": "For visa-exempt nationalities only"
-    },
-    {
-     "level": 3,
-     "text": "Parents and grandparents"
-    },
-    {
-     "level": 3,
-     "text": "Meetings, not employment"
-    },
-    {
-     "level": 2,
-     "text": "Will you leave when you’re supposed to?"
-    },
-    {
-     "level": 2,
-     "text": "What a strong visit file rests on"
-    },
-    {
-     "level": 2,
-     "text": "Visitor applications are refused often, and the reason is structural"
-    },
-    {
-     "level": 2,
-     "text": "Status, extensions and the visitor record"
-    },
-    {
-     "level": 2,
-     "text": "If you’ve had a refusal"
-    },
-    {
-     "level": 2,
-     "text": "Questions about Canadian visitor visas"
-    },
-    {
-     "level": 2,
-     "text": "Find out whether your visit application is worth filing"
-    }
-   ],
-   "headingSkips": 0,
-   "wordCount": 1771,
-   "avgSentence": 19,
-   "hits": {
-    "outcome": 2,
-    "superlative": 0,
-    "firmClaim": 0,
-    "stock": 0,
-    "volatile": 0,
-    "placeholder": 0
-   },
-   "hitLines": {
-    "outcome": [
-     "What it never means is that anyone can guarantee you an outcome.",
-     "Read our no-guarantee policy ."
-    ]
-   },
-   "schema": [
-    "Answer",
-    "BreadcrumbList",
-    "ContactPoint",
-    "FAQPage",
-    "ListItem",
-    "LocalBusiness",
-    "OpeningHoursSpecification",
-    "Person",
-    "PostalAddress",
-    "ProfessionalService",
-    "Question",
-    "WebPage",
-    "WebSite"
-   ],
-   "schemaInvalid": 0,
-   "schemaDates": {
-    "modified": "2026-07-20"
-   },
-   "internalInCopy": [
-    "/book-consultation",
-    "/canada-visit-visa",
-    "/visitor-visa/eta",
-    "/visitor-visa/super-visa",
-    "/visitor-visa/business-visitor",
-    "/visitor-visa/invitation-letter",
-    "/tools/visit-visa-refusal-risk",
-    "/no-guarantee-policy",
-    "/visitor-visa/extension",
-    "/work-permit-canada",
-    "/canada-visa-refused",
-    "/about/our-team"
-   ],
-   "internalAll": [
-    "/immigration-programs",
-    "/uk",
-    "/usa",
-    "/europe",
-    "/",
-    "/express-entry",
-    "/express-entry/draws",
-    "/express-entry/federal-skilled-worker",
-    "/express-entry/canadian-experience-class",
-    "/express-entry/federal-skilled-trades",
-    "/express-entry/category-based-draws",
-    "/pnp",
-    "/pnp/ontario",
-    "/pnp/british-columbia",
-    "/pnp/alberta",
-    "/pnp/saskatchewan",
-    "/pnp/manitoba",
-    "/pnp/nova-scotia",
-    "/pnp/new-brunswick",
-    "/pnp/prince-edward-island",
-    "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
-    "/canada-immigration-from-pakistan/police-certificate",
-    "/canada-immigration-from-pakistan/medical-exam",
-    "/canada-immigration-from-pakistan/biometrics",
-    "/atlantic-immigration-program",
-    "/rural-community-immigration",
-    "/caregivers",
-    "/business-immigration",
-    "/quebec-immigration",
-    "/work-permits/lmia",
-    "/work-permits/global-talent-stream",
-    "/work-permits/intra-company-transfer",
-    "/work-permits/post-graduation",
-    "/work-permits/caregivers",
-    "/work-permit-canada",
-    "/work-permit-canada/business-plan",
-    "/work-permit-canada/refusals",
-    "/work-permits/lmia-exempt",
-    "/work-permits/spousal-open-work-permit",
-    "/work-permits/international-experience-canada",
-    "/work-permits/bridging-open-work-permit",
-    "/work-permits",
-    "/study-in-canada/study-permit",
-    "/study-in-canada/provincial-attestation-letter",
-    "/study-in-canada/designated-learning-institutions",
-    "/study-in-canada/proof-of-funds",
-    "/study-in-canada/refusals",
-    "/study-in-canada/working-while-studying",
-    "/study-in-canada/study-permit-extension",
-    "/study-in-canada/bringing-family",
-    "/study-in-canada/study-to-permanent-residence",
-    "/study-in-canada",
-    "/family-sponsorship",
-    "/family-sponsorship/spouse-partner",
-    "/family-sponsorship/parents-grandparents",
-    "/family-sponsorship/dependent-children",
-    "/visitor-visa/super-visa",
-    "/visitor-visa/invitation-letter",
-    "/canada-visit-visa",
-    "/visitor-visa/eta",
-    "/visitor-visa/extension",
-    "/visitor-visa/business-visitor",
-    "/visitor-visa",
-    "/canada-visa-refused",
-    "/refusals/gcms-notes",
-    "/refusals/reconsideration",
-    "/refusals/judicial-review",
-    "/refusals/re-applying",
-    "/refusals/misrepresentation",
-    "/tools/crs-calculator",
-    "/tools/fsw-67-calculator",
-    "/tools/clb-converter",
-    "/tools/work-permit-eligibility",
-    "/tools/visit-visa-refusal-risk",
-    "/tools",
-    "/about",
-    "/about/our-team",
-    "/canadian-immigration-lawyer-pakistan",
-    "/updates",
-    "/blog",
-    "/fees",
-    "/no-guarantee-policy",
-    "/book-consultation",
-    "/immigration-consultant-lahore",
-    "/immigration-consultant-islamabad",
-    "/privacy",
-    "/terms"
-   ],
-   "external": [
-    "https://open.canada.ca/data/en/dataset/9b34e712-513f-44e9-babf-9df4f7256550",
-    "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/extend-stay.html",
-    "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20apply%20for%20a%20Canada%20visitor%20visa.%20Can%20you%20assess%20my%20case%3F%20%5BRef%3A%20VV-JH4K%5D"
-   ],
-   "images": 0,
-   "imagesNoAlt": 0,
-   "inboundCopy": [
-    "/canada-visit-visa"
-   ],
-   "inboundAll": 92,
-   "brokenInternal": [],
-   "uniqueWords": 1713,
-   "repeatedBlocks": 1,
-   "inSitemap": true,
-   "sitemapLastmod": "2026-07-20",
-   "reviewed": "2026-07-20",
    "inCode": true,
    "issues": []
   },
@@ -19187,7 +18566,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -19208,7 +18587,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -19250,7 +18628,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -19285,10 +18662,9 @@
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
-    "/canada-visit-visa",
-    "/visitor-visa"
+    "/canada-visit-visa"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2433,
    "repeatedBlocks": 0,
@@ -19446,7 +18822,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -19467,7 +18843,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -19509,7 +18884,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -19546,10 +18920,9 @@
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
-    "/canada-visit-visa",
-    "/visitor-visa"
+    "/canada-visit-visa"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2202,
    "repeatedBlocks": 0,
@@ -19700,14 +19073,14 @@
     "/work-permits",
     "/study-in-canada/study-permit",
     "/visitor-visa/super-visa",
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/no-guarantee-policy",
     "/canada-visit-visa",
     "/canada-visa-refused",
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -19728,7 +19101,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -19770,7 +19142,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -19805,10 +19176,9 @@
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
-    "/canada-visit-visa",
-    "/visitor-visa"
+    "/canada-visit-visa"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2298,
    "repeatedBlocks": 1,
@@ -19963,7 +19333,7 @@
    },
    "internalInCopy": [
     "/book-consultation",
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/refusals/gcms-notes",
     "/visitor-visa/super-visa",
     "/no-guarantee-policy",
@@ -19972,7 +19342,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -19993,7 +19363,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -20035,7 +19404,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -20072,10 +19440,9 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/",
-    "/canada-visit-visa",
-    "/visitor-visa"
+    "/canada-visit-visa"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2406,
    "repeatedBlocks": 0,
@@ -20225,7 +19592,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -20246,7 +19613,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -20288,7 +19654,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -20324,11 +19689,10 @@
     "/",
     "/canada-visit-visa",
     "/family-sponsorship/parents-grandparents",
-    "/visitor-visa",
     "/visitor-visa/extension",
     "/visitor-visa/invitation-letter"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 1853,
    "repeatedBlocks": 0,
@@ -20538,7 +19902,7 @@
     "/no-guarantee-policy"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -20559,7 +19923,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -20601,7 +19964,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -20654,21 +20016,19 @@
     "/family-sponsorship/dependent-children",
     "/immigration-consultant-islamabad",
     "/immigration-consultant-lahore",
-    "/immigration-programs",
     "/pnp",
     "/study-in-canada/bringing-family",
     "/study-in-canada/refusals",
     "/study-in-canada/working-while-studying",
     "/tools/work-permit-eligibility",
     "/updates",
-    "/visitor-visa",
     "/work-permit-canada/business-plan",
     "/work-permits",
     "/work-permits/caregivers",
     "/work-permits/lmia",
     "/work-permits/lmia-exempt"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 3177,
    "repeatedBlocks": 0,
@@ -20791,7 +20151,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -20812,7 +20172,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -20854,7 +20213,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -20890,7 +20248,7 @@
     "/work-permit-canada",
     "/work-permit-canada/refusals"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 1074,
    "repeatedBlocks": 0,
@@ -21029,7 +20387,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -21050,7 +20408,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -21092,7 +20449,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -21129,7 +20485,7 @@
     "/work-permit-canada",
     "/work-permit-canada/business-plan"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 952,
    "repeatedBlocks": 0,
@@ -21299,7 +20655,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -21320,7 +20676,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -21362,7 +20717,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -21398,6 +20752,7 @@
     "/",
     "/atlantic-immigration-program",
     "/canada-immigration-from-pakistan",
+    "/canada-visit-visa",
     "/caregivers",
     "/study-in-canada/provincial-attestation-letter",
     "/study-in-canada/study-permit",
@@ -21407,7 +20762,7 @@
     "/work-permits/bridging-open-work-permit",
     "/work-permits/international-experience-canada"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 1816,
    "repeatedBlocks": 0,
@@ -21565,7 +20920,7 @@
     "/express-entry",
     "/pnp",
     "/work-permits",
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/no-guarantee-policy",
     "/work-permits/post-graduation",
     "/work-permits/spousal-open-work-permit",
@@ -21573,7 +20928,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -21594,7 +20949,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -21636,7 +20990,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -21675,7 +21028,7 @@
     "/work-permits/post-graduation",
     "/work-permits/spousal-open-work-permit"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2253,
    "repeatedBlocks": 0,
@@ -21839,7 +21192,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -21860,7 +21213,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -21902,7 +21254,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -21941,7 +21292,7 @@
     "/caregivers",
     "/work-permits"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2593,
    "repeatedBlocks": 0,
@@ -22093,7 +21444,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -22114,7 +21465,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -22156,7 +21506,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -22193,7 +21542,7 @@
    "inboundCopy": [
     "/work-permits"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2113,
    "repeatedBlocks": 0,
@@ -22349,7 +21698,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -22370,7 +21719,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -22412,7 +21760,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -22449,7 +21796,7 @@
     "/work-permits",
     "/work-permits/lmia-exempt"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 1879,
    "repeatedBlocks": 0,
@@ -22600,7 +21947,7 @@
     "/book-consultation",
     "/work-permits/lmia-exempt",
     "/work-permits/lmia",
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/express-entry",
     "/pnp",
     "/business-immigration",
@@ -22608,7 +21955,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -22629,7 +21976,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -22671,7 +22017,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -22711,7 +22056,7 @@
     "/work-permits",
     "/work-permits/lmia-exempt"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2373,
    "repeatedBlocks": 0,
@@ -22865,7 +22210,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -22886,7 +22231,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -22928,7 +22272,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -22969,7 +22312,6 @@
     "/business-immigration",
     "/quebec-immigration",
     "/rural-community-immigration",
-    "/updates",
     "/work-permit-canada",
     "/work-permits",
     "/work-permits/bridging-open-work-permit",
@@ -22978,7 +22320,7 @@
     "/work-permits/international-experience-canada",
     "/work-permits/intra-company-transfer"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 1884,
    "repeatedBlocks": 0,
@@ -23131,7 +22473,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -23152,7 +22494,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -23194,7 +22535,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -23235,7 +22575,7 @@
     "/work-permits/international-experience-canada",
     "/work-permits/intra-company-transfer"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 1447,
    "repeatedBlocks": 0,
@@ -23410,7 +22750,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -23431,7 +22771,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -23473,7 +22812,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -23517,7 +22855,7 @@
     "/work-permits/bridging-open-work-permit",
     "/work-permits/spousal-open-work-permit"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2389,
    "repeatedBlocks": 0,
@@ -23676,7 +23014,7 @@
     "/about/our-team"
    ],
    "internalAll": [
-    "/immigration-programs",
+    "/canada-immigration-from-pakistan",
     "/uk",
     "/usa",
     "/europe",
@@ -23697,7 +23035,6 @@
     "/pnp/new-brunswick",
     "/pnp/prince-edward-island",
     "/pnp/newfoundland-labrador",
-    "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
@@ -23739,7 +23076,6 @@
     "/visitor-visa/eta",
     "/visitor-visa/extension",
     "/visitor-visa/business-visitor",
-    "/visitor-visa",
     "/canada-visa-refused",
     "/refusals/gcms-notes",
     "/refusals/reconsideration",
@@ -23782,7 +23118,7 @@
     "/work-permits/bridging-open-work-permit",
     "/work-permits/lmia-exempt"
    ],
-   "inboundAll": 92,
+   "inboundAll": 90,
    "brokenInternal": [],
    "uniqueWords": 2303,
    "repeatedBlocks": 0,

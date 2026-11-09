@@ -7,6 +7,24 @@ To see any page's original wording: `git show 9d17a79:<path to the page>`.
 
 
 
+
+## Batch 13: two pages merged, Karachi answer added (9 November 2026)
+
+- **Commit:** `8249139`, live on production the same day. The site owner approved both merges and confirmed Karachi clients are served remotely, in chat on 9 November 2026.
+
+| Retired page | Now redirects to | Moved across | Left behind because it was already covered |
+| --- | --- | --- | --- |
+| `/visitor-visa` | `/canada-visit-visa` | Four-route picker, officer's test and burden of proof, dual intent, why refusals are structural, Open Government data link, visitor record summary, wrong-application warning, five FAQs | Strong-file list (the five refusal cards cover it), full extension detail (`/visitor-visa/extension`), two FAQs already on the kept page |
+| `/immigration-programs` | `/canada-immigration-from-pakistan` | "Start from yourself" grid, who none of this suits, six steps for choosing, business route card, porous-routes note, three FAQs | Six route descriptions (the kept page has its own cards), the note on printing no figures, FAQs on speed, funds, fees and guarantees already answered |
+
+- **Redirects:** both are permanent (308), one hop, on the apex and www hosts, through `LEGACY_REDIRECTS` in `next.config.js`. Child guides under `/visitor-visa/` keep their addresses.
+- **Site structure:** sitemap 93 to 91. The Canada PR and Visit menus, breadcrumbs, destination bar, homepage and five guides now point at the kept pages. `lib/nav-trail.ts` maps `/visitor-visa/` guides to the Visit section, because the Super Visa breadcrumb relied on the old section address.
+- **Karachi:** FAQ answers on `/` and `/book-consultation`, and a mention on both city pages. No Karachi office is implied.
+- **Checked before shipping:** typecheck, build, `test:crs` (66), `test:fsw` (43), `test:clb` (34). Both redirects return 308 and land on 200. All moved text present, no page links to a retired address in copy or breadcrumb data, breadcrumbs correct on four sample guides, nothing scrolls sideways at phone width on six pages, no JS errors.
+- **Checked on production:** the same checks, 91 of 91 URLs return 200, no regressions other than the two retired URLs.
+- **Search:** IndexNow accepted the retired and kept URLs. Google not asked.
+- **Left alone:** review dates and every claim about the firm's lawyers. No lawyer reviewed these edits.
+
 ## Batch 12: headings name the topic and say what follows (9 November 2026)
 
 - **Commit:** `5c52960`, live on production the same day. This is SEO Step 5.

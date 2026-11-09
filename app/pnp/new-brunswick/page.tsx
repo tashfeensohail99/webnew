@@ -22,7 +22,7 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * nomination process works structurally, and the intent-to-settle expectation.
  */
 export const metadata: Metadata = {
-  title: 'New Brunswick Provincial Nomination (NBPNP)',
+  title: 'New Brunswick Provincial Nominee Program (NBPNP)',
   description:
     'How New Brunswick’s nominee programme works: expression of interest, enhanced versus base nomination, the francophone dimension, and the intent to settle.',
   alternates: { canonical: '/pnp/new-brunswick' },

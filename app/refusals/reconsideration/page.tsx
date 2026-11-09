@@ -28,7 +28,7 @@ import { SERVICE } from '@/lib/site';
  * statutory filing periods are printed, with IRPA s.72 linked.
  */
 export const metadata: Metadata = {
-  title: 'Reconsideration requests after an IRCC refusal',
+  title: 'IRCC Reconsideration Requests After a Refusal',
   description:
     'What a reconsideration request is, why it is discretionary and exceptional, when it is worth attempting, and why the judicial review clock keeps running.',
   alternates: { canonical: '/refusals/reconsideration' },

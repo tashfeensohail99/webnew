@@ -34,7 +34,7 @@ import { site, SERVICE } from '@/lib/site';
  * at retainer, behind auth, not on a public page.
  */
 export const metadata: Metadata = {
-  title: 'Book a Consultation',
+  title: 'Book a Free Immigration Consultation',
   description:
     'A free consultation with a qualified lawyer, and a written summary of where you stand — even when that summary says do not apply.',
   alternates: { canonical: '/book-consultation' },
