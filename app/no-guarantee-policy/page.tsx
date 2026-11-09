@@ -16,8 +16,8 @@ import {
  * write.
  *
  * It is linked from the footer of every page — so it must exist, and it must say
- * the thing plainly. Every immigration regulator prohibits guaranteeing outcomes;
- * the entire Pakistani market advertises the opposite. Stating the rule clearly,
+ * the thing plainly. Canada's code for licensed consultants (SOR/2022-128 s.44)
+ * forbids advertising a guaranteed result; some firms advertise one anyway. Stating the rule clearly,
  * and telling people how to check anyone who breaks it, is simultaneously the
  * legally required position, the strongest trust signal available, and a filter
  * that pushes unqualified traffic away before it reaches the sales team.
@@ -76,8 +76,8 @@ const FAQS = [
     a: 'An honest read of your case, the weaknesses fixed before it’s filed, and the file put in front of the officer properly. And the answer you most need: whether it’s worth applying at all — which you get before you owe us the full fee.',
   },
   {
-    q: 'Everyone else advertises a 100% success rate. Why don’t you?',
-    a: 'Because no honest firm can. Every immigration regulator prohibits guaranteeing outcomes, and no consultant can overrule the officer who decides. A published success rate is a marketing number, not a fact you can verify — so we don’t quote one.',
+    q: 'Some firms advertise a 100% success rate. Why don’t you?',
+    a: 'Because no honest firm can. Canada’s code of conduct for licensed immigration consultants forbids advertising a guaranteed result, and no consultant can overrule the officer who decides. A published success rate is a marketing number, not a fact you can verify — so we don’t quote one.',
   },
   {
     q: 'What happens if my application is refused after you file it?',

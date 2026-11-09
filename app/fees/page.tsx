@@ -77,7 +77,7 @@ export default function FeesPage() {
       <PageHero
         eyebrow="Fees, in the open"
         title="What this actually costs"
-        subtitle="Most firms won’t put a number on a page. Here’s ours, and — more importantly — here’s which part of your money we keep and which part goes to a government."
+        subtitle="Many firms won’t put a number on a page. Here’s ours, and — more importantly — here’s which part of your money we keep and which part goes to a government."
       >
         <Link href="/book-consultation" className="btn btn-gold">
           Ask what your case would cost

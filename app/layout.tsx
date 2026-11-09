@@ -91,6 +91,22 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
               <Logo variant="light" />
               <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-300">{site.tagline}</p>
               <p className="mt-4 text-xs text-ink-400">Offices in Lahore · Islamabad · Mississauga</p>
+              {/* The two confirmed offices, in the same words as their Google listings.
+                  Until now the only contact detail in the footer was the web vendor's email. */}
+              <address className="mt-3 max-w-xs space-y-1.5 text-xs not-italic leading-relaxed text-ink-400">
+                {site.offices
+                  .filter((o) => o.address)
+                  .map((o) => (
+                    <p key={o.city}>
+                      <span className="font-semibold text-ink-300">{o.city}:</span> {o.address}
+                    </p>
+                  ))}
+                <p>
+                  <a href={`tel:${site.offices[0]!.phone.replace(/\s/g, '')}`} className="inline-flex min-h-6 items-center font-semibold text-ink-300 hover:text-white">
+                    {site.offices[0]!.phone}
+                  </a>
+                </p>
+              </address>
               {/* Social — labelled "Follow us" so the row reads as a section
                   rather than a stray strip of icons under the logo. rel="me"
                   tells reader apps this profile belongs to this site, which is

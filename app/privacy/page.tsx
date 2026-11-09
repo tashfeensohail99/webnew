@@ -63,6 +63,11 @@ export default function PrivacyPage() {
           Our hosting provider keeps ordinary server logs, as every web host does. We do not use them
           to identify anyone.
         </p>
+        <p>
+          A few pages show YouTube videos. The preview picture loads from YouTube’s image server, so
+          that request reaches Google. The video itself loads only if you press play, from YouTube’s
+          privacy-enhanced address.
+        </p>
 
         <h2>When you use our consultation form</h2>
         <p>

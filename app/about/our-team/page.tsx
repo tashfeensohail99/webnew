@@ -39,7 +39,7 @@ export default function TeamPage() {
       <PageHero
         eyebrow="The people behind your file"
         title="The lawyers who will actually handle your case"
-        subtitle="Most immigration firms in Pakistan won’t tell you who is working on your file. Here are ours, by name — so you can check us out before you trust us with anything."
+        subtitle="Before you trust anyone with your file, you should know who will work on it and be able to check them. Ask us who will handle yours, and we’ll tell you by name."
       >
         <Link href="/book-consultation" className="btn btn-gold">
           Talk to a lawyer — free

@@ -38,7 +38,7 @@ export function SiteHeader({ display, digits }: { display: string; digits: strin
           Both were duplicates: Tools is a nav group, and the gold CTA sits
           40px below this line. Deleting them is what pays for the destination
           strip, so the bar carries more information at the same weight. */}
-      <div className="bg-ink-950 text-ink-300">
+      <aside aria-label="Destinations and contact" className="bg-ink-950 text-ink-300">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-x-3 px-2 py-1 text-xs sm:flex-wrap sm:gap-x-6 sm:gap-y-1 sm:px-4 sm:py-1.5">
           <DestinationBar />
           <div className="flex shrink-0 flex-wrap items-center gap-x-5 gap-y-1">
@@ -59,7 +59,7 @@ export function SiteHeader({ display, digits }: { display: string; digits: strin
             <span className="hidden lg:inline">Lahore · Islamabad · Mississauga</span>
           </div>
         </div>
-      </div>
+      </aside>
 
       <header className="sticky top-0 z-50 border-b border-rule/70 bg-paper/90 backdrop-blur-md">
         <nav className="mx-auto flex max-w-7xl items-center gap-2 px-4 py-3" aria-label="Main">

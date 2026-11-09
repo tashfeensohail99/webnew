@@ -169,7 +169,7 @@ export default function AboutPage() {
             <SectionHeading
               eyebrow="Why trust is the whole product"
               title="Anyone can claim to be good. We’d rather be checkable."
-              subtitle="Every agent in this market answers the same way — with adjectives. We think the only answer that means anything is one you can verify without taking our word for it."
+              subtitle="Too many agents in this market answer with adjectives. We think the only answer that means anything is one you can verify without taking our word for it."
             />
             <div className="mt-6 space-y-4 text-ink-600 text-pretty leading-relaxed">
               <p>
@@ -180,8 +180,8 @@ export default function AboutPage() {
               </p>
               <p>
                 So this page isn’t a sales pitch. It’s a short list of facts about us — real
-                addresses, named lawyers, itemised fees — and an open invitation to check every one
-                of them before you hand over a single rupee.
+                addresses, a named founder, published fee ranges — and an open invitation to check
+                every one of them before you hand over a single rupee.
               </p>
             </div>
           </div>
@@ -264,9 +264,8 @@ export default function AboutPage() {
         </ul>
         <div className="mt-10">
           <Callout>
-            The Canadian office matters more than it looks. Most firms in Pakistan handling Canadian
-            files have never been to Canada. If you’re in Riyadh or Dubai and can’t visit us in
-            Lahore, someone you trust probably <em>can</em> visit us in Mississauga.
+            The Canadian office matters more than it looks. If you’re in Riyadh or Dubai and can’t
+            visit us in Lahore, someone you trust probably <em>can</em> visit us in Mississauga.
           </Callout>
         </div>
       </Section>
