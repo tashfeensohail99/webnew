@@ -139,7 +139,7 @@ export default function ManitobaPnpPage() {
         eyebrow="Canada · Provincial nomination"
         title={
           <>
-            Manitoba nominates people it believes{' '}
+            The Manitoba PNP nominates people it believes{' '}
             <span className="text-gold-300">will actually stay</span>
           </>
         }
@@ -278,7 +278,7 @@ export default function ManitobaPnpPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="Categories, not a current list"
-          title="The kinds of stream a province runs"
+          title="The kinds of stream Manitoba runs"
           subtitle="Names and criteria change. The underlying categories are stable, and knowing which one you plausibly fall into is the useful part."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -311,7 +311,7 @@ export default function ManitobaPnpPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="The sequence"
-          title="How the process runs, in order"
+          title="How the Manitoba PNP process runs"
           subtitle="You have no provincial application at all until the province invites you to file one."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -331,7 +331,7 @@ export default function ManitobaPnpPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="Where these applications go wrong"
+          title="Where Manitoba PNP applications go wrong"
         />
         <Prose>
           <p>
@@ -374,7 +374,7 @@ export default function ManitobaPnpPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who the Manitoba PNP does not suit" />
         <div className="mt-8">
           <Callout title="If you have no real link to Manitoba, this is probably not your route">
             <p>
@@ -460,7 +460,7 @@ export default function ManitobaPnpPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about the Manitoba PNP" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

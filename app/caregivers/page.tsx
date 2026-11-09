@@ -146,8 +146,8 @@ export default function CaregiversPage() {
         eyebrow="Canada · Caregiver routes"
         title={
           <>
-            Caring for children or for people who{' '}
-            <span className="text-gold-300">need help at home</span>
+            Caregiver immigration to Canada:{' '}
+            <span className="text-gold-300">caring for children or people at home</span>
           </>
         }
         subtitle={
@@ -316,7 +316,7 @@ export default function CaregiversPage() {
           <div>
             <SectionHeading
               eyebrow="The direction of travel"
-              title="Permanent residence, earlier"
+              title="Getting permanent residence earlier as a caregiver"
             />
             <Prose>
               <p>
@@ -366,7 +366,7 @@ export default function CaregiversPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where caregiver applications from Pakistan fail"
         />
         <Prose>
           <p>
@@ -405,7 +405,7 @@ export default function CaregiversPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who caregiver immigration does not suit" />
         <div className="mt-8">
           <Callout title="This is care work, and it is assessed as care work">
             <p>
@@ -512,7 +512,7 @@ export default function CaregiversPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about caregiver immigration" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

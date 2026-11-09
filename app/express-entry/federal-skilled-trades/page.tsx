@@ -118,7 +118,7 @@ export default function FederalSkilledTradesPage() {
         eyebrow="Express Entry · Federal Skilled Trades"
         title={
           <>
-            The Express Entry stream for{' '}
+            Federal Skilled Trades: the Express Entry stream for{' '}
             <span className="text-gold-300">people who work with their hands</span>
           </>
         }

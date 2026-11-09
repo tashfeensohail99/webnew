@@ -386,7 +386,7 @@ export default function WorkPermitsPage() {
 
       {/* ============ FAQ ============ */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about Canadian work permits" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

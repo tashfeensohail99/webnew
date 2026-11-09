@@ -139,7 +139,7 @@ export default function StudyPermitPage() {
         eyebrow="Canada · Study permits"
         title={
           <>
-            The documents get you considered.{' '}
+            Canadian study permit: the documents get you considered.{' '}
             <span className="text-gold-300">The plan is what gets assessed.</span>
           </>
         }
@@ -243,7 +243,7 @@ export default function StudyPermitPage() {
           </div>
 
           <div>
-            <SectionHeading eyebrow="The factors" title="What is weighed" />
+            <SectionHeading eyebrow="The factors" title="What a study permit officer weighs" />
             <ul className="mt-6 space-y-4">
               {[
                 ['Coherence of the study plan', 'Whether the programme is a reasonable next step given your qualifications, academic record and career so far.'],
@@ -308,7 +308,7 @@ export default function StudyPermitPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where study permit applications from Pakistan fail"
         />
         <Prose>
           <p>
@@ -360,7 +360,7 @@ export default function StudyPermitPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who a study permit does not suit" />
         <div className="mt-8">
           <Callout title="If you do not actually want to study, do not use this route">
             <p>
@@ -447,7 +447,7 @@ export default function StudyPermitPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about the study permit" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

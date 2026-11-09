@@ -118,7 +118,7 @@ export default function BusinessVisitorPage() {
         eyebrow="Canada · Business visitors"
         title={
           <>
-            Where business visiting ends and{' '}
+            Business visitors to Canada: where visiting ends and{' '}
             <span className="text-gold-300">work begins</span>
           </>
         }
@@ -290,7 +290,7 @@ export default function BusinessVisitorPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see"
+          title="Where business visitor applications fail"
         />
         <Prose>
           <p>
@@ -340,7 +340,7 @@ export default function BusinessVisitorPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who business visitor status does not suit" />
         <div className="mt-8">
           <Callout title="If the plan is to work in Canada, this is not it">
             <p>
@@ -444,7 +444,7 @@ export default function BusinessVisitorPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about business visits to Canada" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

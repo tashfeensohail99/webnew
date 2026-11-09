@@ -384,7 +384,7 @@ export default function ParentsGrandparentsPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see"
+          title="Where parent sponsorship applications fail"
         />
         <Prose>
           <p>
@@ -433,7 +433,7 @@ export default function ParentsGrandparentsPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who parent sponsorship does not suit" />
         <div className="mt-8">
           <Callout title="If you need your parents here soon, this is not your route">
             <p>
@@ -507,7 +507,7 @@ export default function ParentsGrandparentsPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Straight answers" title="The questions families actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions families ask about sponsoring parents" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

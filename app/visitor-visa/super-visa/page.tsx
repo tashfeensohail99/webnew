@@ -373,7 +373,7 @@ export default function SuperVisaPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions families actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions families ask about the super visa" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

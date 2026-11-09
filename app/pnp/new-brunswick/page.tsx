@@ -134,7 +134,7 @@ export default function NewBrunswickPnpPage() {
         eyebrow="Canada · Provincial nomination"
         title={
           <>
-            New Brunswick nominates people it believes will{' '}
+            The New Brunswick PNP nominates people it believes will{' '}
             <span className="text-gold-300">actually stay</span>
           </>
         }
@@ -253,7 +253,7 @@ export default function NewBrunswickPnpPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="Categories, not a list"
-          title="The kinds of stream a province runs"
+          title="The kinds of stream New Brunswick runs"
           subtitle="These categories are stable. The specific streams inside them are not — read the province’s own page for what exists today."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -284,7 +284,7 @@ export default function NewBrunswickPnpPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="The sequence"
-          title="How the process runs, in order"
+          title="How the New Brunswick PNP process runs"
           subtitle="Two governments, two decisions. Neither is ours to make."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -360,7 +360,7 @@ export default function NewBrunswickPnpPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="Where these applications go wrong"
+          title="Where New Brunswick PNP applications go wrong"
         />
         <Prose>
           <p>
@@ -487,7 +487,7 @@ export default function NewBrunswickPnpPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about the New Brunswick PNP" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

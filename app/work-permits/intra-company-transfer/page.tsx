@@ -127,7 +127,7 @@ export default function IntraCompanyTransferPage() {
         eyebrow="Canada · Intra-company transfers"
         title={
           <>
-            Moving within a company that{' '}
+            Intra-company transfers: moving within a company that{' '}
             <span className="text-gold-300">genuinely exists</span>
           </>
         }
@@ -311,7 +311,7 @@ export default function IntraCompanyTransferPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="Where these applications go wrong"
+          title="Where intra-company transfer applications go wrong"
         />
         <Prose>
           <p>
@@ -358,7 +358,7 @@ export default function IntraCompanyTransferPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who intra-company transfers do not suit" />
         <div className="mt-8">
           <Callout title="If the company was built for the visa, this will not work">
             <p>
@@ -439,7 +439,7 @@ export default function IntraCompanyTransferPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about intra-company transfers" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

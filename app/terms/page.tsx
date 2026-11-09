@@ -27,7 +27,7 @@ export default function TermsPage() {
     <>
       <PageHero
         eyebrow="Terms of use"
-        title="What this website is, and what it isn’t"
+        title="Terms of use: what this website is, and what it isn’t"
         subtitle="The limits of what we publish here — set out plainly, before you rely on any of it."
       />
 

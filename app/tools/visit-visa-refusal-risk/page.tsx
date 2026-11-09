@@ -48,7 +48,7 @@ export default async function VisitVisaToolPage() {
         eyebrow="Free tool · about 60 seconds"
         title={
           <>
-            What would a visa officer <span className="text-gold-300">question about your file?</span>
+            Canada visit visa risk check: what would an officer <span className="text-gold-300">question about your file?</span>
           </>
         }
         subtitle="This check looks for the specific weak points that cause it — honestly, and before you spend the application fee."

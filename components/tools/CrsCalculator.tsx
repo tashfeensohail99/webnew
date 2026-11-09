@@ -124,6 +124,7 @@ export function CrsCalculator({ digits }: { digits: string }) {
 
   return (
     <div>
+      <h2 className="sr-only">Enter your details</h2>
       {/* The unofficial notice sits ABOVE the calculator, not buried under the result. */}
       <div className="mb-8 rounded-2xl border border-l-[3px] border-l-gold-500 bg-paper-alt p-5 sm:p-6">
         <p className="font-serif text-lg">This is an unofficial estimate</p>

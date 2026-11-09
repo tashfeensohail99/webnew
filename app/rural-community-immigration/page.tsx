@@ -130,7 +130,7 @@ export default function RuralCommunityImmigrationPage() {
         eyebrow="Canada · Rural and Francophone community pilots"
         title={
           <>
-            A community decides first,{' '}
+            Rural Community Immigration Pilot: a community decides first,{' '}
             <span className="text-gold-300">then Ottawa</span>
           </>
         }
@@ -288,7 +288,7 @@ export default function RuralCommunityImmigrationPage() {
           </div>
 
           <div>
-            <SectionHeading eyebrow="What the community weighs" title="The local layer" />
+            <SectionHeading eyebrow="What the community weighs" title="What each community looks at" />
             <ul className="mt-6 space-y-4">
               {[
                 ['Priority occupation', 'Whether your occupation is one the community has identified as short-staffed. A perfectly good job may simply not be on its list.'],
@@ -316,7 +316,7 @@ export default function RuralCommunityImmigrationPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where Rural Community Pilot applications from Pakistan fail"
         />
         <Prose>
           <p>
@@ -358,7 +358,7 @@ export default function RuralCommunityImmigrationPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who the Rural Community Immigration Pilot does not suit" />
         <div className="mt-8">
           <Callout title="If your real plan is Toronto or Vancouver, this is not your route">
             <p>
@@ -442,7 +442,7 @@ export default function RuralCommunityImmigrationPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about the Rural Community Immigration Pilot" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

@@ -390,7 +390,7 @@ export default function MisrepresentationPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about misrepresentation" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

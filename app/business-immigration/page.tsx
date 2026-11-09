@@ -134,8 +134,8 @@ export default function BusinessImmigrationPage() {
         eyebrow="Canada · Business and investment immigration"
         title={
           <>
-            Money does not buy{' '}
-            <span className="text-gold-300">Canadian residence</span>
+            Business immigration to Canada:{' '}
+            <span className="text-gold-300">money does not buy residence</span>
           </>
         }
         subtitle={
@@ -248,7 +248,7 @@ export default function BusinessImmigrationPage() {
           <div>
             <SectionHeading
               eyebrow="What provinces actually test"
-              title="The recurring requirements"
+              title="What provincial entrepreneur streams usually require"
               subtitle="These appear, in some form, in almost every provincial entrepreneur stream. The levels differ; the categories are stable."
             />
             <ul className="mt-6 space-y-4">
@@ -432,7 +432,7 @@ export default function BusinessImmigrationPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where business immigration files from Pakistan fail"
         />
         <Prose>
           <p>
@@ -479,7 +479,7 @@ export default function BusinessImmigrationPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who business immigration does not suit" />
         <div className="mt-8">
           <Callout title="If you are not going to move and run the business, this is not your route">
             <p>
@@ -605,7 +605,7 @@ export default function BusinessImmigrationPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about business immigration" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

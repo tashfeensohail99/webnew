@@ -390,7 +390,7 @@ export default function DependentChildrenPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="Where these applications go wrong"
+          title="Where dependent child applications go wrong"
         />
         <Prose>
           <p>
@@ -479,7 +479,7 @@ export default function DependentChildrenPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about sponsoring a dependent child" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

@@ -356,7 +356,7 @@ export default function FederalSkilledWorkerPage() {
           </div>
 
           <div>
-            <SectionHeading eyebrow="Where files fail" title="What commonly goes wrong" />
+            <SectionHeading eyebrow="Where files fail" title="What commonly goes wrong with Federal Skilled Worker files" />
             <div className="mt-6 space-y-4 text-ink-600 text-pretty leading-relaxed">
               <p>
                 <strong className="font-semibold text-ink-900">
@@ -420,7 +420,7 @@ export default function FederalSkilledWorkerPage() {
 
       {/* ===================== WHO IT DOESN'T SUIT ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight talk" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Straight talk" title="Who the Federal Skilled Worker Program does not suit" />
         <div className="mt-10">
           <Callout title="We’d rather tell you now">
             <p>
@@ -443,7 +443,7 @@ export default function FederalSkilledWorkerPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about the Federal Skilled Worker Program" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

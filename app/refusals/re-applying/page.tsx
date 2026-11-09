@@ -143,7 +143,7 @@ export default function ReApplyingPage() {
         eyebrow="Canada · After a refusal"
         title={
           <>
-            The same facts usually get{' '}
+            Reapplying after a refusal: the same facts usually get{' '}
             <span className="text-gold-300">the same answer</span>
           </>
         }
@@ -513,7 +513,7 @@ export default function ReApplyingPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about reapplying after a refusal" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

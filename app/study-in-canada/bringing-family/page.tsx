@@ -129,7 +129,7 @@ export default function BringingFamilyPage() {
         eyebrow="Canada · Studying with family"
         title={
           <>
-            Bringing your family{' '}
+            Bringing your family on a study permit{' '}
             <span className="text-gold-300">is not automatic</span>
           </>
         }
@@ -305,7 +305,7 @@ export default function BringingFamilyPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="Where these applications go wrong"
+          title="Where family study permit applications go wrong"
         />
         <Prose>
           <p>
@@ -371,7 +371,7 @@ export default function BringingFamilyPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who bringing family on a study permit does not suit" />
         <div className="mt-8">
           <Callout title="If the plan only works because your spouse will work, pause">
             <p>
@@ -488,7 +488,7 @@ export default function BringingFamilyPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about bringing family on a study permit" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

@@ -131,7 +131,7 @@ export default function JudicialReviewPage() {
         eyebrow="After a refusal · Federal Court"
         title={
           <>
-            The Court reviews the decision.{' '}
+            Judicial review: the Court reviews the decision.{' '}
             <span className="text-gold-300">It does not make a new one.</span>
           </>
         }
@@ -300,7 +300,7 @@ export default function JudicialReviewPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see"
+          title="Where judicial review applications fail"
         />
         <Prose>
           <p>
@@ -338,7 +338,7 @@ export default function JudicialReviewPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who judicial review does not suit" />
         <div className="mt-8">
           <Callout title="For most refusals, this is not the answer">
             <p>
@@ -502,7 +502,7 @@ export default function JudicialReviewPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about judicial review" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

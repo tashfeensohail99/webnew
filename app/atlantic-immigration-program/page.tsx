@@ -135,7 +135,7 @@ export default function AtlanticImmigrationProgramPage() {
         eyebrow="Canada · Atlantic Immigration Program"
         title={
           <>
-            Permanent residence that starts with{' '}
+            Atlantic Immigration Program: permanent residence that starts with{' '}
             <span className="text-gold-300">a real Atlantic employer</span>
           </>
         }
@@ -333,7 +333,7 @@ export default function AtlanticImmigrationProgramPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where Atlantic Immigration Program applications from Pakistan fail"
         />
         <Prose>
           <p>
@@ -374,7 +374,7 @@ export default function AtlanticImmigrationProgramPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who the Atlantic Immigration Program does not suit" />
         <div className="mt-8">
           <Callout title="If you have no designated Atlantic employer, this is not your route">
             <p>
@@ -485,7 +485,7 @@ export default function AtlanticImmigrationProgramPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about the Atlantic Immigration Program" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

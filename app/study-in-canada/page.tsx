@@ -201,7 +201,7 @@ export default function StudyInCanadaPage() {
         eyebrow="Canada · Study permit"
         title={
           <>
-            Study in Canada — <span className="text-gold-300">without the fairy tale</span>
+            Study in Canada from Pakistan — <span className="text-gold-300">without the fairy tale</span>
           </>
         }
         subtitle={
@@ -274,7 +274,7 @@ export default function StudyInCanadaPage() {
           </div>
 
           <div>
-            <SectionHeading eyebrow="What a strong file is built on" title="The four pillars" />
+            <SectionHeading eyebrow="What a strong file is built on" title="The four things a strong study file needs" />
             <ul className="mt-6 space-y-4">
               {[
                 [
@@ -425,7 +425,7 @@ export default function StudyInCanadaPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about studying in Canada" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

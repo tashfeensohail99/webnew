@@ -289,7 +289,7 @@ export default function LmiaPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="Where these applications go wrong"
+          title="Where LMIA applications go wrong"
         />
         <Prose>
           <p>
@@ -322,7 +322,7 @@ export default function LmiaPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who an LMIA work permit does not suit" />
         <div className="mt-8">
           <Callout title="If you have no employer, this is not your route">
             <p>
@@ -411,7 +411,7 @@ export default function LmiaPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about LMIA work permits" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

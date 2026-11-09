@@ -128,7 +128,7 @@ export default function BridgingOpenWorkPermitPage() {
         eyebrow="Canada · Bridging open work permit"
         title={
           <>
-            Keep working while your PR{' '}
+            Bridging open work permit: keep working while your PR{' '}
             <span className="text-gold-300">application is decided</span>
           </>
         }
@@ -371,7 +371,7 @@ export default function BridgingOpenWorkPermitPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this does not help" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who the bridging open work permit does not help" />
         <div className="mt-8">
           <Callout title="If you are reading this from Pakistan, this is probably not your page">
             <p>
@@ -462,7 +462,7 @@ export default function BridgingOpenWorkPermitPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about the bridging open work permit" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

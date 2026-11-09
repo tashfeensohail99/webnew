@@ -707,7 +707,7 @@ export default function WorkPermitPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="Straight answers"
-          title="The questions people actually ask"
+          title="Questions about the C11 work permit"
         />
         <div className="mt-10">
           <FAQ items={FAQS} />

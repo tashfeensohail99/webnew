@@ -525,7 +525,7 @@ export default function PnpPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="Straight answers"
-          title="The questions people actually ask"
+          title="Questions about provincial nomination"
         />
         <div className="mt-10">
           <FAQ items={FAQS} />

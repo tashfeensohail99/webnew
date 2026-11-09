@@ -136,7 +136,7 @@ export default function NewfoundlandLabradorPnpPage() {
         eyebrow="Canada · Provincial nomination"
         title={
           <>
-            Newfoundland and Labrador wants people who{' '}
+            The Newfoundland and Labrador PNP wants people who{' '}
             <span className="text-gold-300">intend to stay</span>
           </>
         }
@@ -188,7 +188,7 @@ export default function NewfoundlandLabradorPnpPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="Categories, not a stream list"
-          title="The kinds of stream a province runs"
+          title="The kinds of stream Newfoundland and Labrador runs"
           subtitle="These are the recurring shapes of provincial nomination. The province’s current categories are named below, dated."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -362,7 +362,7 @@ export default function NewfoundlandLabradorPnpPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="Where these applications go wrong"
+          title="Where Newfoundland and Labrador PNP applications go wrong"
         />
         <Prose>
           <p>
@@ -400,7 +400,7 @@ export default function NewfoundlandLabradorPnpPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who the Newfoundland and Labrador PNP does not suit" />
         <div className="mt-8">
           <Callout title="If you have no connection to the province, this is the wrong door">
             <p>
@@ -496,7 +496,7 @@ export default function NewfoundlandLabradorPnpPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about the Newfoundland and Labrador PNP" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

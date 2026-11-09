@@ -124,7 +124,7 @@ export default function StudyToPermanentResidencePage() {
         eyebrow="Canada · Study to permanent residence"
         title={
           <>
-            A study permit is not{' '}
+            Study to PR in Canada: a study permit is not{' '}
             <span className="text-gold-300">a purchased PR pathway</span>
           </>
         }
@@ -316,7 +316,7 @@ export default function StudyToPermanentResidencePage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where study to PR plans from Pakistan fail"
         />
         <Prose>
           <p>
@@ -405,7 +405,7 @@ export default function StudyToPermanentResidencePage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who the study to PR path does not suit" />
         <div className="mt-8">
           <Callout title="If you could not accept finishing with only the qualification, do not start">
             <p>
@@ -484,7 +484,7 @@ export default function StudyToPermanentResidencePage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about going from study to PR" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

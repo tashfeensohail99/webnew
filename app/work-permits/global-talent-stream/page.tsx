@@ -114,7 +114,7 @@ export default function GlobalTalentStreamPage() {
         eyebrow="Canada · Global Talent Stream"
         title={
           <>
-            An employer route that{' '}
+            Global Talent Stream: an employer route that{' '}
             <span className="text-gold-300">you cannot start</span>
           </>
         }
@@ -225,7 +225,7 @@ export default function GlobalTalentStreamPage() {
           </div>
 
           <div>
-            <SectionHeading eyebrow="What that means for you" title="Consequences worth understanding" />
+            <SectionHeading eyebrow="What that means for you" title="What the Global Talent Stream means for you" />
             <ul className="mt-6 space-y-4">
               {[
                 ['The employer carries a long obligation', 'Their commitments outlast your arrival. An employer treating the paperwork as a formality is a risk to your file, not just to theirs.'],
@@ -273,7 +273,7 @@ export default function GlobalTalentStreamPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where Global Talent Stream files from Pakistan fail"
         />
         <Prose>
           <p>
@@ -313,7 +313,7 @@ export default function GlobalTalentStreamPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who the Global Talent Stream does not suit" />
         <div className="mt-8">
           <Callout title="If you have no Canadian employer, this is not your route">
             <p>
@@ -395,7 +395,7 @@ export default function GlobalTalentStreamPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about the Global Talent Stream" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

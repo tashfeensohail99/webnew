@@ -106,7 +106,7 @@ export default function GcmsNotesPage() {
         eyebrow="GCMS notes · After a refusal"
         title={
           <>
-            The refusal letter is the summary.{' '}
+            GCMS notes: the refusal letter is the summary.{' '}
             <span className="text-gold-300">The officer’s notes are the reasoning.</span>
           </>
         }
@@ -363,7 +363,7 @@ export default function GcmsNotesPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about GCMS notes" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

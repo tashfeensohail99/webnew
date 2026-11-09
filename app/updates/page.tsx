@@ -95,7 +95,7 @@ export default async function UpdatesPage() {
         eyebrow="Updates · from our YouTube channel"
         title={
           <>
-            What’s changed, <span className="text-gold-300">on video.</span>
+            Immigration updates: what’s changed, <span className="text-gold-300">on video.</span>
           </>
         }
         subtitle="Draw results, new rules and plain-language explainers from our YouTube channel, each paired with the guide on this site that covers it in full."

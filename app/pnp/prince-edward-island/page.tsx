@@ -162,7 +162,7 @@ export default function PeiPnpPage() {
         eyebrow="Canada · Provincial nomination"
         title={
           <>
-            Prince Edward Island wants people{' '}
+            The Prince Edward Island PNP wants people{' '}
             <span className="text-gold-300">who will stay</span>
           </>
         }
@@ -232,7 +232,7 @@ export default function PeiPnpPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="Categories, not a list"
-          title="The kinds of stream a province runs"
+          title="The kinds of stream Prince Edward Island runs"
           subtitle="We do not list PEI’s current streams here. The province publishes them on its own site, and that is the version to rely on. These are the recurring shapes."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -277,7 +277,7 @@ export default function PeiPnpPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="The sequence"
-          title="How the process runs, in order"
+          title="How the PEI PNP process runs"
           subtitle="Some provincial routes take a direct application instead of a pool. PEI operates an expression-of-interest pool for its main routes — the structure below reflects that."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -348,7 +348,7 @@ export default function PeiPnpPage() {
           <div>
             <SectionHeading
               eyebrow="What commonly goes wrong"
-              title="Where these applications go wrong"
+              title="Where PEI PNP applications go wrong"
             />
             <ul className="mt-6 space-y-4">
               {[
@@ -390,7 +390,7 @@ export default function PeiPnpPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who the PEI PNP does not suit" />
         <div className="mt-8">
           <Callout title="If you have no intention of living in Prince Edward Island, do not apply to it">
             <p>
@@ -441,7 +441,7 @@ export default function PeiPnpPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about the PEI PNP" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

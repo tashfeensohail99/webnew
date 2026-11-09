@@ -132,8 +132,8 @@ export default function StudyPermitRefusalsPage() {
         eyebrow="Canada · Study permit refusals"
         title={
           <>
-            The letter tells you the headings.{' '}
-            <span className="text-gold-300">The officer’s note tells you the reason.</span>
+            Study permit refused? The letter gives the headings.{' '}
+            <span className="text-gold-300">The officer’s note gives the reason.</span>
           </>
         }
         subtitle={
@@ -466,7 +466,7 @@ export default function StudyPermitRefusalsPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about study permit refusals" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

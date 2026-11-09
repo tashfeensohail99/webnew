@@ -1,7 +1,7 @@
 {
  "summary": {
   "base": "https://tashfeenimmigrationsolutions.com",
-  "crawled": "2026-11-08T18:19:38.436Z",
+  "crawled": "2026-11-08T19:25:43.121Z",
   "total": 93,
   "ok": 93,
   "inSitemap": 93,
@@ -199,7 +199,7 @@
    {
     "a": "/immigration-consultant-islamabad",
     "b": "/immigration-consultant-lahore",
-    "shared": 120,
+    "shared": 124,
     "share": 0.26
    },
    {
@@ -433,7 +433,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1669,
+   "wordCount": 1670,
    "avgSentence": 20,
    "hits": {
     "outcome": 4,
@@ -637,7 +637,7 @@
    "inboundCopy": [],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 1474,
+   "uniqueWords": 1475,
    "repeatedBlocks": 6,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-22",
@@ -2304,7 +2304,7 @@
     },
     {
      "level": 2,
-     "text": "What changed"
+     "text": "What changed with MOFA online attestation"
     },
     {
      "level": 2,
@@ -2320,7 +2320,7 @@
     },
     {
      "level": 2,
-     "text": "Two practical notes"
+     "text": "Using the MOFA attestation portal: two practical notes"
     },
     {
      "level": 2,
@@ -2328,7 +2328,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 780,
+   "wordCount": 789,
    "avgSentence": 19,
    "hits": {
     "outcome": 0,
@@ -3770,7 +3770,9 @@
    "inboundCopy": [
     "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/medical-exam",
-    "/canada-immigration-from-pakistan/police-certificate"
+    "/canada-immigration-from-pakistan/police-certificate",
+    "/immigration-consultant-islamabad",
+    "/immigration-consultant-lahore"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
@@ -3971,7 +3973,9 @@
    "inboundCopy": [
     "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/biometrics",
-    "/canada-immigration-from-pakistan/police-certificate"
+    "/canada-immigration-from-pakistan/police-certificate",
+    "/immigration-consultant-islamabad",
+    "/immigration-consultant-lahore"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
@@ -4185,7 +4189,9 @@
     "/blog/mofa-online-attestation",
     "/canada-immigration-from-pakistan",
     "/canada-immigration-from-pakistan/biometrics",
-    "/canada-immigration-from-pakistan/medical-exam"
+    "/canada-immigration-from-pakistan/medical-exam",
+    "/immigration-consultant-islamabad",
+    "/immigration-consultant-lahore"
    ],
    "inboundAll": 92,
    "brokenInternal": [],
@@ -5046,7 +5052,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2607,
+   "wordCount": 2567,
    "avgSentence": 18,
    "hits": {
     "outcome": 2,
@@ -5089,11 +5095,11 @@
    },
    "internalInCopy": [
     "/book-consultation",
+    "/work-permits/caregivers",
     "/express-entry",
     "/pnp",
     "/work-permits",
     "/no-guarantee-policy",
-    "/work-permits/caregivers",
     "/about/our-team"
    ],
    "internalAll": [
@@ -5200,7 +5206,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2475,
+   "uniqueWords": 2435,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -7023,14 +7029,6 @@
      "text": "Inland or outland — the choice that matters most"
     },
     {
-     "level": 3,
-     "text": "Applying from inside Canada"
-    },
-    {
-     "level": 3,
-     "text": "Applying from outside Canada"
-    },
-    {
      "level": 2,
      "text": "You don’t apply — you ask to be considered"
     },
@@ -7088,8 +7086,8 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2701,
-   "avgSentence": 18,
+   "wordCount": 2373,
+   "avgSentence": 17,
    "hits": {
     "outcome": 2,
     "superlative": 1,
@@ -7227,9 +7225,9 @@
    "external": [
     "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-132.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/immigration-refugee-protection-act-spousal-policy.html",
-    "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/sponsor-parents-grandparents.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/eligibility.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship.html",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/sponsor-parents-grandparents.html",
     "https://ircc.canada.ca/english/information/fees/fees.asp",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html",
     "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20talk%20through%20sponsoring%20a%20family%20member%20to%20Canada.%20%5BRef%3A%20WP-1WCH%5D"
@@ -7250,7 +7248,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2636,
+   "uniqueWords": 2310,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -7846,7 +7844,7 @@
     },
     {
      "level": 2,
-     "text": "What genuineness means in practice"
+     "text": "What genuineness means in practice, including arranged marriages"
     },
     {
      "level": 2,
@@ -7902,7 +7900,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2606,
+   "wordCount": 2609,
    "avgSentence": 18,
    "hits": {
     "outcome": 3,
@@ -8321,7 +8319,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 835,
+   "wordCount": 849,
    "avgSentence": 16,
    "hits": {
     "outcome": 0,
@@ -8367,6 +8365,9 @@
     "/europe",
     "/immigration-consultant-lahore",
     "/about",
+    "/canada-immigration-from-pakistan/biometrics",
+    "/canada-immigration-from-pakistan/police-certificate",
+    "/canada-immigration-from-pakistan/medical-exam",
     "/about/our-team"
    ],
    "internalAll": [
@@ -8475,7 +8476,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 777,
+   "uniqueWords": 791,
    "repeatedBlocks": 8,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-22",
@@ -8533,8 +8534,8 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 839,
-   "avgSentence": 17,
+   "wordCount": 853,
+   "avgSentence": 16,
    "hits": {
     "outcome": 1,
     "superlative": 0,
@@ -8583,6 +8584,9 @@
     "/europe",
     "/immigration-consultant-islamabad",
     "/about",
+    "/canada-immigration-from-pakistan/biometrics",
+    "/canada-immigration-from-pakistan/police-certificate",
+    "/canada-immigration-from-pakistan/medical-exam",
     "/about/our-team"
    ],
    "internalAll": [
@@ -8693,7 +8697,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 781,
+   "uniqueWords": 795,
    "repeatedBlocks": 8,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-22",
@@ -10370,7 +10374,7 @@
     },
     {
      "level": 2,
-     "text": "What New Brunswick is trying to solve"
+     "text": "What the New Brunswick PNP (NBPNP) is trying to solve"
     },
     {
      "level": 2,
@@ -10462,7 +10466,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2642,
+   "wordCount": 2645,
    "avgSentence": 18,
    "hits": {
     "outcome": 1,
@@ -10642,7 +10646,7 @@
     },
     {
      "level": 2,
-     "text": "What Newfoundland and Labrador is actually looking for"
+     "text": "What the Newfoundland and Labrador PNP (NLPNP) is looking for"
     },
     {
      "level": 2,
@@ -10734,7 +10738,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2560,
+   "wordCount": 2562,
    "avgSentence": 18,
    "hits": {
     "outcome": 2,
@@ -14098,31 +14102,19 @@
     },
     {
      "level": 3,
-     "text": "Choose the programme, then the school"
+     "text": "Choose the programme, then check the school"
     },
     {
      "level": 3,
-     "text": "Confirm the institution is a DLI"
+     "text": "Get admission and the attestation letter"
     },
     {
      "level": 3,
-     "text": "Apply for admission and accept the offer"
-    },
-    {
-     "level": 3,
-     "text": "Obtain the attestation letter"
-    },
-    {
-     "level": 3,
-     "text": "Assemble funds and intent evidence"
+     "text": "Prove your funds and your intent"
     },
     {
      "level": 3,
      "text": "File the study permit application"
-    },
-    {
-     "level": 3,
-     "text": "Decision, then arrival"
     },
     {
      "level": 2,
@@ -14154,7 +14146,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2082,
+   "wordCount": 1947,
    "avgSentence": 18,
    "hits": {
     "outcome": 2,
@@ -14191,6 +14183,10 @@
    },
    "internalInCopy": [
     "/book-consultation",
+    "/study-in-canada/designated-learning-institutions",
+    "/study-in-canada/provincial-attestation-letter",
+    "/study-in-canada/proof-of-funds",
+    "/study-in-canada/study-permit",
     "/study-in-canada/working-while-studying",
     "/no-guarantee-policy",
     "/about/our-team"
@@ -14286,13 +14282,11 @@
     "/terms"
    ],
    "external": [
-    "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/prepare/designated-learning-institutions-list.html",
-    "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/provincial-attestation-letter.html",
-    "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/work-off-campus.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/prepare-arrival/study-permit-conditions.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html",
+    "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/provincial-attestation-letter.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/help-your-spouse-common-law-partner-work-canada.html",
     "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20talk%20about%20studying%20in%20Canada%20and%20whether%20it%E2%80%99s%20the%20right%20route%20for%20me.%20%5BRef%3A%20SV-1TVH%5D"
    ],
@@ -14307,7 +14301,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 1986,
+   "uniqueWords": 1861,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -14610,7 +14604,7 @@
     },
     {
      "level": 2,
-     "text": "What a designated learning institution is"
+     "text": "What a designated learning institution (DLI) is"
     },
     {
      "level": 2,
@@ -14634,7 +14628,7 @@
     },
     {
      "level": 2,
-     "text": "How to check a school properly"
+     "text": "How to check a school and find its DLI number"
     },
     {
      "level": 3,
@@ -14706,7 +14700,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2274,
+   "wordCount": 2279,
    "avgSentence": 19,
    "hits": {
     "outcome": 3,
@@ -14857,6 +14851,7 @@
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
+    "/study-in-canada",
     "/study-in-canada/proof-of-funds",
     "/study-in-canada/provincial-attestation-letter",
     "/study-in-canada/study-permit",
@@ -15124,6 +15119,7 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/",
+    "/study-in-canada",
     "/study-in-canada/bringing-family",
     "/study-in-canada/designated-learning-institutions",
     "/study-in-canada/provincial-attestation-letter",
@@ -15239,7 +15235,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2309,
+   "wordCount": 2316,
    "avgSentence": 18,
    "hits": {
     "outcome": 2,
@@ -15388,6 +15384,7 @@
    "inboundCopy": [
     "/",
     "/quebec-immigration",
+    "/study-in-canada",
     "/study-in-canada/designated-learning-institutions",
     "/study-in-canada/proof-of-funds",
     "/study-in-canada/study-permit",
@@ -15395,7 +15392,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2184,
+   "uniqueWords": 2191,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -15957,6 +15954,7 @@
     "/",
     "/family-sponsorship/dependent-children",
     "/quebec-immigration",
+    "/study-in-canada",
     "/study-in-canada/bringing-family",
     "/study-in-canada/designated-learning-institutions",
     "/study-in-canada/proof-of-funds",
@@ -16539,7 +16537,7 @@
     },
     {
      "level": 2,
-     "text": "Read your permit before you read anything else"
+     "text": "Can you work while studying in Canada? Read your permit first"
     },
     {
      "level": 2,
@@ -16595,7 +16593,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2630,
+   "wordCount": 2633,
    "avgSentence": 20,
    "hits": {
     "outcome": 0,
@@ -20474,7 +20472,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 3232,
+   "wordCount": 3280,
    "avgSentence": 17,
    "hits": {
     "outcome": 3,
@@ -20668,7 +20666,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 3124,
+   "uniqueWords": 3177,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-23",
@@ -21239,8 +21237,8 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2152,
-   "avgSentence": 18,
+   "wordCount": 1887,
+   "avgSentence": 17,
    "hits": {
     "outcome": 4,
     "superlative": 0,
@@ -21282,9 +21280,9 @@
    "internalInCopy": [
     "/book-consultation",
     "/tools/work-permit-eligibility",
+    "/work-permits/lmia",
     "/work-permit-canada",
     "/work-permits/intra-company-transfer",
-    "/work-permits/lmia",
     "/work-permits/spousal-open-work-permit",
     "/work-permits/post-graduation",
     "/work-permits/lmia-exempt",
@@ -21387,8 +21385,6 @@
     "/terms"
    ],
    "external": [
-    "https://www.canada.ca/en/employment-social-development/services/foreign-workers.html",
-    "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada.html",
     "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/inadmissibility/reasons.html",
     "https://wa.me/923350001111?text=Hi%2C%20I%E2%80%99d%20like%20to%20know%20which%20Canadian%20work%20permit%20route%20fits%20my%20situation.%20%5BRef%3A%20WP-1TDJ%5D"
    ],
@@ -21409,7 +21405,7 @@
    ],
    "inboundAll": 92,
    "brokenInternal": [],
-   "uniqueWords": 2081,
+   "uniqueWords": 1816,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",

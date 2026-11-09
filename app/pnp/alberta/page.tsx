@@ -140,7 +140,7 @@ export default function AlbertaPnpPage() {
         eyebrow="Canada · Provincial nomination"
         title={
           <>
-            Alberta nominates people it expects{' '}
+            The Alberta PNP nominates people it expects{' '}
             <span className="text-gold-300">to actually live there</span>
           </>
         }
@@ -253,7 +253,7 @@ export default function AlbertaPnpPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="Categories, not a list"
-          title="The kinds of stream a province runs"
+          title="The kinds of stream Alberta runs"
           subtitle="These are the shapes provincial streams take. Alberta’s current streams are named below, dated."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -298,7 +298,7 @@ export default function AlbertaPnpPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="The sequence"
-          title="How a provincial file actually runs"
+          title="How an Alberta PNP file runs"
           subtitle="Two governments, two decisions. The province’s endorsement is the middle of the process, not the end of it."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -347,7 +347,7 @@ export default function AlbertaPnpPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="Where these applications go wrong"
+          title="Where Alberta PNP applications go wrong"
         />
         <Prose>
           <p>
@@ -382,7 +382,7 @@ export default function AlbertaPnpPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who the Alberta PNP does not suit" />
         <div className="mt-8">
           <Callout title="If you have no connection to Alberta, think hard before starting">
             <p>
@@ -473,7 +473,7 @@ export default function AlbertaPnpPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about the Alberta PNP" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

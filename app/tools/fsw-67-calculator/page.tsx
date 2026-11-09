@@ -51,7 +51,7 @@ export default async function FswCalculatorPage() {
         eyebrow={`Free tool · grid checked ${FSW_GRID_VERIFIED_ON}`}
         title={
           <>
-            The 67-point test, <span className="text-gold-300">before the CRS score</span>
+            FSW 67-point calculator: the test <span className="text-gold-300">before the CRS score</span>
           </>
         }
         subtitle="Whether the Federal Skilled Worker class is open to you at all is decided by a separate grid set in the Regulations. This works it out."

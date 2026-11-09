@@ -128,8 +128,8 @@ export default function SpousalOpenWorkPermitPage() {
         eyebrow="Canada · Spousal open work permit"
         title={
           <>
-            No longer something that{' '}
-            <span className="text-gold-300">comes automatically</span>
+            Spousal open work permit:{' '}
+            <span className="text-gold-300">no longer automatic</span>
           </>
         }
         subtitle={
@@ -271,7 +271,7 @@ export default function SpousalOpenWorkPermitPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="The sequence"
-          title="How the application runs"
+          title="How a spousal open work permit application runs"
           subtitle="Step two decides most cases. It is worth doing before you spend money on the rest."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -291,7 +291,7 @@ export default function SpousalOpenWorkPermitPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where spousal open work permit applications from Pakistan fail"
         />
         <Prose>
           <p>
@@ -336,7 +336,7 @@ export default function SpousalOpenWorkPermitPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who the spousal open work permit does not suit" />
         <div className="mt-8">
           <Callout title="If the principal falls outside the criteria, there is nothing here for you">
             <p>
@@ -471,7 +471,7 @@ export default function SpousalOpenWorkPermitPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about the spousal open work permit" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

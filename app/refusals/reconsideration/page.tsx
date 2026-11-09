@@ -133,7 +133,7 @@ export default function ReconsiderationPage() {
         eyebrow="After a refusal"
         title={
           <>
-            Asking the office to look again —{' '}
+            IRCC reconsideration: asking the office to look again,{' '}
             <span className="text-gold-300">and what that is not</span>
           </>
         }
@@ -300,7 +300,7 @@ export default function ReconsiderationPage() {
           </div>
 
           <div>
-            <SectionHeading eyebrow="Reconsideration, fresh file, or court" title="Three different tools" />
+            <SectionHeading eyebrow="Reconsideration, fresh file, or court" title="Reconsideration, a fresh application or court: three different tools" />
             <div className="mt-6 space-y-4 text-ink-600 text-pretty leading-relaxed">
               <p>
                 <strong className="text-ink-900">Reconsideration</strong> targets a defect in the
@@ -383,7 +383,7 @@ export default function ReconsiderationPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where reconsideration requests from Pakistan fail"
         />
         <Prose>
           <p>
@@ -424,7 +424,7 @@ export default function ReconsiderationPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who reconsideration does not suit" />
         <div className="mt-8">
           <Callout title="If you cannot name the error, this is not your route">
             <p>
@@ -490,7 +490,7 @@ export default function ReconsiderationPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about reconsideration" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

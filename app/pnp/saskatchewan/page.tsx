@@ -123,7 +123,7 @@ export default function SaskatchewanPnpPage() {
         eyebrow="Canada · Provincial nomination"
         title={
           <>
-            Saskatchewan nominates people it expects{' '}
+            The Saskatchewan PNP nominates people it expects{' '}
             <span className="text-gold-300">to actually live there</span>
           </>
         }
@@ -293,7 +293,7 @@ export default function SaskatchewanPnpPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="The sequence"
-          title="How a provincial file actually runs"
+          title="How a Saskatchewan PNP file runs"
           subtitle="Two governments make two separate decisions. The province decides whether to nominate. IRCC decides whether to grant permanent residence."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -344,7 +344,7 @@ export default function SaskatchewanPnpPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="Where these applications go wrong"
+          title="Where Saskatchewan PNP applications go wrong"
         />
         <Prose>
           <p>
@@ -467,7 +467,7 @@ export default function SaskatchewanPnpPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about the Saskatchewan PNP" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

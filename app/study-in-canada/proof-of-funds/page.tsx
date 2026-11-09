@@ -156,7 +156,7 @@ export default function ProofOfFundsPage() {
         eyebrow="Canada · Study permits"
         title={
           <>
-            Officers are not counting your money.{' '}
+            Proof of funds for a study permit: officers are not counting your money.{' '}
             <span className="text-gold-300">They are reading it</span>
           </>
         }
@@ -329,7 +329,7 @@ export default function ProofOfFundsPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="Where these applications go wrong"
+          title="Where proof of funds goes wrong"
         />
         <Prose>
           <p>
@@ -473,7 +473,7 @@ export default function ProofOfFundsPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about proof of funds" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

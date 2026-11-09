@@ -141,7 +141,7 @@ export default function EuropePage() {
         eyebrow="Europe & Schengen · from Pakistan"
         title={
           <>
-            Europe and Schengen, told{' '}
+            Europe and Schengen visas from Pakistan, told{' '}
             <span className="text-gold-300">straight.</span>
           </>
         }
@@ -197,7 +197,7 @@ export default function EuropePage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="Still advertised · no longer real"
-          title="What has closed"
+          title="European routes that have closed"
           subtitle="These routes are still marketed across Pakistan. None of them are available to you."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2">

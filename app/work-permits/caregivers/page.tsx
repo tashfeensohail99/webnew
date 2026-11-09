@@ -126,8 +126,8 @@ export default function CaregiverWorkPermitsPage() {
         eyebrow="Canada · Caregiver work permits"
         title={
           <>
-            Caring for a family in Canada —{' '}
-            <span className="text-gold-300">and what protects you while you do it</span>
+            Caregiver work permits for Canada —{' '}
+            <span className="text-gold-300">and what protects you while you work</span>
           </>
         }
         subtitle={
@@ -254,7 +254,7 @@ export default function CaregiverWorkPermitsPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="The sequence"
-          title="How the process runs, in order"
+          title="How the caregiver work permit process runs"
           subtitle="The first three steps belong to the employer. You have an application of your own only at step four."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -369,7 +369,7 @@ export default function CaregiverWorkPermitsPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who caregiver work permits do not suit" />
         <div className="mt-8">
           <Callout title="If you are treating caregiving as a shortcut, reconsider">
             <p>
@@ -476,7 +476,7 @@ export default function CaregiverWorkPermitsPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about caregiver work permits" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

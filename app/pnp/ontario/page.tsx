@@ -147,7 +147,7 @@ export default function PnpOntarioPage() {
         eyebrow="Canada · Provincial nomination"
         title={
           <>
-            Ontario nominates people it expects{' '}
+            The Ontario Immigrant Nominee Program nominates people it expects{' '}
             <span className="text-gold-300">to actually live there</span>
           </>
         }
@@ -376,7 +376,7 @@ export default function PnpOntarioPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="Where these applications go wrong"
+          title="Where Ontario PNP applications go wrong"
         />
         <Prose>
           <p>
@@ -420,7 +420,7 @@ export default function PnpOntarioPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who the Ontario PNP does not suit" />
         <div className="mt-8">
           <Callout title="If you have no genuine connection to Ontario, this is the wrong province">
             <p>
@@ -512,7 +512,7 @@ export default function PnpOntarioPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about the Ontario PNP" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

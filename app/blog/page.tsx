@@ -44,7 +44,7 @@ export default function BlogIndexPage() {
         eyebrow="Blog"
         title={
           <>
-            What just changed, <span className="text-gold-300">and what it means for you.</span>
+            Immigration news: what just changed, <span className="text-gold-300">and what it means for you.</span>
           </>
         }
         subtitle="Dated posts on new rules, draw results and policy changes — each written from the official source and linked to the guide that covers the route in full."

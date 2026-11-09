@@ -132,7 +132,7 @@ export default function VisitorExtensionPage() {
         eyebrow="Canada · Extending a visit"
         title={
           <>
-            Your visa is not{' '}
+            Extending your stay in Canada: your visa is not{' '}
             <span className="text-gold-300">your permission to stay</span>
           </>
         }
@@ -329,7 +329,7 @@ export default function VisitorExtensionPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see"
+          title="Where extension applications fail"
         />
         <Prose>
           <p>
@@ -460,7 +460,7 @@ export default function VisitorExtensionPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about extending your stay" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

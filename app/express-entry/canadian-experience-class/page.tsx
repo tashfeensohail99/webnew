@@ -155,7 +155,7 @@ export default function CanadianExperienceClassPage() {
         eyebrow="Express Entry · Canadian Experience Class"
         title={
           <>
-            You already worked in Canada.{' '}
+            Canadian Experience Class: you already worked in Canada.{' '}
             <span className="text-gold-300">Now make it count.</span>
           </>
         }
@@ -406,7 +406,7 @@ export default function CanadianExperienceClassPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about the Canadian Experience Class" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

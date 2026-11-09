@@ -101,7 +101,7 @@ export default function CategoryBasedDrawsPage() {
         eyebrow="Canada · Express Entry"
         title={
           <>
-            Invited by category, <span className="text-gold-300">not by score alone</span>
+            Express Entry category-based draws: invited by category, <span className="text-gold-300">not by score alone</span>
           </>
         }
         subtitle={
@@ -349,7 +349,7 @@ export default function CategoryBasedDrawsPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see"
+          title="Where category-based applications fail"
         />
         <Prose>
           <p>
@@ -389,7 +389,7 @@ export default function CategoryBasedDrawsPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this does not help" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who category-based draws do not help" />
         <div className="mt-8">
           <Callout title="If you are not already eligible for Express Entry, none of this applies">
             <p>
@@ -459,7 +459,7 @@ export default function CategoryBasedDrawsPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about category-based draws" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

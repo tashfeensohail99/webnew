@@ -69,7 +69,7 @@ export default function ToolsPage() {
         eyebrow="Free · no sign-up"
         title={
           <>
-            Tools that tell you the truth, <span className="text-gold-300">not what you want to hear</span>
+            Canada immigration tools that tell you the truth, <span className="text-gold-300">not what you want to hear</span>
           </>
         }
         subtitle="Quick self-assessments built around the cases we actually handle. They take about a minute, they cost nothing, and they will tell you when a route isn’t for you."

@@ -135,7 +135,7 @@ export default function NovaScotiaPnpPage() {
         eyebrow="Canada · Provincial nomination"
         title={
           <>
-            Nova Scotia nominates people who{' '}
+            The Nova Scotia Nominee Program nominates people who{' '}
             <span className="text-gold-300">intend to stay</span>
           </>
         }
@@ -306,7 +306,7 @@ export default function NovaScotiaPnpPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="Where these applications go wrong"
+          title="Where Nova Scotia PNP applications go wrong"
         />
         <Prose>
           <p>
@@ -346,7 +346,7 @@ export default function NovaScotiaPnpPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who the Nova Scotia PNP does not suit" />
         <div className="mt-8">
           <Callout title="If you would not actually live in Nova Scotia, do not apply to Nova Scotia">
             <p>
@@ -439,7 +439,7 @@ export default function NovaScotiaPnpPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about the Nova Scotia PNP" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

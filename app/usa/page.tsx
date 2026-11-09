@@ -340,7 +340,7 @@ export default function UsaPage() {
       <Section>
         <SectionHeading
           eyebrow="Straight answers"
-          title="The questions people actually ask"
+          title="Questions about US visas from Pakistan"
           subtitle="Short, honest, and the same answer we’d give you on the phone."
         />
         <div className="mt-10">

@@ -160,7 +160,7 @@ export default function ImmigrationProgramsPage() {
         eyebrow="Canada · programme overview"
         title={
           <>
-            Which Canadian route{' '}
+            Canadian immigration programs: which route{' '}
             <span className="text-gold-300">actually applies to you</span>
           </>
         }
@@ -368,7 +368,7 @@ export default function ImmigrationProgramsPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about Canadian immigration programs" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

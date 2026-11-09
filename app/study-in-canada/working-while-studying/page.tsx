@@ -125,7 +125,7 @@ export default function WorkingWhileStudyingPage() {
         eyebrow="Canada · Study permits"
         title={
           <>
-            Permission to work is a{' '}
+            Working while studying in Canada: permission is a{' '}
             <span className="text-gold-300">condition on your permit</span>
           </>
         }
@@ -476,7 +476,7 @@ export default function WorkingWhileStudyingPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions students actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions students ask about working in Canada" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

@@ -557,7 +557,7 @@ export default function FamilySponsorshipPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="Refusals we’re asked to fix"
-          title="What commonly goes wrong"
+          title="What commonly goes wrong with family sponsorship"
         />
         <div className="mt-8 max-w-3xl space-y-4 text-ink-600 text-pretty leading-relaxed">
           <p>
@@ -594,7 +594,7 @@ export default function FamilySponsorshipPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about family sponsorship" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

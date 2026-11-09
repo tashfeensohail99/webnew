@@ -63,6 +63,7 @@ export function FswCalculator({ digits }: { digits: string }) {
 
   return (
     <div>
+      <h2 className="sr-only">Enter your details</h2>
       <div className="mb-8 rounded-2xl border border-l-[3px] border-l-gold-500 bg-paper-alt p-5 sm:p-6">
         <p className="font-serif text-lg">This is not your CRS score</p>
         <p className="mt-2 text-sm leading-relaxed text-ink-600 text-pretty">

@@ -188,7 +188,7 @@ export default function C11RefusalsPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="After a refusal"
-          title="Four ways forward"
+          title="Four ways forward after a C11 refusal"
           subtitle="Which one fits depends on which rule your application failed — and on whether the officer got it wrong or the file was weak."
         />
         <div className="mt-12 grid gap-6 md:grid-cols-2">

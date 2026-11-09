@@ -126,7 +126,7 @@ export default function StudyPermitExtensionPage() {
         eyebrow="Canada · Study permit extension"
         title={
           <>
-            Your permit has an expiry date.{' '}
+            Extending a study permit: your permit has an expiry date.{' '}
             <span className="text-gold-300">Everything depends on it</span>
           </>
         }
@@ -483,7 +483,7 @@ export default function StudyPermitExtensionPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Straight answers" title="The questions students actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions students ask about extending a permit" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

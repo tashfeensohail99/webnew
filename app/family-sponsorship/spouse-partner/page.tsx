@@ -129,7 +129,7 @@ export default function SpousePartnerSponsorshipPage() {
         eyebrow="Canada · Family sponsorship"
         title={
           <>
-            A genuine relationship can still be refused if it is{' '}
+            Spouse sponsorship: a genuine relationship can still be refused if it is{' '}
             <span className="text-gold-300">poorly evidenced</span>
           </>
         }
@@ -338,7 +338,7 @@ export default function SpousePartnerSponsorshipPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="The sequence"
-          title="How the application runs"
+          title="How a spouse sponsorship application runs"
           subtitle="Two applications assessed as one: the sponsor’s undertaking and the applicant’s permanent residence."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -358,7 +358,7 @@ export default function SpousePartnerSponsorshipPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where spouse sponsorship files from Pakistan fail"
         />
         <Prose>
           <p>
@@ -403,7 +403,7 @@ export default function SpousePartnerSponsorshipPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who spouse sponsorship does not suit" />
         <div className="mt-8">
           <Callout title="Some situations should not be filed yet — or at all">
             <p>
@@ -485,7 +485,7 @@ export default function SpousePartnerSponsorshipPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about spouse sponsorship" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

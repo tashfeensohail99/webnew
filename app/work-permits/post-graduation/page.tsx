@@ -129,7 +129,7 @@ export default function PostGraduationWorkPermitPage() {
         eyebrow="Canada · Post-graduation work permit"
         title={
           <>
-            You get this permit{' '}
+            Post-graduation work permit: you get this permit{' '}
             <span className="text-gold-300">once in your life</span>
           </>
         }
@@ -239,7 +239,7 @@ export default function PostGraduationWorkPermitPage() {
           </div>
 
           <div>
-            <SectionHeading eyebrow="What an officer is checking" title="The core conditions" />
+            <SectionHeading eyebrow="What an officer is checking" title="The core post-graduation work permit conditions" />
             <ul className="mt-6 space-y-4">
               {[
                 ['An eligible institution', 'The school’s graduates can be considered for this permit — a narrower question than being designated.'],
@@ -288,7 +288,7 @@ export default function PostGraduationWorkPermitPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="Where these applications go wrong"
+          title="Where post-graduation work permit applications go wrong"
         />
         <Prose>
           <p>
@@ -328,7 +328,7 @@ export default function PostGraduationWorkPermitPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who the post-graduation work permit does not suit" />
         <div className="mt-8">
           <Callout title="If studying is only a means to a work permit, think again">
             <p>
@@ -472,7 +472,7 @@ export default function PostGraduationWorkPermitPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about the post-graduation work permit" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

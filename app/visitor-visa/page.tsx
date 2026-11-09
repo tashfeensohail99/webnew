@@ -131,7 +131,7 @@ export default function VisitorVisaPage() {
         eyebrow="Canada · temporary visits"
         title={
           <>
-            Visiting Canada, and the one question{' '}
+            Canada visitor visa: the one question{' '}
             <span className="text-gold-300">underneath every application</span>
           </>
         }
@@ -351,7 +351,7 @@ export default function VisitorVisaPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about Canadian visitor visas" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

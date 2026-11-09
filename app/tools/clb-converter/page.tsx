@@ -49,7 +49,7 @@ export default function ClbConverterPage() {
         eyebrow={`Free tool · tables checked ${CLB_TABLES_VERIFIED_ON}`}
         title={
           <>
-            Your test score, <span className="text-gold-300">in the language Canada uses</span>
+            IELTS to CLB converter: your test score, <span className="text-gold-300">in the language Canada uses</span>
           </>
         }
         subtitle="Convert IELTS, CELPIP, PTE Core, TEF or TCF results into Canadian Language Benchmark levels — ability by ability, because that is how they are assessed."

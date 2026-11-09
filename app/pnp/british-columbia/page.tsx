@@ -123,7 +123,7 @@ export default function BritishColumbiaPnpPage() {
         eyebrow="Canada · Provincial nomination"
         title={
           <>
-            British Columbia nominates people it expects{' '}
+            The BC PNP nominates people it expects{' '}
             <span className="text-gold-300">to stay</span>
           </>
         }
@@ -184,7 +184,7 @@ export default function BritishColumbiaPnpPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="Categories, not a stream list"
-          title="The kinds of stream a province runs"
+          title="The kinds of stream British Columbia runs"
           subtitle="These are the recurring shapes of provincial nomination. B.C.’s current streams are named below, dated. Their criteria are for the province’s own site to tell you."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -424,7 +424,7 @@ export default function BritishColumbiaPnpPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about the BC PNP" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

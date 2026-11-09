@@ -320,7 +320,7 @@ export default function IecPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this route does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who IEC does not suit" />
         <div className="mt-8">
           <Callout title="If you hold only a Pakistani passport, this is not your route">
             <p>
@@ -395,7 +395,7 @@ export default function IecPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about IEC from Pakistan" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

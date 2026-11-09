@@ -128,7 +128,7 @@ export default function ProvincialAttestationLetterPage() {
         eyebrow="Canada · Study permits"
         title={
           <>
-            The attestation letter comes{' '}
+            The provincial attestation letter comes{' '}
             <span className="text-gold-300">before your application</span>
           </>
         }
@@ -326,7 +326,7 @@ export default function ProvincialAttestationLetterPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="Where these applications go wrong"
+          title="Where attestation letter applications go wrong"
         />
         <Prose>
           <p>
@@ -457,7 +457,7 @@ export default function ProvincialAttestationLetterPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about the attestation letter" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

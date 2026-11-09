@@ -5,6 +5,35 @@ One entry per batch, newest first. Each entry records the commit, what changed a
 To see any page's original wording: `git show 9d17a79:<path to the page>`.
 
 
+
+## Batch 11: searched phrases in headings and less repetition (9 November 2026)
+
+- **Commit:** `9bea688`, live on production the same day. This is SEO Step 4, limited to items in the keyword map that need nothing from the firm.
+
+| Page | Change | Why |
+| --- | --- | --- |
+| `/blog/mofa-online-attestation` | Two headings now use "MOFA online attestation" and "MOFA attestation portal". | Search Console: eight MOFA searches at positions 7 to 26 |
+| `/study-in-canada/designated-learning-institutions` | Headings add "(DLI)" and "find its DLI number". | Searches for "dli number" and "dli meaning" |
+| `/pnp/newfoundland-labrador`, `/pnp/new-brunswick` | Headings add NLPNP and NBPNP. | Searches use the short names |
+| `/study-in-canada/working-while-studying` | Heading uses "work while studying in Canada". | 22 impressions at position 30 |
+| `/family-sponsorship/spouse-partner` | Heading names arranged marriages. | The page already answers this; the search had no heading to match |
+| `/study-in-canada/provincial-attestation-letter` | Notes that applicants call it the province letter. | Search for "province letter" |
+| `/` | Office links now read "Canada visa consultants in Lahore" and "Immigration consultants in Islamabad". | The homepage outranks the city pages |
+| `/immigration-consultant-lahore`, `/immigration-consultant-islamabad` | Three links each to the site's biometrics, police certificate and medical guides. | Those guides had no links from the city pages |
+| `/work-permit-canada` | New FAQ on whether the C11 is still open. | Google suggests the question; read at IRCC on 9 November 2026 |
+| `/work-permits` | LMIA explanation cut to two sentences and a link; duplicate FAQ removed. Words 2,152 to 1,887. | Audit: repeats `/work-permits/lmia` |
+| `/caregivers` | Fraud patterns cut to one sentence and a link. Words 2,607 to 2,567. | Audit: repeats `/work-permits/caregivers` |
+| `/family-sponsorship` | Inland and outland, parents pool and lock-in material cut to summaries. Words 2,701 to 2,373. | Audit: repeats the three spokes |
+| `/study-in-canada` | Seven-stage list replaced by a four-stage route with a link to each guide. Words 2,082 to 1,947. | Audit: repeats `/study-in-canada/study-permit` |
+| `lib/facts.ts` | One new entry on the C11's status, checked 9 November 2026. | |
+
+- **Kept deliberately:** details found only on a hub stay there, including the spousal public policy link and that an outland spouse can often still visit, the ESDC rule on recovering recruitment costs on `/caregivers`, and the whole super visa section.
+- **Checked before shipping:** typecheck, build, `test:crs` (66), `test:fsw` (43), `test:clb` (34). On the local build: 9 removed phrases gone, 20 new phrases present, 93 URLs crawled with no regressions, nothing scrolls sideways at phone width on nine pages, no JS errors.
+- **Checked on production:** the same 29 text checks pass, 93 of 93 URLs return 200, no regressions, nothing scrolls sideways at phone width on nine pages.
+- **Search:** IndexNow accepted the 15 URLs. Google not asked.
+- **Changed from the plan:** the homepage H1 keeps its two cities, because the homepage holds the only city ranking near page one. Links from the three step guides to the MOFA post were not added, because those guides don't deal with attestation.
+- **Left alone:** review dates, every claim about the firm's lawyers, and `/visitor-visa` and `/immigration-programs` (merging needs the owner's decision).
+
 ## Batch 10: C11 requirements and city page local steps (8 November 2026)
 
 - **Commit:** `24626dd`, live on production the same day.

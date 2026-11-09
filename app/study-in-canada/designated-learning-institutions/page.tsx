@@ -128,7 +128,7 @@ export default function DliPage() {
         eyebrow="Canada · Study permits"
         title={
           <>
-            A designated school is the floor,{' '}
+            Designated learning institutions: a DLI is the floor,{' '}
             <span className="text-gold-300">not the finish line</span>
           </>
         }
@@ -434,7 +434,7 @@ export default function DliPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about DLIs" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

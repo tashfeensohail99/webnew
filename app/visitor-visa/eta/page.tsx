@@ -313,7 +313,7 @@ export default function EtaPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="The failure patterns we see from Pakistan"
+          title="Where eTA applications from Pakistan fail"
         />
         <Prose>
           <p>
@@ -349,7 +349,7 @@ export default function EtaPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Being honest about fit" title="Who this does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who the eTA does not suit" />
         <div className="mt-8">
           <Callout title="For most readers of this page, the eTA is not your document">
             <p>
@@ -456,7 +456,7 @@ export default function EtaPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="The questions people actually ask" />
+        <SectionHeading eyebrow="Straight answers" title="Questions about the eTA" />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

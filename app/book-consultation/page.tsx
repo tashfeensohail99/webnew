@@ -99,7 +99,7 @@ export default function BookConsultationPage() {
     <>
       <PageHero
         eyebrow="Free consultation"
-        title="Find out where you actually stand"
+        title="Book a free consultation and find out where you stand"
         subtitle={
           <>
             Free, and you leave with a written summary of where you stand — even when that
