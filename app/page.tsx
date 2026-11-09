@@ -97,7 +97,7 @@ const STEPS = [
 const GUIDES: { heading: string; href: string; links: [string, string][] }[] = [
   {
     heading: 'Permanent residence',
-    href: '/immigration-programs',
+    href: '/canada-immigration-from-pakistan',
     links: [
       ['/express-entry', 'Express Entry'],
       ['/express-entry/federal-skilled-worker', 'Federal Skilled Worker'],
@@ -194,6 +194,10 @@ const HOME_FAQS = [
     a: 'Yes. Many of our clients apply from the Gulf. Consultations can be held remotely, and we handle the Pakistan side of your paperwork while you stay where you are.',
   },
   {
+    q: 'I live in Karachi. Do you have an office there?',
+    a: 'No. Our Pakistan offices are in Lahore and Islamabad, and we work with clients in Karachi remotely. The consultation is free either way.',
+  },
+  {
     q: 'I was refused before. Is it worth applying again?',
     a: 'Sometimes — but never by sending the same file again. The first step is finding out the real reason, usually from the officer’s GCMS notes. Then you know whether to fix and re-apply, or challenge the decision.',
   },
@@ -265,7 +269,7 @@ export default function HomePage() {
               </p>
               <p>
                 Our lawyer-led team provides personalised support for{' '}
-                <Link href="/immigration-programs" className={HERO_LINK}>Canada permanent residence</Link>,{' '}
+                <Link href="/canada-immigration-from-pakistan" className={HERO_LINK}>Canada permanent residence</Link>,{' '}
                 <Link href="/express-entry" className={HERO_LINK}>Express Entry</Link>,{' '}
                 <Link href="/pnp" className={HERO_LINK}>Provincial Nominee Programs (PNPs)</Link>,{' '}
                 <Link href="/study-in-canada/study-permit" className={HERO_LINK}>study permits</Link>,{' '}

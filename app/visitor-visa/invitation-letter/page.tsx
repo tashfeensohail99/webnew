@@ -345,7 +345,7 @@ export default function InvitationLetterPage() {
               still be satisfied about departure — and a host’s letter is not the document that satisfies
               it. If settling is the goal, the invitation letter is not the lever;{' '}
               <Link
-                href="/immigration-programs"
+                href="/canada-immigration-from-pakistan"
                 className="font-semibold text-accent-500 link-underline"
               >
                 the permanent routes

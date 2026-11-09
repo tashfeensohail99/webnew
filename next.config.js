@@ -14,6 +14,9 @@
  * and get re-pointed to their spoke as each one ships — see PENDING below.
  */
 const LEGACY_REDIRECTS = [
+  // Merged on the owner's decision, 9 November 2026.
+  ['/visitor-visa', '/canada-visit-visa'],
+  ['/immigration-programs', '/canada-immigration-from-pakistan'],
   ['/what-is-c11-entrepreneur-work-permit', '/work-permit-canada'],
   ['/the-canadian-c11-work-permit-everything-you-need-to-know', '/work-permit-canada'],
   ['/what-is-judicial-review', '/refusals/judicial-review'],

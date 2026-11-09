@@ -396,7 +396,7 @@ export default function VisitorExtensionPage() {
               </Link>{' '}
               is often the more honest answer, if the eligibility conditions are met. And if the goal
               is permanent residence, start{' '}
-              <Link href="/immigration-programs" className="font-semibold text-accent-500 link-underline">
+              <Link href="/canada-immigration-from-pakistan" className="font-semibold text-accent-500 link-underline">
                 with the programmes themselves
               </Link>
               .

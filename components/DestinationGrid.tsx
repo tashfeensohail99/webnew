@@ -86,7 +86,7 @@ function FlagPlate({
 
 const CARDS: Card[] = [
   {
-    href: '/immigration-programs',
+    href: '/canada-immigration-from-pakistan',
     kicker: 'Live · Work · Study · Invest',
     title: 'Canada',
     tone: 'from-[#8f1226] via-[#c31733] to-[#6d0d1d]',

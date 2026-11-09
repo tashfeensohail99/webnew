@@ -6,6 +6,19 @@ To see any page's original wording: `git show 9d17a79:<path to the page>`.
 
 
 
+
+## Batch 12: headings name the topic and say what follows (9 November 2026)
+
+- **Commit:** `5c52960`, live on production the same day. This is SEO Step 5.
+- **Main headings:** 50 H1s now lead with the topic and keep the page's point after it. Every page already had exactly one H1.
+- **Subheadings:** 145 generic H2s made specific, including the FAQ heading 53 pages shared. "The failure patterns we see" is gone from 18 pages because it claimed firm experience nobody has confirmed.
+- **Structure:** the CRS and FSW calculators jumped from H1 to H3, so each gets a visually hidden H2.
+- **Waiting on the firm:** H1s on `/`, both city pages, `/about`, `/about/our-team` and `/fees`.
+- **Checked before shipping:** typecheck, build, `test:crs` (66), `test:fsw` (43), `test:clb` (34). Before-and-after outline comparison: 50 H1s and 147 H2s changed (145 rewritten, 2 added), one H1 per page, no skipped levels, no duplicate H1s, none of the 24 generic headings left. 93 URLs crawled with no regressions, nothing scrolls sideways at phone width on ten pages, no JS errors.
+- **Checked on production:** the same outline comparison, 93 of 93 URLs return 200, no regressions.
+- **Search:** IndexNow accepted the changed URLs. Google not asked.
+- **Left alone:** review dates, page titles and descriptions (Step 6), body text and every claim about the firm's lawyers.
+
 ## Batch 11: searched phrases in headings and less repetition (9 November 2026)
 
 - **Commit:** `9bea688`, live on production the same day. This is SEO Step 4, limited to items in the keyword map that need nothing from the firm.

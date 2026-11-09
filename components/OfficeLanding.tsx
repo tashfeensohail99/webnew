@@ -193,7 +193,7 @@ export function OfficeLanding({
             <SectionHeading
               eyebrow="Can’t make it in?"
               title="You don’t have to visit"
-              subtitle="Consultations can also be held remotely — useful if you are in the Gulf, or simply cannot get away during office hours."
+              subtitle="Consultations can also be held remotely — useful if you are in Karachi or the Gulf, or simply cannot get away during office hours."
             />
             <p className="mt-6 text-ink-600 text-pretty">
               Closer to {other.city}?{' '}

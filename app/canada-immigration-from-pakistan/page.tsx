@@ -24,6 +24,10 @@ import { SERVICE } from '@/lib/site';
  * Same evergreen rule as the rest of the site (see lib/nav.ts): no fees, no
  * processing times, no draw cut-offs, no fund amounts. Every one of those links
  * out to IRCC, because a stale number on a consultancy's site is worse than none.
+ *
+ * Absorbed /immigration-programs on 9 November 2026, on the owner's decision: the
+ * "start from yourself" grid, the six steps, the business route and three FAQs
+ * moved here, and /immigration-programs now redirects to this page.
  */
 export const metadata: Metadata = {
   title: 'How to Immigrate to Canada from Pakistan',
@@ -47,6 +51,8 @@ const IRCC = {
   fees: 'https://ircc.canada.ca/english/information/fees/fees.asp',
   processingTimes:
     'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html',
+  home: 'https://www.canada.ca/en/services/immigration-citizenship.html',
+  provincial: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html',
 } as const;
 
 function Official({ href, children }: { href: string; children: ReactNode }) {
@@ -118,6 +124,14 @@ const ROUTES = [
     cta: 'The C11, explained',
   },
   {
+    href: '/business-immigration',
+    icon: 'calculator' as const,
+    kicker: 'If you will start or invest',
+    title: 'Business and entrepreneur routes',
+    body: 'Federal and provincial routes for people who will start, buy or invest in a Canadian business. They suit operators, not passive investors looking to buy a status.',
+    cta: 'Business routes',
+  },
+  {
     href: '/family-sponsorship',
     icon: 'user' as const,
     kicker: 'Permanent residence',
@@ -141,6 +155,26 @@ const ROUTES = [
     body: 'To see family, travel or attend business meetings. It is not a way to move to Canada — and an application that reads like one is refused.',
     cta: 'What a visit visa takes',
   },
+];
+
+/** Carried over from /immigration-programs. */
+const WHERE_YOU_SIT: [string, string][] = [
+  ['You have a degree and skilled work history', 'Economic routes are your ground — federal and provincial both. Language testing is usually the first thing to sort out, because it moves your position more than almost anything else you control.'],
+  ['You own or run a business', 'Business and entrepreneur routes, and work-permit routes that need no employer. Your case rests on what you actually operate and on funds you can document as yours.'],
+  ['You have close family in Canada', 'Sponsorship may apply — but only for certain relationships, and your relative is assessed as closely as you are. A cousin or a sibling is usually not a sponsorship route, whatever you have been told.'],
+  ['You are young with limited work history', 'The study-then-work chain is often the realistic route, provided you go in understanding it as a multi-year chain with real cost and real conditions at every link.'],
+  ['You already have a Canadian job offer', 'That changes the picture considerably across several routes at once. Bring the offer and the employer details to the first conversation.'],
+  ['You have been refused before', 'The refusal has to be dealt with head-on in whatever you file next. Start there rather than starting again from scratch.'],
+];
+
+/** How to choose, in sequence. Carried over from /immigration-programs. */
+const CHOOSING = [
+  { title: 'Start from your facts, not the programme', body: 'Age, education, language ability, actual skilled work history, funds in your own name, family already in Canada, and any refusal on your record. Every route reads these same facts differently.' },
+  { title: 'Find the routes you plausibly fit', body: 'Most people fit more than one. A qualified professional with a sibling in Canada may have a federal route, a provincial route and no family route at all — three different answers from one set of facts.' },
+  { title: 'Rule out the ones you don’t', body: 'This is the step people skip. Ruling a route out early is worth more than adding a fifth maybe, because it stops you spending a year and a fee on it.' },
+  { title: 'Fix what is weak before you file', body: 'Language results, a credential assessment, a documented funds history, a properly explained gap in employment. These are fixable in advance and very hard to fix after a refusal.' },
+  { title: 'File one route properly', body: 'Filed carefully, with the evidence assembled as one coherent case. A thin application on the right route still gets refused.' },
+  { title: 'Live with the decision timeline', body: 'The decision belongs to an IRCC officer. Anyone giving you a guaranteed date, or a guaranteed outcome, is selling you something they cannot deliver.' },
 ];
 
 const DOCUMENTS: { title: string; body: ReactNode; guide?: string }[] = [
@@ -273,6 +307,18 @@ const FAQS = [
     a: 'Yes — many applicants apply from the Gulf. You apply online from where you live, give biometrics there, and include police certificates from the Gulf country as well as Pakistan.',
   },
   {
+    q: 'Can I apply to more than one route at the same time?',
+    a: 'Sometimes, and sometimes it is actively unwise — parallel applications can conflict, can raise questions about your stated intention, and can double your exposure if one goes wrong. It is a judgement call on your specific facts, not a general strategy to adopt by default.',
+  },
+  {
+    q: 'I have a previous refusal. Does that close everything off?',
+    a: 'Not automatically, but it does change how the next application has to be built. A refusal on your record is read by the next officer, and an application that ignores it rarely does well. It has to be addressed directly and honestly.',
+  },
+  {
+    q: 'Someone told me there is a programme with no requirements. Is there?',
+    a: 'No. Every route into Canada has published eligibility rules, and every application is decided on evidence. If someone is describing a programme with no requirements, they are either describing something that does not exist or describing something that will end in a refusal on your record.',
+  },
+  {
     q: 'How long does it take?',
     a: 'It varies by route and changes month to month. IRCC publishes current processing times, and we will tell you in your consultation what is realistic for your route — including the time it takes to get a file ready, which most people underestimate.',
   },
@@ -353,13 +399,73 @@ export default function CanadaFromPakistanPage() {
           title="Who each route is actually for"
           subtitle="Two lines each. The page behind every card goes into the detail — requirements, process, and where applications from Pakistan tend to go wrong."
         />
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {ROUTES.map((r) => (
             <FeatureCard key={r.href} href={r.href} cta={r.cta} icon={<Icon name={r.icon} />} kicker={r.kicker} title={r.title}>
               {r.body}
             </FeatureCard>
           ))}
         </div>
+        <p className="mt-10 max-w-3xl text-ink-600 text-pretty">
+          The boundaries between routes are porous: a work permit can produce the experience an
+          economic route needs, and a provincial nomination can transform a federal profile. The
+          detailed rules change often, particularly at provincial level, so check anything you read on
+          any website, including this one, against <Official href={IRCC.home}>IRCC</Official> and the{' '}
+          <Official href={IRCC.provincial}>relevant provincial programme page</Official>.
+        </p>
+      </Section>
+
+      {/* ======================= WHERE DO YOU SIT ======================= */}
+      <Section tone="paper">
+        <SectionHeading
+          eyebrow="Where do you sit?"
+          title="Start from yourself, not from the programme"
+          subtitle="An agent who only files one kind of application will find that you qualify for it. Each route reads the same facts about you differently, and a profile that is mediocre in one can be strong in another."
+        />
+        <ul className="mt-10 grid gap-4 sm:grid-cols-2">
+          {WHERE_YOU_SIT.map(([term, def]) => (
+            <li key={term} className="card flex gap-4 p-6">
+              <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gold-500 text-ink-950">
+                <Icon name="check" className="h-4 w-4" />
+              </span>
+              <div>
+                <p className="font-serif text-lg text-ink-900">{term}</p>
+                <p className="mt-1 text-ink-600 text-pretty">{def}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+        <div className="mt-10">
+          <Callout title="Who none of this suits">
+            <p>
+              If you are looking for a route with no requirements, a guaranteed outcome, or a way to
+              buy status without operating anything, none of these routes will serve you and we are
+              not the firm for you. If you cannot document where your funds came from, or you are
+              being encouraged to submit an employment history that is not yours, stop — a
+              misrepresentation finding is far worse than a refusal and follows you for years.
+            </p>
+          </Callout>
+        </div>
+      </Section>
+
+      {/* ======================== HOW TO CHOOSE ======================== */}
+      <Section tone="alt">
+        <SectionHeading
+          eyebrow="How to choose"
+          title="Six steps for choosing a route, in this order"
+          subtitle="The third one is the step almost everybody skips, and it is the one that saves the most money."
+        />
+        <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {CHOOSING.map((s, i) => (
+            <li key={s.title} className="card flex flex-col p-7">
+              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-gold-500 font-serif text-lg font-medium text-ink-950">
+                {i + 1}
+              </span>
+              <h3 className="mt-5 font-serif text-xl text-ink-900">{s.title}</h3>
+              <p className="mt-2 flex-1 text-ink-600 text-pretty">{s.body}</p>
+            </li>
+          ))}
+        </ol>
       </Section>
 
       {/* ======================== WHAT YOU NEED ======================== */}

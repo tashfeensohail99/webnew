@@ -89,6 +89,10 @@ const FAQ_ITEMS = [
     a: 'No. A large share of the people we work with are in Saudi Arabia, the UAE and the wider Gulf. We arrange a time that works around your week — including Fridays, when you’re off and we’re open.',
   },
   {
+    q: 'I live in Karachi. Can you still help?',
+    a: 'Yes. We have no office in Karachi, so we work with Karachi clients remotely. The consultation is the same: free, with a written summary of where you stand.',
+  },
+  {
     q: 'Will you ask for my CNIC or passport to book?',
     a: 'No. Your name, a number we can reach you on, and which country you’re asking about is all it takes. No legitimate firm needs your identity documents before it has even spoken to you.',
   },

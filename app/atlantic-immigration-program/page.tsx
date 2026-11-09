@@ -185,7 +185,7 @@ export default function AtlanticImmigrationProgramPage() {
           <p>
             The programme is one of several routes that do not run through Express Entry. If you are
             weighing it against others, our{' '}
-            <Link href="/immigration-programs" className="font-semibold text-accent-500 link-underline">
+            <Link href="/canada-immigration-from-pakistan" className="font-semibold text-accent-500 link-underline">
               overview of Canadian immigration programmes
             </Link>{' '}
             sets out where each one fits.

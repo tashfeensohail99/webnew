@@ -383,7 +383,7 @@ export default function BridgingOpenWorkPermitPage() {
                 underlying work permit
               </Link>{' '}
               or the{' '}
-              <Link href="/immigration-programs" className="font-semibold text-accent-500 link-underline">
+              <Link href="/canada-immigration-from-pakistan" className="font-semibold text-accent-500 link-underline">
                 permanent residence route
               </Link>{' '}
               itself.

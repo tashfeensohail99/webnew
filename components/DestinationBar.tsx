@@ -26,7 +26,7 @@ import { FlagCanada, FlagUK, FlagUSA, FlagEU } from '@/components/Flags';
  */
 
 const FLAGS: Record<string, (p: { className?: string }) => React.ReactElement> = {
-  '/immigration-programs': FlagCanada,
+  '/canada-immigration-from-pakistan': FlagCanada,
   '/uk': FlagUK,
   '/usa': FlagUSA,
   '/europe': FlagEU,
@@ -46,7 +46,7 @@ export function DestinationBar() {
    * quietly mislabels pages later once more routes exist.
    */
   const inSection = (href: string) => {
-    if (href === '/immigration-programs') {
+    if (href === '/canada-immigration-from-pakistan') {
       return !['/uk', '/usa', '/europe'].some((p) => pathname === p || pathname.startsWith(`${p}/`));
     }
     return pathname === href || pathname.startsWith(`${href}/`);

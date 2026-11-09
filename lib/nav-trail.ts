@@ -15,11 +15,11 @@ export type Crumb = { href: string; label: string };
 /** Section names as a trail reads them. The menu labels ("Refused?", "Work")
  *  are tuned for a crowded header, not for a breadcrumb. */
 const GROUP_LABEL: Record<string, string> = {
-  '/immigration-programs': 'Canada PR',
+  '/canada-immigration-from-pakistan': 'Canada PR',
   '/work-permits': 'Work permits',
   '/study-in-canada': 'Study in Canada',
   '/family-sponsorship': 'Family sponsorship',
-  '/visitor-visa': 'Visit Canada',
+  '/canada-visit-visa': 'Visit Canada',
   '/canada-visa-refused': 'Visa refusals',
   '/tools': 'Free tools',
   '/about': 'About',
@@ -68,13 +68,17 @@ export function labelFor(path: string): string {
   return PAGE_LABEL[path] ?? POST_LABEL[path] ?? GROUP_LABEL[path] ?? itemLabel(path) ?? titleCase(path.split('/').pop() ?? '');
 }
 
+/** Visit guides keep their /visitor-visa/ addresses, but their section landing page is /canada-visit-visa. */
+const SECTION_FOR_PREFIX: [string, string][] = [['/visitor-visa/', '/canada-visit-visa']];
+
 /** The menu group a page belongs to. A page listed in two groups (Super Visa is
  *  under Visit AND Family) goes to the group whose landing URL prefixes it. */
 export function groupFor(path: string): NavGroup | undefined {
   const inGroup = (g: NavGroup) =>
     g.status === 'live' && (g.href === path || g.columns.some((c) => c.items.some((i) => i.href === path && live(i))));
   const groups = NAV.filter(inGroup);
-  return groups.find((g) => g.href && path.startsWith(`${g.href}/`)) ?? groups[0];
+  const section = SECTION_FOR_PREFIX.find(([prefix]) => path.startsWith(prefix))?.[1];
+  return groups.find((g) => g.href === section) ?? groups.find((g) => g.href && path.startsWith(`${g.href}/`)) ?? groups[0];
 }
 
 /** Home → section → (parent hub) → this page. Only links to pages that exist. */

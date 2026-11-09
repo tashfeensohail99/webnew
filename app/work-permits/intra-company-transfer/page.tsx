@@ -348,7 +348,7 @@ export default function IntraCompanyTransferPage() {
             <strong>Assuming the permit is portable or leads somewhere.</strong> The permit is tied to
             the named employer and position, and it confers no permanent status. If your objective is
             settlement, that is a{' '}
-            <Link href="/immigration-programs" className="font-semibold text-accent-500 link-underline">
+            <Link href="/canada-immigration-from-pakistan" className="font-semibold text-accent-500 link-underline">
               separate conversation about routes to permanent residence
             </Link>
             .

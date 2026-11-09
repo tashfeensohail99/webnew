@@ -69,7 +69,6 @@ export const ROUTES: Route[] = [
   // Broad by design. Someone arriving with a spousal sponsorship question should
   // find a spousal sponsorship page whether or not that is this month's busy
   // service — see the note at the top of lib/nav.ts.
-  { path: '/immigration-programs', reviewed: '2026-07-20', priority: 0.8, changeFrequency: 'monthly' },
   // The "start here" map for the audience's single biggest search.
   { path: '/canada-immigration-from-pakistan', reviewed: '2026-10-23', priority: 0.9, changeFrequency: 'monthly' },
   // The three practical steps nearly every file from Pakistan goes through —
@@ -92,7 +91,6 @@ export const ROUTES: Route[] = [
   { path: '/work-permits/lmia', reviewed: '2026-07-20', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/work-permits/lmia-exempt', reviewed: '2026-07-20', priority: 0.8, changeFrequency: 'monthly' },
 
-  { path: '/visitor-visa', reviewed: '2026-07-20', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/visitor-visa/super-visa', reviewed: '2026-07-20', priority: 0.8, changeFrequency: 'monthly' },
 
   { path: '/refusals/gcms-notes', reviewed: '2026-07-20', priority: 0.8, changeFrequency: 'monthly' },

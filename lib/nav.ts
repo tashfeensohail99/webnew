@@ -53,7 +53,7 @@ export const NAV: NavGroup[] = [
     // this menu is an immigration programme. "Canada PR" is 107px and names the
     // outcome the visitor actually wants.
     label: 'Canada PR',
-    href: '/immigration-programs',
+    href: '/canada-immigration-from-pakistan',
     status: 'live',
     columns: [
       {
@@ -196,7 +196,7 @@ export const NAV: NavGroup[] = [
 
   {
     label: 'Visit',
-    href: '/visitor-visa',
+    href: '/canada-visit-visa',
     status: 'live',
     columns: [
       {
@@ -298,14 +298,14 @@ export const NAV: NavGroup[] = [
  * kind of drift that makes a site feel assembled rather than designed.
  */
 export const DESTINATIONS: NavItem[] = [
-  { href: '/immigration-programs', label: 'Canada', status: 'live' },
+  { href: '/canada-immigration-from-pakistan', label: 'Canada', status: 'live' },
   { href: '/uk', label: 'United Kingdom', status: 'live' },
   { href: '/usa', label: 'United States', status: 'live' },
   { href: '/europe', label: 'Europe', status: 'live' },
 ];
 
 /** The three non-Canada destinations, for the "Not Canada?" line under each panel. */
-export const OTHER_DESTINATIONS = DESTINATIONS.filter((d) => d.href !== '/immigration-programs');
+export const OTHER_DESTINATIONS = DESTINATIONS.filter((d) => d.href !== '/canada-immigration-from-pakistan');
 
 /**
  * Only what actually exists. The menu never renders a link to a 404.

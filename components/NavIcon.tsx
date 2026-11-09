@@ -66,14 +66,12 @@ export type NavIconName = keyof typeof GLYPHS;
 const BY_HREF: Record<string, NavIconName> = {
   // Section landing pages — the icons on the top-bar labels. (Family,
   // Refused? and About reuse their hub items' entries below.)
-  '/immigration-programs': 'leaf',
   '/work-permits': 'briefcase',
   '/study-in-canada': 'cap',
-  '/visitor-visa': 'plane',
   '/tools': 'calculator',
 
   // Canada PR
-  '/canada-immigration-from-pakistan': 'compass',
+  '/canada-immigration-from-pakistan': 'leaf',
   '/express-entry': 'zap',
   '/express-entry/draws': 'growth',
   '/canada-immigration-from-pakistan/police-certificate': 'shield',

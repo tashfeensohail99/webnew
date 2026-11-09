@@ -12,7 +12,7 @@ import { NavIcon } from '@/components/NavIcon';
 /** Same mapping as the desktop DestinationBar; kept local to avoid a shared
  *  module whose only job would be four key/value pairs. */
 const DRAWER_FLAGS: Record<string, (p: { className?: string }) => React.ReactElement> = {
-  '/immigration-programs': FlagCanada,
+  '/canada-immigration-from-pakistan': FlagCanada,
   '/uk': FlagUK,
   '/usa': FlagUSA,
   '/europe': FlagEU,
