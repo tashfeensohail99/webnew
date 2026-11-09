@@ -322,7 +322,8 @@ export default function VisaRefusedPage() {
           <Link href="/refusals/misrepresentation" className="font-semibold text-accent-500 link-underline">
             a misrepresentation finding
           </Link>
-          , which you should read about before you file anything else.
+          , which you should read about before you file anything else. Refused a C11?{' '}
+          <Link href="/work-permit-canada/refusals" className="font-semibold text-accent-500 link-underline">Read why C11 work permits are refused</Link>.
         </p>
       </Section>
 

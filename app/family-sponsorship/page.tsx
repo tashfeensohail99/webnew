@@ -445,7 +445,8 @@ export default function FamilySponsorshipPage() {
             <SectionHeading eyebrow="The alternative" title="The super visa" />
             <div className="mt-6 space-y-4 text-ink-600 text-pretty leading-relaxed">
               <p>
-                Where sponsorship isn’t available or isn’t sensible, the super visa lets parents and
+                Where sponsorship isn’t available or isn’t sensible, the{' '}
+                <Link href="/visitor-visa/super-visa" className="font-semibold text-accent-500 link-underline">super visa</Link> lets parents and
                 grandparents visit for long, repeated stays on a multi-entry visa, with private
                 medical insurance and a supporting commitment from the child or grandchild in
                 Canada. The stay length, the minimum insurance coverage and the income the host must

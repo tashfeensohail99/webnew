@@ -256,6 +256,10 @@ export default function BookConsultationPage() {
             </p>
           </div>
         </div>
+        <p className="mt-8 max-w-3xl text-ink-600 text-pretty">
+          Prefer to come in? Book ahead and visit our <Link href="/immigration-consultant-lahore" className="font-semibold text-accent-500 link-underline">Canada visa consultants in Lahore</Link> or our{' '}
+          <Link href="/immigration-consultant-islamabad" className="font-semibold text-accent-500 link-underline">immigration consultants in Islamabad</Link>.
+        </p>
       </Section>
 
       {/* ============================= FAQ ============================= */}

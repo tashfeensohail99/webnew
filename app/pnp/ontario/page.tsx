@@ -269,6 +269,10 @@ export default function PnpOntarioPage() {
                 . You must meet a federal programme’s criteria and keep a valid profile while Ontario
                 processes your application. Everyone else goes through the base route.
               </p>
+              <p>
+                Ontario also changed how it scores higher earners in October 2026.{' '}
+                <Link href="/blog/ontario-higher-earners-2026" className="font-semibold text-accent-500 link-underline">Who that change helps, and who it does not</Link>.
+              </p>
             </Prose>
           </div>
 

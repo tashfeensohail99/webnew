@@ -167,7 +167,8 @@ export default function NoGuaranteePage() {
 
         <p className="mt-8 max-w-3xl text-lg text-ink-600 text-pretty">
           A firm that answers all five plainly may still not be right for you. A firm that avoids any
-          of them has told you what you need to know.
+          of them has told you what you need to know.{' '}
+          <Link href="/canadian-immigration-lawyer-pakistan" className="font-semibold text-accent-500 link-underline">How to check a Canadian immigration lawyer in Pakistan</Link>.
         </p>
         <Link
           href="/about/our-team"

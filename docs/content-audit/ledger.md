@@ -8,6 +8,19 @@ To see any page's original wording: `git show 9d17a79:<path to the page>`.
 
 
 
+
+## Batch 14: titles and descriptions (9 November 2026)
+
+- **Commit:** `40b460f`, live on production the same day. This is SEO Step 6.
+- **Finding:** all 91 pages had a unique title and description, so most metadata stayed.
+- **Titles (12):** eight province pages now use the program name people search; `/book-consultation` says the consultation is free; `/visitor-visa/super-visa`, `/refusals/reconsideration` and `/express-entry/canadian-experience-class` were tidied or matched to their searches.
+- **Descriptions (9):** the two pages that absorbed merged content, six province pages that now name their own streams, and `/terms`.
+- **Re-check:** province descriptions name streams from `lib/facts.ts`, so include them in the monthly re-check of those facts.
+- **Waiting on the firm:** proposals for `/`, both city pages, `/book-consultation` (description), `/about`, `/about/our-team` and `/fees`, in `metadata/tashfeen-metadata-audit.xlsx`.
+- **Checked before shipping:** typecheck, build, `test:crs` (66), `test:fsw` (43), `test:clb` (34). A before-and-after comparison confirmed exactly the planned 12 titles and 9 descriptions changed, with no duplicates. 91 URLs crawled with no regressions.
+- **Checked on production:** the same comparison, 91 of 91 URLs return 200, no regressions.
+- **Search:** IndexNow accepted the 15 changed URLs. Google not asked.
+
 ## Batch 13: two pages merged, Karachi answer added (9 November 2026)
 
 - **Commit:** `8249139`, live on production the same day. The site owner approved both merges and confirmed Karachi clients are served remotely, in chat on 9 November 2026.

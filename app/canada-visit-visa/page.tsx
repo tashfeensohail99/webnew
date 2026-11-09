@@ -385,6 +385,10 @@ export default function VisitVisaPage() {
             </li>
           ))}
         </ol>
+        <p className="mt-8 max-w-3xl text-ink-600 text-pretty">
+          We can do this remotely, or you can visit our <Link href="/immigration-consultant-lahore" className="font-semibold text-accent-500 link-underline">Canada visa consultants in Lahore</Link> or{' '}
+          <Link href="/immigration-consultant-islamabad" className="font-semibold text-accent-500 link-underline">Canada visa consultants in Islamabad</Link>.
+        </p>
       </Section>
 
       {/* ===================== AFTER YOU ARRIVE ===================== */}

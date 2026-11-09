@@ -503,7 +503,7 @@ export default function WorkPermitPage() {
           </div>
         </div>
         <p className="mt-6 max-w-3xl text-ink-600 text-pretty">
-          Neither kind of work counts toward the Canadian Experience Class.
+          Neither kind of work counts toward the <Link href="/express-entry/canadian-experience-class" className="font-semibold text-accent-500 link-underline">Canadian Experience Class</Link>.
         </p>
       </Section>
 

@@ -261,7 +261,8 @@ export default function WorkPermitsPage() {
           <Link href="/work-permits/global-talent-stream" className="font-semibold text-accent-500 link-underline">Global Talent Stream</Link>,{' '}
           <Link href="/work-permits/international-experience-canada" className="font-semibold text-accent-500 link-underline">International Experience Canada</Link>,{' '}
           <Link href="/work-permits/bridging-open-work-permit" className="font-semibold text-accent-500 link-underline">bridging open work permits</Link> and{' '}
-          <Link href="/work-permits/caregivers" className="font-semibold text-accent-500 link-underline">caregiver work permits</Link>.
+          <Link href="/work-permits/caregivers" className="font-semibold text-accent-500 link-underline">caregiver work permits</Link>. Coming only for meetings or after-sales
+          work? That may be <Link href="/visitor-visa/business-visitor" className="font-semibold text-accent-500 link-underline">business visitor status</Link>, with no work permit at all.
         </p>
       </Section>
 

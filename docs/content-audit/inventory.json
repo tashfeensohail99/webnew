@@ -1,7 +1,7 @@
 {
  "summary": {
   "base": "https://tashfeenimmigrationsolutions.com",
-  "crawled": "2026-11-09T07:43:53.472Z",
+  "crawled": "2026-11-09T07:59:14.942Z",
   "total": 91,
   "ok": 91,
   "inSitemap": 91,
@@ -2680,10 +2680,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "Book a Consultation | Tashfeen",
+   "title": "Book a Free Immigration Consultation | Tashfeen",
    "description": "A free consultation with a qualified lawyer, and a written summary of where you stand — even when that summary says do not apply.",
    "canonical": "https://tashfeenimmigrationsolutions.com/book-consultation",
-   "ogTitle": "Book a Consultation | Tashfeen",
+   "ogTitle": "Book a Free Immigration Consultation | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "Book a free consultation and find out where you stand"
@@ -3272,7 +3272,7 @@
    "robotsHeader": null,
    "metaRobots": "index, follow",
    "title": "How to Immigrate to Canada from Pakistan | Tashfeen",
-   "description": "Every realistic route from Pakistan to Canada — Express Entry, provincial nomination, study, work and family sponsorship — and what each one asks of you.",
+   "description": "Every realistic route from Pakistan to Canada, from Express Entry and provincial nomination to study, work, business and family sponsorship, and how to choose.",
    "canonical": "https://tashfeenimmigrationsolutions.com/canada-immigration-from-pakistan",
    "ogTitle": "How to Immigrate to Canada from Pakistan | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
@@ -3576,7 +3576,6 @@
     "/canada-immigration-from-pakistan/police-certificate",
     "/immigration-consultant-islamabad",
     "/immigration-consultant-lahore",
-    "/updates",
     "/visitor-visa/extension",
     "/visitor-visa/invitation-letter",
     "/work-permits/bridging-open-work-permit",
@@ -4473,7 +4472,7 @@
    "robotsHeader": null,
    "metaRobots": "index, follow",
    "title": "Canada Visit Visa from Pakistan | Tashfeen",
-   "description": "What a Canadian visitor visa actually requires from Pakistani applicants, why most refusals happen, and what to do if yours was refused.",
+   "description": "What a Canadian visitor visa requires from Pakistani applicants, the four ways to visit Canada, why applications are refused, and what to do after a refusal.",
    "canonical": "https://tashfeenimmigrationsolutions.com/canada-visit-visa",
    "ogTitle": "Canada Visit Visa from Pakistan | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
@@ -5765,10 +5764,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "Canadian Experience Class (CEC) | Tashfeen",
+   "title": "Canadian Experience Class (CEC) Requirements | Tashfeen",
    "description": "The Express Entry stream for people who have worked in Canada: what counts as Canadian experience, what does not, and the language requirement by TEER.",
    "canonical": "https://tashfeenimmigrationsolutions.com/express-entry/canadian-experience-class",
-   "ogTitle": "Canadian Experience Class (CEC) | Tashfeen",
+   "ogTitle": "Canadian Experience Class (CEC) Requirements | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "Canadian Experience Class: you already worked in Canada. Now make it count."
@@ -9291,10 +9290,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "Alberta Provincial Nomination (AAIP) | Tashfeen",
-   "description": "How the Alberta Advantage Immigration Program works: expression of interest and invitation, enhanced versus base nomination, and the intent to settle.",
+   "title": "Alberta PNP: Advantage Immigration Program (AAIP) | Tashfeen",
+   "description": "How the Alberta PNP (AAIP) works: Alberta Opportunity, Rural Renewal and other worker streams, entrepreneur streams, and the expression-of-interest step.",
    "canonical": "https://tashfeenimmigrationsolutions.com/pnp/alberta",
-   "ogTitle": "Alberta Provincial Nomination (AAIP) | Tashfeen",
+   "ogTitle": "Alberta PNP: Advantage Immigration Program (AAIP) | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "The Alberta PNP nominates people it expects to actually live there"
@@ -9559,10 +9558,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "British Columbia Provincial Nomination (BC PNP) | Tashfeen",
-   "description": "How British Columbia selects immigrants: how registration, invitation and nomination work, and base versus Express Entry-aligned nomination.",
+   "title": "BC Provincial Nominee Program (BC PNP) | Tashfeen",
+   "description": "How the BC PNP works: the Skilled Worker and Health Authority streams, both needing a job offer, entrepreneur streams, and registration and invitation.",
    "canonical": "https://tashfeenimmigrationsolutions.com/pnp/british-columbia",
-   "ogTitle": "British Columbia Provincial Nomination (BC PNP) | Tashfeen",
+   "ogTitle": "BC Provincial Nominee Program (BC PNP) | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "The BC PNP nominates people it expects to stay"
@@ -9815,10 +9814,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "Manitoba Provincial Nomination (MPNP) | Tashfeen",
-   "description": "How Manitoba’s nomination works: the expression-of-interest pool, base versus Express Entry-aligned streams, and the weight it gives a genuine connection.",
+   "title": "Manitoba Provincial Nominee Program (MPNP) | Tashfeen",
+   "description": "How the Manitoba PNP works: its Skilled Worker, International Education and Business Investor streams, the expression-of-interest pool and a genuine connection.",
    "canonical": "https://tashfeenimmigrationsolutions.com/pnp/manitoba",
-   "ogTitle": "Manitoba Provincial Nomination (MPNP) | Tashfeen",
+   "ogTitle": "Manitoba Provincial Nominee Program (MPNP) | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "The Manitoba PNP nominates people it believes will actually stay"
@@ -10078,10 +10077,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "New Brunswick Provincial Nomination (NBPNP) | Tashfeen",
+   "title": "New Brunswick Provincial Nominee Program (NBPNP) | Tashfeen",
    "description": "How New Brunswick’s nominee programme works: expression of interest, enhanced versus base nomination, the francophone dimension, and the intent to settle.",
    "canonical": "https://tashfeenimmigrationsolutions.com/pnp/new-brunswick",
-   "ogTitle": "New Brunswick Provincial Nomination (NBPNP) | Tashfeen",
+   "ogTitle": "New Brunswick Provincial Nominee Program (NBPNP) | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "The New Brunswick PNP nominates people it believes will actually stay"
@@ -10348,10 +10347,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "Newfoundland & Labrador PNP (NLPNP) | Tashfeen",
-   "description": "How the Newfoundland and Labrador Nominee Program works: expression of interest, enhanced versus base nomination, and the intent-to-settle expectation.",
+   "title": "Newfoundland Provincial Nominee Program (NLPNP) | Tashfeen",
+   "description": "How the Newfoundland and Labrador PNP works: five categories including Skilled Worker and International Graduate, expression of interest and intent to settle.",
    "canonical": "https://tashfeenimmigrationsolutions.com/pnp/newfoundland-labrador",
-   "ogTitle": "Newfoundland & Labrador PNP (NLPNP) | Tashfeen",
+   "ogTitle": "Newfoundland Provincial Nominee Program (NLPNP) | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "The Newfoundland and Labrador PNP wants people who intend to stay"
@@ -10617,10 +10616,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "Nova Scotia PNP (NSNP): How Nomination Works | Tashfeen",
-   "description": "How the Nova Scotia Nominee Program works: expression of interest, Express Entry-aligned and base nomination, and the intent-to-settle expectation.",
+   "title": "Nova Scotia Nominee Program (NSNP): How It Works | Tashfeen",
+   "description": "How the Nova Scotia Nominee Program works: its Skilled Worker, Nova Scotia Graduate, Entrepreneur and Express Entry streams, and the intent to settle there.",
    "canonical": "https://tashfeenimmigrationsolutions.com/pnp/nova-scotia",
-   "ogTitle": "Nova Scotia PNP (NSNP): How Nomination Works | Tashfeen",
+   "ogTitle": "Nova Scotia Nominee Program (NSNP): How It Works | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "The Nova Scotia Nominee Program nominates people who intend to stay"
@@ -10876,10 +10875,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "Ontario Provincial Nomination (OINP) | Tashfeen",
+   "title": "Ontario Immigrant Nominee Program (OINP) | Tashfeen",
    "description": "Ontario replaced its OINP streams in 2026 with one, the Ontario Workforce Priority stream. What that means from Pakistan, and who it does not suit.",
    "canonical": "https://tashfeenimmigrationsolutions.com/pnp/ontario",
-   "ogTitle": "Ontario Provincial Nomination (OINP) | Tashfeen",
+   "ogTitle": "Ontario Immigrant Nominee Program (OINP) | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "The Ontario Immigrant Nominee Program nominates people it expects to actually live there"
@@ -11430,10 +11429,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "Saskatchewan Provincial Nomination (SINP) | Tashfeen",
-   "description": "How the Saskatchewan Immigrant Nominee Program works: expression of interest and direct application, base versus enhanced nomination, and intent to settle.",
+   "title": "Saskatchewan Immigrant Nominee Program (SINP) | Tashfeen",
+   "description": "How the Saskatchewan PNP works: International Skilled Worker and Worker with Saskatchewan Work Experience, 2026 sector caps, and the intent to settle.",
    "canonical": "https://tashfeenimmigrationsolutions.com/pnp/saskatchewan",
-   "ogTitle": "Saskatchewan Provincial Nomination (SINP) | Tashfeen",
+   "ogTitle": "Saskatchewan Immigrant Nominee Program (SINP) | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "The Saskatchewan PNP nominates people it expects to actually live there"
@@ -13219,10 +13218,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "Reconsideration requests after an IRCC refusal | Tashfeen",
+   "title": "IRCC Reconsideration Requests After a Refusal | Tashfeen",
    "description": "What a reconsideration request is, why it is discretionary and exceptional, when it is worth attempting, and why the judicial review clock keeps running.",
    "canonical": "https://tashfeenimmigrationsolutions.com/refusals/reconsideration",
-   "ogTitle": "Reconsideration requests after an IRCC refusal | Tashfeen",
+   "ogTitle": "IRCC Reconsideration Requests After a Refusal | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "IRCC reconsideration: asking the office to look again, and what that is not"
@@ -16431,7 +16430,7 @@
    "robotsHeader": null,
    "metaRobots": "index, follow",
    "title": "Terms of Use | Tashfeen",
-   "description": "Terms for using this website, and the limits of what is published here.",
+   "description": "The terms for using the Tashfeen Immigration Solutions website, what the information here is and is not, and the limits of what is published.",
    "canonical": "https://tashfeenimmigrationsolutions.com/terms",
    "ogTitle": "Terms of Use | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
@@ -18030,6 +18029,42 @@
     },
     {
      "level": 2,
+     "text": "savefromins com 0 1080P"
+    },
+    {
+     "level": 2,
+     "text": "More updates"
+    },
+    {
+     "level": 3,
+     "text": "Canada Visa Refused? — How Judicial Review Can Challenge an Unfair Decision"
+    },
+    {
+     "level": 3,
+     "text": "USA E-2 Investor Visa — Start or Buy a Business in America!"
+    },
+    {
+     "level": 3,
+     "text": "Does PKR 50 Lakh in Your Bank Account Guarantee a US Visit Visa? — The Truth About Bank Statements"
+    },
+    {
+     "level": 3,
+     "text": "Canada Visa Refused Again? — Copy-Paste Reasons? Explore Judicial Review!"
+    },
+    {
+     "level": 3,
+     "text": "Pakistan MOFA Online Document Attestation — No More Long Queues or Office Visits!"
+    },
+    {
+     "level": 3,
+     "text": "Canada C-11 Business Work Permit — Move to Canada with Your Family Through Business Immigration!"
+    },
+    {
+     "level": 3,
+     "text": "Austria Red-White-Red Card — Work and Build Your Future in Europe!"
+    },
+    {
+     "level": 2,
      "text": "From the blog"
     },
     {
@@ -18042,30 +18077,36 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 314,
+   "wordCount": 479,
    "avgSentence": 20,
    "hits": {
-    "outcome": 0,
+    "outcome": 1,
     "superlative": 0,
     "firmClaim": 0,
     "stock": 0,
-    "volatile": 1,
+    "volatile": 2,
     "placeholder": 0
    },
    "hitLines": {
+    "outcome": [
+     "Read our USA guide → USA 31 October 2026 Does PKR 50 Lakh in Your Bank Account Guarantee a US Visit Visa?"
+    ],
     "volatile": [
+     "Read our USA guide → USA 31 October 2026 Does PKR 50 Lakh in Your Bank Account Guarantee a US Visit Visa?",
      "Austria Red-White-Red Card from Pakistan in 2026 MOFA Online Attestation in Pakistan: How It Works EB-2 NIW Green Card from Pakistan: Where It Stands Express Entry in 2026 So Far: What 62 Rounds Show Ontario’s $80,000 Points Change: Who It Helps What we cover The topics behind the videos A video is a quick update."
     ]
    },
    "schema": [
     "BreadcrumbList",
     "ContactPoint",
+    "ItemList",
     "ListItem",
     "LocalBusiness",
     "OpeningHoursSpecification",
     "Person",
     "PostalAddress",
     "ProfessionalService",
+    "VideoObject",
     "WebPage",
     "WebSite"
    ],
@@ -18075,18 +18116,17 @@
    },
    "internalInCopy": [
     "/book-consultation",
-    "/canada-immigration-from-pakistan",
-    "/blog/austria-red-white-red-card",
+    "/canada-visa-refused",
+    "/usa",
     "/blog/mofa-online-attestation",
+    "/work-permit-canada",
+    "/europe",
+    "/blog/austria-red-white-red-card",
     "/blog/eb2-niw-pakistan",
     "/blog/express-entry-2026-so-far",
     "/blog/ontario-higher-earners-2026",
     "/express-entry/draws",
-    "/pnp",
-    "/work-permit-canada",
-    "/canada-visa-refused",
-    "/usa",
-    "/europe"
+    "/pnp"
    ],
    "internalAll": [
     "/canada-immigration-from-pakistan",
@@ -18173,8 +18213,8 @@
     "/book-consultation",
     "/immigration-consultant-lahore",
     "/immigration-consultant-islamabad",
-    "/blog/austria-red-white-red-card",
     "/blog/mofa-online-attestation",
+    "/blog/austria-red-white-red-card",
     "/blog/eb2-niw-pakistan",
     "/blog/express-entry-2026-so-far",
     "/blog/ontario-higher-earners-2026",
@@ -18185,7 +18225,7 @@
     "https://www.youtube.com/channel/UC7yaY91cb22ZPnBPJyGBNBg",
     "https://wa.me/923350001111?text=Hi%2C%20I%20watched%20one%20of%20your%20videos%20and%20would%20like%20to%20ask%20about%20my%20case.%20%5BRef%3A%20WP-7ZW7%5D"
    ],
-   "images": 0,
+   "images": 8,
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/",
@@ -18193,7 +18233,7 @@
    ],
    "inboundAll": 90,
    "brokenInternal": [],
-   "uniqueWords": 296,
+   "uniqueWords": 361,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-23",
@@ -19459,10 +19499,10 @@
    "location": null,
    "robotsHeader": null,
    "metaRobots": "index, follow",
-   "title": "Super Visa for parents and grandparents | Tashfeen",
+   "title": "Super Visa for Parents and Grandparents | Tashfeen",
    "description": "How the Super Visa differs from a visitor visa, what the inviting child or grandchild must prove, and how it compares with sponsoring parents for PR.",
    "canonical": "https://tashfeenimmigrationsolutions.com/visitor-visa/super-visa",
-   "ogTitle": "Super Visa for parents and grandparents | Tashfeen",
+   "ogTitle": "Super Visa for Parents and Grandparents | Tashfeen",
    "ogImage": "https://tashfeenimmigrationsolutions.com/opengraph-image?58a93ae3785c8261",
    "h1s": [
     "The Super Visa for parents and grandparents"

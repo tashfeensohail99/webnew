@@ -316,7 +316,8 @@ export default function LmiaExemptPage() {
           <p>
             A business owner or self-employed professional in Pakistan who can build a credible case
             for a Canadian business may fit the C11 route. Our C11 work permit page covers what a file
-            without a conventional job offer actually requires, and who it doesn’t suit.
+            without a conventional job offer actually requires, and who it doesn’t suit. The business
+            plan carries most of that case, so read <Link href="/work-permit-canada/business-plan" className="font-semibold text-accent-500 link-underline">what a C11 business plan has to show</Link>.
           </p>
         </Prose>
         <div className="mt-8">

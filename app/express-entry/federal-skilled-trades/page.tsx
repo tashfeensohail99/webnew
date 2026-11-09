@@ -221,8 +221,8 @@ export default function FederalSkilledTradesPage() {
         />
         <Prose>
           <p>
-            The trades programme sets a lower language standard than the Federal Skilled Worker
-            Program, which is the single reason most tradespeople look at it. But it is not one
+            The trades programme sets a lower language standard than the{' '}
+            <Link href="/express-entry/federal-skilled-worker" className="font-semibold text-accent-500 link-underline">Federal Skilled Worker Program</Link>, which is the single reason most tradespeople look at it. But it is not one
             number. The minister sets a threshold for each of the four abilities, and speaking and
             listening are held to a higher standard than reading and writing.
           </p>

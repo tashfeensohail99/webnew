@@ -135,7 +135,7 @@ export default function PakistanMedicalExamPage() {
                 health must be protected — health care, clinical labs, schools, child care, in-home care.
               </li>
               <li>
-                <strong className="text-ink-900">Super visa</strong> parents and grandparents always need one.
+                <Link href="/visitor-visa/super-visa" className="font-semibold text-accent-500 link-underline">Super visa</Link> parents and grandparents always need one.
               </li>
             </ul>
             <div className="mt-5">

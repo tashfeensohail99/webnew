@@ -397,7 +397,7 @@ export default function BusinessImmigrationPage() {
             The work-permit mechanics — including which permits require a Labour Market Impact
             Assessment and which do not — are set out on{' '}
             <Link
-              href="/work-permit-canada"
+              href="/work-permits"
               className="font-semibold text-accent-500 link-underline"
             >
               our Canadian work permit page

@@ -75,14 +75,15 @@ export default function ExpressEntry2026() {
       </div>
 
       <p>
-        The two biggest groups — Canadian Experience Class and French — account for 113,250 of the
+        The two biggest groups — <Link href="/express-entry/canadian-experience-class" className={a}>Canadian Experience Class</Link> and French — account for 113,250 of the
         year’s invitations between them. Provincial Nominee Program rounds were the most frequent, but
         small; their cut-offs look high because a nomination adds 600 points to a CRS score.
       </p>
 
       <h2>What this means if you are applying from Pakistan</h2>
       <p>
-        Most applicants in Pakistan or the Gulf enter the pool under the Federal Skilled Worker Program,
+        Most applicants in Pakistan or the Gulf enter the pool under the{' '}
+        <Link href="/express-entry/federal-skilled-worker" className={a}>Federal Skilled Worker Program</Link>,
         without Canadian work experience. For them, 2026 has worked like this:
       </p>
       <ul>

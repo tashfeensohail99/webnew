@@ -207,6 +207,10 @@ export default function EuropePage() {
             </FeatureCard>
           ))}
         </div>
+        <p className="mt-8 max-w-3xl text-ink-600 text-pretty">
+          For a European work route that is still running, read about{' '}
+          <Link href="/blog/austria-red-white-red-card" className="font-semibold text-accent-500 link-underline">Austria’s Red-White-Red Card from Pakistan</Link>.
+        </p>
       </Section>
 
       {/* =========================== Caribbean — on a clock =========================== */}

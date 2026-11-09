@@ -365,7 +365,8 @@ export default function SuperVisaPage() {
               thrown away. If you are looking for a way for a parent to work in Canada, this visa
               forbids it. And if the person inviting you is a sibling, an uncle, a cousin or a family
               friend rather than your own child or grandchild, you are not eligible at all — no matter
-              how the relationship is described on the invitation letter.
+              how the relationship is described on the{' '}
+              <Link href="/visitor-visa/invitation-letter" className="font-semibold text-accent-500 link-underline">invitation letter</Link>.
             </p>
           </Callout>
         </div>

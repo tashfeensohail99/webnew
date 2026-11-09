@@ -330,6 +330,9 @@ export default function StudyInCanadaPage() {
             </li>
           ))}
         </ol>
+        <p className="mt-8 max-w-3xl text-ink-600 text-pretty">
+          Prefer to talk it through in person? Visit <Link href="/immigration-consultant-lahore" className="font-semibold text-accent-500 link-underline">our Lahore office</Link> or <Link href="/immigration-consultant-islamabad" className="font-semibold text-accent-500 link-underline">our Islamabad office</Link>.
+        </p>
       </Section>
 
       {/* ===================== AFTER YOU ARRIVE ===================== */}

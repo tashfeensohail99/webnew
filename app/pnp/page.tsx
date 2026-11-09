@@ -250,7 +250,7 @@ export default function PnpPage() {
               independently at the second stage. You need both to succeed. Either one can end it.
             </p>
             <p>
-              Quebec sits outside this entirely, selecting under its own agreement, and one
+              <Link href="/quebec-immigration" className="font-semibold text-accent-500 link-underline">Quebec</Link> sits outside this entirely, selecting under its own agreement, and one
               territory does not operate a nominee programme at all. Everywhere else, the two-stage
               shape above holds.
             </p>

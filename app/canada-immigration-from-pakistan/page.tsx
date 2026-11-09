@@ -232,7 +232,7 @@ const DOCUMENTS: { title: string; body: ReactNode; guide?: string }[] = [
     title: 'Proof of funds',
     body: (
       <>
-        For Federal Skilled Worker and for study, money that is genuinely yours and available.{' '}
+        For <Link href="/express-entry/federal-skilled-worker" className="font-semibold text-accent-500 link-underline">Federal Skilled Worker</Link> and for study, money that is genuinely yours and available.{' '}
         <Official href={IRCC.proofOfFunds}>IRCC publishes the amounts</Official> — and a large
         deposit with no history is read as borrowed.
       </>
@@ -240,7 +240,13 @@ const DOCUMENTS: { title: string; body: ReactNode; guide?: string }[] = [
   },
   {
     title: 'Translations',
-    body: 'Anything in Urdu — a nikah nama, a family registration certificate, a degree transcript — needs a certified translation into English or French.',
+    body: (
+      <>
+        Anything in Urdu — a nikah nama, a family registration certificate, a degree transcript — needs a
+        certified translation into English or French. If a receiving body asks for attested documents,
+        read how <Link href="/blog/mofa-online-attestation" className="font-semibold text-accent-500 link-underline">MOFA online attestation</Link> works.
+      </>
+    ),
   },
 ];
 
@@ -411,7 +417,9 @@ export default function CanadaFromPakistanPage() {
           economic route needs, and a provincial nomination can transform a federal profile. The
           detailed rules change often, particularly at provincial level, so check anything you read on
           any website, including this one, against <Official href={IRCC.home}>IRCC</Official> and the{' '}
-          <Official href={IRCC.provincial}>relevant provincial programme page</Official>.
+          <Official href={IRCC.provincial}>relevant provincial programme page</Official>. Three smaller
+          routes have their own guides: the <Link href="/rural-community-immigration" className="font-semibold text-accent-500 link-underline">Rural Community Immigration Pilot</Link>,{' '}
+          <Link href="/caregivers" className="font-semibold text-accent-500 link-underline">caregiver routes</Link> and <Link href="/quebec-immigration" className="font-semibold text-accent-500 link-underline">Quebec’s separate system</Link>.
         </p>
       </Section>
 
@@ -443,6 +451,10 @@ export default function CanadaFromPakistanPage() {
               not the firm for you. If you cannot document where your funds came from, or you are
               being encouraged to submit an employment history that is not yours, stop — a
               misrepresentation finding is far worse than a refusal and follows you for years.
+            </p>
+            <p className="mt-3">
+              Before you pay anyone, including us,{' '}
+              <Link href="/canadian-immigration-lawyer-pakistan" className="font-semibold text-accent-500 link-underline">check that they are authorised to represent you</Link>.
             </p>
           </Callout>
         </div>
@@ -529,6 +541,10 @@ export default function CanadaFromPakistanPage() {
                 fees page
               </Link>
               , in writing, before you commit to anything.
+            </p>
+            <p className="mt-3">
+              Prefer to talk it through in person? Visit our <Link href="/immigration-consultant-lahore" className="font-semibold text-accent-500 link-underline">immigration consultants in Lahore</Link> or our{' '}
+              <Link href="/immigration-consultant-islamabad" className="font-semibold text-accent-500 link-underline">immigration consultants in Islamabad</Link>.
             </p>
           </Callout>
         </div>
