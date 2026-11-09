@@ -32,6 +32,32 @@ const LEGACY_REDIRECTS = [
   // truncates them), so match on the stem.
   ['/how-to-raise-your-express-entry-crs-score:rest(.*)', '/tools/crs-calculator'],
   ['/importance-of-crs-for-canadian-immigration:rest(.*)', '/tools/crs-calculator'],
+  // Old articles whose topic a live page now covers, from Search Console's 404
+  // list on 10 November 2026, approved by the owner. Each goes to the page on its
+  // own topic, never the homepage, for the reason in the note above.
+  ['/dual-intent-in-canadian-immigration', '/canada-visit-visa'],
+  ['/crucial-facts-about-financing-proof', '/study-in-canada/proof-of-funds'],
+  ['/the-role-of-visa-and-immigration-lawyers-in-canadian-immigration', '/canadian-immigration-lawyer-pakistan'],
+  ['/what-is-intra-company-transfer', '/work-permits/intra-company-transfer'],
+  ['/the-best-canadian-immigration-programs', '/canada-immigration-from-pakistan'],
+  ['/immigration-point-system-for-canada', '/tools/crs-calculator'],
+  ['/video/labour-market-impact-assessment-how-you-can-get-yourself-a-work-permit-through-this-route', '/work-permits/lmia'],
+  ['/create-a-job-for-yourself-in-canada', '/work-permit-canada'],
+  ['/how-to-invest-in-a-business-and-immigrate-to-canada', '/business-immigration'],
+  ['/citizenship-by-investment/investing-in-canada', '/business-immigration'],
+  ['/canadian-immigration/investing-in-canada', '/business-immigration'],
+  ['/citizenship-by-investment/judicial-review', '/refusals/judicial-review'],
+  ['/citizenship-by-investment/entrepreneur', '/business-immigration'],
+  ['/canadian-immigration/global-skilled-strategy', '/work-permits/global-talent-stream'],
+  ['/united-states-of-america', '/usa'],
+  ['/united-states-of-america/us-eb5-immigrant-investor-program', '/usa'],
+  ['/united-kingdom', '/uk'],
+  ['/united-kingdom/united-kingdom-expansion-worker', '/uk'],
+  ['/portugal-golden-visa-program', '/europe'],
+  ['/steps-to-prepare-a-pr-application', '/canada-immigration-from-pakistan'],
+  ['/how-to-qualify-for-the-start-up-visa', '/business-immigration'],
+  ['/video/owner-operator-immigration-business-immigration-series-1english-version', '/business-immigration'],
+  ['/employment-openings-in-canada', '/work-permits'],
 ];
 
 /**
