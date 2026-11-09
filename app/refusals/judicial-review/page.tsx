@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { MidPagePrompt } from '@/components/MidPagePrompt';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -149,6 +151,7 @@ export default function JudicialReviewPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/refusals/judicial-review" />
 
       {/* ===================== WHAT IT IS ===================== */}
       <Section tone="paper">
@@ -336,6 +339,8 @@ export default function JudicialReviewPage() {
         </Prose>
       </Section>
 
+      <MidPagePrompt kind="refusal" />
+
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="alt">
         <SectionHeading eyebrow="Being honest about fit" title="Who judicial review does not suit" />
@@ -406,7 +411,10 @@ export default function JudicialReviewPage() {
           <p>
             What we can honestly do is the part that comes first, and it is not a small part: read
             the refusal and the officer’s notes and tell you what was actually decided and on what
-            basis, so that your file is intelligible when it reaches a lawyer. Whether there is a
+            basis, so that your file is intelligible when it reaches a lawyer.
+          </p>
+          <p>
+            Whether there is a
             reviewable error, which filing period applies, and what should be filed are questions for
             Canadian counsel — not for us, and nothing on this page is legal advice about your
             proceeding. Where the refusal reads like a documentation problem rather than a

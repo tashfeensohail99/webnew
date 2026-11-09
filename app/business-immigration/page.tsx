@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { MidPagePrompt } from '@/components/MidPagePrompt';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -153,6 +155,7 @@ export default function BusinessImmigrationPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/business-immigration" />
 
       {/* ===================== THE CLOSURE ===================== */}
       <Section tone="paper">
@@ -305,6 +308,8 @@ export default function BusinessImmigrationPage() {
             examples, as of 8 November 2026: Ontario says all its streams are closed except the
             Workforce Priority stream, which is built around job offers rather than business owners,
             and Saskatchewan permanently closed its Entrepreneur and Farm pathways on 27 March 2025.
+          </p>
+          <p>
             Start from the provincial page for the place you would genuinely live:{' '}
             <Link href="/pnp/ontario" className="font-semibold text-accent-500 link-underline">
               Ontario
@@ -374,7 +379,10 @@ export default function BusinessImmigrationPage() {
             first, this is the route usually being described when someone says “owner-operator”. Be
             aware that “owner-operator” is not the name of a programme. There is no dedicated
             owner-operator immigration stream; there was once a distinct facilitated treatment for
-            owner-operators within the labour market assessment process, and it was withdrawn. A
+            owner-operators within the labour market assessment process, and it was withdrawn.
+          </p>
+          <p>
+            A
             business owner today applies through the ordinary work-permit framework — either with a
             labour market assessment, or under one of the exemptions, most commonly the one for work
             that brings a significant benefit to Canada. Which applies depends on the facts, and the
@@ -427,6 +435,8 @@ export default function BusinessImmigrationPage() {
           </p>
         </Prose>
       </Section>
+
+      <MidPagePrompt kind="general" />
 
       {/* ===================== WHAT GOES WRONG ===================== */}
       <Section tone="alt">
@@ -587,7 +597,10 @@ export default function BusinessImmigrationPage() {
             >
               IRCC program delivery instructions for foreign workers
             </a>
-            . Each provincial entrepreneur stream — including whether it currently exists and is open
+            .
+          </p>
+          <p>
+            Each provincial entrepreneur stream — including whether it currently exists and is open
             — is published by that province’s own immigration authority, and the underlying legal
             framework sits in the{' '}
             <a

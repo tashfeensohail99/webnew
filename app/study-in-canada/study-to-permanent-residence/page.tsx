@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -141,6 +142,7 @@ export default function StudyToPermanentResidencePage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/study-in-canada/study-to-permanent-residence" />
 
       {/* ===================== THE SHAPE OF THE ROUTE ===================== */}
       <Section tone="paper">
@@ -364,7 +366,10 @@ export default function StudyToPermanentResidencePage() {
             <strong>The study permit itself was built as a PR application.</strong> A study permit is a
             temporary-residence application, and the officer has to be satisfied you would leave at the
             end of your authorised stay. To be clear about a point that is widely misstated: hoping to
-            immigrate later does not by itself sink a study permit. Canadian law expressly contemplates
+            immigrate later does not by itself sink a study permit.
+          </p>
+          <p>
+            Canadian law expressly contemplates
             &ldquo;dual intent&rdquo; — under{' '}
             <a
               href="https://laws.justice.gc.ca/eng/acts/i-2.5/section-22.html"

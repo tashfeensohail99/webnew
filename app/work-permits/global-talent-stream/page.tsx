@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -131,6 +132,7 @@ export default function GlobalTalentStreamPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/work-permits/global-talent-stream" />
 
       {/* ===================== WHAT IT IS ===================== */}
       <Section tone="paper">

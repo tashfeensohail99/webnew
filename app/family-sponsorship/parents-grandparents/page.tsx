@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -143,6 +144,7 @@ export default function ParentsGrandparentsPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/family-sponsorship/parents-grandparents" />
 
       {/* ===================== HOW IT WORKS ===================== */}
       <Section tone="paper">
@@ -321,7 +323,10 @@ export default function ParentsGrandparentsPage() {
             the short visits a standard visitor visa contemplates. It requires a supporting invitation
             from the child or grandchild in Canada, evidence that they meet an income threshold, and
             private medical insurance meeting IRCC&rsquo;s minimum coverage amount and validity
-            period. Those requirements, and the length of stay each entry allows, are set out on{' '}
+            period.
+          </p>
+          <p>
+            Those requirements, and the length of stay each entry allows, are set out on{' '}
             <a
               href="https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/eligibility.html"
               className="font-semibold text-accent-500 link-underline"

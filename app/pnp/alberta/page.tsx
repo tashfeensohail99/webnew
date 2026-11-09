@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -157,6 +158,7 @@ export default function AlbertaPnpPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/pnp/alberta" />
 
       {/* ===================== WHAT ALBERTA WANTS ===================== */}
       <Section tone="paper">
@@ -202,7 +204,10 @@ export default function AlbertaPnpPage() {
                 a profile in the federal pool and be eligible for one of the federal programmes in your
                 own right. The province nominates you inside that system, and an accepted nomination
                 adds points to your federal ranking — enough that nominated candidates sit near the top
-                of the pool. IRCC also holds invitation rounds open only to candidates who already hold
+                of the pool.
+              </p>
+              <p>
+                IRCC also holds invitation rounds open only to candidates who already hold
                 a nomination. That improves your position, but IRCC still decides when to run a
                 round and where the cut-off falls. The points value and the deadline for accepting a
                 nomination are set by IRCC and published on its provincial nominees pages.

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -135,6 +136,7 @@ export default function FederalSkilledTradesPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/express-entry/federal-skilled-trades" />
 
       {/* ===================== WHO IT FITS ===================== */}
       <Section tone="paper">

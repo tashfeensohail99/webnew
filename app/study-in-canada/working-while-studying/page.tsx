@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -142,6 +143,7 @@ export default function WorkingWhileStudyingPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/study-in-canada/working-while-studying" />
 
       {/* ===================== THE CORE IDEA ===================== */}
       <Section tone="paper">
@@ -286,7 +288,10 @@ export default function WorkingWhileStudyingPage() {
             off-campus employment. For a long time it required its own document, applied for alongside
             or after the study permit. Since 1 April 2026, eligible post-secondary students no longer
             need a separate work permit for a placement their programme requires, and may work for
-            employers approved by their school. Older advice, including from people who studied in
+            employers approved by their school.
+          </p>
+          <p>
+            Older advice, including from people who studied in
             Canada a few years ago, is now wrong on this point. If you are not a post-secondary student,
             or are unsure you meet the criteria, check{' '}
             <a
@@ -347,7 +352,10 @@ export default function WorkingWhileStudyingPage() {
           <p>
             <strong>Assuming the study-permit conditions carry you past graduation.</strong> The
             interval between finishing your programme and holding a post-graduation work permit is
-            governed by its own rule, not by the conditions that let you work as a student. That rule
+            governed by its own rule, not by the conditions that let you work as a student.
+          </p>
+          <p>
+            That rule
             can authorise work while a post-graduation application is pending, but only where a
             specific set of requirements is met — about the permit you held, when you apply, and
             whether you stayed within your student work conditions throughout. It is not automatic, and

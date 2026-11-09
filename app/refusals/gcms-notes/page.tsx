@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -124,6 +125,7 @@ export default function GcmsNotesPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/refusals/gcms-notes" />
 
       {/* ===================== THE GAP ===================== */}
       <Section tone="paper">
@@ -181,7 +183,10 @@ export default function GcmsNotesPage() {
               >
                 section 72 of the Act
               </a>
-              , read at the source on 8 November 2026). Requesting your notes does not pause that, and
+              , read at the source on 8 November 2026).
+            </p>
+            <p>
+              Requesting your notes does not pause that, and
               waiting for a reply can use up much of it. If you may want a court to look at this decision, read about{' '}
               <Link href="/refusals/judicial-review" className="font-semibold text-accent-500 link-underline">
                 judicial review
@@ -268,7 +273,10 @@ export default function GcmsNotesPage() {
             not have the same entry requirements. A request for <em>your own personal information</em>{' '}
             falls under the <strong>Privacy Act</strong>, and IRCC states that Canadian citizens,
             permanent residents and foreign nationals can use it regardless of where they are
-            located. A broader request for departmental records falls under the{' '}
+            located.
+          </p>
+          <p>
+            A broader request for departmental records falls under the{' '}
             <strong>Access to Information Act</strong>, which IRCC states is open to Canadian
             citizens, permanent residents and people present in Canada — and if you are none of
             those, that request has to be made by a representative who is, with your written
@@ -320,7 +328,10 @@ export default function GcmsNotesPage() {
             <p>
               This route doesn’t suit you if any of the following is true. If you already know
               precisely why you were refused — the officer said it plainly, you recognise it, and
-              you can state it in one sentence — you may not need the notes at all. If IRCC sent an
+              you can state it in one sentence — you may not need the notes at all.
+            </p>
+            <p>
+              If IRCC sent an
               officer decision note with your refusal letter and it answers your question, you are
               already holding the reasoning; don’t pay anyone, including us, to fetch more. If you are comfortable filing the
               personal-information request yourself, do that — it is your own record and the

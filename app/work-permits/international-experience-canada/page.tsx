@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -142,6 +143,7 @@ export default function IecPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/work-permits/international-experience-canada" />
 
       {/* ===================== THE ANSWER, FIRST ===================== */}
       <Section tone="paper">

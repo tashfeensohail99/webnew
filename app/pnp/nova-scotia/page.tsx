@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -152,6 +153,7 @@ export default function NovaScotiaPnpPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/pnp/nova-scotia" />
 
       {/* ===================== WHAT THE PROVINCE WANTS ===================== */}
       <Section tone="paper">

@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { MidPagePrompt } from '@/components/MidPagePrompt';
+import { OnThisPage } from '@/components/OnThisPage';
 import type { ReactNode } from 'react';
 import Link from 'next/link';
 import {
@@ -284,6 +286,7 @@ export default function WorkPermitPage() {
           Ask about your case
         </WhatsAppCta>
       </PageHero>
+      <OnThisPage path="/work-permit-canada" />
 
       <StatBand
         items={[
@@ -574,6 +577,8 @@ export default function WorkPermitPage() {
           ))}
         </ol>
       </Section>
+
+      <MidPagePrompt kind="general" />
 
       {/* ===================== FROM PAKISTAN ===================== */}
       <Section tone="alt">

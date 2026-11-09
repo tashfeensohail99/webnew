@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -179,6 +180,7 @@ export default function PeiPnpPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/pnp/prince-edward-island" />
 
       {/* ===================== WHAT A NOMINATION IS ===================== */}
       <Section tone="paper">

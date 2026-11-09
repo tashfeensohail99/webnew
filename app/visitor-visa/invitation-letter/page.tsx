@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -144,6 +145,7 @@ export default function InvitationLetterPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/visitor-visa/invitation-letter" />
 
       {/* ===================== WHAT IT IS ===================== */}
       <Section tone="paper">
@@ -341,7 +343,10 @@ export default function InvitationLetterPage() {
               visitor visa. The Immigration and Refugee Protection Act expressly provides that an
               intention to become a permanent resident does not prevent someone from becoming a
               temporary resident, provided the officer is satisfied they will leave Canada by the end of
-              the period authorised for their stay. What that means in practice is that the officer must
+              the period authorised for their stay.
+            </p>
+            <p>
+              What that means in practice is that the officer must
               still be satisfied about departure — and a host’s letter is not the document that satisfies
               it. If settling is the goal, the invitation letter is not the lever;{' '}
               <Link

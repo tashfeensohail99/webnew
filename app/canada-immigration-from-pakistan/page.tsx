@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { MidPagePrompt } from '@/components/MidPagePrompt';
+import { OnThisPage } from '@/components/OnThisPage';
 import type { ReactNode } from 'react';
 import Link from 'next/link';
 import {
@@ -362,6 +364,7 @@ export default function CanadaFromPakistanPage() {
           Ask on WhatsApp
         </WhatsAppCta>
       </PageHero>
+      <OnThisPage path="/canada-immigration-from-pakistan" />
 
       {/* ======================= THE SHAPE OF IT ======================= */}
       <Section tone="paper">
@@ -479,6 +482,8 @@ export default function CanadaFromPakistanPage() {
           ))}
         </ol>
       </Section>
+
+      <MidPagePrompt kind="general" />
 
       {/* ======================== WHAT YOU NEED ======================== */}
       <Section tone="paper">

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import type { ReactNode } from 'react';
 import Link from 'next/link';
 import {
@@ -217,6 +218,7 @@ export default function StudyInCanadaPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/study-in-canada" />
 
       {/* ===================== WHO IT FITS ===================== */}
       <Section tone="paper">
@@ -239,7 +241,10 @@ export default function StudyInCanadaPage() {
               If you are enrolling in a programme you have no interest in, at whatever institution
               will admit you, because someone told you study is the cheap way into permanent
               residence — this route is not for you and we will say so. That plan fails in two
-              places. An officer who does not believe you are a genuine student refuses the permit,
+              places.
+            </p>
+            <p>
+              An officer who does not believe you are a genuine student refuses the permit,
               and a refusal sits on your record for years. And if the permit is granted, you have
               bought a qualification you did not want, at foreign-student prices, with no PR at the
               end of it. It is an expensive mistake.

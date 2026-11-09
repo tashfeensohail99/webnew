@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -143,6 +144,7 @@ export default function CaregiverWorkPermitsPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/work-permits/caregivers" />
 
       {/* ===================== WHAT THE ROUTE IS ===================== */}
       <Section tone="paper">
@@ -333,7 +335,10 @@ export default function CaregiverWorkPermitsPage() {
               , an employer and anyone recruiting for them must not charge or recover recruitment fees
               from the worker, and must not recover the labour market assessment processing fee from
               you. Several provinces additionally license recruiters and restrict what they may
-              charge. So a demand for payment to secure a caregiving placement is either theft, an
+              charge.
+            </p>
+            <p>
+              So a demand for payment to secure a caregiving placement is either theft, an
               invented employer, or a real employer being pushed into breaking the rules that bind
               them. Any of the three can end with a misrepresentation finding and a bar on applying
               again — against you, not against the person who took the money.
@@ -457,7 +462,10 @@ export default function CaregiverWorkPermitsPage() {
             >
               Immigration and Refugee Protection Regulations
             </a>
-            . If you are in an abusive situation with an employer, IRCC publishes what is available to
+            .
+          </p>
+          <p>
+            If you are in an abusive situation with an employer, IRCC publishes what is available to
             you through the{' '}
             <a
               href="https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/special-instructions/vulnerable-workers.html"

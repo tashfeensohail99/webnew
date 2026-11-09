@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -149,6 +150,7 @@ export default function DependentChildrenPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/family-sponsorship/dependent-children" />
 
       {/* ===================== WHO QUALIFIES ===================== */}
       <Section tone="paper">

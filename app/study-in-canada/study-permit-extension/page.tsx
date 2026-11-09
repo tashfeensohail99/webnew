@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -143,6 +144,7 @@ export default function StudyPermitExtensionPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/study-in-canada/study-permit-extension" />
 
       {/* ===================== WHY IT MATTERS ===================== */}
       <Section tone="paper">
@@ -199,7 +201,10 @@ export default function StudyPermitExtensionPage() {
               There is a second trap underneath that. A study permit does not always run to its printed
               date: under section 222 of the Regulations it becomes invalid 90 days after you complete
               your studies, whichever comes first — and completion can be triggered by something as
-              ordinary as your school issuing final results. It also becomes invalid on the day you
+              ordinary as your school issuing final results.
+            </p>
+            <p>
+              It also becomes invalid on the day you
               are no longer enrolled at the school named in the permit, other than by completing your
               studies. Students who finish early are the ones this catches. Check the current rule on{' '}
               <a
@@ -308,7 +313,10 @@ export default function StudyPermitExtensionPage() {
             within 90 days after losing status, and once that window closes the route closes with it.
             It is <strong>conditional</strong> — you must still meet the requirements of the stay you
             are asking to have restored, you must not have breached other conditions imposed on you,
-            and you must not be subject to a declaration under section 22.1 of the Act. And it is{' '}
+            and you must not be subject to a declaration under section 22.1 of the Act.
+          </p>
+          <p>
+            And it is{' '}
             <strong>examined</strong> — an officer must restore status only if, after looking at your
             application, those conditions are met. A student who is not complying with the conditions
             in section 220.1(1) cannot be restored. A complete, timely restoration application is not

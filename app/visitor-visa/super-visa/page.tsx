@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -178,6 +179,7 @@ export default function SuperVisaPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/visitor-visa/super-visa" />
 
       {/* ===================== WHAT IT IS ===================== */}
       <Section tone="paper">
@@ -252,7 +254,10 @@ export default function SuperVisaPage() {
               The insurance is the second. The requirement is not simply “have travel insurance” — the
               policy has to cover healthcare, hospitalisation and repatriation at IRCC’s minimum
               level, run for the minimum period from entry that IRCC sets, and come from an insurer
-              IRCC accepts. That last point has changed: policies from outside Canada can now
+              IRCC accepts.
+            </p>
+            <p>
+              That last point has changed: policies from outside Canada can now
               qualify, but only where the insurer is authorised in the particular way IRCC specifies.
               A cheap policy that fails that test costs you the application. The coverage amount, the
               minimum period and the insurer test are all published by IRCC on its{' '}
@@ -362,7 +367,10 @@ export default function SuperVisaPage() {
               route — it does not lead there, and years on a Super Visa build nothing toward it. If
               your child in Canada cannot meet the income requirement for a household that includes
               your parents, the application fails on that alone, and buying insurance first is money
-              thrown away. If you are looking for a way for a parent to work in Canada, this visa
+              thrown away.
+            </p>
+            <p>
+              If you are looking for a way for a parent to work in Canada, this visa
               forbids it. And if the person inviting you is a sibling, an uncle, a cousin or a family
               friend rather than your own child or grandchild, you are not eligible at all — no matter
               how the relationship is described on the{' '}

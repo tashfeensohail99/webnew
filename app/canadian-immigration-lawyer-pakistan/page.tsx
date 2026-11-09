@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import type { ReactNode } from 'react';
 import Link from 'next/link';
 import { PageHero, Section, SectionHeading, Callout, FAQ, CTASection } from '@/components/ui';
@@ -137,6 +138,7 @@ export default function CanadianImmigrationLawyerPakistanPage() {
           IRCC: who can represent you
         </a>
       </PageHero>
+      <OnThisPage path="/canadian-immigration-lawyer-pakistan" />
 
       {/* ===================== THE RULE ===================== */}
       <Section tone="paper">

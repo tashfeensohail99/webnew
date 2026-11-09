@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { MidPagePrompt } from '@/components/MidPagePrompt';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -198,6 +200,7 @@ export default function FamilySponsorshipPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/family-sponsorship" />
 
       {/* ===================== WHO MAY SPONSOR ===================== */}
       <Section tone="paper">
@@ -472,6 +475,8 @@ export default function FamilySponsorshipPage() {
           </div>
         </div>
       </Section>
+
+      <MidPagePrompt kind="general" />
 
       {/* ===================== DEPENDENT CHILDREN ===================== */}
       <Section tone="alt">

@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { MidPagePrompt } from '@/components/MidPagePrompt';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -151,6 +153,7 @@ export default function ReconsiderationPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/refusals/reconsideration" />
 
       {/* ===================== WHAT IT IS ===================== */}
       <Section tone="paper">
@@ -213,7 +216,10 @@ export default function ReconsiderationPage() {
             Court for leave and judicial review. That route has a filing deadline fixed by
             legislation, and it is short: 15 days for a matter arising in Canada and 60 days for a
             matter arising outside Canada, after the day you are notified of the decision or
-            otherwise become aware of it. Both periods are in{' '}
+            otherwise become aware of it.
+          </p>
+          <p>
+            Both periods are in{' '}
             <a
               href="https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-72.html"
               className="font-semibold text-accent-500 link-underline"
@@ -378,6 +384,8 @@ export default function ReconsiderationPage() {
           rather than from a page like this one.
         </p>
       </Section>
+
+      <MidPagePrompt kind="refusal" />
 
       {/* ===================== WHAT GOES WRONG ===================== */}
       <Section tone="paper">

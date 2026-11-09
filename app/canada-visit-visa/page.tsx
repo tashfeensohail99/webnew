@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { MidPagePrompt } from '@/components/MidPagePrompt';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import { WhatsAppCta } from '@/components/WhatsAppCta';
 import { ReviewedBy } from '@/components/ReviewedBy';
@@ -232,6 +234,7 @@ export default function VisitVisaPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/canada-visit-visa" />
 
       {/* ===================== WHAT THIS VISA IS ===================== */}
       <Section tone="paper">
@@ -390,6 +393,8 @@ export default function VisitVisaPage() {
           <Link href="/immigration-consultant-islamabad" className="font-semibold text-accent-500 link-underline">Canada visa consultants in Islamabad</Link>.
         </p>
       </Section>
+
+      <MidPagePrompt kind="general" />
 
       {/* ===================== AFTER YOU ARRIVE ===================== */}
       <Section tone="alt">

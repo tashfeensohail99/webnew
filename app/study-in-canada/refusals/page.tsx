@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -150,6 +151,7 @@ export default function StudyPermitRefusalsPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/study-in-canada/refusals" />
 
       {/* ===================== WHAT THE LETTER IS ===================== */}
       <Section tone="paper">
@@ -182,7 +184,10 @@ export default function StudyPermitRefusalsPage() {
           <p>
             This matters because almost every decision you make next depends on which finding was
             decisive. If your refusal is older, no note came with it, or you need the fuller record,
-            you can request your GCMS notes. A request for your own information falls under the
+            you can request your GCMS notes.
+          </p>
+          <p>
+            A request for your own information falls under the
             Privacy Act and is open to people outside Canada — the eligibility rules and the current
             process are set out on the{' '}
             <a

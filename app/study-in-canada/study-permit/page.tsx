@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { MidPagePrompt } from '@/components/MidPagePrompt';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -156,6 +158,7 @@ export default function StudyPermitPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/study-in-canada/study-permit" />
 
       {/* ===================== WHAT IT IS ===================== */}
       <Section tone="paper">
@@ -171,7 +174,10 @@ export default function StudyPermitPage() {
             That last point is where most applicants are surprised. The governing regulation requires
             the officer to be satisfied that you will depart Canada by the end of your authorised
             stay. So the officer is weighing two things at once: that you are a genuine student, and
-            that you are a temporary one. Hoping to settle in Canada one day is not itself a problem:
+            that you are a temporary one.
+          </p>
+          <p>
+            Hoping to settle in Canada one day is not itself a problem:
             the Act says an intention to become a permanent resident does not stop you becoming a
             temporary resident, as long as the officer is satisfied you will leave when your stay
             ends. But applicants whose file reads as if the permit is only a way into Canada are
@@ -303,6 +309,8 @@ export default function StudyPermitPage() {
           ))}
         </ol>
       </Section>
+
+      <MidPagePrompt kind="general" />
 
       {/* ===================== WHAT GOES WRONG ===================== */}
       <Section tone="paper">

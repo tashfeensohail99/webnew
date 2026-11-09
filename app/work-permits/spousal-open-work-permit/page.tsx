@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -146,6 +147,7 @@ export default function SpousalOpenWorkPermitPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/work-permits/spousal-open-work-permit" />
 
       {/* ===================== WHAT IT IS ===================== */}
       <Section tone="paper">
@@ -422,7 +424,10 @@ export default function SpousalOpenWorkPermitPage() {
             >
               open work permit in Canada for a sponsored spouse or partner
             </a>
-            . The underlying authority sits in the{' '}
+            .
+          </p>
+          <p>
+            The underlying authority sits in the{' '}
             <a
               href="https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/"
               className="font-semibold text-accent-500 link-underline"

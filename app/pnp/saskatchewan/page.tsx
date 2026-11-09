@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -140,6 +141,7 @@ export default function SaskatchewanPnpPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/pnp/saskatchewan" />
 
       {/* ===================== WHAT THE PROVINCE WANTS ===================== */}
       <Section tone="paper">
@@ -235,7 +237,10 @@ export default function SaskatchewanPnpPage() {
                 interest, and provinces move routes between the two mechanisms — check the province’s
                 own page for the route you are considering rather than relying on this description.
                 Where an expression of interest applies, you build a profile, it is scored against the province’s own grid, and it
-                sits in a pool. Periodically the province draws from that pool and issues invitations
+                sits in a pool.
+              </p>
+              <p>
+                Periodically the province draws from that pool and issues invitations
                 to apply. A profile in a pool is not an application and gives you no status — a great
                 many people misunderstand this and assume they are in the system when they are merely
                 waiting to be looked at.
@@ -332,7 +337,10 @@ export default function SaskatchewanPnpPage() {
             Once you become a permanent resident, mobility rights under the Charter apply and nobody
             is legally confined to a province. That is a genuine legal fact and it is also how a
             particular kind of agent sells provincial nomination: apply anywhere, land, then move.
-            Understand what that advice actually is. If your stated intention was false when you
+            Understand what that advice actually is.
+          </p>
+          <p>
+            If your stated intention was false when you
             signed the application, that is misrepresentation, and the consequence is
             five years of inadmissibility under section 40 of the Act — not a fine, not a delay, a ban. We do not build files on that basis, and we
             will tell you so plainly rather than take the fee.

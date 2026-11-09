@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -145,6 +146,7 @@ export default function ProvincialAttestationLetterPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/study-in-canada/provincial-attestation-letter" />
 
       {/* ===================== WHAT IT IS ===================== */}
       <Section tone="paper">

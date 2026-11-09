@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -146,6 +147,7 @@ export default function BringingFamilyPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/study-in-canada/bringing-family" />
 
       {/* ===================== THE SHAPE OF IT ===================== */}
       <Section tone="paper">
@@ -197,7 +199,10 @@ export default function BringingFamilyPage() {
               A spouse and dependent children must be declared on your application whether or not they
               accompany you. This is not a formality. Two distinct risks follow from getting it wrong.
               The immediate one is misrepresentation: material information withheld from an application
-              carries consequences set out in the Immigration and Refugee Protection Act. The second
+              carries consequences set out in the Immigration and Refugee Protection Act.
+            </p>
+            <p>
+              The second
               arises much later — the Immigration and Refugee Protection Regulations restrict
               sponsoring a family member who was not examined when they should have been on an earlier
               application. Both are matters to put to a licensed representative on the facts, not to

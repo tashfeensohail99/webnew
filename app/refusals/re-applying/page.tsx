@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -160,6 +161,7 @@ export default function ReApplyingPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/refusals/re-applying" />
 
       {/* ===================== THE CORE POINT ===================== */}
       <Section tone="paper">
@@ -322,7 +324,10 @@ export default function ReApplyingPage() {
             requires, and withholding a material fact that could induce an error in administering the
             Act can support a finding of misrepresentation. That finding does not simply refuse the
             application — it carries a five-year period of inadmissibility under section 40 of the
-            Act, during which you cannot apply for permanent residence. Read the section itself for
+            Act, during which you cannot apply for permanent residence.
+          </p>
+          <p>
+            Read the section itself for
             when the five years start, rather than taking anyone’s word for it. The refusal you were trying to hide was
             survivable on its own terms; a misrepresentation finding is a different order of problem,
             and it is one a licensed representative should look at before you file anything.

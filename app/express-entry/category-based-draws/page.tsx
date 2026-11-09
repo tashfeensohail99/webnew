@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -117,6 +118,7 @@ export default function CategoryBasedDrawsPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/express-entry/category-based-draws" />
 
       {/* ===================== WHAT IT IS ===================== */}
       <Section tone="paper">
@@ -135,7 +137,10 @@ export default function CategoryBasedDrawsPage() {
             Category-based selection sits on top of that. Amendments to the{' '}
             <em>Immigration and Refugee Protection Act</em> allow the Minister to establish
             categories of candidates and to run rounds that invite from within a category rather than
-            from the pool at large. The Act does not restrict what a category may be built on: it
+            from the pool at large.
+          </p>
+          <p>
+            The Act does not restrict what a category may be built on: it
             leaves the Minister to set the eligibility criteria, subject to the conditions described
             further down this page. In practice categories have been framed around things like work
             experience and official-language ability, but the basis, the definitions and the list

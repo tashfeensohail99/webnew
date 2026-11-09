@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -151,6 +152,7 @@ export default function NewBrunswickPnpPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/pnp/new-brunswick" />
 
       {/* ===================== WHAT THE PROVINCE WANTS ===================== */}
       <Section tone="paper">
@@ -220,7 +222,10 @@ export default function NewBrunswickPnpPage() {
             >
               IRCC
             </a>
-            . Be clear about what that award does and does not do. It makes you competitive; it does not
+            . Be clear about what that award does and does not do.
+          </p>
+          <p>
+            It makes you competitive; it does not
             book you an invitation. Invitations to nominated candidates are issued through rounds that
             IRCC restricts to nominees, and IRCC alone decides when to hold one, how many candidates to
             invite and where the cut-off falls. It is also only available if you independently qualify
