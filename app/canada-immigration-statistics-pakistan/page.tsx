@@ -228,7 +228,8 @@ export default function PakistanStatisticsPage() {
     name: `Pakistani citizens admitted to Canada and holding permits, ${YEARS[0]} to ${THROUGH}`,
     description: `Yearly and monthly counts of Pakistani citizens who became Canadian permanent residents or had study or work permits take effect, compiled from Immigration, Refugees and Citizenship Canada open data. Figures are rounded by IRCC to the nearest 5 and are preliminary.`,
     url: `${site.url}${PATH}`,
-    creator: { '@id': `${site.url}/#organization` },
+    // Typed here because the site's main entity is a ProfessionalService, which Google rejects for Dataset creator.
+    creator: { '@type': 'Organization', name: site.name, url: site.url },
     isBasedOn: SOURCES.map((s) => s.href),
     license: LICENCE,
     isAccessibleForFree: true,
