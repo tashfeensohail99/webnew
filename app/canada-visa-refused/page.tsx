@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
+import { MidPagePrompt } from '@/components/MidPagePrompt';
 import Link from 'next/link';
+import { CompareTable } from '@/components/CompareTable';
 import { WhatsAppCta } from '@/components/WhatsAppCta';
 import { ReviewedBy } from '@/components/ReviewedBy';
 import {
@@ -313,6 +315,20 @@ export default function VisaRefusedPage() {
             </li>
           ))}
         </ol>
+        <h3 className="mt-14 font-serif text-2xl">The options side by side</h3>
+        <CompareTable
+          caption="Reapplying, judicial review and stopping, compared"
+          columns={['Option', 'Fits when', 'New evidence?', 'What you get', 'Time limit']}
+          rows={[
+            { label: 'Reapply', cells: ['The officer’s reasons show a fixable evidence problem', 'Yes', 'A fresh decision on a new application', 'No court deadline'] },
+            { label: 'Judicial review', cells: ['The officer made a legal error or the process was unfair', 'Generally no. The Court looks at the record the officer had', 'If you win, a new decision by a different officer, who can still refuse', '15 days for a matter arising in Canada, 60 days for one outside it, after you are notified or otherwise become aware'] },
+            { label: 'Accept and stop', cells: ['The refusal was correct and more money would not change it', 'Not applicable', 'No further cost on this application', 'None'] },
+          ]}
+        />
+        <p className="mt-4 max-w-3xl text-sm text-ink-500 text-pretty">
+          The two periods are in section 72 of the Act. A Canadian lawyer should confirm which one
+          applies to your decision and work out the date.
+        </p>
         <p className="mx-auto mt-10 max-w-3xl text-center text-ink-600 text-pretty">
           Two narrower situations have their own pages:{' '}
           <Link href="/refusals/reconsideration" className="font-semibold text-accent-500 link-underline">
@@ -351,6 +367,8 @@ export default function VisaRefusedPage() {
           </div>
         </div>
       </section>
+
+      <MidPagePrompt kind="refusal" />
 
       {/* ============================ The clock is real ============================ */}
       <Section tone="paper">

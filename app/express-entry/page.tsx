@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
+import { MidPagePrompt } from '@/components/MidPagePrompt';
+import { OnThisPage } from '@/components/OnThisPage';
 import type { ReactNode } from 'react';
 import Link from 'next/link';
+import { CompareTable } from '@/components/CompareTable';
 import {
   PageHero,
   Section,
@@ -235,6 +238,7 @@ export default function ExpressEntryPage() {
           Estimate your CRS score
         </Link>
       </PageHero>
+      <OnThisPage path="/express-entry" />
 
       {/* ===================== WHAT IT ACTUALLY IS ===================== */}
       <Section tone="paper">
@@ -284,6 +288,20 @@ export default function ExpressEntryPage() {
             </FeatureCard>
           ))}
         </div>
+        <h3 className="mt-14 font-serif text-2xl">The three programmes side by side</h3>
+        <CompareTable
+          caption="The three Express Entry programmes, compared"
+          columns={['Programme', 'Usually fits', 'Main requirement', 'Proof of funds']}
+          rows={[
+            { label: 'Federal Skilled Worker', cells: ['People in Pakistan without Canadian work experience', 'Skilled work in a qualifying occupation, language testing, and an education assessment for a foreign degree', 'Generally required'] },
+            { label: 'Canadian Experience Class', cells: ['People who have already done skilled work in Canada', 'Skilled work experience in Canada', 'Exempt'] },
+            { label: 'Federal Skilled Trades', cells: ['Qualified tradespeople', 'A Canadian certificate of qualification in the trade, or a qualifying job offer', 'Generally required'] },
+          ]}
+        />
+        <p className="mt-4 max-w-3xl text-sm text-ink-500 text-pretty">
+          Applicants authorised to work in Canada who hold a valid job offer are also exempt from
+          proof of funds. IRCC sets and updates the criteria for all three.
+        </p>
         <div className="mt-10">
           <Callout title="A note on occupations and evidence">
             <p>
@@ -325,6 +343,8 @@ export default function ExpressEntryPage() {
         </ol>
       </Section>
 
+      <MidPagePrompt kind="general" />
+
       {/* ===================== CRS + CATEGORIES ===================== */}
       <Section tone="alt">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
@@ -336,7 +356,10 @@ export default function ExpressEntryPage() {
                 else in the pool. Broadly it rewards being younger, more educated, more proficient in
                 English or French, and more experienced — plus specific additional factors such as a
                 provincial nomination, French ability, a sibling in Canada, or study completed in
-                Canada. Since 3 November 2026 it also has a Labour Market Integration factor, which
+                Canada.
+              </p>
+              <p>
+                Since 3 November 2026 it also has a Labour Market Integration factor, which
                 scores Canadian work experience or a job offer in a high-wage occupation:{' '}
                 <Official href={IRCC.crsChanges}>IRCC explains the change</Official>. We don’t
                 reproduce the points table here — IRCC maintains it and revises it, so read it at

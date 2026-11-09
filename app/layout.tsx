@@ -164,7 +164,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
                 ['/canadian-immigration-lawyer-pakistan', 'Choosing a lawyer in Pakistan'],
                 ['/updates', 'Latest updates'],
                 ['/blog', 'Blog'],
-                ['/book-consultation', 'Book a consultation'],
+                ['/book-consultation', 'Contact and book a consultation'],
                 ['/immigration-consultant-lahore', 'Lahore office'],
                 ['/immigration-consultant-islamabad', 'Islamabad office'],
                 ['/no-guarantee-policy', 'No-guarantee policy'],

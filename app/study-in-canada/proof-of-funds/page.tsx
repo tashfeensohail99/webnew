@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
   PageHero,
@@ -173,6 +174,7 @@ export default function ProofOfFundsPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <OnThisPage path="/study-in-canada/proof-of-funds" />
 
       {/* ===================== WHAT IS BEING TESTED ===================== */}
       <Section tone="paper">
@@ -343,9 +345,11 @@ export default function ProofOfFundsPage() {
             amount and nothing for the fees.
           </p>
           <p>
-            <strong>Not counting accompanying family.</strong> The requirement rises with each family
-            member who comes with you, and it is easy to prepare a file for one person and then add a
-            spouse to it late.
+            <strong>Not counting accompanying family.</strong> The requirement rises with each{' '}
+            <Link href="/study-in-canada/bringing-family" className="font-semibold text-accent-500 link-underline">
+              family member who comes with you
+            </Link>
+            , and it is easy to prepare a file for one person and then add a spouse to it late.
           </p>
           <p>
             <strong>An arranged balance.</strong> Money placed in an account for the application and

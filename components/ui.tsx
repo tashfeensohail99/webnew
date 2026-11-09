@@ -58,6 +58,8 @@ export function PageHero({
 
 /* ------------------------------ SectionHeading ----------------------------- */
 
+const headingId = (t: string) => t.toLowerCase().replace(/[’']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+
 export function SectionHeading({
   eyebrow,
   title,
@@ -72,7 +74,8 @@ export function SectionHeading({
   return (
     <div className={center ? 'mx-auto max-w-3xl text-center' : 'max-w-3xl'}>
       {eyebrow ? <p className={`eyebrow ${center ? 'justify-center' : ''}`}>{eyebrow}</p> : null}
-      <h2 className="display-2 mt-4">{title}</h2>
+      {/* The id is what the contents list links to. Must match scripts/build-sections.mjs. */}
+      <h2 id={typeof title === 'string' ? headingId(title) : undefined} className="display-2 mt-4 scroll-mt-24">{title}</h2>
       {subtitle ? <p className="lede mt-4">{subtitle}</p> : null}
     </div>
   );
@@ -220,7 +223,7 @@ export function Callout({ children, title }: { children: ReactNode; title?: Reac
   return (
     <div className="card border-l-[3px] border-l-gold-500 p-7 sm:p-8">
       {title ? <p className="font-serif text-2xl text-balance">{title}</p> : null}
-      <div className={`text-ink-600 text-pretty ${title ? 'mt-3' : ''}`}>{children}</div>
+      <div className={`text-ink-600 text-pretty [&>p+p]:mt-3 ${title ? 'mt-3' : ''}`}>{children}</div>
     </div>
   );
 }

@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
+import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
+import { CompareTable } from '@/components/CompareTable';
 import {
   PageHero,
   Section,
@@ -156,6 +158,7 @@ export default function WorkPermitsPage() {
           Check which route fits
         </Link>
       </PageHero>
+      <OnThisPage path="/work-permits" />
 
       {/* ============ THE TWO AXES ============ */}
       <Section tone="paper">
@@ -255,6 +258,18 @@ export default function WorkPermitsPage() {
             </FeatureCard>
           ))}
         </div>
+        <h3 className="mt-14 font-serif text-2xl">The main routes side by side</h3>
+        <CompareTable
+          caption="The main Canadian work permit routes, compared"
+          columns={['Route', 'LMIA needed?', 'Open or tied?', 'Starts from']}
+          rows={[
+            { label: 'Work permit without a job offer', cells: ['No', 'Built around your own business', 'A business you own or run, argued on significant benefit to Canada'] },
+            { label: 'Intra-company transfer', cells: ['No', 'Tied to the named employer and position', 'A qualifying business abroad and a related Canadian entity'] },
+            { label: 'Employer-sponsored', cells: ['Yes', 'Tied to that employer and occupation', 'A Canadian employer that receives a positive LMIA'] },
+            { label: 'Spousal and family open permits', cells: ['No', 'Open', 'A spouse’s status in Canada, in the categories IRCC specifies'] },
+            { label: 'Post-graduation work permit', cells: ['No', 'Open', 'An eligible programme completed at an eligible Canadian institution'] },
+          ]}
+        />
         <p className="mx-auto mt-10 max-w-3xl text-center text-ink-600 text-pretty">
           Other routes:{' '}
           <Link href="/work-permits/lmia-exempt" className="font-semibold text-accent-500 link-underline">LMIA-exempt permits</Link>,{' '}
