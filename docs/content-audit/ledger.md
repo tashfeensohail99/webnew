@@ -9,6 +9,19 @@ To see any page's original wording: `git show 9d17a79:<path to the page>`.
 
 
 
+
+## Batch 15: internal links (9 November 2026)
+
+- **Commit:** `1cb44cc`, live on production the same day. This is SEO Step 7.
+- **Finding:** no broken links or internal redirects, and 88 of 91 pages are one click from the homepage. Body links to important pages were the gap.
+- **Change:** 28 body links added and 1 corrected, on 18 pages. The full list with reasons is in `links/tashfeen-link-register.xlsx`.
+- **Biggest change:** body links to `/immigration-consultant-lahore` went from 3 to 7 and `/immigration-consultant-islamabad` from 2 to 6, because the homepage was outranking them.
+- **Correction:** on `/business-immigration`, "our Canadian work permit page" went to the C11 guide. It now goes to `/work-permits`.
+- **Checked before shipping:** typecheck, build, `test:crs` (66), `test:fsw` (43), `test:clb` (34). Every planned link present with its wording, no existing link lost, no links to non-sitemap addresses, 91 URLs crawled with no regressions, nothing scrolls sideways at phone width on nine pages, no JS errors.
+- **Checked on production:** the same link comparison, 91 of 91 URLs return 200, no regressions.
+- **Search:** IndexNow accepted the changed URLs. Google not asked.
+- **Left alone:** menus, breadcrumbs, FAQ answers written as plain text, and links that depend on the firm's answers.
+
 ## Batch 14: titles and descriptions (9 November 2026)
 
 - **Commit:** `40b460f`, live on production the same day. This is SEO Step 6.

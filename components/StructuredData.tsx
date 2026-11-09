@@ -52,7 +52,7 @@ function openingHours(hours: string): Record<string, unknown> {
     const n = parseInt(h, 10) % 12;
     return mer.toLowerCase() === 'pm' ? n + 12 : n;
   };
-  const t = (h: number, mm?: string) => `${String(h).padStart(2, '0')}:${mm ?? '00'}`;
+  const t = (h: number, mm?: string) => `${String(h).padStart(2, '0')}:${mm ?? '00'}:00`;
 
   return {
     openingHoursSpecification: [
@@ -159,6 +159,9 @@ export function StructuredData() {
       '@type': 'LocalBusiness',
       '@id': `${site.url}/#office-${o.city.toLowerCase()}`,
       name: `${site.name} — ${o.city}`,
+      // The page for THIS office, so Google can tie the location to it rather
+      // than sending every city search to the homepage.
+      ...(o.page ? { url: `${site.url}${o.page}` } : {}),
       parentOrganization: { '@id': `${site.url}/#organization` },
       address: {
         '@type': 'PostalAddress',

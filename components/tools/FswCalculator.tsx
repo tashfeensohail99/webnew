@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { createContext, useContext, useId, useMemo, useState } from 'react';
 import {
   scoreFsw,
   EDUCATION_LABELS,
@@ -214,7 +214,9 @@ export function FswCalculator({ digits }: { digits: string }) {
             </p>
             <p
               className={`mt-4 rounded-xl px-3 py-2 text-sm font-semibold ${
-                result.passes ? 'bg-emerald-500/15 text-emerald-200' : 'bg-rose-500/15 text-rose-200'
+                // A literal rose: --color-rose-200 is a translucent border tint
+                // in the dark theme, which left this verdict unreadable there.
+                result.passes ? 'bg-emerald-500/15 text-emerald-200' : 'bg-rose-500/15 text-[#fecdd3]'
               }`}
             >
               {result.passes ? 'Clears the pass mark' : 'Below the pass mark'}
@@ -226,7 +228,7 @@ export function FswCalculator({ digits }: { digits: string }) {
                   <dt className="text-ink-300">{l.label}</dt>
                   <dd className="shrink-0 tabular-nums">
                     <span className="font-semibold">{l.points}</span>
-                    <span className="text-ink-400"> / {l.max}</span>
+                    <span className="text-ink-300"> / {l.max}</span>
                   </dd>
                 </div>
               ))}
@@ -277,12 +279,18 @@ function Group({ title, note, children }: { title: string; note?: string; childr
   );
 }
 
+/** Ties a Row's visible label to the Select inside it, for screen readers. */
+const FieldId = createContext<string | undefined>(undefined);
+
 function Row({ label, help, children }: { label: string; help?: string; children: React.ReactNode }) {
+  const id = useId();
   return (
     <div>
-      <label className="block text-sm font-medium text-ink-900">{label}</label>
+      <label htmlFor={id} className="block text-sm font-medium text-ink-900">{label}</label>
       {help ? <p className="mt-1 text-xs text-ink-400 text-pretty">{help}</p> : null}
-      <div className="mt-2">{children}</div>
+      <div className="mt-2">
+        <FieldId.Provider value={id}>{children}</FieldId.Provider>
+      </div>
     </div>
   );
 }
@@ -296,8 +304,10 @@ function Select({
   onChange: (v: string) => void;
   options: [string, string][];
 }) {
+  const id = useContext(FieldId);
   return (
     <select
+      id={id}
       value={value}
       onChange={(e) => onChange(e.target.value)}
       className="w-full rounded-xl border border-rule bg-paper px-4 py-2.5 text-sm text-ink-900 transition-colors focus:border-gold-500"

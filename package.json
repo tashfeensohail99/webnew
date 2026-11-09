@@ -5,6 +5,7 @@
   "description": "tashfeenimmigrationsolutions.com \u2014 public marketing site",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/build-lastmod.mjs",
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",

@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useId, useMemo, useState } from 'react';
 import {
   toClb,
   readLevels,
@@ -29,6 +29,7 @@ const EMPTY: Record<Ability, string> = { speaking: '', listening: '', reading: '
 
 export function ClbConverter() {
   const [test, setTest] = useState<AnyTest>('ielts');
+  const baseId = useId();
   const [scores, setScores] = useState<Record<Ability, string>>(EMPTY);
 
   const levels = useMemo(
@@ -86,12 +87,13 @@ export function ClbConverter() {
             const entered = scores[a.key].trim() !== '';
             return (
               <div key={a.key}>
-                <label className="text-sm text-ink-600">
+                <label htmlFor={`${baseId}-${a.key}`} className="text-sm text-ink-600">
                   {a.en}
                   {french ? <span className="ml-1.5 text-xs text-ink-400">{a.fr}</span> : null}
                 </label>
                 <div className="mt-1.5 flex items-center gap-2">
                   <input
+                    id={`${baseId}-${a.key}`}
                     type="text"
                     inputMode="decimal"
                     value={scores[a.key]}

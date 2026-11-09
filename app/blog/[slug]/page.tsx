@@ -72,7 +72,9 @@ export default async function BlogPostPage({ params }: Props) {
     mainEntityOfPage: url,
     inLanguage: 'en',
     image: `${site.url}/opengraph-image`,
-    author: { '@id': `${site.url}/#organization` },
+    // Name and url repeated here because Google asks for both on the author,
+    // and the organisation itself sits in a separate JSON-LD block.
+    author: { '@type': 'Organization', '@id': `${site.url}/#organization`, name: site.name, url: site.url },
     publisher: { '@id': `${site.url}/#organization` },
     isPartOf: { '@type': 'Blog', '@id': `${site.url}/blog#blog`, name: `${site.shortName} blog` },
     citation: p.sources.map((s) => s.href),

@@ -26,6 +26,7 @@ export function RelatedGuides() {
           <li key={i.href}>
             <Link
               href={i.href}
+              prefetch={false}
               className="tap inline-flex items-center rounded-full border border-rule bg-paper px-4 text-sm text-ink-700 transition-colors hover:border-gold-500 hover:text-ink-900"
             >
               {i.label}

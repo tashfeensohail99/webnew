@@ -144,7 +144,7 @@ export function DestinationGrid() {
   return (
     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2">
       {CARDS.map((c) => (
-        <Link
+        <Link prefetch={false}
           key={c.href}
           href={c.href}
           className={`group relative overflow-hidden rounded-2xl bg-gradient-to-br ${c.tone} ${
@@ -161,7 +161,7 @@ export function DestinationGrid() {
           {/* Legibility floor under the text, independent of the artwork above it. */}
           <span className="pointer-events-none absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black/45 to-transparent" />
           <span className="absolute inset-x-6 bottom-6">
-            <span className="block text-[0.66rem] font-semibold uppercase tracking-[0.16em] text-white/75">
+            <span className="block text-xs font-semibold uppercase tracking-[0.16em] text-white/75">
               {c.kicker}
             </span>
             <span

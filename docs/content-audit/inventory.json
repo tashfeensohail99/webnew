@@ -1,7 +1,7 @@
 {
  "summary": {
   "base": "https://tashfeenimmigrationsolutions.com",
-  "crawled": "2026-11-09T07:59:14.942Z",
+  "crawled": "2026-11-09T08:16:54.796Z",
   "total": 91,
   "ok": 91,
   "inSitemap": 91,
@@ -1837,9 +1837,10 @@
    "inboundCopy": [
     "/",
     "/blog",
+    "/europe",
     "/updates"
    ],
-   "inboundAll": 3,
+   "inboundAll": 4,
    "brokenInternal": [],
    "uniqueWords": 1477,
    "repeatedBlocks": 1,
@@ -2143,6 +2144,8 @@
    },
    "internalInCopy": [
     "/tools/crs-calculator",
+    "/express-entry/canadian-experience-class",
+    "/express-entry/federal-skilled-worker",
     "/express-entry/category-based-draws",
     "/pnp",
     "/express-entry/draws",
@@ -2449,9 +2452,10 @@
     "/",
     "/blog",
     "/blog/austria-red-white-red-card",
+    "/canada-immigration-from-pakistan",
     "/updates"
    ],
-   "inboundAll": 4,
+   "inboundAll": 5,
    "brokenInternal": [],
    "uniqueWords": 752,
    "repeatedBlocks": 1,
@@ -2661,9 +2665,10 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/blog",
+    "/pnp/ontario",
     "/updates"
    ],
-   "inboundAll": 2,
+   "inboundAll": 3,
    "brokenInternal": [],
    "uniqueWords": 881,
    "repeatedBlocks": 2,
@@ -2739,7 +2744,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1161,
+   "wordCount": 1181,
    "avgSentence": 16,
    "hits": {
     "outcome": 3,
@@ -2780,6 +2785,8 @@
    },
    "internalInCopy": [
     "/about/our-team",
+    "/immigration-consultant-lahore",
+    "/immigration-consultant-islamabad",
     "/no-guarantee-policy",
     "/book-consultation"
    ],
@@ -2969,7 +2976,7 @@
    ],
    "inboundAll": 90,
    "brokenInternal": [],
-   "uniqueWords": 1129,
+   "uniqueWords": 1149,
    "repeatedBlocks": 1,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-17",
@@ -3136,6 +3143,7 @@
     "/pnp/newfoundland-labrador",
     "/quebec-immigration",
     "/pnp",
+    "/work-permits",
     "/work-permits/lmia",
     "/work-permits/lmia-exempt",
     "/work-permits/intra-company-transfer",
@@ -3410,7 +3418,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2339,
+   "wordCount": 2404,
    "avgSentence": 18,
    "hits": {
     "outcome": 4,
@@ -3458,11 +3466,19 @@
     "/business-immigration",
     "/atlantic-immigration-program",
     "/canada-visit-visa",
+    "/rural-community-immigration",
+    "/caregivers",
+    "/quebec-immigration",
+    "/canadian-immigration-lawyer-pakistan",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/medical-exam",
     "/canada-immigration-from-pakistan/biometrics",
+    "/express-entry/federal-skilled-worker",
+    "/blog/mofa-online-attestation",
     "/refusals/misrepresentation",
     "/fees",
+    "/immigration-consultant-lahore",
+    "/immigration-consultant-islamabad",
     "/about/our-team"
    ],
    "internalAll": [
@@ -3550,6 +3566,7 @@
     "/book-consultation",
     "/immigration-consultant-lahore",
     "/immigration-consultant-islamabad",
+    "/blog/mofa-online-attestation",
     "/privacy",
     "/terms"
    ],
@@ -3583,7 +3600,7 @@
    ],
    "inboundAll": 90,
    "brokenInternal": [],
-   "uniqueWords": 2155,
+   "uniqueWords": 2221,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-10-23",
@@ -3878,6 +3895,7 @@
    },
    "internalInCopy": [
     "/canada-immigration-from-pakistan",
+    "/visitor-visa/super-visa",
     "/canada-immigration-from-pakistan/police-certificate",
     "/canada-immigration-from-pakistan/biometrics",
     "/about/our-team",
@@ -4298,7 +4316,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1555,
+   "wordCount": 1565,
    "avgSentence": 16,
    "hits": {
     "outcome": 1,
@@ -4339,6 +4357,7 @@
     "/refusals/judicial-review",
     "/refusals/reconsideration",
     "/refusals/misrepresentation",
+    "/work-permit-canada/refusals",
     "/about/our-team"
    ],
    "internalAll": [
@@ -4456,7 +4475,7 @@
    ],
    "inboundAll": 90,
    "brokenInternal": [],
-   "uniqueWords": 1482,
+   "uniqueWords": 1492,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-17",
@@ -4574,7 +4593,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2148,
+   "wordCount": 2169,
    "avgSentence": 18,
    "hits": {
     "outcome": 1,
@@ -4619,6 +4638,8 @@
     "/visitor-visa/business-visitor",
     "/visitor-visa/invitation-letter",
     "/tools/visit-visa-refusal-risk",
+    "/immigration-consultant-lahore",
+    "/immigration-consultant-islamabad",
     "/visitor-visa/extension",
     "/work-permits",
     "/canada-visa-refused",
@@ -4731,7 +4752,7 @@
    ],
    "inboundAll": 90,
    "brokenInternal": [],
-   "uniqueWords": 2043,
+   "uniqueWords": 2064,
    "repeatedBlocks": 1,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-17",
@@ -4955,8 +4976,10 @@
    "inboundCopy": [
     "/",
     "/about/our-team",
+    "/canada-immigration-from-pakistan",
     "/immigration-consultant-islamabad",
-    "/immigration-consultant-lahore"
+    "/immigration-consultant-lahore",
+    "/no-guarantee-policy"
    ],
    "inboundAll": 90,
    "brokenInternal": [],
@@ -5230,6 +5253,7 @@
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
+    "/canada-immigration-from-pakistan",
     "/work-permits/caregivers"
    ],
    "inboundAll": 90,
@@ -5316,7 +5340,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1030,
+   "wordCount": 1046,
    "avgSentence": 14,
    "hits": {
     "outcome": 1,
@@ -5361,6 +5385,7 @@
    },
    "internalInCopy": [
     "/book-consultation",
+    "/blog/austria-red-white-red-card",
     "/about/our-team"
    ],
    "internalAll": [
@@ -5448,6 +5473,7 @@
     "/book-consultation",
     "/immigration-consultant-lahore",
     "/immigration-consultant-islamabad",
+    "/blog/austria-red-white-red-card",
     "/privacy",
     "/terms"
    ],
@@ -5466,7 +5492,7 @@
    ],
    "inboundAll": 90,
    "brokenInternal": [],
-   "uniqueWords": 963,
+   "uniqueWords": 982,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-17",
@@ -5984,9 +6010,11 @@
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
+    "/blog/express-entry-2026-so-far",
     "/express-entry",
     "/express-entry/category-based-draws",
     "/study-in-canada/study-to-permanent-residence",
+    "/work-permit-canada",
     "/work-permits/post-graduation"
    ],
    "inboundAll": 90,
@@ -6592,6 +6620,7 @@
    },
    "internalInCopy": [
     "/book-consultation",
+    "/express-entry/federal-skilled-worker",
     "/work-permit-canada",
     "/fees",
     "/no-guarantee-policy",
@@ -6968,8 +6997,11 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/",
+    "/blog/express-entry-2026-so-far",
+    "/canada-immigration-from-pakistan",
     "/express-entry",
-    "/express-entry/category-based-draws"
+    "/express-entry/category-based-draws",
+    "/express-entry/federal-skilled-trades"
    ],
    "inboundAll": 90,
    "brokenInternal": [],
@@ -7141,6 +7173,7 @@
     "/book-consultation",
     "/family-sponsorship/spouse-partner",
     "/family-sponsorship/parents-grandparents",
+    "/visitor-visa/super-visa",
     "/family-sponsorship/dependent-children",
     "/no-guarantee-policy",
     "/about/our-team"
@@ -8471,7 +8504,11 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/",
-    "/immigration-consultant-lahore"
+    "/book-consultation",
+    "/canada-immigration-from-pakistan",
+    "/canada-visit-visa",
+    "/immigration-consultant-lahore",
+    "/study-in-canada"
    ],
    "inboundAll": 90,
    "brokenInternal": [],
@@ -8690,7 +8727,11 @@
    "inboundCopy": [
     "/",
     "/about",
-    "/immigration-consultant-islamabad"
+    "/book-consultation",
+    "/canada-immigration-from-pakistan",
+    "/canada-visit-visa",
+    "/immigration-consultant-islamabad",
+    "/study-in-canada"
    ],
    "inboundAll": 90,
    "brokenInternal": [],
@@ -8764,7 +8805,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 882,
+   "wordCount": 891,
    "avgSentence": 14,
    "hits": {
     "outcome": 16,
@@ -8814,6 +8855,7 @@
     "modified": "2026-07-17"
    },
    "internalInCopy": [
+    "/canadian-immigration-lawyer-pakistan",
     "/about/our-team",
     "/book-consultation"
    ],
@@ -8974,7 +9016,7 @@
    ],
    "inboundAll": 90,
    "brokenInternal": [],
-   "uniqueWords": 828,
+   "uniqueWords": 837,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-17",
@@ -9127,6 +9169,7 @@
    },
    "internalInCopy": [
     "/book-consultation",
+    "/quebec-immigration",
     "/work-permit-canada",
     "/canada-visa-refused",
     "/pnp/alberta",
@@ -10982,7 +11025,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 2517,
+   "wordCount": 2537,
    "avgSentence": 17,
    "hits": {
     "outcome": 2,
@@ -11023,6 +11066,7 @@
    "internalInCopy": [
     "/book-consultation",
     "/express-entry",
+    "/blog/ontario-higher-earners-2026",
     "/refusals/misrepresentation",
     "/pnp",
     "/business-immigration",
@@ -11114,6 +11158,7 @@
     "/book-consultation",
     "/immigration-consultant-lahore",
     "/immigration-consultant-islamabad",
+    "/blog/ontario-higher-earners-2026",
     "/privacy",
     "/terms"
    ],
@@ -11136,7 +11181,7 @@
    ],
    "inboundAll": 90,
    "brokenInternal": [],
-   "uniqueWords": 2384,
+   "uniqueWords": 2404,
    "repeatedBlocks": 1,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -12144,6 +12189,8 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/business-immigration",
+    "/canada-immigration-from-pakistan",
+    "/pnp",
     "/study-in-canada/provincial-attestation-letter"
    ],
    "inboundAll": 90,
@@ -13726,6 +13773,7 @@
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
+    "/canada-immigration-from-pakistan",
     "/pnp/newfoundland-labrador"
    ],
    "inboundAll": 90,
@@ -13836,7 +13884,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1954,
+   "wordCount": 1969,
    "avgSentence": 18,
    "hits": {
     "outcome": 2,
@@ -13877,6 +13925,8 @@
     "/study-in-canada/provincial-attestation-letter",
     "/study-in-canada/proof-of-funds",
     "/study-in-canada/study-permit",
+    "/immigration-consultant-lahore",
+    "/immigration-consultant-islamabad",
     "/study-in-canada/working-while-studying",
     "/no-guarantee-policy",
     "/about/our-team"
@@ -13988,7 +14038,7 @@
    ],
    "inboundAll": 90,
    "brokenInternal": [],
-   "uniqueWords": 1861,
+   "uniqueWords": 1876,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -18702,7 +18752,8 @@
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
-    "/canada-visit-visa"
+    "/canada-visit-visa",
+    "/work-permits"
    ],
    "inboundAll": 90,
    "brokenInternal": [],
@@ -19480,7 +19531,8 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/",
-    "/canada-visit-visa"
+    "/canada-visit-visa",
+    "/visitor-visa/super-visa"
    ],
    "inboundAll": 90,
    "brokenInternal": [],
@@ -19627,6 +19679,7 @@
    },
    "internalInCopy": [
     "/book-consultation",
+    "/visitor-visa/invitation-letter",
     "/canada-visa-refused",
     "/no-guarantee-policy",
     "/about/our-team"
@@ -19727,7 +19780,9 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/",
+    "/canada-immigration-from-pakistan/medical-exam",
     "/canada-visit-visa",
+    "/family-sponsorship",
     "/family-sponsorship/parents-grandparents",
     "/visitor-visa/extension",
     "/visitor-visa/invitation-letter"
@@ -19936,6 +19991,7 @@
     "/work-permit-canada/business-plan",
     "/work-permit-canada/refusals",
     "/work-permits",
+    "/express-entry/canadian-experience-class",
     "/work-permits/lmia",
     "/work-permits/intra-company-transfer",
     "/about/our-team",
@@ -20286,7 +20342,8 @@
    "imagesNoAlt": 0,
    "inboundCopy": [
     "/work-permit-canada",
-    "/work-permit-canada/refusals"
+    "/work-permit-canada/refusals",
+    "/work-permits/lmia-exempt"
    ],
    "inboundAll": 90,
    "brokenInternal": [],
@@ -20522,6 +20579,7 @@
    "images": 0,
    "imagesNoAlt": 0,
    "inboundCopy": [
+    "/canada-visa-refused",
     "/work-permit-canada",
     "/work-permit-canada/business-plan"
    ],
@@ -20637,7 +20695,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1887,
+   "wordCount": 1906,
    "avgSentence": 17,
    "hits": {
     "outcome": 4,
@@ -20690,6 +20748,7 @@
     "/work-permits/international-experience-canada",
     "/work-permits/bridging-open-work-permit",
     "/work-permits/caregivers",
+    "/visitor-visa/business-visitor",
     "/no-guarantee-policy",
     "/canada-visa-refused",
     "/about/our-team"
@@ -20791,6 +20850,7 @@
    "inboundCopy": [
     "/",
     "/atlantic-immigration-program",
+    "/business-immigration",
     "/canada-immigration-from-pakistan",
     "/canada-visit-visa",
     "/caregivers",
@@ -20804,7 +20864,7 @@
    ],
    "inboundAll": 90,
    "brokenInternal": [],
-   "uniqueWords": 1816,
+   "uniqueWords": 1836,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",
@@ -22468,7 +22528,7 @@
     }
    ],
    "headingSkips": 0,
-   "wordCount": 1507,
+   "wordCount": 1525,
    "avgSentence": 19,
    "hits": {
     "outcome": 2,
@@ -22509,6 +22569,7 @@
     "/work-permits/international-experience-canada",
     "/work-permit-canada",
     "/work-permits/spousal-open-work-permit",
+    "/work-permit-canada/business-plan",
     "/no-guarantee-policy",
     "/about/our-team"
    ],
@@ -22617,7 +22678,7 @@
    ],
    "inboundAll": 90,
    "brokenInternal": [],
-   "uniqueWords": 1447,
+   "uniqueWords": 1465,
    "repeatedBlocks": 0,
    "inSitemap": true,
    "sitemapLastmod": "2026-07-20",

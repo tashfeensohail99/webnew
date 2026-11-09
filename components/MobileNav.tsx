@@ -184,7 +184,7 @@ export function MobileNav({
               This audience is overwhelmingly on phones, so this is the surface
               where burying those three pages cost the most. */}
           <div className="shrink-0 border-b border-white/10 px-4 py-3">
-            <p className="mb-2 text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-gold-300">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-gold-300">
               Where are you going?
             </p>
             <div className="grid grid-cols-2 gap-2">
@@ -194,6 +194,7 @@ export function MobileNav({
                   <Link
                     key={d.href}
                     href={d.href}
+                    prefetch={false}
                     className="tap flex items-center gap-2.5 rounded-xl border border-white/15 bg-white/[0.06] px-3 text-sm text-white transition-colors hover:bg-white/[0.12]"
                   >
                     {/* `flag-sm`, not `h-4 w-auto` — see globals.css. */}
@@ -216,7 +217,7 @@ export function MobileNav({
                 if (single) {
                   return (
                     <li key={g.label}>
-                      <Link href={flat[0].href} className="block py-4 text-lg text-white">
+                      <Link href={flat[0].href} prefetch={false} className="block py-4 text-lg text-white">
                         {g.label}
                       </Link>
                     </li>
@@ -249,6 +250,7 @@ export function MobileNav({
                         {g.href ? (
                           <Link
                             href={g.href}
+                            prefetch={false}
                             className="mb-2 block rounded-lg bg-white/5 px-3 py-2.5 text-sm font-semibold text-gold-300"
                           >
                             All {g.label.toLowerCase()} →
@@ -257,7 +259,7 @@ export function MobileNav({
                         {g.columns.map((col) => (
                           <div key={col.heading ?? 'x'} className="mb-3 last:mb-0">
                             {col.heading ? (
-                              <p className="px-3 pb-1 pt-2 text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-ink-400">
+                              <p className="px-3 pb-1 pt-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-400">
                                 {col.heading}
                               </p>
                             ) : null}
@@ -266,6 +268,7 @@ export function MobileNav({
                                 <li key={item.href}>
                                   <Link
                                     href={item.href}
+                                    prefetch={false}
                                     className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-[0.95rem] text-ink-200 transition-colors hover:bg-white/10 hover:text-white"
                                   >
                                     <span className="flex w-4 shrink-0 justify-center text-gold-300">

@@ -35,6 +35,8 @@ export function LiteYouTube({ id, title }: { id: string; title: string }) {
             // The button's aria-label is what a screen reader announces; the alt
             // is for image search and crawlers, which otherwise see a blank.
             alt={title}
+            width={480}
+            height={360}
             loading="lazy"
             decoding="async"
             className="h-full w-full object-cover opacity-90 transition-opacity duration-200 group-hover:opacity-100"

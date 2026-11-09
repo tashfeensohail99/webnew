@@ -45,7 +45,7 @@ const dateFmt =new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long',
 function VideoMeta({ v }: { v: Video }) {
   return (
     <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-semibold uppercase tracking-[0.14em] text-ink-500">
-      <span className="rounded-full bg-gold-500/15 px-2.5 py-1 text-gold-600">{v.topic}</span>
+      <span className="rounded-full bg-gold-500/15 px-2.5 py-1 text-ink-700">{v.topic}</span>
       <time dateTime={v.published}>{dateFmt.format(new Date(v.published))}</time>
     </p>
   );

@@ -9,13 +9,15 @@ import { SocialIcon } from '@/components/SocialIcon';
  * as the firm confirmed it. The copy around it describes how the FIRM works —
  * things already stated across the site — and puts no words in his mouth.
  *
- * The photo is served as plain responsive JPEGs (480/720/960w) rather than
- * through next/image: there is no image optimiser on the server, and a
- * portrait this size doesn't need one.
+ * The photo is served as responsive WebP (480/720/960w) with the original
+ * JPEGs as the fallback, rather than through next/image: there is no image
+ * optimiser on the server, and a portrait this size doesn't need one. The
+ * JPEGs also stay because the structured data points at the 960w file.
  */
 export function FounderFeature({ eyebrow = 'The name on the door' }: { eyebrow?: string }) {
   const { photo } = founder;
-  const src = (w: number) => `${photo.stem}-${w}.jpg`;
+  const src = (w: number, ext = 'jpg') => `${photo.stem}-${w}.${ext}`;
+  const sizes = '(min-width: 1024px) 440px, (min-width: 640px) 448px, 92vw';
 
   return (
     <div className="grid items-center gap-14 lg:grid-cols-12 lg:gap-16">
@@ -28,17 +30,24 @@ export function FounderFeature({ eyebrow = 'The name on the door' }: { eyebrow?:
         <div aria-hidden="true" className="absolute -inset-3 rounded-[2.5rem] bg-[radial-gradient(closest-side,rgba(195,161,92,0.35),transparent)] blur-2xl sm:-inset-6" />
         <div aria-hidden="true" className="absolute inset-0 translate-x-3 translate-y-3 rounded-[1.75rem] border-2 border-gold-500/70 sm:translate-x-4 sm:translate-y-4" />
         <div className="relative overflow-hidden rounded-[1.75rem] shadow-[0_30px_60px_-25px_rgba(8,19,32,0.55)] ring-1 ring-black/5">
-          <img
-            src={src(720)}
-            srcSet={photo.widths.map((w) => `${src(w)} ${w}w`).join(', ')}
-            sizes="(min-width: 1024px) 440px, (min-width: 640px) 448px, 92vw"
-            width={photo.width}
-            height={photo.height}
-            alt={`${founder.name}, ${founder.title} of Tashfeen Immigration Solutions, at the firm’s ${founder.office} office`}
-            loading="lazy"
-            decoding="async"
-            className="block aspect-[3/4] w-full object-cover"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcSet={photo.widths.map((w) => `${src(w, 'webp')} ${w}w`).join(', ')}
+              sizes={sizes}
+            />
+            <img
+              src={src(720)}
+              srcSet={photo.widths.map((w) => `${src(w)} ${w}w`).join(', ')}
+              sizes={sizes}
+              width={photo.width}
+              height={photo.height}
+              alt={`${founder.name}, ${founder.title} of Tashfeen Immigration Solutions, at the firm’s ${founder.office} office`}
+              loading="lazy"
+              decoding="async"
+              className="block aspect-[3/4] w-full object-cover"
+            />
+          </picture>
           {/* Fade so the name plate reads on any part of the photo. */}
           <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-[#081320]/85 to-transparent" />
           <span className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-[#0d1b2b] shadow-sm backdrop-blur">

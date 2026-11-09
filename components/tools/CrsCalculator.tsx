@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { createContext, useContext, useId, useMemo, useState } from 'react';
 import {
   scoreCrs,
   clbFromTest,
@@ -495,6 +495,9 @@ function Group({
   );
 }
 
+/** Ties a Row's visible label to the Select inside it, for screen readers. */
+const FieldId = createContext<string | undefined>(undefined);
+
 function Row({
   label,
   help,
@@ -504,11 +507,14 @@ function Row({
   help?: React.ReactNode;
   children: React.ReactNode;
 }) {
+  const id = useId();
   return (
     <div>
-      <label className="block text-sm font-medium text-ink-900">{label}</label>
+      <label htmlFor={id} className="block text-sm font-medium text-ink-900">{label}</label>
       {help ? <p className="mt-1 text-xs text-ink-400 text-pretty">{help}</p> : null}
-      <div className="mt-2">{children}</div>
+      <div className="mt-2">
+        <FieldId.Provider value={id}>{children}</FieldId.Provider>
+      </div>
     </div>
   );
 }
@@ -522,8 +528,10 @@ function Select({
   onChange: (v: string) => void;
   options: [string, string][];
 }) {
+  const id = useContext(FieldId);
   return (
     <select
+      id={id}
       value={value}
       onChange={(e) => onChange(e.target.value)}
       className="w-full rounded-xl border border-rule bg-paper px-4 py-2.5 text-sm text-ink-900 transition-colors focus:border-gold-500"
@@ -555,6 +563,7 @@ function AbilityGrid({
   label?: string;
 }) {
   const isRaw = test !== 'clb';
+  const baseId = useId();
   return (
     <div>
       <p className="text-sm font-medium text-ink-900">
@@ -566,9 +575,10 @@ function AbilityGrid({
           const clb = isRaw ? clbFromTest(test, a.key, raw) : Number(raw) || 0;
           return (
             <div key={a.key}>
-              <label className="text-xs text-ink-400">{a.label}</label>
+              <label htmlFor={`${baseId}-${a.key}`} className="text-xs text-ink-400">{a.label}</label>
               <div className="mt-1 flex items-center gap-2">
                 <input
+                  id={`${baseId}-${a.key}`}
                   type="text"
                   inputMode="decimal"
                   value={raw}

@@ -220,21 +220,33 @@ export default function HomePage() {
         {/* A band above the copy on phones; the right half from lg up. The
             fades melt it into the hero field in either theme. */}
         <div className="relative h-60 sm:h-80 lg:absolute lg:inset-y-0 lg:right-0 lg:h-auto lg:w-[46%]">
-          <img
-            src="/home/hero-consultation-720.webp"
-            srcSet="/home/hero-consultation-480.webp 480w, /home/hero-consultation-720.webp 720w, /home/hero-consultation-847.webp 847w"
-            // From lg the photo is cropped to the hero's height, so it renders
-            // wider than its column — always take the full-size file there.
-            sizes="(min-width: 1024px) 847px, 100vw"
-            width={847}
-            height={897}
-            alt="Canadian immigration consultation and visa guidance at Tashfeen Immigration Solutions"
-            fetchPriority="high"
-            decoding="async"
-            // `!` because the unlayered `img { height: auto }` reset in
-            // globals.css beats a plain h-full.
-            className="!h-full w-full object-cover object-[60%_62%] lg:object-center"
-          />
+          <picture>
+            {/* Phones show a short band of this photo, so they get a crop of
+                that band instead of the full-height file. This image is the
+                page's largest paint, so its bytes are what phones wait for. */}
+            <source
+              media="(max-width: 639px)"
+              srcSet="/home/hero-phone-640.webp 640w, /home/hero-phone-847.webp 847w"
+              sizes="100vw"
+              width={847}
+              height={565}
+            />
+            <img
+              src="/home/hero-consultation-720.webp"
+              srcSet="/home/hero-consultation-480.webp 480w, /home/hero-consultation-720.webp 720w, /home/hero-consultation-847.webp 847w"
+              // From lg the photo is cropped to the hero's height, so it renders
+              // wider than its column — always take the full-size file there.
+              sizes="(min-width: 1024px) 847px, 100vw"
+              width={847}
+              height={897}
+              alt="Canadian immigration consultation and visa guidance at Tashfeen Immigration Solutions"
+              fetchPriority="high"
+              decoding="async"
+              // `!` because the unlayered `img { height: auto }` reset in
+              // globals.css beats a plain h-full.
+              className="!h-full w-full object-cover object-[60%_62%] lg:object-center"
+            />
+          </picture>
           <div aria-hidden="true" className="hero-photo-fade-y absolute inset-0 lg:hidden" />
           <div aria-hidden="true" className="hero-photo-fade-x absolute inset-0 hidden lg:block" />
         </div>
@@ -262,21 +274,21 @@ export default function HomePage() {
               <p>
                 Planning to study, work, visit, or build a new life in Canada? Tashfeen Immigration
                 Solutions helps individuals, families, students, and business owners across{' '}
-                <Link href="/immigration-consultant-islamabad" className={HERO_LINK}>Islamabad</Link>,
+                <Link prefetch={false} href="/immigration-consultant-islamabad" className={HERO_LINK}>Islamabad</Link>,
                 Rawalpindi,{' '}
-                <Link href="/immigration-consultant-lahore" className={HERO_LINK}>Lahore</Link>, and
+                <Link prefetch={false} href="/immigration-consultant-lahore" className={HERO_LINK}>Lahore</Link>, and
                 Pakistan explore Canadian immigration pathways with greater confidence.
               </p>
               <p>
                 Our lawyer-led team provides personalised support for{' '}
-                <Link href="/canada-immigration-from-pakistan" className={HERO_LINK}>Canada permanent residence</Link>,{' '}
-                <Link href="/express-entry" className={HERO_LINK}>Express Entry</Link>,{' '}
-                <Link href="/pnp" className={HERO_LINK}>Provincial Nominee Programs (PNPs)</Link>,{' '}
-                <Link href="/study-in-canada/study-permit" className={HERO_LINK}>study permits</Link>,{' '}
-                <Link href="/work-permits" className={HERO_LINK}>work permits</Link>,{' '}
-                <Link href="/canada-visit-visa" className={HERO_LINK}>visitor visas</Link>,{' '}
-                <Link href="/family-sponsorship" className={HERO_LINK}>family sponsorship</Link>, and{' '}
-                <Link href="/business-immigration" className={HERO_LINK}>business immigration</Link>.
+                <Link prefetch={false} href="/canada-immigration-from-pakistan" className={HERO_LINK}>Canada permanent residence</Link>,{' '}
+                <Link prefetch={false} href="/express-entry" className={HERO_LINK}>Express Entry</Link>,{' '}
+                <Link prefetch={false} href="/pnp" className={HERO_LINK}>Provincial Nominee Programs (PNPs)</Link>,{' '}
+                <Link prefetch={false} href="/study-in-canada/study-permit" className={HERO_LINK}>study permits</Link>,{' '}
+                <Link prefetch={false} href="/work-permits" className={HERO_LINK}>work permits</Link>,{' '}
+                <Link prefetch={false} href="/canada-visit-visa" className={HERO_LINK}>visitor visas</Link>,{' '}
+                <Link prefetch={false} href="/family-sponsorship" className={HERO_LINK}>family sponsorship</Link>, and{' '}
+                <Link prefetch={false} href="/business-immigration" className={HERO_LINK}>business immigration</Link>.
               </p>
             </div>
 
@@ -325,7 +337,7 @@ export default function HomePage() {
             <ul key={copy} className="flex shrink-0 items-center" aria-hidden={copy === 1 ? true : undefined}>
               {TICKER.map(([href, label]) => (
                 <li key={href} className="flex items-center">
-                  <Link
+                  <Link prefetch={false}
                     href={href}
                     tabIndex={copy === 1 ? -1 : undefined}
                     className="whitespace-nowrap px-5 text-sm font-medium text-ink-600 transition-colors hover:text-gold-600"
@@ -373,7 +385,7 @@ export default function HomePage() {
             </p>
             <p>
               Whether you are applying for the first time or need guidance{' '}
-              <Link href="/canada-visa-refused" className="font-medium text-ink-900 underline decoration-gold-500/60 underline-offset-4 hover:decoration-gold-600">
+              <Link prefetch={false} href="/canada-visa-refused" className="font-medium text-ink-900 underline decoration-gold-500/60 underline-offset-4 hover:decoration-gold-600">
                 after a visa refusal
               </Link>
               , start with a free consultation to understand your available options and the next
@@ -443,7 +455,7 @@ export default function HomePage() {
               </>
             )}
           </p>
-          <Link
+          <Link prefetch={false}
             href="/about/our-team"
             className="mt-3 tap shrink-0 font-semibold text-accent-500 link-underline sm:mt-0"
           >
@@ -472,7 +484,7 @@ export default function HomePage() {
         >
         <div className="grid gap-6 sm:grid-cols-2">
           {SERVICES.map((s) => (
-            <Link key={s.href} href={s.href} className="card group flex flex-col p-7">
+            <Link prefetch={false} key={s.href} href={s.href} className="card group flex flex-col p-7">
               <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold-50 text-gold-600 ring-1 ring-gold-500/20">
                 <ServiceIcon name={s.icon} />
               </span>
@@ -492,7 +504,7 @@ export default function HomePage() {
 
         {/* Start-here banner: the one page that answers the question most
             visitors arrive with. */}
-        <Link
+        <Link prefetch={false}
           href="/canada-immigration-from-pakistan"
           className="card group mt-14 flex flex-col gap-4 p-7 sm:flex-row sm:items-center sm:justify-between sm:p-9"
         >
@@ -556,7 +568,7 @@ export default function HomePage() {
             ].map(([big, small, desc]) => (
               <div key={small as string} className="border-t-2 border-gold-500/70 pt-5">
                 <p className="font-serif text-5xl leading-none text-gold-300 sm:text-6xl">{big}</p>
-                <p className="mt-3 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-300">
+                <p className="mt-3 text-xs font-semibold uppercase tracking-[0.2em] text-ink-300">
                   {small}
                 </p>
                 <p className="mt-4 text-sm leading-relaxed text-ink-200 text-pretty">{desc}</p>
@@ -585,14 +597,14 @@ export default function HomePage() {
           {GUIDES.map((g) => (
             <div key={g.heading}>
               <h3 className="border-b border-rule pb-3 font-serif text-xl">
-                <Link href={g.href} className="transition-colors hover:text-gold-600">
+                <Link prefetch={false} href={g.href} className="transition-colors hover:text-gold-600">
                   {g.heading}
                 </Link>
               </h3>
               <ul className="mt-2">
                 {g.links.map(([href, label]) => (
                   <li key={href}>
-                    <Link href={href} className="tap text-[0.95rem] text-ink-600 transition-colors hover:text-gold-600">
+                    <Link prefetch={false} href={href} className="tap text-[0.95rem] text-ink-600 transition-colors hover:text-gold-600">
                       {label}
                     </Link>
                   </li>
@@ -614,14 +626,14 @@ export default function HomePage() {
               <p className="eyebrow">From the blog</p>
               <h2 className="display-2 mt-4">What just changed</h2>
             </div>
-            <Link href="/blog" className="font-semibold text-accent-500 link-underline">
+            <Link prefetch={false} href="/blog" className="font-semibold text-accent-500 link-underline">
               All posts →
             </Link>
           </div>
           <ul className="mt-10 grid gap-6 md:grid-cols-3">
             {sortedPosts().slice(0, 3).map((p) => (
               <li key={p.slug}>
-                <Link href={`/blog/${p.slug}`} className="card group flex h-full flex-col p-6 transition-transform hover:-translate-y-0.5">
+                <Link prefetch={false} href={`/blog/${p.slug}`} className="card group flex h-full flex-col p-6 transition-transform hover:-translate-y-0.5">
                   <p className="text-xs font-semibold uppercase tracking-[0.14em] text-gold-600">
                     {p.topic} · {new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${p.published}T00:00:00Z`))}
                   </p>
@@ -642,13 +654,13 @@ export default function HomePage() {
               <p className="eyebrow">Free tools</p>
               <h2 className="display-2 mt-4">Run the numbers yourself</h2>
             </div>
-            <Link href="/tools" className="tap shrink-0 font-semibold text-accent-500 link-underline">
+            <Link prefetch={false} href="/tools" className="tap shrink-0 font-semibold text-accent-500 link-underline">
               All tools →
             </Link>
           </div>
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
             {TOOLS.map(([href, title, body]) => (
-              <Link key={href} href={href} className="card group flex flex-col p-6">
+              <Link prefetch={false} key={href} href={href} className="card group flex flex-col p-6">
                 <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gold-50 text-gold-600 ring-1 ring-gold-500/20">
                   <Icon name="calculator" className="h-5 w-5" />
                 </span>
@@ -684,7 +696,7 @@ export default function HomePage() {
               before it’s filed, and put it in front of that officer properly. And if we don’t think
               you’ll succeed, we’ll say so — before you’ve paid us anything.
             </p>
-            <Link
+            <Link prefetch={false}
               href="/no-guarantee-policy"
               className="mt-6 tap font-semibold text-accent-500 link-underline"
             >
@@ -692,7 +704,7 @@ export default function HomePage() {
             </Link>
             <p className="mt-4 text-ink-600 text-pretty">
               Choosing between firms?{' '}
-              <Link href="/canadian-immigration-lawyer-pakistan" className="font-semibold text-accent-500 link-underline">
+              <Link prefetch={false} href="/canadian-immigration-lawyer-pakistan" className="font-semibold text-accent-500 link-underline">
                 How to check any Canadian immigration lawyer in Pakistan
               </Link>{' '}
               — including us.
@@ -748,7 +760,7 @@ export default function HomePage() {
               <p className="mt-3 font-serif text-xl leading-snug">{o.address}</p>
               <p className="mt-3 text-sm text-ink-600">{o.hours}</p>
               <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
-                <Link href={o.page} className="tap font-semibold text-accent-500 link-underline">
+                <Link prefetch={false} href={o.page} className="tap font-semibold text-accent-500 link-underline">
                   {OFFICE_LINK_TEXT[o.city]} →
                 </Link>
                 {o.mapUrl ? (

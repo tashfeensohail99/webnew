@@ -163,7 +163,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
               <p className="max-w-xl sm:text-right">
                 No one can guarantee the outcome of a visa application — decisions are made by visa
                 officers, not by us.{' '}
-                <Link href="/no-guarantee-policy" className="text-gold-300 underline underline-offset-2">
+                <Link href="/no-guarantee-policy" prefetch={false} className="text-gold-300 underline underline-offset-2">
                   Read our policy
                 </Link>
                 .
@@ -200,6 +200,7 @@ function FooterCol({ title, links }: { title: string; links: [string, string][] 
           <li key={href}>
             <Link
               href={href}
+              prefetch={false}
               className="tap text-sm text-ink-300 transition-colors hover:text-white"
             >
               {label}

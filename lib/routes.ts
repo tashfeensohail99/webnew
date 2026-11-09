@@ -1,17 +1,17 @@
 /**
  * The route table — one list, feeding both the sitemap and any nav that needs it.
  *
- * `reviewed` is the date a human last checked the page's CONTENT, and it becomes
- * the sitemap's lastmod. It is deliberately NOT the build timestamp: stamping
- * every URL with "today" on every deploy is a lie Google learns to ignore, and
- * once it ignores your lastmod it ignores it for the pages where it matters.
+ * `reviewed` is the date a human last checked the page's CONTENT. It is
+ * deliberately NOT the build timestamp, and an edit nobody has reviewed does not
+ * move it. So: when a person has checked a page, bump its date here.
  *
- * So: when you meaningfully change a page, bump its date here. When you fix a
- * typo, don't.
+ * The sitemap's lastmod and the WebPage dateModified answer a different question,
+ * when the page last changed. Those come from lib/lastmod.json, which is built
+ * from git by scripts/build-lastmod.mjs.
  */
 export type Route = {
   path: string;
-  /** ISO date a human last reviewed the content. Becomes sitemap lastmod. */
+  /** ISO date a human last reviewed the content. */
   reviewed: string;
   /** Relative importance within THIS site. Not a ranking lever — a crawl hint. */
   priority: number;

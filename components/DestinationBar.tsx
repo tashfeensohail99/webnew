@@ -61,8 +61,11 @@ export function DestinationBar() {
           <Link
             key={d.href}
             href={d.href}
+            prefetch={false}
             aria-current={current ? 'page' : undefined}
-            aria-label={SHORT[d.href] ? d.label : undefined}
+            // Contains the visible text ("UK") as well as the full name, so
+            // someone using voice control can say what they see.
+            aria-label={SHORT[d.href] ? `${SHORT[d.href]}, ${d.label}` : undefined}
             className={`tap inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-md px-1.5 transition-colors sm:px-2 ${
               current ? 'text-white' : 'text-ink-300 hover:text-white'
             }`}

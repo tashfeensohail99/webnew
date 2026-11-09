@@ -595,7 +595,7 @@ textarea:user-invalid { --focus-ring: #b42318; }
 .eyebrow {
   display: inline-flex; align-items: center; gap: 0.6rem;
   text-transform: uppercase; letter-spacing: 0.22em;
-  font-size: 0.72rem; font-weight: 600; color: var(--color-gold-600);
+  font-size: 0.75rem; font-weight: 600; color: var(--color-gold-600);
 }
 .eyebrow::before {
   content: ''; width: 1.75rem; height: 1px;

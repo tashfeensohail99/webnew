@@ -154,7 +154,7 @@ export function WorkPermitChecker({ digits }: { digits: string }) {
         {QUESTIONS.map((q, i) => (
           <li key={q.id} className="card p-6 sm:p-7">
             <p className="flex gap-3 font-serif text-xl text-balance">
-              <span className="text-gold-500">{i + 1}.</span>
+              <span className="text-gold-600">{i + 1}.</span>
               <span>{q.label}</span>
             </p>
             {q.help ? <p className="mt-2 pl-8 text-sm text-ink-400 text-pretty">{q.help}</p> : null}

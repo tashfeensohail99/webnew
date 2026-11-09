@@ -33,6 +33,8 @@ export default function BlogIndexPage() {
       url: `${site.url}/blog/${p.slug}`,
       datePublished: p.published,
       dateModified: p.updated ?? p.published,
+      image: `${site.url}/opengraph-image`,
+      author: { '@type': 'Organization', '@id': `${site.url}/#organization`, name: site.name, url: site.url },
     })),
   };
 

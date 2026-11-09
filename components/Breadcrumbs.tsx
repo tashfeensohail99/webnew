@@ -5,15 +5,19 @@ import { usePathname } from 'next/navigation';
 import { trailFor } from '@/lib/nav-trail';
 import { ROUTES } from '@/lib/routes';
 import { site } from '@/lib/site';
+import LASTMOD from '@/lib/lastmod.json';
+
+const lastmod: Record<string, string> = LASTMOD;
 
 /**
  * The trail at the top of every page hero, plus its machine-readable twin.
  *
  * The JSON-LD is what makes Google show "Tashfeen › Canada PR › Express Entry"
- * in a result instead of a bare URL, and it carries the page's real review
- * date (from lib/routes.ts) as `lastReviewed` — the freshness signal Google
- * looks for on a "your money or your life" topic. A client component only so
- * it can read the path; it is still rendered into the static HTML.
+ * in a result instead of a bare URL. It carries two different dates: when a
+ * person last reviewed the page (`lastReviewed`, from lib/routes.ts) and when
+ * the page last changed (`dateModified`, from lib/lastmod.json). A client
+ * component only so it can read the path; it is still rendered into the static
+ * HTML.
  */
 export function Breadcrumbs() {
   const path = usePathname() || '/';
@@ -42,10 +46,12 @@ export function Breadcrumbs() {
         isPartOf: { '@id': `${site.url}/#website` },
         inLanguage: 'en',
         breadcrumb: { '@id': `${url(path)}#breadcrumb` },
-        // `dateModified` is the property most crawlers and AI assistants
-        // actually read for freshness; `lastReviewed` is the precise claim.
         ...(reviewed
-          ? { lastReviewed: reviewed, dateModified: reviewed, reviewedBy: { '@id': `${site.url}/#organization` } }
+          ? {
+              lastReviewed: reviewed,
+              dateModified: lastmod[path] ?? reviewed,
+              reviewedBy: { '@id': `${site.url}/#organization` },
+            }
           : {}),
       },
     ],
@@ -65,7 +71,11 @@ export function Breadcrumbs() {
                   </span>
                 ) : (
                   <>
-                    <Link href={c.href} className="transition-colors hover:text-white">
+                    <Link
+                      href={c.href}
+                      prefetch={false}
+                      className="inline-flex min-h-6 items-center transition-colors hover:text-white"
+                    >
                       {c.label}
                     </Link>
                     <span aria-hidden="true" className="text-gold-400">

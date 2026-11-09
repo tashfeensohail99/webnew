@@ -22,6 +22,11 @@ import { liveNav, OTHER_DESTINATIONS } from '@/lib/nav';
  *
  * The menu renders from lib/nav.ts and only ever shows pages that exist. As
  * planned pages ship they light up on their own.
+ *
+ * Header, menu, footer and related-guide links set `prefetch={false}`. Next
+ * otherwise downloads each linked page as soon as its link is visible, which on
+ * links repeated across every page cost phone visitors over 100KB per page view
+ * for pages few of them open. The booking link keeps its prefetch.
  */
 export function SiteHeader({ display, digits }: { display: string; digits: string }) {
   const groups = liveNav();
@@ -61,7 +66,7 @@ export function SiteHeader({ display, digits }: { display: string; digits: strin
           {/* min-w-0 lets the wordmark give way rather than forcing the row
               wider than the viewport. Everything here used to be shrink-0,
               which is what pushed the hamburger off-screen below ~385px. */}
-          <Link href="/" className="mr-auto min-w-0" aria-label="Tashfeen Immigration Solutions — home">
+          <Link href="/" prefetch={false} className="mr-auto min-w-0" aria-label="Tashfeen Immigration Solutions — home">
             <Logo variant="dark" />
           </Link>
 
@@ -81,6 +86,7 @@ export function SiteHeader({ display, digits }: { display: string; digits: strin
                   <li key={g.label}>
                     <Link
                       href={flat[0].href}
+                      prefetch={false}
                       className="link-underline block px-2.5 py-2 text-sm font-medium text-ink-600 transition-colors hover:text-ink-900 xl:px-3.5"
                     >
                       {g.label}
@@ -169,6 +175,7 @@ export function SiteHeader({ display, digits }: { display: string; digits: strin
                                   <li key={item.href}>
                                     <Link
                                       href={item.href}
+                                      prefetch={false}
                                       className="group/item -mx-3 flex items-center gap-3 rounded-lg px-3 py-2 transition-colors hover:bg-paper-alt"
                                     >
                                       {hasNavIcon(item.href) ? (
@@ -199,7 +206,7 @@ export function SiteHeader({ display, digits }: { display: string; digits: strin
                           className={`border-t border-rule ${wide ? 'mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 pt-4' : 'mt-2 px-3 pt-3'}`}
                         >
                           {g.href ? (
-                            <Link href={g.href} className="text-sm font-semibold text-accent-500 link-underline">
+                            <Link href={g.href} prefetch={false} className="text-sm font-semibold text-accent-500 link-underline">
                               All {g.label.toLowerCase()} →
                             </Link>
                           ) : null}
@@ -208,7 +215,7 @@ export function SiteHeader({ display, digits }: { display: string; digits: strin
                             {OTHER_DESTINATIONS.map((d, i) => (
                               <span key={d.href}>
                                 {i > 0 ? ' · ' : ''}
-                                <Link href={d.href} className="text-ink-600 underline-offset-2 hover:underline">
+                                <Link href={d.href} prefetch={false} className="text-ink-600 underline-offset-2 hover:underline">
                                   {d.label}
                                 </Link>
                               </span>

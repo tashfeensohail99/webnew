@@ -1,7 +1,7 @@
 /**
  * The Tashfeen Immigration Solutions brand lockup.
  *
- * The mark lives at /public/logo.png — a horizontal lockup supplied by the firm:
+ * The mark lives at /public/logo.webp (lossless, from logo.png) — a horizontal lockup supplied by the firm:
  * an angular navy "T" to the left of the "TASHFEEN" wordmark with an
  * "IMMIGRATION SOLUTIONS" subline. Because the asset carries its own
  * typography, nothing in this component sets a typeface for the wordmark —
@@ -37,7 +37,7 @@ export function Logo({
 
   return (
     <img
-      src="/logo.png"
+      src="/logo.webp"
       alt="Tashfeen Immigration Solutions"
       width={LOGO_PX.w}
       height={LOGO_PX.h}

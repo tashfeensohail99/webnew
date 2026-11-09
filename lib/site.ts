@@ -88,6 +88,7 @@ export const site = {
   offices: [
     {
       city: 'Lahore',
+      page: '/immigration-consultant-lahore',
       country: 'Pakistan',
       address: 'Office #201 & 202, 2nd Floor, HALY TOWER, Sector R, DHA Phase 2, Lahore',
       hours: 'Monday to Saturday, 9 am – 6 pm',
@@ -98,6 +99,7 @@ export const site = {
     },
     {
       city: 'Islamabad',
+      page: '/immigration-consultant-islamabad',
       country: 'Pakistan',
       // Supplied 2026-07-21. Punctuation normalised to match the Lahore entry's
       // house style — the raw string read "Sector F DHA, 2, 45730", which reads
@@ -115,6 +117,7 @@ export const site = {
     },
     {
       city: 'Mississauga',
+      page: '',
       country: 'Canada',
       address: '', // TODO(tashfeen)
       hours: '',
