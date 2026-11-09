@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { trailFor } from '@/lib/nav-trail';
 import { ROUTES } from '@/lib/routes';
-import { site } from '@/lib/site';
+import { leadLawyer, site } from '@/lib/site';
 import LASTMOD from '@/lib/lastmod.json';
 
 const lastmod: Record<string, string> = LASTMOD;
@@ -13,9 +13,9 @@ const lastmod: Record<string, string> = LASTMOD;
  * The trail at the top of every page hero, plus its machine-readable twin.
  *
  * The JSON-LD is what makes Google show "Tashfeen › Canada PR › Express Entry"
- * in a result instead of a bare URL. It carries two different dates: when a
- * person last reviewed the page (`lastReviewed`, from lib/routes.ts) and when
- * the page last changed (`dateModified`, from lib/lastmod.json). A client
+ * in a result instead of a bare URL. It always says when the page last changed
+ * (`dateModified`, from lib/lastmod.json). It says when a person last reviewed it
+ * (`lastReviewed`, from lib/routes.ts) only once a licensed reviewer is named. A client
  * component only so it can read the path; it is still rendered into the static
  * HTML.
  */
@@ -48,7 +48,8 @@ export function Breadcrumbs() {
         inLanguage: 'en',
         breadcrumb: { '@id': `${url(path)}#breadcrumb` },
         ...(reviewed ? { dateModified: lastmod[path] ?? reviewed } : {}),
-        ...(reviewed && !route?.dataPage ? { lastReviewed: reviewed, reviewedBy: { '@id': `${site.url}/#organization` } } : {}),
+        // Claimed only once a licensed reviewer is named, matching the visible date line.
+        ...(reviewed && !route?.dataPage && leadLawyer() ? { lastReviewed: reviewed, reviewedBy: { '@id': `${site.url}/#organization` } } : {}),
       },
     ],
   };
