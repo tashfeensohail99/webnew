@@ -16,6 +16,8 @@ export type Route = {
   /** Relative importance within THIS site. Not a ranking lever — a crawl hint. */
   priority: number;
   changeFrequency: 'daily' | 'weekly' | 'monthly' | 'yearly';
+  /** Figures compiled from an official source, with no human review to claim. The structured data then omits lastReviewed and reviewedBy. */
+  dataPage?: boolean;
 };
 
 export const ROUTES: Route[] = [
@@ -76,6 +78,8 @@ export const ROUTES: Route[] = [
   { path: '/canada-immigration-from-pakistan/police-certificate', reviewed: '2026-10-23', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/canada-immigration-from-pakistan/medical-exam', reviewed: '2026-10-23', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/canada-immigration-from-pakistan/biometrics', reviewed: '2026-10-23', priority: 0.8, changeFrequency: 'monthly' },
+  // IRCC's counts for Pakistani citizens, from lib/ircc-pakistan.json. Refreshed by hand with scripts/ircc-figures.py.
+  { path: '/canada-immigration-statistics-pakistan', reviewed: '2026-11-09', priority: 0.7, changeFrequency: 'monthly', dataPage: true },
   { path: '/express-entry', reviewed: '2026-07-20', priority: 0.9, changeFrequency: 'monthly' },
   // Read hourly from IRCC's rounds feed (ISR) — a new round can land any weekday.
   { path: '/express-entry/draws', reviewed: '2026-10-23', priority: 0.9, changeFrequency: 'daily' },

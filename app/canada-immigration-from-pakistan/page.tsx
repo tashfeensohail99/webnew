@@ -536,6 +536,13 @@ export default function CanadaFromPakistanPage() {
               exam, biometrics, police certificates and translations.
             </p>
             <p className="mt-3">
+              For how many Pakistani citizens Canada admits each year, see IRCC’s{' '}
+              <Link href="/canada-immigration-statistics-pakistan" className="font-semibold text-accent-500 link-underline">
+                official figures for Pakistan
+              </Link>
+              .
+            </p>
+            <p className="mt-3">
               Our own fee is on our{' '}
               <Link href="/fees" className="font-semibold text-accent-500 link-underline">
                 fees page

@@ -244,6 +244,13 @@ export default function StudyInCanadaPage() {
               bought a qualification you did not want, at foreign-student prices, with no PR at the
               end of it. It is an expensive mistake.
             </p>
+            <p className="mt-3">
+              IRCC’s yearly counts of Pakistani citizens with study permits are in our{' '}
+              <Link href="/canada-immigration-statistics-pakistan" className="font-semibold text-accent-500 link-underline">
+                official figures for Pakistan
+              </Link>
+              .
+            </p>
           </Callout>
         </div>
       </Section>

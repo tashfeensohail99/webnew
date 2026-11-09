@@ -38,6 +38,7 @@ const PAGE_LABEL: Record<string, string> = {
   '/privacy': 'Privacy',
   '/terms': 'Terms',
   '/canada-immigration-from-pakistan': 'Immigrate from Pakistan',
+  '/canada-immigration-statistics-pakistan': 'Official figures',
   '/immigration-consultant-lahore': 'Lahore office',
   '/immigration-consultant-islamabad': 'Islamabad office',
   '/canadian-immigration-lawyer-pakistan': 'Choosing a lawyer',

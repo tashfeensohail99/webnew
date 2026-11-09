@@ -25,7 +25,8 @@ export function Breadcrumbs() {
   if (crumbs.length < 2) return null;
 
   const url = (p: string) => `${site.url}${p === '/' ? '' : p}`;
-  const reviewed = ROUTES.find((r) => r.path === path)?.reviewed;
+  const route = ROUTES.find((r) => r.path === path);
+  const reviewed = route?.reviewed;
   const ld = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -46,13 +47,8 @@ export function Breadcrumbs() {
         isPartOf: { '@id': `${site.url}/#website` },
         inLanguage: 'en',
         breadcrumb: { '@id': `${url(path)}#breadcrumb` },
-        ...(reviewed
-          ? {
-              lastReviewed: reviewed,
-              dateModified: lastmod[path] ?? reviewed,
-              reviewedBy: { '@id': `${site.url}/#organization` },
-            }
-          : {}),
+        ...(reviewed ? { dateModified: lastmod[path] ?? reviewed } : {}),
+        ...(reviewed && !route?.dataPage ? { lastReviewed: reviewed, reviewedBy: { '@id': `${site.url}/#organization` } } : {}),
       },
     ],
   };

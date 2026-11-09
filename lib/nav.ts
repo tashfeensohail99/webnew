@@ -91,6 +91,7 @@ export const NAV: NavGroup[] = [
           { href: '/canada-immigration-from-pakistan/police-certificate', label: 'Police certificate from Pakistan', status: 'live' },
           { href: '/canada-immigration-from-pakistan/medical-exam', label: 'Medical exam in Pakistan', status: 'live' },
           { href: '/canada-immigration-from-pakistan/biometrics', label: 'Biometrics in Pakistan', status: 'live' },
+          { href: '/canada-immigration-statistics-pakistan', label: 'Pakistan to Canada: official figures', status: 'live', blurb: 'Yearly counts from IRCC’s own tables' },
           { href: '/atlantic-immigration-program', label: 'Atlantic Immigration Program', status: 'live' },
           { href: '/rural-community-immigration', label: 'Rural & northern immigration', status: 'live' },
           { href: '/caregivers', label: 'Caregiver routes', status: 'live' },
