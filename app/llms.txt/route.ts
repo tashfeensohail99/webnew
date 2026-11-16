@@ -31,6 +31,7 @@ export function GET() {
     `- [Express Entry draws](${site.url}/express-entry/draws): every round of invitations with its date, type, invitations and CRS cut-off, read hourly from IRCC's own data.`,
     `- [C11 work permit](${site.url}/work-permit-canada): run your own Canadian business without a job offer or LMIA — IRCC's rules (51% ownership, significant benefit, funds).`,
     `- [Business immigration to Canada](${site.url}/business-immigration): what remains for entrepreneurs, and what has closed.`,
+    `- [Start-up Denmark from Pakistan](${site.url}/europe/denmark-startup-visa): Denmark's residence and work permit for non-EU founders — eligibility, the 15-page pitch deck and 5-minute video, the expert panel's 3.5 average, SIRI's dated fee and funds, and applying from Pakistan.`,
     `- [Visa refused?](${site.url}/canada-visa-refused): GCMS notes, reconsideration, re-applying and judicial review.`,
     `- [How to check a Canadian immigration lawyer in Pakistan](${site.url}/canadian-immigration-lawyer-pakistan): nobody ranks them; IRCC's rule on who may be paid to represent you, the public registers to check a name on, and the questions to ask before paying any firm — including this one.`,
     `- [Latest updates](${site.url}/updates): our newest YouTube explainers on draws and rule changes, each dated and linked to the matching guide.`,

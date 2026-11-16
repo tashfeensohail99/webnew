@@ -7,7 +7,7 @@ import { FounderFeature } from '@/components/FounderFeature';
 import { SocialProof } from '@/components/SocialProof';
 import { SplitSection, FAQ, Icon, type IconName } from '@/components/ui';
 import { site, SERVICE, leadLawyer } from '@/lib/site';
-import { sortedPosts } from '@/lib/blog';
+import { latestPerGuide } from '@/lib/blog';
 
 export const metadata: Metadata = {
   // Keyword first, then the short brand like every other page: Bing's URL
@@ -631,7 +631,7 @@ export default function HomePage() {
             </Link>
           </div>
           <ul className="mt-10 grid gap-6 md:grid-cols-3">
-            {sortedPosts().slice(0, 3).map((p) => (
+            {latestPerGuide(3).map((p) => (
               <li key={p.slug}>
                 <Link prefetch={false} href={`/blog/${p.slug}`} className="card group flex h-full flex-col p-6 transition-transform hover:-translate-y-0.5">
                   <p className="text-xs font-semibold uppercase tracking-[0.14em] text-gold-600">

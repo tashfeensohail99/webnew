@@ -5,7 +5,7 @@ import { LiteYouTube } from '@/components/LiteYouTube';
 import { SocialIcon } from '@/components/SocialIcon';
 import { latestUpdates, type Video } from '@/lib/youtube';
 import { site } from '@/lib/site';
-import { sortedPosts } from '@/lib/blog';
+import { latestPerGuide } from '@/lib/blog';
 
 /**
  * /updates — the channel's latest explainers and rule-change videos, on the site.
@@ -174,7 +174,7 @@ export default async function UpdatesPage() {
       <Section tone="paper">
         <SectionHeading eyebrow="In writing" title="From the blog" subtitle="Dated posts on the same changes, written from the official sources." />
         <ul className="mt-8 space-y-3">
-          {sortedPosts().slice(0, 5).map((p) => (
+          {latestPerGuide(5).map((p) => (
             <li key={p.slug}>
               <Link href={`/blog/${p.slug}`} className="font-serif text-xl link-underline">
                 {p.title}

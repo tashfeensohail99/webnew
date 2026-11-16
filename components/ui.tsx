@@ -284,6 +284,7 @@ export function CTASection({
   waMessage = 'Hi, I’d like to book a consultation.',
   page = 'cta',
   service = SERVICE.WORK_PERMIT,
+  targetCountry = 'Canada',
 }: {
   eyebrow?: string;
   title: ReactNode;
@@ -292,6 +293,8 @@ export function CTASection({
   page?: string;
   /** Which CRM service an enquiry from this button is tagged with. */
   service?: ServiceCode;
+  /** The destination an enquiry from this button is tagged with. */
+  targetCountry?: string;
 }) {
   return (
     <section className="relative overflow-hidden bg-hero text-white">
@@ -307,7 +310,7 @@ export function CTASection({
           </Link>
           <WhatsAppCta
             variant="ghost"
-            intent={{ service, page, targetCountry: 'Canada', message: waMessage }}
+            intent={{ service, page, targetCountry, message: waMessage }}
           >
             Ask on WhatsApp
           </WhatsAppCta>

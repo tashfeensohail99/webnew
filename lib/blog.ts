@@ -135,6 +135,84 @@ export const POSTS: Post[] = [
       { label: 'berufsanerkennung.at — Recognition of foreign qualifications', href: 'https://www.berufsanerkennung.at/en/' },
     ],
   },
+  {
+    slug: 'start-up-denmark-eligibility',
+    title: 'Who Qualifies for Start-up Denmark in 2026?',
+    short: 'Start-up Denmark eligibility',
+    description:
+      'The four tests a Start-up Denmark application must pass before the expert panel sees it: nationality, team, ownership and business type, with examples.',
+    published: '2026-11-17',
+    topic: 'Europe',
+    guide: { href: '/europe/denmark-startup-visa', label: 'Start-up Denmark guide' },
+    sources: [
+      { label: 'Start-up Denmark (Danish Business Authority) — Application guide for startups', href: 'https://startupdenmarkprogramme.dk/application-guide-startups' },
+      { label: 'Start-up Denmark — About the Startup Denmark programme', href: 'https://startupdenmarkprogramme.dk/about-startup-denmark-programme' },
+      { label: 'Retsinformation — Startup Denmark decree, BEK nr 969 af 15/06/2022 (in Danish)', href: 'https://www.retsinformation.dk/eli/lta/2022/969' },
+      { label: 'SIRI (New to Denmark) — Start-up Denmark residence and work permit', href: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/Start-up-Denmark' },
+    ],
+  },
+  {
+    slug: 'start-up-denmark-pitch-deck-video',
+    title: 'Start-up Denmark Pitch Deck and Video Guide',
+    short: 'The pitch deck and video',
+    description:
+      'What the 15-page Start-up Denmark pitch deck and 5-minute video must contain, a page plan mapped to the panel’s four questions, and the screening traps.',
+    published: '2026-11-17',
+    topic: 'Europe',
+    guide: { href: '/europe/denmark-startup-visa', label: 'Start-up Denmark guide' },
+    sources: [
+      { label: 'Start-up Denmark (Danish Business Authority) — Application guide for startups', href: 'https://startupdenmarkprogramme.dk/application-guide-startups' },
+      { label: 'Start-up Denmark — About the Startup Denmark programme', href: 'https://startupdenmarkprogramme.dk/about-startup-denmark-programme' },
+      { label: 'Embassy of Denmark in Pakistan — Residence permit', href: 'https://um.dk/pakistan/en/travel-and-residence/residence-permit/' },
+    ],
+  },
+  {
+    slug: 'start-up-denmark-expert-panel-scoring',
+    title: 'How the Start-up Denmark Expert Panel Scores You',
+    short: 'How the panel scores you',
+    description:
+      'Three panel members, four questions graded 1 to 5, a 3.5 average to pass: how Start-up Denmark is scored, how long it takes, and what to do after a no.',
+    published: '2026-11-17',
+    topic: 'Europe',
+    guide: { href: '/europe/denmark-startup-visa', label: 'Start-up Denmark guide' },
+    sources: [
+      { label: 'Start-up Denmark (Danish Business Authority) — Application guide for startups', href: 'https://startupdenmarkprogramme.dk/application-guide-startups' },
+      { label: 'Start-up Denmark — About the Startup Denmark programme', href: 'https://startupdenmarkprogramme.dk/about-startup-denmark-programme' },
+      { label: 'SIRI (New to Denmark) — Start-up Denmark residence and work permit', href: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/Start-up-Denmark' },
+    ],
+  },
+  {
+    slug: 'start-up-denmark-residence-permit-siri',
+    title: 'Start-up Denmark Permit: SIRI Fee and Funds',
+    short: 'The SIRI residence permit',
+    description:
+      'After panel approval: SIRI’s DKK 3,060 fee, the funds to show, the documents, processing times, family and submitting in Pakistan, as of November 2026.',
+    published: '2026-11-17',
+    topic: 'Europe',
+    guide: { href: '/europe/denmark-startup-visa', label: 'Start-up Denmark guide' },
+    sources: [
+      { label: 'SIRI (New to Denmark) — Start-up Denmark residence and work permit', href: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/Start-up-Denmark' },
+      { label: 'SIRI — Self-support requirements', href: 'https://www.nyidanmark.dk/en-GB/Words-and-concepts/SIRI/Self-support---SIRI/' },
+      { label: 'SIRI — Accompanying family members', href: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Family/Accompanying-family-members/Accompanying-family---work' },
+      { label: 'Embassy of Denmark in Pakistan — Residence permit', href: 'https://um.dk/pakistan/en/travel-and-residence/residence-permit/' },
+      { label: 'Embassy of Denmark in Pakistan — Application fee', href: 'https://um.dk/pakistan/en/travel-and-residence/residence-permit/application-fee/' },
+    ],
+  },
+  {
+    slug: 'start-up-denmark-extension',
+    title: 'Start-up Denmark Extension After Two Years',
+    short: 'Extending the permit',
+    description:
+      'How Start-up Denmark extensions work: the progress report, the CVR and documents the panel wants, the 45-minute interview, appeals and SIRI’s timing.',
+    published: '2026-11-17',
+    topic: 'Europe',
+    guide: { href: '/europe/denmark-startup-visa', label: 'Start-up Denmark guide' },
+    sources: [
+      { label: 'Start-up Denmark — Application guide for extension', href: 'https://startupdenmarkprogramme.dk/application-guide-extension' },
+      { label: 'SIRI (New to Denmark) — Start-up Denmark residence and work permit', href: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/Start-up-Denmark' },
+      { label: 'Retsinformation — Startup Denmark decree, BEK nr 969 af 15/06/2022 (in Danish)', href: 'https://www.retsinformation.dk/eli/lta/2022/969' },
+    ],
+  },
 ];
 
 export const postBySlug = (slug: string) => POSTS.find((p) => p.slug === slug);
@@ -147,3 +225,15 @@ export const schemaDate = (day: string) => `${day}T00:00:00+05:00`;
 
 /** Newest first. */
 export const sortedPosts =() => [...POSTS].sort((a, b) => b.published.localeCompare(a.published));
+
+/**
+ * Newest first, but at most one post per guide. For the short strips on the
+ * homepage and /updates, so a series published together (five Start-up Denmark
+ * posts on one day) shows as one card rather than filling the strip.
+ */
+export const latestPerGuide = (n: number) => {
+  const seen = new Set<string>();
+  return sortedPosts()
+    .filter((p) => !seen.has(p.guide.href) && (seen.add(p.guide.href), true))
+    .slice(0, n);
+};

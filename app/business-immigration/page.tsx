@@ -183,6 +183,15 @@ export default function BusinessImmigrationPage() {
             speculate about what it might require, when it might open, or whether it will open at
             all. If and when it does, the terms will be on the IRCC site before they are on ours.
           </p>
+          <p>
+            If you are a founder with an innovative, scalable business and Europe is an option,
+            Denmark still runs a residence permit for founders. It has its own tests, including an
+            expert panel that scores the business, and a yearly limit of 75 permits. We explain it in{' '}
+            <Link href="/europe/denmark-startup-visa" className="font-semibold text-accent-500 link-underline">
+              Start-up Denmark from Pakistan
+            </Link>
+            .
+          </p>
         </Prose>
 
         <div className="mt-10">

@@ -59,7 +59,7 @@ const CLOSED: { icon: 'scale' | 'doc' | 'building' | 'globe'; term: string; def:
   },
 ];
 
-const HELP: { icon: 'plane' | 'permit' | 'refresh'; title: string; body: string }[] = [
+const HELP: { icon: 'plane' | 'permit' | 'refresh' | 'building'; title: string; body: string; href?: string; cta?: string }[] = [
   {
     icon: 'plane',
     title: 'Schengen visitor visas',
@@ -74,6 +74,13 @@ const HELP: { icon: 'plane' | 'permit' | 'refresh'; title: string; body: string 
     icon: 'refresh',
     title: 'If you were refused',
     body: 'A Schengen refusal has its own appeal route and its own deadlines, and they differ by country. Send us the letter.',
+  },
+  {
+    icon: 'building',
+    title: 'Start-up Denmark, for founders',
+    body: 'A Danish residence and work permit for founders of innovative, scalable companies. An expert panel scores the business first; restaurants, shops and trading firms are excluded.',
+    href: '/europe/denmark-startup-visa',
+    cta: 'How Start-up Denmark works',
   },
 ];
 
@@ -209,7 +216,10 @@ export default function EuropePage() {
         </div>
         <p className="mt-8 max-w-3xl text-ink-600 text-pretty">
           For a European work route that is still running, read about{' '}
-          <Link href="/blog/austria-red-white-red-card" className="font-semibold text-accent-500 link-underline">Austria’s Red-White-Red Card from Pakistan</Link>.
+          <Link href="/blog/austria-red-white-red-card" className="font-semibold text-accent-500 link-underline">Austria’s Red-White-Red Card from Pakistan</Link>. If you are a founder
+          with an innovative, scalable business, read{' '}
+          <Link href="/europe/denmark-startup-visa" className="font-semibold text-accent-500 link-underline">Start-up Denmark from Pakistan</Link>, Denmark’s residence permit for
+          people who will build a company there.
         </p>
       </Section>
 
@@ -256,9 +266,9 @@ export default function EuropePage() {
           title="The routes that are still real"
           subtitle="Fewer than you were promised — but every one of them is honest, and we will tell you the true timeline before you commit."
         />
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {HELP.map((h) => (
-            <FeatureCard key={h.title} icon={<Icon name={h.icon} />} title={h.title}>
+            <FeatureCard key={h.title} icon={<Icon name={h.icon} />} title={h.title} href={h.href} cta={h.cta}>
               {h.body}
             </FeatureCard>
           ))}

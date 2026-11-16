@@ -215,6 +215,60 @@
    "label": "Questions about caregiver immigration"
   }
  ],
+ "/europe/denmark-startup-visa": [
+  {
+   "id": "start-up-denmark-at-a-glance",
+   "label": "Start-up Denmark at a glance"
+  },
+  {
+   "id": "two-approvals-in-this-order",
+   "label": "Two approvals, in this order"
+  },
+  {
+   "id": "who-can-apply-for-start-up-denmark",
+   "label": "Who can apply for Start-up Denmark?"
+  },
+  {
+   "id": "how-does-the-expert-panel-score-an-application",
+   "label": "How does the expert panel score an application?"
+  },
+  {
+   "id": "what-goes-in-the-pitch-deck-and-the-video",
+   "label": "What goes in the pitch deck and the video?"
+  },
+  {
+   "id": "how-do-you-get-the-residence-permit-from-siri",
+   "label": "How do you get the residence permit from SIRI?"
+  },
+  {
+   "id": "what-can-you-do-in-denmark-on-the-permit",
+   "label": "What can you do in Denmark on the permit?"
+  },
+  {
+   "id": "how-do-you-extend-the-permit-after-two-years",
+   "label": "How do you extend the permit after two years?"
+  },
+  {
+   "id": "how-do-you-apply-from-pakistan",
+   "label": "How do you apply from Pakistan?"
+  },
+  {
+   "id": "why-are-applications-screened-out",
+   "label": "Why are applications screened out?"
+  },
+  {
+   "id": "how-we-help-with-start-up-denmark",
+   "label": "How we help with Start-up Denmark"
+  },
+  {
+   "id": "questions-about-start-up-denmark",
+   "label": "Questions about Start-up Denmark"
+  },
+  {
+   "id": "official-sources",
+   "label": "Official sources"
+  }
+ ],
  "/express-entry/category-based-draws": [
   {
    "id": "what-category-based-selection-actually-is",

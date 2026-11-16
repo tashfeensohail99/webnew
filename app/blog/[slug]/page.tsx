@@ -11,6 +11,11 @@ import OntarioHigherEarners from '@/content/blog/ontario-higher-earners-2026';
 import Eb2NiwPakistan from '@/content/blog/eb2-niw-pakistan';
 import MofaOnlineAttestation from '@/content/blog/mofa-online-attestation';
 import AustriaRedWhiteRedCard from '@/content/blog/austria-red-white-red-card';
+import StartUpDenmarkEligibility from '@/content/blog/start-up-denmark-eligibility';
+import StartUpDenmarkPitchDeckVideo from '@/content/blog/start-up-denmark-pitch-deck-video';
+import StartUpDenmarkExpertPanelScoring from '@/content/blog/start-up-denmark-expert-panel-scoring';
+import StartUpDenmarkResidencePermitSiri from '@/content/blog/start-up-denmark-residence-permit-siri';
+import StartUpDenmarkExtension from '@/content/blog/start-up-denmark-extension';
 
 /** One line per post. A slug in lib/blog.ts without a body here is a build error, not a blank page. */
 const BODIES: Record<string, ComponentType> = {
@@ -19,6 +24,11 @@ const BODIES: Record<string, ComponentType> = {
   'eb2-niw-pakistan': Eb2NiwPakistan,
   'mofa-online-attestation': MofaOnlineAttestation,
   'austria-red-white-red-card': AustriaRedWhiteRedCard,
+  'start-up-denmark-eligibility': StartUpDenmarkEligibility,
+  'start-up-denmark-pitch-deck-video': StartUpDenmarkPitchDeckVideo,
+  'start-up-denmark-expert-panel-scoring': StartUpDenmarkExpertPanelScoring,
+  'start-up-denmark-residence-permit-siri': StartUpDenmarkResidencePermitSiri,
+  'start-up-denmark-extension': StartUpDenmarkExtension,
 };
 
 export const dynamicParams = false;

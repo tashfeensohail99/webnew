@@ -568,6 +568,134 @@ export const FACTS: Record<string, Fact> = {
     note:
       'GLOBAL, not Pakistan-specific. IRCC does not publish per-country visitor approval rates on its site; every Pakistan-specific figure in circulation (35–50%) is unsourced and must not be repeated. The per-country data does exist in IRCC open data (open.canada.ca dataset 9b34e712-513f-44e9-babf-9df4f7256550) — computing it ourselves and showing the working would be the most linkable asset on the site.',
   },
+  // ── DENMARK (Start-up Denmark) ───────────────────────────────────────────
+  dkStartupTwoStage: {
+    id: 'dk.startup.two-stage',
+    claim:
+      'Start-up Denmark needs two approvals in order: an expert panel appointed by the Danish Business Authority must approve the business plan, and only then can the founder apply to SIRI for the residence and work permit.',
+    provenance: 'primary',
+    source: 'Start-up Denmark application guide; SIRI Start-up Denmark page',
+    sourceUrl: 'https://startupdenmarkprogramme.dk/application-guide-startups',
+    checked: '2026-11-17',
+  },
+  dkStartupEligibility: {
+    id: 'dk.startup.eligibility',
+    claim:
+      'Applicants must be citizens of countries outside the EU, EEA and Switzerland, alone or in teams of up to three, each owning a significant share and actively running the business. Purely financial interests and holding companies are excluded.',
+    provenance: 'primary',
+    source: 'Start-up Denmark application guide; SIRI Start-up Denmark page',
+    sourceUrl: 'https://startupdenmarkprogramme.dk/application-guide-startups',
+    checked: '2026-11-17',
+  },
+  dkStartupExcluded: {
+    id: 'dk.startup.excluded',
+    claim:
+      'Restaurants, retail shops and small trade, import or export businesses are generally rejected before evaluation, and the decree excludes them.',
+    provenance: 'primary',
+    source: 'Start-up Denmark application guide; BEK nr 969 af 15/06/2022 § 1(2)',
+    sourceUrl: 'https://www.retsinformation.dk/eli/lta/2022/969',
+    checked: '2026-11-17',
+  },
+  dkStartupMaterials: {
+    id: 'dk.startup.materials',
+    claim:
+      'The application needs a pitch deck (PDF, at most 15 pages, English) covering market analysis, sales or go-to-market strategy, why Denmark and start-up-phase activities, plus a video pitch of at most 5 minutes in English, submitted through the online form on Virk.',
+    provenance: 'primary',
+    source: 'Start-up Denmark application guide',
+    sourceUrl: 'https://startupdenmarkprogramme.dk/application-guide-startups',
+    checked: '2026-11-17',
+  },
+  dkStartupScoring: {
+    id: 'dk.startup.scoring',
+    claim:
+      'Three members of an independent expert panel each grade four criteria (innovation, market attractiveness, scalability, team competencies and resources) from 1 to 5; approval needs an average of at least 3.5. One appeal is allowed, or a substantially improved reapplication.',
+    provenance: 'primary',
+    source: 'Start-up Denmark application guide',
+    sourceUrl: 'https://startupdenmarkprogramme.dk/application-guide-startups',
+    checked: '2026-11-17',
+    note:
+      'The guide says "at least 3.5 in average score for all four criteria", which can be read as one overall average or 3.5 per criterion. Pages show both readings.',
+  },
+  dkStartupPanelTiming: {
+    id: 'dk.startup.panel-timing',
+    claim:
+      'The panel usually takes up to 6 weeks. A notice in November 2026 says applications received after 13 November 2026 will be processed no earlier than January 2027 and may take up to 8 weeks.',
+    provenance: 'primary',
+    source: 'Start-up Denmark website notice',
+    sourceUrl: 'https://startupdenmarkprogramme.dk/application-guide-startups',
+    checked: '2026-11-17',
+    note:
+      'Temporary notice. Remove from the pages once the programme takes it down.',
+  },
+  dkStartupQuota: {
+    id: 'dk.startup.quota',
+    claim:
+      'At most 75 residence permits a year can be granted under Start-up Denmark.',
+    provenance: 'primary',
+    source: 'BEK nr 969 af 15/06/2022 § 2(1); SIRI Start-up Denmark page',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/Start-up-Denmark',
+    checked: '2026-11-17',
+  },
+  dkStartupSiriFee: {
+    id: 'dk.startup.siri-fee',
+    claim:
+      'SIRI lists a Start-up Denmark processing fee of DKK 3,060, with normal processing of 2 months and up to 4 if more information is needed.',
+    provenance: 'primary',
+    source: 'SIRI Start-up Denmark page (last updated 29-06-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/Start-up-Denmark',
+    checked: '2026-11-17',
+    note:
+      'Printed with a date on the owner’s approval of 17 Nov 2026. Re-check monthly (R18).',
+  },
+  dkStartupSelfSupport: {
+    id: 'dk.startup.self-support',
+    claim:
+      'SIRI asks Start-up Denmark applicants to show disposable funds of DKK 153,240 alone, DKK 306,480 with a spouse or partner, DKK 356,904 with a spouse or partner and children, or DKK 203,664 with children only, all listed at the 2025 level. Cryptocurrency is not accepted.',
+    provenance: 'primary',
+    source: 'SIRI Self-support page',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/Words-and-concepts/SIRI/Self-support---SIRI/',
+    checked: '2026-11-17',
+    note:
+      'Still listed at the 2025 level on 17 Nov 2026. When SIRI moves to 2026 figures, update the guide, the SIRI post and this entry. Re-check monthly (R18).',
+  },
+  dkStartupFamily: {
+    id: 'dk.startup.family',
+    claim:
+      'Accompanying family (spouse or partner, children under 18 living at home) pay DKK 3,080, with normal processing of 2 months and up to 3. Family applying after the founder is granted need DKK 153,240 (spouse), DKK 203,664 (spouse and children) or DKK 50,424 (children only), at the 2025 level.',
+    provenance: 'primary',
+    source: 'SIRI Accompanying family page (last updated 24-08-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Family/Accompanying-family-members/Accompanying-family---work',
+    checked: '2026-11-17',
+    note:
+      'Re-check monthly (R18).',
+  },
+  dkStartupPermitRules: {
+    id: 'dk.startup.permit-rules',
+    claim:
+      'The permit lasts up to 2 years, then extensions of up to 3 years at a time (never past 3 months before passport expiry). Holders may work only in their own business, may spend 90 days in 180 elsewhere in Schengen without working, and lose the permit after more than 6 consecutive months abroad.',
+    provenance: 'primary',
+    source: 'SIRI Start-up Denmark page',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/Start-up-Denmark',
+    checked: '2026-11-17',
+  },
+  dkStartupExtension: {
+    id: 'dk.startup.extension',
+    claim:
+      'Extension needs the panel to approve a progress report (CVR number required; not in compulsory dissolution or bankruptcy; possible 45-minute recorded interview; one appeal), then a SIRI application no earlier than 3 months before expiry.',
+    provenance: 'primary',
+    source: 'Start-up Denmark application guide for extension',
+    sourceUrl: 'https://startupdenmarkprogramme.dk/application-guide-extension',
+    checked: '2026-11-17',
+  },
+  dkPakistanSubmission: {
+    id: 'dk.pakistan.submission',
+    claim:
+      'From Pakistan, residence-permit applications are submitted in person at the Gerry’s/VFS visa centre (Islamabad, Lahore or Karachi). The fee is paid to the Danish authorities and the centre adds its own service charge. The embassy warns applicants not to use agents, who charge high prices for false documents.',
+    provenance: 'primary',
+    source: 'Embassy of Denmark in Pakistan, residence-permit and application-fee pages',
+    sourceUrl: 'https://um.dk/pakistan/en/travel-and-residence/residence-permit/',
+    checked: '2026-11-17',
+  },
 };
 
 /** Facts still awaiting a lawyer's sign-off. Nothing here may be stated on a page. */

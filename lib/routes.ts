@@ -38,6 +38,8 @@ export const ROUTES: Route[] = [
   { path: '/usa', reviewed: '2026-10-24', priority: 0.8, changeFrequency: 'weekly' },
   { path: '/uk', reviewed: '2026-07-17', priority: 0.8, changeFrequency: 'weekly' },
   { path: '/europe', reviewed: '2026-07-17', priority: 0.8, changeFrequency: 'weekly' },
+  // Written 17 Nov 2026 from Danish official pages with dated SIRI figures; no human review to claim yet.
+  { path: '/europe/denmark-startup-visa', reviewed: '2026-11-17', priority: 0.7, changeFrequency: 'monthly', dataPage: true },
 
   // Trust. The team page is the highest-value page on the site once it has names.
   { path: '/about', reviewed: '2026-10-28', priority: 0.7, changeFrequency: 'monthly' },

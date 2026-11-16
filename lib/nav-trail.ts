@@ -35,6 +35,7 @@ const PAGE_LABEL: Record<string, string> = {
   '/usa': 'United States',
   '/uk': 'United Kingdom',
   '/europe': 'Europe',
+  '/europe/denmark-startup-visa': 'Start-up Denmark',
   '/privacy': 'Privacy',
   '/terms': 'Terms',
   '/canada-immigration-from-pakistan': 'Immigrate from Pakistan',
