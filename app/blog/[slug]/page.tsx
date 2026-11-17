@@ -16,9 +16,23 @@ import StartUpDenmarkPitchDeckVideo from '@/content/blog/start-up-denmark-pitch-
 import StartUpDenmarkExpertPanelScoring from '@/content/blog/start-up-denmark-expert-panel-scoring';
 import StartUpDenmarkResidencePermitSiri from '@/content/blog/start-up-denmark-residence-permit-siri';
 import StartUpDenmarkExtension from '@/content/blog/start-up-denmark-extension';
+import ExpressEntryNovember2026CrsChange from '@/content/blog/express-entry-november-2026-crs-change';
+import IeltsPteCoreCelpipPakistan from '@/content/blog/ielts-pte-core-celpip-pakistan';
+import CanadaFinesUnauthorisedImmigrationAgents from '@/content/blog/canada-fines-unauthorised-immigration-agents';
+import UkStudentVisaFunds30November2026 from '@/content/blog/uk-student-visa-funds-30-november-2026';
+import UkGraduateVisa18Months2027 from '@/content/blog/uk-graduate-visa-18-months-2027';
+import UsVisaRulesPakistan2026 from '@/content/blog/us-visa-rules-pakistan-2026';
+import SchengenVisaRefusalsPakistan2025 from '@/content/blog/schengen-visa-refusals-pakistan-2025';
 
 /** One line per post. A slug in lib/blog.ts without a body here is a build error, not a blank page. */
 const BODIES: Record<string, ComponentType> = {
+  'schengen-visa-refusals-pakistan-2025': SchengenVisaRefusalsPakistan2025,
+  'us-visa-rules-pakistan-2026': UsVisaRulesPakistan2026,
+  'uk-graduate-visa-18-months-2027': UkGraduateVisa18Months2027,
+  'uk-student-visa-funds-30-november-2026': UkStudentVisaFunds30November2026,
+  'canada-fines-unauthorised-immigration-agents': CanadaFinesUnauthorisedImmigrationAgents,
+  'ielts-pte-core-celpip-pakistan': IeltsPteCoreCelpipPakistan,
+  'express-entry-november-2026-crs-change': ExpressEntryNovember2026CrsChange,
   'express-entry-2026-so-far': ExpressEntry2026,
   'ontario-higher-earners-2026': OntarioHigherEarners,
   'eb2-niw-pakistan': Eb2NiwPakistan,
