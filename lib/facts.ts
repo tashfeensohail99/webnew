@@ -696,6 +696,65 @@ export const FACTS: Record<string, Fact> = {
     sourceUrl: 'https://um.dk/pakistan/en/travel-and-residence/residence-permit/',
     checked: '2026-11-17',
   },
+
+  // ── APPLYING TO CANADA FROM PAKISTAN (GEO plan G05) ─────────────────────
+  // Shown through lib/from-pakistan.tsx on the study permit, visit visa,
+  // spouse sponsorship and work permit guides, and on the biometrics page.
+  pkVisaApplicationCentres: {
+    id: 'pk.vac',
+    claim:
+      'IRCC lists Canada visa application centres in Pakistan in Islamabad, Lahore and Karachi. They are private companies under contract with the Government of Canada, play no part in decisions and may not give visa advice. They send passports to IRCC and return them with the decision documents. In Pakistan they are run by VFS Global.',
+    provenance: 'primary',
+    source: 'IRCC, Find a visa application centre (modified 24 Aug 2026); VFS Global, About us (Canada, Pakistan)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/find-visa-application-centre.html',
+    checked: '2026-11-17',
+  },
+  pkTranslations: {
+    id: 'pk.translations',
+    claim:
+      'A document not in English or French needs an English or French translation, a translator’s affidavit and a certified copy of the original; stamps and seals count too. Applicants and their family members cannot translate their own documents, and outside Canada the affidavit is sworn before a notary public.',
+    provenance: 'primary',
+    source: 'IRCC Help Centre, translation question 018 (modified 3 Nov 2026); IRCC guide 5256 (31 Mar 2026); IRCC Express Entry, apply for permanent residence (16 Oct 2026)',
+    sourceUrl: 'https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=018&top=4',
+    checked: '2026-11-17',
+  },
+  pkPanelPhysicians: {
+    id: 'pk.panelPhysicians',
+    claim:
+      'Only an IRCC panel physician can do an immigration medical exam. On 17 November 2026, IRCC’s panel physician search listed physicians in Pakistan in Islamabad, Karachi and Lahore.',
+    provenance: 'primary',
+    source: 'IRCC, Medical exams (19 Feb 2026); IRCC panel physician search, Pakistan (tool modified 22 Sep 2026)',
+    sourceUrl: 'https://secure.cic.gc.ca/PanelPhysicianMedecinDesigne/en/Home',
+    checked: '2026-11-17',
+    note: 'Cities only, dated. The medical-exam page deliberately names no clinic.',
+  },
+  pkPoliceCertificate: {
+    id: 'pk.policeCertificate',
+    claim:
+      'Pakistan’s certificate is the Police Character (or Clearance) Certificate. Each province’s police service issues it, people living abroad apply through a Pakistani embassy or consulate, and the Canadian High Commission cannot help.',
+    provenance: 'primary',
+    source: 'IRCC, Police certificates: Pakistan (4 Sep 2025)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/police-certificates/how/pakistan.html',
+    checked: '2026-11-17',
+  },
+  pkVisaOffice: {
+    id: 'pk.visaOffice',
+    claim:
+      'IRCC lists Islamabad as the visa office for Pakistan, to name when a checklist or form asks for it, and asks applicants not to contact the office unless it contacts them first.',
+    provenance: 'primary',
+    source: 'IRCC, International visa offices (17 Jul 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html',
+    checked: '2026-11-17',
+  },
+  pkRepresentatives: {
+    id: 'pk.representatives',
+    claim:
+      'You do not need a representative. Only lawyers and paralegals of a Canadian law society, Quebec notaries and CICC-licensed consultants may charge, and IRCC may return or refuse an application that used an unauthorised paid representative.',
+    provenance: 'primary',
+    source: 'IRCC, Learn about representatives (18 Aug 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigration-citizenship-representative/learn-about-representatives.html',
+    checked: '2026-11-17',
+  },
 };
 
 /** Facts still awaiting a lawyer's sign-off. Nothing here may be stated on a page. */

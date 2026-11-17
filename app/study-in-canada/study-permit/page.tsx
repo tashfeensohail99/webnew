@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { FromPakistan } from '@/components/FromPakistan';
+import { PK, PAKISTAN_CHECKED } from '@/lib/from-pakistan';
 import { MidPagePrompt } from '@/components/MidPagePrompt';
 import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
@@ -451,6 +453,12 @@ export default function StudyPermitPage() {
             . Read the figures at the source, on the day you need them.
           </p>
         </Prose>
+      </Section>
+
+      {/* ===================== FROM PAKISTAN (GEO plan G05) ===================== */}
+      <Section tone="paper" size="sm">
+        <SectionHeading eyebrow="From Pakistan" title="What is different when you apply from Pakistan?" />
+        <FromPakistan items={[PK.vac, PK.translations, PK.medical, PK.visaOffice, PK.representatives]} checked={PAKISTAN_CHECKED} />
       </Section>
 
       {/* ===================== FAQ ===================== */}

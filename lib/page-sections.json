@@ -143,6 +143,10 @@
    "label": "Apply from where you live — we handle the Pakistan side"
   },
   {
+   "id": "what-is-different-when-you-apply-from-pakistan",
+   "label": "What is different when you apply from Pakistan?"
+  },
+  {
    "id": "questions-about-the-canada-visit-visa",
    "label": "Questions about the Canada visit visa"
   }
@@ -559,6 +563,10 @@
   {
    "id": "fees-forms-and-processing",
    "label": "Fees, forms and processing"
+  },
+  {
+   "id": "what-is-different-when-you-apply-from-pakistan",
+   "label": "What is different when you apply from Pakistan?"
   },
   {
    "id": "questions-about-spouse-sponsorship",
@@ -1457,6 +1465,10 @@
    "label": "Fees, funds and timelines"
   },
   {
+   "id": "what-is-different-when-you-apply-from-pakistan",
+   "label": "What is different when you apply from Pakistan?"
+  },
+  {
    "id": "questions-about-the-study-permit",
    "label": "Questions about the study permit"
   }
@@ -2063,6 +2075,10 @@
   {
    "id": "sequence-matters-more-than-speed",
    "label": "Sequence matters more than speed"
+  },
+  {
+   "id": "what-is-different-when-you-apply-from-pakistan",
+   "label": "What is different when you apply from Pakistan?"
   },
   {
    "id": "questions-about-canadian-work-permits",

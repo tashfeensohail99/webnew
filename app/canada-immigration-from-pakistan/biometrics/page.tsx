@@ -160,6 +160,17 @@ export default function PakistanBiometricsPage() {
               elsewhere? Use a centre where you live —{' '}
               <Official href={IRCC.where}>IRCC lists them by country</Official>.
             </p>
+            <p className="mt-4 text-ink-600 text-pretty">
+              The centres are private companies under contract with the Government of Canada, run in
+              Pakistan by{' '}
+              <Official href="https://visa.vfsglobal.com/pak/en/can/about-vfs">VFS Global</Official>. They take
+              your biometrics and documents, send your passport to IRCC when it is requested and return it with
+              the decision documents, but{' '}
+              <Official href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/find-visa-application-centre.html">
+                they play no part in the decision
+              </Official>{' '}
+              and may not give visa advice.
+            </p>
           </div>
           <div className="lg:pt-14">
             <Callout title="Appointments are free">

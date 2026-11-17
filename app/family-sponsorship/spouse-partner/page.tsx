@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { FromPakistan } from '@/components/FromPakistan';
+import { PK, PAKISTAN_CHECKED } from '@/lib/from-pakistan';
 import { OnThisPage } from '@/components/OnThisPage';
 import Link from 'next/link';
 import {
@@ -483,6 +485,12 @@ export default function SpousePartnerSponsorshipPage() {
             .
           </p>
         </Prose>
+      </Section>
+
+      {/* ===================== FROM PAKISTAN (GEO plan G05) ===================== */}
+      <Section tone="paper" size="sm">
+        <SectionHeading eyebrow="From Pakistan" title="What is different when you apply from Pakistan?" />
+        <FromPakistan items={[PK.translations, PK.police, PK.medical, PK.visaOffice, PK.representatives]} checked={PAKISTAN_CHECKED} />
       </Section>
 
       {/* ===================== FAQ ===================== */}
