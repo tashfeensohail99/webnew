@@ -20,7 +20,8 @@ export function CompareTable({
   rows: { label: ReactNode; cells: ReactNode[] }[];
 }) {
   return (
-    <div className="mt-8 rounded-2xl border border-rule bg-paper">
+    // not-prose: the table keeps its own styling when placed inside <Prose>.
+    <div className="not-prose mt-8 rounded-2xl border border-rule bg-paper">
       <table role="table" className="block w-full text-left text-sm sm:table">
         <caption className="sr-only">{caption}</caption>
         <thead role="rowgroup" className="hidden border-b border-rule text-xs uppercase tracking-[0.12em] text-ink-500 sm:table-header-group">

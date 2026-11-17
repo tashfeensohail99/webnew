@@ -8,9 +8,21 @@ const ROOT = new URL('..', import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '
 const headingId = (t) => t.toLowerCase().replace(/[’']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 const walk = (d) => readdirSync(d, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(join(d, e.name)) : e.name === 'page.tsx' ? [join(d, e.name)] : []));
 
+// The route a page.tsx serves: app/study-in-canada/page.tsx -> /study-in-canada.
+const routeOf = (file) => {
+  const dir = file.slice(join(ROOT, 'app').length).replace(/\\/g, '/').replace(/\/page\.tsx$/, '');
+  return dir.split('/').filter((s) => s && !/^\(.*\)$/.test(s)).join('/').replace(/^/, '/');
+};
+
+// Also writes lib/short-answers.json: each page's <ShortAnswer question="…">, which
+// llms.txt lists under "Questions we answer" (GEO plan G07), so that list cannot
+// drift from the pages either.
+const answers = [];
 const out = {};
 for (const file of walk(join(ROOT, 'app'))) {
   const src = readFileSync(file, 'utf8');
+  const question = (src.match(/<ShortAnswer\s+question="([^"]+)"/) || [])[1];
+  if (question && !file.includes('[')) answers.push({ path: routeOf(file), question });
   const path = (src.match(/<OnThisPage path="([^"]+)"/) || [])[1];
   if (!path) continue;
   const seen = new Set();
@@ -18,7 +30,8 @@ for (const file of walk(join(ROOT, 'app'))) {
   for (const m of src.matchAll(/<SectionHeading[\s\S]*?\/>/g)) {
     const label = (m[0].match(/\btitle="([^"]+)"/) || [])[1];
     if (!label) continue;
-    const id = headingId(label);
+    // An explicit id keeps a reworded section's old anchor (SectionHeading's `id` prop).
+    const id = (m[0].match(/\sid="([^"]+)"/) || [])[1] || headingId(label);
     if (!id || seen.has(id)) continue;
     seen.add(id);
     items.push({ id, label });
@@ -26,4 +39,6 @@ for (const file of walk(join(ROOT, 'app'))) {
   out[path] = items;
 }
 writeFileSync(join(ROOT, 'lib/page-sections.json'), JSON.stringify(out, null, 1) + '\n');
-console.log(`page-sections: ${Object.keys(out).length} pages`);
+answers.sort((a, b) => a.path.localeCompare(b.path));
+writeFileSync(join(ROOT, 'lib/short-answers.json'), JSON.stringify(answers, null, 1) + '\n');
+console.log(`page-sections: ${Object.keys(out).length} pages; short answers: ${answers.length}`);

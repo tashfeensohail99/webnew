@@ -11,7 +11,9 @@ import {
   CTASection,
   Prose,
   Icon,
+  ShortAnswer,
 } from '@/components/ui';
+import { CompareTable } from '@/components/CompareTable';
 import { ReviewedBy } from '@/components/ReviewedBy';
 import { SERVICE } from '@/lib/site';
 
@@ -147,13 +149,20 @@ export default function BringingFamilyPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <ShortAnswer question="Can I bring my spouse and children while I study in Canada?">
+        Your spouse and children can apply with you, but each needs their own status, normally filed
+        alongside your study permit. Your spouse may qualify for an open work permit only if your
+        programme and institution fall within the categories IRCC currently allows. Children coming
+        from Pakistan to study usually need their own study permit before they enter Canada.
+      </ShortAnswer>
       <OnThisPage path="/study-in-canada/bringing-family" />
 
       {/* ===================== THE SHAPE OF IT ===================== */}
       <Section tone="paper">
         <SectionHeading
           eyebrow="The route, plainly"
-          title="Three separate decisions, not one"
+          title="Does my study permit cover my spouse and children?"
+          id="three-separate-decisions-not-one"
         />
         <Prose>
           <p>
@@ -181,8 +190,9 @@ export default function BringingFamilyPage() {
       {/* ===================== WHO IS WHO ===================== */}
       <Section tone="alt">
         <SectionHeading
-          eyebrow="Who needs what"
-          title="Every person needs their own status"
+          eyebrow="Person by person"
+          title="What does each family member need?"
+          id="every-person-needs-their-own-status"
           subtitle="A permit authorises the activity. A visa authorises the entry. They are not the same document and both are needed."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -222,7 +232,8 @@ export default function BringingFamilyPage() {
           <div>
             <SectionHeading
               eyebrow="Your spouse or partner"
-              title="When an open work permit is available"
+              title="Can my spouse work while I study in Canada?"
+              id="when-an-open-work-permit-is-available"
             />
             <Prose>
               <p>
@@ -270,13 +281,35 @@ export default function BringingFamilyPage() {
             </ul>
           </div>
         </div>
+        <CompareTable
+          caption="Your spouse’s options while you study in Canada, and whether each allows work"
+          columns={['Your spouse’s route', 'Can they work in Canada?', 'When it fits']}
+          rows={[
+            {
+              label: 'Open work permit',
+              cells: [
+                'Yes. It is not tied to a named employer.',
+                'Only if your programme and institution fall within the categories IRCC currently allows.',
+              ],
+            },
+            {
+              label: 'Visitor status',
+              cells: ['No. A visitor cannot work.', 'Where your programme does not qualify them for an open work permit.'],
+            },
+            {
+              label: 'A work permit in their own right',
+              cells: ['Yes, under that permit.', 'If they qualify for one on an unrelated basis.'],
+            },
+          ]}
+        />
       </Section>
 
       {/* ===================== CHILDREN ===================== */}
       <Section tone="alt">
         <SectionHeading
           eyebrow="Dependent children"
-          title="School, status, and the age line"
+          title="What do my children need to go to school in Canada?"
+          id="school-status-and-the-age-line"
         />
         <Prose>
           <p>
@@ -309,8 +342,9 @@ export default function BringingFamilyPage() {
       {/* ===================== WHAT GOES WRONG ===================== */}
       <Section tone="paper">
         <SectionHeading
-          eyebrow="What commonly goes wrong"
-          title="Where family study permit applications go wrong"
+          eyebrow="Common mistakes"
+          title="What goes wrong in family study permit applications?"
+          id="where-family-study-permit-applications-go-wrong"
         />
         <Prose>
           <p>
@@ -358,7 +392,8 @@ export default function BringingFamilyPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="The sequence"
-          title="How a family application is put together"
+          title="How do I apply for a study permit with my family?"
+          id="how-a-family-application-is-put-together"
           subtitle="The order matters. Most of the damage is done at step two, before anything is filed."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

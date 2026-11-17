@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import Link from 'next/link';
-import { PageHero, Section, SectionHeading, Callout, FAQ, CTASection } from '@/components/ui';
+import { PageHero, Section, SectionHeading, Callout, FAQ, CTASection, ShortAnswer } from '@/components/ui';
+import { CompareTable } from '@/components/CompareTable';
 import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
@@ -105,12 +106,19 @@ export default function PakistanBiometricsPage() {
           All the paperwork from Pakistan
         </Link>
       </PageHero>
+      <ShortAnswer question="Where and how do I give biometrics for Canada from Pakistan?">
+        In Pakistan, you give biometrics in person at a Canada visa application centre in Islamabad,
+        Lahore or Karachi. Give them within 30 days of receiving IRCC’s biometric instruction letter,
+        and bring that letter and your valid passport. Almost everyone aged 14 to 79 needs them; for
+        visits, study and work, they last 10 years.
+      </ShortAnswer>
 
       {/* ===================== HOW IT WORKS ===================== */}
       <Section tone="paper">
         <SectionHeading
-          eyebrow="How it works"
-          title="Four steps, one deadline"
+          eyebrow="Four steps, one deadline"
+          title="How do I give biometrics for Canada?"
+          id="four-steps-one-deadline"
           subtitle={
             <>
               From IRCC’s{' '}
@@ -135,8 +143,9 @@ export default function PakistanBiometricsPage() {
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
             <SectionHeading
-              eyebrow="Where, in Pakistan"
-              title="Three visa application centres"
+              eyebrow="Three visa application centres"
+              title="Where are the biometrics centres in Pakistan?"
+              id="three-visa-application-centres"
               subtitle="IRCC lists Canada visa application centres in Islamabad, Lahore and Karachi. Check the centre’s own site for its address, hours and services before you go."
             />
             <ul className="mt-8 flex flex-wrap gap-3">
@@ -165,7 +174,7 @@ export default function PakistanBiometricsPage() {
       <Section tone="paper">
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
-            <SectionHeading eyebrow="Who gives them" title="Almost everyone aged 14 to 79" />
+            <SectionHeading eyebrow="Almost everyone aged 14 to 79" title="Who has to give biometrics, and who is exempt?" id="almost-everyone-aged-14-to-79" />
             <p className="mt-6 text-ink-600 text-pretty">
               Biometrics are needed for visit visas, study and work permits, permanent residence, and
               extending your stay in Canada. IRCC’s exemptions that matter most for Pakistani applicants:
@@ -180,7 +189,7 @@ export default function PakistanBiometricsPage() {
             </ul>
           </div>
           <div>
-            <SectionHeading eyebrow="How long they last" title="Ten years — for temporary stays" />
+            <SectionHeading eyebrow="Ten years for temporary stays" title="How long do biometrics last?" id="ten-years-for-temporary-stays" />
             <div className="mt-6 space-y-4 text-ink-600 text-pretty">
               <p>
                 For <strong className="text-ink-900">visit, study and work</strong> applications you give
@@ -197,6 +206,27 @@ export default function PakistanBiometricsPage() {
             </div>
           </div>
         </div>
+        <CompareTable
+          caption="Who gives biometrics for a Canadian application, who is exempt, and when they must be given again"
+          columns={['Applicant', 'Give biometrics?']}
+          rows={[
+            { label: 'Children under 14', cells: ['No, exempt'] },
+            {
+              label: 'Applicants aged 14 to 79',
+              cells: ['Yes, normally, for visit visas, study and work permits, permanent residence and extending a stay'],
+            },
+            { label: 'Applicants over 79', cells: ['No, exempt, except asylum claimants'] },
+            {
+              label: 'Visit, study or work applicants who gave biometrics in the last 10 years',
+              cells: ['Not again: for temporary stays you give them once every 10 years'],
+            },
+            {
+              label: 'Visit, study or work applicants whose permanent residence application, with biometrics, is still in process',
+              cells: ['No, exempt'],
+            },
+            { label: 'Permanent residence applicants', cells: ['Yes, most must give them again every time they apply'] },
+          ]}
+        />
       </Section>
 
       {/* ===================== FAQ ===================== */}

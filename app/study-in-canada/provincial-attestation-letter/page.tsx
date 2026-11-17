@@ -11,7 +11,9 @@ import {
   CTASection,
   Prose,
   Icon,
+  ShortAnswer,
 } from '@/components/ui';
+import { CompareTable } from '@/components/CompareTable';
 import { ReviewedBy } from '@/components/ReviewedBy';
 import { SERVICE } from '@/lib/site';
 
@@ -146,13 +148,20 @@ export default function ProvincialAttestationLetterPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <ShortAnswer question="What is a provincial attestation letter, and do I need one?">
+        A provincial attestation letter confirms that a province or territory has counted you within
+        its share of study permit applications. Unless an exception covers you, an application filed
+        without one is returned rather than assessed. It usually comes through your institution after
+        you accept an offer and pay tuition, and no consultant can obtain it for you.
+      </ShortAnswer>
       <OnThisPage path="/study-in-canada/provincial-attestation-letter" />
 
       {/* ===================== WHAT IT IS ===================== */}
       <Section tone="paper">
         <SectionHeading
           eyebrow="The document, plainly"
-          title="What a PAL or TAL actually is"
+          title="What is a PAL or TAL?"
+          id="what-a-pal-or-tal-actually-is"
         />
         <Prose>
           <p>
@@ -184,7 +193,8 @@ export default function ProvincialAttestationLetterPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="Whose document is whose"
-          title="Four parties, and none of them is your consultant"
+          title="Who issues the letter, and can a consultant get it for you?"
+          id="four-parties-and-none-of-them-is-your-consultant"
           subtitle="Applicants are often misled on this point."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -216,7 +226,8 @@ export default function ProvincialAttestationLetterPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="The sequence"
-          title="Where the letter sits in the order of events"
+          title="When do you get the letter in the study permit process?"
+          id="where-the-letter-sits-in-the-order-of-events"
           subtitle="The order matters more than anything else on this page. You cannot reverse steps three and five."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -243,6 +254,28 @@ export default function ProvincialAttestationLetterPage() {
             your fee is refunded. You can file again once you have a valid letter, if your intake still
             allows it.
           </p>
+          <CompareTable
+            caption="What happens to a study permit application with and without a required attestation letter"
+            columns={['When you file', 'What happens to the application']}
+            rows={[
+              {
+                label: 'With a valid letter attached',
+                cells: ['It is accepted into processing, which is not approval; an officer then assesses your finances, study plan and intentions.'],
+              },
+              {
+                label: 'Without a letter that is required',
+                cells: ['It is not accepted for processing: it is returned, not assessed.'],
+              },
+              {
+                label: 'Before the letter exists, meaning to add it later',
+                cells: ['Not possible: the file is returned as incomplete rather than held open.'],
+              },
+              {
+                label: 'Again, once you have a valid letter',
+                cells: ['Possible, if your intake still allows it.'],
+              },
+            ]}
+          />
         </Prose>
       </Section>
 
@@ -250,7 +283,8 @@ export default function ProvincialAttestationLetterPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="Exceptions"
-          title="Who does not need one"
+          title="Who does not need an attestation letter?"
+          id="who-does-not-need-one"
         />
         <Prose>
           <p>

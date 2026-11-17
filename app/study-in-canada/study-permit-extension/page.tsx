@@ -11,7 +11,9 @@ import {
   CTASection,
   Prose,
   Icon,
+  ShortAnswer,
 } from '@/components/ui';
+import { CompareTable } from '@/components/CompareTable';
 import { ReviewedBy } from '@/components/ReviewedBy';
 import { SERVICE } from '@/lib/site';
 
@@ -144,6 +146,12 @@ export default function StudyPermitExtensionPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <ShortAnswer question="How do I extend my study permit in Canada?">
+        Apply online to IRCC from inside Canada, and make sure your application is received before
+        your current permit expires. You must still be enrolled at a designated learning institution,
+        actively studying and able to support yourself. If it arrives in time and you stay in Canada,
+        you may generally continue under your old permit’s conditions until IRCC decides.
+      </ShortAnswer>
       <OnThisPage path="/study-in-canada/study-permit-extension" />
 
       {/* ===================== WHY IT MATTERS ===================== */}
@@ -178,8 +186,9 @@ export default function StudyPermitExtensionPage() {
       {/* ===================== WHEN TO EXTEND ===================== */}
       <Section tone="alt">
         <SectionHeading
-          eyebrow="When an extension is needed"
-          title="Four situations that require action"
+          eyebrow="Four situations"
+          title="When do you need to extend a study permit?"
+          id="four-situations-that-require-action"
           subtitle="Some of these are obvious. The ones that catch people are the changes that feel administrative rather than immigration-related."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -225,7 +234,8 @@ export default function StudyPermitExtensionPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="The sequence"
-          title="How an extension runs, in order"
+          title="How do you extend a study permit?"
+          id="how-an-extension-runs-in-order"
           subtitle="Step four is the one everything else depends on. Steps one to three exist to make sure step four happens on time."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -247,7 +257,8 @@ export default function StudyPermitExtensionPage() {
           <div>
             <SectionHeading
               eyebrow="While a decision is pending"
-              title="What maintained status is"
+              title="What is maintained status?"
+              id="what-maintained-status-is"
             />
             <Prose>
               <p>
@@ -271,7 +282,7 @@ export default function StudyPermitExtensionPage() {
           </div>
 
           <div>
-            <SectionHeading eyebrow="Its limits" title="What it does not do" />
+            <SectionHeading eyebrow="Its limits" title="What does maintained status not do?" id="what-it-does-not-do" />
             <ul className="mt-6 space-y-4">
               {[
                 ['It does not survive a late application', 'The protection exists only if the application was received while the permit was still valid. A day late is not a technicality — it is the difference between having status and not having it.'],
@@ -298,8 +309,9 @@ export default function StudyPermitExtensionPage() {
       {/* ===================== RESTORATION ===================== */}
       <Section tone="paper">
         <SectionHeading
-          eyebrow="If the permit expired first"
-          title="Restoration, and why it is not a safety net"
+          eyebrow="Restoration, not a safety net"
+          title="Can you restore your status after your permit expires?"
+          id="restoration-and-why-it-is-not-a-safety-net"
         />
         <Prose>
           <p>
@@ -328,6 +340,32 @@ export default function StudyPermitExtensionPage() {
             restoration application fails. If you have already lost status, stop studying and stop
             working first, then get advice — in that order, and quickly, because the window is short.
           </p>
+          <CompareTable
+            caption="Your status, and whether you can study and work, at each point of an extension, inside and outside the 90-day restoration window"
+            columns={['Your situation', 'Your status', 'Studying and working']}
+            rows={[
+              {
+                label: 'Applied before the permit expired, still in Canada',
+                cells: ['Maintained status', 'Generally allowed on the old permit’s conditions until a decision'],
+              },
+              {
+                label: 'Applied in time, then left Canada',
+                cells: ['Maintained status generally ends', 'Studying usually cannot resume until a decision, even after re-entry'],
+              },
+              {
+                label: 'Extension refused',
+                cells: ['Status ends with the decision', 'No longer authorised'],
+              },
+              {
+                label: 'Permit expired with nothing filed, within 90 days',
+                cells: ['Out of status; you can apply for restoration', 'Not authorised: stop both, then get advice'],
+              },
+              {
+                label: 'Permit expired with nothing filed, more than 90 days ago',
+                cells: ['Out of status; the restoration route has closed', 'Not authorised'],
+              },
+            ]}
+          />
           <p>
             The 90-day window was read at the source on 8 November 2026. The current fee and process are
             published by IRCC, and the rule itself is in{' '}

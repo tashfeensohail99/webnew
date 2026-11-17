@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import { OnThisPage } from '@/components/OnThisPage';
 import type { ReactNode } from 'react';
 import Link from 'next/link';
-import { PageHero, Section, SectionHeading, Callout, FAQ, CTASection } from '@/components/ui';
+import { PageHero, Section, SectionHeading, Callout, FAQ, CTASection, ShortAnswer } from '@/components/ui';
+import { CompareTable } from '@/components/CompareTable';
 import { ReviewedBy } from '@/components/ReviewedBy';
 import { site, founder } from '@/lib/site';
 
@@ -138,13 +139,23 @@ export default function CanadianImmigrationLawyerPakistanPage() {
           IRCC: who can represent you
         </a>
       </PageHero>
+      <ShortAnswer question="Who can I legally pay to help with my Canadian immigration application, and how do I check them?">
+        Only authorised representatives may be paid: lawyers or paralegals licensed by a Canadian
+        law society, Quebec notaries, and consultants licensed by the CICC. A Pakistani law degree
+        and bar enrolment alone do not make someone authorised. Check consultants on the CICC’s
+        public register and lawyers in their law society’s directory, which IRCC links from one page.
+      </ShortAnswer>
       <OnThisPage path="/canadian-immigration-lawyer-pakistan" />
 
       {/* ===================== THE RULE ===================== */}
       <Section tone="paper">
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
-            <SectionHeading eyebrow="Canada’s rule" title="Paid help must be authorised help" />
+            <SectionHeading
+              eyebrow="Canada’s rule"
+              title="Who can be paid to represent you before IRCC?"
+              id="paid-help-must-be-authorised-help"
+            />
             <div className="mt-6 space-y-4 text-ink-600 text-pretty">
               <p>
                 Anyone who is paid — or, in IRCC’s words, compensated in any way — to help with an
@@ -162,7 +173,11 @@ export default function CanadianImmigrationLawyerPakistanPage() {
             </div>
           </div>
           <div>
-            <SectionHeading eyebrow="In Lahore or Islamabad" title="A lawyer here is not automatically a lawyer there" />
+            <SectionHeading
+              eyebrow="In Lahore or Islamabad"
+              title="Is a lawyer in Pakistan authorised to represent you before IRCC?"
+              id="a-lawyer-here-is-not-automatically-a-lawyer-there"
+            />
             <div className="mt-6 space-y-4 text-ink-600 text-pretty">
               <p>
                 A Pakistani law degree and bar enrolment make someone a lawyer in Pakistan. On their
@@ -185,7 +200,8 @@ export default function CanadianImmigrationLawyerPakistanPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="Two minutes, before you pay"
-          title="Where to check a name"
+          title="Where can you check whether a representative is authorised?"
+          id="where-to-check-a-name"
           subtitle="These are the public registers IRCC itself points to. A real credential is on one of them; a certificate on an office wall is not a credential."
         />
         <ul className="mt-12 grid gap-6 md:grid-cols-3">
@@ -199,13 +215,24 @@ export default function CanadianImmigrationLawyerPakistanPage() {
             </li>
           ))}
         </ul>
+        <CompareTable
+          caption="Who may be paid to represent you before IRCC, and where to check each name"
+          columns={['Who', 'May they be paid to represent you?', 'Where to check']}
+          rows={[
+            { label: 'Lawyer or paralegal with a Canadian law society', cells: ['Yes, if in good standing', 'Their law society’s public directory; IRCC links every directory from one page'] },
+            { label: 'Notary of the Chambre des notaires du Québec', cells: ['Yes', 'Start from IRCC’s page on finding out if your representative is authorised'] },
+            { label: 'Immigration consultant (RCIC)', cells: ['Yes, if licensed by the CICC', 'The CICC’s public register, which shows whether the licence is active'] },
+            { label: 'Lawyer enrolled in Pakistan', cells: ['Only if also licensed in Canada, by a law society or the CICC', 'Ask for their bar council and enrolment number. That confirms only that they are a lawyer in Pakistan'] },
+          ]}
+        />
       </Section>
 
       {/* ===================== QUESTIONS ===================== */}
       <Section tone="paper">
         <SectionHeading
-          eyebrow="At the first meeting"
-          title="Seven questions to ask before you pay anyone"
+          eyebrow="Seven questions, at the first meeting"
+          title="What should you ask before you pay anyone?"
+          id="seven-questions-to-ask-before-you-pay-anyone"
           subtitle="And what a good answer sounds like. We expect to be asked all seven."
         />
         <dl className="mt-10 grid gap-x-10 gap-y-8 sm:grid-cols-2">
@@ -227,7 +254,11 @@ export default function CanadianImmigrationLawyerPakistanPage() {
 
       {/* ===================== RED FLAGS ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Walk away" title="Six things no honest firm will say" />
+        <SectionHeading
+          eyebrow="Six reasons to walk away"
+          title="What are the warning signs of a dishonest firm?"
+          id="six-things-no-honest-firm-will-say"
+        />
         <dl className="mt-10 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
           {RED_FLAGS.map(([t, d]) => (
             <div key={t} className="border-l-2 border-gold-500/60 pl-5">

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { PageHero, Section, SectionHeading, Callout, FAQ, CTASection } from '@/components/ui';
+import { PageHero, Section, SectionHeading, ShortAnswer, Callout, FAQ, CTASection } from '@/components/ui';
+import { CompareTable } from '@/components/CompareTable';
 import { CrsCalculator } from '@/components/tools/CrsCalculator';
 import { getWhatsAppChannel } from '@/lib/wa-channel';
 import { CRS_GRID_VERIFIED_ON, OFFICIAL_CALCULATOR_URL } from '@/lib/crs-grid';
@@ -78,6 +79,12 @@ export default async function CrsCalculatorPage() {
         }
         subtitle="Work out your Comprehensive Ranking System score on the grid IRCC has used since 3 November 2026, then test our arithmetic against IRCC’s own calculator. We will show you how."
       />
+      <ShortAnswer question="How do I work out my Express Entry CRS score?">
+        Enter your details in this calculator to get your CRS score on the grid IRCC has used since
+        3 November 2026. That grid gives points for a job offer only if the occupation is on IRCC’s
+        high-wage lists. This is not the official calculator, so check the result on IRCC’s own
+        calculator; if the two disagree, IRCC is right.
+      </ShortAnswer>
 
       <Section tone="paper">
         <div className="mx-auto max-w-5xl">
@@ -95,7 +102,8 @@ export default async function CrsCalculatorPage() {
         <div className="mx-auto max-w-3xl">
           <SectionHeading
             eyebrow="What changed"
-            title="Job offers can earn CRS points again, but only some of them"
+            title="Which job offers earn CRS points?"
+            id="job-offers-can-earn-crs-points-again-but-only-some-of-them"
             subtitle="On 3 November 2026 IRCC added a Labour Market Integration factor worth up to 150 points. Job-offer points had been gone since March 2025."
           />
           <div className="mt-8 space-y-4 leading-relaxed text-ink-600 text-pretty">
@@ -130,6 +138,18 @@ export default async function CrsCalculatorPage() {
               eligibility grid, and it can still matter for some provincial streams.
             </p>
           </div>
+          <CompareTable
+            caption="How the Labour Market Integration factor scores Canadian work and job offers since 3 November 2026"
+            columns={['What you have', 'CRS points']}
+            rows={[
+              { label: 'Canadian work experience', cells: ['The same length-of-work points as before'] },
+              { label: 'At least a year of it in an eligible high-wage occupation', cells: ['Up to 70 more'] },
+              { label: 'A job offer in an eligible high-wage occupation', cells: ['50, 70 or 100, depending on the occupation’s level'] },
+              { label: 'A job offer in any other occupation', cells: ['None'] },
+              { label: 'Both work experience and a job offer', cells: ['Only the higher of the two scores counts'] },
+              { label: 'An LMIA for the job offer', cells: ['Not needed, and adds no points'] },
+            ]}
+          />
           <div className="mt-8">
             <Callout title="How to test any CRS calculator, including this one">
               With no Canadian work experience entered, add a job offer in an occupation on IRCC’s

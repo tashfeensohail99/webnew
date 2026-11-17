@@ -11,7 +11,9 @@ import {
   CTASection,
   Prose,
   Icon,
+  ShortAnswer,
 } from '@/components/ui';
+import { CompareTable } from '@/components/CompareTable';
 import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
@@ -165,13 +167,21 @@ export default function PnpOntarioPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <ShortAnswer question="How does the Ontario Immigrant Nominee Program work for applicants from Pakistan?">
+        For most people in Pakistan, the process starts with a job offer from an Ontario employer,
+        who submits it before you register interest. As of 8 November 2026, Ontario Workforce
+        Priority is the only open stream, and you can apply only if Ontario invites you. A
+        nomination is the province’s recommendation, and IRCC decides permanent residence
+        separately.
+      </ShortAnswer>
       <OnThisPage path="/pnp/ontario" />
 
       {/* ===================== WHAT A NOMINATION IS ===================== */}
       <Section tone="paper">
         <SectionHeading
           eyebrow="The route, plainly"
-          title="What a provincial nomination actually is"
+          title="What is a provincial nomination?"
+          id="what-a-provincial-nomination-actually-is"
         />
         <Prose>
           <p>
@@ -198,7 +208,8 @@ export default function PnpOntarioPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="The province’s side of it"
-          title="What Ontario is looking for in an immigrant"
+          title="What is Ontario looking for in an immigrant?"
+          id="what-ontario-is-looking-for-in-an-immigrant"
           subtitle="A province nominates to solve its own problems. Understanding what those are tells you more than any checklist."
         />
         <Prose>
@@ -242,7 +253,8 @@ export default function PnpOntarioPage() {
           <div>
             <SectionHeading
               eyebrow="Two mechanics"
-              title="Enhanced and base nomination"
+              title="What is the difference between enhanced and base nomination in Ontario?"
+              id="enhanced-and-base-nomination"
             />
             <Prose>
               <p>
@@ -279,7 +291,11 @@ export default function PnpOntarioPage() {
           </div>
 
           <div>
-            <SectionHeading eyebrow="How candidates are selected" title="Invited from a pool" />
+            <SectionHeading
+              eyebrow="Invited from a pool"
+              title="How does Ontario select candidates?"
+              id="invited-from-a-pool"
+            />
             <ul className="mt-6 space-y-4">
               {[
                 [
@@ -316,13 +332,24 @@ export default function PnpOntarioPage() {
             </ul>
           </div>
         </div>
+        <CompareTable
+          caption="Enhanced and base nomination under the Ontario Workforce Priority stream, compared"
+          columns={['', 'Enhanced (Express Entry)', 'Base']}
+          rows={[
+            { label: 'Who it is for', cells: ['Applicants with a TEER 0 to 3 job offer, and self-employed physicians, who ask for it', 'Everyone else under the stream'] },
+            { label: 'Express Entry profile needed?', cells: ['Yes: you must meet a federal programme’s criteria and keep a valid profile', 'No; it sits outside Express Entry'] },
+            { label: 'After nomination', cells: ['You continue through the Express Entry process', 'You file a separate permanent residence application to IRCC'] },
+            { label: 'Who decides permanent residence', cells: ['IRCC', 'IRCC'] },
+          ]}
+        />
       </Section>
 
       {/* ===================== KINDS OF STREAM ===================== */}
       <Section tone="alt">
         <SectionHeading
-          eyebrow="As of 8 November 2026"
-          title="One open stream: Ontario Workforce Priority"
+          eyebrow="The one open stream, as of 8 November 2026"
+          title="What does the Ontario Workforce Priority stream require?"
+          id="one-open-stream-ontario-workforce-priority"
           subtitle={
             <>
               Ontario says all its other streams are closed. This is what the stream asks for.
@@ -362,7 +389,8 @@ export default function PnpOntarioPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="The sequence"
-          title="How a nomination file runs, in order"
+          title="What are the steps in the Ontario PNP process?"
+          id="how-a-nomination-file-runs-in-order"
           subtitle="Two applications to two governments. The provincial one comes first and does not substitute for the federal one."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -381,8 +409,9 @@ export default function PnpOntarioPage() {
       {/* ===================== WHAT GOES WRONG ===================== */}
       <Section tone="alt">
         <SectionHeading
-          eyebrow="What commonly goes wrong"
-          title="Where Ontario PNP applications go wrong"
+          eyebrow="Common mistakes"
+          title="Where do Ontario PNP applications go wrong?"
+          id="where-ontario-pnp-applications-go-wrong"
         />
         <Prose>
           <p>
@@ -426,7 +455,11 @@ export default function PnpOntarioPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Being honest about fit" title="Who the Ontario PNP does not suit" />
+        <SectionHeading
+          eyebrow="Being honest about fit"
+          title="Who does the Ontario PNP not suit?"
+          id="who-the-ontario-pnp-does-not-suit"
+        />
         <div className="mt-8">
           <Callout title="If you have no genuine connection to Ontario, this is the wrong province">
             <p>

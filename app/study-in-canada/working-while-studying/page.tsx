@@ -11,7 +11,9 @@ import {
   CTASection,
   Prose,
   Icon,
+  ShortAnswer,
 } from '@/components/ui';
+import { CompareTable } from '@/components/CompareTable';
 import { ReviewedBy } from '@/components/ReviewedBy';
 import { SERVICE } from '@/lib/site';
 
@@ -143,6 +145,12 @@ export default function WorkingWhileStudyingPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <ShortAnswer question="Can international students work in Canada, and for how many hours?">
+        Yes, if your permit allows it: as of 8 November 2026, up to 24 hours a week off campus in
+        regular academic sessions. IRCC says there is no hour limit on campus or during scheduled
+        breaks. Permission to work is a condition printed on your study permit, so if it is not there,
+        you cannot work.
+      </ShortAnswer>
       <OnThisPage path="/study-in-canada/working-while-studying" />
 
       {/* ===================== THE CORE IDEA ===================== */}
@@ -177,7 +185,8 @@ export default function WorkingWhileStudyingPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="The categories"
-          title="Four different things, governed differently"
+          title="What kinds of work can international students do?"
+          id="four-different-things-governed-differently"
           subtitle="Students routinely treat these as one topic. They are not, and the rules for one do not carry over to another."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -222,6 +231,36 @@ export default function WorkingWhileStudyingPage() {
             </p>
           </Callout>
         </div>
+        <CompareTable
+          caption="Kinds of work an international student can do in Canada, and when each is allowed, as of 8 November 2026"
+          columns={['Kind of work', 'When it is allowed']}
+          rows={[
+            {
+              label: 'On campus',
+              cells: ['With the on-campus condition, while enrolled full-time; IRCC says there is no hour limit'],
+            },
+            {
+              label: 'Off campus, in regular academic sessions',
+              cells: ['With the off-campus condition, up to 24 hours a week across all jobs'],
+            },
+            {
+              label: 'Off campus, in a scheduled break',
+              cells: ['If you studied full-time before the break and are enrolled after it; IRCC says there is no hour limit'],
+            },
+            {
+              label: 'Off campus, as a part-time student',
+              cells: ['Only in the last semester of your programme, if you meet IRCC’s other conditions'],
+            },
+            {
+              label: 'Required co-op, internship or practicum',
+              cells: ['Since 1 April 2026, no separate work permit for eligible post-secondary students'],
+            },
+            {
+              label: 'Long-term work after graduation',
+              cells: ['Only on a separate permit, with its own eligibility rules'],
+            },
+          ]}
+        />
       </Section>
 
       {/* ===================== CONDITIONS CHECKLIST ===================== */}
@@ -230,7 +269,8 @@ export default function WorkingWhileStudyingPage() {
           <div>
             <SectionHeading
               eyebrow="Before your first shift"
-              title="What has to be true for off-campus work"
+              title="What do you need before you can work off campus?"
+              id="what-has-to-be-true-for-off-campus-work"
             />
             <Prose>
               <p>
@@ -273,8 +313,9 @@ export default function WorkingWhileStudyingPage() {
       {/* ===================== PLACEMENTS ===================== */}
       <Section tone="alt">
         <SectionHeading
-          eyebrow="Co-op, internship, practicum"
-          title="When work is part of the programme"
+          eyebrow="Work that is part of the programme"
+          title="Do you need a separate permit for a co-op or internship?"
+          id="when-work-is-part-of-the-programme"
           subtitle="A required placement is coursework that happens to be paid. It is assessed differently from an ordinary job."
         />
         <Prose>
@@ -325,7 +366,8 @@ export default function WorkingWhileStudyingPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="How students lose status without intending to"
+          title="How do students lose status without intending to?"
+          id="how-students-lose-status-without-intending-to"
         />
         <Prose>
           <p>

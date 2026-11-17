@@ -11,7 +11,9 @@ import {
   CTASection,
   Prose,
   Icon,
+  ShortAnswer,
 } from '@/components/ui';
+import { CompareTable } from '@/components/CompareTable';
 import { ReviewedBy } from '@/components/ReviewedBy';
 import { SERVICE } from '@/lib/site';
 
@@ -146,13 +148,20 @@ export default function DliPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <ShortAnswer question="What is a designated learning institution, and why does it matter?">
+        A designated learning institution is a school that a province or territory has approved to
+        host international students. You need an acceptance from one to get a study permit, and IRCC
+        publishes the full list. Designation alone does not make you eligible for a post-graduation
+        work permit: that also depends on the institution type and the specific programme.
+      </ShortAnswer>
       <OnThisPage path="/study-in-canada/designated-learning-institutions" />
 
       {/* ===================== WHAT IT IS ===================== */}
       <Section tone="paper">
         <SectionHeading
           eyebrow="The term, plainly"
-          title="What a designated learning institution (DLI) is"
+          title="What is a designated learning institution (DLI)?"
+          id="what-a-designated-learning-institution-dli-is"
         />
         <Prose>
           <p>
@@ -189,7 +198,8 @@ export default function DliPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="Two different questions"
-          title="What DLI status decides, and what it does not"
+          title="What does DLI status decide, and what does it not?"
+          id="what-dli-status-decides-and-what-it-does-not"
           subtitle="Students routinely treat “is it a DLI” and “will I get a work permit afterwards” as one question. They are separate, and they are decided by different things."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -223,13 +233,37 @@ export default function DliPage() {
             </p>
           </Callout>
         </div>
+
+        <CompareTable
+          caption="Which questions DLI status settles about a school, and which it does not"
+          columns={['Question', 'Does DLI status settle it?']}
+          rows={[
+            {
+              label: 'Can an acceptance from this school support a study permit application?',
+              cells: ['Yes: an acceptance from a school that is not designated cannot support one.'],
+            },
+            {
+              label: 'Will I be eligible for a post-graduation work permit?',
+              cells: ['No: the institution type and the specific programme also matter.'],
+            },
+            {
+              label: 'Is the teaching good, or the credential valued by employers?',
+              cells: ['No: designation is not a quality rating, nor an assurance that employers respect the credential.'],
+            },
+            {
+              label: 'Will the school stay designated while I study?',
+              cells: ['No: a province can withdraw designation, and enrolled students are affected.'],
+            },
+          ]}
+        />
       </Section>
 
       {/* ===================== HOW TO CHECK ===================== */}
       <Section tone="paper">
         <SectionHeading
           eyebrow="Verification"
-          title="How to check a school and find its DLI number"
+          title="How do you check a school and find its DLI number?"
+          id="how-to-check-a-school-and-find-its-dli-number"
           subtitle="Six steps, in this order. None of them takes long, and each is a check you can do yourself at the source."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -290,7 +324,8 @@ export default function DliPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="Why you were sent to that particular college"
+          title="Why were you sent to that particular college?"
+          id="why-you-were-sent-to-that-particular-college"
         />
         <Prose>
           <p>

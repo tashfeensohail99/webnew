@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import Link from 'next/link';
-import { PageHero, Section, SectionHeading, Callout, FAQ, CTASection } from '@/components/ui';
+import { PageHero, Section, SectionHeading, Callout, FAQ, CTASection, ShortAnswer } from '@/components/ui';
+import { CompareTable } from '@/components/CompareTable';
 import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
@@ -128,12 +129,18 @@ export default function PakistanPoliceCertificatePage() {
           All the paperwork from Pakistan
         </Link>
       </PageHero>
+      <ShortAnswer question="How do I get a Pakistani police certificate for Canada?">
+        Apply through your province’s police service in Pakistan, or the nearest Pakistani embassy or
+        consulate if you live abroad. Permanent residence requires one; a visit usually does not, unless
+        you have a criminal record or the checklist asks for one. A certificate from where you live now
+        must be issued no more than 6 months before you submit.
+      </ShortAnswer>
 
       {/* ===================== WHO AND WHEN ===================== */}
       <Section tone="paper">
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
-            <SectionHeading eyebrow="Who needs one" title="Permanent residence: yes. Visits: usually not." />
+            <SectionHeading eyebrow="Permanent residence or a visit" title="Do I need a police certificate for Canada?" id="permanent-residence-yes-visits-usually-not" />
             <div className="mt-6 space-y-4 text-ink-600 text-pretty">
               <p>
                 IRCC requires police certificates for <strong className="text-ink-900">permanent
@@ -148,7 +155,7 @@ export default function PakistanPoliceCertificatePage() {
             </div>
           </div>
           <div>
-            <SectionHeading eyebrow="Which countries, how recent" title="Every country of 6 months or more since 18" />
+            <SectionHeading eyebrow="6 months or more since 18" title="Which countries need a certificate, and how recent must it be?" id="every-country-of-6-months-or-more-since-18" />
             <div className="mt-6 space-y-4 text-ink-600 text-pretty">
               <p>
                 <strong className="text-ink-900">Where you live now:</strong> issued no more than 6 months
@@ -167,13 +174,33 @@ export default function PakistanPoliceCertificatePage() {
             </div>
           </div>
         </div>
+        <CompareTable
+          caption="Police certificates for a Canadian application from Pakistan: which countries need one and how recent it must be"
+          columns={['Country', 'Certificate needed?', 'Must be issued']}
+          rows={[
+            {
+              label: 'Where you live now, in Pakistan or a Gulf country',
+              cells: ['Yes, if you have spent 6 months or more in a row there since turning 18', 'No more than 6 months before you submit your application'],
+            },
+            {
+              label: 'Pakistan, if you now live in the Gulf',
+              cells: ['Yes, if you spent 6 months or more in a row there since turning 18', 'After your last such stay in Pakistan'],
+            },
+            {
+              label: 'Any other country',
+              cells: ['Yes, if you spent 6 months or more in a row there since turning 18', 'After your last such stay there'],
+            },
+            { label: 'Time before 18, and time in Canada', cells: ['No', '—'] },
+          ]}
+        />
       </Section>
 
       {/* ===================== BY PROVINCE ===================== */}
       <Section tone="alt">
         <SectionHeading
-          eyebrow="Living in Pakistan"
-          title="Where to apply, province by province"
+          eyebrow="Province by province"
+          title="Where do I apply for a police certificate in Pakistan?"
+          id="where-to-apply-province-by-province"
           subtitle="Each province runs its own service. These are the official links IRCC gives on its Pakistan page; the certificate is then couriered to you or collected from the office where you applied."
         />
         <ul className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -200,7 +227,8 @@ export default function PakistanPoliceCertificatePage() {
           <div>
             <SectionHeading
               eyebrow="Living abroad"
-              title="From the Gulf or anywhere else"
+              title="How do I get a Pakistani police certificate from the Gulf or abroad?"
+              id="from-the-gulf-or-anywhere-else"
               subtitle="Apply through your nearest Pakistani embassy or consulate. IRCC lists what to bring:"
             />
             <ul className="mt-8 space-y-3">

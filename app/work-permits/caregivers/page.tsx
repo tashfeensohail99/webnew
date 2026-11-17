@@ -11,7 +11,9 @@ import {
   CTASection,
   Prose,
   Icon,
+  ShortAnswer,
 } from '@/components/ui';
+import { CompareTable } from '@/components/CompareTable';
 import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
@@ -144,13 +146,20 @@ export default function CaregiverWorkPermitsPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <ShortAnswer question="How do I get a caregiver work permit for Canada?">
+        You need a written offer from a Canadian employer, often a private household, before you can
+        apply to IRCC. In most cases the employer first needs a Labour Market Impact Assessment, and
+        your permit names that employer and occupation. Never pay for a placement: an employer, and
+        anyone recruiting for them, must not charge you recruitment fees.
+      </ShortAnswer>
       <OnThisPage path="/work-permits/caregivers" />
 
       {/* ===================== WHAT THE ROUTE IS ===================== */}
       <Section tone="paper">
         <SectionHeading
           eyebrow="The route, plainly"
-          title="What a caregiver work permit actually is"
+          title="What is a caregiver work permit?"
+          id="what-a-caregiver-work-permit-actually-is"
         />
         <Prose>
           <p>
@@ -198,7 +207,8 @@ export default function CaregiverWorkPermitsPage() {
           <div>
             <SectionHeading
               eyebrow="A household is not a company"
-              title="How the employer side is assessed"
+              title="How is the employer side assessed?"
+              id="how-the-employer-side-is-assessed"
             />
             <Prose>
               <p>
@@ -226,7 +236,8 @@ export default function CaregiverWorkPermitsPage() {
           <div>
             <SectionHeading
               eyebrow="What you should be able to point to"
-              title="Before you accept an offer"
+              title="What should I check before accepting an offer?"
+              id="before-you-accept-an-offer"
             />
             <ul className="mt-6 space-y-4">
               {[
@@ -256,7 +267,8 @@ export default function CaregiverWorkPermitsPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="The sequence"
-          title="How the caregiver work permit process runs"
+          title="What are the steps to a caregiver work permit?"
+          id="how-the-caregiver-work-permit-process-runs"
           subtitle="The first three steps belong to the employer. You have an application of your own only at step four."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -275,8 +287,9 @@ export default function CaregiverWorkPermitsPage() {
       {/* ===================== LANGUAGE AND EDUCATION ===================== */}
       <Section tone="paper">
         <SectionHeading
-          eyebrow="Language and education"
-          title="What is expected of you, and why"
+          eyebrow="What the officer asks"
+          title="What training, language and education do I need?"
+          id="what-is-expected-of-you-and-why"
         />
         <Prose>
           <p>
@@ -370,6 +383,47 @@ export default function CaregiverWorkPermitsPage() {
             </p>
           </Callout>
         </div>
+        <CompareTable
+          caption="Caregiver warning signs: what the rules say and what to do"
+          columns={['Warning sign', 'What the rules say', 'What to do']}
+          rows={[
+            {
+              label: 'A fee to secure a placement',
+              cells: [
+                'An employer, and anyone recruiting for them, must not charge or recover recruitment fees from you.',
+                'Stop. A legitimate recruiter is paid by the employer.',
+              ],
+            },
+            {
+              label: 'Being asked to repay the employer’s costs',
+              cells: [
+                'An employer must not recover the labour market assessment processing fee from you.',
+                'Do not pay it. Those costs are the employer’s concern.',
+              ],
+            },
+            {
+              label: 'An offer that says you must live in',
+              cells: [
+                'ESDC may refuse to process the employer’s application for a position offered only on a live-in basis.',
+                'Question it before you sign, and check ESDC’s current employer requirements.',
+              ],
+            },
+            {
+              label: 'Extra work outside your permit',
+              cells: [
+                'Your permit names an employer, an occupation and normally a location. Other work is unauthorised.',
+                'Raise it when it starts, keep your own record of hours and duties, and get advice.',
+              ],
+            },
+            {
+              label: 'Withheld documents or threats to your status',
+              cells: [
+                'There are protections for workers in abusive situations.',
+                'Take advice rather than enduring it.',
+              ],
+            },
+          ]}
+        />
       </Section>
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}

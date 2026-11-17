@@ -65,19 +65,51 @@ export function SectionHeading({
   title,
   subtitle,
   center = false,
+  id,
 }: {
   eyebrow?: string;
   title: ReactNode;
   subtitle?: ReactNode;
   center?: boolean;
+  /**
+   * Keeps a section's old anchor when its heading is reworded, so links and
+   * bookmarks into the section still land. Without it the id comes from the title.
+   */
+  id?: string;
 }) {
   return (
     <div className={center ? 'mx-auto max-w-3xl text-center' : 'max-w-3xl'}>
       {eyebrow ? <p className={`eyebrow ${center ? 'justify-center' : ''}`}>{eyebrow}</p> : null}
       {/* The id is what the contents list links to. Must match scripts/build-sections.mjs. */}
-      <h2 id={typeof title === 'string' ? headingId(title) : undefined} className="display-2 mt-4 scroll-mt-24">{title}</h2>
+      <h2 id={id ?? (typeof title === 'string' ? headingId(title) : undefined)} className="display-2 mt-4 scroll-mt-24">{title}</h2>
       {subtitle ? <p className="lede mt-4">{subtitle}</p> : null}
     </div>
+  );
+}
+
+/* ------------------------------- ShortAnswer ------------------------------- */
+
+/**
+ * The page's answer in two or three sentences, straight under the hero.
+ *
+ * Written for a reader in a hurry and for AI answer tools, which quote a short,
+ * self-contained passage near the top of a page (GEO plan G01, 17 Nov 2026).
+ * Rules for content:
+ * - `question` is the page's main question, the way people type it.
+ * - The answer runs 40 to 60 words, and its first sentence answers the question.
+ * - It restates what the page already says: no new fact or figure, no fee, no promise.
+ */
+export function ShortAnswer({ question, children }: { question: string; children: ReactNode }) {
+  return (
+    <section aria-labelledby="short-answer" className="mx-auto max-w-6xl px-4 pt-8">
+      <div className="max-w-3xl rounded-2xl border border-rule border-l-[3px] border-l-gold-500 bg-paper p-6 sm:p-7">
+        <p className="eyebrow">Short answer</p>
+        <h2 id="short-answer" className="mt-3 font-serif text-2xl text-balance text-ink-900">
+          {question}
+        </h2>
+        <p className="mt-3 text-ink-700 text-pretty">{children}</p>
+      </div>
+    </section>
   );
 }
 

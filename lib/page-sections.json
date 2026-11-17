@@ -150,23 +150,23 @@
  "/canadian-immigration-lawyer-pakistan": [
   {
    "id": "paid-help-must-be-authorised-help",
-   "label": "Paid help must be authorised help"
+   "label": "Who can be paid to represent you before IRCC?"
   },
   {
    "id": "a-lawyer-here-is-not-automatically-a-lawyer-there",
-   "label": "A lawyer here is not automatically a lawyer there"
+   "label": "Is a lawyer in Pakistan authorised to represent you before IRCC?"
   },
   {
    "id": "where-to-check-a-name",
-   "label": "Where to check a name"
+   "label": "Where can you check whether a representative is authorised?"
   },
   {
    "id": "seven-questions-to-ask-before-you-pay-anyone",
-   "label": "Seven questions to ask before you pay anyone"
+   "label": "What should you ask before you pay anyone?"
   },
   {
    "id": "six-things-no-honest-firm-will-say",
-   "label": "Six things no honest firm will say"
+   "label": "What are the warning signs of a dishonest firm?"
   },
   {
    "id": "questions-people-ask-before-choosing-a-lawyer",
@@ -682,35 +682,35 @@
  "/pnp/new-brunswick": [
   {
    "id": "what-the-new-brunswick-pnp-nbpnp-is-trying-to-solve",
-   "label": "What the New Brunswick PNP (NBPNP) is trying to solve"
+   "label": "What is the New Brunswick PNP (NBPNP) trying to solve?"
   },
   {
    "id": "enhanced-and-base-nomination",
-   "label": "Enhanced and base nomination"
+   "label": "What is the difference between enhanced and base nomination in New Brunswick?"
   },
   {
    "id": "the-kinds-of-stream-new-brunswick-runs",
-   "label": "The kinds of stream New Brunswick runs"
+   "label": "What kinds of stream does New Brunswick run?"
   },
   {
    "id": "how-the-new-brunswick-pnp-process-runs",
-   "label": "How the New Brunswick PNP process runs"
+   "label": "What are the steps in the New Brunswick PNP process?"
   },
   {
    "id": "intent-to-settle-is-assessed-not-assumed",
-   "label": "Intent to settle is assessed, not assumed"
+   "label": "How is your intent to settle in New Brunswick assessed?"
   },
   {
    "id": "the-selection-factors-in-kind",
-   "label": "The selection factors, in kind"
+   "label": "What does New Brunswick weigh when it selects?"
   },
   {
    "id": "where-new-brunswick-pnp-applications-go-wrong",
-   "label": "Where New Brunswick PNP applications go wrong"
+   "label": "Where do New Brunswick PNP applications go wrong?"
   },
   {
    "id": "who-new-brunswick-does-not-suit",
-   "label": "Who New Brunswick does not suit"
+   "label": "Who does the New Brunswick PNP not suit?"
   },
   {
    "id": "streams-criteria-fees-and-draws",
@@ -724,35 +724,35 @@
  "/pnp/newfoundland-labrador": [
   {
    "id": "what-the-newfoundland-and-labrador-pnp-nlpnp-is-looking-for",
-   "label": "What the Newfoundland and Labrador PNP (NLPNP) is looking for"
+   "label": "What is the Newfoundland and Labrador PNP (NLPNP) looking for?"
   },
   {
    "id": "the-kinds-of-stream-newfoundland-and-labrador-runs",
-   "label": "The kinds of stream Newfoundland and Labrador runs"
+   "label": "What kinds of stream does Newfoundland and Labrador run?"
   },
   {
    "id": "how-a-provincial-nomination-actually-runs",
-   "label": "How a provincial nomination actually runs"
+   "label": "What are the steps in the Newfoundland and Labrador PNP process?"
   },
   {
    "id": "a-pool-not-a-queue",
-   "label": "A pool, not a queue"
+   "label": "How does the NLPNP expression of interest work?"
   },
   {
    "id": "two-nominations-two-federal-paths",
-   "label": "Two nominations, two federal paths"
+   "label": "What is the difference between enhanced and base nomination in Newfoundland and Labrador?"
   },
   {
    "id": "genuine-intent-to-live-in-the-province",
-   "label": "Genuine intent to live in the province"
+   "label": "How is your intent to live in Newfoundland and Labrador assessed?"
   },
   {
    "id": "where-newfoundland-and-labrador-pnp-applications-go-wrong",
-   "label": "Where Newfoundland and Labrador PNP applications go wrong"
+   "label": "Where do Newfoundland and Labrador PNP applications go wrong?"
   },
   {
    "id": "who-the-newfoundland-and-labrador-pnp-does-not-suit",
-   "label": "Who the Newfoundland and Labrador PNP does not suit"
+   "label": "Who does the Newfoundland and Labrador PNP not suit?"
   },
   {
    "id": "streams-criteria-fees-and-timelines",
@@ -766,27 +766,27 @@
  "/pnp/nova-scotia": [
   {
    "id": "what-nova-scotia-is-looking-for",
-   "label": "What Nova Scotia is looking for"
+   "label": "What is Nova Scotia looking for in an immigrant?"
   },
   {
    "id": "two-routes-into-permanent-residence-and-one-decision-that-is-not-the-provinces",
-   "label": "Two routes into permanent residence, and one decision that is not the province’s"
+   "label": "How does a Nova Scotia nomination lead to permanent residence?"
   },
   {
    "id": "the-kinds-of-stream-provinces-run",
-   "label": "The kinds of stream provinces run"
+   "label": "What kinds of stream do provinces run?"
   },
   {
    "id": "how-a-nomination-file-actually-runs",
-   "label": "How a nomination file actually runs"
+   "label": "What are the steps in the Nova Scotia PNP process?"
   },
   {
    "id": "where-nova-scotia-pnp-applications-go-wrong",
-   "label": "Where Nova Scotia PNP applications go wrong"
+   "label": "Where do Nova Scotia PNP applications go wrong?"
   },
   {
    "id": "who-the-nova-scotia-pnp-does-not-suit",
-   "label": "Who the Nova Scotia PNP does not suit"
+   "label": "Who does the Nova Scotia PNP not suit?"
   },
   {
    "id": "streams-criteria-fees-and-draws",
@@ -800,35 +800,35 @@
  "/pnp/ontario": [
   {
    "id": "what-a-provincial-nomination-actually-is",
-   "label": "What a provincial nomination actually is"
+   "label": "What is a provincial nomination?"
   },
   {
    "id": "what-ontario-is-looking-for-in-an-immigrant",
-   "label": "What Ontario is looking for in an immigrant"
+   "label": "What is Ontario looking for in an immigrant?"
   },
   {
    "id": "enhanced-and-base-nomination",
-   "label": "Enhanced and base nomination"
+   "label": "What is the difference between enhanced and base nomination in Ontario?"
   },
   {
    "id": "invited-from-a-pool",
-   "label": "Invited from a pool"
+   "label": "How does Ontario select candidates?"
   },
   {
    "id": "one-open-stream-ontario-workforce-priority",
-   "label": "One open stream: Ontario Workforce Priority"
+   "label": "What does the Ontario Workforce Priority stream require?"
   },
   {
    "id": "how-a-nomination-file-runs-in-order",
-   "label": "How a nomination file runs, in order"
+   "label": "What are the steps in the Ontario PNP process?"
   },
   {
    "id": "where-ontario-pnp-applications-go-wrong",
-   "label": "Where Ontario PNP applications go wrong"
+   "label": "Where do Ontario PNP applications go wrong?"
   },
   {
    "id": "who-the-ontario-pnp-does-not-suit",
-   "label": "Who the Ontario PNP does not suit"
+   "label": "Who does the Ontario PNP not suit?"
   },
   {
    "id": "open-streams-criteria-fees-and-updates",
@@ -994,23 +994,23 @@
  "/refusals/gcms-notes": [
   {
    "id": "a-category-is-not-a-reason",
-   "label": "A category is not a reason"
+   "label": "Why isn’t the refusal letter enough?"
   },
   {
    "id": "four-grounds-that-can-each-mean-several-different-things",
-   "label": "Four grounds that can each mean several different things"
+   "label": "What can the most misread refusal grounds mean?"
   },
   {
    "id": "questions-worth-answering-before-you-spend-again",
-   "label": "Questions worth answering before you spend again"
+   "label": "What can GCMS notes tell you?"
   },
   {
    "id": "set-your-expectations-honestly",
-   "label": "Set your expectations honestly"
+   "label": "What won’t GCMS notes do?"
   },
   {
    "id": "who-is-allowed-to-ask-depends-on-who-you-are",
-   "label": "Who is allowed to ask depends on who you are"
+   "label": "Who can request GCMS notes?"
   },
   {
    "id": "read-it-first-then-decide",
@@ -1134,35 +1134,35 @@
  "/refusals/reconsideration": [
   {
    "id": "what-a-reconsideration-request-actually-is",
-   "label": "What a reconsideration request actually is"
+   "label": "What exactly is a reconsideration request?"
   },
   {
    "id": "the-judicial-review-clock-keeps-running-while-you-wait",
-   "label": "The judicial review clock keeps running while you wait"
+   "label": "Does reconsideration stop the judicial review clock?"
   },
   {
    "id": "four-situations-with-something-real-to-argue",
-   "label": "Four situations with something real to argue"
+   "label": "When is a reconsideration request worth sending?"
   },
   {
    "id": "the-versions-that-go-nowhere",
-   "label": "The versions that go nowhere"
+   "label": "What makes a reconsideration request weak?"
   },
   {
    "id": "reconsideration-a-fresh-application-or-court-three-different-tools",
-   "label": "Reconsideration, a fresh application or court: three different tools"
+   "label": "Should I ask for reconsideration, reapply or go to court?"
   },
   {
    "id": "how-this-should-run-in-order",
-   "label": "How this should run, in order"
+   "label": "In what order should I act after a refusal?"
   },
   {
    "id": "where-reconsideration-requests-from-pakistan-fail",
-   "label": "Where reconsideration requests from Pakistan fail"
+   "label": "How do reconsideration requests from Pakistan go wrong?"
   },
   {
    "id": "who-reconsideration-does-not-suit",
-   "label": "Who reconsideration does not suit"
+   "label": "Who should not ask for reconsideration?"
   },
   {
    "id": "deadline-first-then-strategy-then-drafting",
@@ -1214,15 +1214,15 @@
  "/study-in-canada/bringing-family": [
   {
    "id": "three-separate-decisions-not-one",
-   "label": "Three separate decisions, not one"
+   "label": "Does my study permit cover my spouse and children?"
   },
   {
    "id": "every-person-needs-their-own-status",
-   "label": "Every person needs their own status"
+   "label": "What does each family member need?"
   },
   {
    "id": "when-an-open-work-permit-is-available",
-   "label": "When an open work permit is available"
+   "label": "Can my spouse work while I study in Canada?"
   },
   {
    "id": "questions-to-settle-early",
@@ -1230,15 +1230,15 @@
   },
   {
    "id": "school-status-and-the-age-line",
-   "label": "School, status, and the age line"
+   "label": "What do my children need to go to school in Canada?"
   },
   {
    "id": "where-family-study-permit-applications-go-wrong",
-   "label": "Where family study permit applications go wrong"
+   "label": "What goes wrong in family study permit applications?"
   },
   {
    "id": "how-a-family-application-is-put-together",
-   "label": "How a family application is put together"
+   "label": "How do I apply for a study permit with my family?"
   },
   {
    "id": "who-bringing-family-on-a-study-permit-does-not-suit",
@@ -1256,19 +1256,19 @@
  "/study-in-canada/designated-learning-institutions": [
   {
    "id": "what-a-designated-learning-institution-dli-is",
-   "label": "What a designated learning institution (DLI) is"
+   "label": "What is a designated learning institution (DLI)?"
   },
   {
    "id": "what-dli-status-decides-and-what-it-does-not",
-   "label": "What DLI status decides, and what it does not"
+   "label": "What does DLI status decide, and what does it not?"
   },
   {
    "id": "how-to-check-a-school-and-find-its-dli-number",
-   "label": "How to check a school and find its DLI number"
+   "label": "How do you check a school and find its DLI number?"
   },
   {
    "id": "why-you-were-sent-to-that-particular-college",
-   "label": "Why you were sent to that particular college"
+   "label": "Why were you sent to that particular college?"
   },
   {
    "id": "when-studying-in-canada-is-the-wrong-route",
@@ -1354,19 +1354,19 @@
  "/study-in-canada/provincial-attestation-letter": [
   {
    "id": "what-a-pal-or-tal-actually-is",
-   "label": "What a PAL or TAL actually is"
+   "label": "What is a PAL or TAL?"
   },
   {
    "id": "four-parties-and-none-of-them-is-your-consultant",
-   "label": "Four parties, and none of them is your consultant"
+   "label": "Who issues the letter, and can a consultant get it for you?"
   },
   {
    "id": "where-the-letter-sits-in-the-order-of-events",
-   "label": "Where the letter sits in the order of events"
+   "label": "When do you get the letter in the study permit process?"
   },
   {
    "id": "who-does-not-need-one",
-   "label": "Who does not need one"
+   "label": "Who does not need an attestation letter?"
   },
   {
    "id": "where-attestation-letter-applications-go-wrong",
@@ -1468,23 +1468,23 @@
   },
   {
    "id": "four-situations-that-require-action",
-   "label": "Four situations that require action"
+   "label": "When do you need to extend a study permit?"
   },
   {
    "id": "how-an-extension-runs-in-order",
-   "label": "How an extension runs, in order"
+   "label": "How do you extend a study permit?"
   },
   {
    "id": "what-maintained-status-is",
-   "label": "What maintained status is"
+   "label": "What is maintained status?"
   },
   {
    "id": "what-it-does-not-do",
-   "label": "What it does not do"
+   "label": "What does maintained status not do?"
   },
   {
    "id": "restoration-and-why-it-is-not-a-safety-net",
-   "label": "Restoration, and why it is not a safety net"
+   "label": "Can you restore your status after your permit expires?"
   },
   {
    "id": "where-extensions-go-wrong",
@@ -1548,11 +1548,11 @@
   },
   {
    "id": "four-different-things-governed-differently",
-   "label": "Four different things, governed differently"
+   "label": "What kinds of work can international students do?"
   },
   {
    "id": "what-has-to-be-true-for-off-campus-work",
-   "label": "What has to be true for off-campus work"
+   "label": "What do you need before you can work off campus?"
   },
   {
    "id": "five-things-students-skip",
@@ -1560,11 +1560,11 @@
   },
   {
    "id": "when-work-is-part-of-the-programme",
-   "label": "When work is part of the programme"
+   "label": "Do you need a separate permit for a co-op or internship?"
   },
   {
    "id": "how-students-lose-status-without-intending-to",
-   "label": "How students lose status without intending to"
+   "label": "How do students lose status without intending to?"
   },
   {
    "id": "who-this-does-not-work-for",
@@ -1760,19 +1760,19 @@
  "/work-permit-canada": [
   {
    "id": "what-the-c11-is-in-irccs-own-terms",
-   "label": "What the C11 is, in IRCC’s own terms"
+   "label": "What is a C11 work permit?"
   },
   {
    "id": "what-ircc-asks-you-to-file",
-   "label": "What IRCC asks you to file"
+   "label": "What are the C11 work permit requirements?"
   },
   {
    "id": "who-the-c11-route-actually-fits",
-   "label": "Who the C11 route actually fits"
+   "label": "Who is the C11 work permit for?"
   },
   {
    "id": "what-a-c11-actually-is",
-   "label": "What a C11 actually is"
+   "label": "How is a C11 different from an LMIA work permit?"
   },
   {
    "id": "what-a-strong-file-is-built-on",
@@ -1780,15 +1780,15 @@
   },
   {
    "id": "self-employed-or-entrepreneur-ircc-treats-them-differently",
-   "label": "Self-employed or entrepreneur: IRCC treats them differently"
+   "label": "Am I self-employed or an entrepreneur on a C11?"
   },
   {
    "id": "it-is-about-effect-not-how-much-you-spend",
-   "label": "It is about effect, not how much you spend"
+   "label": "What counts as significant benefit for a C11?"
   },
   {
    "id": "you-need-a-plan-to-leave-and-a-plan-for-the-business",
-   "label": "You need a plan to leave, and a plan for the business"
+   "label": "How do I show my C11 stay is temporary?"
   },
   {
    "id": "from-first-conversation-to-a-decision",
@@ -1796,7 +1796,7 @@
   },
   {
    "id": "applying-for-a-c11-from-pakistan",
-   "label": "Applying for a C11 from Pakistan"
+   "label": "Can I apply for a C11 from Pakistan?"
   },
   {
    "id": "where-to-look-instead",
@@ -1856,7 +1856,7 @@
  "/work-permits/caregivers": [
   {
    "id": "what-a-caregiver-work-permit-actually-is",
-   "label": "What a caregiver work permit actually is"
+   "label": "What is a caregiver work permit?"
   },
   {
    "id": "the-role-the-employer-and-the-conditions-on-your-permit",
@@ -1864,19 +1864,19 @@
   },
   {
    "id": "how-the-employer-side-is-assessed",
-   "label": "How the employer side is assessed"
+   "label": "How is the employer side assessed?"
   },
   {
    "id": "before-you-accept-an-offer",
-   "label": "Before you accept an offer"
+   "label": "What should I check before accepting an offer?"
   },
   {
    "id": "how-the-caregiver-work-permit-process-runs",
-   "label": "How the caregiver work permit process runs"
+   "label": "What are the steps to a caregiver work permit?"
   },
   {
    "id": "what-is-expected-of-you-and-why",
-   "label": "What is expected of you, and why"
+   "label": "What training, language and education do I need?"
   },
   {
    "id": "the-two-things-that-ruin-caregiver-files",
@@ -1936,19 +1936,19 @@
  "/work-permits/international-experience-canada": [
   {
    "id": "why-nationality-decides-this-one",
-   "label": "Why nationality decides this one"
+   "label": "Why can’t Pakistani passport holders apply for IEC?"
   },
   {
    "id": "the-two-narrow-exceptions-and-the-one-that-is-not",
-   "label": "The two narrow exceptions — and the one that is not"
+   "label": "Are there any exceptions for Pakistani citizens?"
   },
   {
    "id": "how-the-ordinary-route-runs-for-those-it-covers",
-   "label": "How the ordinary route runs, for those it covers"
+   "label": "How does the ordinary IEC route work?"
   },
   {
    "id": "how-people-lose-money-on-this-route-from-pakistan",
-   "label": "How people lose money on this route from Pakistan"
+   "label": "How do people lose money on IEC from Pakistan?"
   },
   {
    "id": "who-iec-does-not-suit",
@@ -1956,7 +1956,7 @@
   },
   {
    "id": "routes-that-are-open-to-pakistani-applicants",
-   "label": "Routes that are open to Pakistani applicants"
+   "label": "Which routes are open to Pakistani applicants?"
   },
   {
    "id": "questions-about-iec-from-pakistan",

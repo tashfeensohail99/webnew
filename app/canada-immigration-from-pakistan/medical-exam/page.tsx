@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import Link from 'next/link';
-import { PageHero, Section, SectionHeading, Callout, FAQ, CTASection } from '@/components/ui';
+import { PageHero, Section, SectionHeading, Callout, FAQ, CTASection, ShortAnswer } from '@/components/ui';
+import { CompareTable } from '@/components/CompareTable';
 import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
@@ -103,12 +104,19 @@ export default function PakistanMedicalExamPage() {
           All the paperwork from Pakistan
         </Link>
       </PageHero>
+      <ShortAnswer question="Who needs a Canadian immigration medical exam from Pakistan?">
+        Everyone applying for permanent residence needs a medical exam, and so do your family members,
+        even if they are not coming with you. For temporary stays over 6 months, you need one after
+        living in Pakistan 6 months or more in a row the year before. Only an IRCC panel physician can
+        do it, and results last 12 months.
+      </ShortAnswer>
 
       {/* ===================== WHO NEEDS ONE ===================== */}
       <Section tone="paper">
         <SectionHeading
           eyebrow="Who needs one"
-          title="Permanent residence: everyone. Temporary stays: it depends."
+          title="Do I need a medical for permanent residence or a temporary stay?"
+          id="permanent-residence-everyone-temporary-stays-it-depends"
         />
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           <div className="card p-7">
@@ -148,8 +156,9 @@ export default function PakistanMedicalExamPage() {
       {/* ===================== WHEN ===================== */}
       <Section tone="alt">
         <SectionHeading
-          eyebrow="When to do it"
-          title="Upfront, or when IRCC tells you"
+          eyebrow="Upfront, or when IRCC tells you"
+          title="When should I do the medical exam?"
+          id="upfront-or-when-ircc-tells-you"
           subtitle="Doing it at the wrong moment either wastes the result or delays your file. IRCC’s rule depends on the route."
         />
         <dl className="mt-10 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -169,13 +178,47 @@ export default function PakistanMedicalExamPage() {
           permanent resident, or arrived in Canada, within that time, you may need another exam — so
           don’t take it so early that it runs out before your decision.
         </p>
+        <CompareTable
+          caption="Who needs a Canadian immigration medical exam from Pakistan, and when to do it, by route"
+          columns={['Route', 'Who needs a medical', 'When to do it']}
+          rows={[
+            {
+              label: 'Express Entry',
+              cells: [
+                'Everyone applying, and family members even if they are not coming with you',
+                'Upfront: after your invitation to apply, before you submit',
+              ],
+            },
+            {
+              label: 'Other permanent residence, including sponsored spouses and children',
+              cells: [
+                'Everyone applying, and family members even if they are not coming with you',
+                'After you submit a complete application: within 30 days of receiving IRCC’s instructions',
+              ],
+            },
+            {
+              label: 'Visit, study or work for longer than 6 months',
+              cells: [
+                'You, if you lived in or travelled to Pakistan for 6 months or more in a row in the year before',
+                'Upfront before you apply, or when the visa office tells you',
+              ],
+            },
+            {
+              label: 'Visit, study or work for 6 months or less',
+              cells: [
+                'Usually no one, unless you will work where public health must be protected',
+                'Upfront before you apply, or when the visa office tells you',
+              ],
+            },
+          ]}
+        />
       </Section>
 
       {/* ===================== THE APPOINTMENT ===================== */}
       <Section tone="paper">
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
-            <SectionHeading eyebrow="At the clinic" title="What to bring" />
+            <SectionHeading eyebrow="At the clinic" title="What should I bring to the medical exam?" id="what-to-bring" />
             <ul className="mt-8 space-y-3">
               {BRING.map((b) => (
                 <li key={b} className="flex gap-3 text-ink-600 text-pretty">

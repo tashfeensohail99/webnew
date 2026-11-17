@@ -12,7 +12,9 @@ import {
   CTASection,
   Prose,
   Icon,
+  ShortAnswer,
 } from '@/components/ui';
+import { CompareTable } from '@/components/CompareTable';
 import { ReviewedBy } from '@/components/ReviewedBy';
 import { SERVICE } from '@/lib/site';
 
@@ -153,13 +155,20 @@ export default function ReconsiderationPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <ShortAnswer question="What is an IRCC reconsideration request after a refusal?">
+        A reconsideration request asks the officer who refused you to revisit the decision, usually
+        because something was overlooked or misread. It is discretionary, kept for exceptional cases,
+        and needs a specific error rather than disagreement. Asking does not pause the judicial review
+        deadline: 15 days for a matter arising in Canada, 60 days for one arising outside Canada.
+      </ShortAnswer>
       <OnThisPage path="/refusals/reconsideration" />
 
       {/* ===================== WHAT IT IS ===================== */}
       <Section tone="paper">
         <SectionHeading
           eyebrow="The route, plainly"
-          title="What a reconsideration request actually is"
+          title="What exactly is a reconsideration request?"
+          id="what-a-reconsideration-request-actually-is"
         />
         <Prose>
           <p>
@@ -208,7 +217,8 @@ export default function ReconsiderationPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="The mistake that costs the most"
-          title="The judicial review clock keeps running while you wait"
+          title="Does reconsideration stop the judicial review clock?"
+          id="the-judicial-review-clock-keeps-running-while-you-wait"
         />
         <Prose>
           <p>
@@ -269,8 +279,9 @@ export default function ReconsiderationPage() {
       {/* ===================== WHEN IT IS WORTH TRYING ===================== */}
       <Section tone="paper">
         <SectionHeading
-          eyebrow="When it is genuinely worth attempting"
-          title="Four situations with something real to argue"
+          eyebrow="Something real to argue"
+          title="When is a reconsideration request worth sending?"
+          id="four-situations-with-something-real-to-argue"
           subtitle="The common thread is an identifiable defect in how the decision was reached — not a disagreement with the officer’s judgement."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
@@ -283,7 +294,7 @@ export default function ReconsiderationPage() {
 
         <div className="mt-12 grid gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
-            <SectionHeading eyebrow="What makes a request weak" title="The versions that go nowhere" />
+            <SectionHeading eyebrow="The versions that go nowhere" title="What makes a reconsideration request weak?" id="the-versions-that-go-nowhere" />
             <ul className="mt-6 space-y-4">
               {[
                 ['“Please reconsider my case”', 'A request with no identified error is a request the office has no reason to act on. Specificity is the entire mechanism.'],
@@ -306,7 +317,7 @@ export default function ReconsiderationPage() {
           </div>
 
           <div>
-            <SectionHeading eyebrow="Reconsideration, fresh file, or court" title="Reconsideration, a fresh application or court: three different tools" />
+            <SectionHeading eyebrow="Three different tools" title="Should I ask for reconsideration, reapply or go to court?" id="reconsideration-a-fresh-application-or-court-three-different-tools" />
             <div className="mt-6 space-y-4 text-ink-600 text-pretty leading-relaxed">
               <p>
                 <strong className="text-ink-900">Reconsideration</strong> targets a defect in the
@@ -340,13 +351,45 @@ export default function ReconsiderationPage() {
             </div>
           </div>
         </div>
+
+        <CompareTable
+          caption="Reconsideration, a fresh application and judicial review compared: what each targets, when it fits and what to watch out for"
+          columns={['Route', 'What it targets', 'When it fits', 'Watch out for']}
+          rows={[
+            {
+              label: 'Reconsideration',
+              cells: [
+                'A defect in the decision itself',
+                'You can point at something concrete, such as a document not considered or a fact recorded wrongly',
+                'It is discretionary, with no timetable and no obligation on anyone to answer',
+              ],
+            },
+            {
+              label: 'A fresh application',
+              cells: [
+                'A weakness in the file',
+                'The officer was reasonable on the material, and that material has since genuinely changed',
+                'Reapplying without understanding the refusal tends to reproduce the same problem',
+              ],
+            },
+            {
+              label: 'Judicial review',
+              cells: [
+                'Legality: whether the decision was reasonable and the process fair',
+                'The decision may be unreasonable or the process unfair, such as no chance to answer a concern',
+                'A hard deadline: 15 days for a matter arising in Canada, 60 days for one arising outside Canada',
+              ],
+            },
+          ]}
+        />
       </Section>
 
       {/* ===================== THE SEQUENCE ===================== */}
       <Section tone="alt">
         <SectionHeading
           eyebrow="The sequence"
-          title="How this should run, in order"
+          title="In what order should I act after a refusal?"
+          id="how-this-should-run-in-order"
           subtitle="The order matters more than the drafting. Most of the damage is done by getting steps one and two the wrong way round."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -390,8 +433,9 @@ export default function ReconsiderationPage() {
       {/* ===================== WHAT GOES WRONG ===================== */}
       <Section tone="paper">
         <SectionHeading
-          eyebrow="What commonly goes wrong"
-          title="Where reconsideration requests from Pakistan fail"
+          eyebrow="Common mistakes"
+          title="How do reconsideration requests from Pakistan go wrong?"
+          id="where-reconsideration-requests-from-pakistan-fail"
         />
         <Prose>
           <p>
@@ -432,7 +476,7 @@ export default function ReconsiderationPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Being honest about fit" title="Who reconsideration does not suit" />
+        <SectionHeading eyebrow="Being honest about fit" title="Who should not ask for reconsideration?" id="who-reconsideration-does-not-suit" />
         <div className="mt-8">
           <Callout title="If you cannot name the error, this is not your route">
             <p>

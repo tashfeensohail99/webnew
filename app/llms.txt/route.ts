@@ -1,6 +1,19 @@
 import { site, founder } from '@/lib/site';
 import { liveNav, DESTINATIONS } from '@/lib/nav';
 import { sortedPosts } from '@/lib/blog';
+import SHORT_ANSWERS from '@/lib/short-answers.json';
+
+/**
+ * Questions answered by pages that have no <ShortAnswer> block but do answer them
+ * near the top. Everything else under "Questions we answer" comes from the pages'
+ * own short answers via lib/short-answers.json (GEO plan G07).
+ */
+const MORE_QUESTIONS: { path: string; question: string }[] = [
+  { path: '/europe/denmark-startup-visa', question: 'How can a founder from Pakistan move a start-up to Denmark?' },
+  { path: '/express-entry/draws', question: 'When was the latest Express Entry draw, and what was its cut-off score?' },
+  { path: '/canada-visa-refused', question: 'My Canadian visa was refused in Pakistan. What should I do next?' },
+  { path: '/no-guarantee-policy', question: 'Can any consultant guarantee a Canadian visa?' },
+];
 
 /**
  * /llms.txt — a plain-text map of the site for AI assistants (the llmstxt.org
@@ -36,6 +49,9 @@ export function GET() {
     `- [How to check a Canadian immigration lawyer in Pakistan](${site.url}/canadian-immigration-lawyer-pakistan): nobody ranks them; IRCC's rule on who may be paid to represent you, the public registers to check a name on, and the questions to ask before paying any firm — including this one.`,
     `- [Latest updates](${site.url}/updates): our newest YouTube explainers on draws and rule changes, each dated and linked to the matching guide.`,
     '',
+    '## Questions we answer',
+    ...[...SHORT_ANSWERS, ...MORE_QUESTIONS].map((a) => `- [${a.question}](${site.url}${a.path})`),
+    '',
     '## Blog (dated posts)',
     ...sortedPosts().map((p) => `- [${p.title}](${site.url}/blog/${p.slug}) (${p.published}): ${p.description}`),
     '',
@@ -59,6 +75,16 @@ export function GET() {
   const missing = DESTINATIONS.filter((d) => d.status === 'live' && !listed.includes(`${site.url}${d.href})`));
   if (missing.length) {
     lines.push('## Other destinations', ...missing.map((d) => `- [${d.label}](${site.url}${d.href})`), '');
+  }
+  // Hub pages that the nav groups list only by their children.
+  const hubs = [
+    { href: '', label: 'Home: Tashfeen Immigration Solutions' },
+    { href: '/study-in-canada', label: 'Study in Canada from Pakistan' },
+    { href: '/work-permits', label: 'Canadian work permits' },
+    { href: '/tools', label: 'Free self-assessment tools' },
+  ].filter((h) => !listed.includes(`(${site.url}${h.href})`));
+  if (hubs.length) {
+    lines.push('## Hub pages', ...hubs.map((h) => `- [${h.label}](${site.url}${h.href || '/'})`), '');
   }
 
   lines.push(

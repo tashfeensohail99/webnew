@@ -11,7 +11,9 @@ import {
   CTASection,
   Prose,
   Icon,
+  ShortAnswer,
 } from '@/components/ui';
+import { CompareTable } from '@/components/CompareTable';
 import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
@@ -153,13 +155,20 @@ export default function NovaScotiaPnpPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <ShortAnswer question="How does the Nova Scotia Nominee Program work for applicants from Pakistan?">
+        You submit an expression of interest to a Nova Scotia stream; if selected, you apply, and
+        the province decides whether to nominate you. Applying from Pakistan, you realistically need
+        a Nova Scotia job offer or Nova Scotia work experience. The province expects you to settle
+        there, and only IRCC decides permanent residence.
+      </ShortAnswer>
       <OnThisPage path="/pnp/nova-scotia" />
 
       {/* ===================== WHAT THE PROVINCE WANTS ===================== */}
       <Section tone="paper">
         <SectionHeading
           eyebrow="The province, plainly"
-          title="What Nova Scotia is looking for"
+          title="What is Nova Scotia looking for in an immigrant?"
+          id="what-nova-scotia-is-looking-for"
         />
         <Prose>
           <p>
@@ -191,7 +200,8 @@ export default function NovaScotiaPnpPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="The mechanism"
-          title="Two routes into permanent residence, and one decision that is not the province’s"
+          title="How does a Nova Scotia nomination lead to permanent residence?"
+          id="two-routes-into-permanent-residence-and-one-decision-that-is-not-the-provinces"
         />
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
@@ -266,13 +276,24 @@ export default function NovaScotiaPnpPage() {
             </p>
           </Callout>
         </div>
+        <CompareTable
+          caption="Nova Scotia’s four nominee streams as of 8 November 2026, and what each needs"
+          columns={['Stream', 'What it needs']}
+          rows={[
+            { label: 'Skilled Worker', cells: ['A full-time, permanent job offer from a Nova Scotia employer'] },
+            { label: 'Nova Scotia Graduate', cells: ['Study at a Nova Scotia institution; check the exact criteria on the province’s own site'] },
+            { label: 'Entrepreneur', cells: ['Running a business in the province, under its own capital, ownership and residency conditions'] },
+            { label: 'Nova Scotia: Express Entry', cells: ['Work experience in Nova Scotia or a physician opportunity'] },
+          ]}
+        />
       </Section>
 
       {/* ===================== KINDS OF STREAM ===================== */}
       <Section tone="paper">
         <SectionHeading
           eyebrow="Categories, not a catalogue"
-          title="The kinds of stream provinces run"
+          title="What kinds of stream do provinces run?"
+          id="the-kinds-of-stream-provinces-run"
           subtitle="These categories are stable even when the specific streams inside them are not. Use them to work out which conversation you are actually having, then check the province for what exists today."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -288,7 +309,8 @@ export default function NovaScotiaPnpPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="The sequence"
-          title="How a nomination file actually runs"
+          title="What are the steps in the Nova Scotia PNP process?"
+          id="how-a-nomination-file-actually-runs"
           subtitle="Two governments, in this order. Skipping ahead in your own planning is how people end up committed to a route that was never open to them."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -307,8 +329,9 @@ export default function NovaScotiaPnpPage() {
       {/* ===================== WHAT GOES WRONG ===================== */}
       <Section tone="paper">
         <SectionHeading
-          eyebrow="What commonly goes wrong"
-          title="Where Nova Scotia PNP applications go wrong"
+          eyebrow="Common mistakes"
+          title="Where do Nova Scotia PNP applications go wrong?"
+          id="where-nova-scotia-pnp-applications-go-wrong"
         />
         <Prose>
           <p>
@@ -348,7 +371,11 @@ export default function NovaScotiaPnpPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Being honest about fit" title="Who the Nova Scotia PNP does not suit" />
+        <SectionHeading
+          eyebrow="Being honest about fit"
+          title="Who does the Nova Scotia PNP not suit?"
+          id="who-the-nova-scotia-pnp-does-not-suit"
+        />
         <div className="mt-8">
           <Callout title="If you would not actually live in Nova Scotia, do not apply to Nova Scotia">
             <p>

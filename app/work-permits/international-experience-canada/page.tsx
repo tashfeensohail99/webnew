@@ -11,7 +11,9 @@ import {
   CTASection,
   Prose,
   Icon,
+  ShortAnswer,
 } from '@/components/ui';
+import { CompareTable } from '@/components/CompareTable';
 import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
@@ -143,13 +145,20 @@ export default function IecPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <ShortAnswer question="Can Pakistani citizens apply for IEC?">
+        No, not through the ordinary route: IEC runs on bilateral youth mobility agreements, and
+        Canada has none with Pakistan. The only openings are a second citizenship of a partner
+        country, or support from an IRCC-recognised organisation. No fee to an agent creates
+        eligibility, so do not pay anyone for an “IEC visa”.
+      </ShortAnswer>
       <OnThisPage path="/work-permits/international-experience-canada" />
 
       {/* ===================== THE ANSWER, FIRST ===================== */}
       <Section tone="paper">
         <SectionHeading
           eyebrow="The answer, before anything else"
-          title="Why nationality decides this one"
+          title="Why can’t Pakistani passport holders apply for IEC?"
+          id="why-nationality-decides-this-one"
         />
         <Prose>
           <p>
@@ -178,7 +187,8 @@ export default function IecPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="Being precise, not discouraging"
-          title="The two narrow exceptions — and the one that is not"
+          title="Are there any exceptions for Pakistani citizens?"
+          id="the-two-narrow-exceptions-and-the-one-that-is-not"
           subtitle="Both real exceptions are genuine. Neither is a way of applying as a Pakistani passport holder in the ordinary sense."
         />
         <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -216,7 +226,8 @@ export default function IecPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="For context"
-          title="How the ordinary route runs, for those it covers"
+          title="How does the ordinary IEC route work?"
+          id="how-the-ordinary-route-runs-for-those-it-covers"
           subtitle="Worth understanding, because it explains why the eligibility gate sits where it does."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -281,7 +292,8 @@ export default function IecPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="How people lose money on this route from Pakistan"
+          title="How do people lose money on IEC from Pakistan?"
+          id="how-people-lose-money-on-this-route-from-pakistan"
         />
         <Prose>
           <p>
@@ -358,7 +370,8 @@ export default function IecPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="Where to look instead"
-          title="Routes that are open to Pakistani applicants"
+          title="Which routes are open to Pakistani applicants?"
+          id="routes-that-are-open-to-pakistani-applicants"
           subtitle="These assess your circumstances rather than your nationality. That is the difference that matters."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
@@ -375,6 +388,44 @@ export default function IecPage() {
             </FeatureCard>
           ))}
         </div>
+        <CompareTable
+          caption="IEC compared with routes open to Pakistani applicants: what each turns on"
+          columns={['Route', 'What it turns on', 'Open to a Pakistani passport holder?']}
+          rows={[
+            {
+              label: 'IEC, ordinary route',
+              cells: ['Nationality and age, under a youth mobility agreement.', 'No. Canada has no agreement with Pakistan.'],
+            },
+            {
+              label: 'IEC under a second citizenship',
+              cells: [
+                'A valid partner-country passport, meeting that country’s arrangement in full.',
+                'Only if you also hold citizenship of a partner country, declared in the application.',
+              ],
+            },
+            {
+              label: 'IEC through a Recognized Organization',
+              cells: [
+                'Being selected by the organisation first, under its own criteria.',
+                'Only through an organisation that will consider you. Most take only citizens of IEC countries.',
+              ],
+            },
+            {
+              label: 'Employer-supported work permit',
+              cells: [
+                'A Canadian employer, usually through a labour market assessment.',
+                'Yes. It assesses your circumstances, not your nationality.',
+              ],
+            },
+            {
+              label: 'Express Entry',
+              cells: [
+                'Credentials, language results and qualifying experience.',
+                'Yes. It assesses your circumstances, not your nationality.',
+              ],
+            },
+          ]}
+        />
         <div className="mt-10">
           <Prose>
             <p>

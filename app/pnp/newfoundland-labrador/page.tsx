@@ -11,7 +11,9 @@ import {
   CTASection,
   Prose,
   Icon,
+  ShortAnswer,
 } from '@/components/ui';
+import { CompareTable } from '@/components/CompareTable';
 import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
@@ -154,13 +156,20 @@ export default function NewfoundlandLabradorPnpPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <ShortAnswer question="How does the Newfoundland and Labrador Provincial Nominee Program work?">
+        You register an expression of interest, and if the province invites you, you file a full
+        nomination application. Most routes need a real connection, such as a job offer or study in
+        the province, and a genuine intent to live there. IRCC then decides permanent residence
+        separately and can refuse an applicant the province nominated.
+      </ShortAnswer>
       <OnThisPage path="/pnp/newfoundland-labrador" />
 
       {/* ===================== WHAT THE PROVINCE WANTS ===================== */}
       <Section tone="paper">
         <SectionHeading
           eyebrow="The province, plainly"
-          title="What the Newfoundland and Labrador PNP (NLPNP) is looking for"
+          title="What is the Newfoundland and Labrador PNP (NLPNP) looking for?"
+          id="what-the-newfoundland-and-labrador-pnp-nlpnp-is-looking-for"
         />
         <Prose>
           <p>
@@ -190,7 +199,8 @@ export default function NewfoundlandLabradorPnpPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="Categories, not a stream list"
-          title="The kinds of stream Newfoundland and Labrador runs"
+          title="What kinds of stream does Newfoundland and Labrador run?"
+          id="the-kinds-of-stream-newfoundland-and-labrador-runs"
           subtitle="These are the recurring shapes of provincial nomination. The province’s current categories are named below, dated."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -243,7 +253,8 @@ export default function NewfoundlandLabradorPnpPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="The sequence"
-          title="How a provincial nomination actually runs"
+          title="What are the steps in the Newfoundland and Labrador PNP process?"
+          id="how-a-provincial-nomination-actually-runs"
           subtitle="Two governments, in this order. The province nominates; only the federal government grants permanent residence."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -264,8 +275,9 @@ export default function NewfoundlandLabradorPnpPage() {
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <SectionHeading
-              eyebrow="Expression of interest"
-              title="A pool, not a queue"
+              eyebrow="A pool, not a queue"
+              title="How does the NLPNP expression of interest work?"
+              id="a-pool-not-a-queue"
             />
             <Prose>
               <p>
@@ -289,8 +301,9 @@ export default function NewfoundlandLabradorPnpPage() {
 
           <div>
             <SectionHeading
-              eyebrow="Enhanced or base"
-              title="Two nominations, two federal paths"
+              eyebrow="Two nominations, two federal paths"
+              title="What is the difference between enhanced and base nomination in Newfoundland and Labrador?"
+              id="two-nominations-two-federal-paths"
             />
             <ul className="mt-6 space-y-4">
               {[
@@ -320,13 +333,24 @@ export default function NewfoundlandLabradorPnpPage() {
             </p>
           </div>
         </div>
+        <CompareTable
+          caption="Enhanced and base nominations in Newfoundland and Labrador, compared"
+          columns={['', 'Enhanced nomination', 'Base nomination']}
+          rows={[
+            { label: 'Issued under', cells: ['A stream aligned with Express Entry', 'A stream outside Express Entry'] },
+            { label: 'Express Entry profile needed?', cells: ['Yes, a valid one; you must be eligible for a federal Express Entry programme', 'No; it does not attach to an Express Entry profile'] },
+            { label: 'Route to permanent residence', cells: ['Through Express Entry. The nomination adds points but does not by itself bring an invitation', 'A separate application to IRCC, on a different process and timeline'] },
+            { label: 'Who decides permanent residence', cells: ['IRCC, independently', 'IRCC, independently'] },
+          ]}
+        />
       </Section>
 
       {/* ===================== INTENT TO SETTLE ===================== */}
       <Section tone="paper">
         <SectionHeading
           eyebrow="The expectation nobody reads carefully"
-          title="Genuine intent to live in the province"
+          title="How is your intent to live in Newfoundland and Labrador assessed?"
+          id="genuine-intent-to-live-in-the-province"
         />
         <Prose>
           <p>
@@ -363,8 +387,9 @@ export default function NewfoundlandLabradorPnpPage() {
       {/* ===================== WHAT GOES WRONG ===================== */}
       <Section tone="alt">
         <SectionHeading
-          eyebrow="What commonly goes wrong"
-          title="Where Newfoundland and Labrador PNP applications go wrong"
+          eyebrow="Common mistakes"
+          title="Where do Newfoundland and Labrador PNP applications go wrong?"
+          id="where-newfoundland-and-labrador-pnp-applications-go-wrong"
         />
         <Prose>
           <p>
@@ -402,7 +427,11 @@ export default function NewfoundlandLabradorPnpPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Being honest about fit" title="Who the Newfoundland and Labrador PNP does not suit" />
+        <SectionHeading
+          eyebrow="Being honest about fit"
+          title="Who does the Newfoundland and Labrador PNP not suit?"
+          id="who-the-newfoundland-and-labrador-pnp-does-not-suit"
+        />
         <div className="mt-8">
           <Callout title="If you have no connection to the province, this is the wrong door">
             <p>

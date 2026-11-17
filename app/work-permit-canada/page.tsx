@@ -13,7 +13,9 @@ import {
   FAQ,
   CTASection,
   Icon,
+  ShortAnswer,
 } from '@/components/ui';
+import { CompareTable } from '@/components/CompareTable';
 import { WhatsAppCta } from '@/components/WhatsAppCta';
 import { ReviewedBy } from '@/components/ReviewedBy';
 import { LiteYouTube } from '@/components/LiteYouTube';
@@ -286,6 +288,12 @@ export default function WorkPermitPage() {
           Ask about your case
         </WhatsAppCta>
       </PageHero>
+      <ShortAnswer question="What is the C11 work permit, and who qualifies?">
+        The C11 is an LMIA-exempt Canadian work permit for a business owner whose work will bring a
+        significant benefit to Canada. You must control at least 51% of the business, prove separate
+        business and family funds, and show your stay is temporary. It needs no third-party employer,
+        and you can apply from Pakistan.
+      </ShortAnswer>
       <OnThisPage path="/work-permit-canada" />
 
       <StatBand
@@ -314,7 +322,8 @@ export default function WorkPermitPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="C11 at a glance"
-          title="What the C11 is, in IRCC’s own terms"
+          title="What is a C11 work permit?"
+          id="what-the-c11-is-in-irccs-own-terms"
         />
         <p className="lede mt-6 max-w-3xl">
           The C11 is an LMIA-exempt Canadian work permit, issued under{' '}
@@ -358,8 +367,9 @@ export default function WorkPermitPage() {
           IRCC's "Documentary evidence" list, in order. Answers "c11 requirements". */}
       <Section tone="alt">
         <SectionHeading
-          eyebrow="C11 requirements"
-          title="What IRCC asks you to file"
+          eyebrow="What IRCC asks you to file"
+          title="What are the C11 work permit requirements?"
+          id="what-ircc-asks-you-to-file"
           subtitle="You are both the employer and the employee on a C11, so you meet the requirements of both roles. It is on you to give the officer enough evidence."
         />
         <ul className="mt-10 grid gap-x-10 gap-y-6 sm:grid-cols-2">
@@ -389,7 +399,8 @@ export default function WorkPermitPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="Is this you?"
-          title="Who the C11 route actually fits"
+          title="Who is the C11 work permit for?"
+          id="who-the-c11-route-actually-fits"
           subtitle="We qualify people out before we qualify them in. If you recognise yourself here, keep reading."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -417,7 +428,8 @@ export default function WorkPermitPage() {
           <div>
             <SectionHeading
               eyebrow="The route, plainly"
-              title="What a C11 actually is"
+              title="How is a C11 different from an LMIA work permit?"
+              id="what-a-c11-actually-is"
             />
             <div className="mt-6 space-y-4 text-ink-600 text-pretty leading-relaxed">
               <p>
@@ -475,8 +487,9 @@ export default function WorkPermitPage() {
       {/* ===================== SELF-EMPLOYED OR ENTREPRENEUR ===================== */}
       <Section tone="paper">
         <SectionHeading
-          eyebrow="Which are you?"
-          title="Self-employed or entrepreneur: IRCC treats them differently"
+          eyebrow="IRCC treats them differently"
+          title="Am I self-employed or an entrepreneur on a C11?"
+          id="self-employed-or-entrepreneur-ircc-treats-them-differently"
         />
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           <div className="card p-8">
@@ -508,13 +521,49 @@ export default function WorkPermitPage() {
         <p className="mt-6 max-w-3xl text-ink-600 text-pretty">
           Neither kind of work counts toward the <Link href="/express-entry/canadian-experience-class" className="font-semibold text-accent-500 link-underline">Canadian Experience Class</Link>.
         </p>
+        <CompareTable
+          caption="Self-employed or entrepreneur on a C11: how IRCC treats each"
+          columns={['What differs', 'Self-employed', 'Entrepreneur']}
+          rows={[
+            {
+              label: 'Who does the work',
+              cells: ['Usually you, as the owner.', 'People you hire, while you manage the business.'],
+            },
+            {
+              label: 'Hiring outside the family',
+              cells: [
+                'Rarely. If the business employs only you and your family, you are self-employed even if it is incorporated.',
+                'Yes. You hire people outside your family to do the work.',
+              ],
+            },
+            {
+              label: 'Job title and occupation code',
+              cells: ['Should match your real duties.', 'The generic code 88888 and the title “Entrepreneur”.'],
+            },
+            {
+              label: 'What the officer weighs',
+              cells: [
+                'May also weigh the benefit to your Canadian customers, particularly for a service not normally found in the area.',
+                'How many jobs you create, what they pay, and what the business does for the local economy.',
+              ],
+            },
+            {
+              label: 'Counts toward the Canadian Experience Class',
+              cells: ['No.', 'No.'],
+            },
+          ]}
+        />
       </Section>
 
       {/* ===================== SIGNIFICANT BENEFIT & TEMPORARY STAY ===================== */}
       <Section tone="alt">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
-            <SectionHeading eyebrow="Significant benefit" title="It is about effect, not how much you spend" />
+            <SectionHeading
+              eyebrow="Effect, not spending"
+              title="What counts as significant benefit for a C11?"
+              id="it-is-about-effect-not-how-much-you-spend"
+            />
             <div className="mt-6 space-y-4 text-ink-600 text-pretty leading-relaxed">
               <p>
                 IRCC tells officers that neither the type of business nor the amount spent makes it
@@ -538,7 +587,11 @@ export default function WorkPermitPage() {
             </div>
           </div>
           <div>
-            <SectionHeading eyebrow="Temporary stay" title="You need a plan to leave, and a plan for the business" />
+            <SectionHeading
+              eyebrow="A plan to leave"
+              title="How do I show my C11 stay is temporary?"
+              id="you-need-a-plan-to-leave-and-a-plan-for-the-business"
+            />
             <div className="mt-6 space-y-4 text-ink-600 text-pretty leading-relaxed">
               <p>
                 The offer of employment should be for no more than 18 months. A longer stay needs a
@@ -583,8 +636,9 @@ export default function WorkPermitPage() {
       {/* ===================== FROM PAKISTAN ===================== */}
       <Section tone="alt">
         <SectionHeading
-          eyebrow="From Pakistan"
-          title="Applying for a C11 from Pakistan"
+          eyebrow="The in-person steps"
+          title="Can I apply for a C11 from Pakistan?"
+          id="applying-for-a-c11-from-pakistan"
           subtitle="IRCC’s C11 instructions do not limit the route by nationality, and they expect applications to be filed online unless you are exempt. These are the in-person steps."
         />
         <dl className="mt-10 grid gap-x-10 gap-y-7 sm:grid-cols-2">

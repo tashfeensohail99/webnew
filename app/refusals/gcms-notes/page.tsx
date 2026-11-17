@@ -11,7 +11,9 @@ import {
   CTASection,
   Prose,
   Icon,
+  ShortAnswer,
 } from '@/components/ui';
+import { CompareTable } from '@/components/CompareTable';
 import { ReviewedBy } from '@/components/ReviewedBy';
 import { SERVICE } from '@/lib/site';
 
@@ -125,13 +127,20 @@ export default function GcmsNotesPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <ShortAnswer question="What are GCMS notes, and should I order them after a refusal?">
+        GCMS notes are the IRCC officer’s record of your file and the reasoning behind the decision,
+        and you don’t always need them. Most refusals now come with an officer decision note, so read
+        that first. Order the GCMS notes if no decision note came or your refusal is older; a request
+        does not pause the Federal Court deadline.
+      </ShortAnswer>
       <OnThisPage path="/refusals/gcms-notes" />
 
       {/* ===================== THE GAP ===================== */}
       <Section tone="paper">
         <SectionHeading
-          eyebrow="Why the letter isn’t enough"
-          title="A category is not a reason"
+          eyebrow="A category is not a reason"
+          title="Why isn’t the refusal letter enough?"
+          id="a-category-is-not-a-reason"
         />
         <Prose>
           <p>
@@ -169,6 +178,40 @@ export default function GcmsNotesPage() {
             significant amount of money building a solution to a problem they guessed at.
           </p>
         </Prose>
+        <CompareTable
+          caption="Officer decision note and GCMS notes compared: what each is, how you get it, which refusals it covers and what can be missing"
+          columns={['Question', 'Officer decision note', 'GCMS notes']}
+          rows={[
+            {
+              label: 'What is it?',
+              cells: [
+                'A note written by the officer who made the final decision',
+                'The record the officer kept in IRCC’s Global Case Management System while working your file',
+              ],
+            },
+            {
+              label: 'How do you get it?',
+              cells: [
+                'IRCC sends it with the refusal letter',
+                'You request it; for your own personal information, under the Privacy Act',
+              ],
+            },
+            {
+              label: 'Which refusals?',
+              cells: [
+                'Most temporary resident applications since 29 July 2025, and most permanent resident applications since 26 May 2026',
+                'Every decision: the record exists whether or not you ask for it',
+              ],
+            },
+            {
+              label: 'What can be missing?',
+              cells: [
+                'There is none for eTAs, temporary resident permits or humanitarian and compassionate applications, and IRCC may remove portions',
+                'Some material is withheld under exemptions in the governing legislation, and some entries are terse',
+              ],
+            },
+          ]}
+        />
         <div className="mt-10">
           <Callout title="Asking for your notes does not stop the court clock">
             <p>
@@ -200,8 +243,9 @@ export default function GcmsNotesPage() {
       {/* ===================== THE AMBIGUOUS GROUNDS ===================== */}
       <Section tone="alt">
         <SectionHeading
-          eyebrow="What the ambiguity looks like"
-          title="Four grounds that can each mean several different things"
+          eyebrow="Four grounds, several meanings"
+          title="What can the most misread refusal grounds mean?"
+          id="four-grounds-that-can-each-mean-several-different-things"
           subtitle="These are the ones people most often misread — and the misreadings are expensive, because the fixes point in opposite directions."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
@@ -217,7 +261,7 @@ export default function GcmsNotesPage() {
       <Section tone="paper">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
-            <SectionHeading eyebrow="What the notes can settle" title="Questions worth answering before you spend again" />
+            <SectionHeading eyebrow="What the notes can settle" title="What can GCMS notes tell you?" id="questions-worth-answering-before-you-spend-again" />
             <ul className="mt-6 space-y-4">
               {[
                 ['Which weakness actually decided it', 'Files often have more than one soft spot. Only one of them usually carried the decision.'],
@@ -239,7 +283,7 @@ export default function GcmsNotesPage() {
           </div>
 
           <div>
-            <SectionHeading eyebrow="What they won’t do" title="Set your expectations honestly" />
+            <SectionHeading eyebrow="Expectations, honestly" title="What won’t GCMS notes do?" id="set-your-expectations-honestly" />
             <div className="mt-6 space-y-4 text-ink-600 text-pretty leading-relaxed">
               <p>
                 The notes are a record, not a remedy. Reading them does not reopen your application,
@@ -265,7 +309,8 @@ export default function GcmsNotesPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="The part people get wrong"
-          title="Who is allowed to ask depends on who you are"
+          title="Who can request GCMS notes?"
+          id="who-is-allowed-to-ask-depends-on-who-you-are"
         />
         <Prose>
           <p>

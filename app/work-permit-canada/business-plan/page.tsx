@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import Link from 'next/link';
-import { PageHero, Section, SectionHeading, FeatureCard, Callout, FAQ, CTASection, Icon, type IconName } from '@/components/ui';
+import { PageHero, Section, SectionHeading, FeatureCard, Callout, FAQ, CTASection, Icon, ShortAnswer, type IconName } from '@/components/ui';
+import { CompareTable } from '@/components/CompareTable';
 import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
@@ -124,12 +125,19 @@ export default function C11BusinessPlanPage() {
           C11 work permit guide
         </Link>
       </PageHero>
+      <ShortAnswer question="What does a C11 business plan need to show?">
+        IRCC tells officers to look for concrete steps to start the business, not simply a detailed
+        market analysis. The plan should cover location, sourcing, start-up costs, wages, marketing,
+        customers and jobs for the area. Your funds must cover those costs, with proof of their
+        source, and the plan must show a significant benefit to Canada.
+      </ShortAnswer>
 
       {/* ===================== THE CHECKLIST ===================== */}
       <Section tone="paper">
         <SectionHeading
-          eyebrow="What the officer checks"
-          title="Six things IRCC tells officers to look at"
+          eyebrow="Six points from IRCC"
+          title="What do IRCC officers check in a C11 business plan?"
+          id="six-things-ircc-tells-officers-to-look-at"
           subtitle={
             <>
               From IRCC’s{' '}
@@ -151,7 +159,11 @@ export default function C11BusinessPlanPage() {
       <Section tone="alt">
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
-            <SectionHeading eyebrow="The money" title="Two pots of money, both proven" />
+            <SectionHeading
+              eyebrow="Two pots of money"
+              title="What money do I need to show for a C11?"
+              id="two-pots-of-money-both-proven"
+            />
             <div className="mt-6 space-y-4 text-ink-600 text-pretty">
               <p>
                 IRCC wants the money for the business kept separate from the money you will live on —
@@ -170,9 +182,44 @@ export default function C11BusinessPlanPage() {
                 <Official>check it at the source</Official>.
               </p>
             </div>
+            <CompareTable
+              caption="Business funds and personal support funds for a C11: what each covers and what to prove"
+              columns={['The question', 'Business funds', 'Personal support funds']}
+              rows={[
+                {
+                  label: 'What it pays for',
+                  cells: ['Starting and running the business.', 'Supporting yourself and your family.'],
+                },
+                {
+                  label: 'How much',
+                  cells: [
+                    'Whatever your plan says it takes. IRCC sets no minimum investment.',
+                    'Tied to the low-income cut-off for your family size, for at least 18 months or your stay if shorter.',
+                  ],
+                },
+                {
+                  label: 'What you must prove',
+                  cells: [
+                    'Where the money came from, and that it covers every cost in the plan.',
+                    'That it is there, kept separate from the business money.',
+                  ],
+                },
+                {
+                  label: 'Who sets the figure',
+                  cells: [
+                    'Your plan, though the officer has discretion over how much the business really needs.',
+                    'IRCC, which updates it. Check it at the source.',
+                  ],
+                },
+              ]}
+            />
           </div>
           <div>
-            <SectionHeading eyebrow="The test it serves" title="“Significant benefit” is what the plan has to prove" />
+            <SectionHeading
+              eyebrow="The test it serves"
+              title="What counts as a significant benefit to Canada?"
+              id="significant-benefit-is-what-the-plan-has-to-prove"
+            />
             <div className="mt-6 space-y-4 text-ink-600 text-pretty">
               <p>
                 A C11 permit is issued because your work brings a significant benefit to Canada. IRCC

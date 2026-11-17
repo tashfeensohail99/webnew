@@ -11,7 +11,9 @@ import {
   CTASection,
   Prose,
   Icon,
+  ShortAnswer,
 } from '@/components/ui';
+import { CompareTable } from '@/components/CompareTable';
 import { ReviewedBy } from '@/components/ReviewedBy';
 
 /**
@@ -152,13 +154,20 @@ export default function NewBrunswickPnpPage() {
           <span aria-hidden="true">→</span>
         </Link>
       </PageHero>
+      <ShortAnswer question="How does the New Brunswick Provincial Nominee Program work?">
+        For most streams, you submit an expression of interest, the province invites from its pool,
+        and those invited file a complete application. New Brunswick looks for people who will fill
+        identified vacancies and stay, and French ability carries real weight there. If nominated,
+        you still apply to IRCC, which decides permanent residence.
+      </ShortAnswer>
       <OnThisPage path="/pnp/new-brunswick" />
 
       {/* ===================== WHAT THE PROVINCE WANTS ===================== */}
       <Section tone="paper">
         <SectionHeading
           eyebrow="Start here"
-          title="What the New Brunswick PNP (NBPNP) is trying to solve"
+          title="What is the New Brunswick PNP (NBPNP) trying to solve?"
+          id="what-the-new-brunswick-pnp-nbpnp-is-trying-to-solve"
         />
         <Prose>
           <p>
@@ -202,7 +211,8 @@ export default function NewBrunswickPnpPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="The structure"
-          title="Enhanced and base nomination"
+          title="What is the difference between enhanced and base nomination in New Brunswick?"
+          id="enhanced-and-base-nomination"
           subtitle="This distinction survives every reshuffle of stream names, so it is worth understanding properly."
         />
         <Prose>
@@ -252,13 +262,23 @@ export default function NewBrunswickPnpPage() {
             explains the federal programmes a nomination would sit on top of.
           </p>
         </Prose>
+        <CompareTable
+          caption="Enhanced and base nomination in New Brunswick, compared"
+          columns={['', 'Enhanced nomination', 'Base nomination']}
+          rows={[
+            { label: 'Who it is for', cells: ['Someone with a profile in Express Entry who independently qualifies for a federal Express Entry programme', 'Candidates who are not in Express Entry'] },
+            { label: 'What it does', cells: ['Adds a large fixed award to your ranking score. It makes you competitive but does not book you an invitation', 'Leads to a permanent residence application processed outside Express Entry, on its own timeline'] },
+            { label: 'Who decides permanent residence', cells: ['IRCC', 'IRCC'] },
+          ]}
+        />
       </Section>
 
       {/* ===================== KINDS OF STREAM ===================== */}
       <Section tone="paper">
         <SectionHeading
           eyebrow="Categories, not a list"
-          title="The kinds of stream New Brunswick runs"
+          title="What kinds of stream does New Brunswick run?"
+          id="the-kinds-of-stream-new-brunswick-runs"
           subtitle="These categories are stable. The specific streams inside them are not — read the province’s own page for what exists today."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -289,7 +309,8 @@ export default function NewBrunswickPnpPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="The sequence"
-          title="How the New Brunswick PNP process runs"
+          title="What are the steps in the New Brunswick PNP process?"
+          id="how-the-new-brunswick-pnp-process-runs"
           subtitle="Two governments, two decisions. Neither is ours to make."
         />
         <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -311,7 +332,8 @@ export default function NewBrunswickPnpPage() {
           <div>
             <SectionHeading
               eyebrow="The expectation people underestimate"
-              title="Intent to settle is assessed, not assumed"
+              title="How is your intent to settle in New Brunswick assessed?"
+              id="intent-to-settle-is-assessed-not-assumed"
             />
             <Prose>
               <p>
@@ -336,7 +358,11 @@ export default function NewBrunswickPnpPage() {
           </div>
 
           <div>
-            <SectionHeading eyebrow="What is weighed" title="The selection factors, in kind" />
+            <SectionHeading
+              eyebrow="The selection factors, in kind"
+              title="What does New Brunswick weigh when it selects?"
+              id="the-selection-factors-in-kind"
+            />
             <ul className="mt-6 space-y-4">
               {[
                 ['Age', 'Weighted toward applicants with more working years ahead of them.'],
@@ -364,8 +390,9 @@ export default function NewBrunswickPnpPage() {
       {/* ===================== WHAT GOES WRONG ===================== */}
       <Section tone="alt">
         <SectionHeading
-          eyebrow="What commonly goes wrong"
-          title="Where New Brunswick PNP applications go wrong"
+          eyebrow="Common mistakes"
+          title="Where do New Brunswick PNP applications go wrong?"
+          id="where-new-brunswick-pnp-applications-go-wrong"
         />
         <Prose>
           <p>
@@ -407,7 +434,11 @@ export default function NewBrunswickPnpPage() {
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Being honest about fit" title="Who New Brunswick does not suit" />
+        <SectionHeading
+          eyebrow="Being honest about fit"
+          title="Who does the New Brunswick PNP not suit?"
+          id="who-new-brunswick-does-not-suit"
+        />
         <div className="mt-8">
           <Callout title="If you have no connection to the province, this is probably the wrong door">
             <p>

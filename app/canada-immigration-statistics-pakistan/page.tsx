@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { PageHero, Section, SectionHeading, FeatureCard, Callout, FAQ, CTASection } from '@/components/ui';
+import { PageHero, Section, SectionHeading, ShortAnswer, FeatureCard, Callout, FAQ, CTASection } from '@/components/ui';
 import { site } from '@/lib/site';
 import DATA from '@/lib/ircc-pakistan.json';
 
@@ -83,6 +83,22 @@ function Stat({ label, value, note }: { label: string; value: string; note?: str
       <p className="mt-3 font-serif text-3xl leading-tight text-balance">{value}</p>
       {note ? <p className="mt-2 text-sm text-ink-500">{note}</p> : null}
     </div>
+  );
+}
+
+/**
+ * One sentence under a table that states its main number, the year and the source:
+ * the line an AI answer can quote whole (GEO plan G04). Computed, like every number here.
+ */
+function Finding({ children, source }: { children: ReactNode; source: { href: string } }) {
+  return (
+    <p className="mt-6 max-w-3xl text-ink-700 text-pretty">
+      {children} Source:{' '}
+      <a href={source.href} className={official} target="_blank" rel="noopener noreferrer">
+        IRCC open data
+      </a>
+      , read {longDate(DATA.read)}.
+    </p>
   );
 }
 
@@ -254,12 +270,19 @@ export default function PakistanStatisticsPage() {
           See the routes from Pakistan
         </Link>
       </PageHero>
+      <ShortAnswer question="How many Pakistanis immigrate to Canada each year?">
+        In {LAST_FULL}, IRCC counted {n(t(pr, LAST_FULL))} Pakistani citizens admitted to Canada as permanent
+        residents, {words(t(pr, BEFORE_FULL), t(pr, LAST_FULL))} on {BEFORE_FULL}. Study permits took effect for{' '}
+        {n(t(study, LAST_FULL))} Pakistani citizens that year. IRCC rounds these counts to the nearest 5 and calls them
+        preliminary.
+      </ShortAnswer>
 
       {/* ===================== LATEST FULL YEAR ===================== */}
       <Section tone="paper">
         <SectionHeading
           eyebrow="At a glance"
-          title={`Pakistani citizens in ${LAST_FULL}, the latest full year`}
+          id={`pakistani-citizens-in-${LAST_FULL}-the-latest-full-year`}
+          title={`What do IRCC’s figures show for Pakistani citizens in ${LAST_FULL}?`}
           subtitle={`Each figure compares ${LAST_FULL} with ${BEFORE_FULL}.`}
         />
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -272,7 +295,9 @@ export default function PakistanStatisticsPage() {
         {IS_PART_YEAR ? (
           <>
             <h2 className="mt-14 font-serif text-2xl leading-tight text-balance">
-              {LATEST} so far: {PERIOD}
+              {MONTHS.length === 1
+                ? `How does ${PERIOD} compare with ${COMPARE_YEAR}?`
+                : `How do the first ${MONTHS.length} months of ${LATEST} compare with ${COMPARE_YEAR}?`}
             </h2>
             <TableFrame label="Pakistani citizens this year so far, compared with the same months last year">
               <table className="w-full text-left text-sm">
@@ -297,6 +322,10 @@ export default function PakistanStatisticsPage() {
                 </tbody>
               </table>
             </TableFrame>
+            <Finding source={SOURCES[0]!}>
+              From {PERIOD}, {n(soFar(pr, LATEST))} Pakistani citizens became Canadian permanent residents, against{' '}
+              {n(soFar(pr, COMPARE_YEAR))} in the same months of {COMPARE_YEAR}.
+            </Finding>
             <p className="mt-4 max-w-3xl text-sm text-ink-500 text-pretty">
               Added from IRCC’s monthly figures so both years compare like with like, which makes these
               approximate. They can differ slightly from IRCC’s own totals in the tables below.
@@ -317,12 +346,17 @@ export default function PakistanStatisticsPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="Permanent residence"
-          title="Pakistani citizens who became permanent residents, by year"
+          id="pakistani-citizens-who-became-permanent-residents-by-year"
+          title="How many Pakistanis become Canadian permanent residents each year?"
           subtitle="IRCC’s count of admissions, using its own annual totals."
         />
         <YearBars series={pr} caption="Pakistani citizens admitted to Canada as permanent residents, by year" heading="Admitted" />
+        <Finding source={SOURCES[0]!}>
+          In {LAST_FULL}, {n(t(pr, LAST_FULL))} Pakistani citizens became Canadian permanent residents,{' '}
+          {words(t(pr, BEFORE_FULL), t(pr, LAST_FULL))} on {BEFORE_FULL}.
+        </Finding>
 
-        <h2 className="mt-14 font-serif text-2xl leading-tight text-balance">How Pakistanis became permanent residents</h2>
+        <h2 className="mt-14 font-serif text-2xl leading-tight text-balance">Which routes did Pakistanis use to become permanent residents?</h2>
         <p className="mt-3 max-w-3xl text-ink-600 text-pretty">
           The route each person was admitted under. Indented rows are the larger programmes within
           each group, so they do not add up to the group.
@@ -359,16 +393,25 @@ export default function PakistanStatisticsPage() {
             </tbody>
           </table>
         </TableFrame>
+        <Finding source={SOURCES[0]!}>
+          Of the {n(t(pr, LAST_FULL))} admitted in {LAST_FULL}, {cell(GROUPS.economic[LAST_FULL])} came through economic
+          programmes and {cell(GROUPS.family[LAST_FULL])} as sponsored family.
+        </Finding>
       </Section>
 
       {/* ===================== STUDY ===================== */}
       <Section tone="paper">
         <SectionHeading
           eyebrow="Study"
-          title="Pakistani citizens with a Canadian study permit, by year"
+          id="pakistani-citizens-with-a-canadian-study-permit-by-year"
+          title="How many Pakistani students get Canadian study permits each year?"
           subtitle="People whose study permit took effect in that year. This is not the number of Pakistani students in Canada on any one day."
         />
         <YearBars series={study} caption="Pakistani citizens whose Canadian study permit took effect, by year" heading="Holders" />
+        <Finding source={SOURCES[1]!}>
+          Study permits took effect for {n(t(study, LAST_FULL))} Pakistani citizens in {LAST_FULL},{' '}
+          {words(t(study, BEFORE_FULL), t(study, LAST_FULL))} on {BEFORE_FULL}.
+        </Finding>
         <p className="mt-6 max-w-3xl text-ink-600 text-pretty">
           Planning to study?{' '}
           <Link href="/study-in-canada" className={official}>
@@ -382,7 +425,8 @@ export default function PakistanStatisticsPage() {
       <Section tone="alt">
         <SectionHeading
           eyebrow="Work"
-          title="Pakistani citizens with a Canadian work permit, by year"
+          id="pakistani-citizens-with-a-canadian-work-permit-by-year"
+          title="How many Pakistanis get Canadian work permits each year?"
           subtitle="IRCC counts its two work permit programmes separately, and one person can appear in both, so the columns should not be added together."
         />
         <TableFrame label="Pakistani citizens whose Canadian work permit took effect, by year and programme">
@@ -406,6 +450,10 @@ export default function PakistanStatisticsPage() {
             </tbody>
           </table>
         </TableFrame>
+        <Finding source={SOURCES[2]!}>
+          In {LAST_FULL}, work permits took effect for {n(t(imp, LAST_FULL))} Pakistani citizens under the International
+          Mobility Program and {n(t(tfwp, LAST_FULL))} under the Temporary Foreign Worker Program.
+        </Finding>
         <p className="mt-6 max-w-3xl text-ink-600 text-pretty">
           The Temporary Foreign Worker Program generally needs a Labour Market Impact Assessment. The
           International Mobility Program does not.{' '}
@@ -418,7 +466,7 @@ export default function PakistanStatisticsPage() {
 
       {/* ===================== READING ===================== */}
       <Section tone="paper">
-        <SectionHeading eyebrow="Reading the numbers" title="What these figures can’t tell you" />
+        <SectionHeading eyebrow="Reading the numbers" id="what-these-figures-cant-tell-you" title="What can’t these figures tell you?" />
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {READING.map((r) => (
             <FeatureCard key={r.title} title={r.title}>
@@ -430,7 +478,7 @@ export default function PakistanStatisticsPage() {
 
       {/* ===================== SOURCES ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Sources" title="Where this comes from, and how to cite it" />
+        <SectionHeading eyebrow="Sources" id="where-this-comes-from-and-how-to-cite-it" title="Where do these figures come from, and how should you cite them?" />
         <div className="mt-8 grid gap-10 lg:grid-cols-2">
           <div>
             <h3 className="font-serif text-xl">IRCC’s tables</h3>
