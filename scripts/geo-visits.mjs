@@ -2,7 +2,7 @@
 /**
  * Files the AI-visit lines that middleware.ts writes to the server log (GEO plan G06).
  *
- *   railway logs --json --lines 5000 --filter ai-visit \
+ *   railway logs --json --lines 5000 --filter @geo:ai-visit \
  *     --project <id> --service <id> --environment production \
  *     | node scripts/geo-visits.mjs <records folder>/geo/ai-visits.csv
  *
@@ -22,7 +22,14 @@ if (!out) {
 
 const HEADER = 'timestamp,kind,tool,path';
 if (!existsSync(out)) writeFileSync(out, `${HEADER}\n`);
-const seen = new Set(readFileSync(out, 'utf8').split('\n').slice(1).filter(Boolean));
+// Rows already filed. A row's kind can be edited by hand to "test" (our own check
+// visits) and it stays filed, because a line is matched on time, tool and page only.
+const rows = readFileSync(out, 'utf8').split(/\r?\n/).slice(1).filter(Boolean);
+const keyOf = (r) => {
+  const [t, , tool, ...path] = r.split(',');
+  return `${t},${tool},${path.join(',')}`;
+};
+const seen = new Set(rows.map(keyOf));
 const csv = (v) => (/[",\n]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v);
 
 let added = 0;
@@ -34,29 +41,31 @@ for await (const line of rl) {
   } catch {
     continue;
   }
-  const msg = typeof entry.message === 'string' ? entry.message : '';
-  let v;
-  try {
-    v = JSON.parse(msg);
-  } catch {
-    continue;
+  // Railway lifts a JSON log line's keys onto the entry itself and leaves `message`
+  // empty; other log readers keep the line in `message`. Accept both.
+  let v = entry;
+  if (entry.geo !== 'ai-visit') {
+    try {
+      v = JSON.parse(typeof entry.message === 'string' ? entry.message : '');
+    } catch {
+      continue;
+    }
   }
   if (v?.geo !== 'ai-visit' || !entry.timestamp) continue;
   const row = [entry.timestamp, v.kind, v.tool, v.path].map((x) => csv(String(x ?? ''))).join(',');
-  if (seen.has(row)) continue;
-  seen.add(row);
+  if (seen.has(keyOf(row))) continue;
+  seen.add(keyOf(row));
+  rows.push(row);
   appendFileSync(out, `${row}\n`);
   added++;
 }
 
 const since = Date.now() - 7 * 24 * 3600 * 1000;
-const week = [...seen]
-  .map((r) => r.split(','))
-  .filter(([t]) => Date.parse(t) >= since);
+const week = rows.map((r) => r.split(',')).filter(([t]) => Date.parse(t) >= since);
 const count = (rows, key) =>
   Object.entries(rows.reduce((m, r) => ((m[key(r)] = (m[key(r)] || 0) + 1), m), {})).sort((a, b) => b[1] - a[1]);
 
-console.log(`added ${added} new lines; ${seen.size} in total`);
+console.log(`added ${added} new lines; ${rows.length} in total (rows marked "test" are not counted below)`);
 console.log('last 7 days, crawler visits by tool:', JSON.stringify(count(week.filter((r) => r[1] === 'crawler'), (r) => r[2])));
 console.log('last 7 days, visits from AI tools:', JSON.stringify(count(week.filter((r) => r[1] === 'referral'), (r) => r[2])));
 console.log('last 7 days, top pages for AI crawlers:', JSON.stringify(count(week.filter((r) => r[1] === 'crawler' && !/Googlebot|bingbot/.test(r[2])), (r) => r[3]).slice(0, 10)));
