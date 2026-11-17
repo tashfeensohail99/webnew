@@ -207,6 +207,10 @@ export default function C11BusinessPlanPage() {
               <Link href="/business-immigration" className="font-semibold text-accent-500 link-underline">
                 See the business immigration routes
               </Link>
+              . Founders with an innovative business can also look at Denmark’s founder permit:{' '}
+              <Link href="/europe/denmark-startup-visa" className="font-semibold text-accent-500 link-underline">
+                Start-up Denmark from Pakistan
+              </Link>
               . And you must control at least 51% of the business for C11 at all; below that, you
               would apply as an employee.
             </p>

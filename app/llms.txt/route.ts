@@ -1,5 +1,5 @@
 import { site, founder } from '@/lib/site';
-import { liveNav } from '@/lib/nav';
+import { liveNav, DESTINATIONS } from '@/lib/nav';
 import { sortedPosts } from '@/lib/blog';
 
 /**
@@ -51,6 +51,14 @@ export function GET() {
         lines.push(`- [${i.label}](${site.url}${i.href})${i.blurb ? `: ${i.blurb}` : ''}`);
       }
     lines.push('');
+  }
+
+  // Destination hubs that no nav group lists (the UK and USA pages), so an
+  // assistant asked about them still finds the page that answers.
+  const listed = lines.join('\n');
+  const missing = DESTINATIONS.filter((d) => d.status === 'live' && !listed.includes(`${site.url}${d.href})`));
+  if (missing.length) {
+    lines.push('## Other destinations', ...missing.map((d) => `- [${d.label}](${site.url}${d.href})`), '');
   }
 
   lines.push(

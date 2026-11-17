@@ -70,7 +70,11 @@ export default function AustriaRedWhiteRedCard() {
       <p>
         The other categories — graduates of Austrian universities, self-employed key workers, start-up
         founders, and regular seasonal workers in tourism and farming — suit far fewer people applying
-        from Pakistan.
+        from Pakistan. If you are a founder, Denmark runs a scheme built only for start-ups: see{' '}
+        <Link href="/europe/denmark-startup-visa" className={a}>
+          Start-up Denmark from Pakistan
+        </Link>
+        .
       </p>
 
       <h2>Very highly qualified: you can come to look for work</h2>
