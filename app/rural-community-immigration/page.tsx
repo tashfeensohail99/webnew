@@ -25,11 +25,24 @@ import { ReviewedBy } from '@/components/ReviewedBy';
  * Participating communities, their occupation lists and their local criteria
  * are deliberately not named — they are set locally and revised, and printing
  * them here would be wrong within months.
+ *
+ * Updated 22 November 2026: on 9 November 2026 IRCC announced the rural pilot
+ * is being made permanent. Its pages (checked 22 November 2026) say the
+ * Rural Community Immigration Pilot closes on 1 January 2027 and the
+ * Rural Community Immigration Program opens that day; pilot recommendations
+ * dated 31 December 2026 or earlier must be used before they expire. The
+ * Francophone Community Immigration Pilot is still listed as an open pilot.
+ * IRCC has not said whether pilot employer designations carry over, so the
+ * page says so rather than guessing. Sources:
+ *   news/2026/11/canada-creates-a-permanent-immigration-pathway-to-help-rural-communities-attract-and-retain-talent0.html
+ *   news/2026/11/overview-of-the-rural-community-immigration-program.html
+ *   rural-franco-pilots/rural-immigration.html, rural-immigration-program.html,
+ *   rural-immigration-program/job-offer.html, franco-immigration.html
  */
 export const metadata: Metadata = {
-  title: 'Rural Community Immigration Pilot (RCIP)',
+  title: 'Rural Community Immigration Program (RCIP)',
   description:
-    'How Canada’s Rural and Francophone Community Immigration Pilots work: a designated employer’s job offer, a community recommendation, then a PR application.',
+    'Canada’s rural pilot becomes the permanent Rural Community Immigration Program on 1 January 2027. How it and the Francophone pilot work, step by step.',
   alternates: { canonical: '/rural-community-immigration' },
 };
 
@@ -65,7 +78,7 @@ const WHO_DOES_WHAT = [
 const STEPS = [
   {
     title: 'Check the community is participating',
-    body: 'The Rural and Francophone Community Immigration Pilots have a defined list of participating communities, set federally and revised over time. If a place is not on the current list, there is no route there under this heading, whatever a recruiter says.',
+    body: 'The Rural Community Immigration Program and the Francophone Community Immigration Pilot each have a defined list of participating communities, set federally and revised over time. If a place is not on the current list, there is no route there under this heading, whatever a recruiter says.',
   },
   {
     title: 'Find a designated employer with a real vacancy',
@@ -80,8 +93,8 @@ const STEPS = [
     body: 'Work experience of the kind the route calls for, language ability tested by an approved test, education assessed where required, and funds to settle unless you are already working in Canada.',
   },
   {
-    title: 'Apply to the community for a recommendation',
-    body: 'The community applies its own criteria on top of the federal ones — priority occupations, ties to the area, and evidence you intend to live there. This is a separate application with its own local process.',
+    title: 'Get the community’s recommendation',
+    body: 'Once you hold a valid offer, IRCC says the designated employer sends your recommendation application to the community. The community checks the job is in a priority sector or occupation, the offer is real and you meet the requirements. It may weigh local criteria too, such as ties to the area and evidence you intend to live there.',
   },
   {
     title: 'Apply to IRCC for permanent residence',
@@ -104,7 +117,7 @@ const FAQS = [
   },
   {
     q: 'Which communities are participating, and what do they require?',
-    a: 'The list of participating communities is set federally, and each community sets its own priority occupations and local criteria. Both change. We do not publish them here because a list that is right today misleads someone reading next year. IRCC publishes the current communities, and each community publishes its own criteria and designated employers on its own site.',
+    a: 'The list of participating communities is set federally, and each community sets its own priority occupations and local criteria. Both change. On 9 November 2026, IRCC said the permanent rural programme intends to keep the pilot’s communities and add more later. Criteria for new communities will come in a future announcement. We do not publish the lists here because a list that is right today misleads someone reading next year. IRCC publishes the current communities, and each community publishes its own criteria and designated employers on its own site.',
   },
   {
     q: 'How is this different from a provincial nominee programme?',
@@ -116,7 +129,7 @@ const FAQS = [
   },
   {
     q: 'Are these programmes permanent?',
-    a: 'They are pilots. Pilots run for a defined period, can be extended, replaced or allowed to expire, and an earlier rural pilot has already been succeeded by a newer one. Build your plan around the offer and the community being current at the time you apply, not around a programme name you read about years ago.',
+    a: 'The rural one is becoming permanent. On 9 November 2026, IRCC announced it had made the Rural Community Immigration Pilot a permanent programme. Its pages say the pilot closes on 1 January 2027 and the Rural Community Immigration Program opens that day. The Francophone Community Immigration Pilot is still a pilot as of 22 November 2026, and pilots can be extended, replaced or allowed to expire. Either way, plan around the offer and the community being current when you apply, not a programme name you read about years ago.',
   },
   {
     q: 'Can you guarantee a recommendation?',
@@ -128,18 +141,19 @@ export default function RuralCommunityImmigrationPage() {
   return (
     <>
       <PageHero
-        eyebrow="Canada · Rural and Francophone community pilots"
+        eyebrow="Canada · Rural and Francophone community routes"
         title={
           <>
-            Rural Community Immigration Pilot: a community decides first,{' '}
+            Rural Community Immigration Program: a community decides first,{' '}
             <span className="text-gold-300">then Ottawa</span>
           </>
         }
         subtitle={
           <>
-            Canada’s Rural Community Immigration Pilot and Francophone Community Immigration Pilot
-            let a participating community recommend people who have a job offer there and genuinely
-            intend to settle. They are a route to applying for
+            On 9 November 2026, IRCC announced that Canada’s rural pilot is becoming permanent. The
+            Rural Community Immigration Program opens on 1 January 2027, when the pilot closes. It and
+            the Francophone Community Immigration Pilot let a participating community recommend people
+            who have a job offer there and genuinely intend to settle. They are a route to applying for
             permanent residence — suited to a narrow group of people, and no one else.
           </>
         }
@@ -159,16 +173,30 @@ export default function RuralCommunityImmigrationPage() {
         />
         <Prose>
           <p>
-            IRCC currently runs two of these routes: the{' '}
+            On 9 November 2026, IRCC{' '}
             <a
-              href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/rural-immigration.html"
+              href="https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/11/canada-creates-a-permanent-immigration-pathway-to-help-rural-communities-attract-and-retain-talent0.html"
               className="font-semibold text-accent-500 link-underline"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Rural Community Immigration Pilot
+              announced
             </a>{' '}
-            and the{' '}
+            that it had made the Rural Community Immigration Pilot a permanent programme. IRCC’s
+            pages say the pilot closes on 1 January 2027, and the new{' '}
+            <a
+              href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/rural-immigration-program.html"
+              className="font-semibold text-accent-500 link-underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Rural Community Immigration Program
+            </a>{' '}
+            opens that day. IRCC said the programme intends to continue with the communities already
+            in the pilot, and to add more later.
+          </p>
+          <p>
+            The{' '}
             <a
               href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/franco-immigration.html"
               className="font-semibold text-accent-500 link-underline"
@@ -177,8 +205,24 @@ export default function RuralCommunityImmigrationPage() {
             >
               Francophone Community Immigration Pilot
             </a>
-            , which is for Francophone-minority communities. The earlier Rural and Northern
+            , for Francophone-minority communities, is not mentioned in that announcement. As of
+            22 November 2026, IRCC still lists it as an open pilot. The earlier Rural and Northern
             Immigration Pilot has ended, so an offer described in those terms needs checking.
+          </p>
+          <p>
+            If you hold a{' '}
+            <a
+              href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/rural-immigration.html"
+              className="font-semibold text-accent-500 link-underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              rural pilot
+            </a>{' '}
+            recommendation dated 31 December 2026 or earlier, IRCC says you must apply for permanent
+            residence before it expires. IRCC will keep processing pilot applications it has already
+            received. As of 22 November 2026, its pages do not say whether pilot employer designations
+            carry over to the programme, so ask the community.
           </p>
           <p>
             Most of Canada’s economic immigration is national or provincial. You are ranked against
@@ -318,7 +362,8 @@ export default function RuralCommunityImmigrationPage() {
       <Section tone="paper">
         <SectionHeading
           eyebrow="What commonly goes wrong"
-          title="Where Rural Community Pilot applications from Pakistan fail"
+          title="Where rural community applications from Pakistan fail"
+          id="where-rural-community-pilot-applications-from-pakistan-fail"
         />
         <Prose>
           <p>
@@ -351,16 +396,22 @@ export default function RuralCommunityImmigrationPage() {
             and shows no thought behind them reads exactly as it is.
           </p>
           <p>
-            <strong>Assuming a pilot will still be there.</strong> These are time-limited programmes.
-            The Rural and Northern pilot has already closed, and community lists are revised.
-            Confirm what is current at the point you apply, not at the point you first read about it.
+            <strong>Relying on an old programme name or an old designation.</strong> The rural pilot
+            closes on 1 January 2027, when the permanent programme opens, and the Rural and Northern
+            pilot closed before it. As of 22 November 2026, IRCC has not said whether pilot employer
+            designations carry over, and community lists are revised. Confirm what is current at the point you apply, not at
+            the point you first read about it.
           </p>
         </Prose>
       </Section>
 
       {/* ===================== WHO IT DOES NOT SUIT ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Being honest about fit" title="Who the Rural Community Immigration Pilot does not suit" />
+        <SectionHeading
+          eyebrow="Being honest about fit"
+          title="Who the Rural Community Immigration Program does not suit"
+          id="who-the-rural-community-immigration-pilot-does-not-suit"
+        />
         <div className="mt-8">
           <Callout title="If your real plan is Toronto or Vancouver, this is not your route">
             <p>
@@ -444,7 +495,11 @@ export default function RuralCommunityImmigrationPage() {
 
       {/* ===================== FAQ ===================== */}
       <Section tone="alt">
-        <SectionHeading eyebrow="Straight answers" title="Questions about the Rural Community Immigration Pilot" />
+        <SectionHeading
+          eyebrow="Straight answers"
+          title="Questions about the Rural Community Immigration Program"
+          id="questions-about-the-rural-community-immigration-pilot"
+        />
         <div className="mt-10">
           <FAQ items={FAQS} />
         </div>

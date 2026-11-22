@@ -464,17 +464,17 @@ export default function NewfoundlandLabradorPnpPage() {
                 className="font-semibold text-accent-500 link-underline"
               >
                 Atlantic Immigration Program
-              </Link>{' '}
-              and in federal{' '}
+              </Link>
+              , an employer-designated federal route rather than provincial nomination. On 22 November
+              2026, IRCC listed no Newfoundland and Labrador community in its{' '}
               <Link
                 href="/rural-community-immigration"
                 className="font-semibold text-accent-500 link-underline"
               >
-                rural community immigration
-              </Link>{' '}
-              routes — both employer-designated federal mechanisms rather than provincial nomination.
-              Which communities and employers are designated under them is set federally and
-              changes, so check the current designations at the source before planning around one.
+                rural or francophone community routes
+              </Link>
+              . Designations are set federally and change, so check the current lists at the source
+              before planning around one.
             </p>
             <p>
               We would rather tell you on the first call that this does not fit than take a fee for a

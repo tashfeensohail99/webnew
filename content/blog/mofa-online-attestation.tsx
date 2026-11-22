@@ -86,7 +86,13 @@ export default function MofaOnlineAttestation() {
       </p>
       <ul>
         <li>
-          <strong>University degrees</strong> need HEC authentication first.
+          <strong>University degrees</strong> need HEC authentication first. For a Canadian Express
+          Entry credential assessment, most designated organisations work from HEC attestation rather
+          than MOFA: see{' '}
+          <Link href="/express-entry/credential-assessment" className="font-semibold">
+            getting a Pakistani degree assessed for Canada
+          </Link>
+          .
         </li>
         <li>
           <strong>School and board certificates</strong> (matric, intermediate) need IBCC authentication

@@ -187,6 +187,14 @@ export default function SchengenVisaRefusalsPakistan2025() {
         of any state with over 1,000.
       </p>
       <p>
+        What Denmark’s own rules say about applicants from Pakistan, and how to appeal a Danish refusal,
+        is in our{' '}
+        <Link href="/europe/denmark-visit-visa" className={a}>
+          Denmark visit visa guide
+        </Link>
+        .
+      </p>
+      <p>
         Small numbers move easily: Sweden’s 6.4% rests on 97 applications. Eleven Schengen states have no
         Pakistan row at all: Croatia, Estonia, Finland, Iceland, Latvia, Lithuania, Luxembourg, Malta,
         Norway, Slovakia and Slovenia.

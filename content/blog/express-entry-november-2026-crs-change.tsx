@@ -190,7 +190,12 @@ export default function ExpressEntryNovember2026CrsChange() {
         <Link href="/tools/crs-calculator" className={a}>
           CRS calculator
         </Link>{' '}
-        lets you choose an offer’s occupation from the same list and adds the matching points.
+        lets you choose an offer’s occupation from the same list and adds the matching points. To check
+        which code your own work fits, see{' '}
+        <Link href="/express-entry/noc-codes" className={a}>
+          finding your NOC code and TEER
+        </Link>
+        .
       </p>
 
       <h2>How do the new points work out for three example profiles?</h2>

@@ -200,7 +200,11 @@ const DOCUMENTS: { title: string; body: ReactNode; guide?: string }[] = [
       <>
         A Pakistani degree usually needs an{' '}
         <Official href={IRCC.eca}>Educational Credential Assessment</Official> from an
-        IRCC-designated organisation before it counts in Express Entry.
+        IRCC-designated organisation before it counts in Express Entry. Our{' '}
+        <Link href="/express-entry/credential-assessment" className="font-semibold text-accent-500 link-underline">
+          guide to the ECA for Pakistani degrees
+        </Link>{' '}
+        covers HEC attestation and two-year degrees.
       </>
     ),
   },
@@ -421,8 +425,13 @@ export default function CanadaFromPakistanPage() {
           detailed rules change often, particularly at provincial level, so check anything you read on
           any website, including this one, against <Official href={IRCC.home}>IRCC</Official> and the{' '}
           <Official href={IRCC.provincial}>relevant provincial programme page</Official>. Three smaller
-          routes have their own guides: the <Link href="/rural-community-immigration" className="font-semibold text-accent-500 link-underline">Rural Community Immigration Pilot</Link>,{' '}
+          routes have their own guides: the <Link href="/rural-community-immigration" className="font-semibold text-accent-500 link-underline">Rural Community Immigration Program</Link>,{' '}
           <Link href="/caregivers" className="font-semibold text-accent-500 link-underline">caregiver routes</Link> and <Link href="/quebec-immigration" className="font-semibold text-accent-500 link-underline">Quebec’s separate system</Link>.
+          Already a permanent resident and living back in Pakistan? Read{' '}
+          <Link href="/canada-immigration-from-pakistan/pr-card-residency" className="font-semibold text-accent-500 link-underline">
+            keeping your Canadian PR from Pakistan
+          </Link>{' '}
+          before your card expires or you book a flight.
         </p>
       </Section>
 

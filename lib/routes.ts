@@ -40,6 +40,8 @@ export const ROUTES: Route[] = [
   { path: '/europe', reviewed: '2026-07-17', priority: 0.8, changeFrequency: 'weekly' },
   // Written 17 Nov 2026 from Danish official pages with dated SIRI figures; no human review to claim yet.
   { path: '/europe/denmark-startup-visa', reviewed: '2026-11-17', priority: 0.7, changeFrequency: 'monthly', dataPage: true },
+  // Batch 27, 22 Nov 2026: new guide, no human review to claim yet.
+  { path: '/europe/denmark-visit-visa', reviewed: '2026-11-22', priority: 0.7, changeFrequency: 'monthly', dataPage: true },
 
   // Trust. The team page is the highest-value page on the site once it has names.
   { path: '/about', reviewed: '2026-10-28', priority: 0.7, changeFrequency: 'monthly' },
@@ -80,12 +82,18 @@ export const ROUTES: Route[] = [
   { path: '/canada-immigration-from-pakistan/police-certificate', reviewed: '2026-10-23', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/canada-immigration-from-pakistan/medical-exam', reviewed: '2026-10-23', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/canada-immigration-from-pakistan/biometrics', reviewed: '2026-10-23', priority: 0.8, changeFrequency: 'monthly' },
+  // Batch 27, 22 Nov 2026: new guide, no human review to claim yet.
+  { path: '/canada-immigration-from-pakistan/pr-card-residency', reviewed: '2026-11-22', priority: 0.7, changeFrequency: 'monthly', dataPage: true },
   // IRCC's counts for Pakistani citizens, from lib/ircc-pakistan.json. Refreshed by hand with scripts/ircc-figures.py.
   { path: '/canada-immigration-statistics-pakistan', reviewed: '2026-11-09', priority: 0.7, changeFrequency: 'monthly', dataPage: true },
   { path: '/express-entry', reviewed: '2026-07-20', priority: 0.9, changeFrequency: 'monthly' },
   // Read hourly from IRCC's rounds feed (ISR) — a new round can land any weekday.
   { path: '/express-entry/draws', reviewed: '2026-10-23', priority: 0.9, changeFrequency: 'daily' },
   { path: '/express-entry/federal-skilled-worker', reviewed: '2026-07-20', priority: 0.8, changeFrequency: 'monthly' },
+  // Batch 27, 22 Nov 2026: new guide, no human review to claim yet.
+  { path: '/express-entry/noc-codes', reviewed: '2026-11-22', priority: 0.7, changeFrequency: 'monthly', dataPage: true },
+  // Batch 27, 22 Nov 2026: new guide, no human review to claim yet.
+  { path: '/express-entry/credential-assessment', reviewed: '2026-11-22', priority: 0.7, changeFrequency: 'monthly', dataPage: true },
   { path: '/express-entry/canadian-experience-class', reviewed: '2026-07-20', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/express-entry/federal-skilled-trades', reviewed: '2026-07-20', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/pnp', reviewed: '2026-07-20', priority: 0.9, changeFrequency: 'monthly' },
@@ -138,6 +146,8 @@ export const ROUTES: Route[] = [
   { path: '/visitor-visa/eta', reviewed: '2026-07-20', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/visitor-visa/extension', reviewed: '2026-07-20', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/visitor-visa/invitation-letter', reviewed: '2026-07-20', priority: 0.7, changeFrequency: 'monthly' },
+  // Batch 27, 22 Nov 2026: new guide, no human review to claim yet.
+  { path: '/visitor-visa/bank-statement', reviewed: '2026-11-22', priority: 0.7, changeFrequency: 'monthly', dataPage: true },
   { path: '/work-permits/bridging-open-work-permit', reviewed: '2026-07-20', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/work-permits/caregivers', reviewed: '2026-07-20', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/work-permits/global-talent-stream', reviewed: '2026-07-20', priority: 0.7, changeFrequency: 'monthly' },

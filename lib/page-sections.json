@@ -113,6 +113,40 @@
    "label": "What people in Pakistan ask us first"
   }
  ],
+ "/canada-immigration-from-pakistan/pr-card-residency": [
+  {
+   "id": "can-you-lose-canadian-pr-by-living-in-pakistan",
+   "label": "Can you lose Canadian PR by living in Pakistan?"
+  },
+  {
+   "id": "which-days-outside-canada-count-towards-the-730",
+   "label": "Which days outside Canada count towards the 730?"
+  },
+  {
+   "id": "what-does-your-situation-mean-for-your-pr",
+   "label": "What does your situation mean for your PR?"
+  },
+  {
+   "id": "what-should-you-check-before-booking-a-flight-to-canada",
+   "label": "What should you check before booking a flight to Canada?"
+  },
+  {
+   "id": "how-do-you-apply-for-a-pr-travel-document-from-pakistan",
+   "label": "How do you apply for a PR travel document from Pakistan?"
+  },
+  {
+   "id": "what-happens-if-your-pr-travel-document-is-refused",
+   "label": "What happens if your PR travel document is refused?"
+  },
+  {
+   "id": "what-do-the-official-sources-say",
+   "label": "What do the official sources say?"
+  },
+  {
+   "id": "what-else-do-prs-living-in-pakistan-ask",
+   "label": "What else do PRs living in Pakistan ask?"
+  }
+ ],
  "/canada-visit-visa": [
   {
    "id": "a-visa-to-visit-not-a-route-to-stay",
@@ -273,6 +307,40 @@
    "label": "Official sources"
   }
  ],
+ "/europe/denmark-visit-visa": [
+  {
+   "id": "which-country-do-you-apply-to-and-who-decides",
+   "label": "Which country do you apply to, and who decides?"
+  },
+  {
+   "id": "how-do-you-apply-for-a-denmark-visit-visa-from-pakistan",
+   "label": "How do you apply for a Denmark visit visa from Pakistan?"
+  },
+  {
+   "id": "what-documents-does-the-danish-embassy-ask-for",
+   "label": "What documents does the Danish embassy ask for?"
+  },
+  {
+   "id": "what-does-the-invitation-from-a-danish-host-involve",
+   "label": "What does the invitation from a Danish host involve?"
+  },
+  {
+   "id": "how-often-does-denmark-refuse-visas-in-pakistan",
+   "label": "How often does Denmark refuse visas in Pakistan?"
+  },
+  {
+   "id": "why-can-a-visa-be-refused-and-how-do-you-appeal",
+   "label": "Why can a visa be refused, and how do you appeal?"
+  },
+  {
+   "id": "what-do-the-official-sources-say",
+   "label": "What do the official sources say?"
+  },
+  {
+   "id": "what-else-do-applicants-from-pakistan-ask",
+   "label": "What else do applicants from Pakistan ask?"
+  }
+ ],
  "/express-entry/category-based-draws": [
   {
    "id": "what-category-based-selection-actually-is",
@@ -305,6 +373,40 @@
   {
    "id": "questions-about-category-based-draws",
    "label": "Questions about category-based draws"
+  }
+ ],
+ "/express-entry/credential-assessment": [
+  {
+   "id": "why-does-the-eca-matter-for-express-entry",
+   "label": "Why does the ECA matter for Express Entry?"
+  },
+  {
+   "id": "which-organisation-should-assess-a-pakistani-degree",
+   "label": "Which organisation should assess a Pakistani degree?"
+  },
+  {
+   "id": "how-do-you-prepare-pakistani-documents-for-an-eca",
+   "label": "How do you prepare Pakistani documents for an ECA?"
+  },
+  {
+   "id": "will-a-two-year-ba-or-bsc-count-as-a-bachelors-degree",
+   "label": "Will a two-year BA or BSc count as a bachelor’s degree?"
+  },
+  {
+   "id": "how-long-is-an-eca-valid-and-when-should-you-get-it",
+   "label": "How long is an ECA valid, and when should you get it?"
+  },
+  {
+   "id": "what-mistakes-hold-up-or-sink-an-eca",
+   "label": "What mistakes hold up or sink an ECA?"
+  },
+  {
+   "id": "what-do-the-official-sources-say",
+   "label": "What do the official sources say?"
+  },
+  {
+   "id": "what-else-do-people-ask-about-the-eca",
+   "label": "What else do people ask about the ECA?"
   }
  ],
  "/express-entry/federal-skilled-trades": [
@@ -369,6 +471,40 @@
   {
    "id": "questions-about-the-federal-skilled-worker-program",
    "label": "Questions about the Federal Skilled Worker Program"
+  }
+ ],
+ "/express-entry/noc-codes": [
+  {
+   "id": "what-are-noc-codes-and-teer-categories",
+   "label": "What are NOC codes and TEER categories?"
+  },
+  {
+   "id": "which-noc-code-is-my-job-in-pakistan",
+   "label": "Which NOC code is my job in Pakistan?"
+  },
+  {
+   "id": "how-do-you-choose-the-right-noc-code",
+   "label": "How do you choose the right NOC code?"
+  },
+  {
+   "id": "why-does-your-noc-code-matter-for-express-entry",
+   "label": "Why does your NOC code matter for Express Entry?"
+  },
+  {
+   "id": "how-does-your-noc-code-affect-crs-points-and-category-draws",
+   "label": "How does your NOC code affect CRS points and category draws?"
+  },
+  {
+   "id": "which-noc-mistakes-put-an-application-at-risk",
+   "label": "Which NOC mistakes put an application at risk?"
+  },
+  {
+   "id": "what-do-the-official-sources-say",
+   "label": "What do the official sources say?"
+  },
+  {
+   "id": "what-else-do-people-ask-about-noc-codes",
+   "label": "What else do people ask about NOC codes?"
   }
  ],
  "/express-entry": [
@@ -1204,11 +1340,11 @@
   },
   {
    "id": "where-rural-community-pilot-applications-from-pakistan-fail",
-   "label": "Where Rural Community Pilot applications from Pakistan fail"
+   "label": "Where rural community applications from Pakistan fail"
   },
   {
    "id": "who-the-rural-community-immigration-pilot-does-not-suit",
-   "label": "Who the Rural Community Immigration Pilot does not suit"
+   "label": "Who the Rural Community Immigration Program does not suit"
   },
   {
    "id": "communities-occupations-thresholds-and-fees",
@@ -1216,7 +1352,7 @@
   },
   {
    "id": "questions-about-the-rural-community-immigration-pilot",
-   "label": "Questions about the Rural Community Immigration Pilot"
+   "label": "Questions about the Rural Community Immigration Program"
   }
  ],
  "/study-in-canada/bringing-family": [
@@ -1589,6 +1725,40 @@
   {
    "id": "questions-students-ask-about-working-in-canada",
    "label": "Questions students ask about working in Canada"
+  }
+ ],
+ "/visitor-visa/bank-statement": [
+  {
+   "id": "is-there-a-minimum-bank-balance-for-a-canada-visit-visa",
+   "label": "Is there a minimum bank balance for a Canada visit visa?"
+  },
+  {
+   "id": "what-do-officers-look-for-in-your-bank-statements",
+   "label": "What do officers look for in your bank statements?"
+  },
+  {
+   "id": "which-documents-from-pakistan-show-your-money-and-your-ties",
+   "label": "Which documents from Pakistan show your money and your ties?"
+  },
+  {
+   "id": "why-is-a-bank-statement-arrangement-so-risky",
+   "label": "Why is a ‘bank statement arrangement’ so risky?"
+  },
+  {
+   "id": "what-should-your-cover-letter-say",
+   "label": "What should your cover letter say?"
+  },
+  {
+   "id": "what-should-you-do-after-a-refusal-over-funds",
+   "label": "What should you do after a refusal over funds?"
+  },
+  {
+   "id": "what-do-the-official-sources-say",
+   "label": "What do the official sources say?"
+  },
+  {
+   "id": "what-else-do-people-ask-about-funds-and-cover-letters",
+   "label": "What else do people ask about funds and cover letters?"
   }
  ],
  "/visitor-visa/business-visitor": [

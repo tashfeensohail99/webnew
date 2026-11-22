@@ -161,6 +161,13 @@ export default function InvitationLetterPage() {
             for where you will stay and who is paying.
           </p>
           <p>
+            If your host is paying, the evidence behind that support matters as much as the letter. See{' '}
+            <Link href="/visitor-visa/bank-statement" className="font-semibold text-accent-500 link-underline">
+              proof of funds for a Canadian visitor visa
+            </Link>
+            .
+          </p>
+          <p>
             That is the whole of it. It is a piece of supporting evidence submitted alongside your
             application. It sits next to your passport, your financial documents, your employment or
             business records, and your explanation of purpose. It does not sit above them.

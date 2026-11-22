@@ -2050,6 +2050,1554 @@ export const FACTS: Record<string, Fact> = {
     checked: '2026-11-18',
     note: 'Article 5(1)(c) wording: the state whose external border the applicant intends to cross to enter. \'A lower rate elsewhere is not a reason to apply there\' and \'keep documents consistent\' are our own suggestions drawn from Articles 5 and 32(1)(b).',
   },
+
+  // ── GUIDES AND RURAL FIX OF 22 NOVEMBER 2026 (batch 27) ─────────────────
+  caVisitNoMinimumFunds: {
+    id: 'ca.visit.funds-no-minimum',
+    claim:
+      'IRCC publishes no minimum bank balance for visitors. Its eligibility page says you must have enough money for your stay, and that the amount depends on how long you will stay and whether you stay in a hotel or with friends or relatives. You must also convince the officer that ties such as a job, home, financial assets or family will take you back.',
+    provenance: 'primary',
+    source: 'IRCC, Eligibility to apply for a visitor visa (page details 2026-08-28)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eligibility.html',
+    checked: '2026-11-22',
+  },
+  caVisitOiFunds: {
+    id: 'ca.visit.oi-funds',
+    claim:
+      'IRCC\'s officer instructions ask for funds that cover all reasonable expenses during the stay, refer to bank statements or deposit books that show accumulated savings, and accept financial support from friends or family that is sufficient, has been arranged and can be confirmed.',
+    provenance: 'primary',
+    source: 'IRCC operational instructions, Temporary residents: Proof of Funds / Financial Support (page details 2014-04-25)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/visitors/proof-funds-financial-support.html',
+    checked: '2026-11-22',
+    note: 'The page also says a TRV application will not be refused just because the host\'s personal information is not provided. Not printed.',
+  },
+  caVisitOiEligibility: {
+    id: 'ca.visit.oi-eligibility',
+    claim:
+      'IRCC\'s officer instructions say the amount of money required depends on the type and the duration of the trip, and ask about the applicant\'s employment, position and salary, approved leave, family, property and financial obligations in the country of residence.',
+    provenance: 'primary',
+    source: 'IRCC operational instructions, Eligibility and admissibility considerations (page details 2019-04-01)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/visitors/eligibility-admissibility-considerations.html',
+    checked: '2026-11-22',
+    note: 'Its question \'What is the source of funds: traveller\'s cheques or credit cards?\' is about the form of the money, not its origin, so the page does not cite it for scrutiny of deposits.',
+  },
+  caVisitImm5484Funds: {
+    id: 'ca.visit.imm5484-funds',
+    claim:
+      'IRCC\'s document checklist for a temporary resident visa (IMM 5484) asks for proof that you can support yourself and any family members accompanying you while you are in Canada.',
+    provenance: 'primary',
+    source: 'IRCC, Document Checklist for a Temporary Resident Visa, IMM 5484 (05-2026); landing page dated 2026-05-13',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides/imm5484.html',
+    checked: '2026-11-22',
+    note: 'PDF read: https://www.canada.ca/content/dam/ircc/documents/pdf/english/kits/forms/imm5484/01-05-2026/imm5484e.pdf',
+  },
+  caVisitR179Leave: {
+    id: 'ca.visit.r179b',
+    claim:
+      'IRPR s. 179(b) requires the officer to be satisfied that the applicant will leave Canada by the end of the period authorised for their stay.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 179 (Justice Laws, current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-179.html',
+    checked: '2026-11-22',
+  },
+  caVisitBankStatementIrcc: {
+    id: 'ca.visit.bank-statement',
+    claim:
+      'IRCC\'s visitor visa page recommends a bank statement showing the bank\'s name and contact details, your name and address, and months of account details including balances. It says the contact details let IRCC contact the bank with questions, and that online applicants get a personalised document checklist in the portal.',
+    provenance: 'primary',
+    source: 'IRCC, How to apply for a visitor visa (page details 2026-11-16)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/apply-visitor-visa.html',
+    checked: '2026-11-22',
+    note: 'The page says \'at least 6 months\'. Not printed: a web-page figure. The Abu Dhabi checklist suggests a different period; the guide says only that the two differ.',
+  },
+  caVisitEmployerLetter: {
+    id: 'ca.visit.employer-letter',
+    claim:
+      'IRCC asks for the employer letter on the employer\'s official letterhead, signed by your manager or HR contact, with your start date, a brief job description, your current salary and your manager\'s contact information.',
+    provenance: 'primary',
+    source: 'IRCC, How to apply for a visitor visa (page details 2026-11-16)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/apply-visitor-visa.html',
+    checked: '2026-11-22',
+    note: 'The page\'s dating window for the letter is not printed.',
+  },
+  caVisitAbuDhabiChecklist: {
+    id: 'ca.visit.imm5853',
+    claim:
+      'IRCC\'s Abu Dhabi visa office checklist (IMM 5853) has instructions for residents of Pakistan applying through the Islamabad, Lahore or Karachi centres. It lists an employment letter, pay slips, proof of pension, business registration and investments as further proof of funds; asks a person paying for someone else\'s trip for a signed letter describing the relationship, photo ID and a bank certificate; requires a certified translation of documents not in English or French; and warns that fraudulent documents result in immediate refusal.',
+    provenance: 'primary',
+    source: 'IRCC, Abu Dhabi Visa Office Additional Document Checklist, Temporary Resident Visa, IMM 5853 E (04-2026)',
+    sourceUrl: 'https://ircc.canada.ca/english/pdf/kits/forms/IMM5853E.pdf',
+    checked: '2026-11-22',
+    note: 'Pages 2 and 3 of the PDF are footed \'IMM 5953 E (04-2026)\', an IRCC typo. Its statement period and the dating window for third-party documents are not printed. IRCC\'s paper-application page picks local instructions with a script-driven country selector, and its Pakistan \'where to submit\' page was empty, so the link to Pakistan rests on the checklist\'s own wording.',
+  },
+  caVisitGuide5256: {
+    id: 'ca.visit.guide5256',
+    claim:
+      'Guide 5256 says a translator who is not certified in Canada must provide an affidavit, that applicants and their family members may not do the translation, and that the officer considers all the information and documentation provided. The form\'s background questions ask whether you have ever been refused a visa or permit, denied entry or ordered to leave Canada or any other country or territory.',
+    provenance: 'primary',
+    source: 'IRCC, Guide 5256: Applying for a visitor visa (temporary resident visa), paper application (page details 2026-03-31)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides/guide-5256-applying-visitor-visa-temporary-resident-visa.html',
+    checked: '2026-11-22',
+  },
+  caVisitInvitationLetterFunds: {
+    id: 'ca.visit.invitation-funds',
+    claim:
+      'IRCC says a letter of invitation should explain where the visitor will stay and how they will pay for things, and that a letter of invitation does not guarantee a visa.',
+    provenance: 'primary',
+    source: 'IRCC, Letter of invitation (page details 2025-01-14)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/letter-invitation.html',
+    checked: '2026-11-22',
+  },
+  caFraudPermanentRecord: {
+    id: 'ca.fraud.permanent-record',
+    claim:
+      'IRCC says that if you, your representative or your interpreter send false documents or information, your application will be refused and you could have a permanent record of fraud with IRCC.',
+    provenance: 'primary',
+    source: 'IRCC, Consequences of immigration and citizenship fraud (page details 2026-09-01)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/protect-fraud/consequences-fraud.html',
+    checked: '2026-11-22',
+  },
+  caRepsFalseAdvice: {
+    id: 'ca.fraud.false-advice',
+    claim:
+      'IRCC\'s Help Centre says representatives who advise you to provide false information or documents are breaking the law, and that false information leads to refusal.',
+    provenance: 'primary',
+    source: 'IRCC Help Centre, Is it legal to provide false information on my immigration or citizenship application, if a representative advises me to do so? (date modified 2026-11-03)',
+    sourceUrl: 'https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=448&top=7',
+    checked: '2026-11-22',
+  },
+  pkFbrNtnIris: {
+    id: 'pk.fbr.ntn-iris',
+    claim:
+      'For individuals, the Federal Board of Revenue uses the CNIC as the National Tax Number, and Iris is the online portal through which income tax returns are filed.',
+    provenance: 'primary',
+    source: 'Federal Board of Revenue, Register for Income Tax (undated)',
+    sourceUrl: 'https://www.fbr.gov.pk/categ/register-income-tax/51147/30846/71148',
+    checked: '2026-11-22',
+  },
+  pkFbrWealthStatement: {
+    id: 'pk.fbr.wealth-statement',
+    claim:
+      'An online FBR income tax return requires the Return of Income form and the Wealth Statement, a statement of assets and liabilities.',
+    provenance: 'primary',
+    source: 'Federal Board of Revenue, File Income Tax Return (undated)',
+    sourceUrl: 'https://www.fbr.gov.pk/categ/file-income-tax-return/51147/80860/71160',
+    checked: '2026-11-22',
+  },
+  schengenVisaFee: {
+    id: 'eu.visacode.fee',
+    claim:
+      'The Schengen visa fee is EUR 90, and EUR 45 for children aged 6 to 11; children under 6 pay nothing. The EUR 90 applies from 11 June 2024, under Commission Delegated Regulation (EU) 2024/1415. The fee is not refunded after a refusal.',
+    provenance: 'primary',
+    source: 'Regulation (EC) No 810/2009 (Visa Code), Article 16(1), (2), (4)(a) and (7), consolidated version of 28 June 2024; amended by Commission Delegated Regulation (EU) 2024/1415 of 14 March 2024 (OJ L, 22.5.2024)',
+    sourceUrl: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R0810-20240628',
+    checked: '2026-11-22',
+    note: 'The consolidated text of 11 June 2024 is the first to show EUR 90 (EUR 80 and EUR 40 in the 2 February 2020 text). Article 16(2a) allows EUR 135 or 180 only for nationals of a country named in a Council decision under Article 25a(5)(b); none for Pakistan was found, and the page prints the standard fee only.',
+  },
+  schengenDecisionDeadline: {
+    id: 'eu.visacode.decision-deadline',
+    claim:
+      'A Schengen visa application must be decided within 15 calendar days of an admissible application, extendable to a maximum of 45 calendar days in individual cases.',
+    provenance: 'primary',
+    source: 'Visa Code, Article 23(1) and (2), consolidated version of 28 June 2024',
+    sourceUrl: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R0810-20240628',
+    checked: '2026-11-22',
+    note: 'The embassy’s checklists (10 January 2024) still quote the pre-2020 15/30/60-day text, and its visa page gives its own estimate; neither is printed.',
+  },
+  schengenLodgingWindow: {
+    id: 'eu.visacode.lodging-window',
+    claim:
+      'Apply no more than six months before the trip and, as a rule, no later than 15 calendar days before it.',
+    provenance: 'primary',
+    source: 'Visa Code, Article 9(1), consolidated version of 28 June 2024',
+    sourceUrl: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R0810-20240628',
+    checked: '2026-11-22',
+  },
+  schengenInsuranceMinimum: {
+    id: 'eu.visacode.insurance',
+    claim:
+      'Travel medical insurance must be valid throughout the Schengen area for the whole stay, with cover of at least EUR 30,000, for medical repatriation, urgent medical attention, emergency hospital treatment and death.',
+    provenance: 'primary',
+    source: 'Visa Code, Article 15(1) and (3), consolidated version of 28 June 2024',
+    sourceUrl: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R0810-20240628',
+    checked: '2026-11-22',
+  },
+  schengenStayLimit: {
+    id: 'eu.visacode.90-in-180',
+    claim:
+      'A uniform Schengen visa covers an intended stay of no more than 90 days in any 180-day period.',
+    provenance: 'primary',
+    source: 'Visa Code, Article 2(2)(a), consolidated version of 28 June 2024',
+    sourceUrl: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R0810-20240628',
+    checked: '2026-11-22',
+  },
+  schengenCompetentState: {
+    id: 'eu.visacode.competent-state',
+    claim:
+      'You apply to your only destination or, on a trip to several states, your main destination by length of stay or purpose; with no main destination, to the state whose external border you cross first. You apply at the consulate for the place where you legally live.',
+    provenance: 'primary',
+    source: 'Visa Code, Articles 5(1) and 6(1), consolidated version of 28 June 2024',
+    sourceUrl: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R0810-20240628',
+    checked: '2026-11-22',
+  },
+  schengenPassportPhotoFingerprints: {
+    id: 'eu.visacode.passport-biometrics',
+    claim:
+      'The passport must be valid at least three months after you leave the Schengen area, have two blank pages and have been issued in the last 10 years. Every application needs a photograph, and children under 12 give no fingerprints.',
+    provenance: 'primary',
+    source: 'Visa Code, Articles 10(3), 12 and 13(7)(a), consolidated version of 28 June 2024',
+    sourceUrl: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R0810-20240628',
+    checked: '2026-11-22',
+  },
+  schengenRefusalGrounds: {
+    id: 'eu.visacode.refusal-grounds',
+    claim:
+      'A visa is refused for a false travel document, an unjustified purpose, insufficient means, 90 days already used in the current 180, an SIS alert, a threat to public policy, security, health or international relations, or missing travel medical insurance, or where there are reasonable doubts about the documents, statements or intention to leave. Reasons come on a standard form, and refused applicants have a right of appeal under the law of the deciding state.',
+    provenance: 'primary',
+    source: 'Visa Code, Article 32(1)-(3), consolidated version of 28 June 2024',
+    sourceUrl: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R0810-20240628',
+    checked: '2026-11-22',
+  },
+  dkVisaDecider: {
+    id: 'dk.visa.decider',
+    claim:
+      'Danish visit visas are decided by a Danish diplomatic mission, here the Embassy of Denmark in Islamabad, and in listed cases at first instance by the Danish Immigration Service (Udlændingestyrelsen), for example where another Schengen state objects during consultation. SIRI does not decide visit visas.',
+    provenance: 'primary',
+    source: 'Bekendtgørelse om udlændinges adgang til Danmark på grundlag af visum, BEK nr 1327 af 17/11/2025, § 28; Danish Immigration Service visa pages on nyidanmark.dk (published by the Danish Immigration Service)',
+    sourceUrl: 'https://www.retsinformation.dk/eli/lta/2025/1327',
+    checked: '2026-11-22',
+  },
+  dkVisaAppealDeadline: {
+    id: 'dk.visa.appeal-deadline',
+    claim:
+      'A refusal by a Danish embassy can be appealed to the Danish Immigration Service within 8 weeks of receiving the decision; the Service may accept a late appeal in special cases. A refusal by the Danish Immigration Service is appealed to the Immigration Appeals Board, also within 8 weeks.',
+    provenance: 'primary',
+    source: 'BEK nr 1327 af 17/11/2025, § 29(1)-(3); Danish Immigration Service, You have got a no to visa (last updated 08-06-2026)',
+    sourceUrl: 'https://nyidanmark.dk/en-GB/You-have-received-an-answer/Short-stay-visa/No-to-visa',
+    checked: '2026-11-22',
+    note: 'The embassy’s appeal page cites section 30 of an older executive order and an old DIS postal address (Ryesgade 53, Copenhagen). DIS now gives Farimagsvej 51A, DK-4700 Næstved. The page links DIS and prints no address.',
+  },
+  dkVisaAppealNoFee: {
+    id: 'dk.visa.appeal-no-fee',
+    claim:
+      'No fee is charged for an appeal against an embassy refusal.',
+    provenance: 'primary',
+    source: 'Embassy of Denmark in Pakistan, Appeal page',
+    sourceUrl: 'https://um.dk/pakistan/en/travel-and-residence/visa/appeal/',
+    checked: '2026-11-22',
+    note: 'The same page gives a maximum appeal processing time; not printed (a time on a web page).',
+  },
+  dkVisaAutomaticAppeal: {
+    id: 'dk.visa.automatic-appeal',
+    claim:
+      'Some refusals go to an automatic appeal, where the applicant need do nothing; the refusal letter says which appeal process applies.',
+    provenance: 'primary',
+    source: 'Embassy of Denmark in Pakistan, Visa FAQ',
+    sourceUrl: 'https://um.dk/pakistan/en/travel-and-residence/visa/faq/',
+    checked: '2026-11-22',
+  },
+  dkVisaReopenCourts: {
+    id: 'dk.visa.reopen-courts',
+    claim:
+      'A case refused for insufficient information can be reopened by the authority that refused it, with documents about the facts at the time of the decision; changed circumstances need a new application. A civil case in the Danish courts is possible at the applicant’s own cost.',
+    provenance: 'primary',
+    source: 'Danish Immigration Service, You have got a no to visa (last updated 08-06-2026)',
+    sourceUrl: 'https://nyidanmark.dk/en-GB/You-have-received-an-answer/Short-stay-visa/No-to-visa',
+    checked: '2026-11-22',
+  },
+  dkVisaGroup5: {
+    id: 'dk.visa.group5-pakistan',
+    claim:
+      'The Danish Immigration Service places Pakistan in Group 5 of its five country groups. It describes Group 5 as countries whose citizens present a particularly high risk of illegal immigration, or cannot easily be returned; as a starting point their citizens qualify for a visa only in extenuating circumstances, such as the death or terminal illness of a family member in Denmark. The groups are applied where the authorities doubt the applicant will leave on time, are only a rough guide, and every case is assessed individually.',
+    provenance: 'primary',
+    source: 'Danish Immigration Service, Apply for a short term visa to private visits and tourist visits (last updated 30-06-2026)',
+    sourceUrl: 'https://nyidanmark.dk/en-GB/You-want-to-apply/Short-stay-visa/Private-visits-and-tourist-visits-',
+    checked: '2026-11-22',
+  },
+  dkVisaGroup5Relatives: {
+    id: 'dk.visa.group5-relatives',
+    claim:
+      'For Pakistan (Group 5), visas for siblings, cousins, aunts, uncles and friends are not commonly granted, though there may be exceptions.',
+    provenance: 'primary',
+    source: 'Embassy of Denmark in Pakistan, Visa FAQ',
+    sourceUrl: 'https://um.dk/pakistan/en/travel-and-residence/visa/faq/',
+    checked: '2026-11-22',
+  },
+  dkVisaHostRequired: {
+    id: 'dk.visa.host',
+    claim:
+      'Citizens of countries in groups 2 to 5, including Pakistan, can normally get a visa for a private or tourist visit only with a host in Denmark, who must confirm the visit, have a permanent home in Denmark and normally be a Danish citizen or resident.',
+    provenance: 'primary',
+    source: 'Danish Immigration Service, Apply for a short term visa to private visits and tourist visits (last updated 30-06-2026)',
+    sourceUrl: 'https://nyidanmark.dk/en-GB/You-want-to-apply/Short-stay-visa/Private-visits-and-tourist-visits-',
+    checked: '2026-11-22',
+  },
+  dkVisaBusinessPakistan: {
+    id: 'dk.visa.business-pakistan',
+    claim:
+      'For a business visit the Danish company must be registered in the CVR and have an existing commercial relationship with the applicant’s company. For Pakistani citizens, business visas may be granted in specific justified cases.',
+    provenance: 'primary',
+    source: 'Danish Immigration Service, Apply for a short term visa to business visits (last updated 30-06-2026)',
+    sourceUrl: 'https://nyidanmark.dk/en-GB/You-want-to-apply/Short-stay-visa/Business-visits',
+    checked: '2026-11-22',
+  },
+  dkVisaInvitationForms: {
+    id: 'dk.visa.invitation-forms',
+    claim:
+      'A private host uses invitation VU2, online with MitID if registered at a Danish address, otherwise the printable form; a business host uses VU1, online with MitID Erhverv or on paper. The host sends the applicant the invitation ID. An invitation is recommended, not required, but without one the Immigration Service must contact the host and the case takes longer.',
+    provenance: 'primary',
+    source: 'Danish Immigration Service, Invitation of a visa applicant (last updated 04-06-2026)',
+    sourceUrl: 'https://nyidanmark.dk/en-GB/You-want-to-apply/Short-stay-visa/Invitation-of-a-visa-applicant',
+    checked: '2026-11-22',
+    note: 'The page also gives the online invitation’s validity period; not printed.',
+  },
+  dkVisaCentresPakistan: {
+    id: 'dk.visa.centres-pakistan',
+    claim:
+      'Danish visa applications in Pakistan are submitted at the Gerry’s/VFS visa application centres in Islamabad, Lahore and Karachi, not at the embassy. The application is filled in and the fee paid online on ApplyVisa, and the signed ApplyVisa cover letter is handed in with the documents and biometrics.',
+    provenance: 'primary',
+    source: 'Embassy of Denmark in Pakistan, Visa FAQ and Document checklists; Ministry of Foreign Affairs of Denmark, Where to apply',
+    sourceUrl: 'https://um.dk/en/travel-and-residence/where-to-apply',
+    checked: '2026-11-22',
+  },
+  dkVisaChecklistPakistan: {
+    id: 'dk.visa.checklist-pakistan',
+    claim:
+      'The embassy’s Visit Family/Friends checklist (dated 10 January 2024) asks every applicant for a CNIC copy, a NADRA Family Registration Certificate in English, bank statements signed and stamped by the bank, an NTN certificate and FBR tax-return acknowledgements; a spouse adds the Nikah Nama and the Union Council’s Marriage Registration Certificate in English. Documents in Urdu need a translation, and missing documents not presented promptly lead to refusal.',
+    provenance: 'primary',
+    source: 'Embassy of Denmark in Pakistan, Checklist Visit Family/Friends (10 January 2024), linked from the Document checklists page',
+    sourceUrl: 'https://um.dk/media/zuugmp15/checklist-familyvisit-10012024.pdf',
+    checked: '2026-11-22',
+    note: 'The checklist’s look-back periods (bank statements, payslips, tax years, pension) and its deadline for missing documents are not printed: they are figures on a web document, not in law.',
+  },
+  dkVisaRedCarpet: {
+    id: 'dk.visa.red-carpet',
+    claim:
+      'On 22 November 2026 the embassy still lists a Red Carpet Programme (Fast Track Business Visa Program) for companies that do business with a Danish company; its terms-and-conditions link did not open and the page does not say whether it is taking companies.',
+    provenance: 'primary',
+    source: 'Embassy of Denmark in Pakistan, Red Carpet Programme - How to enroll',
+    sourceUrl: 'https://um.dk/pakistan/en/travel-and-residence/visa/red-carpet-programme-how-to-enroll/',
+    checked: '2026-11-22',
+    note: 'Terms link (~/media/a6994b53cff344fb8efb4293482b2c3d.ashx) returned 404 on um.dk and 520 on pakistan.um.dk.',
+  },
+  dkVisaAgentsWarning: {
+    id: 'dk.visa.agents-warning',
+    claim:
+      'The embassy asks applicants not to contact agents, warning that agents charge high prices for false documents, which usually lead to refusal.',
+    provenance: 'primary',
+    source: 'Embassy of Denmark in Pakistan, Visa page and FAQ',
+    sourceUrl: 'https://um.dk/pakistan/en/travel-and-residence/visa/',
+    checked: '2026-11-22',
+  },
+  dkVisaStats2025: {
+    id: 'dk.visa.stats-2025-pakistan',
+    claim:
+      'In 2025 Denmark’s consulate in Islamabad received 5,539 short-stay visa applications, issued 1,173 visas and did not issue a visa in 4,325 cases: 78.7% of decisions.',
+    provenance: 'primary',
+    source: 'European Commission (DG HOME), Statistics on short-stay visas, 2025 consulate file, sheet \'Data for consulates\', row Denmark / PAKISTAN / ISLAMABAD',
+    sourceUrl: 'https://home-affairs.ec.europa.eu/policies/schengen/schengen-visas/eu-visa-policy/statistics-short-stay-visas_en',
+    checked: '2026-11-22',
+    note: 'Row read today: 5,539 applied, 1,173 issued (362 multiple-entry), 1 LTV, 4,325 not issued, rate 0.78651. Matches /blog/schengen-visa-refusals-pakistan-2025.',
+  },
+  dkVisaStatsContext: {
+    id: 'dk.visa.stats-context',
+    claim:
+      'Denmark’s not-issued rate in Pakistan was 78.6% in 2024; across all Schengen consulates in Pakistan it was 45.9% in 2025.',
+    provenance: 'primary',
+    source: 'European Commission visa statistics, 2024 and 2025 consulate files, as summed in /blog/schengen-visa-refusals-pakistan-2025 (read 18 November 2026)',
+    sourceUrl: 'https://home-affairs.ec.europa.eu/policies/schengen/schengen-visas/eu-visa-policy/statistics-short-stay-visas_en',
+    checked: '2026-11-22',
+    note: 'Taken from our post as the brief allows; the 2024 file and the Pakistan total were not re-summed today.',
+  },
+  caEcaFswRequired: {
+    id: 'ca.eca.fsw-required',
+    claim:
+      'A Federal Skilled Worker principal applicant with foreign education must have a completed credential and an ECA for immigration purposes. An ECA is also needed to get points for education outside Canada, including a spouse’s or partner’s.',
+    provenance: 'primary',
+    source: 'IRCC, Federal Skilled Worker Program eligibility (modified 2026-11-18); IRCC, Educational credential assessment (modified 2026-10-16)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html',
+    checked: '2026-11-22',
+  },
+  caEcaDesignatedBodies: {
+    id: 'ca.eca.designated',
+    claim:
+      'IRCC’s designated ECA organisations are CES (University of Toronto), ICAS, WES, IQAS and ICES (BCIT), plus the Medical Council of Canada for physicians (NOC 31100, 31101, 31102), the Pharmacy Examining Board of Canada for pharmacists (NOC 31120) and the Canadian Architectural Certification Board for architects (NOC 21200) who need a licence to practise. IRCC still accepts a valid architect’s ECA from another body issued before 31 October 2024.',
+    provenance: 'primary',
+    source: 'IRCC, Educational credential assessment (modified 2026-10-16)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessed.html',
+    checked: '2026-11-22',
+  },
+  caEcaProfessionalBody: {
+    id: 'ca.eca.professional-body',
+    claim:
+      'Where a professional body has been designated for the applicant’s occupation, the equivalency assessment must come from that body.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, SOR/2002-227, s. 75(2.1) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/page-11.html',
+    checked: '2026-11-22',
+  },
+  caEcaValidityLaw: {
+    id: 'ca.eca.validity',
+    claim:
+      'A Federal Skilled Worker’s ECA must be less than five years old on the date the application is made (IRPR s. 75(2)(e)(ii)). An Express Entry profile’s ECA results must be less than five years old (MI s. 3(3)(b)), and once the assessment is five or more years old its points stop (MI s. 3(4), 11(5), 17(4)).',
+    provenance: 'primary',
+    source: 'IRPR SOR/2002-227 s. 75 (current to 2026-10-29); Ministerial Instructions respecting the Express Entry system (signed 2026-11-17, page modified 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-22',
+    note: 'IRPR s. 75 is at https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/page-11.html',
+  },
+  caEcaExpiredRefused: {
+    id: 'ca.eca.expired-refused',
+    claim:
+      'IRCC says the ECA must be less than five years old when you complete your Express Entry profile and when you submit your application, must stay valid while you are in the pool, and an application with an expired ECA is refused.',
+    provenance: 'primary',
+    source: 'IRCC, Educational credential assessment (modified 2026-10-16)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessed.html',
+    checked: '2026-11-22',
+  },
+  caEcaProfileDocuments: {
+    id: 'ca.eca.profile-docs',
+    claim:
+      'IRCC lists an ECA report among the documents you may need when you create an Express Entry profile, if you are applying through the Federal Skilled Worker Program or want points for education outside Canada. The profile asks for the ECA reference number.',
+    provenance: 'primary',
+    source: 'IRCC, Documents you need for an Express Entry profile (2026-10-16); IRCC, Educational credential assessment',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents.html',
+    checked: '2026-11-22',
+  },
+  caEcaNotLicence: {
+    id: 'ca.eca.not-licence',
+    claim:
+      'IRCC says an ECA does not guarantee a job in your field or a licence to practise a regulated profession; the licence comes from the province or territory where you settle.',
+    provenance: 'primary',
+    source: 'IRCC, Educational credential assessment (modified 2026-10-16)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessed.html',
+    checked: '2026-11-22',
+  },
+  caFswEducationPoints: {
+    id: 'ca.fsw.education-points',
+    claim:
+      'Federal Skilled Worker education points (maximum 25): two-year post-secondary credential 19, three years or longer 21, two or more credentials with one of three years or longer 22, master’s-level 23.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, SOR/2002-227, s. 78 (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/page-12.html',
+    checked: '2026-11-22',
+  },
+  caCrsEducationPoints: {
+    id: 'ca.crs.education-points',
+    claim:
+      'CRS level-of-education points (single / with spouse): two-year post-secondary credential 98 / 91, three years or more 120 / 112, two or more credentials with one of three years or more 128 / 119, master’s-level 135 / 126.',
+    provenance: 'primary',
+    source: 'Ministerial Instructions respecting the Express Entry system, s. 11(1) (signed 2026-11-17, page modified 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-22',
+    note: 'Matches lib/crs-grid.ts EDUCATION.',
+  },
+  ecaWesPakistan: {
+    id: 'eca.wes.pakistan',
+    claim:
+      'For a BSc from the University of the Punjab or LUMS (ECA for IRCC), WES asked for all university mark sheets and the degree certificate attested by HEC, uploaded with HEC’s e-Attestation certificate as one PDF per credential. HEC must confirm the attestation on its website or WES will not accept the documents. A CNIC information form is needed only for physical (stamp or ticket) HEC attestations. LUMS can also send records to WES electronically. A master’s holder need not submit the bachelor’s.',
+    provenance: 'primary',
+    source: 'WES, Required Documents tool, results for Bachelor of Science, University of the Punjab and Lahore University of Management Sciences, Canada, applying for IRCC',
+    sourceUrl: 'https://apps.wes.org/required-documents/Search/Result?cId=121&eId=38&iNm=University%20of%20the%20Punjab&cNm=Bachelor%20of%20Science&iSec=Universities%20and%20Institutes%20of%20Technology&comp=1&isEca=True&lan=1&isNzqa=False&isCMEC=False',
+    checked: '2026-11-22',
+    note: 'Requirements vary by institution. LUMS result: same URL with iNm=Lahore%20University%20of%20Management%20Sciences.',
+  },
+  ecaIcasPakistan: {
+    id: 'eca.icas.pakistan',
+    claim:
+      'ICAS asks for HEC e-Attestation certificates for the degree and transcript or marks certificates, verified directly with HEC’s attestation portal. Diplomas: IBCC-attested copies in an envelope signed and sealed by IBCC. HEC and IBCC need not complete ICAS’s Official Records Request Form. Documents not in English or French need a word-for-word translation, and a differing name needs official proof of the change.',
+    provenance: 'primary',
+    source: 'ICAS, Immigration to Canada: Pakistan document requirements',
+    sourceUrl: 'https://www.icascanada.ca/new/immigration-to-canada.aspx/document-detail.aspx?document=be9ed032-0d4e-4bc1-aa6b-af6ee26fa4d0',
+    checked: '2026-11-22',
+  },
+  ecaIqasPakistan: {
+    id: 'eca.iqas.pakistan',
+    claim:
+      'IQAS asks for the degree and transcript as official copies attested by HEC, uploaded to the IQAS portal, with an ID showing the number HEC used (CNIC or passport). HEC must confirm the attestation on its website. Preston University graduates must also provide documentation of the learning centre where they studied. Secondary documents are not required with a completed post-secondary credential.',
+    provenance: 'primary',
+    source: 'Government of Alberta, IQAS Educational Credential Assessment for Immigration: country-specific academic document requirements (October 2026), Pakistan',
+    sourceUrl: 'https://www.alberta.ca/system/files/im-eca-required-documents.pdf',
+    checked: '2026-11-22',
+  },
+  ecaIqasTwoYearDegree: {
+    id: 'eca.iqas.pakistan-two-year',
+    claim:
+      'IQAS’s education guide for Pakistan says a bachelor (pass) degree such as a BA, BCom or BSc traditionally involves two years of full-time study and generally compares to a two-year post-secondary diploma. A master’s after a pass bachelor’s, in combination with it, and the four-year bachelor (honours) generally compare to a four-year bachelor’s degree. The guide says it is not an official IQAS assessment.',
+    provenance: 'primary',
+    source: 'Government of Alberta, IQAS International Education Guide: Pakistan',
+    sourceUrl: 'https://www.alberta.ca/iqas-education-guide-pakistan',
+    checked: '2026-11-22',
+  },
+  ecaIcesPakistan: {
+    id: 'eca.ices.pakistan',
+    claim:
+      'ICES does not accept HEC-attested documents; degree records must be issued and sent directly by the awarding university, by post or from a university email account, never handled by the applicant. ICES lists Pakistani institutions whose credentials it will not assess.',
+    provenance: 'primary',
+    source: 'BCIT ICES, Country specific information (Pakistan); BCIT ICES, ECA document requirements',
+    sourceUrl: 'https://www.bcit.ca/ices/country-specific-information/',
+    checked: '2026-11-22',
+  },
+  ecaCesClosed: {
+    id: 'eca.ces.closed',
+    claim:
+      'CES (University of Toronto) stopped accepting new applications at 9:00 am EDT on 22 October 2026. Applications paid for before then are still processed, and reports already issued keep their issue date.',
+    provenance: 'primary',
+    source: 'University of Toronto School of Continuing Studies, CES winding-down notice and FAQ',
+    sourceUrl: 'https://learn.utoronto.ca/comparative-education-service/faq',
+    checked: '2026-11-22',
+    note: 'IRCC’s ECA page (modified 2026-10-16) still lists CES. Re-check monthly; tell the lead when IRCC removes it.',
+  },
+  ecaMccPhysicians: {
+    id: 'eca.mcc',
+    claim:
+      'The Medical Council of Canada issues ECAs for medical degrees, requested through physiciansapply.ca once the final degree, or the transcript with the degree sent for verification, is source-verified. An ECA does not give the right to practise.',
+    provenance: 'primary',
+    source: 'Medical Council of Canada, Educational Credential Assessment',
+    sourceUrl: 'https://mcc.ca/repository/educational-credential-assessment/',
+    checked: '2026-11-22',
+  },
+  pkHecAttestation: {
+    id: 'pk.hec.attestation',
+    claim:
+      'HEC’s degree attestation is online through its eServices portal. It attests degrees, transcripts (result cards or detailed marks certificates) and university provisional certificates. The university verifies the case, HEC reviews it, and the applicant downloads the e-Attestation certificate. HEC will not start unless personal details on the CNIC and all educational documents are identical.',
+    provenance: 'primary',
+    source: 'Higher Education Commission, Degree Attestation',
+    sourceUrl: 'https://www.hec.gov.pk/english/services/students/DAS/Pages/Degree-Attestation.aspx',
+    checked: '2026-11-22',
+  },
+  pkIbccAttestation: {
+    id: 'pk.ibcc.attestation',
+    claim:
+      'IBCC (Inter Boards Coordination Commission) is authorised by the Government of Pakistan to attest secondary and higher secondary certificates and diplomas awarded by Pakistan’s boards of intermediate and secondary education and boards of technical education.',
+    provenance: 'primary',
+    source: 'IBCC, Attestation: Introduction',
+    sourceUrl: 'https://ibcc.edu.pk/attestation/',
+    checked: '2026-11-22',
+  },
+  ecaNoMofa: {
+    id: 'eca.no-mofa',
+    claim:
+      'IRCC’s ECA page does not ask for MOFA attestation, and on 22 November 2026 the Pakistan document pages of WES, ICAS, IQAS and ICES did not ask for it either.',
+    provenance: 'primary',
+    source: 'IRCC ECA page; WES Required Documents; ICAS Pakistan page; IQAS country-specific requirements; ICES country-specific information',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessed.html',
+    checked: '2026-11-22',
+    note: 'A fact about absence: re-check if any body changes its Pakistan page.',
+  },
+  caPrResidency730: {
+    id: 'ca.pr.residency-730',
+    claim:
+      'A permanent resident must be in Canada for at least 730 days in every five-year period; the days need not be continuous. Under five years as a PR, you must show you can reach 730 days within five years of becoming a PR; after five years, the five years before the examination are counted.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Act, s. 28(1) and (2)(a)-(b) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/I-2.5/section-28.html',
+    checked: '2026-11-22',
+  },
+  caPrResidencyHc: {
+    id: 'ca.pr.residency-hc',
+    claim:
+      'An officer can find that humanitarian and compassionate considerations, including the best interests of a child directly affected, justify keeping PR status despite a breach of the residency obligation.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Act, s. 28(2)(c); IRCC Guide IMM 5529 (modified 2025-07-30)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/I-2.5/section-28.html',
+    checked: '2026-11-22',
+  },
+  caPrDaysAbroad: {
+    id: 'ca.pr.days-abroad',
+    claim:
+      'Days abroad count towards the 730 when you ordinarily live with a Canadian citizen spouse, common-law partner or (for a child) parent; when you are employed by or under contract to a Canadian business or the federal or a provincial public service and assigned full-time abroad as a term of that job; or when you accompany a PR spouse, partner or parent so employed who meets the obligation.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Act, s. 28(2)(a)(ii)-(iv); Immigration and Refugee Protection Regulations, s. 61(3)-(5) (current to 2026-10-29); IRCC Help Centre qnum 1466 (modified 2026-11-03)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-61.html',
+    checked: '2026-11-22',
+  },
+  caPrCanadianBusiness: {
+    id: 'ca.pr.canadian-business',
+    claim:
+      'For the residency obligation, a child is anyone under 22 who is not a spouse or common-law partner, and a business that exists mainly to let a PR meet the obligation while living abroad is not a Canadian business.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 61(1), (2) and (6) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-61.html',
+    checked: '2026-11-22',
+  },
+  caPrStatusNotAutomatic: {
+    id: 'ca.pr.status-not-automatic',
+    claim:
+      'PR status is not lost automatically or when the PR card expires. It ends on a final determination outside Canada that the residency obligation was not met, on an approved renunciation, when a removal order comes into force, or on becoming a citizen; IRCC says you stay a PR until an official decision is made.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Act, s. 46(1); IRCC, Understand permanent resident status (modified 2026-04-09)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/permanent-residents/status.html',
+    checked: '2026-11-22',
+  },
+  caPrCardValidity: {
+    id: 'ca.pr.card-validity',
+    claim:
+      'A PR card is valid for five years from the date of issue, or one year in the cases listed in s. 54(2).',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 54 (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-54.html',
+    checked: '2026-11-22',
+  },
+  caPrCardInCanadaOnly: {
+    id: 'ca.pr.card-in-canada-only',
+    claim:
+      'A PR card can only be issued in Canada and is not mailed outside Canada, so it cannot be renewed from Pakistan; a PR abroad without a valid card applies for a PR travel document.',
+    provenance: 'primary',
+    source: 'IRCC, Travelling outside Canada as a PR (dated 2025-08-07); IRCC, PR card: who can apply (modified 2025-05-28)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/permanent-residents/travel-outside-canada.html',
+    checked: '2026-11-22',
+  },
+  caPrBoarding: {
+    id: 'ca.pr.boarding',
+    claim:
+      'Without a PR card or PRTD, a PR may not be able to board a flight to Canada; carriers must review proof of status before boarding passengers who say they are PRs (IRPA s. 148, IRPR s. 259). A Record of Landing or Confirmation of Permanent Residence is not valid for travel to Canada.',
+    provenance: 'primary',
+    source: 'IRCC, Permanent residents need a PR card or travel document; IRCC, PR card departmental policy (modified 2025-03-31)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/permanent-residents.html',
+    checked: '2026-11-22',
+  },
+  caPrPrtd: {
+    id: 'ca.pr.prtd',
+    claim:
+      'A PRTD is for a PR outside Canada without a valid PR card returning by plane, boat, train or bus. It is normally single-entry. IRCC prefers online applications (IMM 5444) through the PR Portal, paper only for accommodations after contacting the VAC; each family member applies separately; IRCC assesses the residency obligation; after approval it emails passport instructions.',
+    provenance: 'primary',
+    source: 'IRCC, Apply for a permanent resident travel document (modified 2026-10-30); IRCC Guide IMM 5529 (modified 2025-07-30)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/permanent-residents/travel-document.html',
+    checked: '2026-11-22',
+  },
+  caPrPakistanOffice: {
+    id: 'ca.pr.pakistan-office',
+    claim:
+      'IRCC\'s list of visa offices names Islamabad as the visa office for Pakistan, and visa offices process PR travel documents. IRCC lists VACs in Islamabad, Lahore and Karachi; accepting PRTD applications is among the general VAC services, and passports go to a VAC only after IRCC requests them.',
+    provenance: 'primary',
+    source: 'IRCC, Visa offices outside Canada (modified 2026-07-17); IRCC, Find a visa application centre (page dated 2026-08-24)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/international-visa-offices.html',
+    checked: '2026-11-22',
+    note: 'The VFS Global Pakistan site returned HTTP 403 to automated reading, so nothing VFS-specific is stated.',
+  },
+  caPrBiometrics: {
+    id: 'ca.pr.biometrics',
+    claim:
+      'Permanent residents are exempt from biometrics unless they are renewing or replacing a PR card and were exempt by age when they applied for permanent residence. IRCC\'s PRTD pages do not mention biometrics.',
+    provenance: 'primary',
+    source: 'IRCC, Who needs to give biometrics (modified 2026-11-19)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/biometrics/who-needs-to-give.html',
+    checked: '2026-11-22',
+  },
+  caPrIadAppeal: {
+    id: 'ca.pr.iad-appeal',
+    claim:
+      'A PR may appeal a residency obligation decision made outside Canada to the Immigration Appeal Division (IRPA s. 63(4)). The notice of appeal must be received within 60 days after the appellant receives the officer\'s decision and any written reasons (IRB Rules r. 16(c)). A removal order appeal (IRPA s. 63(3)) is due 30 days after receiving the order (r. 16(b)).',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Act, s. 63; Immigration and Refugee Board of Canada Rules (SOR/2022-277), r. 16 (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2022-277/section-16.html',
+    checked: '2026-11-22',
+    note: 'The 60-day limit is in the IRB Rules, not in IRPA s. 63(4), which gives only the right of appeal.',
+  },
+  caPrTravelDocDuringAppeal: {
+    id: 'ca.pr.travel-doc-during-appeal',
+    claim:
+      'An officer must issue a travel document to a PR abroad who was physically present in Canada at least once in the 365 days before the examination and whose s. 63(4) appeal is pending or whose time to appeal has not expired.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Act, s. 31(3)(c) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/I-2.5/section-31.html',
+    checked: '2026-11-22',
+  },
+  caPrIadGrounds: {
+    id: 'ca.pr.iad-grounds',
+    claim:
+      'The IAD may allow an appeal if the decision was wrong in law or fact, if natural justice was not observed, or if humanitarian and compassionate considerations warrant special relief. Judicial review in the Federal Court needs leave and is available only once appeal rights are exhausted.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Act, ss. 67(1) and 72(1)-(2)(a); IRB, Appealing a residency obligation decision made outside Canada (modified 2023-03-22)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/I-2.5/section-67.html',
+    checked: '2026-11-22',
+  },
+  caPrRenounce: {
+    id: 'ca.pr.renounce',
+    claim:
+      'A PR can apply to renounce from outside Canada by sending the application to the visa office responsible for their country of citizenship or legal residence. Status ends when an officer approves it, and it cannot be appealed to the IAD.',
+    provenance: 'primary',
+    source: 'IRCC, Guide 5781: Applying to voluntarily renounce PR status (modified 2025-06-19); IRPA s. 46(1)(e)',
+    sourceUrl: 'https://ircc.canada.ca/english/information/applications/guides/5781ETOC.asp',
+    checked: '2026-11-22',
+  },
+  caPrSponsorResidence: {
+    id: 'ca.pr.sponsor-residence',
+    claim:
+      'A sponsor must reside in Canada; only a Canadian citizen living abroad may sponsor a spouse, partner or dependent child, and only if they will reside in Canada when the person becomes a PR. The exception does not cover permanent residents.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 130 (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-130.html',
+    checked: '2026-11-22',
+  },
+  nocVersionSwitch: {
+    id: 'noc.ircc.version',
+    claim:
+      'IRCC has used NOC 2021 Version 1.0 since 16 November 2022.',
+    provenance: 'primary',
+    source: 'IRCC, Find your National Occupational Classification (NOC) (page details 2025-06-27)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/find-national-occupation-code.html',
+    checked: '2026-11-22',
+  },
+  nocTeerDescriptions: {
+    id: 'noc.teer.descriptions',
+    claim:
+      'TEER 0: management jobs. TEER 1: a university degree. TEER 2: a college diploma, 2 or more years of apprenticeship, or a supervisory job. TEER 3: a college diploma, under 2 years of apprenticeship, or over 6 months’ on-the-job training. TEER 4: a high school diploma or several weeks’ on-the-job training. TEER 5: a short work demonstration and no formal education.',
+    provenance: 'primary',
+    source: 'IRCC, Find your National Occupational Classification (NOC) (page details 2025-06-27)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/find-national-occupation-code.html',
+    checked: '2026-11-22',
+  },
+  nocStructure: {
+    id: 'noc.structure',
+    claim:
+      'NOC 2021 Version 1.0 has 516 unit groups, each with a five-digit code; the first digit is the broad occupational category and the second is the TEER category.',
+    provenance: 'primary',
+    source: 'Statistics Canada, NOC 2021 Version 1.0: introduction (modified 2023-09-14)',
+    sourceUrl: 'https://www.statcan.gc.ca/en/subjects/standard/noc/2021/introductionV1',
+    checked: '2026-11-22',
+  },
+  nocSupervisors: {
+    id: 'noc.conventions.supervisors',
+    claim:
+      'Statistics Canada generally classifies supervisors with the workers they supervise, with some exceptions.',
+    provenance: 'primary',
+    source: 'Statistics Canada, NOC 2021 Version 1.0: introduction (modified 2023-09-14)',
+    sourceUrl: 'https://www.statcan.gc.ca/en/subjects/standard/noc/2021/introductionV1',
+    checked: '2026-11-22',
+  },
+  fswWorkRule: {
+    id: 'ee.fsw.work',
+    claim:
+      'The Federal Skilled Worker Program needs one continuous year of full-time work, or the part-time equivalent, within the last 10 years, in TEER 0 to 3, in the code named as the primary occupation, having performed the lead statement and a substantial number of the main duties, including all essential duties.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 75(2)(a)–(c) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-75.html',
+    checked: '2026-11-22',
+    note: 'IRCC’s FSW page (page details 2026-11-18) says the same.',
+  },
+  fswRefusal: {
+    id: 'ee.fsw.refusal',
+    claim:
+      'A Federal Skilled Worker application that fails the minimum requirements is refused.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 75(3) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-75.html',
+    checked: '2026-11-22',
+  },
+  cecWorkRule: {
+    id: 'ee.cec.work',
+    claim:
+      'The Canadian Experience Class needs one year of full-time work, or the part-time equivalent, in Canada within the last 3 years, in TEER 0 to 3, with the same duties test.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 87.1(2) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-87.1.html',
+    checked: '2026-11-22',
+    note: 'IRCC’s CEC page (page details 2026-11-18) says the same.',
+  },
+  fstWorkRule: {
+    id: 'ee.fst.work',
+    claim:
+      'The Federal Skilled Trades Program needs two years of full-time work, or the part-time equivalent, in one skilled trade within the last 5 years. The trades are NOC Major Groups 72 (not 726), 73, 82, 83, 92 and 93 (not 932), Minor Group 6320 and Unit Group 62200. The duties test and the NOC’s employment requirements apply.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 87.2(1) and (3) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-87.2.html',
+    checked: '2026-11-22',
+    note: 'Every FST group has 2 or 3 as its TEER digit, so TEER 4 and 5 work counts for no Express Entry programme (our reading of ss. 75, 87.1 and 87.2).',
+  },
+  fullTime30: {
+    id: 'ee.fulltime',
+    claim:
+      'Full-time work means at least 30 hours a week.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 73(1) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-73.html',
+    checked: '2026-11-22',
+    note: 'Also Ministerial Instructions ss. 15.2(3) and 25(3), for CRS purposes.',
+  },
+  crsForeignWorkNoc: {
+    id: 'crs.foreignWork.noc',
+    claim:
+      'Work outside Canada earns CRS points only in TEER 0 to 3; the profile must give the five-digit NOC code for each job, and the lead statement and main duties test applies.',
+    provenance: 'primary',
+    source: 'Ministerial Instructions respecting the Express Entry system, s. 25(1)–(2) (signed 17 November 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-22',
+  },
+  crsOfferTeer: {
+    id: 'crs.jobOffer.teer',
+    claim:
+      'A qualifying job offer must be in TEER 0 to 3 or a skilled trade, for full-time work lasting at least a year.',
+    provenance: 'primary',
+    source: 'Ministerial Instructions respecting the Express Entry system, s. 15.2(2)–(3) (signed 17 November 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-22',
+  },
+  crsOfferPoints: {
+    id: 'crs.jobOffer.points',
+    claim:
+      'A qualifying job offer earns 100, 70 or 50 CRS points if its code is on the high-wage list at the 2 times, 1.5 times or 1.3 times median-wage level, read from the list in force when the invitation is issued.',
+    provenance: 'primary',
+    source: 'Ministerial Instructions respecting the Express Entry system, ss. 1 and 15.2(1) (signed 17 November 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-22',
+  },
+  highWageBasis: {
+    id: 'crs.highWage.basis',
+    claim:
+      'The high-wage list came into effect on 3 November 2026; the level belongs to the NOC code, not to a person’s salary, and IRCC keeps the level that applied on the date it invited you.',
+    provenance: 'primary',
+    source: 'IRCC, High-wage occupations (page details 2026-10-16)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score/high-wage.html',
+    checked: '2026-11-22',
+  },
+  highWageCodes: {
+    id: 'crs.highWage.codes',
+    claim:
+      'At least 2 times: 10021, 31102, 41200, 60010. 1.5 to under 2 times: 21231, 21232, 21300, 21301, 21310, 31120, 31301, 41220, 41221. 1.3 to under 1.5 times: 11100. Not listed: 12101, 62200, 63102, 63200, 64400, 72106, 72200, 73300.',
+    provenance: 'primary',
+    source: 'IRCC, High-wage occupations (list in effect 3 November 2026; page details 2026-10-16)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score/high-wage.html',
+    checked: '2026-11-22',
+    note: 'Alternates named in the table: 11200 and 72201 are at 1.3 times; 12200 is not listed. Re-check monthly and whenever IRCC updates the list.',
+  },
+  categorySingleOccupation: {
+    id: 'ee.categories.singleOccupation',
+    claim:
+      'For occupation categories, the experience must be in a single listed occupation, no matter your primary occupation.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: Category-based selection (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations/category-based-selection.html',
+    checked: '2026-11-22',
+    note: 'The page also sets 12 months in the past 3 years; not printed, because it is set in round instructions we did not read.',
+  },
+  categoryExamples: {
+    id: 'ee.categories.examples',
+    claim:
+      'On 22 November 2026 the category lists included civil, mechanical and electrical engineers (21300, 21301, 21310), nurses (31301), family doctors (31102), pharmacists (31120), school teachers (41220, 41221), electricians (72200, 72201) and welders (72106). Software engineers and developers (21231, 21232), truck drivers (73300), chefs (62200) and cooks (63200) were on none.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: Category-based selection (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations/category-based-selection.html',
+    checked: '2026-11-22',
+    note: 'Re-check monthly. The site’s /express-entry/category-based-draws page deliberately names no categories; this page names dated examples.',
+  },
+  jobOfferNocInProfile: {
+    id: 'ee.jobOffer.noc',
+    claim:
+      'A new job offer must be added to the Express Entry profile with its start date, employer name and address, and NOC code.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: Job offer (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/job-offer.html',
+    checked: '2026-11-22',
+  },
+  referenceLetterContents: {
+    id: 'ee.documents.referenceLetter',
+    claim:
+      'IRCC accepts reference letters from employers, with your job duties, the dates you worked there and your salary, as proof of work experience.',
+    provenance: 'primary',
+    source: 'IRCC, Your IRCC application: Supporting documents (page details 2026-04-23)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/common-supporting-documents.html',
+    checked: '2026-11-22',
+  },
+  misrepFiveYears: {
+    id: 'irpa.s40.fiveYears',
+    claim:
+      'A misrepresentation finding makes a person inadmissible for five years, and they may not apply for permanent residence in that time.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Act, s. 40(1)(a), (2)(a) and (3) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-40.html',
+    checked: '2026-11-22',
+  },
+  regulatedLicence: {
+    id: 'esdc.fcr.licence',
+    claim:
+      'People trained abroad need a licence or certification before working in a regulated job or trade, through the province or territory where they will work; Canadian job titles can differ from other countries’.',
+    provenance: 'primary',
+    source: 'ESDC, Foreign credential recognition (page details 2026-11-12)',
+    sourceUrl: 'https://www.canada.ca/en/employment-social-development/programs/foreign-credential-recognition.html',
+    checked: '2026-11-22',
+  },
+  noc21231: {
+    id: 'noc.unit.21231',
+    claim:
+      'NOC 21231 is “Software engineers and designers”, TEER 1.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 21231',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=21231&version=2021.0',
+    checked: '2026-11-22',
+    note: 'Employment requirements: licensing only to approve engineering drawings and reports and to practise as a P.Eng..',
+  },
+  noc21232: {
+    id: 'noc.unit.21232',
+    claim:
+      'NOC 21232 is “Software developers and programmers”, TEER 1.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 21232',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=21232&version=2021.0',
+    checked: '2026-11-22',
+    note: 'Employment requirements: no licence listed.',
+  },
+  noc11100: {
+    id: 'noc.unit.11100',
+    claim:
+      'NOC 11100 is “Financial auditors and accountants”, TEER 1.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 11100',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=11100&version=2021.0',
+    checked: '2026-11-22',
+    note: 'Employment requirements: certification for CPA designations; licensing usually required for public accounting.',
+  },
+  noc63102: {
+    id: 'noc.unit.63102',
+    claim:
+      'NOC 63102 is “Financial sales representatives”, TEER 3.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 63102',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=63102&version=2021.0',
+    checked: '2026-11-22',
+    note: 'Employment requirements: securities registration and a mutual funds licence usually required; example titles include loan officer, credit officer and personal banker.',
+  },
+  noc64400: {
+    id: 'noc.unit.64400',
+    claim:
+      'NOC 64400 is “Customer services representatives - financial institutions”, TEER 4.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 64400',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=64400&version=2021.0',
+    checked: '2026-11-22',
+    note: 'Employment requirements: no licence listed.',
+  },
+  noc10021: {
+    id: 'noc.unit.10021',
+    claim:
+      'NOC 10021 is “Banking, credit and other investment managers”, TEER 0.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 10021',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=10021&version=2021.0',
+    checked: '2026-11-22',
+    note: 'Employment requirements: no licence listed.',
+  },
+  noc21300: {
+    id: 'noc.unit.21300',
+    claim:
+      'NOC 21300 is “Civil engineers”, TEER 1.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 21300',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=21300&version=2021.0',
+    checked: '2026-11-22',
+    note: 'Employment requirements: P.Eng. licence to approve drawings and practise.',
+  },
+  noc21310: {
+    id: 'noc.unit.21310',
+    claim:
+      'NOC 21310 is “Electrical and electronics engineers”, TEER 1.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 21310',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=21310&version=2021.0',
+    checked: '2026-11-22',
+    note: 'Employment requirements: P.Eng. licence to approve drawings and practise.',
+  },
+  noc21301: {
+    id: 'noc.unit.21301',
+    claim:
+      'NOC 21301 is “Mechanical engineers”, TEER 1.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 21301',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=21301&version=2021.0',
+    checked: '2026-11-22',
+    note: 'Employment requirements: P.Eng. licence to approve drawings and practise.',
+  },
+  noc31301: {
+    id: 'noc.unit.31301',
+    claim:
+      'NOC 31301 is “Registered nurses and registered psychiatric nurses”, TEER 1.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 31301',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=31301&version=2021.0',
+    checked: '2026-11-22',
+    note: 'Employment requirements: registration with a regulatory body required in all provinces and territories (registered nurses).',
+  },
+  noc31102: {
+    id: 'noc.unit.31102',
+    claim:
+      'NOC 31102 is “General practitioners and family physicians”, TEER 1.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 31102',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=31102&version=2021.0',
+    checked: '2026-11-22',
+    note: 'Employment requirements: Medical Council of Canada (or Collège des médecins du Québec) qualifying exams and provincial licensing required.',
+  },
+  noc31120: {
+    id: 'noc.unit.31120',
+    claim:
+      'NOC 31120 is “Pharmacists”, TEER 1.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 31120',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=31120&version=2021.0',
+    checked: '2026-11-22',
+    note: 'Employment requirements: licensure required in all provinces and territories for community and hospital pharmacists.',
+  },
+  noc41220: {
+    id: 'noc.unit.41220',
+    claim:
+      'NOC 41220 is “Secondary school teachers”, TEER 1.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 41220',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=41220&version=2021.0',
+    checked: '2026-11-22',
+    note: 'Employment requirements: provincial teaching certificate required.',
+  },
+  noc41221: {
+    id: 'noc.unit.41221',
+    claim:
+      'NOC 41221 is “Elementary school and kindergarten teachers”, TEER 1.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 41221',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=41221&version=2021.0',
+    checked: '2026-11-22',
+    note: 'Employment requirements: provincial teaching certificate required.',
+  },
+  noc41200: {
+    id: 'noc.unit.41200',
+    claim:
+      'NOC 41200 is “University professors and lecturers”, TEER 1.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 41200',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=41200&version=2021.0',
+    checked: '2026-11-22',
+    note: 'Employment requirements: licences may be required in some professionally regulated fields.',
+  },
+  noc60010: {
+    id: 'noc.unit.60010',
+    claim:
+      'NOC 60010 is “Corporate sales managers”, TEER 0.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 60010',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=60010&version=2021.0',
+    checked: '2026-11-22',
+    note: 'Employment requirements: no licence listed.',
+  },
+  noc12101: {
+    id: 'noc.unit.12101',
+    claim:
+      'NOC 12101 is “Human resources and recruitment officers”, TEER 2.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 12101',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=12101&version=2021.0',
+    checked: '2026-11-22',
+    note: 'Employment requirements: no licence listed; CHRP may be required.',
+  },
+  noc72200: {
+    id: 'noc.unit.72200',
+    claim:
+      'NOC 72200 is “Electricians (except industrial and power system)”, TEER 2.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 72200',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=72200&version=2021.0',
+    checked: '2026-11-22',
+    note: 'Employment requirements: trade certification compulsory for construction electricians in most provinces.',
+  },
+  noc72106: {
+    id: 'noc.unit.72106',
+    claim:
+      'NOC 72106 is “Welders and related machine operators”, TEER 2.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 72106',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=72106&version=2021.0',
+    checked: '2026-11-22',
+    note: 'Employment requirements: trade certification compulsory in Alberta, voluntary elsewhere.',
+  },
+  noc73300: {
+    id: 'noc.unit.73300',
+    claim:
+      'NOC 73300 is “Transport truck drivers”, TEER 3.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 73300',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=73300&version=2021.0',
+    checked: '2026-11-22',
+    note: 'Employment requirements: Class 3 or D licence for straight-body trucks; Class 1 or A for long combination vehicles; air brake endorsement where fitted.',
+  },
+  noc62200: {
+    id: 'noc.unit.62200',
+    claim:
+      'NOC 62200 is “Chefs”, TEER 2.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 62200',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=62200&version=2021.0',
+    checked: '2026-11-22',
+    note: 'Employment requirements: cook’s trade certification or equivalent credentials, training and experience required.',
+  },
+  noc63200: {
+    id: 'noc.unit.63200',
+    claim:
+      'NOC 63200 is “Cooks”, TEER 3.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 63200',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=63200&version=2021.0',
+    checked: '2026-11-22',
+    note: 'Employment requirements: trade certification available but voluntary.',
+  },
+  caRuralMadePermanent: {
+    id: 'ca.rural.permanent',
+    claim:
+      'On 9 November 2026, IRCC announced it had made the Rural Community Immigration Pilot a permanent programme.',
+    provenance: 'primary',
+    source: 'IRCC news release, Canada creates a permanent immigration pathway to help rural communities attract and retain talent (9 November 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/11/canada-creates-a-permanent-immigration-pathway-to-help-rural-communities-attract-and-retain-talent0.html',
+    checked: '2026-11-22',
+    note: 'Release wording: the government \'has made the Rural Community Immigration Pilot a permanent program\'. The backgrounder names it the Rural Community Immigration Program: https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/11/overview-of-the-rural-community-immigration-program.html',
+  },
+  caRuralPilotCloses: {
+    id: 'ca.rural.pilotCloses',
+    claim:
+      'IRCC’s pages say the pilot closes on 1 January 2027.',
+    provenance: 'primary',
+    source: 'IRCC, Rural Community Immigration Pilot (page dated 2026-11-09)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/rural-immigration.html',
+    checked: '2026-11-22',
+    note: 'Page text: \'As of January 1, 2027, the Rural Community Immigration Pilot will close.\' Pilot status still shows \'Open\' on 22 November 2026.',
+  },
+  caRuralProgramOpens: {
+    id: 'ca.rural.programOpens',
+    claim:
+      'The Rural Community Immigration Program opens on 1 January 2027, when the pilot closes.',
+    provenance: 'primary',
+    source: 'IRCC, Rural Community Immigration Program (page dated 2026-11-09)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/rural-immigration-program.html',
+    checked: '2026-11-22',
+    note: 'Status line on the page: \'Program opens January 1, 2027\'. The news release and backgrounder give no start date.',
+  },
+  caRuralPilotRecommendations: {
+    id: 'ca.rural.pilotRecommendations',
+    claim:
+      'If you hold a rural pilot recommendation dated 31 December 2026 or earlier, IRCC says you must apply for permanent residence before it expires. IRCC will keep processing pilot applications it has already received.',
+    provenance: 'primary',
+    source: 'IRCC, Rural Community Immigration Pilot (page dated 2026-11-09)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/rural-immigration.html',
+    checked: '2026-11-22',
+    note: 'Same wording on the pilot\'s job-offer page. IRCC does not say a pilot recommendation can be used for the new programme; the page points people without a pilot recommendation to the programme.',
+  },
+  caRuralCommunitiesContinue: {
+    id: 'ca.rural.communities',
+    claim:
+      'On 9 November 2026, IRCC said the permanent rural programme intends to keep the pilot’s communities and add more later. Criteria for new communities will come in a future announcement.',
+    provenance: 'primary',
+    source: 'IRCC news release, Canada creates a permanent immigration pathway to help rural communities attract and retain talent (9 November 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/11/canada-creates-a-permanent-immigration-pathway-to-help-rural-communities-attract-and-retain-talent0.html',
+    checked: '2026-11-22',
+    note: 'Release: \'The program intends to continue with the 14 communities currently taking part in the pilot\', expansion planned. The count is not printed on the page, which deliberately names no communities.',
+  },
+  caRuralDesignationsUnstated: {
+    id: 'ca.rural.designationsUnstated',
+    claim:
+      'As of 22 November 2026, its pages do not say whether pilot employer designations carry over to the programme, so ask the community.',
+    provenance: 'primary',
+    source: 'IRCC, Hire through the rural and Francophone community immigration pilots or program (page dated 2026-11-09)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/hire.html',
+    checked: '2026-11-22',
+    note: 'A statement of absence. Also checked: the news release, the backgrounder, the hub page, the pilot page and the programme\'s main, eligibility and job-offer pages. None says whether pilot designations carry over. Re-check when IRCC publishes employer guidance for the programme.',
+  },
+  caFrancophonePilotOpen: {
+    id: 'ca.francophone.stillPilot',
+    claim:
+      'The Francophone Community Immigration Pilot … is not mentioned in that announcement. As of 22 November 2026, IRCC still lists it as an open pilot.',
+    provenance: 'primary',
+    source: 'IRCC, Francophone Community Immigration Pilot (page dated 2026-04-30)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/franco-immigration.html',
+    checked: '2026-11-22',
+    note: 'Page status \'Open\', no end date or change notice. The 9 November 2026 release mentions the Francophone pilot only as a linked 2025 release.',
+  },
+  caRuralEmployerSendsRecommendation: {
+    id: 'ca.rural.recommendationProcess',
+    claim:
+      'Once you hold a valid offer, IRCC says the designated employer sends your recommendation application to the community. The community checks the job is in a priority sector or occupation, the offer is real and you meet the requirements.',
+    provenance: 'primary',
+    source: 'IRCC, Rural Community Immigration Program: Get a job offer and a community recommendation (page dated 2026-11-09)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/rural-immigration-program/job-offer.html',
+    checked: '2026-11-22',
+    note: 'The same process is on the pilot\'s job-offer page and the Francophone pilot\'s job-offer page (https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/franco-immigration/job-offer.html, dated 2025-08-19). The old page wrongly said the candidate applies to the community.',
+  },
+
+  // ── BLOG POSTS AND GUIDES OF 22 NOVEMBER 2026 ──────────────────────────────────────
+  dkStudyRulesOct2026InForce: {
+    id: 'dk.study.rules.2026.inForce',
+    claim:
+      'New rules for students in state-approved programmes took effect on 1 October 2026; the date the application is submitted, not the decision date, decides which rules apply.',
+    provenance: 'primary',
+    source: 'SIRI news, 30-09-2026; BEK nr 829 af 24/09/2026 § 17(1)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/News-Front-Page/2026/09/SIRI---Nye-regler-for-studerende',
+    checked: '2026-11-22',
+  },
+  dkStudyRulesScope: {
+    id: 'dk.study.rules.2026.scope',
+    claim:
+      'The rules cover students from outside the EU, EEA and Switzerland, so they cover Pakistani citizens; SIRI names an exception only for Turkish citizens under the EU–Turkey Association Agreement.',
+    provenance: 'primary',
+    source: 'SIRI news, 30-09-2026; SIRI Higher educational programmes (last updated 01-10-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/News-Front-Page/2026/09/SIRI---Nye-regler-for-studerende',
+    checked: '2026-11-22',
+    note: 'SIRI calls them third-country students; its higher education page says EU/EEA and Swiss citizens need an EU residence document instead.',
+  },
+  dkStudyJobSeekingOneYear: {
+    id: 'dk.study.jobSeeking.oneYear',
+    claim:
+      'After a state-approved bachelor’s, professional bachelor’s or master’s, students who applied on or after 1 October 2026 get up to 1 year to look for work.',
+    provenance: 'primary',
+    source: 'BEK nr 829 af 24/09/2026 § 5(2) and § 17(3); SIRI job-seeking page (last updated 01-10-2026)',
+    sourceUrl: 'https://www.retsinformation.dk/eli/lta/2026/829',
+    checked: '2026-11-22',
+    note: 'SIRI also lists part-time master’s in this group.',
+  },
+  dkStudyJobSeekingThreeYearsBefore: {
+    id: 'dk.study.jobSeeking.threeYearsBefore',
+    claim:
+      'Students who applied before 1 October 2026 keep up to 3 years; the Executive Order keeps the old job-seeking rule for anyone who applied for, or was granted, a student permit before that date.',
+    provenance: 'primary',
+    source: 'BEK nr 829 af 24/09/2026 § 17(3); BEK nr 950 af 25/06/2025 § 5(2)',
+    sourceUrl: 'https://www.retsinformation.dk/eli/lta/2026/829',
+    checked: '2026-11-22',
+  },
+  dkStudyJobSeekingSince2023: {
+    id: 'dk.study.jobSeeking.history2023',
+    claim:
+      'The 3-year job-seeking period dated from 1 April 2023; before that, graduates got 6 months.',
+    provenance: 'primary',
+    source: 'SIRI news, New possibilities in the areas of work and study from 1 April 2023 (updated 03-07-2023)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/News-Front-Page/2023/03/L46-news-2',
+    checked: '2026-11-22',
+  },
+  dkStudyJobSeekingSixMonths: {
+    id: 'dk.study.jobSeeking.sixMonths',
+    claim:
+      'An academy profession (AP) degree or a master’s for working professionals gives 6 months, unchanged by the October 2026 rules.',
+    provenance: 'primary',
+    source: 'BEK nr 829 af 24/09/2026 § 5(1); SIRI 6-month job-seeking page (last updated 01-10-2026)',
+    sourceUrl: 'https://www.retsinformation.dk/eli/lta/2026/829',
+    checked: '2026-11-22',
+  },
+  dkStudyPhdUnchanged: {
+    id: 'dk.study.phd.unchanged',
+    claim:
+      'PhD students are not affected: up to 3 years to look for work, and their family can join them.',
+    provenance: 'primary',
+    source: 'BEK nr 829 af 24/09/2026 § 5(3) and § 10(1); SIRI news, 30-09-2026',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/News-Front-Page/2026/09/SIRI---Nye-regler-for-studerende',
+    checked: '2026-11-22',
+  },
+  dkStudyFamilyBarred: {
+    id: 'dk.study.family.barred',
+    claim:
+      'From 1 October 2026 the Executive Order gives family permits to the family of PhD students and of people seeking a Danish professional authorisation, not other students; this covers spouses, registered and cohabiting partners, and children under 18.',
+    provenance: 'primary',
+    source: 'BEK nr 829 af 24/09/2026 § 10(1); SIRI Accompanying family to students and PhD students',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Family/Accompanying-family-members/Accompanying-family---study-and-PhD/',
+    checked: '2026-11-22',
+  },
+  dkStudySpouseTransition: {
+    id: 'dk.study.family.spouseTransition',
+    claim:
+      'A spouse or partner can still get a family permit only if both the student and the spouse applied before 1 October 2026.',
+    provenance: 'primary',
+    source: 'SIRI news, 30-09-2026; BEK nr 829 af 24/09/2026 § 17(4)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/News-Front-Page/2026/09/SIRI---Nye-regler-for-studerende',
+    checked: '2026-11-22',
+  },
+  dkStudyChildTransition: {
+    id: 'dk.study.family.childTransition',
+    claim:
+      'A child under 18 can still get a family permit, even if the child applies later, if the student applied before 1 October 2026.',
+    provenance: 'primary',
+    source: 'SIRI news, 30-09-2026; BEK nr 829 af 24/09/2026 § 17(4)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/News-Front-Page/2026/09/SIRI---Nye-regler-for-studerende',
+    checked: '2026-11-22',
+  },
+  dkStudyWorkHours: {
+    id: 'dk.study.work.hours',
+    claim:
+      'Most students may work up to 90 hours a month, counted per calendar month, and full time in June, July and August; SIRI applies the 90 hours to the normal study period, September to May. The October 2026 change did not alter this.',
+    provenance: 'primary',
+    source: 'BEK nr 829 af 24/09/2026 § 16(1); SIRI Higher educational programmes (last updated 01-10-2026)',
+    sourceUrl: 'https://www.retsinformation.dk/eli/lta/2026/829',
+    checked: '2026-11-22',
+    note: 'Students on a master’s for working professionals have a different limit under § 16(2); the post says “most students”.',
+  },
+  dkStudyWorkPre2024: {
+    id: 'dk.study.work.pre2024',
+    claim:
+      'Work permits issued before 1 July 2024 were written as 20 hours a week, and their holders may use either measure.',
+    provenance: 'primary',
+    source: 'BEK nr 829 af 24/09/2026 § 17(8)',
+    sourceUrl: 'https://www.retsinformation.dk/eli/lta/2026/829',
+    checked: '2026-11-22',
+  },
+  dkStudyIllegalWork: {
+    id: 'dk.study.work.illegal',
+    claim:
+      'Working beyond the limit is illegal work, which SIRI says can lead to a warning, a fine or the loss of the permit.',
+    provenance: 'primary',
+    source: 'SIRI Higher educational programmes (last updated 01-10-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Study/Higher-education',
+    checked: '2026-11-22',
+  },
+  dkStudyUnlimitedWorkPermit: {
+    id: 'dk.study.work.unlimitedDuringJobSeeking',
+    claim:
+      'Graduates of a bachelor’s, professional bachelor’s, master’s or PhD can apply for a work permit without limitations for the job-seeking period; AP graduates cannot.',
+    provenance: 'primary',
+    source: 'SIRI Work permit during the job seeking period (last updated 01-10-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Study/Work-permit--job-seeking/',
+    checked: '2026-11-22',
+  },
+  dkStudyJobOffer: {
+    id: 'dk.study.jobSeeking.jobOffer',
+    claim:
+      'A job offer during the job-seeking period lets the graduate apply for a new residence and work permit.',
+    provenance: 'primary',
+    source: 'SIRI Higher educational programmes (last updated 01-10-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Study/Higher-education',
+    checked: '2026-11-22',
+  },
+  dkStudyStartUpAfterStudy: {
+    id: 'dk.study.startUp',
+    claim:
+      'A business started in Denmark may qualify for Start-up Denmark, which SIRI says can cover a business already set up while living in Denmark on other grounds.',
+    provenance: 'primary',
+    source: 'SIRI Start-up Denmark (last updated 29-06-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/Start-up-Denmark',
+    checked: '2026-11-22',
+    note: 'The business still needs expert-panel approval; the post says “may qualify”.',
+  },
+  dkStudyChangeProgramme: {
+    id: 'dk.study.changeProgramme',
+    claim:
+      'Changing programme needs a new residence permit application.',
+    provenance: 'primary',
+    source: 'SIRI Higher educational programmes (last updated 01-10-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Study/Higher-education',
+    checked: '2026-11-22',
+    note: 'Our own suggestion follows: ask SIRI how the date rule applies before switching. Neither SIRI nor the Executive Order says how § 17(3) treats a new application for a new programme.',
+  },
+  dkStudyNonStateMay2025: {
+    id: 'dk.study.nonStateApproved.may2025',
+    claim:
+      'Students who applied for a non-state-approved programme from 2 May 2025 get no right to work, no job-seeking permit and no family permits; those who applied earlier keep a limited work permit, 6 months’ job seeking and family rights.',
+    provenance: 'primary',
+    source: 'BEK nr 423 af 30/04/2025 (in force 2 May 2025); BEK nr 829 af 24/09/2026 § 16(6) and § 17(5); SIRI news, 01-05-2025 (updated 25-04-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/News-Front-Page/2025/05/Nye-regler-ikkestatsligt-godkendte-udd',
+    checked: '2026-11-22',
+  },
+  dkStudyNonStatePurpose: {
+    id: 'dk.study.nonStateApproved.purpose',
+    claim:
+      'SIRI says the aim of the 2025 change is to grant permits only to students whose real intention is to study in Denmark.',
+    provenance: 'primary',
+    source: 'SIRI news, 01-05-2025 (updated 25-04-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/News-Front-Page/2025/05/Nye-regler-ikkestatsligt-godkendte-udd',
+    checked: '2026-11-22',
+  },
+  dkStudyAccreditation: {
+    id: 'dk.study.nonStateApproved.accreditation',
+    claim:
+      'Since 15 September 2026, advisory statements for non-state-approved programmes come from the secretariat to the Danish Accreditation Council; the Danish Evaluation Institute (EVA) closed on 1 July 2026.',
+    provenance: 'primary',
+    source: 'SIRI Higher educational programmes (last updated 01-10-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Study/Higher-education',
+    checked: '2026-11-22',
+  },
+  dkStudyPakistanSubmission: {
+    id: 'dk.study.pakistan.submission',
+    claim:
+      'The Danish Embassy in Islamabad says residence-permit applications, including for study, are handed in in person at the Gerry’s/VFS visa centre.',
+    provenance: 'primary',
+    source: 'Embassy of Denmark in Pakistan, Residence permit',
+    sourceUrl: 'https://um.dk/pakistan/en/travel-and-residence/residence-permit/',
+    checked: '2026-11-22',
+  },
+  dkJobSeekingPermitScope: {
+    id: 'dk.work.jobSeekingPermit.scope',
+    claim:
+      'SIRI’s job-seeking permit is a residence permit to find work after an original Danish permit expires. It is open only to holders of certain permits: employees on the Pay Limit Scheme, the Positive List for People with a Higher Education, the Researcher Scheme or some Fast-Track tracks who lose their job through no fault of their own; graduates of state-approved Danish higher education or a PhD; and holders of a permit to gain a Danish authorisation.',
+    provenance: 'primary',
+    source: 'SIRI, Job seeking permit (last updated 18-06-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/Words-and-concepts/SIRI/Jobseeking-permit/',
+    checked: '2026-11-22',
+    note: 'That page still says “6 months or up to 3 years” for students; the 1 October 2026 change is on SIRI’s newer study pages. The post prints no length for the employee permit.',
+  },
+  dkWorkNeedsPermit: {
+    id: 'dk.work.permitRequired',
+    claim:
+      'SIRI says anyone who wants to work in Denmark must apply for a residence and work permit.',
+    provenance: 'primary',
+    source: 'SIRI, You want to apply for a work permit',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work',
+    checked: '2026-11-22',
+  },
+  dkGreencardRepealAct: {
+    id: 'dk.greencard.repealAct',
+    claim:
+      'Act no. 612 of 8 June 2016 repealed the Greencard scheme; it took effect on 10 June 2016 and does not apply to applications filed before that date.',
+    provenance: 'primary',
+    source: 'LOV nr 612 af 08/06/2016 (Ophævelse af greencardordningen), § 2(1) and (2)',
+    sourceUrl: 'https://www.retsinformation.dk/eli/lta/2016/612',
+    checked: '2026-11-22',
+  },
+  dkGreencardSiriNotice: {
+    id: 'dk.greencard.siriNotice',
+    claim:
+      'SIRI confirms that no new Greencard applications could be made from 10 June 2016.',
+    provenance: 'primary',
+    source: 'SIRI news, Bill to repeal the Greencard scheme has been passed (published 10-06-2016, updated 15-01-2018)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/News-Front-Page/2018/01/Lovforslag-om-ophaevelse-af-greencard-ordningen-er-vedtaget',
+    checked: '2026-11-22',
+  },
+  dkGreencardExtensionOnly: {
+    id: 'dk.greencard.extensionOnly',
+    claim:
+      'SIRI says the Greencard scheme has been repealed but a valid Greencard permit can still be extended.',
+    provenance: 'primary',
+    source: 'SIRI, Greencard - extension (last updated 26-06-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/You-want-to-extend/Work---extension/Greencard',
+    checked: '2026-11-22',
+  },
+  dkGreencardEmbassyPakistan: {
+    id: 'dk.greencard.embassyPakistan',
+    claim:
+      'The Danish Embassy in Pakistan says Greencard applications are no longer accepted from 10 June 2016.',
+    provenance: 'primary',
+    source: 'Embassy of Denmark in Pakistan, Greencard update',
+    sourceUrl: 'https://um.dk/pakistan/en/travel-and-residence/greencard-update/',
+    checked: '2026-11-22',
+  },
+  dkEstablishmentCardAbolished: {
+    id: 'dk.establishmentCard.abolished',
+    claim:
+      'The Establishment Card was abolished as a scheme on 1 April 2023, by Act no. 333 of 28 March 2023 on strengthened international recruitment; existing cards can still be extended.',
+    provenance: 'primary',
+    source: 'SIRI news, New possibilities in the areas of work and study from 1 April 2023; LOV nr 333 af 28/03/2023 § 2(1) and (2); SIRI Establishment card - extension (last updated 26-06-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/News-Front-Page/2023/03/L46-news-2',
+    checked: '2026-11-22',
+  },
+  dkEstablishmentCardGraduates: {
+    id: 'dk.establishmentCard.graduates',
+    claim:
+      'The Establishment Card was a permit for people who had graduated in Denmark.',
+    provenance: 'primary',
+    source: 'SIRI, Establishment card - extension (last updated 26-06-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/You-want-to-extend/Work---extension/Establishment-card',
+    checked: '2026-11-22',
+    note: 'The page ties the card to “your Danish educational programme”.',
+  },
+  dk2023JobSeekingLonger: {
+    id: 'dk.study.jobSeeking.2023package',
+    claim:
+      'The same 1 April 2023 package gave graduates a longer job-seeking permit, which Denmark shortened for students who apply from 1 October 2026 (up to 1 year after a state-approved bachelor’s or master’s).',
+    provenance: 'primary',
+    source: 'SIRI news, 1 April 2023; SIRI news, 30-09-2026; BEK nr 829 af 24/09/2026 § 5(2)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/News-Front-Page/2026/09/SIRI---Nye-regler-for-studerende',
+    checked: '2026-11-22',
+  },
+  dkStudentFamilyBarred: {
+    id: 'dk.study.family.barredCrossRef',
+    claim:
+      'Students who apply from 1 October 2026 for a state-approved bachelor’s or master’s cannot bring a spouse or children.',
+    provenance: 'primary',
+    source: 'SIRI news, 30-09-2026',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/News-Front-Page/2026/09/SIRI---Nye-regler-for-studerende',
+    checked: '2026-11-22',
+  },
+  dkNonStateNoJobSeeking: {
+    id: 'dk.study.nonStateApproved.noJobSeeking',
+    claim:
+      'Students at a non-state-approved programme who applied from 2 May 2025 get no job-seeking permit.',
+    provenance: 'primary',
+    source: 'SIRI news, 01-05-2025 (updated 25-04-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/News-Front-Page/2025/05/Nye-regler-ikkestatsligt-godkendte-udd',
+    checked: '2026-11-22',
+  },
+  dkPayLimitScheme: {
+    id: 'dk.work.payLimit',
+    claim:
+      'The Pay Limit Scheme needs a job offer with an annual salary at or above SIRI’s minimum, which is adjusted each 1 January; no specific education or professional field is required.',
+    provenance: 'primary',
+    source: 'SIRI, The Pay Limit Scheme (last updated 22-09-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/Pay-limit-scheme',
+    checked: '2026-11-22',
+    note: 'Salary floor not printed: it appears only on SIRI’s page.',
+  },
+  dkSupplementaryPayLimit: {
+    id: 'dk.work.supplementaryPayLimit',
+    claim:
+      'The Supplementary Pay Limit Scheme has a lower salary floor and extra conditions; the job must first be advertised on Jobnet and the EURES portal.',
+    provenance: 'primary',
+    source: 'SIRI, The Supplementary Pay Limit Scheme (last updated 14-09-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/The-Pay-Limit-Schemes/Supplementary-Pay-Limit-scheme/',
+    checked: '2026-11-22',
+  },
+  dkPositiveLists: {
+    id: 'dk.work.positiveLists',
+    claim:
+      'The Positive Lists need a job offer in a profession on one of the two shortage lists (people with a higher education, or skilled work), and a qualification that fits the job.',
+    provenance: 'primary',
+    source: 'SIRI, The Positive Lists; Positive List for People with a Higher Education (last updated 01-10-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/The-Positive-Lists',
+    checked: '2026-11-22',
+  },
+  dkSkilledListApprentice: {
+    id: 'dk.work.positiveList.skilled.employer',
+    claim:
+      'On the Positive List for Skilled Work, the employer must also have met its apprentice-training obligations.',
+    provenance: 'primary',
+    source: 'SIRI, The Positive List for Skilled Work (last updated 02-09-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/The-Positive-Lists/Positive-List-for-skilled-work',
+    checked: '2026-11-22',
+  },
+  dkFastTrack: {
+    id: 'dk.work.fastTrack',
+    claim:
+      'The Fast-Track Scheme needs a job with a company SIRI has certified; the employer handles the application using a power of attorney from the employee.',
+    provenance: 'primary',
+    source: 'SIRI, Fast-Track Scheme (last updated 01-10-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/Fast-track',
+    checked: '2026-11-22',
+  },
+  dkCertifiedCompanies: {
+    id: 'dk.work.fastTrack.certifiedList',
+    claim:
+      'SIRI publishes a list of companies certified under the Fast-Track Scheme.',
+    provenance: 'primary',
+    source: 'SIRI, Certified companies (last updated 21-10-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/Words-and-concepts/SIRI/Certified-companies/',
+    checked: '2026-11-22',
+  },
+  dkStartUpPanel: {
+    id: 'dk.work.startUp.panel',
+    claim:
+      'Start-up Denmark needs approval of the business idea by an expert panel appointed by the Danish Business Authority before the SIRI application.',
+    provenance: 'primary',
+    source: 'SIRI, Start-up Denmark (last updated 29-06-2026)',
+    sourceUrl: 'https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/Start-up-Denmark',
+    checked: '2026-11-22',
+  },
+  dkEmbassyAgents: {
+    id: 'dk.pakistan.embassy.agents',
+    claim:
+      'The Danish Embassy in Pakistan warns that agents charge high prices for false documents, which usually lead to refusal.',
+    provenance: 'primary',
+    source: 'Embassy of Denmark in Pakistan, Residence permit',
+    sourceUrl: 'https://um.dk/pakistan/en/travel-and-residence/residence-permit/',
+    checked: '2026-11-22',
+  },
+  dkEmbassyInPerson: {
+    id: 'dk.pakistan.embassy.inPerson',
+    claim:
+      'The Danish Embassy in Islamabad says work applications are submitted in person at the Gerry’s/VFS visa centre, and the embassy forwards them to Denmark for a decision.',
+    provenance: 'primary',
+    source: 'Embassy of Denmark in Pakistan, Residence permit',
+    sourceUrl: 'https://um.dk/pakistan/en/travel-and-residence/residence-permit/',
+    checked: '2026-11-22',
+    note: 'The same page still lists the Green Card Scheme among permit types; that line is out of date and the post does not repeat it.',
+  },
 };
 
 /** Facts still awaiting a lawyer's sign-off. Nothing here may be stated on a page. */

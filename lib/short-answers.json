@@ -12,12 +12,28 @@
   "question": "How do I get a Pakistani police certificate for Canada?"
  },
  {
+  "path": "/canada-immigration-from-pakistan/pr-card-residency",
+  "question": "Can I lose Canadian PR while living in Pakistan, and how do I return with an expired card?"
+ },
+ {
   "path": "/canada-immigration-statistics-pakistan",
   "question": "How many Pakistanis immigrate to Canada each year?"
  },
  {
   "path": "/canadian-immigration-lawyer-pakistan",
   "question": "Who can I legally pay to help with my Canadian immigration application, and how do I check them?"
+ },
+ {
+  "path": "/europe/denmark-visit-visa",
+  "question": "How do I apply for a Denmark visit visa from Pakistan, and why are so many refused?"
+ },
+ {
+  "path": "/express-entry/credential-assessment",
+  "question": "How do I get my Pakistani degree assessed for Canada, and will my two-year BA or BSc count?"
+ },
+ {
+  "path": "/express-entry/noc-codes",
+  "question": "Which NOC code is my job in Pakistan, and why does it matter?"
  },
  {
   "path": "/pnp/new-brunswick",
@@ -66,6 +82,10 @@
  {
   "path": "/tools/crs-calculator",
   "question": "How do I work out my Express Entry CRS score?"
+ },
+ {
+  "path": "/visitor-visa/bank-statement",
+  "question": "How much bank balance do I need for a Canada visit visa from Pakistan?"
  },
  {
   "path": "/work-permit-canada",

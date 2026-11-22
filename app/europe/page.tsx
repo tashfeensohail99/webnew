@@ -219,7 +219,11 @@ export default function EuropePage() {
           <Link href="/blog/austria-red-white-red-card" className="font-semibold text-accent-500 link-underline">Austria’s Red-White-Red Card from Pakistan</Link>. If you are a founder
           with an innovative, scalable business, read{' '}
           <Link href="/europe/denmark-startup-visa" className="font-semibold text-accent-500 link-underline">Start-up Denmark from Pakistan</Link>, Denmark’s residence permit for
-          people who will build a company there.
+          people who will build a company there. Visiting Denmark? Read{' '}
+          <Link href="/europe/denmark-visit-visa" className="font-semibold text-accent-500 link-underline">the Denmark visit visa from Pakistan</Link>, and check{' '}
+          <Link href="/blog/denmark-job-seeker-visa-green-card" className="font-semibold text-accent-500 link-underline">whether a Danish job-seeker visa exists</Link>{' '}
+          before paying anyone who sells one. Students should read{' '}
+          <Link href="/blog/denmark-student-rules-october-2026" className="font-semibold text-accent-500 link-underline">Denmark’s student rules from 1 October 2026</Link>.
         </p>
       </Section>
 

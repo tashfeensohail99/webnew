@@ -159,7 +159,12 @@ const FAQS = [
         French — and then invites from the top of that filtered group. It can favour people a general
         round would never reach. The categories are set by ministerial instruction and are revised,
         with occupations added and dropped, so check the live list rather than any summary:{' '}
-        <Official href={IRCC.categories}>category-based selection on canada.ca</Official>.
+        <Official href={IRCC.categories}>category-based selection on canada.ca</Official>. Your
+        occupation’s{' '}
+        <Link href="/express-entry/noc-codes" className="font-semibold text-accent-500 link-underline">
+          NOC code and TEER category
+        </Link>{' '}
+        decide which programmes and categories your work counts for.
       </>
     ),
   },

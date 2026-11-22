@@ -216,7 +216,12 @@ export default function FamilySponsorshipPage() {
                 Permanent residents must be living in Canada. Citizens living abroad may sponsor a
                 spouse, partner or dependent child, but only if they satisfy the officer they will
                 return to live in Canada once the sponsored person lands — sponsoring from abroad
-                with no intention of coming back does not work.
+                with no intention of coming back does not work. If you are a permanent resident who has
+                been living in Pakistan, first check{' '}
+                <Link href="/canada-immigration-from-pakistan/pr-card-residency" className="font-semibold text-accent-500 link-underline">
+                  the 730-day residency obligation and your PR card
+                </Link>
+                .
               </p>
               <p>
                 Being eligible is not the same as being suitable. Eligibility is checked from the

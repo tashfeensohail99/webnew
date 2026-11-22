@@ -23,9 +23,13 @@ import UkStudentVisaFunds30November2026 from '@/content/blog/uk-student-visa-fun
 import UkGraduateVisa18Months2027 from '@/content/blog/uk-graduate-visa-18-months-2027';
 import UsVisaRulesPakistan2026 from '@/content/blog/us-visa-rules-pakistan-2026';
 import SchengenVisaRefusalsPakistan2025 from '@/content/blog/schengen-visa-refusals-pakistan-2025';
+import DenmarkStudentRulesOctober2026 from '@/content/blog/denmark-student-rules-october-2026';
+import DenmarkJobSeekerVisaGreenCard from '@/content/blog/denmark-job-seeker-visa-green-card';
 
 /** One line per post. A slug in lib/blog.ts without a body here is a build error, not a blank page. */
 const BODIES: Record<string, ComponentType> = {
+  'denmark-job-seeker-visa-green-card': DenmarkJobSeekerVisaGreenCard,
+  'denmark-student-rules-october-2026': DenmarkStudentRulesOctober2026,
   'schengen-visa-refusals-pakistan-2025': SchengenVisaRefusalsPakistan2025,
   'us-visa-rules-pakistan-2026': UsVisaRulesPakistan2026,
   'uk-graduate-visa-18-months-2027': UkGraduateVisa18Months2027,

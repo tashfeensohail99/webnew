@@ -418,6 +418,18 @@ export default function FederalSkilledWorkerPage() {
             </li>
           ))}
         </ol>
+        <p className="mt-8 max-w-3xl text-ink-600 text-pretty">
+          Which assessment body to use, how HEC attestation fits in and what happens to a two-year degree
+          are in{' '}
+          <Link href="/express-entry/credential-assessment" className="font-semibold text-accent-500 link-underline">
+            getting a Pakistani degree assessed
+          </Link>
+          . Not sure which occupation code fits your work? Start with{' '}
+          <Link href="/express-entry/noc-codes" className="font-semibold text-accent-500 link-underline">
+            how to find your NOC code and TEER
+          </Link>
+          .
+        </p>
       </Section>
 
       {/* ===================== WHO IT DOESN'T SUIT ===================== */}

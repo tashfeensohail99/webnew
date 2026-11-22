@@ -158,6 +158,11 @@ const FAQ_ITEMS = [
         It matters, but it is never the whole thing. The
         officer weighs your funds, your ties, your travel history and whether the trip makes sense —
         together. A strong balance with a weak reason to return home does not save an application.
+        What officers look for in your statements, and what a cover letter should cover, is in{' '}
+        <Link href="/visitor-visa/bank-statement" className="font-semibold text-accent-500 link-underline">
+          bank statements and cover letters for a visit visa
+        </Link>
+        .
       </>
     ),
   },
