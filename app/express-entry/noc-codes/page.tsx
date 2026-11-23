@@ -262,6 +262,22 @@ export default function NocCodesPage() {
             </tbody>
           </table>
         </div>
+        <p className="mt-8 max-w-3xl text-ink-600 text-pretty">
+          For regulated professions the code is only half of it: the licence is a separate, provincial process. See the posts for{' '}
+          <Link href="/blog/pakistani-nurses-canada" className="font-semibold text-accent-500 link-underline">
+            nurses
+          </Link>
+          ,{' '}
+          <Link href="/blog/pakistani-doctors-canada" className="font-semibold text-accent-500 link-underline">
+            doctors
+          </Link>
+          {' '}and{' '}
+          <Link href="/blog/pakistani-engineers-canada" className="font-semibold text-accent-500 link-underline">
+            engineers
+          </Link>
+          {' '}trained in Pakistan.
+        </p>
+
         <div className="mt-8">
           <Callout title="Check this: the duties decide the code">
             <p>

@@ -452,7 +452,7 @@ export default function AtlanticImmigrationProgramPage() {
             </a>
             ,{' '}
             <a
-              href="https://www2.gnb.ca/content/gnb/en/corporate/promo/immigration/immigrating-to-nb/atlantic-immigration-program.html"
+              href="https://www.gnb.ca/en/topic/family-home-community/immigration/atlantic-immigration-program.html"
               className="font-semibold text-accent-500 link-underline"
               rel="noopener noreferrer"
               target="_blank"

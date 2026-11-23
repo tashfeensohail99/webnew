@@ -339,6 +339,34 @@ export default function PnpPage() {
           </div>
         </div>
 
+        <p className="mt-8 max-w-3xl text-ink-600 text-pretty">
+          Whether to wait in the Express Entry pool or apply to a province is compared in{' '}
+          <Link href="/blog/express-entry-or-pnp" className="font-semibold text-accent-500 link-underline">
+            Express Entry or a PNP: which route fits
+          </Link>
+          . Dated 2026 updates cover{' '}
+          <Link href="/blog/nova-scotia-nominee-program-2026" className="font-semibold text-accent-500 link-underline">
+            Nova Scotia
+          </Link>
+          ,{' '}
+          <Link href="/blog/newfoundland-labrador-pnp-2026" className="font-semibold text-accent-500 link-underline">
+            Newfoundland and Labrador
+          </Link>
+          ,{' '}
+          <Link href="/blog/pei-pnp-2026" className="font-semibold text-accent-500 link-underline">
+            Prince Edward Island
+          </Link>
+          ,{' '}
+          <Link href="/blog/new-brunswick-pnp-2026" className="font-semibold text-accent-500 link-underline">
+            New Brunswick
+          </Link>
+          {' '}and{' '}
+          <Link href="/blog/saskatchewan-sinp-2026" className="font-semibold text-accent-500 link-underline">
+            Saskatchewan
+          </Link>
+          .
+        </p>
+
         <div className="mt-10">
           <Callout title="Why this decides your strategy">
             <p>

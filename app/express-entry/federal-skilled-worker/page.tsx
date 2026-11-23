@@ -248,6 +248,14 @@ export default function FederalSkilledWorkerPage() {
             </FeatureCard>
           ))}
         </div>
+        <p className="mt-8 max-w-3xl text-ink-600 text-pretty">
+          If you have been told Canada PR needs no language test or no job offer, read{' '}
+          <Link href="/blog/canada-pr-without-ielts-or-job-offer" className="font-semibold text-accent-500 link-underline">
+            Canada PR without IELTS or a job offer?
+          </Link>
+          , which sets each claim against the Regulations.
+        </p>
+
         <div className="mt-10">
           <Callout title="Why we don’t print the points here">
             <p>

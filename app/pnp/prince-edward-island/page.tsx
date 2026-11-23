@@ -85,12 +85,6 @@ const STREAM_KINDS = [
     body: 'Routes for people intending to buy, start or run a business in the province, normally with an active management requirement and a period of operating the business before nomination.',
   },
   {
-    icon: 'chat' as const,
-    kicker: 'Francophone',
-    title: 'French-speaking candidates',
-    body: 'Many provinces run or weight a route for French speakers as part of federal and provincial francophone-community commitments.',
-  },
-  {
     icon: 'refresh' as const,
     kicker: 'Aligned with Express Entry',
     title: 'Enhanced nomination',
@@ -245,13 +239,21 @@ export default function PeiPnpPage() {
           ))}
         </div>
 
+        <p className="mt-8 max-w-3xl text-ink-600 text-pretty">
+          How PEI has drawn in 2026, and which streams still fit an applicant in Pakistan, is in{' '}
+          <Link href="/blog/pei-pnp-2026" className="font-semibold text-accent-500 link-underline">
+            the PEI PNP in 2026
+          </Link>
+          .
+        </p>
+
         <div className="mt-10">
           <Callout title="Read the current position at the source">
             <p>
               What is open today, what each route requires and how the province is currently
               selecting is published by the{' '}
               <a
-                href="https://www.princeedwardisland.ca/en/information/office-of-immigration/provincial-nominee-program"
+                href="https://www.princeedwardisland.ca/en/topic/immigrate-to-pei-as-a-worker"
                 className="font-semibold text-accent-500 link-underline"
                 rel="noopener noreferrer"
                 target="_blank"

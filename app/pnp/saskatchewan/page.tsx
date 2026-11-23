@@ -89,11 +89,11 @@ const SEQUENCE = [
 const FAQS = [
   {
     q: 'Which Saskatchewan streams are open right now, and what do they require?',
-    a: 'As of 8 November 2026 Saskatchewan lists two worker programs: International Skilled Worker (with Employment Offer, Occupation In-Demand and Saskatchewan Express Entry sub-categories) and Worker with Saskatchewan Work Experience. Its Entrepreneur and Farm pathways are permanently closed. What each route requires is on the province’s own SINP pages — read it there, on the day you need it.',
+    a: 'As of 23 November 2026 Saskatchewan lists two worker programs: International Skilled Worker (with Employment Offer, Occupation In-Demand, Saskatchewan Express Entry, and the Agriculture, Health, and Innovation and Tech Talent Pathway sub-categories) and Worker with Saskatchewan Work Experience. Its Entrepreneur and Farm pathways are permanently closed. What each route requires is on the province’s own SINP pages — read it there, on the day you need it.',
   },
   {
     q: 'What is the difference between an enhanced and a base nomination?',
-    a: 'An enhanced nomination is aligned with the federal Express Entry system: you must already have a valid Express Entry profile, and the nomination attaches to it. A base nomination is not tied to Express Entry — you apply to IRCC through its non-Express Entry process, and IRCC sets how that application is submitted. In Saskatchewan, the Express Entry-aligned route is the Saskatchewan Express Entry sub-category. Our Provincial Nominee overview explains the difference in full.',
+    a: 'An enhanced nomination is aligned with the federal Express Entry system: you must already have a valid Express Entry profile, and the nomination attaches to it. A base nomination is not tied to Express Entry — you apply to IRCC through its non-Express Entry process, and IRCC sets how that application is submitted. In Saskatchewan, the Express Entry-aligned routes are the Saskatchewan Express Entry sub-category and the Express Entry versions of the Health and the Innovation and Tech Talent Pathways. Our Provincial Nominee overview explains the difference in full.',
   },
   {
     q: 'Do I need a job offer from a Saskatchewan employer?',
@@ -196,11 +196,20 @@ export default function SaskatchewanPnpPage() {
           ))}
         </div>
 
+        <p className="mt-8 max-w-3xl text-ink-600 text-pretty">
+          Where the SINP stands in 2026, including whether it works without a Saskatchewan job offer, is in{' '}
+          <Link href="/blog/saskatchewan-sinp-2026" className="font-semibold text-accent-500 link-underline">
+            the SINP in 2026
+          </Link>
+          .
+        </p>
+
         <div className="mt-10">
-          <Callout title="Saskatchewan’s programs as of 8 November 2026">
+          <Callout title="Saskatchewan’s programs as of 23 November 2026">
             <p>
               Saskatchewan lists two worker programs: <strong>International Skilled Worker</strong>,
-              with Employment Offer, Occupation In-Demand and Saskatchewan Express Entry sub-categories,
+              with Employment Offer, Occupation In-Demand, Saskatchewan Express Entry, and the
+              Agriculture, Health, and Innovation and Tech Talent Pathway sub-categories,
               and <strong>Worker with Saskatchewan Work Experience</strong>. Its Entrepreneur and Farm
               pathways are permanently closed.
             </p>

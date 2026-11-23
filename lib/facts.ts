@@ -440,12 +440,12 @@ export const FACTS: Record<string, Fact> = {
   caSaskatchewanPrograms: {
     id: 'ca.pnp.sk-programs',
     claim:
-      'Saskatchewan lists International Skilled Worker (Employment Offer, Occupation In-Demand, Saskatchewan Express Entry) and Worker with Saskatchewan Work Experience. 2026 nominations are divided by sector, with accommodation and food services, trucking and retail trade capped.',
+      'Saskatchewan lists International Skilled Worker (Employment Offer, Occupation In-Demand, Saskatchewan Express Entry, and the Agriculture, Health, and Innovation and Tech Talent Pathways) and Worker with Saskatchewan Work Experience. 2026 nominations are divided by sector, with accommodation and food services, trucking and retail trade capped.',
     provenance: 'primary',
     source: 'Government of Saskatchewan, Browse SINP Programs; SINP Immigration FAQs (updated 19 December 2025)',
     sourceUrl:
       'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs',
-    checked: '2026-11-08',
+    checked: '2026-11-23',
   },
 
   // ── CANADA: PROGRAMME STATUS (re-check monthly) ──────────────────────────
@@ -2424,7 +2424,7 @@ export const FACTS: Record<string, Fact> = {
       'IRCC’s designated ECA organisations are CES (University of Toronto), ICAS, WES, IQAS and ICES (BCIT), plus the Medical Council of Canada for physicians (NOC 31100, 31101, 31102), the Pharmacy Examining Board of Canada for pharmacists (NOC 31120) and the Canadian Architectural Certification Board for architects (NOC 21200) who need a licence to practise. IRCC still accepts a valid architect’s ECA from another body issued before 31 October 2024.',
     provenance: 'primary',
     source: 'IRCC, Educational credential assessment (modified 2026-10-16)',
-    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessed.html',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessment.html',
     checked: '2026-11-22',
   },
   caEcaProfessionalBody: {
@@ -2452,7 +2452,7 @@ export const FACTS: Record<string, Fact> = {
       'IRCC says the ECA must be less than five years old when you complete your Express Entry profile and when you submit your application, must stay valid while you are in the pool, and an application with an expired ECA is refused.',
     provenance: 'primary',
     source: 'IRCC, Educational credential assessment (modified 2026-10-16)',
-    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessed.html',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessment.html',
     checked: '2026-11-22',
   },
   caEcaProfileDocuments: {
@@ -2470,7 +2470,7 @@ export const FACTS: Record<string, Fact> = {
       'IRCC says an ECA does not guarantee a job in your field or a licence to practise a regulated profession; the licence comes from the province or territory where you settle.',
     provenance: 'primary',
     source: 'IRCC, Educational credential assessment (modified 2026-10-16)',
-    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessed.html',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessment.html',
     checked: '2026-11-22',
   },
   caFswEducationPoints: {
@@ -2554,7 +2554,7 @@ export const FACTS: Record<string, Fact> = {
       'The Medical Council of Canada issues ECAs for medical degrees, requested through physiciansapply.ca once the final degree, or the transcript with the degree sent for verification, is source-verified. An ECA does not give the right to practise.',
     provenance: 'primary',
     source: 'Medical Council of Canada, Educational Credential Assessment',
-    sourceUrl: 'https://mcc.ca/repository/educational-credential-assessment/',
+    sourceUrl: 'https://mcc.ca/credentials-and-services/services/educational-credential-assessment/',
     checked: '2026-11-22',
   },
   pkHecAttestation: {
@@ -2581,7 +2581,7 @@ export const FACTS: Record<string, Fact> = {
       'IRCC’s ECA page does not ask for MOFA attestation, and on 22 November 2026 the Pakistan document pages of WES, ICAS, IQAS and ICES did not ask for it either.',
     provenance: 'primary',
     source: 'IRCC ECA page; WES Required Documents; ICAS Pakistan page; IQAS country-specific requirements; ICES country-specific information',
-    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessed.html',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessment.html',
     checked: '2026-11-22',
     note: 'A fact about absence: re-check if any body changes its Pakistan page.',
   },
@@ -4851,6 +4851,3019 @@ export const FACTS: Record<string, Fact> = {
     sourceUrl: 'https://ambislamabad.esteri.it/it/news/dall_ambasciata/2026/09/avviso-pubblico-9/',
     checked: '2026-11-23',
     note: 'The notice cites D.L. 145/2024 without an article number.',
+  },
+
+  // ── BLOG POSTS OF 23 NOVEMBER 2026 (batch 29) ─────────────────────────────────────────
+  caNl2026EoiModel: {
+    id: 'ca.pnp.nl-2026.eoi-model',
+    claim:
+      'On 19 February 2025 the NLPNP and AIP moved to an expression of interest model; every application now begins with an EOI, and the province invites candidates in rounds.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, Public Advisory: Priority Immigration Processing Continues With Expression of Interest Model (19 February 2025); Invitations to Apply (ITA) Updates (EOI \'for all economic immigration applications\')',
+    sourceUrl: 'https://www.gov.nl.ca/releases/2025/ipgs/0219n02/',
+    checked: '2026-11-23',
+  },
+  caNl2026AllocationCut: {
+    id: 'ca.pnp.nl-2026.allocation-cut-2025',
+    claim:
+      'In January 2025 Ottawa cut the province’s NLPNP and AIP spaces by 50 per cent.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, Newfoundland and Labrador Secures the Return of 1,000 Economic Immigration Spaces (31 January 2025)',
+    sourceUrl: 'https://www.gov.nl.ca/releases/2025/exec/0131n03/',
+    checked: '2026-11-23',
+    note: 'Release: \'Earlier this month, the Government of Canada announced a 50 per cent reduction in the province’s allocation spaces under the NLPNP and the AIP as part of a national reduction.\' The province\'s 2025 audit report (published 26 January 2026) also says the 2025 allocation letter reflected a 50% reduction.',
+  },
+  caNl2026Allocation2025: {
+    id: 'ca.pnp.nl-2026.allocation-2025',
+    claim:
+      'On 31 January 2025, 1,000 spaces were restored: 2,050 NLPNP spaces for 2025 (2,100 in 2024) and 475 AIP spaces.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, Newfoundland and Labrador Secures the Return of 1,000 Economic Immigration Spaces (31 January 2025)',
+    sourceUrl: 'https://www.gov.nl.ca/releases/2025/exec/0131n03/',
+    checked: '2026-11-23',
+    note: 'Total 2025 economic immigration spaces 2,525. No 2026 allocation for the province was found on gov.nl.ca (OIM pages and news-release search, 23 November 2026).',
+  },
+  caNl2026SeventyFivePercent: {
+    id: 'ca.pnp.nl-2026.temporary-resident-share-2025',
+    claim:
+      'On 7 March 2025 the province changed its Job Vacancy Assessment and AIP designation rules, and said Ottawa required 75 per cent of provincial nominees to be temporary residents already in the province.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, Public Advisory: Changes to Job Vacancy Assessment and Atlantic Immigration Program Designation Processes (7 March 2025)',
+    sourceUrl: 'https://www.gov.nl.ca/releases/2025/ipgs/0307n07/',
+    checked: '2026-11-23',
+    note: 'No statement found on gov.nl.ca about whether the rule continues in 2026.',
+  },
+  caNl2026FirstRound: {
+    id: 'ca.pnp.nl-2026.first-round',
+    claim:
+      'The first invitation round, on 3 April 2025, invited 256 people.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, Invitations to Apply (ITA) Updates (updated 19 November 2026); Public Advisory of 8 April 2025',
+    sourceUrl: 'https://www.gov.nl.ca/immigration/invitations-to-apply-updates/',
+    checked: '2026-11-23',
+    note: '206 NLPNP and 50 AIP.',
+  },
+  caNl2026Priorities: {
+    id: 'ca.pnp.nl-2026.prioritisation',
+    claim:
+      'The EOI prioritisation criteria, updated 23 March 2026, put health and health-related occupations first and may also favour rural and regional jobs (including hard-to-fill sales and service roles), occupations the province uses less than others (business and finance, science and research, trades and transport), employers with a good compliance and retention record, signs you will stay, the province’s own graduates and Francophone candidates. Sales and service jobs around St. John’s may get lower priority when use there is high. Meeting a criterion does not guarantee an invitation.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, Expression of Interest Model (EOI) Prioritization Criteria (updated 23 March 2026)',
+    sourceUrl: 'https://www.gov.nl.ca/immigration/expression-of-interest-model-prioritization-criteria/',
+    checked: '2026-11-23',
+  },
+  caNl2026Consultation: {
+    id: 'ca.pnp.nl-2026.consultation',
+    claim:
+      'On 15 May 2026 the province opened a consultation on possible provincial immigration legislation and foreign worker protections, asking about recruiter licensing, an employer registry and penalties. No outcome had been announced by 23 November 2026.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, Public Advisory: Consultation on Strengthening Protections for Foreign Workers (15 May 2026); consultation page (updated 15 May 2026)',
+    sourceUrl: 'https://www.gov.nl.ca/releases/2026/jobs-growth-and-rural-development/0515n01/',
+    checked: '2026-11-23',
+    note: '\'No outcome\' is a negative finding from the release search and the consultation page.',
+  },
+  caNl2026ItaWindow: {
+    id: 'ca.pnp.nl-2026.ita-window',
+    claim:
+      'The time to file a full application after an invitation was temporarily cut from 60 to 30 days (shown on pages updated 25 September 2026).',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, Expression of Interest Model-Overview (updated 25 September 2026); EOI FAQs',
+    sourceUrl: 'https://www.gov.nl.ca/immigration/expression-of-interest-model-overview/',
+    checked: '2026-11-23',
+    note: 'The page gives no start date for the reduction; the post dates it \'By 25 September 2026\'.',
+  },
+  caNl2026Categories: {
+    id: 'ca.pnp.nl-2026.categories',
+    claim:
+      'On 23 November 2026 the province listed five NLPNP categories: Express Entry Skilled Worker, Skilled Worker, International Graduate, International Entrepreneur and International Graduate Entrepreneur.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, NL Provincial Nominee Program (NLPNP) Overview',
+    sourceUrl: 'https://www.gov.nl.ca/immigration/immigrating-to-newfoundland-and-labrador/provincial-nominee-program/overview/',
+    checked: '2026-11-23',
+    note: 'Matches lib/facts.ts caNewfoundlandCategories (checked 8 November 2026).',
+  },
+  caNl2026SkilledWorker: {
+    id: 'ca.pnp.nl-2026.skilled-worker',
+    claim:
+      'Skilled Worker needs a full-time job offer at any TEER level, a language test for TEER 4 and 5 jobs, and an employer with a valid JVA if the applicant has no work permit.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, NLPNP Skilled Worker Category (updated 25 September 2026); 4. Skilled Worker Category Eligibility Criteria',
+    sourceUrl: 'https://www.gov.nl.ca/immigration/4-skilled-worker-category-eligibility-criteria/',
+    checked: '2026-11-23',
+  },
+  caNl2026ExpressEntrySkilled: {
+    id: 'ca.pnp.nl-2026.ee-skilled-worker',
+    claim:
+      'Express Entry Skilled Worker needs an Express Entry profile, a full-time TEER 0–3 offer, a Canadian credential or an ECA, and a minimum provincial points score. The category page lists a valid work permit or authorisation to work in Canada; the detailed policy, updated 22 April 2026, also accepts an offer from an employer with a valid JVA or LMIA.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, NLPNP Express Entry Skilled Worker Category (updated 25 September 2026); 4. Express Entry – Skilled Worker Category Eligibility Criteria (updated 22 April 2026)',
+    sourceUrl: 'https://www.gov.nl.ca/immigration/4-express-entry-skilled-worker-category-eligibility-criteria/',
+    checked: '2026-11-23',
+    note: 'The 67-point minimum is on the policy page only and is not printed.',
+  },
+  caNl2026Graduate: {
+    id: 'ca.pnp.nl-2026.international-graduate',
+    claim:
+      'International Graduate needs a post-graduation work permit and a full-time job offer.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, NLPNP International Graduate Category (updated 25 September 2026)',
+    sourceUrl: 'https://www.gov.nl.ca/immigration/immigrating-to-newfoundland-and-labrador/provincial-nominee-program/applicants/international-graduate/',
+    checked: '2026-11-23',
+  },
+  caNl2026Entrepreneur: {
+    id: 'ca.pnp.nl-2026.international-entrepreneur',
+    claim:
+      'International Entrepreneur needs business ownership or senior management experience and starting or buying a business in the province, by EOI and invitation; applicants from outside the province must visit it before applying. Its minimum assets and investment are not printed.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, International Entrepreneur: Eligibility Criteria',
+    sourceUrl: 'https://www.gov.nl.ca/immigration/immigrating-to-newfoundland-and-labrador/provincial-nominee-program/entrepreneurs/international-entrepreneur/eligibility-criteria/',
+    checked: '2026-11-23',
+    note: 'The International Entrepreneur overview (last updated 4 May 2026) said the EOI system was open.',
+  },
+  caNl2026GraduateEntrepreneur: {
+    id: 'ca.pnp.nl-2026.graduate-entrepreneur',
+    claim:
+      'International Graduate Entrepreneur needs a recent Memorial University or College of the North Atlantic credential and a post-graduation work permit.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, International Graduate Entrepreneur: Eligibility Criteria',
+    sourceUrl: 'https://www.gov.nl.ca/immigration/immigrating-to-newfoundland-and-labrador/provincial-nominee-program/entrepreneurs/international-graduate-entrepreneur/eligibility-criteria/',
+    checked: '2026-11-23',
+  },
+  caNl2026WorkerAge: {
+    id: 'ca.pnp.nl-2026.worker-age',
+    claim:
+      'The three worker categories ask for an age of 21 to 59, money to settle and a plan to live in the province permanently; International Entrepreneur has the same age range.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, NLPNP Skilled Worker, Express Entry Skilled Worker and International Graduate category pages (updated 25 September 2026); International Entrepreneur: Eligibility Criteria',
+    sourceUrl: 'https://www.gov.nl.ca/immigration/immigrating-to-newfoundland-and-labrador/provincial-nominee-program/applicants/skilled-worker/',
+    checked: '2026-11-23',
+  },
+  caNl2026Invitations2025: {
+    id: 'ca.pnp.nl-2026.invitations-2025',
+    claim:
+      'By our count of the province’s table, it issued 3,376 invitations in 13 rounds in 2025, and there were no rounds between 12 November 2025 and 6 March 2026.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, Invitations to Apply (ITA) Updates (updated 19 November 2026)',
+    sourceUrl: 'https://www.gov.nl.ca/immigration/invitations-to-apply-updates/',
+    checked: '2026-11-23',
+    note: 'Our sum of the published rows: 3 April to 12 November 2025, 2,473 NLPNP and 903 AIP.',
+  },
+  caNl2026Invitations2026: {
+    id: 'ca.pnp.nl-2026.invitations-2026',
+    claim:
+      'From 6 March to 19 November 2026 the province issued 3,479 invitations in 26 rounds: 2,941 for the NLPNP and 538 for the AIP. From September, rounds came most weeks and none exceeded 131 invitations. The 19 November round invited 98 people, 32 of them for the NLPNP.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, Invitations to Apply (ITA) Updates (updated 19 November 2026)',
+    sourceUrl: 'https://www.gov.nl.ca/immigration/invitations-to-apply-updates/',
+    checked: '2026-11-23',
+    note: 'Totals are our sums of the published rows; each row\'s NLPNP and AIP split adds up to its total. The largest round from 4 September 2026 on was 131 (9 October).',
+  },
+  caNl2026InvitationNotNomination: {
+    id: 'ca.pnp.nl-2026.invitation-not-nomination',
+    claim:
+      'The invitations table gives no score or occupation for any round. An invitation is not a nomination: the province says a full application can still be closed or refused.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, Invitations to Apply (ITA) Updates; Expression of Interest Model (EOI) FAQs, Q10 (updated 25 September 2026)',
+    sourceUrl: 'https://www.gov.nl.ca/immigration/faqs/expression-of-interest-model-faqs/',
+    checked: '2026-11-23',
+  },
+  caNl2026EoiValidity: {
+    id: 'ca.pnp.nl-2026.eoi-validity',
+    claim:
+      'An EOI stays in the pool for 12 months, then expires; a second EOI from the same person does not help and may breach the province’s policies.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, Expression of Interest Model-Overview; EOI FAQs, Q8, Q20 and Q21 (updated 25 September 2026)',
+    sourceUrl: 'https://www.gov.nl.ca/immigration/faqs/expression-of-interest-model-faqs/',
+    checked: '2026-11-23',
+  },
+  caNl2026JobOfferAndCode: {
+    id: 'ca.pnp.nl-2026.job-offer-invite-code',
+    claim:
+      'An EOI without a job or job offer from a Newfoundland and Labrador employer will not be considered. From outside Canada, a worker’s EOI without the employer’s invite code, which ties it to the employer’s JVA space, is invalid.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, Expression of Interest Model (EOI) FAQs, Q5, Q6 and Q7 (updated 25 September 2026)',
+    sourceUrl: 'https://www.gov.nl.ca/immigration/faqs/expression-of-interest-model-faqs/',
+    checked: '2026-11-23',
+  },
+  caNl2026EcaTranslations: {
+    id: 'ca.pnp.nl-2026.eca-translations',
+    claim:
+      'The Express Entry category needs a Canadian credential or an ECA, and every worker category asks for English or French translations of documents in other languages.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, NLPNP Express Entry Skilled Worker, Skilled Worker and International Graduate category pages (updated 25 September 2026)',
+    sourceUrl: 'https://www.gov.nl.ca/immigration/immigrating-to-newfoundland-and-labrador/provincial-nominee-program/applicants/express-entry-skilled-worker/',
+    checked: '2026-11-23',
+    note: '\'A Pakistani degree needs an ECA\' and \'such as Urdu\' are the post\'s application of these rules.',
+  },
+  caNl2026Representatives: {
+    id: 'ca.pnp.nl-2026.representatives',
+    claim:
+      'You do not need a representative, and NLPNP and AIP forms are free. Applicants are expected to submit their own applications from their own account; a representative submitting under the applicant’s name counts as impersonation under the province’s misrepresentation policy. Only IRCC officers decide permanent residence.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, Using Representatives and Consultants (updated 29 October 2026)',
+    sourceUrl: 'https://www.gov.nl.ca/immigration/immigrating-to-newfoundland-and-labrador/using-representatives-and-consultants/',
+    checked: '2026-11-23',
+  },
+  caNl2026FeesRemoved: {
+    id: 'ca.pnp.nl-2026.fees-removed',
+    claim:
+      'The province removed its nominee application fees in April 2022.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, Provincial Immigration Fees Eliminated in Budget 2022 (13 April 2022)',
+    sourceUrl: 'https://www.gov.nl.ca/releases/2022/ipgs/0413n02/',
+    checked: '2026-11-23',
+    note: 'The former fee amounts in the release are not printed.',
+  },
+  caNl2026FraudBan: {
+    id: 'ca.pnp.nl-2026.fraud-ban',
+    claim:
+      'Fraudulent documents may lead to a ban from the NLPNP and AIP.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, Expression of Interest Model (EOI) FAQs, Q19 (updated 25 September 2026)',
+    sourceUrl: 'https://www.gov.nl.ca/immigration/faqs/expression-of-interest-model-faqs/',
+    checked: '2026-11-23',
+  },
+  caNl2026VerifyDocuments: {
+    id: 'ca.pnp.nl-2026.verify-documents',
+    claim:
+      'If an invitation or document reaches you through an employer or agent, the province suggests checking it by emailing immigration@gov.nl.ca.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, NL Provincial Nominee Program (NLPNP) Candidate FAQs, Q22 (updated 25 September 2026)',
+    sourceUrl: 'https://www.gov.nl.ca/immigration/faqs/nl-provincial-nominee-program-candidate-faqs/',
+    checked: '2026-11-23',
+  },
+  caNl2026PassiveInvestment: {
+    id: 'ca.pnp.nl-2026.passive-investment',
+    claim:
+      'In March 2025 the province warned against passive investment schemes, in which an investor pays into a business for permanent residence without living in the province or running it, and said these are strictly prohibited.',
+    provenance: 'primary',
+    source: 'Government of Newfoundland and Labrador, Public Advisory: Caution Advised Against Passive Investment Immigration Proposals (27 March 2025)',
+    sourceUrl: 'https://www.gov.nl.ca/releases/2025/ipgs/0327n01/',
+    checked: '2026-11-23',
+  },
+  caNl2026ExpressEntryPoints: {
+    id: 'ca.pnp.nl-2026.ee-600-points',
+    claim:
+      'A nomination under the Express Entry Skilled Worker category is worth 600 points under section 28(1) of the Ministerial Instructions.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions respecting the Express Entry system (current), s. 28(1) (page details 18 November 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+  },
+  caNl2026FederalRoute: {
+    id: 'ca.pnp.nl-2026.federal-route',
+    claim:
+      'IRCC’s provincial nominee page says the province decides whether you then apply through Express Entry or the separate (non-Express Entry) process.',
+    provenance: 'primary',
+    source: 'IRCC, Provincial Nominee Program (page details 14 September 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html',
+    checked: '2026-11-23',
+  },
+  caNl2026LevelsPlan: {
+    id: 'ca.pnp.nl-2026.levels-2027-2029',
+    claim:
+      'On 20 November 2026 IRCC said its 2027–2029 levels plan increases planned PNP and AIP admissions, and that a time-limited measure will give provinces extra nominee space for workers already in Canada. No Newfoundland and Labrador notice on that space was found by 23 November 2026.',
+    provenance: 'primary',
+    source: 'IRCC, Building a stronger Canada through a well-managed, predictable immigration system (backgrounder, page details 20 November 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/11/building-a-stronger-canada-through-a-well-managed-predictable-immigration-system.html',
+    checked: '2026-11-23',
+    note: 'Read through a page-fetch tool (canada.ca timed out on direct download). The \'up to 100,000\' workers figure is a plan figure, not law or a statistic, and is not printed.',
+  },
+  caNl2026AipAbroad: {
+    id: 'ca.pnp.nl-2026.aip-abroad',
+    claim:
+      'The Atlantic Immigration Program also takes applicants living abroad, with a job offer from a designated employer.',
+    provenance: 'primary',
+    source: 'IRCC, Atlantic Immigration Program (page details 1 September 2026); Government of Newfoundland and Labrador, Atlantic Immigration Program: Workers',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/atlantic-immigration.html',
+    checked: '2026-11-23',
+  },
+  caPeiDraws2026: {
+    id: 'ca.pnp.pei-2026.draws',
+    claim:
+      'As of 23 November 2026, PEI had sent 1,791 invitations this year, in 13 rounds, none of them to business applicants.',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, Office of Immigration, Expression of Interest Draws (published 20 November 2026)',
+    sourceUrl: 'https://www.princeedwardisland.ca/en/information/office-of-immigration/expression-of-interest-draws',
+    checked: '2026-11-23',
+    note: 'Official statistic. Labour and Express Entry invitations by round: 15 Jan 26; 19 Feb 109; 20 Mar 101; 16 Apr 127; 21 May 113; 18 Jun 182; 16 Jul 195; 20 Aug 181; 17 Sep 195; 7 Oct 90; 16 Oct 164; 9 Nov 192; 20 Nov 116 (sum 1,791). Business Work Permit Entrepreneur invitations: 0 in every round.',
+  },
+  caPeiLatestDraws: {
+    id: 'ca.pnp.pei-2026.latest-draws',
+    claim:
+      'The five latest rounds (Labour and Express Entry invitations / business invitations): 17 September 2026, 195 / 0; 7 October 2026, 90 / 0; 16 October 2026, 164 / 0; 9 November 2026, 192 / 0; 20 November 2026, 116 / 0.',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, Office of Immigration, Expression of Interest Draws (published 20 November 2026)',
+    sourceUrl: 'https://www.princeedwardisland.ca/en/information/office-of-immigration/expression-of-interest-draws',
+    checked: '2026-11-23',
+  },
+  caPeiDrawAttributes: {
+    id: 'ca.pnp.pei-2026.draw-attributes',
+    claim:
+      'PEI says it invited individuals working in priority occupations and sectors, judged by their economic impact on the Island. Graduates of UPEI, Holland College and Collège de l’Île were prioritised.',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, Office of Immigration, Expression of Interest Draws (published 20 November 2026)',
+    sourceUrl: 'https://www.princeedwardisland.ca/en/information/office-of-immigration/expression-of-interest-draws',
+    checked: '2026-11-23',
+    note: 'The Selection Attributes cell spans all 13 rows of the 2026 table.',
+  },
+  caPeiPriorities: {
+    id: 'ca.pnp.pei-2026.priorities',
+    claim:
+      'PEI is prioritising health care, trades and other shortage sectors; the draws page adds manufacturing, the stream pages childcare. All warn that people in sales and service may not be invited.',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, Office of Immigration, Expression of Interest Draws (20 November 2026) and the stream pages (13 January 2026)',
+    sourceUrl: 'https://www.princeedwardisland.ca/en/information/office-of-immigration/expression-of-interest-draws',
+    checked: '2026-11-23',
+  },
+  caPeiSchedule2026: {
+    id: 'ca.pnp.pei-2026.schedule',
+    claim:
+      'PEI published a monthly invitation schedule for 2026 (page dated 7 January 2026) and says it does not guarantee selection. The rounds on 7 October and 9 November were not on it; its next date is 17 December 2026.',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, Office of Immigration, Anticipated Invitation to Apply Schedule (published 7 January 2026)',
+    sourceUrl: 'https://www.princeedwardisland.ca/en/information/office-of-immigration/anticipated-invitation-to-apply-schedule',
+    checked: '2026-11-23',
+    note: 'Scheduled October and November dates are 15 October and 19 November. The comparison with the draws page is ours.',
+  },
+  caPeiItaWindow: {
+    id: 'ca.pnp.pei-2026.ita-window',
+    claim:
+      'From 1 November 2025, invited candidates get 30 calendar days to submit a complete application, not 60; late applications are not accepted. PEI advises preparing documents before submitting a profile.',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, Office of Immigration, Submit Your Expression of Interest Profile (published 21 October 2026)',
+    sourceUrl: 'https://www.princeedwardisland.ca/en/service/submit-your-expression-of-interest-profile',
+    checked: '2026-11-23',
+    note: 'The January 2026 Workforce Application Guide (Step 3) also says up to 30 days.',
+  },
+  caPeiEoiQuestions: {
+    id: 'ca.pnp.pei-2026.eoi-questions',
+    claim:
+      'From 21 October 2026, new profile questions in every worker (Workforce Category) stream; people with a submitted profile are asked to log in and update it.',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, Office of Immigration, Submit Your Expression of Interest Profile (published 21 October 2026)',
+    sourceUrl: 'https://www.princeedwardisland.ca/en/service/submit-your-expression-of-interest-profile',
+    checked: '2026-11-23',
+  },
+  caPeiEoiRules: {
+    id: 'ca.pnp.pei-2026.eoi-rules',
+    claim:
+      'An EOI is a profile, not an application. PEI ranks profiles on language, education, skill level, work experience and its own strategic priorities; a PEI job offer and Canadian work experience also count. A profile stays active for six months, and you can have only one at a time.',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, Office of Immigration, Expression of Interest Draws (attributes); Skilled Workers Outside Canada (profile rules)',
+    sourceUrl: 'https://www.princeedwardisland.ca/en/information/office-of-immigration/expression-of-interest-draws',
+    checked: '2026-11-23',
+  },
+  caPeiFqrPoints: {
+    id: 'ca.pnp.pei-2026.fqr-points',
+    claim:
+      'The points grid in the Workforce Application Guide rewards a foreign qualification verified by the regulated body in PEI, and says an ECA does not earn those points.',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, Office of Immigration, PEI Workforce Application Guide (January 2026), Appendices A and B; also the Submit Your EOI Profile page',
+    sourceUrl: 'https://www.princeedwardisland.ca/sites/default/files/publications/pei_workforce_application_guide.pdf',
+    checked: '2026-11-23',
+  },
+  caPeiTranslation: {
+    id: 'ca.pnp.pei-2026.translation',
+    claim:
+      'Documents not in English or French need a certified translation and a copy of the original.',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, Office of Immigration, PEI Workforce Application Guide (January 2026), Step 4',
+    sourceUrl: 'https://www.princeedwardisland.ca/sites/default/files/publications/pei_workforce_application_guide.pdf',
+    checked: '2026-11-23',
+    note: '“Such as Urdu certificates” is our example.',
+  },
+  caPeiMisrepresentation: {
+    id: 'ca.pnp.pei-2026.misrepresentation',
+    claim:
+      'PEI refuses an application for misrepresentation and bars the applicant from applying again for two years.',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, Office of Immigration, PEI Workforce Application Guide (January 2026), Step 6',
+    sourceUrl: 'https://www.princeedwardisland.ca/sites/default/files/publications/pei_workforce_application_guide.pdf',
+    checked: '2026-11-23',
+  },
+  caPeiFee: {
+    id: 'ca.pnp.pei-2026.fee',
+    claim:
+      'Creating a profile is free. If invited, you pay a non-refundable fee when you submit; the amount is on each stream page and is not printed because no PEI regulation setting it was found.',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, Office of Immigration, Skilled Workers Outside Canada (and the other worker-stream pages)',
+    sourceUrl: 'https://www.princeedwardisland.ca/en/information/office-of-immigration/skilled-workers-outside-canada',
+    checked: '2026-11-23',
+  },
+  caPeiStreams2026: {
+    id: 'ca.pnp.pei-2026.streams',
+    claim:
+      'As of 23 November 2026, the PEI PNP has seven worker streams (Skilled Workers Outside Canada, Occupations in Demand, Intermediate Experience, PEI Express Entry, Skilled Workers in PEI, Critical Workers, International Graduates) and one business stream (Work Permit Stream).',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, Office of Immigration, Immigrate to PEI as a Worker; Immigrate to PEI as an Entrepreneur',
+    sourceUrl: 'https://www.princeedwardisland.ca/en/topic/immigrate-to-pei-as-a-worker',
+    checked: '2026-11-23',
+    note: 'Entrepreneur topic page: https://www.princeedwardisland.ca/en/topic/immigrate-to-pei-as-an-entrepreneur',
+  },
+  caPeiStreamFit: {
+    id: 'ca.pnp.pei-2026.stream-fit',
+    claim:
+      'Who each stream is for: Skilled Workers Outside Canada, a TEER 0–3 job offer from a PEI employer the province approved first; Occupations in Demand, a permanent job in a listed occupation such as nurse aide or truck driver (recruitment abroad only with an approved employer, case by case); Intermediate Experience, a TEER 4 job offer and six months of Canadian work on an LMIA-based work permit; PEI Express Entry, a federal Express Entry profile, with priority to people living and working in PEI; Skilled Workers in PEI, people working for a PEI employer on a work permit; Critical Workers, people working full-time in PEI in a TEER 4 or 5 job; International Graduates, graduates of a publicly funded PEI institution with a post-graduation work permit.',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, Office of Immigration, the seven worker-stream pages',
+    sourceUrl: 'https://www.princeedwardisland.ca/en/information/office-of-immigration/skilled-workers-outside-canada',
+    checked: '2026-11-23',
+    note: 'The “From Pakistan?” column is our reading. Other stream pages: https://www.princeedwardisland.ca/en/information/office-of-immigration/occupations-in-demand, https://www.princeedwardisland.ca/en/information/office-of-immigration/intermediate-experience-stream, https://www.princeedwardisland.ca/en/information/office-of-immigration/pei-express-entry, https://www.princeedwardisland.ca/en/information/office-of-immigration/skilled-workers-in-pei, https://www.princeedwardisland.ca/en/information/office-of-immigration/critical-workers, https://www.princeedwardisland.ca/en/information/office-of-immigration/international-graduates',
+  },
+  caPeiSkilledOutside: {
+    id: 'ca.pnp.pei-2026.skilled-outside',
+    claim:
+      'On 23 November 2026 the Skilled Workers Outside Canada page asked for: a full-time, non-seasonal TEER 0–3 job offer, permanent or for at least two years; an employer approved by PEI’s Office of Immigration before it makes the offer; two years of full-time work in the past five, and a post-secondary degree or diploma from a programme of at least two years; an age of 18 to 59, and legal status in your country of residence; CLB 4 in an IRCC-approved test from the past two years, or the employer’s confirmation on its job offer form; enough money to settle, and a genuine intention to live in PEI. With the employer’s approval in place, PEI provides a Work Permit Support Letter.',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, Office of Immigration, Skilled Workers Outside Canada (published 13 January 2026)',
+    sourceUrl: 'https://www.princeedwardisland.ca/en/information/office-of-immigration/skilled-workers-outside-canada',
+    checked: '2026-11-23',
+  },
+  caPeiExpressEntryRoute: {
+    id: 'ca.pnp.pei-2026.ee-route',
+    claim:
+      'If you already have a federal Express Entry profile, PEI says to submit under PEI Express Entry instead of the outside-PEI skilled worker category. PEI prioritises Express Entry invitations for people living and working in PEI.',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, Office of Immigration, Submit Your Expression of Interest Profile; PEI Express Entry',
+    sourceUrl: 'https://www.princeedwardisland.ca/en/service/submit-your-expression-of-interest-profile',
+    checked: '2026-11-23',
+    note: 'PEI Express Entry page: https://www.princeedwardisland.ca/en/information/office-of-immigration/pei-express-entry',
+  },
+  caPeiEmployer: {
+    id: 'ca.pnp.pei-2026.employer',
+    claim:
+      'The guide requires a business that has run in PEI for at least two years and could not fill the job in Canada.',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, Office of Immigration, PEI Workforce Application Guide (January 2026), Employer Requirements',
+    sourceUrl: 'https://www.princeedwardisland.ca/sites/default/files/publications/pei_workforce_application_guide.pdf',
+    checked: '2026-11-23',
+  },
+  caPeiRecruitmentEvents: {
+    id: 'ca.pnp.pei-2026.events',
+    claim:
+      'PEI’s recruitment events page listed no upcoming events on 23 November 2026. None of the past missions it lists (March 2023 to November 2025) was in Pakistan.',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, Office of Immigration, International Recruitment Events',
+    sourceUrl: 'https://www.princeedwardisland.ca/en/information/office-of-immigration/international-recruitment-events',
+    checked: '2026-11-23',
+  },
+  caPeiWorkPermitStream: {
+    id: 'ca.pnp.pei-2026.work-permit-stream',
+    claim:
+      'The Work Permit Stream is PEI’s only business route: you get a work permit, move to PEI and run your business under a performance agreement, and only then may be nominated. The page sets a minimum net worth, checked by a designated verifier, and an application fee (amounts not printed). The 2026 draws table shows no business invitations to 20 November.',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, Office of Immigration, Work Permit Stream (published 1 January 2025); Expression of Interest Draws',
+    sourceUrl: 'https://www.princeedwardisland.ca/en/information/office-of-immigration/work-permit-stream',
+    checked: '2026-11-23',
+  },
+  caPeiAip2026: {
+    id: 'ca.pnp.pei-2026.aip',
+    claim:
+      'On its page dated 5 November 2026, PEI accepts AIP endorsements only for workers in health care, construction and manufacturing. It is not accepting transport truck drivers (NOC 73300), charges no provincial fee for endorsement, and designated employers can now submit an EOI profile for each candidate (soft launch).',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, Office of Immigration, Atlantic Immigration Program – EOI Endorsement (published 5 November 2026)',
+    sourceUrl: 'https://www.princeedwardisland.ca/en/information/office-of-immigration/atlantic-immigration-program-eoi-endorsement',
+    checked: '2026-11-23',
+  },
+  caPeiPopulationFramework: {
+    id: 'ca.pnp.pei-2026.population-framework',
+    claim:
+      'On 22 February 2024 PEI’s population framework cut its use of federal nominations for 2024, to ease pressure on public services and infrastructure, and aligned the rest with priority sectors.',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, news release (22 February 2024)',
+    sourceUrl: 'https://www.princeedwardisland.ca/en/news/province-launches-peis-population-framework-and-introduces-measures-to-slow-down-population',
+    checked: '2026-11-23',
+    note: 'The 25% figure and the sector targets are in the release but are not printed.',
+  },
+  caPeiFederalCut: {
+    id: 'ca.pnp.pei-2026.federal-cut',
+    claim:
+      'PEI’s 2025 budget paper says Ottawa cut provincial nominee numbers for 2025 to 2027 (in winter 2024), and PEI expected this to push nominees below its revised targets.',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, Budget Paper on the Economy 2025',
+    sourceUrl: 'https://www.princeedwardisland.ca/sites/default/files/publications/2025_budget_paper_on_the_economy.pdf',
+    checked: '2026-11-23',
+    note: 'The size of the cut (fifty per cent) is in the budget paper but is not printed.',
+  },
+  caPeiAfterNomination: {
+    id: 'ca.pnp.pei-2026.after-nomination',
+    claim:
+      'You must apply to IRCC for permanent residence within six months of receiving the nomination certificate. Until you become a permanent resident, you must keep the nomination’s conditions and stay with the same employer.',
+    provenance: 'primary',
+    source: 'Government of Prince Edward Island, Office of Immigration, PEI Workforce Application Guide (January 2026), Step 6; Skilled Workers Outside Canada',
+    sourceUrl: 'https://www.princeedwardisland.ca/sites/default/files/publications/pei_workforce_application_guide.pdf',
+    checked: '2026-11-23',
+  },
+  caExpressEntryPnp600: {
+    id: 'ca.ee.pnp-600',
+    claim:
+      'A nomination through Express Entry adds 600 points under section 28(1) of the Ministerial Instructions.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions respecting the Express Entry system (current), s. 28(1)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+  },
+  caIrccPnpRoutes: {
+    id: 'ca.pnp.ircc-routes',
+    claim:
+      'Nominees apply to IRCC through Express Entry or with their certificate through the non-Express Entry process; IRCC makes the final decision.',
+    provenance: 'primary',
+    source: 'IRCC, Immigrate as a provincial nominee (page details 14 September 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html',
+    checked: '2026-11-23',
+  },
+  caNbpnpStreams2026: {
+    id: 'ca.pnp.nb-2026.streams',
+    claim:
+      'As of 23 November 2026, the New Brunswick PNP has four streams and two pilots: the Skilled Worker, Express Entry, Strategic Initiative and Business Immigration streams, and the Critical Worker Pilot and Private Career College Graduate Pilot.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), New Brunswick Provincial Nominee Program',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/provincial-nominee-program.html',
+    checked: '2026-11-23',
+    note: 'gnb.ca returns a Cloudflare challenge to scripts; read in an ordinary desktop browser, where the check passed without interaction.',
+  },
+  caNbpnpEoiPool: {
+    id: 'ca.pnp.nb-2026.eoi-pool',
+    claim:
+      'You submit a free expression of interest (EOI) through the INB portal. It joins a pool and stays valid for 365 days. The province says EOIs are not considered first come, first served.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), New Brunswick Provincial Nominee Program (Expression of interest; Invitations to apply)',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/provincial-nominee-program.html',
+    checked: '2026-11-23',
+    note: '“Free of charge” is on each stream page; 365 days and “not considered on a first come, first served basis” are on the NBPNP page.',
+  },
+  caNbpnpSelection: {
+    id: 'ca.pnp.nb-2026.selection',
+    claim:
+      'Invitations follow labour market needs, the province’s allocation and its priorities. Skilled Worker, Express Entry and the Strategic Initiative have scheduled draws. Meeting the criteria guarantees nothing.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), New Brunswick Provincial Nominee Program',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/provincial-nominee-program.html',
+    checked: '2026-11-23',
+  },
+  caNbpnp2025Pathways: {
+    id: 'ca.pnp.nb-2026.changes-2025-pathways',
+    claim:
+      'Early 2025: Skilled Worker split into three pathways, including Priority Occupations. Express Entry was rebuilt as Employment in New Brunswick and New Brunswick Interest.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), Important notices - Archived (2025 January and February notices, archived 18 February 2025 and 3 February 2026)',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/important-notices/notices-archive-2025.html',
+    checked: '2026-11-23',
+    note: 'Filed under ‘January notices’ and ‘February notices’ 2025 with no exact day, hence ‘Early 2025’. The notice spells it ‘New Brunswick Interests’; the stream page says ‘New Brunswick Interest’.',
+  },
+  caNbAip2025Pause: {
+    id: 'ca.pnp.nb-2026.aip-pause-2025',
+    claim:
+      '4 April 2025: the Atlantic Immigration Program paused for the rest of 2025, its allocation used up.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), Important notices - Archived (April 2025 notice, archived 3 February 2026)',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/important-notices/notices-archive-2025.html',
+    checked: '2026-11-23',
+  },
+  caNbpnpSi2025: {
+    id: 'ca.pnp.nb-2026.si-2025',
+    claim:
+      'Through 2025: the Strategic Initiative, for French speakers, took no new EOIs. Its rounds resumed in January 2026.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), Important notices - Archived (‘NB Strategic Initiative not returning for 2025’, archived 6 January 2026)',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/important-notices/notices-archive-2025.html',
+    checked: '2026-11-23',
+    note: 'Second sentence rests on the 13–15 January 2026 Strategic Initiative round on https://www.gnb.ca/en/topic/family-home-community/immigration/invitation-selection-rounds.html',
+  },
+  caNbpnpSectorRestrictions: {
+    id: 'ca.pnp.nb-2026.sector-restrictions',
+    claim:
+      '3 February 2026: Skilled Worker and Express Entry stopped considering accommodation and food services jobs, plus listed retail, cashier and food-processing jobs. The list also names cashiers, retail salespersons and fish plant workers in any sector. A cook or cleaner may still submit an EOI if the employer is outside that sector.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), Important notices (Skilled Worker and Express Entry streams – NOC and sector restrictions, effective February 3, 2026)',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/important-notices.html',
+    checked: '2026-11-23',
+    note: 'Sector is NAICS 72. The ‘regardless of sectors’ list includes NOC 65100 Cashiers, 64100 Retail salespersons, 94142 Fish and seafood plant workers, 95106 and 95107 processing labourers. Cooks (63200) and light duty cleaners (65310) are on the NAICS 72 list, which exempts employers not directly in that sector.',
+  },
+  caNbAip2026Pool: {
+    id: 'ca.pnp.nb-2026.aip-pool-2026',
+    claim:
+      '3 February 2026: the Atlantic Immigration Program moved endorsements into a pool and paused new employer designations. Endorsements are selected from a pool.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), Important notices - Archived (2026 AIP notices effective February 3, 2026, archived 14 September 2026)',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/important-notices/notices-archive-2025.html',
+    checked: '2026-11-23',
+  },
+  caNbpnpExperienceSectors: {
+    id: 'ca.pnp.nb-2026.experience-sectors',
+    claim:
+      '4 May 2026: New Brunswick Experience invitations limited to health care, education and construction, as the stream’s allocation ran low.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), Important notices (Skilled Worker stream – Invitations to apply limited to three sectors, effective May 4, 2026)',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/important-notices.html',
+    checked: '2026-11-23',
+    note: 'Notice: “due to limited remaining allocation under this stream”; “until further notice”.',
+  },
+  caNbAipDesignationPause: {
+    id: 'ca.pnp.nb-2026.aip-designation-pause',
+    claim:
+      'On 14 September 2026, New Brunswick kept new Atlantic Immigration Program employer designations paused for the rest of 2026.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), Important notices (Employer designation application – Application intake paused, effective September 14, 2026)',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/important-notices.html',
+    checked: '2026-11-23',
+  },
+  caNbAipOutsideCanada: {
+    id: 'ca.pnp.nb-2026.aip-outside-canada',
+    claim:
+      'Under the province’s notices of 14 September and 14 October 2026, AIP endorsements for jobs offered to people living outside Canada are limited to Government of New Brunswick recruitment in health care, education and construction. TEER 5 jobs are not eligible.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), Important notices (Candidate endorsement application – NOC and sector restrictions, effective October 14, 2026)',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/important-notices.html',
+    checked: '2026-11-23',
+    note: 'The 3 February 2026 version of the limit is on the archive page: https://www.gnb.ca/en/topic/family-home-community/immigration/important-notices/notices-archive-2025.html',
+  },
+  caNbAipSelectedNov2026: {
+    id: 'ca.pnp.nb-2026.aip-selected-nov',
+    claim:
+      'On 6 and 16 November 2026, the province selected 73 Atlantic Immigration Program applications for processing.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), Invitation and selection rounds (Latest rounds)',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/invitation-selection-rounds.html',
+    checked: '2026-11-23',
+    note: 'Official dated statistic.',
+  },
+  caNbpnpRoundSkilled: {
+    id: 'ca.pnp.nb-2026.round-sw-13nov',
+    claim:
+      'On 13 November 2026, a Skilled Worker round issued 198 invitations in the New Brunswick Graduates and Experience pathways.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), Invitation and selection rounds (Latest rounds)',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/invitation-selection-rounds.html',
+    checked: '2026-11-23',
+    note: 'Official dated statistic; cut-off 10 November 2026.',
+  },
+  caNbpnpRoundStrategic: {
+    id: 'ca.pnp.nb-2026.round-si-2nov',
+    claim:
+      'On 2 November 2026, a Strategic Initiative round issued 192 invitations.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), Invitation and selection rounds (Latest rounds)',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/invitation-selection-rounds.html',
+    checked: '2026-11-23',
+    note: 'Official dated statistic; pathways Francophone Workers in New Brunswick and New Brunswick Francophone Priorities.',
+  },
+  caNbpnpEeRounds: {
+    id: 'ca.pnp.nb-2026.ee-rounds',
+    claim:
+      'Every Express Entry stream round listed for 2025 and 2026 was for the Employment in New Brunswick pathway. The latest, on 17 September 2026, issued 102 invitations.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), Invitation and selection rounds (Previous invitations and selections in 2026; Previous invitations in 2025)',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/invitation-selection-rounds.html',
+    checked: '2026-11-23',
+    note: '2025 rounds: 9 Apr, 16 Jun, 11–19 Aug, 8–9 Oct, 16 Nov, 9 Dec. 2026 rounds: 13–15 Jan, 2 Feb, 3–6 Mar, 30 Mar, 30 Apr, 4 Jun, 16 Jul, 17 Sep. All ‘Employment in New Brunswick’.',
+  },
+  caNbpnpPriorityRounds: {
+    id: 'ca.pnp.nb-2026.priority-rounds',
+    claim:
+      'The rounds page names Priority Occupations once, for 17 June 2025: 12 invitations, in health care. A 16–18 July 2026 round listed “New Brunswick Priorities” with New Brunswick Experience: 58 invitations in all.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), Invitation and selection rounds (Previous invitations in 2025; Previous invitations and selections in 2026)',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/invitation-selection-rounds.html',
+    checked: '2026-11-23',
+    note: 'The page does not say whether “New Brunswick Priorities” is the Priority Occupations pathway, so the post quotes the label as printed.',
+  },
+  caNbpnpFeesRegulation: {
+    id: 'ca.pnp.nb-2026.fees-regulation',
+    claim:
+      'New Brunswick Regulation 2012-36 sets the fee at $250 (Canadian) for a skilled worker application and $2,000 for a business application.',
+    provenance: 'primary',
+    source: 'New Brunswick Regulation 2012-36 under the Financial Administration Act (O.C. 2012-110, filed March 26, 2012, in force April 1, 2012), ss. 2–3, consolidated text on laws.gnb.ca',
+    sourceUrl: 'https://laws.gnb.ca/en/document/ar/2012-36',
+    checked: '2026-11-23',
+    note: 'laws.gnb.ca also sits behind the Cloudflare challenge; read in a desktop browser. The regulation still names the Department of Post-Secondary Education, Training and Labour.',
+  },
+  caNbpnpFeesPages: {
+    id: 'ca.pnp.nb-2026.fees-pages',
+    claim:
+      'If invited, you pay a non-refundable fee before submitting the full application. The stream pages charge $250 for Skilled Worker, Express Entry and Strategic Initiative applications, and $2,000 for Business Immigration.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), stream pages (Skilled Worker, Express Entry, Strategic Initiative, Business Immigration)',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/provincial-nominee-program/skilled-worker-stream.html',
+    checked: '2026-11-23',
+    note: 'Same wording on https://www.gnb.ca/en/topic/family-home-community/immigration/provincial-nominee-program/express-entry-stream.html and https://www.gnb.ca/en/topic/family-home-community/immigration/provincial-nominee-program/strategic-initiative.html ($250) and on https://www.gnb.ca/en/topic/family-home-community/immigration/provincial-nominee-program/business-immigration-stream.html ($2,000). Amounts printed because Regulation 2012-36 sets them.',
+  },
+  caNbpnpExperience: {
+    id: 'ca.pnp.nb-2026.experience',
+    claim:
+      'Skilled Worker: New Brunswick Experience is for full-time workers already living in New Brunswick.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), New Brunswick Skilled Worker stream',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/provincial-nominee-program/skilled-worker-stream.html',
+    checked: '2026-11-23',
+    note: 'Page: working full time for the supporting employer, six months with that employer, lived in New Brunswick for the past six months.',
+  },
+  caNbpnpGraduates: {
+    id: 'ca.pnp.nb-2026.graduates',
+    claim:
+      'Skilled Worker: New Brunswick Graduates is for New Brunswick graduates with a New Brunswick job, living there.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), New Brunswick Skilled Worker stream',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/provincial-nominee-program/skilled-worker-stream.html',
+    checked: '2026-11-23',
+    note: 'Page: PGWP-eligible programme at a New Brunswick DLI; working in or accepted a full-time job with the supporting employer; lived in New Brunswick for the past six months.',
+  },
+  caNbpnpPriorityOccupations: {
+    id: 'ca.pnp.nb-2026.priority-occupations',
+    claim:
+      'Priority Occupations (Skilled Worker): a job offer in a priority occupation, made directly through a provincial government recruitment mission.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), New Brunswick Skilled Worker stream',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/provincial-nominee-program/skilled-worker-stream.html',
+    checked: '2026-11-23',
+    note: 'Page: “the offer must be a direct result of a recruitment mission led by the Government of New Brunswick”; the NOC must be a priority code listed in the guide (guide PDF not readable).',
+  },
+  caNbpnpEeEmployment: {
+    id: 'ca.pnp.nb-2026.ee-employment',
+    claim:
+      'Express Entry: Employment in New Brunswick is for Express Entry candidates living and working full time in New Brunswick. That pathway is for people already living and working in the province.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), New Brunswick Express Entry stream',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/provincial-nominee-program/express-entry-stream.html',
+    checked: '2026-11-23',
+    note: 'Page: living and working full time in New Brunswick for the past 12 months, in TEER 0–3.',
+  },
+  caNbpnpEeInterest: {
+    id: 'ca.pnp.nb-2026.ee-interest',
+    claim:
+      'New Brunswick Interest (Express Entry): a letter of interest sent to your Express Entry profile, plus the federal proof of funds.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), New Brunswick Express Entry stream',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/provincial-nominee-program/express-entry-stream.html',
+    checked: '2026-11-23',
+  },
+  caNbpnpStrategic: {
+    id: 'ca.pnp.nb-2026.strategic',
+    claim:
+      'Strategic Initiative, for French speakers: Francophone Workers with a recruitment-mission job offer, or Francophone Priorities with a letter of interest. The stream also covers workers, graduates and remote workers in the province.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), New Brunswick Strategic Initiative',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/provincial-nominee-program/strategic-initiative.html',
+    checked: '2026-11-23',
+    note: 'Francophone Workers: six months’ residence ‘not required if you were offered a job through a recruitment mission led by the Government of New Brunswick’. Francophone Priorities: Université de Moncton or CCNB graduate living in New Brunswick, or a letter of interest. Remote workers must have lived in New Brunswick for 12 months.',
+  },
+  caNbpnpBusiness: {
+    id: 'ca.pnp.nb-2026.business',
+    claim:
+      'Business Immigration is for entrepreneurs who will start or buy, and run, a New Brunswick business. Once approved, you apply for a work permit, open the business and ask for nomination after six months of operating it.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), New Brunswick Business Immigration stream',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/provincial-nominee-program/business-immigration-stream.html',
+    checked: '2026-11-23',
+    note: 'Net worth and investment minimums are on the page only and are not printed.',
+  },
+  caNbCriticalWorkerPilot: {
+    id: 'ca.pnp.nb-2026.critical-worker-pilot',
+    claim:
+      'Critical Worker Pilot: only through its six participating employers. The province does not accept direct applications.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), New Brunswick Critical Worker Pilot (served from www2.gnb.ca)',
+    sourceUrl: 'https://www2.gnb.ca/content/gnb/en/corporate/promo/immigration/immigrating-to-nb/nb-immigration-program-streams/nb-critical-workers-pilot.html',
+    checked: '2026-11-23',
+    note: 'Lists Cooke Aquaculture, J.D. Irving, Groupe Savoie, Groupe Westco, Imperial Manufacturing Group and McCain Foods; ‘not currently open to broader participation’.',
+  },
+  caNbPccgPilot: {
+    id: 'ca.pnp.nb-2026.pccg-pilot',
+    claim:
+      'Private Career College Graduate Pilot: graduates of selected New Brunswick private career college programmes.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), Private Career College Graduate Pilot Program',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/provincial-nominee-program/pccg-pilot-program.html',
+    checked: '2026-11-23',
+  },
+  caNbpnpMostInProvince: {
+    id: 'ca.pnp.nb-2026.most-in-province',
+    claim:
+      'As of 23 November 2026, most New Brunswick Provincial Nominee Program (NBPNP) pathways are for people already living and working in New Brunswick. From Pakistan, the remaining routes need a job offer from a provincial recruitment mission, a letter of interest from the province, or a business.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), stream pages (Skilled Worker, Express Entry, Strategic Initiative, Business Immigration) and pilot pages',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/provincial-nominee-program/skilled-worker-stream.html',
+    checked: '2026-11-23',
+    note: 'Pathways requiring residence in New Brunswick: New Brunswick Experience, New Brunswick Graduates, Employment in New Brunswick, Francophone Workers (unless a mission job offer), the francophone-graduate priority, Francophones Working Remotely, and the Private Career College Graduate Pilot. Not requiring it: Priority Occupations (mission offer), New Brunswick Interest and the Francophone Priorities letter (letter of interest), Business Immigration, and the Critical Worker Pilot (participating employers only). The post’s ‘From Pakistan?’ column and the ‘On our reading’ paragraph are marked in the post as our inference and are not listed as facts.',
+  },
+  caNbRecruitmentEvents: {
+    id: 'ca.pnp.nb-2026.recruitment-events',
+    claim:
+      'On 23 November 2026, the province’s recruitment events page listed no virtual events. Its one international event runs in France and Belgium, 26 November to 7 December.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), Recruitment events',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/events-calendar.html',
+    checked: '2026-11-23',
+    note: 'Event: Destination New Brunswick (Lyon, Lille, Paris, Brussels, Marseille). The page also listed no national events.',
+  },
+  caNbCandidateInfo: {
+    id: 'ca.pnp.nb-2026.candidate-info',
+    claim:
+      'Language: IELTS General Training, CELPIP or PTE Core for English; TEF Canada or TCF Canada for French; results under two years old. Without a credential from a Canadian designated learning institution, you need an ECA. Documents not in English or French need an independent translator; you, a relative or your representative’s staff cannot translate them. Create your own INB profile with your own email; a representative is optional and gives no priority. The province says not to apply if you are not living lawfully in your current country. False documents lead to refusal, a ban on reapplying and a report to IRCC.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), Important information for every candidate',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/important-information.html',
+    checked: '2026-11-23',
+    note: 'The page sets the ban at five years; the post leaves the number out.',
+  },
+  caNbAfterNomination: {
+    id: 'ca.pnp.nb-2026.after-nomination',
+    claim:
+      'You apply to IRCC for permanent residence before the certificate expires, including all family members. New Brunswick says IRCC makes the final decision. Your certificate says whether you apply through Express Entry or outside it.',
+    provenance: 'primary',
+    source: 'Government of New Brunswick (Immigration New Brunswick), New Brunswick Provincial Nominee Program (Overview; After nomination)',
+    sourceUrl: 'https://www.gnb.ca/en/topic/family-home-community/immigration/provincial-nominee-program.html',
+    checked: '2026-11-23',
+  },
+  caNbIrccTwoRoutes: {
+    id: 'ca.pnp.nb-2026.ircc-routes',
+    claim:
+      'IRCC’s provincial nominee page explains both routes, Express Entry and non-Express Entry.',
+    provenance: 'primary',
+    source: 'IRCC, Provincial Nominee Program (page details 2026-09-14)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html',
+    checked: '2026-11-23',
+  },
+  caEeNomination600: {
+    id: 'ca.pnp.nb-2026.ee-600',
+    claim:
+      'An Express Entry nomination is worth 600 points under section 28(1) of the Ministerial Instructions.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions respecting the Express Entry system (current; page details 2026-11-18), s. 28(1)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+  },
+  caSkEoiNoDrawSince2024: {
+    id: 'ca.sk.eoi-last-draw',
+    claim:
+      'Saskatchewan’s published EOI selection results list three International Skilled Worker draws in 2024 (7 March, 13 June, 12 September) and none since.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, SINP International Skilled Workers: EOI Selection Results (updated 12 September 2024)',
+    sourceUrl: 'https://publications.saskatchewan.ca/api/v1/products/102708/formats/113850/download',
+    checked: '2026-11-23',
+    note: 'The document says it is updated whenever a new selection is made; its latest update is 12 September 2024.',
+  },
+  caSkEoiDraws2024: {
+    id: 'ca.sk.eoi-draws-2024',
+    claim:
+      'Lowest score invited (number invited): 12 September 2024, Occupation In-Demand 88 (32), Saskatchewan Express Entry 88 (57); 13 June 2024, 88 (32) and 88 (88); 7 March 2024, 89 (14) and 89 (21).',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, SINP International Skilled Workers: EOI Selection Results (updated 12 September 2024)',
+    sourceUrl: 'https://publications.saskatchewan.ca/api/v1/products/102708/formats/113850/download',
+    checked: '2026-11-23',
+    note: 'Official statistics.',
+  },
+  caSkEoiNoScheduledDraws: {
+    id: 'ca.sk.eoi-no-scheduled-draws',
+    claim:
+      'On 23 November 2026, the International Skilled Worker EOI page said there were no scheduled EOI draws. A profile stays valid for a year.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, International Skilled Worker EOI System',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers/international-skilled-worker-eoi-system',
+    checked: '2026-11-23',
+  },
+  caSkEoiPool: {
+    id: 'ca.sk.eoi-pool',
+    claim:
+      'The EOI pool serves the Occupation In-Demand and Saskatchewan Express Entry sub-categories, which need no job offer.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, International Skilled Worker EOI System',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers/international-skilled-worker-eoi-system',
+    checked: '2026-11-23',
+  },
+  caSkPointsGrid: {
+    id: 'ca.sk.points-grid',
+    claim:
+      'You need at least 60 of 110 points on the SINP points grid. Education, work experience, language and age give up to 80. For Occupation In-Demand and Saskatchewan Express Entry, a close relative living in Saskatchewan adds 20, and past work or study there 5 each.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, Assess Your Eligibility (SINP International Skilled Worker Points Grid)',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/assess-your-eligibility',
+    checked: '2026-11-23',
+    note: 'Grid published by the province; the topic brief allows grid points.',
+  },
+  caSkMarch2025Changes: {
+    id: 'ca.sk.changes-2025-03-27',
+    claim:
+      'On 27 March 2025, Saskatchewan prioritised recruitment from abroad for health, agriculture and the skilled trades, limited other sectors to temporary residents already in Canada, said Express Entry and Occupation In-Demand applications without a Saskatchewan job offer would be returned, and permanently closed the Entrepreneur, International Graduate Entrepreneur and Farm Owner/Operator categories.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, Government Announces End to Temporary SINP Pause (27 March 2025)',
+    sourceUrl: 'https://www.saskatchewan.ca/government/news-and-media/2025/march/27/government-announces-end-to-temporary-sinp-pause',
+    checked: '2026-11-23',
+    note: 'The post leaves out the release’s federal allocation figures.',
+  },
+  caSkEntrepreneurFarmClosed: {
+    id: 'ca.sk.entrepreneur-closed',
+    claim:
+      'The Entrepreneur and Farm categories have been closed since 27 March 2025.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, Entrepreneur Application - SINP',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/entrepreneur/applicants-entrepreneurs',
+    checked: '2026-11-23',
+    note: 'Re-confirms the existing lib/facts.ts entry caSaskatchewanEntrepreneurClosed.',
+  },
+  caSk2026Plan: {
+    id: 'ca.sk.plan-2026',
+    claim:
+      'The SINP FAQ, updated 19 December 2025, set out the 2026 plan: seven priority sectors (healthcare, agriculture, skilled trades, mining, manufacturing, energy, technology), and caps on accommodation and food services, trucking and retail trade.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, Immigration FAQs (updated 19 December 2025)',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/immigration-faqs',
+    checked: '2026-11-23',
+    note: 'Allocation counts and percentages in the FAQ are left out of the post.',
+  },
+  caSkEpaReplacedJaf: {
+    id: 'ca.sk.epa-replaced-jaf',
+    claim:
+      'The SINP replaced Job Approval Forms with Employer Position Assessments (EPAs), to reduce duplication and strengthen programme integrity; the candidate confirms the job details online before applying.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, Immigration FAQs (updated 19 December 2025)',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/immigration-faqs',
+    checked: '2026-11-23',
+  },
+  caSkIllegalToCharge: {
+    id: 'ca.sk.illegal-to-charge',
+    claim:
+      'Saskatchewan’s FAQ says it is illegal to ask a foreign worker to pay for a job.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, Immigration FAQs (updated 19 December 2025)',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/immigration-faqs',
+    checked: '2026-11-23',
+  },
+  caSkFee: {
+    id: 'ca.sk.fee',
+    claim:
+      'Since 1 April 2026, a worker application to the SINP costs a non-refundable $500 (Canadian), with or without a job offer. A review of an ineligibility decision costs $250, refunded if the decision is reversed.',
+    provenance: 'primary',
+    source: 'The Immigration Services Regulations, SR 70/2024, s. 29(2)(a), (3)(a) and (4), as replaced by s. 8 of SR 13/2026 (filed 13 March 2026, in force 1 April 2026)',
+    sourceUrl: 'https://publications.saskatchewan.ca/api/v1/products/124783/formats/145602/download',
+    checked: '2026-11-23',
+    note: 'Set in a Saskatchewan regulation. The Gazette text of SR 13/2026, with its s. 9 commencement, was also read.',
+  },
+  caSkFeeAmendment: {
+    id: 'ca.sk.fee-amendment',
+    claim:
+      'SR 13/2026 replaced section 29 of The Immigration Services Regulations and came into force on 1 April 2026.',
+    provenance: 'primary',
+    source: 'The Saskatchewan Gazette, Part II, 20 March 2026, SR 13/2026, ss. 8–9',
+    sourceUrl: 'https://publications.saskatchewan.ca/api/v1/products/128295/formats/153819/download',
+    checked: '2026-11-23',
+  },
+  caSkFeeBeforeApril2026: {
+    id: 'ca.sk.fee-before-2026',
+    claim:
+      'Before 1 April 2026, SINP applications with a job offer were free.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, Summary of 2026-27 Changes to Fees and Charges (March 2026)',
+    sourceUrl: 'https://www.saskatchewan.ca/-/media/news-release-backgrounders/2026/mar/backgrounder---summary-of-2026-27-fees-and-charges.pdf',
+    checked: '2026-11-23',
+  },
+  caSkSixSubcategories: {
+    id: 'ca.sk.isw-subcategories',
+    claim:
+      'The International Skilled Worker procedures, last updated 29 April 2026, list six sub-categories: Employment Offer, Agriculture Talent Pathway, Health Talent Pathway, Innovation and Tech Talent Pathway, Occupation In-Demand and Saskatchewan Express Entry. The four that need a job offer accept applicants living abroad.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, International Skilled Worker: Procedures and Guidelines (last updated 29 April 2026)',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers/procedures-and-guidelines',
+    checked: '2026-11-23',
+    note: 'Living-abroad eligibility read on each of the four sub-category pages.',
+  },
+  caSkEmploymentOffer: {
+    id: 'ca.sk.employment-offer',
+    claim:
+      'Employment Offer needs a permanent, full-time job at TEER 0–3 and at least 60 points. Truck drivers must use the Existing Work Permit route; health occupations in NOC category 3 must use the Health Talent Pathway (or the Students sub-category).',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, International Skilled Worker: Employment Offer',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers/international-skilled-worker-with-employment-offer',
+    checked: '2026-11-23',
+  },
+  caSkExistingWorkPermit: {
+    id: 'ca.sk.existing-work-permit',
+    claim:
+      'The Existing Work Permit sub-category is for people already working in Saskatchewan on a valid work permit.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, Skilled Worker With Existing Work Permit',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-with-saskatchewan-experience/applicants-with-existing-work-permit',
+    checked: '2026-11-23',
+  },
+  caSkAgriculturePathway: {
+    id: 'ca.sk.agriculture-pathway',
+    claim:
+      'The Agriculture Talent Pathway covers listed farm, greenhouse and food-processing jobs, with high school as the minimum education.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, Agriculture Talent Pathway',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers/agriculture-talent-pathway',
+    checked: '2026-11-23',
+  },
+  caSkHealthPathway: {
+    id: 'ca.sk.health-pathway',
+    claim:
+      'The Health Talent Pathway covers physicians, nurses and other listed health occupations, with Express Entry and non-Express Entry versions.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, Health Talent Pathway',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers/health-talent-pathway',
+    checked: '2026-11-23',
+  },
+  caSkTechPathway: {
+    id: 'ca.sk.tech-pathway',
+    claim:
+      'The Innovation and Tech Talent Pathway covers listed technology, engineering and science occupations, with Express Entry and non-Express Entry versions.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, Innovation and Tech Talent Pathway',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers/sinp-innovation-tech-talent-pathway',
+    checked: '2026-11-23',
+  },
+  caSkSeeExpressEntry: {
+    id: 'ca.sk.see-express-entry',
+    claim:
+      'Saskatchewan Express Entry requires a valid Express Entry profile number and job seeker code.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, International Skilled Worker: Saskatchewan Express Entry',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers/international-skilled-worker-saskatchewan-express-entry',
+    checked: '2026-11-23',
+  },
+  caSkOidNoOffer: {
+    id: 'ca.sk.oid-no-offer',
+    claim:
+      'Occupation In-Demand is for skilled workers without a Saskatchewan job offer, and is entered through the EOI system.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, International Skilled Worker: Occupation In-Demand',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers/international-skilled-worker-occupations-in-demand',
+    checked: '2026-11-23',
+  },
+  caSkHealthPool: {
+    id: 'ca.sk.health-eoi-pool',
+    claim:
+      'Health workers without an offer can join the International Healthcare Worker EOI pool; Saskatchewan health employers may contact them, but the pool is not an application.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, International Healthcare Worker EOI Pool',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers/international-healthcare-worker-eoi-pool',
+    checked: '2026-11-23',
+  },
+  caSkEpaRules: {
+    id: 'ca.sk.epa-rules',
+    claim:
+      'An EPA needs an employer with a Certificate of Registration and a permanent, full-time job at a physical Saskatchewan workplace (not work from home), a fair wage measured against Job Bank’s regional median wage, and a real vacancy, such as a post recently or soon to be vacated by a full-time employee.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, Step 2: Obtain SINP Approval for the Job Position',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/hire-a-foreign-worker/recruit-and-hire-workers-with-sinp/hiring-workers-for-permanent-jobs/obtain-sinp-approval-for-the-job-position',
+    checked: '2026-11-23',
+  },
+  caSkOverseasCandidates: {
+    id: 'ca.sk.overseas-candidates',
+    claim:
+      'Employers outside the capped sectors may name overseas candidates for recent vacancies; in accommodation and food services, retail trade and trucking the candidate must be a current employee.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, Step 2: Obtain SINP Approval for the Job Position',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/hire-a-foreign-worker/recruit-and-hire-workers-with-sinp/hiring-workers-for-permanent-jobs/obtain-sinp-approval-for-the-job-position',
+    checked: '2026-11-23',
+    note: '“Closed to someone still in Pakistan” is our inference from this rule.',
+  },
+  caSkExclusionList: {
+    id: 'ca.sk.job-offer-exclusions',
+    claim:
+      'The current list of business types and occupations excluded from SINP job-offer approval is dated 12 August 2026.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, Excluded Business Types and Occupations: SINP Job Offer Categories (12 August 2026)',
+    sourceUrl: 'https://publications.saskatchewan.ca/api/v1/products/123540/formats/149130/download',
+    checked: '2026-11-23',
+  },
+  caSkNominations2025: {
+    id: 'ca.sk.nominations-2025',
+    claim:
+      'The SINP issued 5,061 nominations in 2025, 4,799 of them to applicants with job offers. Of those nominees, 95 per cent were temporary residents at the time of nomination.',
+    provenance: 'primary',
+    source: 'Ministry of Immigration and Career Training, Annual Report 2025-26, p. 12',
+    sourceUrl: 'https://publications.saskatchewan.ca/api/v1/products/129306/formats/156017/download',
+    checked: '2026-11-23',
+    note: 'Official statistics. The report’s “of those nominees” is kept as written: it may mean the 4,799 or all 5,061.',
+  },
+  caSkNominations2026: {
+    id: 'ca.sk.nominations-2026-ytd',
+    claim:
+      'On 23 November 2026, the SINP processing statistics page showed 4,023 nominations issued in 2026, against an allocation of 5,261. It is updated quarterly and leaves out applications still in process.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, SINP Processing Statistics',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/sinp-processing-statistics',
+    checked: '2026-11-23',
+    note: 'Official statistics; the table carries no date of its own. Processing times on the same page are left out.',
+  },
+  caSkProofOfEmployment: {
+    id: 'ca.sk.proof-of-employment',
+    claim:
+      'Each reference letter must come with one government-issued proof of that employment; accepted proofs include provident fund, social security and income tax records.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, International Skilled Worker: Employment Offer',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers/international-skilled-worker-with-employment-offer',
+    checked: '2026-11-23',
+  },
+  caSkEcaTranslations: {
+    id: 'ca.sk.eca-translations',
+    claim:
+      'Degrees or diplomas from outside Canada need an educational credential assessment; documents not in English or French need a translation that meets the SINP’s translator rules; an incomplete application is closed and cannot be reopened.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, International Skilled Worker: Employment Offer',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers/international-skilled-worker-with-employment-offer',
+    checked: '2026-11-23',
+    note: 'The closed-application rule is also on the Procedures and Guidelines page. Applying the translation rule to Urdu is our wording.',
+  },
+  caSkMisrepresentationBan: {
+    id: 'ca.sk.misrepresentation-ban',
+    claim:
+      'False information in an EOI or application can bring a suspension from the SINP of two to five years.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, SINP Procedures and Guidelines (updated 29 April 2026)',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers/procedures-and-guidelines',
+    checked: '2026-11-23',
+    note: 'The Occupation In-Demand page says two years, or more for a repeat offence; the Procedures and Guidelines say two to five years.',
+  },
+  caSkAfterNomination: {
+    id: 'ca.sk.after-nomination',
+    claim:
+      'A nominee must apply to IRCC for permanent residence within six months of nomination. A job-offer nominee not yet working for the employer must also apply for an employer-specific work permit, as a condition of the nomination.',
+    provenance: 'primary',
+    source: 'Government of Saskatchewan, International Skilled Worker: Procedures and Guidelines (last updated 29 April 2026)',
+    sourceUrl: 'https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program/browse-sinp-programs/applicants-international-skilled-workers/procedures-and-guidelines',
+    checked: '2026-11-23',
+  },
+  caPnpTwoRoutes: {
+    id: 'ca.pnp.ircc-routes',
+    claim:
+      'IRCC describes a non-Express Entry route and an Express Entry route for provincial nominees.',
+    provenance: 'primary',
+    source: 'IRCC, Provincial Nominee Program (page details 14 September 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html',
+    checked: '2026-11-23',
+  },
+  caPnp600Points: {
+    id: 'ca.ee.pnp-600',
+    claim:
+      'Through Express Entry, a provincial nomination is worth 600 points under section 28(1) of the Ministerial Instructions.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions respecting the Express Entry system (current, page details 18 November 2026), s. 28(1)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+  },
+  caPnpEnhancedPoints2026: {
+    id: 'ca.pnp.ee-or-pnp.enhanced-600',
+    claim:
+      'As of 23 November 2026, a nomination through a province’s Express Entry stream adds 600 points to your CRS score.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions respecting the Express Entry system – current, s. 28(1) (in force since 17 November 2026; modified 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+    note: 'Set in Ministerial Instructions. s. 28(1) refers to provinces listed in s. 2(d), which nominate \'under its provincial nominee program express entry stream\'.',
+  },
+  caPnpMiInForce: {
+    id: 'ca.pnp.ee-or-pnp.mi-in-force',
+    claim:
+      'The 600 points are set by section 28(1) of the Ministerial Instructions, in force in their current form since 17 November 2026. They apply to a nomination under a province’s Express Entry stream, once the province verifies it and you accept it.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions respecting the Express Entry system (index of versions: current \'in force since November 17, 2026\'; modified 2026-11-18) and current text, s. 28(1)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system.html',
+    checked: '2026-11-23',
+    note: 's. 28(1): nomination \'verified by the province\' and \'accepted by the foreign national\'. The 17 November amendment 2026-2 changes only ss. 15.1, 15.2 and 19 (NOC 41200).',
+  },
+  caCrsCriteriaNomination: {
+    id: 'ca.pnp.ee-or-pnp.crs-criteria-600',
+    claim:
+      'IRCC’s CRS criteria page lists the same 600.',
+    provenance: 'primary',
+    source: 'IRCC, Comprehensive Ranking System criteria, Additional points: \'Provincial or territorial nomination\' 600 (modified 2026-11-03)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score/crs-criteria.html',
+    checked: '2026-11-23',
+  },
+  caCrsAdditionalCap: {
+    id: 'ca.pnp.ee-or-pnp.additional-cap',
+    claim:
+      'Section 8(2)(d) caps additional points at 600, so a nomination reaches the cap on its own.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions respecting the Express Entry system – current, s. 8(2)(d): \'for additional factors, a maximum of 600 points\'',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+    note: 'Set in Ministerial Instructions. The CRS criteria page also shows \'Maximum 600 points\' for additional points.',
+  },
+  caPnpNominationOnce: {
+    id: 'ca.pnp.ee-or-pnp.awarded-once',
+    claim:
+      'IRCC’s nomination page confirms that the 600 can be awarded only once.',
+    provenance: 'primary',
+    source: 'IRCC, Provincial Nominee Program, Express Entry process: get or confirm a nomination (page details 2026-03-24)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/express-entry/get-confirm-nomination.html',
+    checked: '2026-11-23',
+  },
+  caPnpBaseNoPoints: {
+    id: 'ca.pnp.ee-or-pnp.base-no-points',
+    claim:
+      'A base nomination earns no CRS points, because section 28(1) covers only nominations under a province’s Express Entry stream.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions respecting the Express Entry system – current, ss. 2(d) and 28(1)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+    note: 'Our reading of the two sections together; no IRCC page states it in these words.',
+  },
+  caPnpOneNomination: {
+    id: 'ca.pnp.ee-or-pnp.one-at-a-time',
+    claim:
+      'You can hold only one nomination at a time, though several provinces may contact you. To accept a different province’s nomination, IRCC says you must first reject the one you have.',
+    provenance: 'primary',
+    source: 'IRCC, Provincial Nominee Program, Express Entry process: get or confirm a nomination (page details 2026-03-24)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/express-entry/get-confirm-nomination.html',
+    checked: '2026-11-23',
+    note: '\'Contact you\' = more than one notification of interest, which the page says you can receive.',
+  },
+  caPnpRounds2026: {
+    id: 'ca.pnp.ee-or-pnp.pnp-rounds-2026',
+    claim:
+      'In 2026, up to 26 October, IRCC held 21 [Provincial Nominee Program rounds] and invited 10,814 candidates, with lowest scores from 697 to 805.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry rounds of invitations data (ee_rounds_123_en.json), rounds #389 to #451',
+    sourceUrl: 'https://www.canada.ca/content/dam/ircc/documents/json/ee_rounds_123_en.json',
+    checked: '2026-11-23',
+    note: 'Official statistics. Totals are our sum of the 21 rounds named \'Provincial Nominee Program\' dated 2026 (5 Jan to 26 Oct). Matches express-entry-2026-so-far (20 rounds, 10,022 to 16 Oct) plus #451 (792).',
+  },
+  caPnpRoundsLastFive: {
+    id: 'ca.pnp.ee-or-pnp.last-five-rounds',
+    claim:
+      'Last five Provincial Nominee Program rounds (invitations, lowest score invited, without the 600): 26 October 2026, 792, 761, 161; 13 October 2026, 752, 772, 172; 28 September 2026, 733, 725, 125; 14 September 2026, 576, 734, 134; 31 August 2026, 562, 697, 97.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry rounds of invitations data (ee_rounds_123_en.json), rounds #438, #442, #445, #448, #451',
+    sourceUrl: 'https://www.canada.ca/content/dam/ircc/documents/json/ee_rounds_123_en.json',
+    checked: '2026-11-23',
+    note: 'Official statistics. The rounds page (canada.ca/.../rounds-invitations.html) fills its table from this file by script; WebFetch read the file, curl to canada.ca timed out. Cross-checked against /express-entry/draws. The last column is cut-off minus 600 (our arithmetic).',
+  },
+  caPnpWithout600: {
+    id: 'ca.pnp.ee-or-pnp.without-600',
+    claim:
+      'The last column is our own arithmetic: the lowest-ranked nominee’s points from everything except the nomination.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions respecting the Express Entry system – current, ss. 8(2)(d) and 28(1), applied to the rounds data',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+    note: 'Exact because a nominee\'s additional points are always 600 (nomination = 600, cap = 600). The same cap applied under the version in force for these rounds (25 March 2025 to 2 November 2026); that archived version was not opened today.',
+  },
+  caPnpRoundsOldPoints: {
+    id: 'ca.pnp.ee-or-pnp.old-points',
+    claim:
+      'All five rounds used the points in force before IRCC’s 3 November 2026 CRS change.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions respecting the Express Entry system: versions list (25 March 2025 to 2 November 2026; 3 to 16 November 2026; current since 17 November 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system.html',
+    checked: '2026-11-23',
+  },
+  caEeNoRoundAfter28Oct: {
+    id: 'ca.pnp.ee-or-pnp.no-round-after-28-oct',
+    claim:
+      'As of 23 November 2026, IRCC’s data showed no round of any kind after 28 October.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry rounds of invitations data (ee_rounds_123_en.json): first entry #453, 28 October 2026',
+    sourceUrl: 'https://www.canada.ca/content/dam/ircc/documents/json/ee_rounds_123_en.json',
+    checked: '2026-11-23',
+    note: 'Re-check before publishing; a new round would make this sentence and the \'last five\' table stale.',
+  },
+  caPnpTwoProcesses: {
+    id: 'ca.pnp.ee-or-pnp.two-processes',
+    claim:
+      'IRCC’s provincial nominee page describes two processes, and says the province tells you which one applies.',
+    provenance: 'primary',
+    source: 'IRCC, Immigrate as a provincial nominee (page details 2026-09-14)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html',
+    checked: '2026-11-23',
+    note: 'IRCC does not use the words enhanced and base; the post attributes those to the /pnp guide.',
+  },
+  caPnpEnhancedDefinition: {
+    id: 'ca.pnp.ee-or-pnp.enhanced-definition',
+    claim:
+      'Enhanced, IRCC’s “Express Entry process”: for people who fit a provincial stream and also qualify for an Express Entry programme. The nomination is added to your Express Entry profile.',
+    provenance: 'primary',
+    source: 'IRCC, Immigrate as a provincial nominee (page details 2026-09-14)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html',
+    checked: '2026-11-23',
+  },
+  caPnpBaseDefinition: {
+    id: 'ca.pnp.ee-or-pnp.base-definition',
+    claim:
+      'Base, the “non-Express Entry process”: for people who fit a provincial stream but no Express Entry programme.',
+    provenance: 'primary',
+    source: 'IRCC, Immigrate as a provincial nominee (page details 2026-09-14)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html',
+    checked: '2026-11-23',
+  },
+  caPnpBasePortal: {
+    id: 'ca.pnp.ee-or-pnp.base-pr-portal',
+    claim:
+      'After nomination, you apply online through IRCC’s Permanent Residence Portal.',
+    provenance: 'primary',
+    source: 'IRCC, Provincial Nominee Program, non-Express Entry process: apply for permanent residence (page details 2026-06-05)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/non-express-entry/apply.html',
+    checked: '2026-11-23',
+    note: 'Paper only as an accommodation (braille, large print, paper on request).',
+  },
+  caPnpEnhancedConditions: {
+    id: 'ca.pnp.ee-or-pnp.enhanced-conditions',
+    claim:
+      'IRCC’s eligibility page for enhanced nominees sets three conditions. You fit a provincial stream, the province nominates you, and you qualify for one of those programmes.',
+    provenance: 'primary',
+    source: 'IRCC, Provincial Nominee Program, Express Entry process: who can apply (page details 2026-05-21)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/express-entry/eligibility.html',
+    checked: '2026-11-23',
+  },
+  caEeThreeProgrammes: {
+    id: 'ca.pnp.ee-or-pnp.three-programmes',
+    claim:
+      'The three Express Entry programmes are the Federal Skilled Worker Program, the Federal Skilled Trades Program and the Canadian Experience Class.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: who can apply (page details 2026-10-16)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply.html',
+    checked: '2026-11-23',
+  },
+  caEeCecFswFst: {
+    id: 'ca.pnp.ee-or-pnp.cec-fsw-fst',
+    claim:
+      'Then the Canadian Experience Class is closed to you, because IRCC’s who-can-apply page says it needs Canadian work experience. That leaves the Federal Skilled Worker Program, which accepts foreign work experience, or Federal Skilled Trades if you are qualified in a trade.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: who can apply (page details 2026-10-16)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply.html',
+    checked: '2026-11-23',
+    note: 'IRCC: CEC \'For skilled workers with eligible Canadian work experience\'; FSW \'with eligible foreign or Canadian work experience\'; FST \'qualified in a skilled trade\'.',
+  },
+  caPnpProvinceSoleAssessment: {
+    id: 'ca.pnp.ee-or-pnp.irpr-87-3',
+    claim:
+      'The province decides whether to nominate you, and under section 87(3) of the Immigration and Refugee Protection Regulations it alone assesses two things. They are your ability to become economically established in Canada, and your intention to live in that province.',
+    provenance: 'primary',
+    source: 'Justice Laws, Immigration and Refugee Protection Regulations, s. 87(3) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-87.html',
+    checked: '2026-11-23',
+  },
+  caPnpOfficersNoRedo: {
+    id: 'ca.pnp.ee-or-pnp.officers-30-march',
+    claim:
+      'IRCC’s instructions to its officers say that since 30 March 2026, officers cannot redo that assessment.',
+    provenance: 'primary',
+    source: 'IRCC, Provincial Nominee Program: determining membership in the provincial nominee class (page details 2026-04-17)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/permanent-residence/economic-classes/provincial-nominees/base-determining-membership-class.html',
+    checked: '2026-11-23',
+    note: 'Page: regulatory changes take effect on 30 March 2026; \'Officers do not have the authority to conduct a separate assessment.\'',
+  },
+  caPnpIrccAdmissibility: {
+    id: 'ca.pnp.ee-or-pnp.ircc-decides',
+    claim:
+      'IRCC still decides on permanent residence: it assesses whether you are admissible to Canada. If the province revokes your nomination, IRCC refuses the application.',
+    provenance: 'primary',
+    source: 'IRCC, Provincial Nominee Program: determining membership in the provincial nominee class (page details 2026-04-17)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/permanent-residence/economic-classes/provincial-nominees/base-determining-membership-class.html',
+    checked: '2026-11-23',
+    note: '\'IRCC is responsible for assessing whether the candidate is admissible to Canada.\' \'If the nomination is revoked, IRCC will refuse based on subsection R87(2).\'',
+  },
+  caMbNoGuarantee: {
+    id: 'ca.pnp.ee-or-pnp.mb-no-guarantee',
+    claim:
+      'Manitoba warns that even an invitation to apply guarantees neither a provincial approval nor approval of the separate federal application.',
+    provenance: 'primary',
+    source: 'Immigrate Manitoba, Eligibility – Skilled Worker Overseas (modified 22 May 2026)',
+    sourceUrl: 'https://immigratemanitoba.com/mpnp/skilled-worker/swo/eligibility/',
+    checked: '2026-11-23',
+    note: 'Said of Manitoba\'s recruitment missions and exploratory visits: neither they \'nor an Invitation to Apply\' guarantee approval of the MPNP application or of the nominee\'s \'separate permanent resident visa application to the Government of Canada\'.',
+  },
+  caPnpIntentionBasis: {
+    id: 'ca.pnp.ee-or-pnp.irpr-87-2c',
+    claim:
+      'Under section 87(2)(c), a nomination rests on your ability to become economically established and your intention to live in that province.',
+    provenance: 'primary',
+    source: 'Justice Laws, Immigration and Refugee Protection Regulations, s. 87(2)(c) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-87.html',
+    checked: '2026-11-23',
+  },
+  caPnpProvinceNeeds: {
+    id: 'ca.pnp.ee-or-pnp.province-needs',
+    claim:
+      'IRCC’s base-stream eligibility page adds that provinces weigh their own immigration needs.',
+    provenance: 'primary',
+    source: 'IRCC, Provincial Nominee Program, non-Express Entry process: who can apply (page details 2026-06-05)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/non-express-entry/eligibility.html',
+    checked: '2026-11-23',
+    note: 'The page says the province considers whether you really plan to live there, its immigration needs, and whether you meet the stream\'s minimum requirements.',
+  },
+  caMbSwoConnection: {
+    id: 'ca.pnp.ee-or-pnp.mb-swo-connection',
+    claim:
+      'Manitoba, Skilled Worker Overseas: you need family or friends settled in Manitoba, past study or work there, or an invitation from its recruitment initiatives. Manitoba’s eligibility page says that without one, you cannot apply, whatever your points.',
+    provenance: 'primary',
+    source: 'Immigrate Manitoba, Eligibility – Skilled Worker Overseas (modified 22 May 2026)',
+    sourceUrl: 'https://immigratemanitoba.com/mpnp/skilled-worker/swo/eligibility/',
+    checked: '2026-11-23',
+    note: '\'If you do not have a connection to Manitoba, you are not eligible to apply under SWO, regardless of your points total.\' The 60-point minimum is left out (web page only).',
+  },
+  caBcJobOffer: {
+    id: 'ca.pnp.ee-or-pnp.bc-job-offer',
+    claim:
+      'British Columbia, Skilled Worker and Health Authority streams: both need a full-time job offer with no end date, from an eligible B.C. employer or a B.C. health authority. WelcomeBC says your employer must back your application.',
+    provenance: 'primary',
+    source: 'WelcomeBC, For workers (last updated 28 May 2026)',
+    sourceUrl: 'https://www.welcomebc.ca/immigrate-to-b-c/for-workers',
+    checked: '2026-11-23',
+    note: '\'Full-time, indeterminate (no end date) job offer\'; employer support and an Employer Declaration Form are required. BC PNP fees on the page are left out.',
+  },
+  caBcEebcOption: {
+    id: 'ca.pnp.ee-or-pnp.bc-eebc',
+    claim:
+      'Both B.C. streams also have an Express Entry BC option for people already in the federal pool. WelcomeBC says a nomination through it gives your federal profile more points, and may speed up federal processing.',
+    provenance: 'primary',
+    source: 'WelcomeBC, For workers (last updated 28 May 2026)',
+    sourceUrl: 'https://www.welcomebc.ca/immigrate-to-b-c/for-workers',
+    checked: '2026-11-23',
+    note: 'The follow-on sentence (\'one stream can lead to either kind of nomination\') is our inference from the option being optional.',
+  },
+  caEeRounds2026Targeted: {
+    id: 'ca.pnp.ee-or-pnp.rounds-2026-targeted',
+    claim:
+      'IRCC’s data shows 65 rounds up to 28 October, and none was open to the whole pool. Each invited one group, such as Canadian Experience Class candidates, provincial nominees, French speakers or a named occupation.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry rounds of invitations data (ee_rounds_123_en.json), rounds #389 (5 January 2026) to #453 (28 October 2026)',
+    sourceUrl: 'https://www.canada.ca/content/dam/ircc/documents/json/ee_rounds_123_en.json',
+    checked: '2026-11-23',
+    note: 'Official statistics. 2026 round types: Provincial Nominee Program, Canadian Experience Class, French-language proficiency, Healthcare and Social Services, Trades, Transport, Senior managers and Physicians with Canadian work experience, Skilled Military Recruits. No general round.',
+  },
+  caPnpNotificationOfInterest: {
+    id: 'ca.pnp.ee-or-pnp.noi',
+    claim:
+      'While you wait, you can mark interest in one province or all of them in your profile. IRCC’s nomination page says provinces can then search the pool and send a notification of interest, which is not a nomination.',
+    provenance: 'primary',
+    source: 'IRCC, Provincial Nominee Program, Express Entry process: get or confirm a nomination (page details 2026-03-24)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/express-entry/get-confirm-nomination.html',
+    checked: '2026-11-23',
+  },
+  caPnpProcessingTool: {
+    id: 'ca.pnp.ee-or-pnp.processing-tool',
+    claim:
+      'IRCC’s processing-times tool lists provincial nominees with and without Express Entry separately.',
+    provenance: 'primary',
+    source: 'IRCC, Check processing times (page details 2026-11-13)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html',
+    checked: '2026-11-23',
+    note: 'Economic immigration > Provincial Nominees > \'Online via Express Entry?\' yes/no. No times printed.',
+  },
+  caPnpTimesMayRise: {
+    id: 'ca.pnp.ee-or-pnp.times-may-rise',
+    claim:
+      'IRCC’s provincial nominee page says times may rise when more people apply than there are places.',
+    provenance: 'primary',
+    source: 'IRCC, Immigrate as a provincial nominee (page details 2026-09-14)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html',
+    checked: '2026-11-23',
+    note: '\'If there are more people applying than available spaces, processing times may increase.\' The page\'s own processing-time widget failed to load; nothing was printed from it.',
+  },
+  caEeRoundsHow: {
+    id: 'ca.pnp.ee-or-pnp.table-ee-alone',
+    claim:
+      'Express Entry alone: IRCC ranks the pool, invites, and decides your application. You need one of the three Express Entry programmes, and a score that reaches a round you are eligible for. You apply through an Express Entry profile, then an online application in your IRCC account.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry rounds of invitations (page details 2026-10-16); IRCC, PNP Express Entry process: apply for permanent residence (page details 2026-03-24)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html',
+    checked: '2026-11-23',
+    note: 'Rounds page: IRCC selects the highest-ranking eligible candidates; \'You must be eligible for 1 of the 3 programs managed through Express Entry to be placed in the pool.\' The online IRCC-account application is from the PNP Express Entry apply page.',
+  },
+  caPnpTableEnhancedWhere: {
+    id: 'ca.pnp.ee-or-pnp.table-enhanced',
+    claim:
+      'Enhanced PNP: the province nominates; IRCC invites and decides your application. You apply with the province, directly or after its notification of interest; then through Express Entry.',
+    provenance: 'primary',
+    source: 'IRCC, Provincial Nominee Program, Express Entry process: get or confirm a nomination (page details 2026-03-24)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/express-entry/get-confirm-nomination.html',
+    checked: '2026-11-23',
+  },
+  eeOrPnpFstNeedsOfferOrCertificate: {
+    id: 'ca.ee-or-pnp.fst-offer-or-certificate',
+    claim:
+      'The Federal Skilled Trades Program needs a one-year full-time job offer or a certificate of qualification issued by a Canadian provincial, territorial or federal authority.',
+    provenance: 'primary',
+    source: 'IRCC, Federal Skilled Trades Program (modified 18 November 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-trades.html',
+    checked: '2026-11-23',
+  },
+  nursesLicenceSeparateFromEca: {
+    id: 'nurses.tracks.ecaNoLicence',
+    claim:
+      'An assessment of your degree (ECA) does not guarantee a licence; for a regulated job, you must get the licence in the province or territory where you settle.',
+    provenance: 'primary',
+    source: 'IRCC, Educational credential assessment for Express Entry (page details 2026-10-16)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessment.html',
+    checked: '2026-11-23',
+  },
+  nursingProvincialRegulation: {
+    id: 'nurses.tracks.provincial',
+    claim:
+      'Each province regulates nursing.',
+    provenance: 'primary',
+    source: 'NNAS, Provincial resources',
+    sourceUrl: 'https://www.nnas.ca/provincial-resources/',
+    checked: '2026-11-23',
+    note: 'The page says: “Nursing regulation is a provincial responsibility.”',
+  },
+  cnoAuthorizationToWork: {
+    id: 'nurses.cno.authToWork',
+    claim:
+      'CNO asks for proof of citizenship, permanent residence or a permit that lets you practise nursing in Ontario; without one, CNO can register you on condition that you do not practise until you provide it.',
+    provenance: 'primary',
+    source: 'College of Nurses of Ontario, Authorization to work (modified 2026-06-03)',
+    sourceUrl: 'https://www.cno.org/become-a-nurse/registration-requirements/authorization-to-work',
+    checked: '2026-11-23',
+  },
+  nnasStartWithImmigration: {
+    id: 'nurses.nnas.startEarly',
+    claim:
+      'NNAS advises starting its process before, or at the same time as, your immigration process.',
+    provenance: 'primary',
+    source: 'NNAS, Application process and timeline',
+    sourceUrl: 'https://www.nnas.ca/application-process-timeline/',
+    checked: '2026-11-23',
+  },
+  nnasRoleAndCoverage: {
+    id: 'nurses.nnas.coverage',
+    claim:
+      'NNAS collects and verifies nursing documents and sends an Advisory Report to the regulators you choose; it does not grant licences or decide them; its reports are accepted by every nursing regulator in Canada except those in Québec and the territories.',
+    provenance: 'primary',
+    source: 'NNAS, Our role in Canadian healthcare (modified 2026-05-06)',
+    sourceUrl: 'https://www.nnas.ca/our-role-in-canadian-healthcare/',
+    checked: '2026-11-23',
+    note: 'Quebec is described only from this statement; the OIIQ site blocked automated access on 23 November 2026.',
+  },
+  nnasExpeditedService: {
+    id: 'nurses.nnas.expedited',
+    claim:
+      'The Expedited Service starts registered and licensed practical nursing in one application; you qualify if you completed college or university nursing education abroad and have been licensed as a nurse outside Canada; it asks for a course-by-course report from an IRCC-designated body, such as WES, ICAS or ICES.',
+    provenance: 'primary',
+    source: 'NNAS, Expedited Service (modified 2026-09-11)',
+    sourceUrl: 'https://www.nnas.ca/expedited-service/',
+    checked: '2026-11-23',
+    note: 'NNAS lists CES, ICAS, ICES and WES. Its fee is on the page but not printed (not set in law).',
+  },
+  cnoEcaProviders: {
+    id: 'nurses.cno.ecaProviders',
+    claim:
+      'CNO verifies education through WES, ICAS or ICES, and says it still accepts NNAS expedited reports.',
+    provenance: 'primary',
+    source: 'College of Nurses of Ontario, Approved educational credential assessment service providers (modified 2026-06-02)',
+    sourceUrl: 'https://www.cno.org/become-a-nurse/approved-educational-credential-assessment-service-providers',
+    checked: '2026-11-23',
+    note: 'CNO: “CNO will continue to accept National Nursing Assessment Services (NNAS) expedited reports prepared by the Commission on Graduates of Foreign Nursing Schools (CGFNS) — now known as TruMerit.”',
+  },
+  inspireEducationReport: {
+    id: 'nurses.bc.inspireEducation',
+    claim:
+      'British Columbia uses Inspire Global Assessments, which accepts an education report from WES, ICAS, ICES, CES or NNAS.',
+    provenance: 'primary',
+    source: 'Inspire Global Assessments, The steps to take to apply to practice as a nurse in British Columbia',
+    sourceUrl: 'https://www.inspireassessments.org/british-columbia/',
+    checked: '2026-11-23',
+  },
+  wesEcaVsLicensingReport: {
+    id: 'nurses.wes.separateReports',
+    claim:
+      'A licensing report is not your immigration ECA, which IRCC says must be “for immigration purposes”; WES’s instructions for Ontario nurses treat its ECA for IRCC and its licensing report as separate reports.',
+    provenance: 'primary',
+    source: 'World Education Services, Instructions for candidates for registration with the College of Nurses of Ontario',
+    sourceUrl: 'https://www.wes.org/evaluations-and-fees/education/instructions-for-the-candidates-for-registration-with-the-college-of-nurses-of-ontario/',
+    checked: '2026-11-23',
+    note: 'IRCC’s ECA page (2026-10-16): “You need to get an ECA for immigration purposes.” WES asks an ECA holder to upgrade to a Document-by-Document report with “Licensing” as the purpose.',
+  },
+  nnasThirdPartyLicence: {
+    id: 'nurses.nnas.licenceVerification',
+    claim:
+      'Most NNAS documents must reach it from third parties; for the Expedited Service, the authorities that issued your first and current nursing licences complete NNAS’s form and send it directly.',
+    provenance: 'primary',
+    source: 'NNAS, Important documents (modified 2026-08-04)',
+    sourceUrl: 'https://www.nnas.ca/documents/',
+    checked: '2026-11-23',
+  },
+  nnasMidwifeFirstLicence: {
+    id: 'nurses.nnas.midwife',
+    claim:
+      'If you were licensed as a midwife before you were licensed as a nurse, your first licence is the nursing one.',
+    provenance: 'primary',
+    source: 'NNAS, Important documents (modified 2026-08-04)',
+    sourceUrl: 'https://www.nnas.ca/documents/',
+    checked: '2026-11-23',
+  },
+  pnmcLicensing: {
+    id: 'nurses.pnmc.licensing',
+    claim:
+      'In Pakistan, the Pakistan Nursing and Midwifery Council (PNMC) registers and licenses nurses to practise.',
+    provenance: 'primary',
+    source: 'Pakistan Nursing & Midwifery Council, Home (modified 2026-07-14)',
+    sourceUrl: 'https://pnmc.gov.pk/',
+    checked: '2026-11-23',
+    note: 'PNMC: “PNMC provides registration and licensing to practice.”',
+  },
+  pnmcVerificationForeign: {
+    id: 'nurses.pnmc.verification',
+    claim:
+      'PNMC offers a Verification of Registration or Good Standing Certificate for foreign regulators; it asks for its application form and fee, the receiving regulator’s form or full address, and copies of your registration card and all your nursing, midwifery and LHV diplomas and degrees.',
+    provenance: 'primary',
+    source: 'Pakistan Nursing & Midwifery Council, Verification of Registration/Good Standing Certificate (modified 2026-01-27)',
+    sourceUrl: 'https://pnmc.gov.pk/verification-registration-2/',
+    checked: '2026-11-23',
+    note: 'Fee amount not printed (web page only). PNMC also lists post-basic diplomas.',
+  },
+  regulatorsDirectFromSource: {
+    id: 'nurses.regulators.directSource',
+    claim:
+      'CNO and BCCNM want employer and regulator forms sent straight from the source.',
+    provenance: 'primary',
+    source: 'College of Nurses of Ontario, Registration guide: outside Canada (modified 2026-06-24)',
+    sourceUrl: 'https://www.cno.org/become-a-nurse/registration-guides/outside-canada',
+    checked: '2026-11-23',
+    note: 'BCCNM’s internationally educated nurses page: “Forms must be sent to BCCNM directly from the employer or regulator.”',
+  },
+  cnoRequirements: {
+    id: 'nurses.cno.requirements',
+    claim:
+      'CNO’s guide lists nursing education, recent practice, a registration exam, transition to practice, a jurisprudence exam, English or French, and authorisation to work; you also declare past offences, health and conduct, and submit a police criminal record check.',
+    provenance: 'primary',
+    source: 'College of Nurses of Ontario, Registration guide: outside Canada (modified 2026-06-24)',
+    sourceUrl: 'https://www.cno.org/become-a-nurse/registration-guides/outside-canada',
+    checked: '2026-11-23',
+  },
+  cnoExams: {
+    id: 'nurses.cno.exams',
+    claim:
+      'Registered nurses sit the NCLEX-RN and practical nurses the REx-PN.',
+    provenance: 'primary',
+    source: 'College of Nurses of Ontario, Registration guide: outside Canada (modified 2026-06-24)',
+    sourceUrl: 'https://www.cno.org/become-a-nurse/registration-guides/outside-canada',
+    checked: '2026-11-23',
+    note: 'BCCNM names the same two exams.',
+  },
+  cnoEducationLevel: {
+    id: 'nurses.cno.educationLevel',
+    claim:
+      'RN education must meet a nursing baccalaureate, and practical nursing a diploma.',
+    provenance: 'primary',
+    source: 'College of Nurses of Ontario, Next steps: RN in the General Class (internationally educated nurse)',
+    sourceUrl: 'https://cno.org/become-a-nurse/next-steps/next-steps-rn-in-the-general-class-internationally-educated-nurse',
+    checked: '2026-11-23',
+  },
+  rpnTerminology: {
+    id: 'nurses.noc.rpn',
+    claim:
+      'In Ontario, RPN means registered practical nurse, NOC 32101; in Manitoba, Saskatchewan, Alberta and British Columbia it can mean registered psychiatric nurse, part of NOC 31301.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit groups 31301 and 32101',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=31301&version=2021.0',
+    checked: '2026-11-23',
+    note: 'NOC 31301: nurses trained exclusively as registered psychiatric nurses are regulated in Manitoba, Saskatchewan, Alberta and British Columbia; registered practical nurse (R.P.N.) is in 32101. CNO: RPN “also known as a Licensed Practical Nurse (LPN)”.',
+  },
+  bccnmProcess: {
+    id: 'nurses.bccnm.process',
+    claim:
+      'BCCNM recommends applying to Inspire and BCCNM at the same time; Inspire checks your identity, English, education and nursing competence; BCCNM assesses most nurses for LPN and RN licensure together, and says extra education will likely be needed before the exam.',
+    provenance: 'primary',
+    source: 'British Columbia College of Nurses and Midwives, Internationally educated nurses (RN)',
+    sourceUrl: 'https://www.bccnm.ca/RN/applications_registration/how_to_apply/InternationalEN/Pages/Default.aspx',
+    checked: '2026-11-23',
+  },
+  inspireVancouverVisa: {
+    id: 'nurses.bc.inspireVisa',
+    claim:
+      'Inspire warns that you may have to come to Vancouver for an in-person assessment, and must arrange any visa yourself.',
+    provenance: 'primary',
+    source: 'Inspire Global Assessments, The steps to take to apply to practice as a nurse in British Columbia',
+    sourceUrl: 'https://www.inspireassessments.org/british-columbia/',
+    checked: '2026-11-23',
+  },
+  pakistanVisitorVisa: {
+    id: 'canada.entry.pakistanVisa',
+    claim:
+      'Pakistani citizens need a visitor visa to visit Canada.',
+    provenance: 'primary',
+    source: 'IRCC, Entry requirements by country or territory (page details 2026-07-31)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/entry-requirements-country.html',
+    checked: '2026-11-23',
+    note: 'Pakistan is on the visa-required list.',
+  },
+  applyYourself: {
+    id: 'nurses.regulators.applyYourself',
+    claim:
+      'CNO and BCCNM both say you must make the application yourself; BCCNM warns against agencies offering to complete BCCNM or Inspire applications for a fee.',
+    provenance: 'primary',
+    source: 'British Columbia College of Nurses and Midwives, Internationally educated nurses (RN)',
+    sourceUrl: 'https://www.bccnm.ca/RN/applications_registration/how_to_apply/InternationalEN/Pages/Default.aspx',
+    checked: '2026-11-23',
+    note: 'CNO (registration guide): “You must complete and submit the application to CNO yourself.”',
+  },
+  irccLanguageTests: {
+    id: 'ee.language.tests',
+    claim:
+      'IRCC accepts IELTS General Training, PTE Core, CELPIP-General, TEF Canada and TCF Canada for Express Entry, not IELTS Academic or PTE Academic.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: Language tests (page details 2026-10-16)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html',
+    checked: '2026-11-23',
+    note: 'CELBAN and OET are not on IRCC’s list.',
+  },
+  cnoLanguageTests: {
+    id: 'nurses.cno.languageTests',
+    claim:
+      'CNO accepts CELBAN, IELTS General Training and Academic, OET, PTE Academic, TEF and TCF; CELPIP and PTE Core are not listed; a test taken for immigration must still meet CNO’s own benchmark, which may differ.',
+    provenance: 'primary',
+    source: 'College of Nurses of Ontario, Proficiency in English or French (modified 2026-06-04)',
+    sourceUrl: 'https://www.cno.org/become-a-nurse/registration-requirements/proficiency-in-english-or-french',
+    checked: '2026-11-23',
+    note: 'CNO says it accepts IRPA-approved tests once it sets benchmarks for them. Benchmark scores not printed (not set in law).',
+  },
+  inspireLanguageTests: {
+    id: 'nurses.bc.inspireTests',
+    claim:
+      'Inspire accepts IELTS Academic, CELBAN, PTE Academic and OET, and takes IELTS or PTE only in their Academic versions.',
+    provenance: 'primary',
+    source: 'Inspire Global Assessments, English language proficiency documents',
+    sourceUrl: 'https://www.inspireassessments.org/assessments/english-language-proficiency-documents/',
+    checked: '2026-11-23',
+    note: 'BCCNM’s own English proficiency page lists the same four tests and says internationally educated nurses submit evidence to Inspire.',
+  },
+  healthcareCategoryNursingCodes: {
+    id: 'ee.categories.healthcareNursing',
+    claim:
+      'On 23 November 2026, IRCC’s Healthcare and social services occupations category included 31301 Registered nurses and registered psychiatric nurses (TEER 1), 31302 Nurse practitioners (TEER 1), 31300 Nursing coordinators and supervisors (TEER 1), 32101 Licensed practical nurses (TEER 2) and 33102 Nurse aides, orderlies and patient service associates (TEER 3).',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: Category-based selection (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations/category-based-selection.html',
+    checked: '2026-11-23',
+    note: 'Titles and TEER also checked on each code’s NOC 2021 page. Re-check monthly.',
+  },
+  healthcareRoundRule2026: {
+    id: 'ee.rounds.healthcare2026Rule',
+    claim:
+      'The instructions for each 2026 healthcare round required at least one year of full-time work, or the part-time equivalent, in one listed occupation, within the previous three years.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions respecting invitations to apply, rounds #398, #422 and #441 (Healthcare and Social Services Occupations, 2026-Version 3)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=441',
+    checked: '2026-11-23',
+    note: 'Section 3 of each instruction, identical in all three; it also requires the lead statement and a substantial number of main duties, including all essential duties. Read from IRCC’s ee_rounds_4_en.json, which feeds the instruction pages.',
+  },
+  healthcareWorkAbroad: {
+    id: 'ee.categories.healthcareAbroad',
+    claim:
+      'IRCC’s category page says that work can be in Canada or abroad.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: Category-based selection (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations/category-based-selection.html',
+    checked: '2026-11-23',
+  },
+  healthcareRounds2026: {
+    id: 'ee.rounds.healthcare2026',
+    claim:
+      'Three healthcare rounds in 2026, each open to Federal Skilled Worker, Canadian Experience Class and Federal Skilled Trades candidates: 20 February 2026 (#398), 4,000 invitations, lowest score 467; 25 June 2026 (#422), 4,000, 475; 4 September 2026 (#441), 3,500, 475.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry rounds of invitations (official rounds data)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds.html',
+    checked: '2026-11-23',
+    note: 'Read from IRCC’s ee_rounds_123_en.json on 23 November 2026; the latest round of any type was #453 on 28 October 2026. Invitation numbers are also set in s. 8 of each round’s instructions.',
+  },
+  crsChange3November: {
+    id: 'ee.crs.change3Nov',
+    claim:
+      'Those scores were set under the points in force before IRCC’s 3 November 2026 change.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions respecting the Express Entry system, current (signed 17 November 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+    note: 'The current instructions show provisions repealed on November 3, 2026.',
+  },
+  albertaDedicatedHealthCare: {
+    id: 'pnp.alberta.healthCare',
+    claim:
+      'Alberta’s Dedicated Health Care Pathway lists registered and licensed practical nurses; it needs a job offer from an Alberta health-sector employer, and proof that you meet the regulator’s minimum requirements to practise; it has an Express Entry option.',
+    provenance: 'primary',
+    source: 'Government of Alberta, AAIP Dedicated Health Care Pathway',
+    sourceUrl: 'https://www.alberta.ca/dedicated-health-care-pathway',
+    checked: '2026-11-23',
+    note: 'Score and language thresholds on the page not printed (provincial web page only).',
+  },
+  bcHealthAuthorityStream: {
+    id: 'pnp.bc.healthAuthority',
+    claim:
+      'British Columbia’s Health Authority stream needs a full-time, indeterminate job offer from a B.C. health authority, and has an Express Entry option.',
+    provenance: 'primary',
+    source: 'WelcomeBC, Skills Immigration (last updated 28 May 2026)',
+    sourceUrl: 'https://www.welcomebc.ca/immigrate-to-b-c/skills-immigration',
+    checked: '2026-11-23',
+  },
+  bcHealthAuthorityNursingCodes: {
+    id: 'pnp.bc.healthAuthorityCodes',
+    claim:
+      'The Health Authority stream’s eligible occupations include 31300, 31301, 31302, 32101 and 33102.',
+    provenance: 'primary',
+    source: 'WelcomeBC, The BC Provincial Nominee Program (last updated 17 June 2026)',
+    sourceUrl: 'https://www.welcomebc.ca/immigrate-to-b-c/about-the-bc-provincial-nominee-program/the-bc-provincial-nominee-program',
+    checked: '2026-11-23',
+    note: 'Footnote: a 33102 job offer requires registration with the BC Care Aide & Community Health Worker Registry.',
+  },
+  nursesNnasCesWindDown: {
+    id: 'ca.nurses.nnas-ces-wind-down',
+    claim:
+      'NNAS says CES is winding down and that it is working on an alternative for affected applicants.',
+    provenance: 'primary',
+    source: 'NNAS, Update for applicants: CES wind-down and your NNAS application',
+    sourceUrl: 'https://www.nnas.ca/news/update-for-applicants-ces-wind-down-and-your-nnas-application/',
+    checked: '2026-11-23',
+  },
+  caDoctorsEeHealthcareAbroad: {
+    id: 'ca.doctors.ee-healthcare-abroad',
+    claim:
+      'On 23 November 2026 its Express Entry healthcare category counted doctors’ work done outside Canada.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: Category-based selection (page details 2026-11-18), healthcare and social services eligibility',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations/category-based-selection.html',
+    checked: '2026-11-23',
+    note: 'The page says the 12 months may be gained “in Canada or abroad”. Opening paragraph.',
+  },
+  caDoctorsLicenceFirst: {
+    id: 'ca.doctors.licence-first',
+    claim:
+      'IRCC’s page for medical doctors says you must first have your credentials assessed and be licensed by a provincial or territorial regulator.',
+    provenance: 'primary',
+    source: 'IRCC, Live and work as a medical doctor in Canada (page details 2026-10-19)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/medical-doctors.html',
+    checked: '2026-11-23',
+  },
+  caDoctorsLicensingProvincial: {
+    id: 'ca.doctors.licensing-provincial',
+    claim:
+      'Its December 2025 announcement adds that credential recognition and licensing are each province’s responsibility.',
+    provenance: 'primary',
+    source: 'IRCC, Targeted immigration measures to boost Canada’s supply of doctors (news release, 8 December 2025), quick facts',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/news/2025/12/targeted-immigration-measures-to-boost-canadas-supply-of-doctors.html',
+    checked: '2026-11-23',
+    note: 'The release says “each province and territory”.',
+  },
+  caMccEcaNoPractice: {
+    id: 'ca.mcc.eca-no-practice',
+    claim:
+      'MCC says its credential report for immigration does not give you the right to practise either.',
+    provenance: 'primary',
+    source: 'Medical Council of Canada, Educational Credential Assessment',
+    sourceUrl: 'https://mcc.ca/credentials-and-services/services/educational-credential-assessment/',
+    checked: '2026-11-23',
+  },
+  caCarmsCitizenship: {
+    id: 'ca.carms.citizenship',
+    claim:
+      'CaRMS, which matches doctors to residency posts, requires Canadian citizenship or PR, with some exceptions.',
+    provenance: 'primary',
+    source: 'CaRMS, R-1 Main Residency Match eligibility criteria, “I am an International Medical Graduate (IMG)” tab',
+    sourceUrl: 'https://www.carms.ca/match/r-1-main-residency-match/eligibility-criteria/',
+    checked: '2026-11-23',
+  },
+  caMccStatusForPra: {
+    id: 'ca.mcc.status-for-pra',
+    claim:
+      'MCC’s pre-arrival guidance says a valid immigration status is also needed for some practice-ready routes.',
+    provenance: 'primary',
+    source: 'Medical Council of Canada, Supporting internationally trained physicians before arrival in Canada (May 2025)',
+    sourceUrl: 'https://mcc.ca/credentials-and-services/pathways-to-licensure/pathways-for-international-medical-graduates/supporting-itps-before-arrival-in-canada/',
+    checked: '2026-11-23',
+    note: 'The page says valid status is required for CaRMS and some PRA routes.',
+  },
+  caMccAcceptableSchool: {
+    id: 'ca.mcc.acceptable-school',
+    claim:
+      'MCC’s acceptable schools page accepts an international degree only from a school in the World Directory of Medical Schools with a Canada sponsor note. Your graduation date must fall within the years the sponsor note gives. The degree title must also be in the Reference Guide for Medical Education Credentials.',
+    provenance: 'primary',
+    source: 'Medical Council of Canada, Acceptable medical schools and medical degrees',
+    sourceUrl: 'https://mcc.ca/credentials-and-services/pathways-to-licensure/acceptable-medical-schools-and-medical-degrees/',
+    checked: '2026-11-23',
+    note: 'The MCC page names the "ECFMG Sponsor Note" for the graduation-year range and the Canada Sponsor Note for acceptability; the post says "the sponsor note" to cover both. MCCQE eligibility and LMCC pages repeat the Canada sponsor note rule.',
+  },
+  wdomsSearchPakistan: {
+    id: 'intl.wdoms.search-pakistan',
+    claim:
+      'The directory’s search lets you choose Pakistan and type your college’s name. It warns that a listing alone does not mean recognition.',
+    provenance: 'primary',
+    source: 'World Directory of Medical Schools, Search page (WFME and FAIMER)',
+    sourceUrl: 'https://search.wdoms.org/',
+    checked: '2026-11-23',
+  },
+  caMccSourceVerification: {
+    id: 'ca.mcc.source-verification',
+    claim:
+      'MCC’s services and exams run through a physiciansapply.ca account. The first step is a source verification request for your degree. MCC and ECFMG, a division of Intealth, send it to the institution that issued it, which must confirm it is genuine.',
+    provenance: 'primary',
+    source: 'Medical Council of Canada, Verification of credentials; Pathways for international medical graduates (last updated 21 July 2026)',
+    sourceUrl: 'https://mcc.ca/credentials-and-services/services/verification-of-credentials/',
+    checked: '2026-11-23',
+  },
+  caMccSvrTiming: {
+    id: 'ca.mcc.svr-timing',
+    claim:
+      'MCC says response times vary and cannot be guaranteed, so it advises applying early and following up with the institution yourself.',
+    provenance: 'primary',
+    source: 'Medical Council of Canada, Verification of credentials',
+    sourceUrl: 'https://mcc.ca/credentials-and-services/services/verification-of-credentials/',
+    checked: '2026-11-23',
+    note: 'The page gives indicative durations; none is printed.',
+  },
+  caMccOntarioCpso: {
+    id: 'ca.mcc.ontario-cpso',
+    claim:
+      'If you plan to practise only in Ontario, MCC says to ask Ontario’s college, the CPSO, for verification instead.',
+    provenance: 'primary',
+    source: 'Medical Council of Canada, Verification of credentials; Pathways for international medical graduates',
+    sourceUrl: 'https://mcc.ca/credentials-and-services/services/verification-of-credentials/',
+    checked: '2026-11-23',
+    note: 'CPSO’s own pages were behind a Cloudflare bot check on 23 November 2026 and were not read.',
+  },
+  caMccqeApply: {
+    id: 'ca.mcc.mccqe-apply',
+    claim:
+      'Once that request is submitted and paid for, you can apply for the MCCQE, formerly the MCCQE Part I.',
+    provenance: 'primary',
+    source: 'Medical Council of Canada, MCCQE eligibility and application (“Applying as an international medical graduate”)',
+    sourceUrl: 'https://mcc.ca/examinations-assessments/mccqe/eligibility-and-application/',
+    checked: '2026-11-23',
+  },
+  caMccqeDelivery: {
+    id: 'ca.mcc.mccqe-delivery',
+    claim:
+      'It is a computer-based exam at Prometric test centres in Canada and abroad, and MCC limits the number of attempts.',
+    provenance: 'primary',
+    source: 'Medical Council of Canada, MCCQE; MCCQE eligibility and application',
+    sourceUrl: 'https://mcc.ca/examinations-assessments/mccqe/',
+    checked: '2026-11-23',
+    note: 'The attempt limit and the number of countries are on MCC’s pages only and are not printed.',
+  },
+  caLmcc2026: {
+    id: 'ca.mcc.lmcc-2026',
+    claim:
+      'Since 26 January 2026, a pass and a source-verified degree are the main conditions for the LMCC.',
+    provenance: 'primary',
+    source: 'Medical Council of Canada, LMCC (eligibility criteria as of 26 January 2026)',
+    sourceUrl: 'https://mcc.ca/credentials-and-services/pathways-to-licensure/lmcc/',
+    checked: '2026-11-23',
+    note: 'The other conditions are an acceptable school and payment of any LMCC fee.',
+  },
+  caMccPayment: {
+    id: 'ca.mcc.payment',
+    claim:
+      'MCC charges in Canadian dollars and takes Visa or MasterCard credit cards, including prepaid ones, but not debit cards.',
+    provenance: 'primary',
+    source: 'Medical Council of Canada, Examination and service fees',
+    sourceUrl: 'https://mcc.ca/fees/',
+    checked: '2026-11-23',
+    note: 'Fee amounts are not printed.',
+  },
+  caImgRouteCarms: {
+    id: 'ca.img.route-carms',
+    claim:
+      'CaRMS residency match: graduates without postgraduate training, or trained abroad and willing to retrain. Usually needs passes in the NAC exam and the MCCQE, and Canadian citizenship or PR. British Columbia, Alberta and Quebec need a provincial assessment first.',
+    provenance: 'primary',
+    source: 'Medical Council of Canada, Pathways for international medical graduates; CaRMS, R-1 eligibility criteria (IMG)',
+    sourceUrl: 'https://mcc.ca/credentials-and-services/pathways-to-licensure/pathways-for-international-medical-graduates/',
+    checked: '2026-11-23',
+    note: 'CaRMS says some provinces allow exceptions to either exam and some exceptions apply to the citizenship rule.',
+  },
+  caImgRoutePra: {
+    id: 'ca.img.route-pra',
+    claim:
+      'Practice-Ready Assessment: doctors who finished residency and practised independently abroad. A supervised clinical assessment run by a province. Those who pass sign a return-of-service agreement to work in an area of need in that province.',
+    provenance: 'primary',
+    source: 'Medical Council of Canada, Pathways for international medical graduates; Practice-Ready Assessment',
+    sourceUrl: 'https://mcc.ca/examinations-assessments/practice-ready-assessment/',
+    checked: '2026-11-23',
+    note: 'The assessment length on MCC’s pages is not printed.',
+  },
+  caImgRoutePer: {
+    id: 'ca.img.route-per',
+    claim:
+      'Practice Eligibility Route: specialists who finished postgraduate training abroad in a recognised primary specialty. MCC links to the Royal College of Physicians and Surgeons of Canada for the details.',
+    provenance: 'primary',
+    source: 'Medical Council of Canada, Pathways for international medical graduates',
+    sourceUrl: 'https://mcc.ca/credentials-and-services/pathways-to-licensure/pathways-for-international-medical-graduates/',
+    checked: '2026-11-23',
+  },
+  caImgRouteAjr: {
+    id: 'ca.img.route-ajr',
+    claim:
+      'Approved jurisdictions: doctors trained in jurisdictions deemed substantially equivalent to Canada. Pakistan was not on the Royal College’s list on 23 November 2026. The training must be completed in the approved country.',
+    provenance: 'primary',
+    source: 'Medical Council of Canada, Pathways for international medical graduates; Royal College of Physicians and Surgeons of Canada, Approved jurisdictions',
+    sourceUrl: 'https://www.royalcollege.ca/en/eligibility-and-exams/exam-eligibility/approved-jurisdiction-route/approved-jurisdictions.html',
+    checked: '2026-11-23',
+    note: 'The Royal College list covered Australia and New Zealand, Hong Kong, Singapore, South Africa, Switzerland, and the United Kingdom and Ireland. CFPC’s list was not checked.',
+  },
+  caPraProvinces: {
+    id: 'ca.img.pra-provinces',
+    claim:
+      'On 23 November 2026, MCC listed practice-ready programmes in every province except Prince Edward Island, and in none of the territories.',
+    provenance: 'primary',
+    source: 'Medical Council of Canada, Practice-Ready Assessment',
+    sourceUrl: 'https://mcc.ca/examinations-assessments/practice-ready-assessment/',
+    checked: '2026-11-23',
+    note: 'Listed: BC, Alberta, Saskatchewan, Manitoba, Ontario, Quebec, New Brunswick, Nova Scotia, Newfoundland and Labrador. PEI, Yukon, Nunavut and NWT have none in the NAC framework.',
+  },
+  bcAssessmentLicence: {
+    id: 'ca.bc.cpsbc-assessment-licence',
+    claim:
+      'In British Columbia, the assessment licence lets selected family doctors take PRA-BC, and only PRA-BC can refer you for it. Applicants need a listed school with a Canadian sponsor note, and training abroad that led to recognition as a family physician there. They also need English proficiency, and citizenship, PR or the right to live and work in BC.',
+    provenance: 'primary',
+    source: 'College of Physicians and Surgeons of British Columbia, Assessment (internationally trained physicians)',
+    sourceUrl: 'https://www.cpsbc.ca/licensees/licensing/itp/assessment',
+    checked: '2026-11-23',
+    note: 'The minimum length of postgraduate training on the page is not printed.',
+  },
+  bcCpc: {
+    id: 'ca.bc.cpsbc-cpc',
+    claim:
+      'CPSBC also asks licence applicants for certificates of professional conduct from every jurisdiction where they have practised.',
+    provenance: 'primary',
+    source: 'College of Physicians and Surgeons of British Columbia, Certificates of professional conduct',
+    sourceUrl: 'https://www.cpsbc.ca/registrants/current-registrants/registration-and-licensing/cpc',
+    checked: '2026-11-23',
+    note: 'CPSBC cites its Bylaws for this rule.',
+  },
+  pkPmdcRegister: {
+    id: 'pk.pmdc.register',
+    claim:
+      'In Pakistan, the Pakistan Medical and Dental Council (PMDC) keeps the register of doctors.',
+    provenance: 'primary',
+    source: 'Pakistan Medical and Dental Council, Pakistan Registration of Medical and Dental Practitioners Regulations, 2023, reg. 2 (definitions of Council and Register)',
+    sourceUrl: 'https://pmdc.pk/Documents/law/Registration%20Regulations%202023.pdf',
+    checked: '2026-11-23',
+    note: 'The regulations define the Register as the register of medical practitioners kept under s. 36 of the PMDC Act 2022. That CPSBC would accept PMDC’s certificate is not stated by CPSBC; the post tells readers to ask.',
+  },
+  pkPmdcGoodStanding: {
+    id: 'pk.pmdc.good-standing',
+    claim:
+      'PMDC’s Registration Regulations 2023 say that certificate is valid for six months. Each one is issued for a single foreign regulator, which you name when you apply.',
+    provenance: 'primary',
+    source: 'Pakistan Medical and Dental Council, Pakistan Registration of Medical and Dental Practitioners Regulations, 2023, regs 25 and 26',
+    sourceUrl: 'https://pmdc.pk/Documents/law/Registration%20Regulations%202023.pdf',
+    checked: '2026-11-23',
+    note: 'Figure (six months) set in regulation 25. Reg. 25 also requires six months of good standing and no professional-misconduct conviction.',
+  },
+  abPra: {
+    id: 'ca.ab.cpsa-pra',
+    claim:
+      'In Alberta, you do not apply for a practice readiness assessment yourself. CPSA first reviews your qualifications through physiciansapply.ca; you then need a sponsored job and, for family medicine, a pass in the TDM exam.',
+    provenance: 'primary',
+    source: 'College of Physicians & Surgeons of Alberta, Practice Readiness Assessment (PRA)',
+    sourceUrl: 'https://cpsa.ca/physicians/registration/apply-to-practise/independent-practice/pra/',
+    checked: '2026-11-23',
+    note: 'CPSA’s average and extended timelines are not printed.',
+  },
+  caLicensingLanguageTests: {
+    id: 'ca.img.licensing-language-tests',
+    claim:
+      'MCC says most provincial programmes accept IELTS Academic, OET Medicine or CELPIP-General.',
+    provenance: 'primary',
+    source: 'Medical Council of Canada, Supporting internationally trained physicians before arrival in Canada (May 2025)',
+    sourceUrl: 'https://mcc.ca/credentials-and-services/pathways-to-licensure/pathways-for-international-medical-graduates/supporting-itps-before-arrival-in-canada/',
+    checked: '2026-11-23',
+    note: 'Minimum scores on that page are not printed. Provincial programmes decide exemptions.',
+  },
+  caEeLanguageTests: {
+    id: 'ca.ee.language-tests-ielts-gt',
+    claim:
+      'IRCC’s Express Entry test list requires IELTS General Training, not Academic. CELPIP-General is on both lists.',
+    provenance: 'primary',
+    source: 'IRCC, Language test results for Express Entry (page details 2026-10-16)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html',
+    checked: '2026-11-23',
+  },
+  caDoctorsEeNoOffer: {
+    id: 'ca.doctors.ee-no-offer',
+    claim:
+      'IRCC’s page for doctors who have not worked in Canada suggests Express Entry to those with experience as a doctor. You must qualify for one of its three programmes, and it is the option IRCC lists for doctors with no Canadian job offer yet.',
+    provenance: 'primary',
+    source: 'IRCC, Medical doctors who haven’t worked in Canada (page details 2025-12-23)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/medical-doctors/no-experience.html',
+    checked: '2026-11-23',
+  },
+  caEeHealthcareCategoryRule: {
+    id: 'ca.ee.healthcare-category-rule',
+    claim:
+      'The healthcare and social services category counts work in Canada or abroad. The Ministerial Instructions for its 4 September 2026 round required one year of full-time work, or the equivalent, in the previous three years. The work had to match one listed occupation’s NOC lead statement and a substantial number of its main duties, including all essential ones.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions Respecting Invitations to Apply for Permanent Residence Under the Express Entry System (Healthcare and Social Services Occupations, 2026-Version 3), round 441, s. 3; IRCC, Category-based selection (2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds.html',
+    checked: '2026-11-23',
+    note: 'Figures (one year, three years) set in the round’s Ministerial Instructions, s. 3(a). Read from https://www.canada.ca/content/dam/ircc/documents/json/ee_rounds_4_en.json, which the rounds page loads; the page renders the text by script.',
+  },
+  caEeHealthcarePhysicianCodes: {
+    id: 'ca.ee.healthcare-physician-codes',
+    claim:
+      'The list included specialists in clinical and laboratory medicine (31100), specialists in surgery (31101), and general practitioners and family physicians (31102).',
+    provenance: 'primary',
+    source: 'IRCC, Category-based selection (2026-11-18), healthcare and social services table; round 441 Ministerial Instructions, table to s. 3; Statistics Canada, NOC 2021 Version 1.0, major group 31',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations/category-based-selection.html',
+    checked: '2026-11-23',
+    note: 'Codes and titles confirmed on Statistics Canada’s NOC 2021 Version 1.0 structure.',
+  },
+  caNoc31102MedicalDoctor: {
+    id: 'ca.noc.31102-medical-doctor',
+    claim:
+      'Statistics Canada gives “medical doctor” as an example title for 31102.',
+    provenance: 'primary',
+    source: 'Statistics Canada, NOC 2021 Version 1.0, 31102 General practitioners and family physicians (modified 2024-09-11), illustrative examples',
+    sourceUrl: 'https://www23.statcan.gc.ca/imdb/p3VD.pl?CLV=5&CPV=31102&CST=01052021&CVD=1322870&Function=getVD&MLV=5&TVD=1322554',
+    checked: '2026-11-23',
+  },
+  caEePhysiciansCategory: {
+    id: 'ca.ee.physicians-category',
+    claim:
+      'The physicians category, new in 2026, is narrower: IRCC’s page for doctors with Canadian experience and the round instructions require the year to be worked in Canada.',
+    provenance: 'primary',
+    source: 'IRCC, Medical doctors with experience in Canada (2026-10-19); Ministerial Instructions (Physicians with Canadian work experience, 2026-Version 1), round 440, s. 3',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/medical-doctors/experience.html',
+    checked: '2026-11-23',
+    note: 'Round 440 MI: “acquired in Canada at least one year of full-time work experience” within the previous three years. IRCC’s 18 February 2026 release announced the category for 2026.',
+  },
+  caEcaMccPhysicians: {
+    id: 'ca.ee.eca-mcc-physicians',
+    claim:
+      'Your Educational Credential Assessment (ECA) for Express Entry also comes from MCC: IRCC says a doctor whose primary occupation is 31100, 31101 or 31102 must use it.',
+    provenance: 'primary',
+    source: 'IRCC, Educational Credential Assessment for Express Entry (page details 2026-10-16), designated professional bodies',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessment.html',
+    checked: '2026-11-23',
+    note: 'MCC was designated on 17 April 2013 (not printed). The old URL education-assessed.html, used by the ECA guide, redirects here.',
+  },
+  caMccEcaAfterSvr: {
+    id: 'ca.mcc.eca-after-svr',
+    claim:
+      'MCC issues its report only after source verification of your degree, or of a transcript confirming it, so one check serves both tracks.',
+    provenance: 'primary',
+    source: 'Medical Council of Canada, Educational Credential Assessment',
+    sourceUrl: 'https://mcc.ca/credentials-and-services/services/educational-credential-assessment/',
+    checked: '2026-11-23',
+    note: 'Option two also needs the degree itself submitted and sent for verification. "One check serves both tracks" is our summary.',
+  },
+  caDoctorsPnp: {
+    id: 'ca.doctors.pnp',
+    claim:
+      'With a job offer or letter of support, IRCC points doctors to provincial nomination instead. Provinces have federal spaces reserved for nominating doctors, and nominated doctors can get faster work-permit processing.',
+    provenance: 'primary',
+    source: 'IRCC, Medical doctors who haven’t worked in Canada (2025-12-23); Medical doctors with experience in Canada (2026-10-19)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/medical-doctors/experience.html',
+    checked: '2026-11-23',
+    note: 'The number of reserved spaces and the processing time are on IRCC’s web pages and news release only, so they are not printed.',
+  },
+  caEeDoctorRounds2026: {
+    id: 'ca.ee.doctor-rounds-2026',
+    claim:
+      'Healthcare and social services rounds: 20 February 2026, 4,000 invitations, lowest CRS 467; 25 June 2026, 4,000, 475; 4 September 2026, 3,500, 475. Physicians with Canadian work experience rounds: 19 February 2026, 391, 169; 24 June 2026, 271, 223; 3 September 2026, 229, 198.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial instructions respecting invitations to apply under the Express Entry system, rounds 397, 398, 421, 422, 440 and 441',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds.html',
+    checked: '2026-11-23',
+    note: 'Read on 23 November 2026 from https://www.canada.ca/content/dam/ircc/documents/json/ee_rounds_123_en.json, which IRCC’s rounds pages load. Latest round listed: #453, 28 October 2026. Round sizes are set in each round’s Ministerial Instructions, s. 8.',
+  },
+  caEePhysicianRoundsInCanada: {
+    id: 'ca.ee.physician-rounds-in-canada',
+    claim:
+      'The physician rounds needed Canadian experience, so they were not open to doctors whose work is all in Pakistan.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions for rounds 397, 421 and 440 (Physicians with Canadian work experience), s. 3',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds.html',
+    checked: '2026-11-23',
+    note: 'Each physician round’s MI requires the year of experience to be acquired in Canada. Read from ee_rounds_4_en.json; text checked for rounds 397, 421 and 440.',
+  },
+  caEeCategoryRoundMaySkip: {
+    id: 'ca.ee.category-round-may-skip',
+    claim:
+      'IRCC says it may skip a category round when enough eligible candidates are invited through other rounds.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: Category-based selection (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations/category-based-selection.html',
+    checked: '2026-11-23',
+  },
+  fswNoLicence: {
+    id: 'engineers.fsw.noLicence',
+    claim:
+      'The Federal Skilled Worker requirements in section 75 of the Regulations are work experience, a language test, and an education credential with its assessment. A Canadian licence is not among them.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 75(2) (Justice Laws, current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-75.html',
+    checked: '2026-11-23',
+  },
+  esdcEngineersRegulated: {
+    id: 'engineers.esdc.regulated',
+    claim:
+      'ESDC names engineers among the regulated professions, where you need a licence before you can work, and suggests contacting the regulator, ideally before you arrive in Canada.',
+    provenance: 'primary',
+    source: 'ESDC, Foreign Credential Recognition (page details 2026-11-12)',
+    sourceUrl: 'https://www.canada.ca/en/employment-social-development/programs/foreign-credential-recognition.html',
+    checked: '2026-11-23',
+    note: 'Read through a page-fetch tool; canada.ca times out on scripted downloads.',
+  },
+  ecLicensingCriteria: {
+    id: 'engineers.engineersCanada.criteria',
+    claim:
+      'Requirements vary by regulator; generally they cover an accredited or equivalent degree, work experience, a professional practice exam, good character and English or French. Engineers Canada does not grant licences.',
+    provenance: 'primary',
+    source: 'Engineers Canada, Overview of the Licensing Process',
+    sourceUrl: 'https://engineerscanada.ca/become-an-engineer/overview-of-licensing-process',
+    checked: '2026-11-23',
+  },
+  ecRegulators: {
+    id: 'engineers.engineersCanada.regulators',
+    claim:
+      'Each province and territory has its own regulator; Engineers Canada lists them, including PEO, APEGA and Engineers and Geoscientists BC.',
+    provenance: 'primary',
+    source: 'Engineers Canada, Engineering regulators',
+    sourceUrl: 'https://engineerscanada.ca/regulatory-excellence/engineering-regulators',
+    checked: '2026-11-23',
+  },
+  onPractice: {
+    id: 'engineers.ontario.practice',
+    claim:
+      'Ontario: practising, or holding yourself out as practising, professional engineering needs a licence (s. 12(1)); engineering acts are allowed where a licensed engineer takes responsibility for the work (s. 12(3)(b)).',
+    provenance: 'primary',
+    source: 'Professional Engineers Act, R.S.O. 1990, c. P.28, s. 12 (e-Laws, last amendment 2024, c. 28, Sched. 23)',
+    sourceUrl: 'https://www.ontario.ca/laws/statute/90p28',
+    checked: '2026-11-23',
+    note: 'Read from e-Laws\' Word version (ontario.ca/laws/docs/90p28_e.doc); the HTML page builds with scripts.',
+  },
+  onTitles: {
+    id: 'engineers.ontario.titles',
+    claim:
+      'Ontario protects “professional engineer” or an abbreviation, and “engineer” used to suggest you may practise; a first conviction for misusing a title can bring a fine of up to $10,000 (s. 40(2)).',
+    provenance: 'primary',
+    source: 'Professional Engineers Act, R.S.O. 1990, c. P.28, s. 40(2)',
+    sourceUrl: 'https://www.ontario.ca/laws/statute/90p28',
+    checked: '2026-11-23',
+  },
+  abPractice: {
+    id: 'engineers.alberta.practice',
+    claim:
+      'Alberta: only a professional engineer or another authorised holder may practise engineering (s. 2(1)); an engineer-in-training supervised and controlled by a professional engineer may practise (s. 2(4)(b)).',
+    provenance: 'primary',
+    source: 'Engineering and Geoscience Professions Act, RSA 2000, c. E-11, s. 2 (current as of 7 December 2023)',
+    sourceUrl: 'https://kings-printer.alberta.ca/documents/Acts/E11.pdf',
+    checked: '2026-11-23',
+  },
+  abTitles: {
+    id: 'engineers.alberta.titles',
+    claim:
+      'Alberta protects “professional engineer”, “P.Eng.”, and “engineer” with words implying a licence (s. 3(1)); “software engineer” has been exempt since 2023 (s. 3.1, added by 2023 c7).',
+    provenance: 'primary',
+    source: 'Engineering and Geoscience Professions Act, RSA 2000, c. E-11, ss. 3 and 3.1 (current as of 7 December 2023)',
+    sourceUrl: 'https://kings-printer.alberta.ca/documents/Acts/E11.pdf',
+    checked: '2026-11-23',
+    note: 'Engineers Canada\'s use-of-title page also describes the 2023 Alberta change.',
+  },
+  egbcTitles: {
+    id: 'engineers.bc.titles',
+    claim:
+      'BC reserves “Professional Engineer”, “P.Eng.” and “Engineer-in-Training”, plus “engineer” where it implies a right to practise; showing your degree, such as “B.Sc.”, is allowed; an employer-given title is no excuse; registration in another jurisdiction gives no title rights in BC.',
+    provenance: 'primary',
+    source: 'Engineers and Geoscientists BC, Unauthorized Practice or Title FAQs',
+    sourceUrl: 'https://www.egbc.ca/complaints-discipline/unauthorized-practice-or-title/unauthorized-practice-misuse-of-title/unauthorized-practice-or-title-faqs',
+    checked: '2026-11-23',
+    note: 'The post\'s “That includes registration with the Pakistan Engineering Council” applies EGBC\'s general answer about other jurisdictions; EGBC does not name Pakistan. The FAQ notes a very limited exception for jurisdiction qualifiers such as “P.Eng. (Alberta)”.',
+  },
+  egbcPractice: {
+    id: 'engineers.bc.practice',
+    claim:
+      'In BC, all engineering work needs registration, even if unstamped or used only inside your company.',
+    provenance: 'primary',
+    source: 'Engineers and Geoscientists BC, Unauthorized Practice or Title FAQs',
+    sourceUrl: 'https://www.egbc.ca/complaints-discipline/unauthorized-practice-or-title/unauthorized-practice-misuse-of-title/unauthorized-practice-or-title-faqs',
+    checked: '2026-11-23',
+  },
+  egbcEit: {
+    id: 'engineers.bc.eit',
+    claim:
+      'You can register as an engineer-in-training once you meet the academic requirements.',
+    provenance: 'primary',
+    source: 'Engineers and Geoscientists BC, Apply to Be a Professional Engineer in BC',
+    sourceUrl: 'https://www.egbc.ca/how-to-apply/register-as-an-engineer/professional-engineer/apply-to-be-a-professional-engineer-in-bc',
+    checked: '2026-11-23',
+  },
+  ieaPec: {
+    id: 'engineers.washingtonAccord.pec',
+    claim:
+      'The International Engineering Alliance lists the Pakistan Engineering Council (PEC) as a full Washington Accord signatory since 2017; signatories recognise each other’s accredited engineering degree programmes.',
+    provenance: 'primary',
+    source: 'International Engineering Alliance, Washington Accord (Full Signatories list)',
+    sourceUrl: 'https://www.internationalengineeringalliance.org/accords/washington-accord',
+    checked: '2026-11-23',
+    note: 'The old ieagreements.org domain no longer resolves; the IEA site is now internationalengineeringalliance.org. Engineers Canada\'s news item of 28 June 2017 records the approval at the IEA meeting of 18–23 June 2017.',
+  },
+  ecWaPakistan2017: {
+    id: 'engineers.washingtonAccord.firstGraduates',
+    claim:
+      'Engineers Canada lists 2017 as the first year of Pakistani graduates the Accord applies to.',
+    provenance: 'primary',
+    source: 'Engineers Canada, The Washington Accord (Signatories to the Accord, year of first graduates to which the Accord applies)',
+    sourceUrl: 'https://engineerscanada.ca/accreditation/the-washington-accord',
+    checked: '2026-11-23',
+  },
+  pecLevel2: {
+    id: 'engineers.pec.level2',
+    claim:
+      'PEC names the programmes it treats as “substantially equivalent to Washington Accord” on its Level-II list, by university and intake batch; the list cites an SRO dated 17 September 2025, and some programmes reached Level II only from a later batch.',
+    provenance: 'primary',
+    source: 'Pakistan Engineering Council, Programs under Level-II (First Schedule, updated SRO No. 1809(I)/2025 dated 17 September 2025); Programs under Level-I',
+    sourceUrl: 'https://www.pec.org.pk/accredition/programs-under-level-2/',
+    checked: '2026-11-23',
+    note: 'The \'later batch\' point comes from Level-I entries marked \'See Level-II Batches\' (https://www.pec.org.pk/accredition/programs-under-level-1/).',
+  },
+  egbcWaExams: {
+    id: 'engineers.bc.washingtonAccord',
+    claim:
+      'EGBC says a degree recognised through a Washington Accord signatory generally may not need academic exams, and confirms this after reviewing your application.',
+    provenance: 'primary',
+    source: 'Engineers and Geoscientists BC, Apply to Be a Professional Engineer in BC',
+    sourceUrl: 'https://www.egbc.ca/how-to-apply/register-as-an-engineer/professional-engineer/apply-to-be-a-professional-engineer-in-bc',
+    checked: '2026-11-23',
+    note: 'EGBC\'s Policy 1.A (version 1.1, 5 November 2026) lists \'Degree considered substantially equivalent by Washington Accord signatory\' as one way to meet the academic requirement.',
+  },
+  irccEcaNoLicence: {
+    id: 'engineers.eca.noLicence',
+    claim:
+      'IRCC says an ECA does not guarantee a licence for a regulated profession, which you get in the province or territory; its list of designated organisations includes no engineering body.',
+    provenance: 'primary',
+    source: 'IRCC, Educational credential assessment (ECA) for Express Entry (page details 2026-10-16)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessment.html',
+    checked: '2026-11-23',
+    note: 'Designated professional bodies are listed only for architects, physicians and pharmacists. Read through a page-fetch tool.',
+  },
+  egbcNoWes: {
+    id: 'engineers.bc.noThirdParty',
+    claim:
+      'EGBC does not accept evaluations from WES or ICES and evaluates degrees itself with Engineers Canada; it will treat transcripts inside a WES ICAP package as official if WES first received official transcripts.',
+    provenance: 'primary',
+    source: 'Engineers and Geoscientists BC, Registration FAQs',
+    sourceUrl: 'https://www.egbc.ca/how-to-apply/registration-faqs',
+    checked: '2026-11-23',
+  },
+  onAcademic: {
+    id: 'engineers.ontario.academic',
+    claim:
+      'Ontario\'s Regulation 941 requires an accredited Canadian degree or equivalent qualifications recognised by PEO’s Council.',
+    provenance: 'primary',
+    source: 'R.R.O. 1990, Reg. 941, s. 33(1) para. 1 (consolidated from 1 July 2026)',
+    sourceUrl: 'https://www.ontario.ca/laws/regulation/900941',
+    checked: '2026-11-23',
+    note: 'Read from e-Laws\' Word version (ontario.ca/laws/docs/900941_e.doc).',
+  },
+  onExperience24: {
+    id: 'engineers.ontario.experience',
+    claim:
+      'Section 33 of Regulation 941, as consolidated from 1 July 2026, requires at least 24 months of engineering experience after your degree, plus a competency-based assessment and the professional practice examination.',
+    provenance: 'primary',
+    source: 'R.R.O. 1990, Reg. 941, s. 33(1) paras. 2, 3 and 5 (consolidated from 1 July 2026; last amendment O. Reg. 126/26)',
+    sourceUrl: 'https://www.ontario.ca/laws/regulation/900941',
+    checked: '2026-11-23',
+    note: 'The law\'s wording is \'no less than 24 months of experience in the practice of professional engineering after the bachelor\'s degree\'. Statistics Canada\'s NOC pages still say \'three or four years\'; the post does not print that.',
+  },
+  egbcExperience: {
+    id: 'engineers.bc.experience',
+    claim:
+      'EGBC assesses experience by competencies, including knowledge of Canadian regulations, codes and standards; that experience can be gained in Canada or abroad; you can apply with no Canadian work experience; it does not consider visa status.',
+    provenance: 'primary',
+    source: 'Engineers and Geoscientists BC, Apply to Be a Professional Engineer in BC; Registration FAQs (questions 5 and 7)',
+    sourceUrl: 'https://www.egbc.ca/how-to-apply/registration-faqs',
+    checked: '2026-11-23',
+    note: 'EGBC\'s page gives a minimum period of experience; the post does not print it because it is not set in an Act or regulation that was read.',
+  },
+  nocEngineeringCodes: {
+    id: 'engineers.noc.group213',
+    claim:
+      'Statistics Canada places professional engineers in NOC 2021 group 213: 21300, 21301, 21310, 21311, 21320, 21321, 21322, 21330, 21331, 21332, 21390, 21399, all TEER 1; software engineers have their own code outside group 213.',
+    provenance: 'primary',
+    source: 'Statistics Canada, NOC 2021 Version 1.0, classification structure, 213 (modified 2022-03-14)',
+    sourceUrl: 'https://www23.statcan.gc.ca/imdb/p3VD.pl?Function=getVDStruct&TVD=1322554&CVD=1322615&CPV=213&CST=01052021&CLV=2&MLV=5',
+    checked: '2026-11-23',
+    note: 'TEER is the code\'s second digit. 21311\'s title reads \'Computer engineers (except software engineers and designers)\'.',
+  },
+  stemList2026: {
+    id: 'engineers.categories.stemList',
+    claim:
+      'On 23 November 2026, IRCC’s STEM category listed 21300, 21301, 21310, 21321 and 21331, plus technologists and technicians 22300, 22301 and 22310 (TEER 2); 21311, 21320, 21322, 21330, 21332, 21390 and 21399 were not listed.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: Category-based selection (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations/category-based-selection.html',
+    checked: '2026-11-23',
+    note: 'Read through a page-fetch tool, twice, with the same result.',
+  },
+  stemRenewed2026: {
+    id: 'engineers.categories.renewed',
+    claim:
+      'IRCC’s backgrounder of 18 February 2026 named STEM occupations among the renewed 2026 categories.',
+    provenance: 'primary',
+    source: 'IRCC, Backgrounder: Attracting the world’s best talent to fill Canada’s labour gaps and build our economy (18 February 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/02/attracting-the-worlds-best-talent-to-fill-canadas-labour-gaps-and-build-our-economy.html',
+    checked: '2026-11-23',
+  },
+  categoryRules: {
+    id: 'engineers.categories.rules',
+    claim:
+      'To be invited in a STEM round, your recent experience must be in one listed occupation, and you must also qualify for an Express Entry programme; the category page sets how much experience counts and how recent it must be.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: Category-based selection (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations/category-based-selection.html',
+    checked: '2026-11-23',
+    note: 'The page\'s months and years are not printed because they appear only on the web page.',
+  },
+  noStemRound2026: {
+    id: 'engineers.rounds.noStem2026',
+    claim:
+      'IRCC’s rounds data, read on 23 November 2026, shows no STEM round in 2026; the latest round was #453 on 28 October 2026.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry rounds of invitations (ee_rounds_123_en.json)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html',
+    checked: '2026-11-23',
+    note: '2026 rounds run from #389 (5 January 2026) to #453 (28 October 2026, Transport Occupations, 2026-Version 2); none is a STEM round.',
+  },
+  lastStemRound: {
+    id: 'engineers.rounds.lastStem',
+    claim:
+      'The last STEM round was #293 on 11 April 2024, with 4,500 invitations and a lowest score of 491.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry rounds of invitations (ee_rounds_123_en.json), round #293, \'STEM occupations (Version 1)\'',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html',
+    checked: '2026-11-23',
+    note: 'Rounds #453 back to #278 (21 December 2023) were checked; #293 is the only STEM round in that span.',
+  },
+  crsChange3Nov: {
+    id: 'engineers.crs.change',
+    claim:
+      'IRCC changed how CRS points are awarded from 3 November 2026.',
+    provenance: 'primary',
+    source: 'IRCC, News release: Canada refocusing Express Entry on top talent that drives economic growth (16 October 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/10/canada-refocusing-express-entry-on-top-talent-that-drives-economic-growth.html',
+    checked: '2026-11-23',
+  },
+  prMythFiveTests: {
+    id: 'ca.prMyths.fiveTests',
+    claim:
+      'On 23 November 2026, IRCC’s language test page listed five approved tests. In English they are IELTS General Training, CELPIP-General and PTE Core; in French, TEF Canada and TCF Canada.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: Language test (page details 2026-10-16)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html',
+    checked: '2026-11-23',
+    note: 'IRPR s. 74(3)–(4): the Minister designates the organisations, approves the tests and makes them public. Same list as caLangDesignatedTests / the IELTS post.',
+  },
+  prMythTestRequired: {
+    id: 'ca.prMyths.testRequired',
+    claim:
+      'The Regulations require approved test results for each Express Entry class. For federal skilled workers that is section 75(2)(d); for the Canadian Experience Class, section 87.1(2)(d); for trades, section 87.2(3)(a).',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, ss. 75(2)(d), 87.1(2)(d) and 87.2(3)(a) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-75.html',
+    checked: '2026-11-23',
+    note: 'Also https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-87.1.html and section-87.2.html.',
+  },
+  prMythConclusive: {
+    id: 'ca.prMyths.conclusiveEvidence',
+    claim:
+      'Under section 74(7), approved test results are conclusive evidence of your language ability. IRCC’s instructions to its officers add: “No other documentary evidence or explanation will be considered.”',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 74(7) (current to 2026-10-29); IRCC, Federal skilled workers selection criteria: Official language proficiency (page details 2026-06-23)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-74.html',
+    checked: '2026-11-23',
+    note: 'Quote is from the program delivery instruction at https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/standard-requirements/language-requirements/federal-skilled-workers-selection-criteria-official-proficiency.html. The post’s English-medium-degree sentence is our application of it.',
+  },
+  prMythThreshold: {
+    id: 'ca.prMyths.threshold',
+    claim:
+      'Section 74(1) has the Minister fix the minimum level for each class, in each of the four skills. IRCC publishes it on its language test page, and for the Canadian Experience Class it depends on your job’s TEER category.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 74(1)–(2) (current to 2026-10-29); IRCC, Express Entry: Language test (page details 2026-10-16)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-74.html',
+    checked: '2026-11-23',
+    note: 'Levels deliberately not printed: IRCC’s page lists FSW CLB/NCLC 7; CEC TEER 0–1 CLB 7, TEER 2–3 CLB 5; FST CLB 5 speaking and listening, CLB 4 reading and writing. They are not in the text of IRPR or of the current Ministerial Instructions (signed 17 November 2026).',
+  },
+  prMythFswValidity: {
+    id: 'ca.prMyths.fswValidity',
+    claim:
+      'For Federal Skilled Worker applicants, results must also be less than two years old on the day you apply.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 75(2)(d) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-75.html',
+    checked: '2026-11-23',
+    note: 'Same rule as caLangFswValidity.',
+  },
+  prMythFamilyClass: {
+    id: 'ca.prMyths.familyClass',
+    claim:
+      'A spouse, partner or dependent child joins the family class through their relationship to a sponsor, under section 117(1).',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 117(1)(a)–(b) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-117.html',
+    checked: '2026-11-23',
+  },
+  prMythRefugee: {
+    id: 'ca.prMyths.refugee',
+    claim:
+      'Refugee protection rests on a well-founded fear of persecution, under section 96 of the Act.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Act, s. 96 (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-96.html',
+    checked: '2026-11-23',
+  },
+  prMythPnp: {
+    id: 'ca.prMyths.pnpAssessment',
+    claim:
+      'Under section 87(3), the province assesses you against criteria the Minister has approved in writing.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 87(3) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-87.html',
+    checked: '2026-11-23',
+    note: 'The post does not say any PNP stream waives a language test; it tells readers to check the stream.',
+  },
+  prMythFswNoOffer: {
+    id: 'ca.prMyths.fswNoOffer',
+    claim:
+      'The minimum requirements in section 75(2) are skilled work experience, an approved test and an education credential, assessed if it is foreign. A job offer is not among them.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 75(2)(a)–(e) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-75.html',
+    checked: '2026-11-23',
+    note: 'IRCC’s FSW page (page details 2026-11-18) lists a job offer only as a source of points.',
+  },
+  prMythFswWork: {
+    id: 'ca.prMyths.fswWork',
+    claim:
+      'You need at least one year of continuous full-time skilled work, or the part-time equivalent, within the last ten years. IRCC’s Federal Skilled Worker page says it can be gained in Canada or abroad, so work in Pakistan counts.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 75(2)(a) (current to 2026-10-29); IRCC, Federal Skilled Worker Program (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/federal-skilled-workers.html',
+    checked: '2026-11-23',
+    note: 'IRCC wording: “within the last 10 years, in Canada or abroad”. “So work in Pakistan counts” is our application of it.',
+  },
+  prMythGrid: {
+    id: 'ca.prMyths.grid',
+    claim:
+      'The grid in sections 78 to 83 adds up to 100 points, and a qualifying offer is worth 10 of them under section 82(2). Language alone carries up to 28, under section 79(3).',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, ss. 78–83 (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-82.html',
+    checked: '2026-11-23',
+    note: 'Marginal notes: education 25 (s. 78), language 28 (s. 79), experience 15 (s. 80), age 12 (s. 81), arranged employment 10 (s. 82), adaptability 10 (s. 83) = 100. IRCC’s six selection factors page gives the same maxima.',
+  },
+  prMythPassMark: {
+    id: 'ca.prMyths.passMark',
+    claim:
+      'Section 76(2) has the Minister fix the pass mark, and IRCC publishes it on its six selection factors page.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 76(2) (current to 2026-10-29); IRCC, Six selection factors (page details 2026-11-18)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-76.html',
+    checked: '2026-11-23',
+    note: 'Not printed: IRCC’s page gives 67 out of 100. The figure is fixed by the Minister and published by IRCC, not written in IRPR or the current Ministerial Instructions.',
+  },
+  prMythCec: {
+    id: 'ca.prMyths.cecWork',
+    claim:
+      'The Canadian Experience Class needs no job offer either. But section 87.1(2)(a) asks for a year of skilled work in Canada within the last three years.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 87.1(2) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-87.1.html',
+    checked: '2026-11-23',
+    note: 's. 87.1(2) lists no job offer; s. 87.1(3)(c) also requires temporary resident status during the work. Same as cecWorkRule.',
+  },
+  prMythAtlanticRural: {
+    id: 'ca.prMyths.atlanticRuralOffer',
+    claim:
+      'The Atlantic and rural community classes each require a job offer, under sections 87.3(2)(d) and 87.4(2)(d).',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, ss. 87.3(2)(d) and 87.4(2)(d) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-87.3.html',
+    checked: '2026-11-23',
+    note: 'Also https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-87.4.html.',
+  },
+  prMythFswFunds: {
+    id: 'ca.prMyths.fswFunds',
+    claim:
+      'Under section 76(1)(b), you must hold transferable, available funds, free of debts, equal to half the “minimum necessary income” for your family. IRCC lists the current amounts on its proof of funds page.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 76(1)(b)(i) (current to 2026-10-29); IRCC, Express Entry: Proof of funds (page details 2026-11-18)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-76.html',
+    checked: '2026-11-23',
+    note: 'No amounts printed. IRCC’s table says “Updated July 7, 2025”.',
+  },
+  prMythFundsRules: {
+    id: 'ca.prMyths.fundsRules',
+    claim:
+      'That page says you cannot borrow the money from another person or use equity in property. It asks for official letters from every bank or financial institution where you hold an account.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: Proof of funds (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html',
+    checked: '2026-11-23',
+    note: '“That includes your Pakistani banks” is our application of “any banks or financial institutions where you have an account”.',
+  },
+  prMythFundsExempt: {
+    id: 'ca.prMyths.fundsExemption',
+    claim:
+      'Section 76(1)(b)(ii) exempts you if your offer earns points under section 82(2)(a), (b) or (d). Each of those needs a valid work permit or authorisation to work in Canada. IRCC’s proof of funds page puts it the same way: you must be authorised to work in Canada and hold a valid offer.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, ss. 76(1)(b)(ii) and 82(2) (current to 2026-10-29); IRCC, Express Entry: Proof of funds (page details 2026-11-18)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-76.html',
+    checked: '2026-11-23',
+    note: 's. 82(2)(a) and (b): in Canada holding a valid work permit; (d): holds a valid work permit or is authorised under s. 186. IRCC’s FSW page (2026-11-18) says the same as its proof of funds page.',
+  },
+  prMythFstOfferOrCert: {
+    id: 'ca.prMyths.fstOfferOrCertificate',
+    claim:
+      'Section 87.2(3)(d) asks for either a qualifying job offer or a certificate of qualification in your trade. The certificate must come from a competent provincial or federal authority, and IRCC’s skilled trades page adds territorial bodies.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 87.2(3)(d) (current to 2026-10-29); IRCC, Federal Skilled Trades Program (page details 2026-11-18)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-87.2.html',
+    checked: '2026-11-23',
+    note: 'IRCC wording: “issued by a Canadian provincial, territorial or federal authority”.',
+  },
+  prMythFstCertificate: {
+    id: 'ca.prMyths.fstCertificateAssessment',
+    claim:
+      'IRCC says the Canadian authority must assess your training, trade experience and skills. You may have to go to the province or territory for that.',
+    provenance: 'primary',
+    source: 'IRCC, Federal Skilled Trades Program (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/skilled-trades.html',
+    checked: '2026-11-23',
+    note: '“A trade certificate from Pakistan is not that certificate on its own” is our reading of s. 87.2(3)(d)(i) and this page.',
+  },
+  prMythFstWork: {
+    id: 'ca.prMyths.fstWork',
+    claim:
+      'You need at least two years of full-time work in the trade, or the part-time equivalent, within the last five years, under section 87.2(3)(b).',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 87.2(3)(b) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-87.2.html',
+    checked: '2026-11-23',
+    note: 'Same as fstWorkRule.',
+  },
+  prMythFstFunds: {
+    id: 'ca.prMyths.fstFunds',
+    claim:
+      'Unless you already have a valid offer and the right to work in Canada, section 87.2(5) asks for funds on the FSW formula.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 87.2(5) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-87.2.html',
+    checked: '2026-11-23',
+    note: 'Exempt: s. 87.2(3)(d)(ii), (iii) and (v), each needing a valid work permit or s. 186 authorisation. Formula: half the minimum necessary income, as in s. 76(1)(b)(i).',
+  },
+  prMythOfferGenuine: {
+    id: 'ca.prMyths.offerAbility',
+    claim:
+      'Under section 82(2), an offer earns points only if you can do the job and are likely to accept and carry it out.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 82(2) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-82.html',
+    checked: '2026-11-23',
+    note: '“Paying for an offer does not make the job real” is our own comment.',
+  },
+  prMythRecruitmentFees: {
+    id: 'ca.prMyths.recruitmentFees',
+    claim:
+      'For workers on LMIA-based work permits, section 209.3 bars the employer, with narrow exceptions, from charging or recovering recruitment fees from them.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 209.3(1)(a)(xv) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-209.3.html',
+    checked: '2026-11-23',
+    note: 'Applies to employers of foreign nationals under s. 200(1)(c)(iii). Exceptions: fees under ss. 296(1), 298(1), 299(1) and recruitment fees allowed under seasonal agricultural worker agreements. Covered in more depth in /blog/fake-canada-job-offers-2026.',
+  },
+  prMythMisrepresentation: {
+    id: 'ca.prMyths.misrepresentation',
+    claim:
+      'Misrepresenting a material fact makes you inadmissible under section 40 of the Act. The bar lasts five years, and you cannot apply for permanent residence during it.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Act, s. 40(1)(a), (2)(a) and (3) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-40.html',
+    checked: '2026-11-23',
+  },
+  citizenshipPhysicalPresenceDays: {
+    id: 'canada.citizenship.physicalPresence.days',
+    claim:
+      'The Citizenship Act asks for at least 1,095 days of physical presence in Canada in the five years immediately before you apply, and you must be a permanent resident on that date.',
+    provenance: 'primary',
+    source: 'Citizenship Act, s. 5(1)(c)(i), Justice Laws (current to 2026-10-29, last amended 2025-12-15)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/C-29/section-5.html',
+    checked: '2026-11-23',
+  },
+  citizenshipPrePrHalfDays: {
+    id: 'canada.citizenship.physicalPresence.prePrHalfDays',
+    claim:
+      'Each day in Canada before PR, as a temporary resident or protected person, counts as half a day, up to 365 in total; each day since becoming a PR counts as one.',
+    provenance: 'primary',
+    source: 'Citizenship Act, s. 5(1.001), Justice Laws (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/C-29/section-5.html',
+    checked: '2026-11-23',
+    note: 'The opening paraphrases temporary resident as visitor, student or worker.',
+  },
+  citizenship730AsPr: {
+    id: 'canada.citizenship.physicalPresence.minDaysAsPr',
+    claim:
+      'At least 730 of the days must be as a PR.',
+    provenance: 'primary',
+    source: 'IRCC, Citizenship: Who can apply (page details 2026-04-21)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/become-canadian-citizen/eligibility.html',
+    checked: '2026-11-23',
+    note: 'IRCC: the eligibility period \'must include at least 730 days as a permanent resident\'. Arithmetic from s. 5(1)(c)(i) and (1.001): 1,095 minus 365. The two-year student example is our own illustration.',
+  },
+  citizenshipDaysAbroadCrownService: {
+    id: 'canada.citizenship.physicalPresence.daysAbroad',
+    claim:
+      'Days abroad count only for a PR employed outside Canada by the Canadian Armed Forces, the federal public administration or a provincial public service, a spouse, partner or child living with such a PR, or a spouse or partner living with a citizen so employed; locally engaged staff are excluded.',
+    provenance: 'primary',
+    source: 'Citizenship Act, ss. 5(1.01) to 5(1.03), Justice Laws (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/C-29/section-5.html',
+    checked: '2026-11-23',
+    note: 'The Lahore example (a year with a Canadian spouse in private work counts for PR but not for citizenship) is our reading of these sections against IRPA s. 28(2)(a)(ii).',
+  },
+  irpaResidencyCitizenSpouse: {
+    id: 'canada.pr.residency.citizenSpouseAbroad',
+    claim:
+      'For PR, section 28 of the Immigration and Refugee Protection Act counts days abroad with a Canadian citizen spouse.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Act, s. 28(2)(a)(ii), Justice Laws (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/I-2.5/section-28.html',
+    checked: '2026-11-23',
+  },
+  citizenshipSection21Exclusion: {
+    id: 'canada.citizenship.physicalPresence.section21',
+    claim:
+      'Time on probation, on parole or in prison under Canadian law does not count as physical presence.',
+    provenance: 'primary',
+    source: 'Citizenship Act, s. 21, Justice Laws (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/C-29/section-21.html',
+    checked: '2026-11-23',
+  },
+  citizenshipStatusConditions: {
+    id: 'canada.citizenship.requirements.status',
+    claim:
+      'A permanent resident on the date you apply, with no unfulfilled conditions and no removal order.',
+    provenance: 'primary',
+    source: 'Citizenship Act, s. 5(1)(c) and (f), Justice Laws (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/C-29/section-5.html',
+    checked: '2026-11-23',
+  },
+  citizenshipTaxYears: {
+    id: 'canada.citizenship.requirements.taxes',
+    claim:
+      'Any returns the Income Tax Act required, for three tax years within those five years.',
+    provenance: 'primary',
+    source: 'Citizenship Act, s. 5(1)(c)(iii), Justice Laws (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/C-29/section-5.html',
+    checked: '2026-11-23',
+  },
+  citizenshipTaxNumberConsent: {
+    id: 'canada.citizenship.application.taxNumber',
+    claim:
+      'The Citizenship Regulations, No. 2 (section 2) ask for your social insurance or tax number, and consent to share your tax data with IRCC. Without such a number, you declare that you did not need to file.',
+    provenance: 'primary',
+    source: 'Citizenship Regulations, No. 2 (SOR/2015-124), s. 2(1)(d) to (f), Justice Laws (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2015-124/FullText.html',
+    checked: '2026-11-23',
+    note: 'The regulation\'s wording is consent to the sharing of tax information by the Canada Revenue Agency with the Minister.',
+  },
+  citizenshipLanguageAge: {
+    id: 'canada.citizenship.requirements.languageAge',
+    claim:
+      'If aged 18 to 54 on the date you apply: adequate English or French, shown by test results or other evidence.',
+    provenance: 'primary',
+    source: 'Citizenship Act, s. 5(1)(d) (18 or more but less than 55); Citizenship Regulations, No. 2, s. 2(1)(g)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/C-29/section-5.html',
+    checked: '2026-11-23',
+  },
+  citizenshipKnowledgeAge: {
+    id: 'canada.citizenship.requirements.knowledgeAge',
+    claim:
+      'If aged 18 to 54: knowledge of Canada and of a citizen’s responsibilities and privileges, in English or French.',
+    provenance: 'primary',
+    source: 'Citizenship Act, s. 5(1)(e), Justice Laws (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/C-29/section-5.html',
+    checked: '2026-11-23',
+  },
+  citizenshipLanguageCriteria: {
+    id: 'canada.citizenship.language.criteria',
+    claim:
+      'Section 14 of the Citizenship Regulations defines adequate knowledge as basic communication: short routine conversations, simple instructions, and basic grammar and vocabulary in speech.',
+    provenance: 'primary',
+    source: 'Citizenship Regulations (SOR/93-246), s. 14, Justice Laws (current to 2026-10-29, last amended 2026-10-23)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-93-246/FullText.html',
+    checked: '2026-11-23',
+  },
+  citizenshipLanguageProofEducation: {
+    id: 'canada.citizenship.language.educationProof',
+    claim:
+      'IRCC accepts proof of a secondary or post-secondary programme taught in English or French; a diploma, transcript or certificate will do, and the programme can be outside Canada.',
+    provenance: 'primary',
+    source: 'IRCC, Citizenship: Proof of language skills (page details 2025-09-11)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/become-canadian-citizen/eligibility/language-proof.html',
+    checked: '2026-11-23',
+    note: 'IRCC: \'The program can be in or outside Canada.\' \'So an English-medium programme in Pakistan can count\' follows from that. The page did not list the accepted language tests when read, so none are named.',
+  },
+  citizenshipKnowledgeSubjects: {
+    id: 'canada.citizenship.test.subjects',
+    claim:
+      'The knowledge test covers national symbols, history, geography, the system of government, and the responsibilities and privileges of citizenship.',
+    provenance: 'primary',
+    source: 'Citizenship Regulations (SOR/93-246), s. 15, Justice Laws (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-93-246/FullText.html',
+    checked: '2026-11-23',
+  },
+  citizenshipTestFormat: {
+    id: 'canada.citizenship.test.format',
+    claim:
+      'IRCC’s test page says the test may be online, in person or by Microsoft Teams, and gives the pass mark, which the law does not set.',
+    provenance: 'primary',
+    source: 'IRCC, Citizenship test (page details 2026-03-31)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/become-canadian-citizen/citizenship-test.html',
+    checked: '2026-11-23',
+    note: 'The pass mark was not readable in the fetched page text and is not printed.',
+  },
+  citizenshipForeignCharge: {
+    id: 'canada.citizenship.prohibition.foreignCharge',
+    claim:
+      'Section 22 bars a grant while you face a charge abroad for an offence that would be indictable in Canada, unless waived.',
+    provenance: 'primary',
+    source: 'Citizenship Act, s. 22(1)(b.1) and (1.1), Justice Laws (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/C-29/section-22.html',
+    checked: '2026-11-23',
+    note: 'The waiver in s. 22(1.1) is on compassionate grounds.',
+  },
+  citizenshipForeignConviction: {
+    id: 'canada.citizenship.prohibition.foreignConviction',
+    claim:
+      'A conviction abroad for such an offence, in the four years before you apply or while you wait, bars a grant even after a pardon.',
+    provenance: 'primary',
+    source: 'Citizenship Act, s. 22(3), Justice Laws (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/C-29/section-22.html',
+    checked: '2026-11-23',
+  },
+  citizenshipOathAge: {
+    id: 'canada.citizenship.oath.age',
+    claim:
+      'If aged 14 or over, you become a citizen only once you take the oath.',
+    provenance: 'primary',
+    source: 'Citizenship Act, s. 3(1)(c), Justice Laws (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/C-29/section-3.html',
+    checked: '2026-11-23',
+  },
+  citizenshipProcessingFees: {
+    id: 'canada.citizenship.fees.processing',
+    claim:
+      'The processing fees are $530 for an adult and $100 for a child under 18.',
+    provenance: 'primary',
+    source: 'Citizenship Regulations (SOR/93-246), s. 31(1) and Schedule items 1, 1.1 and 2, Justice Laws (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-93-246/FullText.html',
+    checked: '2026-11-23',
+    note: 'IRCC\'s notice of 27 March 2026 also says the adult processing fee remains $530.',
+  },
+  citizenshipOathNoFee: {
+    id: 'canada.citizenship.fees.oath',
+    claim:
+      'Section 31(2) charges nothing for the oath.',
+    provenance: 'primary',
+    source: 'Citizenship Regulations (SOR/93-246), s. 31(2)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-93-246/FullText.html',
+    checked: '2026-11-23',
+  },
+  rightOfCitizenshipFeeRegulation: {
+    id: 'canada.citizenship.fees.rightOfCitizenship',
+    claim:
+      'Adults also pay a right of citizenship fee under section 32, refunded if citizenship is not granted. The Regulations print $100.',
+    provenance: 'primary',
+    source: 'Citizenship Regulations (SOR/93-246), ss. 32 and 33',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-93-246/FullText.html',
+    checked: '2026-11-23',
+    note: 'Section 32 applies to a person 18 or over and is payable when applying; s. 33 is the remission (refund).',
+  },
+  rightOfCitizenshipFeeIndexed: {
+    id: 'canada.citizenship.fees.indexation',
+    claim:
+      'Section 17 of the Service Fees Act indexes it to inflation each year, most recently on 31 March 2026.',
+    provenance: 'primary',
+    source: 'Service Fees Act, s. 17 (current to 2026-10-29); IRCC, Right of citizenship fee increasing soon (27 March 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/right-citizenship-fee-increasing.html',
+    checked: '2026-11-23',
+    note: 'Also read: Canada Gazette Part I, 15 March 2025, Notice of annual change for the Right of Citizenship fee (first adjustment from 31 March 2025, citing s. 17 of the Service Fees Act and s. 32 of the Regulations): https://gazette.gc.ca/rp-pr/p1/2025/2025-03-15/html/notice-avis-eng.html. The 2026 amount is on IRCC\'s notice and fee list only and is not printed; no 2026 Gazette notice was found in the February and March 2026 issues.',
+  },
+  citizenshipMinorChild: {
+    id: 'canada.citizenship.minor.section5_2',
+    claim:
+      'A parent who is a citizen can apply for a child under 18 who is a PR, under section 5(2). That route has no physical-presence, language or test requirement, and the fee is $100. A child of 14 or over countersigns the application and takes the oath.',
+    provenance: 'primary',
+    source: 'Citizenship Act, ss. 5(2) and 3(1)(c); Citizenship Regulations, No. 2, s. 4; Citizenship Regulations, Schedule item 2',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/C-29/section-5.html',
+    checked: '2026-11-23',
+  },
+  citizenshipByDescentFirstGeneration: {
+    id: 'canada.citizenship.descent.firstGeneration',
+    claim:
+      'A child born in Pakistan after you become Canadian is a citizen by descent under section 3(1)(b).',
+    provenance: 'primary',
+    source: 'Citizenship Act, s. 3(1)(b) and (3), Justice Laws (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/C-29/section-3.html',
+    checked: '2026-11-23',
+    note: 's. 3(3) does not reach a parent who is a citizen by grant under s. 3(1)(c); IRCC\'s 2025 rules page also calls a child born abroad to a naturalised citizen \'Canadian by descent\'.',
+  },
+  billC3InForce: {
+    id: 'canada.citizenship.billC3.inForce',
+    claim:
+      'The rule for the next generation changed on 15 December 2025, when Bill C-3 took effect.',
+    provenance: 'primary',
+    source: 'IRCC, Change to citizenship rules in 2025 (page details 2025-12-24); Justice Laws, Citizenship Act last amended 2025-12-15',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/act-changes/rules-2025.html',
+    checked: '2026-11-23',
+  },
+  citizenshipSecondGeneration: {
+    id: 'canada.citizenship.descent.secondGeneration',
+    claim:
+      'Your grandchild born abroad to that child is generally Canadian only if your child first spent 1,095 days in Canada.',
+    provenance: 'primary',
+    source: 'Citizenship Act, s. 3(3), Justice Laws (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/C-29/section-3.html',
+    checked: '2026-11-23',
+    note: '\'Generally\' covers the exceptions: a citizen other parent not born abroad, and Crown service under s. 3(5).',
+  },
+  pakistanDualNationalityRule: {
+    id: 'pakistan.citizenship.section14',
+    claim:
+      'Section 14(1) of Pakistan’s Citizenship Act 1951 ends Pakistani citizenship for anyone who also holds another, unless they renounce the other one. Section 14(3) exempts citizens of the United Kingdom and Colonies, and of countries the federal government names in the official Gazette.',
+    provenance: 'primary',
+    source: 'Pakistan Code, The Pakistan Citizenship Act, 1951 (Act II of 1951), s. 14(1) and (3), consolidated text',
+    sourceUrl: 'https://www.pakistancode.gov.pk/pdffiles/administratora2b6f3407a109a491d47d649f6ff0c01.pdf',
+    checked: '2026-11-23',
+    note: 's. 14(3) added by Act No. XVII of 1972. The Gazette notification naming Canada was not found or read.',
+  },
+  dgipCanadaListed: {
+    id: 'pakistan.citizenship.dualNationality.canada',
+    claim:
+      'Pakistan’s Directorate General of Immigration and Passports (DGI&P) lists Canada among the countries with which Pakistan has dual nationality arrangements. Its dual nationality page was last modified on 9 January 2026.',
+    provenance: 'primary',
+    source: 'DGI&P, Ministry of Interior, Dual Nationality (last modified 9 January 2026)',
+    sourceUrl: 'https://dgip.gov.pk/immigration/dual_nationality.php',
+    checked: '2026-11-23',
+    note: 'Canada is entry 8 of the list. The page\'s count of countries is not printed. The page frames the list as countries whose citizens need not renounce when acquiring Pakistani citizenship; s. 14(3) applies the same notification to Pakistanis who acquire the other citizenship.',
+  },
+  canadaNoRenunciationCondition: {
+    id: 'canada.citizenship.noRenunciation',
+    claim:
+      'Section 5 of the Citizenship Act sets no condition of giving up another citizenship, and Global Affairs Canada says Canada allows multiple citizenships.',
+    provenance: 'primary',
+    source: 'Citizenship Act, s. 5; Global Affairs Canada, Dual citizenship (modified 2026-08-13)',
+    sourceUrl: 'https://travel.gc.ca/travelling/documents/dual-citizenship',
+    checked: '2026-11-23',
+    note: 'GAC: \'Canada allows you to have multiple citizenships while keeping your Canadian citizenship.\'',
+  },
+  gacCanadianPassportReturn: {
+    id: 'canada.dualCitizens.passportToReturn',
+    claim:
+      'You need a valid Canadian passport to fly back to Canada.',
+    provenance: 'primary',
+    source: 'Global Affairs Canada, Dual citizenship (modified 2026-08-13)',
+    sourceUrl: 'https://travel.gc.ca/travelling/documents/dual-citizenship',
+    checked: '2026-11-23',
+  },
+  pakistanRenunciationProcess: {
+    id: 'pakistan.citizenship.renunciation.process',
+    claim:
+      'Under section 14A, renouncing is a declaration on Form X made through a Pakistani mission.',
+    provenance: 'primary',
+    source: 'Pakistan Citizenship Act 1951, s. 14A(1); DGI&P, Renunciation of Pakistan Citizenship (last modified 4 October 2023)',
+    sourceUrl: 'https://dgip.gov.pk/immigration/renunciation.php',
+    checked: '2026-11-23',
+    note: 'DGI&P\'s renunciation fee is a web-page figure and is not printed.',
+  },
+  pakistanRenunciationChildren: {
+    id: 'pakistan.citizenship.renunciation.children',
+    claim:
+      'When a man renounces, his minor children living outside Pakistan lose citizenship too, though each can resume it within one year of turning 21.',
+    provenance: 'primary',
+    source: 'Pakistan Citizenship Act 1951, s. 14A(2), Pakistan Code consolidated text',
+    sourceUrl: 'https://www.pakistancode.gov.pk/pdffiles/administratora2b6f3407a109a491d47d649f6ff0c01.pdf',
+    checked: '2026-11-23',
+  },
+  gacPakistanDualRecognised: {
+    id: 'pakistan.travel.dualCitizenshipRecognised',
+    claim:
+      'Global Affairs Canada’s Pakistan travel advice (updated 19 October 2026) says dual citizenship is legally recognised in Pakistan.',
+    provenance: 'primary',
+    source: 'Global Affairs Canada, Travel advice and advisories: Pakistan (last updated 19 October 2026)',
+    sourceUrl: 'https://travel.gc.ca/destinations/pakistan',
+    checked: '2026-11-23',
+  },
+  gacPakistanNicopEntry: {
+    id: 'pakistan.travel.nicopOrVisa',
+    claim:
+      'A dual citizen entering on a Canadian passport needs a valid National Identity Card for Overseas Pakistanis (NICOP) or a visa.',
+    provenance: 'primary',
+    source: 'Global Affairs Canada, Travel advice and advisories: Pakistan (last updated 19 October 2026), Entry and exit requirements',
+    sourceUrl: 'https://travel.gc.ca/destinations/pakistan',
+    checked: '2026-11-23',
+  },
+  gacPakistanConsularLimited: {
+    id: 'pakistan.travel.consularLimited',
+    claim:
+      'Canada’s ability to help dual citizens while they are in Pakistan may be limited.',
+    provenance: 'primary',
+    source: 'Global Affairs Canada, Travel advice and advisories: Pakistan (last updated 19 October 2026), Laws and culture',
+    sourceUrl: 'https://travel.gc.ca/destinations/pakistan',
+    checked: '2026-11-23',
   },
 };
 

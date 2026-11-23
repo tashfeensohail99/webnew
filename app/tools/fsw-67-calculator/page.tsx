@@ -15,7 +15,7 @@ import { FSW_GRID_VERIFIED_ON } from '@/lib/fsw-grid';
 export const metadata: Metadata = {
   title: 'FSW 67-Point Calculator (Federal Skilled Worker)',
   description:
-    'Work out your Federal Skilled Worker points against the 67-point pass mark set in the immigration regulations. Not the same as your CRS score.',
+    'Work out your Federal Skilled Worker points against the 67-point pass mark that the Minister sets under the Regulations. Not the same as your CRS score.',
   alternates: { canonical: '/tools/fsw-67-calculator' },
 };
 
@@ -74,7 +74,8 @@ export default async function FswCalculatorPage() {
             <p>
               This grid is a gate. You either clear the pass mark or the Federal Skilled
               Worker class is not open to you, and no amount of ranking points changes that.
-              It is set in the Regulations, so it moves rarely.
+              The points are set in the Regulations, and the Minister sets the pass mark
+              under them.
             </p>
             <p>
               The CRS score is a queue position. It only exists once you are in the pool, it

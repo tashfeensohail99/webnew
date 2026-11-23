@@ -242,6 +242,14 @@ export default function PakistanPrCardResidencyPage() {
             </Link>
             , taken from IRCC’s own tables.
           </p>
+          <p>
+            When your days in Canada add up to citizenship, and what happens to your Pakistani
+            nationality, is in{' '}
+            <Link href="/blog/canadian-citizenship-after-pr-pakistan" className="font-semibold text-accent-500 link-underline">
+              Canadian citizenship after PR
+            </Link>
+            .
+          </p>
         </Prose>
         <div className="mx-auto max-w-3xl">
           <Callout title="The card and the status are different things">

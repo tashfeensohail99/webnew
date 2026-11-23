@@ -183,6 +183,18 @@ export default function CategoryBasedDrawsPage() {
           ))}
         </div>
 
+        <p className="mt-8 max-w-3xl text-ink-600 text-pretty">
+          For nurses and doctors trained in Pakistan, the provincial licence is a separate process from Express Entry. See{' '}
+          <Link href="/blog/pakistani-nurses-canada" className="font-semibold text-accent-500 link-underline">
+            Pakistani nurses moving to Canada
+          </Link>
+          {' '}and{' '}
+          <Link href="/blog/pakistani-doctors-canada" className="font-semibold text-accent-500 link-underline">
+            Pakistani doctors: licence and PR
+          </Link>
+          .
+        </p>
+
         <div className="mt-10">
           <Callout title="You cannot choose a category">
             <p>

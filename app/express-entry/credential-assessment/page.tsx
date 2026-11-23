@@ -47,7 +47,7 @@ const CHECKED = '22 November 2026';
 const a = 'font-semibold text-accent-500 link-underline';
 
 const SRC = {
-  ircc: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessed.html',
+  ircc: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessment.html',
   fsw: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html',
   profileDocs: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents.html',
   irpr75: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/page-11.html',
@@ -62,7 +62,7 @@ const SRC = {
   icesDocs: 'https://www.bcit.ca/ices/eca/requirements/',
   ces: 'https://learn.utoronto.ca/ces',
   cesFaq: 'https://learn.utoronto.ca/comparative-education-service/faq',
-  mcc: 'https://mcc.ca/repository/educational-credential-assessment/',
+  mcc: 'https://mcc.ca/credentials-and-services/services/educational-credential-assessment/',
   pebc: 'https://pebc.ca/pharmacists/document-evaluation/general-information/',
   hec: 'https://www.hec.gov.pk/english/services/students/DAS/Pages/Degree-Attestation.aspx',
   ibcc: 'https://ibcc.edu.pk/attestation/',
@@ -274,7 +274,7 @@ export default function CredentialAssessmentPage() {
             {
               label: <Out href={SRC.mcc}>Medical Council of Canada</Out>,
               cells: [
-                'Physicians (NOC 31100, 31101, 31102): an ECA of the medical degree, requested through physiciansapply.ca once the degree or transcript is source-verified.',
+                'Physicians (NOC 31100, 31101, 31102): an ECA of the medical degree, requested through physiciansapply.ca once the final degree is source-verified, or once the transcript is, with the degree also sent for verification.',
                 'An ECA does not give the right to practise medicine.',
               ],
             },

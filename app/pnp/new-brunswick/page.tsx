@@ -44,7 +44,7 @@ const STREAM_KINDS = [
     icon: 'doc' as const,
     kicker: 'In-demand occupation',
     title: 'Your occupation is on a priority list',
-    body: 'Some streams select for occupations the province has decided it needs — typically health care, education, construction trades, trucking and food processing. These lists are revised, sometimes annually, and an occupation that qualified last year may not this year.',
+    body: 'Some streams select for occupations the province has decided it needs — typically health care, education, construction trades and trucking. These lists are revised, sometimes annually, and an occupation that qualified last year may not this year.',
   },
   {
     icon: 'globe' as const,
@@ -62,7 +62,7 @@ const STREAM_KINDS = [
     icon: 'calculator' as const,
     kicker: 'Entrepreneur',
     title: 'You will start or buy a business',
-    body: 'Business streams involve a net worth test, a business plan, an exploratory visit and usually a period on a work permit before nomination is confirmed. They are slower and more document-heavy than most people expect.',
+    body: 'Business streams involve a net worth test, a business plan and usually a period on a work permit before nomination is confirmed. They are slower and more document-heavy than most people expect.',
   },
   {
     icon: 'plane' as const,
@@ -288,6 +288,14 @@ export default function NewBrunswickPnpPage() {
             </FeatureCard>
           ))}
         </div>
+
+        <p className="mt-8 max-w-3xl text-ink-600 text-pretty">
+          What changed in 2025 and 2026, and which pathways still work from outside Canada, is in{' '}
+          <Link href="/blog/new-brunswick-pnp-2026" className="font-semibold text-accent-500 link-underline">
+            New Brunswick’s PNP in 2026
+          </Link>
+          .
+        </p>
 
         <div className="mt-10">
           <Callout title="Check the province’s own page for current streams">

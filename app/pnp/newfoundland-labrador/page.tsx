@@ -112,7 +112,7 @@ const FAQS = [
   },
   {
     q: 'Do I need a job offer?',
-    a: 'For employer-driven streams, yes — a genuine, ongoing offer from an employer in the province is the foundation of the application. Graduate and business categories work differently. Whether any stream exists at a given time that needs no offer at all is a question to answer against the province’s current programme page, not against a general assumption.',
+    a: 'For the worker and graduate categories, yes. Each needs a genuine full-time offer from an employer in the province, and the province says a worker’s expression of interest without one is not considered. The entrepreneur categories rest on owning and running a business in the province instead. Criteria change, so check the category page on the day you apply.',
   },
   {
     q: 'Can I get nominated by Newfoundland and Labrador and then move to Toronto?',
@@ -128,7 +128,7 @@ const FAQS = [
   },
   {
     q: 'How long does nomination take and what does it cost?',
-    a: 'Both change, and both are published by the province and by IRCC on their own sites. We will not print figures here that you might rely on a year from now. Ask us what your file is likely to involve, and read the current numbers at the source.',
+    a: 'As of 23 November 2026 the province charges no fee for a nomination application; it removed its fees in April 2022. It also publishes no standard processing times. IRCC sets its own fees and publishes its own times for the permanent residence stage. Ask us what your file is likely to involve, and read the current details at the source.',
   },
 ];
 
@@ -211,6 +211,14 @@ export default function NewfoundlandLabradorPnpPage() {
           ))}
         </div>
 
+        <p className="mt-8 max-w-3xl text-ink-600 text-pretty">
+          What changed in 2025 and 2026, including expressions of interest for every application, is in{' '}
+          <Link href="/blog/newfoundland-labrador-pnp-2026" className="font-semibold text-accent-500 link-underline">
+            Newfoundland and Labrador’s PNP in 2026
+          </Link>
+          .
+        </p>
+
         <div className="mt-10">
           <Callout title="Check the province’s own page before you rely on anything">
             <p>
@@ -281,8 +289,8 @@ export default function NewfoundlandLabradorPnpPage() {
             />
             <Prose>
               <p>
-                Newfoundland and Labrador operates an expression-of-interest model for parts of its
-                programme. You register a profile describing your work, education, language ability
+                Newfoundland and Labrador uses an expression-of-interest model for all its economic
+                immigration applications. You register a profile describing your work, education, language ability
                 and connection to the province, and you enter a pool. The province then invites
                 candidates from that pool against prioritisation criteria it sets and can revise.
               </p>
@@ -497,8 +505,9 @@ export default function NewfoundlandLabradorPnpPage() {
         <Prose>
           <p>
             Everything that changes — which streams are open, what each requires, prioritisation
-            criteria, fees and processing times — is published by the two governments that decide it.
-            We do not reproduce those figures here, because a number that is correct today is a
+            criteria and, at the federal stage, fees and processing times — is published by the two
+            governments that decide it. The province itself charges no nomination fee and publishes no
+            standard processing times. We do not reproduce IRCC’s figures here, because a number that is correct today is a
             liability on a page you might read next year.
           </p>
           <p>

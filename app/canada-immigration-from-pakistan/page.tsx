@@ -43,7 +43,7 @@ const PAGE = 'canada-immigration-from-pakistan';
 const IRCC = {
   languageTests:
     'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-requirements/language-testing.html',
-  eca: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessed.html',
+  eca: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessment.html',
   police:
     'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/police-certificates.html',
   medical:

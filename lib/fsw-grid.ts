@@ -3,7 +3,9 @@
  *
  * ─────────────────────────────────────────────────────────────────────────────
  * THIS IS NOT THE CRS SCORE. It is the pass/fail ELIGIBILITY test for the FSW
- * class, set in the Immigration and Refugee Protection Regulations ss.75-83.
+ * class. The points are set in the Immigration and Refugee Protection
+ * Regulations ss.75-83; the pass mark is set by the Minister under s.76(2)
+ * and published by IRCC.
  * The CRS score out of 1,200 is a separate ranking applied afterwards, inside
  * the Express Entry pool. Confusing the two is the single most common
  * misunderstanding in this area, which is why they are separate modules.

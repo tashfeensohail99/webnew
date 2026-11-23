@@ -30,9 +30,29 @@ import LmiaExemptWorkPermitCodes from '@/content/blog/lmia-exempt-work-permit-co
 import FakeCanadaJobOffers2026 from '@/content/blog/fake-canada-job-offers-2026';
 import ParentsToCanadaPgpPaused2026 from '@/content/blog/parents-to-canada-pgp-paused-2026';
 import ItalyClickDays2027Pakistan from '@/content/blog/italy-click-days-2027-pakistan';
+import NewfoundlandLabradorPnp2026 from '@/content/blog/newfoundland-labrador-pnp-2026';
+import PeiPnp2026 from '@/content/blog/pei-pnp-2026';
+import NewBrunswickPnp2026 from '@/content/blog/new-brunswick-pnp-2026';
+import SaskatchewanSinp2026 from '@/content/blog/saskatchewan-sinp-2026';
+import ExpressEntryOrPnp from '@/content/blog/express-entry-or-pnp';
+import PakistaniNursesCanada from '@/content/blog/pakistani-nurses-canada';
+import PakistaniDoctorsCanada from '@/content/blog/pakistani-doctors-canada';
+import PakistaniEngineersCanada from '@/content/blog/pakistani-engineers-canada';
+import CanadaPrWithoutIeltsOrJobOffer from '@/content/blog/canada-pr-without-ielts-or-job-offer';
+import CanadianCitizenshipAfterPrPakistan from '@/content/blog/canadian-citizenship-after-pr-pakistan';
 
 /** One line per post. A slug in lib/blog.ts without a body here is a build error, not a blank page. */
 const BODIES: Record<string, ComponentType> = {
+  'canadian-citizenship-after-pr-pakistan': CanadianCitizenshipAfterPrPakistan,
+  'canada-pr-without-ielts-or-job-offer': CanadaPrWithoutIeltsOrJobOffer,
+  'pakistani-engineers-canada': PakistaniEngineersCanada,
+  'pakistani-doctors-canada': PakistaniDoctorsCanada,
+  'pakistani-nurses-canada': PakistaniNursesCanada,
+  'express-entry-or-pnp': ExpressEntryOrPnp,
+  'saskatchewan-sinp-2026': SaskatchewanSinp2026,
+  'new-brunswick-pnp-2026': NewBrunswickPnp2026,
+  'pei-pnp-2026': PeiPnp2026,
+  'newfoundland-labrador-pnp-2026': NewfoundlandLabradorPnp2026,
   'italy-click-days-2027-pakistan': ItalyClickDays2027Pakistan,
   'parents-to-canada-pgp-paused-2026': ParentsToCanadaPgpPaused2026,
   'fake-canada-job-offers-2026': FakeCanadaJobOffers2026,
