@@ -37,6 +37,7 @@ const SHARED = {
   '/tools/visit-visa-refusal-risk': ['components/tools/VisitVisaRiskChecker.tsx'],
   '/tools/work-permit-eligibility': ['components/tools/WorkPermitChecker.tsx'],
   '/blog': ['lib/blog.ts'],
+  '/canada-immigration-statistics-pakistan': ['lib/ircc-pakistan.json'],
 };
 
 function git(args) {
