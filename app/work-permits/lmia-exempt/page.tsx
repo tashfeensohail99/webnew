@@ -136,7 +136,7 @@ const FAQS = [
   },
   {
     q: 'The exemption codes I read about online don’t match what you’ve said.',
-    a: 'That happens, because IRCC restructures them. The intra-company transferee codes have been reorganised, and the significant-benefit instructions have been narrowed more than once. This is why we describe families rather than publish a code list — a stale code list is worse than none, and IRCC’s own programme delivery instructions are the only current source.',
+    a: 'That happens, because IRCC restructures them. The intra-company transferee codes have been reorganised, and the significant-benefit instructions have been narrowed more than once. This is why this guide describes families rather than codes — a stale code list is worse than none, and IRCC’s own programme delivery instructions are the only current source. Our blog post on LMIA-exempt work permit codes gives the common codes with the date they were checked.',
   },
   {
     q: 'Can you guarantee the permit?',
@@ -204,6 +204,14 @@ export default function LmiaExemptPage() {
             you have to prove, and the burden sits on you rather than on an employer. Second, some of
             these categories are discretionary: the officer is not checking boxes, they are deciding
             whether they accept your argument.
+          </p>
+          <p>
+            Each exception has an administrative code, such as C11 for business owners. The common
+            codes, as IRCC listed them on 23 November 2026, are in our post on{' '}
+            <Link href="/blog/lmia-exempt-work-permit-codes" className="font-semibold">
+              LMIA-exempt work permit codes
+            </Link>
+            .
           </p>
         </Prose>
       </Section>

@@ -80,15 +80,15 @@ const STEPS = [
   },
   {
     title: 'You submit an expression of interest',
-    body: 'For most streams you first register a profile signalling interest and setting out your work history, education, language results and any Nova Scotia connection. An expression of interest is not an application and creates no entitlement.',
+    body: 'Every stream now starts with an expression of interest (EOI). For the worker streams you submit a full application with your documents, and Nova Scotia treats it as an EOI in a pool; an incomplete one is closed. The Entrepreneur stream takes an online EOI and then sends an Invitation to Apply. Submitting an EOI is free and creates no entitlement.',
   },
   {
     title: 'The province draws from the pool',
-    body: 'Nova Scotia periodically selects profiles for processing. Selection reflects provincial priorities, the occupations in demand at that moment, and how much federal allocation the province has left. Nobody outside government can predict a draw.',
+    body: 'Nova Scotia periodically selects EOIs for processing. Selection reflects provincial priorities, the occupations in demand at that moment, and how much federal allocation the province has left. It is not first come, first served, and nobody outside government can predict a draw.',
   },
   {
-    title: 'You file the nomination application',
-    body: 'If selected, you have only days to upload updated documents and pay, so have everything ready before you submit an expression of interest. The application needs evidence — employment records, credentials, language testing, identity documents, and whatever demonstrates your connection to and intent to live in Nova Scotia.',
+    title: 'You complete it within days',
+    body: 'As of 23 November 2026, if your EOI is selected you have 7 calendar days to review your application, upload updated documents and pay the fee, so have everything ready before you submit. The evidence includes employment records, credentials, language testing, identity documents, and whatever shows your connection to and intent to live in Nova Scotia.',
   },
   {
     title: 'The province decides',
@@ -156,8 +156,9 @@ export default function NovaScotiaPnpPage() {
         </Link>
       </PageHero>
       <ShortAnswer question="How does the Nova Scotia Nominee Program work for applicants from Pakistan?">
-        You submit an expression of interest to a Nova Scotia stream; if selected, you apply, and
-        the province decides whether to nominate you. Applying from Pakistan, you realistically need
+        You submit a complete expression of interest to one of Nova Scotia’s four streams; if it is
+        selected, you finish and pay within days, and the province decides whether to nominate you.
+        From Pakistan, you realistically need
         a Nova Scotia job offer or Nova Scotia work experience. The province expects you to settle
         there, and only IRCC decides permanent residence.
       </ShortAnswer>
@@ -231,7 +232,7 @@ export default function NovaScotiaPnpPage() {
                 ],
                 [
                   'Expression of interest first',
-                  'Most streams now begin with a profile registered in a pool, from which the province periodically draws. Registering is not applying, and being in the pool confers nothing.',
+                  'Every stream now begins with an expression of interest in a pool, from which the province periodically draws. Being in the pool is not a nomination and confers nothing.',
                 ],
                 [
                   'Nomination is not approval',
@@ -277,15 +278,23 @@ export default function NovaScotiaPnpPage() {
           </Callout>
         </div>
         <CompareTable
-          caption="Nova Scotia’s four nominee streams as of 8 November 2026, and what each needs"
+          caption="Nova Scotia’s four nominee streams as of 23 November 2026, and what each needs"
           columns={['Stream', 'What it needs']}
           rows={[
             { label: 'Skilled Worker', cells: ['A full-time, permanent job offer from a Nova Scotia employer'] },
-            { label: 'Nova Scotia Graduate', cells: ['Study at a Nova Scotia institution; check the exact criteria on the province’s own site'] },
+            { label: 'Nova Scotia Graduate', cells: ['Recent study at a Nova Scotia institution and a full-time, permanent Nova Scotia job offer in a listed occupation'] },
             { label: 'Entrepreneur', cells: ['Running a business in the province, under its own capital, ownership and residency conditions'] },
             { label: 'Nova Scotia: Express Entry', cells: ['Work experience in Nova Scotia or a physician opportunity'] },
           ]}
         />
+        <p className="mt-8 max-w-3xl text-ink-600 text-pretty">
+          What changed in 2025 and 2026, including the move to four streams and the fees set from
+          1 September 2026, is in{' '}
+          <Link href="/blog/nova-scotia-nominee-program-2026" className="font-semibold text-accent-500 link-underline">
+            Nova Scotia’s nominee programme in 2026
+          </Link>
+          .
+        </p>
       </Section>
 
       {/* ===================== KINDS OF STREAM ===================== */}
@@ -346,8 +355,8 @@ export default function NovaScotiaPnpPage() {
             replaced. Confirm what is open before you begin, not after.
           </p>
           <p>
-            <strong>Treating an expression of interest as an application.</strong> A profile in a
-            pool is a signal, not a claim. It creates no queue position you can rely on and no
+            <strong>Treating an expression of interest as a nomination.</strong> An EOI in the pool
+            is a submission, not a claim. It creates no queue position you can rely on and no
             entitlement to be drawn.
           </p>
           <p>

@@ -216,7 +216,8 @@ export default function EuropePage() {
         </div>
         <p className="mt-8 max-w-3xl text-ink-600 text-pretty">
           For a European work route that is still running, read about{' '}
-          <Link href="/blog/austria-red-white-red-card" className="font-semibold text-accent-500 link-underline">Austria’s Red-White-Red Card from Pakistan</Link>. If you are a founder
+          <Link href="/blog/austria-red-white-red-card" className="font-semibold text-accent-500 link-underline">Austria’s Red-White-Red Card from Pakistan</Link>, or how{' '}
+          <Link href="/blog/italy-click-days-2027-pakistan" className="font-semibold text-accent-500 link-underline">Italy’s 2027 click days</Link> work, where only the employer can apply. If you are a founder
           with an innovative, scalable business, read{' '}
           <Link href="/europe/denmark-startup-visa" className="font-semibold text-accent-500 link-underline">Start-up Denmark from Pakistan</Link>, Denmark’s residence permit for
           people who will build a company there. Visiting Denmark? Read{' '}
@@ -250,7 +251,7 @@ export default function EuropePage() {
               </p>
             </Callout>
           </div>
-          <aside className="card border-l-[3px] border-l-gold-500 p-7 lg:col-span-2">
+          <div className="card border-l-[3px] border-l-gold-500 p-7 lg:col-span-2">
             <p className="eyebrow">The precedent</p>
             <p className="mt-4 font-serif text-2xl leading-tight text-balance">
               The EU already did this once.
@@ -259,7 +260,7 @@ export default function EuropePage() {
               Vanuatu holders lost Schengen visa-free access in December 2024 — permanently, and all
               at once. That is the outcome the Caribbean programmes are now being pushed toward.
             </p>
-          </aside>
+          </div>
         </div>
       </Section>
 

@@ -153,7 +153,7 @@ export default function ParentsGrandparentsPage() {
           title="An invitation first, an application second"
         />
         <div className="mt-8">
-          <Callout title="Status as of 8 November 2026: paused">
+          <Callout title="Status as of 23 November 2026: paused">
             IRCC is not accepting new interest to sponsor forms and will not invite potential
             sponsors to apply until further notice. It continues to process existing applications.
             If you have not already applied, there is nothing to file today.{' '}
@@ -169,13 +169,18 @@ export default function ParentsGrandparentsPage() {
             <Link href="/visitor-visa/super-visa" className="font-semibold text-accent-500 link-underline">
               Super Visa
             </Link>{' '}
-            for the route available now.
+            for the route available now. What the pause means for 2027, and what your parents can do
+            meanwhile, is in{' '}
+            <Link href="/blog/parents-to-canada-pgp-paused-2026" className="font-semibold text-accent-500 link-underline">
+              bringing parents to Canada while the program is paused
+            </Link>
+            .
           </Callout>
         </div>
         <Prose>
           <p>
-            A Canadian citizen or permanent resident can sponsor a parent or grandparent for
-            permanent residence. But unlike{' '}
+            A Canadian citizen, permanent resident or registered Indian can sponsor a parent or
+            grandparent for permanent residence. But unlike{' '}
             <Link href="/family-sponsorship/spouse-partner" className="font-semibold text-accent-500 link-underline">
               spousal sponsorship
             </Link>
@@ -479,11 +484,11 @@ export default function ParentsGrandparentsPage() {
         />
         <Prose>
           <p>
-            The minimum necessary income for each family size, the tax years assessed, the length of
-            the undertaking and the fees payable all change, and some of them change without much
-            notice. We deliberately do not print those figures here,
-            because a number that is correct today becomes a liability on a page you might read next
-            year.
+            The minimum necessary income for each family size and the fees payable change from year
+            to year. We deliberately do not print those figures here, because a number that is correct
+            today becomes a liability on a page you might read next year. Two rules are fixed in the
+            Regulations: the sponsor’s income is assessed over the three tax years before applying, and
+            the undertaking lasts 20 years (as of 23 November 2026).
           </p>
           <p>
             IRCC publishes the current position on{' '}

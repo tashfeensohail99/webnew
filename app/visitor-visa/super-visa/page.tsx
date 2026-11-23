@@ -30,7 +30,7 @@ const PARTS = [
     icon: 'user' as const,
     kicker: 'The inviter',
     title: 'A child or grandchild in Canada',
-    body: 'The invitation must come from your own child or grandchild who is a Canadian citizen or permanent resident. A cousin, a nephew, a family friend — none of those can invite you on this visa.',
+    body: 'The invitation must come from your own child or grandchild who is a Canadian citizen, permanent resident or registered Indian. A cousin, a nephew, a family friend — none of those can invite you on this visa.',
   },
   {
     icon: 'calculator' as const,
@@ -88,9 +88,10 @@ const FAQS = [
     q: 'How long can my parents stay, and how long is the visa valid?',
     a: (
       <>
-        Both the per-entry stay and the maximum validity of the visa are set by IRCC and have been
-        changed before, so we won’t print a number here that could be wrong when you read it. IRCC
-        publishes the current stay length and validity on its{' '}
+        Each entry allows a stay of up to five years, a period set by section 29(3) of the
+        Immigration and Refugee Protection Act (as of 23 November 2026). The visa’s maximum validity
+        is set by IRCC and has changed before, so we won’t print it here. IRCC publishes the current
+        stay rules and validity on its{' '}
         <a
           href="https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa.html"
           rel="noopener"
@@ -107,7 +108,7 @@ const FAQS = [
       <>
         It depends on the size of the household once your parents are counted in it, and{' '}
         <a
-          href="https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa.html"
+          href="https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/forms-documents/host-financial-support.html"
           rel="noopener"
         >
           IRCC publishes the table
@@ -197,7 +198,7 @@ export default function SuperVisaPage() {
             </p>
             <p>
               The Super Visa is narrower and longer. It is open only to the parents and grandparents
-              of Canadian citizens and permanent residents, and it authorises a continuous stay
+              of Canadian citizens, permanent residents and registered Indians, and it authorises a continuous stay
               measured in years per entry, on a visa valid for years beyond that, with the option to
               extend from inside Canada. For a family that wants a grandparent present for a
               grandchild’s childhood rather than for a wedding, that is the whole difference.
@@ -210,9 +211,17 @@ export default function SuperVisaPage() {
               immigration medical exam.
             </p>
             <p>
-              The specific numbers — the length of stay, the income threshold, the minimum insurance
-              coverage, the government fee — are set by IRCC and have been revised more than once in
-              recent years. We deliberately don’t print them here.{' '}
+              With parent sponsorship paused since 15 July 2026, the choice between the two is set out
+              in{' '}
+              <Link href="/blog/parents-to-canada-pgp-paused-2026" className="font-semibold text-accent-500 link-underline">
+                bringing parents to Canada while the program is paused
+              </Link>
+              .
+            </p>
+            <p>
+              The five-year stay per entry is set in the Act. The other numbers — the income
+              threshold, the minimum insurance coverage, the government fee — are set by IRCC and have
+              been revised more than once in recent years. We deliberately don’t print them here.{' '}
               <a
                 href="https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa.html"
                 rel="noopener"

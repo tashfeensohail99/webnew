@@ -210,6 +210,14 @@ export default function LmiaPage() {
               </a>
               .
             </p>
+            <p>
+              How to check an offer yourself since the November 2026 Express Entry change is in our
+              post on{' '}
+              <Link href="/blog/fake-canada-job-offers-2026" className="font-semibold text-accent-500 link-underline">
+                fake Canadian job offers and LMIAs
+              </Link>
+              .
+            </p>
           </Callout>
         </div>
       </Section>

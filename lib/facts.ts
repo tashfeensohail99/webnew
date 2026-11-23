@@ -3598,6 +3598,1260 @@ export const FACTS: Record<string, Fact> = {
     checked: '2026-11-22',
     note: 'The same page still lists the Green Card Scheme among permit types; that line is out of date and the post does not repeat it.',
   },
+
+  // ── BLOG POSTS OF 23 NOVEMBER 2026 (batch 28) ─────────────────────────────────────────
+  caNsnpStreams2026: {
+    id: 'ca.pnp.ns-2026.streams',
+    claim:
+      'As of 23 November 2026, the Nova Scotia Nominee Program has four streams: Skilled Worker, Nova Scotia Graduate, Entrepreneur and Nova Scotia: Express Entry.',
+    provenance: 'primary',
+    source: 'Live in Nova Scotia, Nova Scotia Nominee Program',
+    sourceUrl: 'https://liveinnovascotia.com/nova-scotia-nominee-program',
+    checked: '2026-11-23',
+  },
+  caNsnpConsolidation: {
+    id: 'ca.pnp.ns-2026.consolidation',
+    claim:
+      'On 18 February 2026 ten streams merged into four; Nova Scotia said the old eligibility rules carried over as sub-criteria. Critical Construction Worker Pilot and Physician went into Skilled Worker; International Graduates in Demand into Nova Scotia Graduate; International Graduate Entrepreneur into Entrepreneur; Nova Scotia Experience: Express Entry, Labour Market Priorities and Labour Market Priorities for Physicians into Nova Scotia: Express Entry.',
+    provenance: 'primary',
+    source: 'Live in Nova Scotia, NSNP Update: Four Consolidated Streams (18 February 2026)',
+    sourceUrl: 'https://liveinnovascotia.com/resources/nsnp-update-four-consolidated-streams',
+    checked: '2026-11-23',
+  },
+  caNsnpEoiProcess: {
+    id: 'ca.pnp.ns-2026.eoi-process',
+    claim:
+      'Since 28 November 2025 every NSNP stream (and AIP designations and endorsements) uses a formal expression of interest process; EOIs are full submissions and an incomplete EOI is closed.',
+    provenance: 'primary',
+    source: 'Live in Nova Scotia, Processing Policy: Expression of Interest (28 November 2025); Nova Scotia Nominee Program page',
+    sourceUrl: 'https://liveinnovascotia.com/eoi-process',
+    checked: '2026-11-23',
+  },
+  caNsnpSelection: {
+    id: 'ca.pnp.ns-2026.selection',
+    claim:
+      'Selection factors include labour market needs, occupation, likely retention, intended region and status in Canada; selection is not first come, first served; a selected candidate has 7 calendar days to review the application, upload updated documents and pay the fee.',
+    provenance: 'primary',
+    source: 'Live in Nova Scotia, Nova Scotia Nominee Program',
+    sourceUrl: 'https://liveinnovascotia.com/nova-scotia-nominee-program',
+    checked: '2026-11-23',
+  },
+  caNsnpEoiValidity: {
+    id: 'ca.pnp.ns-2026.eoi-validity',
+    claim:
+      'From 1 May 2026 new EOIs expire after 12 months; EOIs submitted before 1 May 2024 were closed; EOIs submitted between 1 May 2024 and 30 April 2026 expire on 30 April 2027 if not selected; an expired or closed EOI is not a refusal.',
+    provenance: 'primary',
+    source: 'Live in Nova Scotia, EOI Validity Period and Transition Measures (27 April 2026)',
+    sourceUrl: 'https://liveinnovascotia.com/resources/expression-interest-eoi-validity-period-and-transition-measures',
+    checked: '2026-11-23',
+  },
+  caNsnpFees: {
+    id: 'ca.pnp.ns-2026.fees',
+    claim:
+      'From 1 September 2026, N.S. Reg. 181/2026 sets the fee at $1,000 (Canadian) for a worker stream and $2,000 for an entrepreneur stream.',
+    provenance: 'primary',
+    source: 'Royal Gazette Part II, Vol. 50, No. 17 (21 August 2026), N.S. Reg. 181/2026, made by Order in Council 2026-255 under s. 2(1) of the Costs and Fees Act, effective on and after 1 September 2026',
+    sourceUrl: 'https://novascotia.ca/JuST/regulations/rg2/2026/RG2-2026-08-21.pdf',
+    checked: '2026-11-23',
+    note: 'Law. The regulation says \'worker stream\' and \'entrepreneur stream\' without naming streams; the fee notice names the worker streams as Skilled Worker, Nova Scotia Graduate and Nova Scotia: Express Entry.',
+  },
+  caNsnpFeeRules: {
+    id: 'ca.pnp.ns-2026.fee-rules',
+    claim:
+      'Submitting an EOI is free, the fee is non-refundable, the fee is charged only once an EOI is selected for assessment, and it does not apply to the Atlantic Immigration Program (no provincial fee on 23 November 2026).',
+    provenance: 'primary',
+    source: 'Live in Nova Scotia, NSNP Update: Application Fees Effective September 1, 2026 (6 August 2026)',
+    sourceUrl: 'https://liveinnovascotia.com/resources/nsnp-update-application-fees-effective-september-1-2026',
+    checked: '2026-11-23',
+  },
+  caNsnpSelectionCounts: {
+    id: 'ca.pnp.ns-2026.selection-counts',
+    claim:
+      'Nova Scotia\'s EOI selection page, last updated 19 November 2026, counts 363 candidates selected in January 2026 and 1,296 in October 2026, mostly from healthcare and skilled trades occupations.',
+    provenance: 'primary',
+    source: 'Live in Nova Scotia, EOI Selection (last updated 19 November 2026)',
+    sourceUrl: 'https://liveinnovascotia.com/eoi-selection',
+    checked: '2026-11-23',
+    note: 'Official statistic published by the province. Remove if the lead does not treat these administrative counts as statistics.',
+  },
+  caNsnpSkilledWorker: {
+    id: 'ca.pnp.ns-2026.skilled-worker',
+    claim:
+      'Skilled Worker asks for a full-time, permanent Nova Scotia job offer; 1 year of related work experience, plus six months with the employer for TEER 4 or 5; age 21 to 55 and a high school diploma; CLB 5 for TEER 0–3 or CLB 4 for TEER 4–5 (test results needed even if English is the first language); enough financial resources to settle. Construction sub-criteria accept industry training in place of a diploma; physicians need an approved NSHA or IWK opportunity.',
+    provenance: 'primary',
+    source: 'Live in Nova Scotia, Skilled Worker',
+    sourceUrl: 'https://liveinnovascotia.com/skilled-worker',
+    checked: '2026-11-23',
+  },
+  caNsnpOccupationsInDemand: {
+    id: 'ca.pnp.ns-2026.occupations-in-demand',
+    claim:
+      'The Skilled Worker page\'s Occupations in Demand tab listed no occupations on 23 November 2026.',
+    provenance: 'primary',
+    source: 'Live in Nova Scotia, Skilled Worker',
+    sourceUrl: 'https://liveinnovascotia.com/skilled-worker',
+    checked: '2026-11-23',
+    note: 'Same URL as caNsnpSkilledWorker; tab content.',
+  },
+  caNsnpFoodServicesPause: {
+    id: 'ca.pnp.ns-2026.food-services-pause',
+    claim:
+      'Since 17 April 2024 Nova Scotia has stopped accepting submissions in the Accommodation and Food Services sector; the notice was still on the Skilled Worker page on 23 November 2026.',
+    provenance: 'primary',
+    source: 'Live in Nova Scotia, Skilled Worker (notice dated 12 noon ADT, 17 April 2024)',
+    sourceUrl: 'https://liveinnovascotia.com/skilled-worker',
+    checked: '2026-11-23',
+    note: 'The same notice is on the Nova Scotia: Express Entry page.',
+  },
+  caNsnpGraduate: {
+    id: 'ca.pnp.ns-2026.graduate',
+    claim:
+      'Nova Scotia Graduate needs recent study at a Nova Scotia institution and a full-time, permanent Nova Scotia job offer in a listed occupation; it was open to four occupations (NOC 32102, 32124, 33102, 42202), in healthcare and early childhood education.',
+    provenance: 'primary',
+    source: 'Live in Nova Scotia, Nova Scotia Graduate',
+    sourceUrl: 'https://liveinnovascotia.com/nova-scotia-graduate',
+    checked: '2026-11-23',
+  },
+  caNsnpExpressEntry: {
+    id: 'ca.pnp.ns-2026.express-entry',
+    claim:
+      'The main Nova Scotia: Express Entry route needs a year of work in Nova Scotia at TEER 0–3 and an Express Entry profile; its physician sub-criteria need an approved NSHA or IWK opportunity and a Letter of Interest.',
+    provenance: 'primary',
+    source: 'Live in Nova Scotia, Nova Scotia: Express Entry',
+    sourceUrl: 'https://liveinnovascotia.com/express-entry',
+    checked: '2026-11-23',
+  },
+  caNsnpPriorities: {
+    id: 'ca.pnp.ns-2026.priorities',
+    claim:
+      'Under the 27 April 2026 priorities, healthcare and skilled trades jobs at TEER 0–4 may be considered for international applicants; other occupations are limited to temporary residents already living and working in Nova Scotia.',
+    provenance: 'primary',
+    source: 'Live in Nova Scotia, Nominee Program Priorities in Nova Scotia (27 April 2026)',
+    sourceUrl: 'https://liveinnovascotia.com/resources/nominee-program-priorities-nova-scotia',
+    checked: '2026-11-23',
+  },
+  caNsnpJuly2026: {
+    id: 'ca.pnp.ns-2026.july-expansion',
+    claim:
+      'The 14 July 2026 update widened selection, as a one-time measure, only for people already living and working in Nova Scotia; for recruitment from abroad it kept the focus on healthcare, skilled trades and selected critical-service occupations.',
+    provenance: 'primary',
+    source: 'Live in Nova Scotia, NSNP and AIP 2026 Selection Priorities (14 July 2026)',
+    sourceUrl: 'https://liveinnovascotia.com/resources/update-nova-scotia-nominee-program-and-atlantic-immigration-program-2026-selection',
+    checked: '2026-11-23',
+  },
+  caNsnp2025Update: {
+    id: 'ca.pnp.ns-2025.update',
+    claim:
+      'On 17 July 2025 Nova Scotia said it had more applications than it could approve in 2025, and most applications from outside Canada in non-priority sectors would not be processed.',
+    provenance: 'primary',
+    source: 'Live in Nova Scotia, Nova Scotia Immigration Update – 2025 (17 July 2025)',
+    sourceUrl: 'https://liveinnovascotia.com/resources/nova-scotia-immigration-update-2025',
+    checked: '2026-11-23',
+  },
+  caNsnpCriticalVacancies: {
+    id: 'ca.pnp.ns-2026.critical-vacancies',
+    claim:
+      'Nova Scotia searches the Express Entry pool for critical vacancies and says that contact is not an invitation to apply for a nomination.',
+    provenance: 'primary',
+    source: 'Live in Nova Scotia, Critical Vacancies',
+    sourceUrl: 'https://liveinnovascotia.com/critical-vacancies',
+    checked: '2026-11-23',
+  },
+  caNsnpEntrepreneur: {
+    id: 'ca.pnp.ns-2026.entrepreneur',
+    claim:
+      'The Entrepreneur stream is by invitation: EOI, then Invitation to Apply; nomination may follow after a year running the business. It asks for age 21 or over, CLB 5 in all four skills, and 3 years owning and managing a business with at least one-third ownership or more than 5 years in senior management; it sets a minimum net worth and minimum personal investment, both lower outside Halifax Regional Municipality.',
+    provenance: 'primary',
+    source: 'Live in Nova Scotia, Entrepreneur',
+    sourceUrl: 'https://liveinnovascotia.com/entrepreneur',
+    checked: '2026-11-23',
+    note: 'Net-worth and investment amounts deliberately not printed: they appear only on the stream page, not in a Nova Scotia regulation.',
+  },
+  caNsnpAfterNomination: {
+    id: 'ca.pnp.ns-2026.after-nomination',
+    claim:
+      'A nominee applies to IRCC for permanent residence within 12 months of receiving the nominee certificate; the family must meet medical, security and criminal admissibility rules; IRCC makes the final decision.',
+    provenance: 'primary',
+    source: 'Live in Nova Scotia, Nova Scotia Nominee Program',
+    sourceUrl: 'https://liveinnovascotia.com/nova-scotia-nominee-program',
+    checked: '2026-11-23',
+  },
+  caPnpRoutesIrcc: {
+    id: 'ca.pnp.ircc-routes',
+    claim:
+      'The province tells you which IRCC route to use (Express Entry or non-Express Entry), and IRCC\'s provincial nominee page describes both.',
+    provenance: 'primary',
+    source: 'IRCC, Provincial Nominee Program (page details 2026-09-14)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html',
+    checked: '2026-11-23',
+  },
+  caPnpExpressEntryPoints: {
+    id: 'ca.ee.pnp-600',
+    claim:
+      'A nomination made through Express Entry is worth 600 points under section 28(1) of the Ministerial Instructions.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions respecting the Express Entry system (current; signed Ottawa, 17 November 2026; page details 2026-11-18), s. 28(1)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+    note: 'Ministerial Instructions. Read via the fetch tool; canada.ca did not answer curl.',
+  },
+  lmiaCodesChangedDec2022: {
+    id: 'lmiaExempt.codes.changed2022',
+    claim:
+      'IRCC changed several codes and added new ones on 15 December 2022.',
+    provenance: 'primary',
+    source: 'IRCC, LMIA exemption codes – International Mobility Program (page details 2026-09-23)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes.html',
+    checked: '2026-11-23',
+    note: 'Page: \'There were several code changes and new codes added on December 15, 2022.\' Old codes are in a column headed \'December 14 and before\'.',
+  },
+  lmiaC12Replaced: {
+    id: 'lmiaExempt.codes.c12',
+    claim:
+      'C12 was the intra-company transferee code until 14 December 2022; C61 (establishing a branch, subsidiary or affiliate), C62 (executives and managers) and C63 (specialised knowledge) replace it, all under section 205(a).',
+    provenance: 'primary',
+    source: 'IRCC, LMIA exemption codes list; Intra-company transferees (page details 2025-01-06)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/intra-company-transferees.html',
+    checked: '2026-11-23',
+  },
+  lmiaIctOwnerMnc: {
+    id: 'lmiaExempt.ict.ownerMultinational',
+    claim:
+      'IRCC says controlling owners who want to start a new business in Canada are not eligible as intra-company transferees unless their company is a multinational, with revenue-generating operations in a country other than its home country.',
+    provenance: 'primary',
+    source: 'IRCC, Intra-company transferees, C61 section, \'Owners/Operators\' (page details 2025-01-06)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/intra-company-transferees.html',
+    checked: '2026-11-23',
+  },
+  lmiaC11: {
+    id: 'lmiaExempt.codes.c11',
+    claim:
+      'C11 is for business owners seeking only temporary residence, under section 205(a); owners who intend to settle are assessed under C60 (provincial business candidates and Quebec self-employed) or A77 (start-up visa applicants).',
+    provenance: 'primary',
+    source: 'IRCC, Business owners seeking only temporary residence [R205(a) – C11] (page details 2025-05-27)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/entrepreneurs-self-employed-seeking-only-temp-residence-r205-c11.html',
+    checked: '2026-11-23',
+    note: 'The page sets no citizenship or nationality restriction.',
+  },
+  lmiaC10: {
+    id: 'lmiaExempt.codes.c10',
+    claim:
+      'C10 is the general significant-benefit code under 205(a); IRCC describes it as flexibility for unique or exceptional situations, tells officers not to use it for convenience, and requires the benefit to be clear and documented.',
+    provenance: 'primary',
+    source: 'IRCC, Significant benefit to Canada [R205(a) – C10] (page details 2026-10-20)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/canadian-interests-significant-benefit-general-guidelines-r205-c10.html',
+    checked: '2026-11-23',
+  },
+  lmiaC20: {
+    id: 'lmiaExempt.codes.c20',
+    claim:
+      'C20 is reciprocal employment under 205(b): work that creates or keeps similar jobs for Canadians abroad.',
+    provenance: 'primary',
+    source: 'IRCC, Reciprocal employment general guidelines [R205(b) – C20] (page details 2026-08-06)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/canadian-interests-reciprocal-employment-general-guidelines-r205-b-c20.html',
+    checked: '2026-11-23',
+  },
+  lmiaC41: {
+    id: 'lmiaExempt.codes.c41',
+    claim:
+      'C41 is for spouses or common-law partners of workers in TEER 0 or 1 jobs, or selected TEER 2 or 3 jobs; it gives an open work permit under 205(c)(ii).',
+    provenance: 'primary',
+    source: 'IRCC, Spouses or common-law partners of foreign nationals authorized to work in high-skilled occupations [C41] (page details 2026-08-11)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/public-policy-competitiveness-economy/spouses-common-law-authorized-work-high-skilled-occupations.html',
+    checked: '2026-11-23',
+    note: 'The page refers to \'pre-January 21, 2025, rules\' and \'post-January 21, 2025, rules\'; the codes list says the C41 instructions apply to applications on or after 21 January 2025. The 16-month condition on the principal\'s permit is not printed (web page only).',
+  },
+  lmiaC42: {
+    id: 'lmiaExempt.codes.c42',
+    claim:
+      'C42 is for spouses or common-law partners of study permit holders in eligible programs, such as a doctorate; it gives an open work permit under 205(c)(ii), its rules changed on 21 January 2025, and dependent children cannot use it.',
+    provenance: 'primary',
+    source: 'IRCC, Spouses or common-law partners of study permit holders [R205(c)(ii) – C42] (page details 2026-08-24)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/public-policy-competitiveness-economy/c42.html',
+    checked: '2026-11-23',
+    note: 'Programme-length conditions (master\'s length) not printed: web page only.',
+  },
+  lmiaC43: {
+    id: 'lmiaExempt.codes.c43',
+    claim:
+      'C43 is the post-graduation work permit, under 205(c)(ii), for graduates of an eligible Canadian designated learning institution.',
+    provenance: 'primary',
+    source: 'IRCC, Post-graduation work permit (PGWP) [R205(c) – C43] (page details 2025-12-11)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/study-permits/post-graduation-work-permit-program.html',
+    checked: '2026-11-23',
+  },
+  lmiaA75: {
+    id: 'lmiaExempt.codes.a75',
+    claim:
+      'A75 is the code for bridging open work permits, under 205(a); IRCC\'s instructions are for people already in Canada and exclude applications made at a visa office.',
+    provenance: 'primary',
+    source: 'IRCC, Bridging open work permits [R205(a) – A75] (page details 2025-07-30)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/provincial-nominees-permanent-resident-applicants/bridging-open-work-permits.html',
+    checked: '2026-11-23',
+    note: 'The codes list also shows other A-codes, such as A70 and A76.',
+  },
+  lmiaCusma: {
+    id: 'lmiaExempt.trade.cusma',
+    claim:
+      'CUSMA (T34 to T38) is for citizens of the United States and Mexico; permanent residents of those countries are excluded.',
+    provenance: 'primary',
+    source: 'IRCC, International Mobility Program: CUSMA (page details 2024-10-03)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/international-free-trade-agreements/cusma.html',
+    checked: '2026-11-23',
+  },
+  lmiaCeta: {
+    id: 'lmiaExempt.trade.ceta',
+    claim:
+      'CETA (T41 to T48) is for citizens of European Union countries.',
+    provenance: 'primary',
+    source: 'IRCC, CETA overview (page details 2024-10-03)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/international-free-trade-agreements/canada-eu.html',
+    checked: '2026-11-23',
+  },
+  lmiaCptpp: {
+    id: 'lmiaExempt.trade.cptpp',
+    claim:
+      'CPTPP (T50 to T55) is for citizens of its signatory countries other than Canada; Pakistan is not on IRCC\'s list.',
+    provenance: 'primary',
+    source: 'IRCC, CPTPP overview (page details 2026-09-02)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/international-free-trade-agreements/trans-pacific.html',
+    checked: '2026-11-23',
+  },
+  lmiaGats: {
+    id: 'lmiaExempt.trade.gats',
+    claim:
+      'GATS professionals (T33) is for citizens of World Trade Organization members and covers only listed professions, such as engineers and architects, on short contracts that cannot be extended.',
+    provenance: 'primary',
+    source: 'IRCC, International Mobility Program: General Agreement on Trade in Services',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/international-free-trade-agreements/general-agreement-trade-services.html',
+    checked: '2026-11-23',
+    note: 'The 90-day contract limit is not printed (web page only). Page details show 2014-10-28 although the page cites WTO membership as of August 2024.',
+  },
+  pakistanWtoMember: {
+    id: 'pakistan.wtoMember',
+    claim:
+      'Pakistan has been a WTO member since 1 January 1995.',
+    provenance: 'primary',
+    source: 'World Trade Organization, Members and Observers',
+    sourceUrl: 'https://www.wto.org/english/thewto_e/whatis_e/tif_e/org6_e.htm',
+    checked: '2026-11-23',
+  },
+  impOfferNumber: {
+    id: 'imp.offerOfEmployment.number',
+    claim:
+      'For an employer-specific permit, the employer pays the employer compliance fee and submits an offer of employment in the Employer Portal, then gives the worker the 7-digit offer of employment number; open work permits need neither the offer nor the fee.',
+    provenance: 'primary',
+    source: 'IRCC, How to hire under the International Mobility Program (page details 2026-04-23)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/hire-temporary-foreign/international-mobility-program/how-to-hire.html',
+    checked: '2026-11-23',
+  },
+  irprEmployerComplianceFee: {
+    id: 'irpr.303-1.employerComplianceFee',
+    claim:
+      'The employer compliance fee is C$230, set by section 303.1 of the Regulations, unless the case is exempt.',
+    provenance: 'primary',
+    source: 'Justice Laws, IRPR s. 303.1(1) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-303.1.html',
+    checked: '2026-11-23',
+    note: 'The brief named s. 303.2; that section is the C$100 open work permit holder fee, which the post does not print. Exemptions: s. 303.1(4.1) and (5), and IRCC\'s employer compliance exemptions page.',
+  },
+  irprRefusalNoOffer: {
+    id: 'irpr.200-3-f1',
+    claim:
+      'Under section 200(3)(f.1), an officer must refuse the permit if the employer had not paid the fee, or submitted the offer, before the worker applied.',
+    provenance: 'primary',
+    source: 'Justice Laws, IRPR s. 200(3)(f.1) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-200.html',
+    checked: '2026-11-23',
+  },
+  irprNoRecruitmentFees: {
+    id: 'irpr.209-2-1-a-ix-x',
+    claim:
+      'Under section 209.2, an employer must not charge the worker the employer compliance fee or recruitment fees, and must make sure its recruiters do not either.',
+    provenance: 'primary',
+    source: 'Justice Laws, IRPR s. 209.2(1)(a)(ix) and (x) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-209.2.html',
+    checked: '2026-11-23',
+  },
+  irpr204: {
+    id: 'irpr.204',
+    claim:
+      'Section 204 covers international and provincial agreements and youth mobility.',
+    provenance: 'primary',
+    source: 'Justice Laws, IRPR s. 204 (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-204.html',
+    checked: '2026-11-23',
+  },
+  irpr205: {
+    id: 'irpr.205',
+    claim:
+      'Section 205 covers work in Canada\'s interests: 205(a) significant benefit, 205(b) reciprocal employment, 205(c) work the Minister designates such as research or public-policy work, 205(d) religious or charitable work.',
+    provenance: 'primary',
+    source: 'Justice Laws, IRPR s. 205 (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-205.html',
+    checked: '2026-11-23',
+  },
+  irccNoGuarantee: {
+    id: 'ircc.scams.noGuarantee',
+    claim:
+      'IRCC\'s scams page: "No one can guarantee you a job or a visa to Canada."',
+    provenance: 'primary',
+    source: 'IRCC, Online and telephone immigration scams (page details 2026-09-01)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/protect-fraud/internet-email-telephone.html',
+    checked: '2026-11-23',
+  },
+  caJobOfferNoLmia: {
+    id: 'ca.fraud.job-offer.no-lmia',
+    claim:
+      'Since 3 November 2026, a qualifying Express Entry job offer does not need an LMIA.',
+    provenance: 'primary',
+    source: 'IRCC, Changes to Express Entry for high-wage occupations (backgrounder, 16 October 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/10/changes-to-express-entry-for-high-wage-occupations.html',
+    checked: '2026-11-23',
+    note: 'Same fact as /blog/express-entry-november-2026-crs-change; the job offer page (modified 2026-11-18) says the same.',
+  },
+  caJobOfferLmiaNoPoints: {
+    id: 'ca.fraud.job-offer.lmia-no-points',
+    claim:
+      'IRCC’s job offer page says an LMIA adds no points or priority.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: job offer (modified 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/job-offer.html',
+    checked: '2026-11-23',
+  },
+  caJobOfferPoints: {
+    id: 'ca.fraud.job-offer.points',
+    claim:
+      'An offer in an occupation on IRCC’s high-wage list can add 50, 70 or 100 CRS points without an LMIA.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions respecting the Express Entry system – current, s. 15.2(1)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+    note: 'Restated as in /blog/express-entry-november-2026-crs-change; the points are the greater of this and Canadian work experience, not added to it.',
+  },
+  caJobOfferPointsRemoved2025: {
+    id: 'ca.fraud.job-offer.points-removed-2025',
+    claim:
+      'In spring 2025, IRCC had stopped giving points for job offers; its news release said the aim was to remove the incentive to illegally buy or sell LMIAs.',
+    provenance: 'primary',
+    source: 'IRCC, Canada takes action to reduce fraud in Express Entry system (news release, 23 December 2024)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/news/2024/12/canada-takes-action-to-reduce-fraud-in-express-entry-system.html',
+    checked: '2026-11-23',
+  },
+  caJobOfferHighWageVerification: {
+    id: 'ca.fraud.job-offer.high-wage-verification',
+    claim:
+      'The backgrounder says limiting the new points to high-wage occupations also supports verification.',
+    provenance: 'primary',
+    source: 'IRCC, Changes to Express Entry for high-wage occupations (backgrounder, 16 October 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/10/changes-to-express-entry-for-high-wage-occupations.html',
+    checked: '2026-11-23',
+  },
+  caJobOfferProfileLmiaQuestion: {
+    id: 'ca.fraud.job-offer.profile-lmia-question',
+    claim:
+      'As of 23 November 2026, IRCC’s online profile still asks whether a positive LMIA was issued; the job offer page says the system has not caught up, and tells you what to enter.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: job offer (modified 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/job-offer.html',
+    checked: '2026-11-23',
+    note: 'The page gives placeholder answers; the post does not print them. Re-check when IRCC updates the profile form.',
+  },
+  caLmiaFeeNotFromWorker: {
+    id: 'ca.fraud.lmia.fee-not-from-worker',
+    claim:
+      'ESDC’s requirements for high-wage positions say the LMIA processing fee cannot be paid by or recovered from the worker.',
+    provenance: 'primary',
+    source: 'ESDC, Program requirements for high-wage positions (modified 2026-11-10)',
+    sourceUrl: 'https://www.canada.ca/en/employment-social-development/services/foreign-workers/median-wage/high/requirements.html',
+    checked: '2026-11-23',
+    note: 'Fee amount (IRPR s. 315.2(1)) deliberately not printed, consistent with /work-permits/lmia.',
+  },
+  caLmiaNoRecruitmentFees: {
+    id: 'ca.fraud.lmia.no-recruitment-fees',
+    claim:
+      'The employer must not charge the worker recruitment fees, directly or indirectly; ESDC says breaking this leads to a negative LMIA decision.',
+    provenance: 'primary',
+    source: 'ESDC, Program requirements for high-wage positions (modified 2026-11-10)',
+    sourceUrl: 'https://www.canada.ca/en/employment-social-development/services/foreign-workers/median-wage/high/requirements.html',
+    checked: '2026-11-23',
+  },
+  caIrpr2093RecruitmentFees: {
+    id: 'ca.fraud.irpr.209-3-fees',
+    claim:
+      'IRPR s. 209.3 bars employers of LMIA work-permit holders, while the worker is employed under the permit, from charging or recovering the LMIA fee or recruitment fees, and requires them to make sure their recruiter charges nothing for them.',
+    provenance: 'primary',
+    source: 'Justice Laws, Immigration and Refugee Protection Regulations, s. 209.3(1)(a)(xv) and (xvi) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-209.3.html',
+    checked: '2026-11-23',
+  },
+  caIrpr2092RecruitmentFees: {
+    id: 'ca.fraud.irpr.209-2-fees',
+    claim:
+      'IRPR s. 209.2 sets a matching rule for employer-specific work permits issued without an LMIA.',
+    provenance: 'primary',
+    source: 'Justice Laws, Immigration and Refugee Protection Regulations, s. 209.2(1)(a)(ix) and (x) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-209.2.html',
+    checked: '2026-11-23',
+    note: 'Under 209.2 the fee named is the employer compliance fee (s. 303.1(1)), not the LMIA fee.',
+  },
+  caIrprFeeExceptions: {
+    id: 'ca.fraud.irpr.fee-exceptions',
+    claim:
+      'The narrow exceptions include the government fees for the worker’s own visa and work permit.',
+    provenance: 'primary',
+    source: 'Justice Laws, IRPR ss. 209.2(1)(a)(ix) and 209.3(1)(a)(xv), which except the fees in ss. 296(1), 298(1) and 299(1)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-209.3.html',
+    checked: '2026-11-23',
+    note: '296(1) temporary resident visa, 298(1) temporary resident permit, 299(1) work permit; 209.3 also excepts fees allowed under seasonal agricultural worker agreements. Amounts not printed.',
+  },
+  caEsdcWorkerPays: {
+    id: 'ca.fraud.esdc.worker-pays',
+    claim:
+      'ESDC tells foreign workers they pay only for their work permit, medical exam and biometrics, if required.',
+    provenance: 'primary',
+    source: 'ESDC, Temporary foreign workers: your rights are protected (modified 2026-09-23)',
+    sourceUrl: 'https://www.canada.ca/en/employment-social-development/services/foreign-workers/protected-rights.html',
+    checked: '2026-11-23',
+  },
+  caJobOfferForPayScamSign: {
+    id: 'ca.fraud.scam-sign.pay-for-offer',
+    claim:
+      'IRCC lists anyone who promises you a work permit or job offer if you pay them as a warning sign of a scam.',
+    provenance: 'primary',
+    source: 'IRCC, Understand the consequences of unauthorized work (modified 2026-07-23)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/admissibility-enforcement/consequences-unauthorized-work.html',
+    checked: '2026-11-23',
+  },
+  caFalseJobOffersFraud: {
+    id: 'ca.fraud.false-job-offers',
+    claim:
+      'IRCC’s fraud page counts false job offers as fraud.',
+    provenance: 'primary',
+    source: 'IRCC, Consequences of fraud (2026-09-01)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/protect-fraud/consequences-fraud.html',
+    checked: '2026-11-23',
+  },
+  caMisrepresentationFiveYears: {
+    id: 'ca.fraud.misrep-five-years',
+    claim:
+      'A finding of misrepresentation makes you inadmissible for five years.',
+    provenance: 'primary',
+    source: 'Justice Laws, Immigration and Refugee Protection Act, s. 40(1)(a) and (2)(a) (current to 2026-10-29)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-40.html',
+    checked: '2026-11-23',
+    note: 'Same fact as ca.refusal.misrep-period in lib/facts.ts.',
+  },
+  caJobOfferGenuineness: {
+    id: 'ca.fraud.job-offer.genuineness',
+    claim:
+      'An offer counts only if an officer finds it genuine: whether the employer is actively in business, needs the role and can meet the offer’s terms, and the employer’s record with employment and recruitment laws.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions respecting the Express Entry system – current, s. 15.2(4)(a)–(c) and (e)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+    note: 'The backgrounder of 16 October 2026 lists the same factors.',
+  },
+  caJobOfferApplicantSide: {
+    id: 'ca.fraud.job-offer.applicant',
+    claim:
+      'The officer must be satisfied, from your past work or education, that you can do the job and are likely to take it.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions respecting the Express Entry system – current, s. 15.2(4)(d)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+  },
+  caJobOfferSupportingDocs: {
+    id: 'ca.fraud.job-offer.supporting-docs',
+    claim:
+      'The job offer page asks you to add supporting documents that show the offer is genuine.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: job offer (modified 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/job-offer.html',
+    checked: '2026-11-23',
+  },
+  caJobOfferExcludedEmployers: {
+    id: 'ca.fraud.job-offer.excluded-employers',
+    claim:
+      'For offers in TEER 0 to 3 jobs and skilled trades, the Ministerial Instructions shut out employers named in IRPR s. 200(3)(h): employers made ineligible under s. 209.95 for breaking the rules on employing foreign workers, or in default on a penalty.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions – current, s. 15.2(2)(b) and (c); Justice Laws, IRPR ss. 200(3)(h)(ii)–(iii) and 209.95(1)(b)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+  },
+  caJobOfferRevoked: {
+    id: 'ca.fraud.job-offer.revoked',
+    claim:
+      'An offer that is revoked stops counting.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions respecting the Express Entry system – current, s. 15.2(5)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+  },
+  caNonCompliantList: {
+    id: 'ca.fraud.non-compliant-list',
+    claim:
+      'IRCC publishes the employers found non-compliant, some of them banned from hiring temporary workers for a period.',
+    provenance: 'primary',
+    source: 'IRCC, Employers who have been found non-compliant (modified 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/employers-non-compliant.html',
+    checked: '2026-11-23',
+    note: 'That a missing name proves nothing is our own point, not IRCC’s.',
+  },
+  caScamNoGuarantee: {
+    id: 'ca.fraud.scam-sign.guarantee',
+    claim:
+      'Nobody can guarantee you a job or visa to Canada.',
+    provenance: 'primary',
+    source: 'IRCC, Online and telephone scams (modified 2026-09-01)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/protect-fraud/internet-email-telephone.html',
+    checked: '2026-11-23',
+  },
+  caScamSalaryTooHigh: {
+    id: 'ca.fraud.scam-sign.salary',
+    claim:
+      'IRCC warns about salaries that seem too high to be real.',
+    provenance: 'primary',
+    source: 'IRCC, Online and telephone scams (modified 2026-09-01)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/protect-fraud/internet-email-telephone.html',
+    checked: '2026-11-23',
+  },
+  caJobBankWages: {
+    id: 'ca.fraud.job-bank.wages',
+    claim:
+      'Job Bank, the Government of Canada’s job site, has a wage search by occupation and location.',
+    provenance: 'primary',
+    source: 'Job Bank, Search wages (modified 2026-09-24)',
+    sourceUrl: 'https://www.jobbank.gc.ca/trend-analysis/search-wages',
+    checked: '2026-11-23',
+  },
+  caLmiaJobBankAdvert: {
+    id: 'ca.fraud.lmia.job-bank-advert',
+    claim:
+      'For a high-wage LMIA, ESDC requires the employer to advertise on Job Bank before applying.',
+    provenance: 'primary',
+    source: 'ESDC, Program requirements for high-wage positions (modified 2026-11-10)',
+    sourceUrl: 'https://www.canada.ca/en/employment-social-development/services/foreign-workers/median-wage/high/requirements.html',
+    checked: '2026-11-23',
+    note: 'The advertising period and number of recruitment activities appear only on the page, so they are not printed.',
+  },
+  caJobBankSearch: {
+    id: 'ca.fraud.job-bank.search',
+    claim:
+      'You can search Job Bank by keyword and location.',
+    provenance: 'primary',
+    source: 'Job Bank, Available jobs – search (modified 2026-09-24)',
+    sourceUrl: 'https://www.jobbank.gc.ca/jobsearch',
+    checked: '2026-11-23',
+  },
+  caJobBankNoImmigration: {
+    id: 'ca.fraud.job-bank.no-immigration',
+    claim:
+      'Job Bank’s safety page says Job Bank does not deal with immigration.',
+    provenance: 'primary',
+    source: 'Job Bank, Job search safety tips (modified 2026-01-08)',
+    sourceUrl: 'https://www.jobbank.gc.ca/findajob/resources/safety-tips',
+    checked: '2026-11-23',
+  },
+  caCafcCheckEmployer: {
+    id: 'ca.fraud.cafc.check-employer',
+    claim:
+      'The Canadian Anti-Fraud Centre advises checking the company’s official website and calling its official phone number.',
+    provenance: 'primary',
+    source: 'Canadian Anti-Fraud Centre, Job (scams) (modified 2026-01-16)',
+    sourceUrl: 'https://antifraudcentre-centreantifraude.ca/scams-fraudes/job-emploi-eng.htm',
+    checked: '2026-11-23',
+  },
+  caCafcJobScamSigns: {
+    id: 'ca.fraud.cafc.signs',
+    claim:
+      'Warning signs include contact through a web-based email rather than a company domain, an offer you never applied for, and upfront deposits or fees.',
+    provenance: 'primary',
+    source: 'Canadian Anti-Fraud Centre, Job (scams) (modified 2026-01-16)',
+    sourceUrl: 'https://antifraudcentre-centreantifraude.ca/scams-fraudes/job-emploi-eng.htm',
+    checked: '2026-11-23',
+  },
+  caScamSocialMedia: {
+    id: 'ca.fraud.scam-sign.social-media',
+    claim:
+      'IRCC lists requests to send documents or payment through social media as a warning sign.',
+    provenance: 'primary',
+    source: 'IRCC, Understand the consequences of unauthorized work (modified 2026-07-23)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/admissibility-enforcement/consequences-unauthorized-work.html',
+    checked: '2026-11-23',
+  },
+  caJobOfferInWriting: {
+    id: 'ca.fraud.job-offer.in-writing',
+    claim:
+      'A genuine offer is in writing and sets out the pay, duties and hours.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: job offer (modified 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/job-offer.html',
+    checked: '2026-11-23',
+  },
+  caReportOnlineScamsCafc: {
+    id: 'ca.fraud.report.cafc',
+    claim:
+      'IRCC’s reporting page points online scams to the Canadian Anti-Fraud Centre, and tells people outside Canada with fake documents to report there and to local police, among other steps.',
+    provenance: 'primary',
+    source: 'IRCC, How to report scams, fraud or abuse (2026-05-11)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/protect-fraud/report-fraud.html',
+    checked: '2026-11-23',
+    note: 'The other step for fake documents outside Canada is the CBSA Border Watch Line.',
+  },
+  caCafcReportOnline: {
+    id: 'ca.fraud.cafc.report-online',
+    claim:
+      'The Canadian Anti-Fraud Centre takes reports online from victims and witnesses.',
+    provenance: 'primary',
+    source: 'Canadian Anti-Fraud Centre, Report fraud (modified 2025-11-27)',
+    sourceUrl: 'https://antifraudcentre-centreantifraude.ca/report-signalez-eng.htm',
+    checked: '2026-11-23',
+    note: 'The page does not say whether a different process applies to people abroad.',
+  },
+  caEsdcCannotMakeYouPay: {
+    id: 'ca.fraud.esdc.cannot-make-you-pay',
+    claim:
+      'ESDC’s rights page says an employer cannot make you pay to get a job.',
+    provenance: 'primary',
+    source: 'ESDC, Temporary foreign workers: your rights are protected (modified 2026-09-23)',
+    sourceUrl: 'https://www.canada.ca/en/employment-social-development/services/foreign-workers/protected-rights.html',
+    checked: '2026-11-23',
+  },
+  caEsdcAnyoneCanReport: {
+    id: 'ca.fraud.esdc.anyone-can-report',
+    claim:
+      'ESDC’s reporting page says anyone can report abuse of the Temporary Foreign Worker Program.',
+    provenance: 'primary',
+    source: 'ESDC, How to report abuse of temporary foreign workers (2026-10-05)',
+    sourceUrl: 'https://www.canada.ca/en/employment-social-development/services/foreign-workers/report-abuse.html',
+    checked: '2026-11-23',
+  },
+  pkFiaComplaintPortal: {
+    id: 'pk.fia.complaint-portal',
+    claim:
+      'The FIA’s online complaint portal takes complaints about unlawful activity within its remit.',
+    provenance: 'primary',
+    source: 'Federal Investigation Agency, Public Services Portal',
+    sourceUrl: 'https://complaint.fia.gov.pk/',
+    checked: '2026-11-23',
+  },
+  pkFiaAhsWing: {
+    id: 'pk.fia.ahs-wing',
+    claim:
+      'The FIA’s Anti Human Trafficking and Smuggling Wing handles immigration, human trafficking and migrant smuggling crimes.',
+    provenance: 'primary',
+    source: 'Federal Investigation Agency, Anti Human Trafficking & Smuggling Wing',
+    sourceUrl: 'https://www.fia.gov.pk/fia-new/public/htsw',
+    checked: '2026-11-23',
+  },
+  pgpPausedNotice: {
+    id: 'canada.pgp.paused',
+    claim:
+      'On 15 July 2026, IRCC paused the Parents and Grandparents Program: it will not accept new interest to sponsor forms or invite potential sponsors to apply until further notice, and keeps processing existing applications.',
+    provenance: 'primary',
+    source: 'IRCC, Canada takes steps to responsibly manage the Parents and Grandparents Program (15 July 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/responsibly-manage-parent-grandparent-program.html',
+    checked: '2026-11-23',
+  },
+  pgpPageStillPaused: {
+    id: 'canada.pgp.status',
+    claim:
+      'IRCC’s program page still showed the program as paused on 23 November 2026.',
+    provenance: 'primary',
+    source: 'IRCC, Sponsor your parents and grandparents (page dated 2026-08-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/sponsor-parents-grandparents.html',
+    checked: '2026-11-23',
+  },
+  pgpLastRound2025: {
+    id: 'canada.pgp.lastRound',
+    claim:
+      'The last round began on 28 July 2025, inviting people who had submitted an interest form in 2020; the last day to apply was 9 October 2025.',
+    provenance: 'primary',
+    source: 'IRCC, Find out if you’re invited to apply (2025-10-10) and How to apply (2026-08-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/sponsor-parents-grandparents/selected.html',
+    checked: '2026-11-23',
+    note: 'IRCC’s invitation count and application cap for 2025 left out: web-page figures only.',
+  },
+  pgpNo2027Intake: {
+    id: 'canada.pgp.intake2027',
+    claim:
+      'As of 23 November 2026 IRCC has announced no intake for 2027; its notices page had nothing newer on the program than the 15 July notice, and the 2027–2029 levels plan supplementary information (5 November 2026) says nothing about a new intake.',
+    provenance: 'primary',
+    source: 'IRCC, Notices; Supplementary Information for the 2027-2029 Immigration Levels Plan (2026-11-05)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/immigration-system/levels/supplementary-immigration-levels-2027-2029.html',
+    checked: '2026-11-23',
+    note: 'Absence of an announcement, checked on the notices list, the PGP pages and the levels plan. No plan targets printed.',
+  },
+  pgp2026FromInventory: {
+    id: 'canada.pgp.2026approvals',
+    claim:
+      'In 2026, IRCC is approving parents from applications already submitted, while accepting no new forms.',
+    provenance: 'primary',
+    source: 'IRCC, Canada takes steps to responsibly manage the Parents and Grandparents Program (15 July 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/responsibly-manage-parent-grandparent-program.html',
+    checked: '2026-11-23',
+    note: 'The notice’s approval target is left out.',
+  },
+  superVisaHost: {
+    id: 'canada.superVisa.host',
+    claim:
+      'The super visa host must be the applicant’s child or grandchild, aged at least 18, living in Canada, and a Canadian citizen, permanent resident or registered Indian; the host signs a letter of invitation promising financial support and listing everyone counted for the income test.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions regarding the Parent and Grandparent Super Visa (2026), in effect 31 March 2026',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/other-goals/super-visa-2026.html',
+    checked: '2026-11-23',
+  },
+  superVisaIncomeTwoYears: {
+    id: 'canada.superVisa.incomeYears',
+    claim:
+      'Since 31 March 2026 the host can meet the income minimum in either of the two tax years before applying.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions regarding the Parent and Grandparent Super Visa (2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/other-goals/super-visa-2026.html',
+    checked: '2026-11-23',
+  },
+  superVisaAddParentsIncome: {
+    id: 'canada.superVisa.parentsIncome',
+    claim:
+      'A host who falls short can add the visiting parents’ income, once the host alone reaches a minimum share that IRCC sets.',
+    provenance: 'primary',
+    source: 'IRCC, Changes to how the parents and grandparents super visa income requirement is calculated (20 March 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/changes-parents-grandparents-super-visa-income-requirement-calculated.html',
+    checked: '2026-11-23',
+    note: 'The share (75% on IRCC’s proof-of-support page) is left out: web-page figure only.',
+  },
+  superVisaInsurerLaw: {
+    id: 'canada.superVisa.insurerLaw',
+    claim:
+      'The insurer can be Canadian or a company outside Canada approved by the Minister.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Act, s. 15.1 (2023, c. 21, s. 2); Ministerial Instructions (2026), s. 2(1)(c)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/I-2.5/section-15.1.html',
+    checked: '2026-11-23',
+  },
+  superVisaInsurerOsfi: {
+    id: 'canada.superVisa.insurerOsfi',
+    claim:
+      'A foreign insurer must be authorised by OSFI, appear on OSFI’s list and issue the policy through its insurance business in Canada; a quote is not accepted, and the policy must be paid in full or in instalments with a deposit.',
+    provenance: 'primary',
+    source: 'IRCC, Super visa: Forms and documents (page dated 2026-07-30); notice of 28 January 2025',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/forms-documents.html',
+    checked: '2026-11-23',
+    note: 'Coverage amount and minimum period left out.',
+  },
+  superVisaFiveYears: {
+    id: 'canada.superVisa.stay',
+    claim:
+      'A super visa allows up to five years per entry, a period set in section 29(3) of the Act; holders can apply to extend from inside Canada.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Act, s. 29(3) (2023, c. 21, s. 3), current to 2026-10-29; IRCC, How long you can stay (2026-07-06)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/I-2.5/section-29.html',
+    checked: '2026-11-23',
+  },
+  superVisaValidityUnprinted: {
+    id: 'canada.superVisa.validity',
+    claim:
+      'It is a multiple-entry visa that can be valid for several years, and IRCC’s super visa page gives the current maximum.',
+    provenance: 'primary',
+    source: 'IRCC, Super visa for parents or grandparents (page dated 2026-11-16); Ministerial Instructions (2026), definition of Super Visa',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa.html',
+    checked: '2026-11-23',
+    note: 'The 10-year maximum is on IRCC pages only; not found in IRPA, IRPR or the 2026 Instructions, so not printed.',
+  },
+  superVisaShouldConsider: {
+    id: 'canada.superVisa.discretion',
+    claim:
+      'The Instructions say an officer “should consider” issuing a super visa.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions regarding the Parent and Grandparent Super Visa (2026), s. 2(1)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/other-goals/super-visa-2026.html',
+    checked: '2026-11-23',
+  },
+  superVisaGenuineVisitor: {
+    id: 'canada.superVisa.ties',
+    claim:
+      'Officers weigh the parents’ ties to their home country, the purpose of the visit, and their family and finances.',
+    provenance: 'primary',
+    source: 'IRCC, Super visa: Who can apply (page dated 2026-07-06)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/eligibility.html',
+    checked: '2026-11-23',
+  },
+  superVisaApplyOnline: {
+    id: 'canada.superVisa.apply',
+    claim:
+      'Parents apply online from outside Canada, then receive a biometric instruction letter; a super visa cannot be valid for longer than biometrics given before.',
+    provenance: 'primary',
+    source: 'IRCC, Super visa: Submit your application (page dated 2026-08-28)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/apply.html',
+    checked: '2026-11-23',
+  },
+  biometricsPakistanCentres: {
+    id: 'pakistan.biometrics.centres',
+    claim:
+      'IRCC lists visa application centres in Islamabad, Lahore and Karachi.',
+    provenance: 'primary',
+    source: 'IRCC, Where to give your biometrics (page dated 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/biometrics/where-to-give.html',
+    checked: '2026-11-23',
+  },
+  biometricsOver79: {
+    id: 'canada.biometrics.over79',
+    claim:
+      'A parent over 79 on the day of applying does not give biometrics.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 12.2(1)(b) and (2), current to 2026-10-29',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-12.2.html',
+    checked: '2026-11-23',
+  },
+  medicalPanelPhysician: {
+    id: 'canada.superVisa.medical',
+    claim:
+      'The super visa medical exam must be done by an IRCC-approved panel physician.',
+    provenance: 'primary',
+    source: 'IRCC, Super visa: Forms and documents (2026-07-30); Ministerial Instructions (2026), s. 2(1)(b)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/forms-documents.html',
+    checked: '2026-11-23',
+  },
+  medicalPakistanList: {
+    id: 'pakistan.medical.countryList',
+    claim:
+      'Pakistan is on IRCC’s country list, so someone who has lived there can need a medical exam even for an ordinary visit of over six months.',
+    provenance: 'primary',
+    source: 'IRCC, country list (page dated 2026-11-16); Immigration and Refugee Protection Regulations, s. 30(1)(a)(iii)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/medical-exams/requirements-temporary-residents/country-requirements.html',
+    checked: '2026-11-23',
+  },
+  medicalPrApplicants: {
+    id: 'canada.pgp.medical',
+    claim:
+      'Sponsored parents applying for permanent residence need a medical exam.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 30(1)(a)(i)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-30.html',
+    checked: '2026-11-23',
+  },
+  superVisaNoPoliceCert: {
+    id: 'canada.superVisa.police',
+    claim:
+      'IRCC’s super visa documents page did not list a police certificate on 23 November 2026.',
+    provenance: 'primary',
+    source: 'IRCC, Super visa: Forms and documents (page dated 2026-07-30)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/forms-documents.html',
+    checked: '2026-11-23',
+    note: '“Send one only if you are asked” is our suggestion.',
+  },
+  visitorSixMonthsNoWork: {
+    id: 'canada.visitor.stayWork',
+    claim:
+      'A visitor’s stay is six months unless the officer sets another period, and temporary residents may not work unless authorised.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 183(1)(b) and (2), current to 2026-10-29',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-183.html',
+    checked: '2026-11-23',
+  },
+  visitorEnoughMoney: {
+    id: 'canada.visitor.funds',
+    claim:
+      'For an ordinary visitor visa nobody in Canada has to qualify; the visitor shows enough money for the stay.',
+    provenance: 'primary',
+    source: 'IRCC, Eligibility to apply for a visitor visa (page dated 2026-08-28)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eligibility.html',
+    checked: '2026-11-23',
+  },
+  prCanWork: {
+    id: 'canada.pr.rights',
+    claim:
+      'Permanent residents can live and work anywhere in Canada.',
+    provenance: 'primary',
+    source: 'IRCC, Understand permanent resident status (page dated 2026-04-09)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/new-immigrants/pr-card/understand-pr-status.html',
+    checked: '2026-11-23',
+  },
+  pgpSponsorWho: {
+    id: 'canada.pgp.sponsor',
+    claim:
+      'The sponsor must be a Canadian citizen or permanent resident, aged at least 18, who lives in Canada; IRCC’s eligibility page also lists registered Indians.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 130(1); IRCC, Check if you’re eligible (2026-06-23)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-130.html',
+    checked: '2026-11-23',
+  },
+  pgpIncomeThreeYears: {
+    id: 'canada.pgp.incomeYears',
+    claim:
+      'The sponsor needs income at or above a set minimum for each of the three tax years before applying; for parents and grandparents that minimum is higher than for other relatives.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 133(1)(j)(i)(A) and (B), current to 2026-10-29',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-133.html',
+    checked: '2026-11-23',
+    note: 'Minimum necessary income amounts and the 30% margin are not printed.',
+  },
+  pgpIncomeNoa: {
+    id: 'canada.pgp.incomeEvidence',
+    claim:
+      'Income is taken from Canadian notices of assessment, and a co-signer’s income is added if there is one.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 134(1.1)(a) and (c)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-134.html',
+    checked: '2026-11-23',
+  },
+  pgpQuebec: {
+    id: 'canada.pgp.quebec',
+    claim:
+      'If you live in Quebec, IRCC says you must also meet Quebec’s own requirements.',
+    provenance: 'primary',
+    source: 'IRCC, Sponsor your parents and grandparents: Check if you’re eligible (page dated 2026-06-23)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/sponsor-parents-grandparents/eligibility.html',
+    checked: '2026-11-23',
+  },
+  pgpUndertaking20: {
+    id: 'canada.pgp.undertaking',
+    claim:
+      'The sponsor’s undertaking lasts 20 years from the day the parent becomes a permanent resident.',
+    provenance: 'primary',
+    source: 'Immigration and Refugee Protection Regulations, s. 132(1)(b)(iv), current to 2026-10-29',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-132.html',
+    checked: '2026-11-23',
+  },
+  itFlussiClickDays2027: {
+    id: 'it.flussi.2027.clickDays',
+    claim:
+      'The 2027 click days open at 9:00 Italian time on 12 January 2027 (seasonal agriculture, form C-Stag agricolo), 9 February 2027 (seasonal tourism, C-Stag turistico), 16 February 2027 (non-seasonal work in the DPCM’s sectors, B2020) and 18 February 2027 (non-seasonal home care, A-bis).',
+    provenance: 'primary',
+    source: 'Ministries of the Interior, Labour, Agriculture and Tourism, joint circular prot. n. 7185 (1 October 2026)',
+    sourceUrl: 'https://www.lavoro.gov.it/documenti-e-norme/normativa/CC-7185-del-01102026',
+    checked: '2026-11-23',
+    note: 'Circular section 3; the same days are fixed for each year 2026–2028 in art. 8(2) of the DPCM.',
+  },
+  itFlussiWindowEnd2027: {
+    id: 'it.flussi.2027.windowEnd',
+    claim:
+      'Each 2027 window stays open until 31 December 2027, but only while places remain.',
+    provenance: 'primary',
+    source: 'Ministries of the Interior, Labour, Agriculture and Tourism, joint circular prot. n. 7185 (1 October 2026)',
+    sourceUrl: 'https://www.lavoro.gov.it/documenti-e-norme/normativa/CC-7185-del-01102026',
+    checked: '2026-11-23',
+    note: 'Circular section 3: "ferma restando la disponibilità delle relative quote"; DPCM art. 8(2).',
+  },
+  itFlussiLapse: {
+    id: 'it.flussi.lapse',
+    claim:
+      'Requests still without a place six months after 31 December 2027 lapse, and so does a nulla osta not followed by a visa in that period.',
+    provenance: 'primary',
+    source: 'Gazzetta Ufficiale, DPCM 2 ottobre 2025, Programmazione dei flussi di ingresso legale in Italia dei lavoratori stranieri per il triennio 2026-2028 (GU Serie Generale n. 240, 15 October 2025)',
+    sourceUrl: 'https://www.gazzettaufficiale.it/eli/id/2025/10/15/25A05656/sg',
+    checked: '2026-11-23',
+    note: 'DPCM art. 8(2)(a)–(d), which says this for each reference year.',
+  },
+  itFlussiTotal2027: {
+    id: 'it.flussi.2027.total',
+    claim:
+      'For 2027 the DPCM allows 165,850 work entries: 76,200 for non-seasonal jobs, 89,000 for seasonal jobs and 650 for self-employment. The 76,200 include 14,000 places for home care.',
+    provenance: 'primary',
+    source: 'Gazzetta Ufficiale, DPCM 2 ottobre 2025, Programmazione dei flussi di ingresso legale in Italia dei lavoratori stranieri per il triennio 2026-2028 (GU Serie Generale n. 240, 15 October 2025)',
+    sourceUrl: 'https://www.gazzettaufficiale.it/eli/id/2025/10/15/25A05656/sg',
+    checked: '2026-11-23',
+    note: 'DPCM arts 5(1)(b), 6(1)(b), 6(3)(c)(2) and 7(1)(b); circular section 1 repeats the same figures.',
+  },
+  itFlussiPakistanReserved2027: {
+    id: 'it.flussi.2027.pakistanList',
+    claim:
+      'Within the non-seasonal places, article 6(2)(a) reserves 25,000, shared among citizens of a named list of countries that cooperate with Italy on migration. Pakistan is on that list, with Bangladesh, India, Sri Lanka and others.',
+    provenance: 'primary',
+    source: 'Gazzetta Ufficiale, DPCM 2 ottobre 2025, Programmazione dei flussi di ingresso legale in Italia dei lavoratori stranieri per il triennio 2026-2028 (GU Serie Generale n. 240, 15 October 2025)',
+    sourceUrl: 'https://www.gazzettaufficiale.it/eli/id/2025/10/15/25A05656/sg',
+    checked: '2026-11-23',
+    note: 'Art. 6(2)(a) names 38 countries and gives 25,000 for each of 2026, 2027 and 2028; the post does not print the count of countries.',
+  },
+  itFlussiNewAgreements2027: {
+    id: 'it.flussi.2027.newAgreements',
+    claim:
+      'Another 26,000 are for countries whose agreements come into force during 2026 to 2028.',
+    provenance: 'primary',
+    source: 'Gazzetta Ufficiale, DPCM 2 ottobre 2025, Programmazione dei flussi di ingresso legale in Italia dei lavoratori stranieri per il triennio 2026-2028 (GU Serie Generale n. 240, 15 October 2025)',
+    sourceUrl: 'https://www.gazzettaufficiale.it/eli/id/2025/10/15/25A05656/sg',
+    checked: '2026-11-23',
+    note: 'DPCM art. 6(2)(b), 2027 figure.',
+  },
+  itFlussiSeasonalCountries: {
+    id: 'it.flussi.seasonal.countries',
+    claim:
+      'Under article 7, seasonal places are open only to citizens of the countries on those two lists, so Pakistani workers can be hired for seasonal jobs as well.',
+    provenance: 'primary',
+    source: 'Gazzetta Ufficiale, DPCM 2 ottobre 2025, Programmazione dei flussi di ingresso legale in Italia dei lavoratori stranieri per il triennio 2026-2028 (GU Serie Generale n. 240, 15 October 2025)',
+    sourceUrl: 'https://www.gazzettaufficiale.it/eli/id/2025/10/15/25A05656/sg',
+    checked: '2026-11-23',
+    note: 'DPCM art. 7(1), referring to art. 6(2)(a) and (b).',
+  },
+  itFlussiSeasonalPriority2027: {
+    id: 'it.flussi.2027.seasonalPriority',
+    claim:
+      'Of the 89,000 seasonal places, 47,000 go first to agricultural requests filed through named farmers’ organisations, and 14,000 to tourism requests filed through national employers’ organisations.',
+    provenance: 'primary',
+    source: 'Gazzetta Ufficiale, DPCM 2 ottobre 2025, Programmazione dei flussi di ingresso legale in Italia dei lavoratori stranieri per il triennio 2026-2028 (GU Serie Generale n. 240, 15 October 2025)',
+    sourceUrl: 'https://www.gazzettaufficiale.it/eli/id/2025/10/15/25A05656/sg',
+    checked: '2026-11-23',
+    note: 'DPCM art. 7(4) (47,000 each year) and 7(5) (14,000 in 2027).',
+  },
+  itFlussiSelfEmployment2027: {
+    id: 'it.flussi.2027.selfEmployment',
+    claim:
+      'Of the 650 self-employment places, 500 are for named groups such as investors, company officers and founders of innovative start-ups. The circular lists no separate click day for self-employment.',
+    provenance: 'primary',
+    source: 'Gazzetta Ufficiale, DPCM 2 ottobre 2025, Programmazione dei flussi di ingresso legale in Italia dei lavoratori stranieri per il triennio 2026-2028 (GU Serie Generale n. 240, 15 October 2025)',
+    sourceUrl: 'https://www.gazzettaufficiale.it/eli/id/2025/10/15/25A05656/sg',
+    checked: '2026-11-23',
+    note: 'DPCM art. 6(4); circular section 3 lists four days only. Art. 8(2)(c) does put the 50 self-employment places for workers of Italian origin (art. 6(3)(a)) on 16 February; the table says only "no separate day in the circular".',
+  },
+  itFlussiKenya2027: {
+    id: 'it.flussi.2027.kenya',
+    claim:
+      'The joint circular adds Kenya to the countries of origin from 2027.',
+    provenance: 'primary',
+    source: 'Ministries of the Interior, Labour, Agriculture and Tourism, joint circular prot. n. 7185 (1 October 2026)',
+    sourceUrl: 'https://www.lavoro.gov.it/documenti-e-norme/normativa/CC-7185-del-01102026',
+    checked: '2026-11-23',
+    note: 'Memorandum of 2 July 2026, per circular section 1.',
+  },
+  itFlussiPrefill2027: {
+    id: 'it.flussi.2027.prefill',
+    claim:
+      'Pre-filling on the Interior Ministry’s ALI portal runs from 9:00 on 23 October 2026 to 20:00 on 7 December 2026, Italian time. From 9 to 13 December 2026 the portal reopens only to finish and save forms already started; no new forms can be added.',
+    provenance: 'primary',
+    source: 'Ministries of the Interior, Labour, Agriculture and Tourism, joint circular prot. n. 7185 (1 October 2026)',
+    sourceUrl: 'https://www.lavoro.gov.it/documenti-e-norme/normativa/CC-7185-del-01102026',
+    checked: '2026-11-23',
+    note: 'Circular section 2; the Ministry of Labour notice of 1 October 2026 gives the same dates. The ALI portal was only checked as reachable and is described from the circular.',
+  },
+  itEmployerApplies: {
+    id: 'it.nullaOsta.employerApplies',
+    claim:
+      'Under article 22, an employer in Italy hiring someone who lives abroad sends a request naming the worker online to the immigration desk of the province, with papers on the worker’s housing and a proposed contract including the return journey, after checking with the local job centre that no worker already in Italy is available.',
+    provenance: 'primary',
+    source: 'Normattiva, Legislative Decree 25 July 1998 n. 286, art. 22 (text in force from 4 June 2026)',
+    sourceUrl: 'https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-07-25;286~art22',
+    checked: '2026-11-23',
+    note: 'Art. 22(1)–(2): "richiesta nominativa di nulla osta".',
+  },
+  itWhoCanFile: {
+    id: 'it.nullaOsta.whoCanFile',
+    claim:
+      'Employers can file directly or through an employers’ organisation, an authorised professional such as a labour consultant, or a registered Italian staffing agency. The law gives no filing role to the worker.',
+    provenance: 'primary',
+    source: 'Normattiva, Legislative Decree 25 July 1998 n. 286, art. 22 (text in force from 4 June 2026)',
+    sourceUrl: 'https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-07-25;286~art22',
+    checked: '2026-11-23',
+    note: 'Art. 22(2-bis.1) and (2-bis.2); professionals under art. 1 of Law 12/1979. "Or to anyone acting for the worker" in the post is our reading of who the law lists.',
+  },
+  itNullaOstaValidity: {
+    id: 'it.nullaOsta.validity',
+    claim:
+      'A nulla osta is valid for no more than six months from issue.',
+    provenance: 'primary',
+    source: 'Normattiva, Legislative Decree 25 July 1998 n. 286, art. 22 (text in force from 4 June 2026)',
+    sourceUrl: 'https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-07-25;286~art22',
+    checked: '2026-11-23',
+    note: 'Art. 22(5).',
+  },
+  itEmployerConfirm15: {
+    id: 'it.nullaOsta.confirm15Days',
+    claim:
+      'After the visa checks, the employer has 15 days to confirm the request to the immigration desk. Without that confirmation, the request counts as refused and the nulla osta is revoked; with it, the consulate issues the visa.',
+    provenance: 'primary',
+    source: 'Normattiva, Legislative Decree 25 July 1998 n. 286, art. 22 (text in force from 4 June 2026)',
+    sourceUrl: 'https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-07-25;286~art22',
+    checked: '2026-11-23',
+    note: 'Art. 22(5-quinquies); circular p. 7 notes the term was raised to 15 days.',
+  },
+  itContract15: {
+    id: 'it.nullaOsta.contract15Days',
+    claim:
+      'Within 15 days of your arrival, you and the employer sign the contract of residence, which the employer sends on for your residence permit.',
+    provenance: 'primary',
+    source: 'Normattiva, Legislative Decree 25 July 1998 n. 286, art. 22 (text in force from 4 June 2026)',
+    sourceUrl: 'https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-07-25;286~art22',
+    checked: '2026-11-23',
+    note: 'Art. 22(6); circular p. 7 (raised from eight to 15 days).',
+  },
+  itFraudRevocation: {
+    id: 'it.nullaOsta.fraud',
+    claim:
+      'A nulla osta is refused, or revoked, if documents were obtained by fraud or forged.',
+    provenance: 'primary',
+    source: 'Normattiva, Legislative Decree 25 July 1998 n. 286, art. 22 (text in force from 4 June 2026)',
+    sourceUrl: 'https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-07-25;286~art22',
+    checked: '2026-11-23',
+    note: 'Art. 22(5-ter).',
+  },
+  itDl145Pakistan: {
+    id: 'it.dl145.art3.pakistan',
+    claim:
+      'Article 3 of Decree-Law 145 of 11 October 2024 covers countries with a high risk of applications using forged documents. Until 31 December 2025, pending a Foreign Ministry decree naming them, it applied to Bangladesh, Pakistan and Sri Lanka. For those workers, a nulla osta could be issued only after the National Labour Inspectorate had checked the requirements; those already issued, without a visa yet, were suspended until the immigration desk confirmed the checks.',
+    provenance: 'primary',
+    source: 'Normattiva, Decree-Law 11 October 2024 n. 145, art. 3 (as converted by Law 187/2024; text in force from 11 December 2024)',
+    sourceUrl: 'https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2024-10-11;145~art3',
+    checked: '2026-11-23',
+    note: 'Not confirmed: whether the Foreign Ministry decree has since been adopted, and whether it names Pakistan.',
+  },
+  itEmbassyWorkVisaDocs: {
+    id: 'it.embassy.islamabad.workVisaChecklist',
+    claim:
+      'The embassy’s work-visa (type D) checklist, updated 4 June 2026, asks for the visa form and a photo; proof of residence in its district (residence certificate and CNIC copy); passport and flight booking; the nulla osta and contract document issued by the immigration desk; the employer’s ID with a company extract, or a tax certificate or return and family certificate; an apostilled Pakistani police character certificate; and health insurance in some cases. Pakistani documents need an apostille, papers must be in English or translated into Italian, and only residents of the embassy’s district are accepted.',
+    provenance: 'primary',
+    source: 'Embassy of Italy in Islamabad, Visto D per lavoro subordinato checklist (updated 4 June 2026)',
+    sourceUrl: 'https://ambislamabad.esteri.it/wp-content/uploads/2026/06/MI06_VISTO-PER-LAVORO-SUBORDINATO_ITA_Islamabad.rev_.pdf',
+    checked: '2026-11-23',
+    note: 'The checklist’s passport-validity and document-age periods are not printed.',
+  },
+  itEmbassyKarachiDistrict: {
+    id: 'it.embassy.karachiDistrict',
+    claim:
+      'The embassy’s where-to-apply page sends residents of the Consulate General in Karachi’s district, with centres in Karachi and Quetta, to the consulate.',
+    provenance: 'primary',
+    source: 'Embassy of Italy in Islamabad, Dove chiedere un visto (updated 16 June 2026)',
+    sourceUrl: 'https://ambislamabad.esteri.it/it/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/visti/dove-chiedere-un-visto/',
+    checked: '2026-11-23',
+    note: 'This page still lists Multan and Faisalabad among the embassy’s centres; the 4 September 2026 notice supersedes that.',
+  },
+  itEmbassyWaitingList: {
+    id: 'it.embassy.waitingList',
+    claim:
+      'A waiting list is in place for work visas because of high demand.',
+    provenance: 'primary',
+    source: 'Embassy of Italy in Islamabad, Want to apply for an Italian visa? Here’s how to book an appointment (25 July 2026)',
+    sourceUrl: 'https://ambislamabad.esteri.it/it/news/dall_ambasciata/2026/07/want-to-apply-for-an-italian-visa-heres-how-to-book-an-appointment/',
+    checked: '2026-11-23',
+  },
+  itEmbassyNoPaidAppointments: {
+    id: 'it.embassy.noPaidAppointments',
+    claim:
+      'The embassy says it knows of intermediaries and agencies that illegally offer visa appointments for money: “Visa appointments should never be purchased.” It asks you to report any such offer to the embassy.',
+    provenance: 'primary',
+    source: 'Embassy of Italy in Islamabad, Want to apply for an Italian visa? Here’s how to book an appointment (25 July 2026)',
+    sourceUrl: 'https://ambislamabad.esteri.it/it/news/dall_ambasciata/2026/07/want-to-apply-for-an-italian-visa-heres-how-to-book-an-appointment/',
+    checked: '2026-11-23',
+  },
+  itEmbassyCentres: {
+    id: 'it.embassy.centres',
+    claim:
+      'Since 6 September 2026, booking and the waiting list are only at the Islamabad and Lahore centres.',
+    provenance: 'primary',
+    source: 'Embassy of Italy in Islamabad, Avviso pubblico (4 September 2026)',
+    sourceUrl: 'https://ambislamabad.esteri.it/it/news/dall_ambasciata/2026/09/avviso-pubblico-8/',
+    checked: '2026-11-23',
+    note: 'The Multan and Faisalabad centres closed permanently from 6 September 2026.',
+  },
+  itEmbassySuspensionNotice: {
+    id: 'it.embassy.suspensionNotice',
+    claim:
+      'The embassy’s notice of 7 September 2026 says applicants archived over a suspension can book again once the desk reactivates their nulla osta.',
+    provenance: 'primary',
+    source: 'Embassy of Italy in Islamabad, Avviso pubblico (7 September 2026)',
+    sourceUrl: 'https://ambislamabad.esteri.it/it/news/dall_ambasciata/2026/09/avviso-pubblico-9/',
+    checked: '2026-11-23',
+    note: 'The notice cites D.L. 145/2024 without an article number.',
+  },
 };
 
 /** Facts still awaiting a lawyer's sign-off. Nothing here may be stated on a page. */
