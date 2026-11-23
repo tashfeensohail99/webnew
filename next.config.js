@@ -58,6 +58,10 @@ const LEGACY_REDIRECTS = [
   ['/how-to-qualify-for-the-start-up-visa', '/business-immigration'],
   ['/video/owner-operator-immigration-business-immigration-series-1english-version', '/business-immigration'],
   ['/employment-openings-in-canada', '/work-permits'],
+  // Two more from Search Console's 404 list on 24 November 2026, by the same
+  // rule. The second slug is cut short in WordPress itself, not in the report.
+  ['/invite-your-family-to-canada-while-studying', '/study-in-canada/bringing-family'],
+  ['/everyone-desires-a-secure-healthy-tomorrow-for-their-family-children-but-how-far-will-you-go-to-achieve-it-the-applicant-filed-for-permanent-residence-in-canada-which-was-refused-by-a-visa-offi', '/refusals/judicial-review'],
 ];
 
 /**
