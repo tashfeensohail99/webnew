@@ -84,6 +84,8 @@ const TICKER: [string, string][] = [
   ['/uk', 'United Kingdom'],
   ['/usa', 'United States'],
   ['/europe', 'Europe & Schengen'],
+  ['/europe/denmark-startup-visa', 'Start-up Denmark'],
+  ['/europe/denmark-visit-visa', 'Denmark visit visa'],
 ];
 
 const STEPS = [
@@ -151,6 +153,17 @@ const GUIDES: { heading: string; href: string; links: [string, string][] }[] = [
       ['/refusals/misrepresentation', 'Misrepresentation findings'],
     ],
   },
+  {
+    heading: 'Europe, UK & USA',
+    href: '/europe',
+    links: [
+      ['/europe/denmark-startup-visa', 'Start-up Denmark (founders)'],
+      ['/europe/denmark-visit-visa', 'Denmark visit visa'],
+      ['/europe', 'Schengen visas & European routes'],
+      ['/uk', 'United Kingdom'],
+      ['/usa', 'United States'],
+    ],
+  },
 ];
 
 const TOOLS = [
@@ -187,7 +200,7 @@ const HOME_FAQS = [
   },
   {
     q: 'Do you only handle Canada?',
-    a: 'Canada is what we file most, but we also handle the United Kingdom, the United States and Europe — and we will tell you plainly which destination actually fits your profile.',
+    a: 'Canada is what we file most, but we also handle the United Kingdom, the United States and Europe, including Schengen visit visas and Start-up Denmark for founders — and we will tell you plainly which destination actually fits your profile.',
   },
   {
     q: 'I live in Saudi Arabia, the UAE or Qatar. Can you still help?',
@@ -519,6 +532,28 @@ export default function HomePage() {
             <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
           </span>
         </Link>
+
+        {/* Europe banner: Denmark had no place on the homepage outside the
+            blog strip (owner, 23 Nov 2026). Same shape as the banner above. */}
+        <Link prefetch={false}
+          href="/europe/denmark-startup-visa"
+          className="card group mt-6 flex flex-col gap-4 p-7 sm:flex-row sm:items-center sm:justify-between sm:p-9"
+        >
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.15em] text-gold-600">Europe · Denmark</p>
+            <p className="mt-2 font-serif text-2xl text-balance sm:text-3xl">
+              Start-up Denmark: a Danish residence and work permit for founders
+            </p>
+            <p className="mt-2 text-ink-600 text-pretty">
+              For innovative, scalable companies. An expert panel scores the business first; restaurants,
+              shops and trading firms are excluded.
+            </p>
+          </div>
+          <span className="inline-flex shrink-0 items-center gap-1.5 font-semibold text-ink-900 transition-colors group-hover:text-gold-600">
+            How it works
+            <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
+          </span>
+        </Link>
       </section>
 
       {/* ========================= HOW IT WORKS ========================= */}
@@ -593,7 +628,7 @@ export default function HomePage() {
             written by people who file them.
           </p>
         </div>
-        <div className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
           {GUIDES.map((g) => (
             <div key={g.heading}>
               <h3 className="border-b border-rule pb-3 font-serif text-xl">
