@@ -334,6 +334,14 @@ export default function SpousePartnerSponsorshipPage() {
               involvement evidenced, contact from the introduction onwards preserved, and both
               spouses genuinely able to speak about each other’s circumstances if asked.
             </p>
+            <p>
+              Which Pakistani marriage documents IRCC asks for, and where the NADRA certificate fits,
+              is in{' '}
+              <Link href="/blog/nadra-marriage-certificate-canada-spouse" className="font-semibold text-accent-500 link-underline">
+                the NADRA marriage certificate for spouse PR
+              </Link>
+              .
+            </p>
           </Callout>
         </div>
       </Section>

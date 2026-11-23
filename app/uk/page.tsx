@@ -271,6 +271,21 @@ export default function UkPage() {
               whether reapplying is worth it or whether you are about to waste another fee.
             </p>
             <p>Send it to us and we’ll tell you honestly which one it is.</p>
+            <p>
+              How the genuine visitor test works, with the official refusal figures for Pakistan, is in{' '}
+              <Link href="/blog/uk-visit-visa-refused-pakistan" className="font-semibold text-accent-500 link-underline">
+                UK visit visa refused from Pakistan
+              </Link>
+              . Approved with no sticker in your passport? Read{' '}
+              <Link href="/blog/uk-evisa-pakistan" className="font-semibold text-accent-500 link-underline">
+                the UK eVisa from Pakistan
+              </Link>
+              . Heard that the UK is stopping visas for Pakistanis? Read{' '}
+              <Link href="/blog/uk-visa-brake-pakistan" className="font-semibold text-accent-500 link-underline">
+                is Pakistan on the UK visa brake list
+              </Link>
+              .
+            </p>
             <WhatsAppCta
               intent={{
                 service: SERVICE.VISIT_VISA,

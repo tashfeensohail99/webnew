@@ -224,7 +224,9 @@ export default function EuropePage() {
           <Link href="/europe/denmark-visit-visa" className="font-semibold text-accent-500 link-underline">the Denmark visit visa from Pakistan</Link>, and check{' '}
           <Link href="/blog/denmark-job-seeker-visa-green-card" className="font-semibold text-accent-500 link-underline">whether a Danish job-seeker visa exists</Link>{' '}
           before paying anyone who sells one. Students should read{' '}
-          <Link href="/blog/denmark-student-rules-october-2026" className="font-semibold text-accent-500 link-underline">Denmark’s student rules from 1 October 2026</Link>.
+          <Link href="/blog/denmark-student-rules-october-2026" className="font-semibold text-accent-500 link-underline">Denmark’s student rules from 1 October 2026</Link>. Joining a husband or wife who studies,
+          researches or works in Germany? Read{' '}
+          <Link href="/blog/germany-spouse-visa-pakistan" className="font-semibold text-accent-500 link-underline">joining a spouse in Germany from Pakistan</Link>.
         </p>
       </Section>
 

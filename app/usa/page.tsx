@@ -97,7 +97,11 @@ const ROUTES = [
       <p>
         Available, and heavily refused. Most Pakistani refusals come under one section — the officer
         isn’t satisfied you’ll return. Reapplying without changing what caused that is usually just
-        paying the fee twice.
+        paying the fee twice. Given a 221(g) slip instead? Read{' '}
+        <Link href="/blog/us-visa-221g-islamabad" className="font-semibold text-accent-500 link-underline">
+          221(g) at the US Embassy Islamabad
+        </Link>
+        .
       </p>
     ),
   },

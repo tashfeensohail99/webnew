@@ -167,6 +167,13 @@ export default async function CrsCalculatorPage() {
               nomination aside, and those are not something you simply decide to obtain.
             </Callout>
           </div>
+          <p className="mt-6 text-ink-600 text-pretty">
+            Every lever, with the points each one is worth on the current grid, is in{' '}
+            <Link href="/blog/raise-crs-score-2026" className="font-semibold text-accent-500 link-underline">
+              how to raise your CRS score
+            </Link>
+            .
+          </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <a
               href={OFFICIAL_CALCULATOR_URL}

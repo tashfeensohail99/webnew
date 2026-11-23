@@ -271,6 +271,10 @@ export default function NocCodesPage() {
           <Link href="/blog/pakistani-doctors-canada" className="font-semibold text-accent-500 link-underline">
             doctors
           </Link>
+          ,{' '}
+          <Link href="/blog/pakistani-teachers-canada" className="font-semibold text-accent-500 link-underline">
+            teachers
+          </Link>
           {' '}and{' '}
           <Link href="/blog/pakistani-engineers-canada" className="font-semibold text-accent-500 link-underline">
             engineers

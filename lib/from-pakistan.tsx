@@ -30,7 +30,7 @@ export const PK: Record<'vac' | 'translations' | 'medical' | 'police' | 'visaOff
   translations: {
     key: 'translations',
     title: 'Documents in Urdu need a certified translation',
-    text: 'Any document not in English or French, stamps and seals included, needs an English or French translation, the translator’s affidavit and a certified copy of the original. You and your relatives cannot translate your own documents, and outside Canada the translator swears the affidavit before a notary public.',
+    text: 'Any document not in English or French needs an English or French translation, the translator’s affidavit and a certified copy of the original. You and your relatives cannot translate your own documents. Outside Canada the translator swears the affidavit before a notary public; a certified translator who belongs to a Canadian provincial or territorial translators’ association does not need one.',
     sources: [
       { label: 'IRCC Help Centre', href: 'https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=018&top=4' },
       { label: 'IRCC guide 5256', href: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides/guide-5256-applying-visitor-visa-temporary-resident-visa.html' },

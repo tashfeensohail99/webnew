@@ -712,11 +712,12 @@ export const FACTS: Record<string, Fact> = {
   pkTranslations: {
     id: 'pk.translations',
     claim:
-      'A document not in English or French needs an English or French translation, a translator’s affidavit and a certified copy of the original; stamps and seals count too. Applicants and their family members cannot translate their own documents, and outside Canada the affidavit is sworn before a notary public.',
+      'A document not in English or French needs an English or French translation, a translator’s affidavit and a certified copy of the original. Applicants and their family members cannot translate their own documents, and outside Canada the affidavit is sworn before a notary public. A certified translator who belongs to a Canadian provincial or territorial translators’ association does not need an affidavit.',
     provenance: 'primary',
-    source: 'IRCC Help Centre, translation question 018 (modified 3 Nov 2026); IRCC guide 5256 (31 Mar 2026); IRCC Express Entry, apply for permanent residence (16 Oct 2026)',
+    source: 'IRCC Help Centre, translation question 018 (modified 3 Nov 2026); IRCC guide 5256 (31 Mar 2026); IRCC guide 5289, sponsor your spouse (23 Apr 2026)',
     sourceUrl: 'https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=018&top=4',
-    checked: '2026-11-17',
+    checked: '2026-11-23',
+    note: 'Help Centre page re-read 23 Nov 2026: it no longer mentions stamps and seals, so that wording was removed. The certified-translator exception is from guide 5289.',
   },
   pkPanelPhysicians: {
     id: 'pk.panelPhysicians',
@@ -7864,6 +7865,2433 @@ export const FACTS: Record<string, Fact> = {
     source: 'Global Affairs Canada, Travel advice and advisories: Pakistan (last updated 19 October 2026), Laws and culture',
     sourceUrl: 'https://travel.gc.ca/destinations/pakistan',
     checked: '2026-11-23',
+  },
+
+  // ── BLOG POSTS OF 23 NOVEMBER 2026 (batch 30) ─────────────────────────────────────────
+  c16Answer: {
+    id: 'c16.answer',
+    claim:
+      'Nothing in IRCC’s instructions limits C16 by citizenship, so Pakistani citizens can use it if they meet the conditions.',
+    provenance: 'primary',
+    source: 'IRCC, Francophone mobility [R205(c) – C16] – Canadian interests – International Mobility Program (page details 2026-06-23)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/canadian-interests-significant-benefit-mobilite-francophone-r205-exemption-code-c16.html',
+    checked: '2026-11-23',
+    note: 'Our reading: the instructions’ eligibility and evidence lists contain no citizenship condition. The table says “No citizenship rule in IRCC’s instructions.”',
+  },
+  c16Code: {
+    id: 'c16.code',
+    claim:
+      'IRCC’s LMIA exemption codes list gives the Francophone Mobility permit the code C16; it is an employer-specific work permit that needs no LMIA.',
+    provenance: 'primary',
+    source: 'IRCC, LMIA exemption codes – International Mobility Program (page details 2026-09-23)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes.html',
+    checked: '2026-11-23',
+    note: 'Row “Francophone mobility | C16” (same code before and after 15 December 2022), under “Competitiveness and public policy exemption codes”, R205(c)(ii). The PDI gives GCMS case type 52, “Employer-specific LMIA-exempt application”.',
+  },
+  c16Purpose: {
+    id: 'c16.purpose',
+    claim:
+      'IRCC’s instructions say the aim is “to promote the French language in Francophone minority communities outside Quebec”.',
+    provenance: 'primary',
+    source: 'IRCC, Francophone mobility [R205(c) – C16] – Canadian interests – International Mobility Program (page details 2026-06-23)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/canadian-interests-significant-benefit-mobilite-francophone-r205-exemption-code-c16.html',
+    checked: '2026-11-23',
+  },
+  c16LegalBasis: {
+    id: 'c16.legalBasis',
+    claim:
+      'For applications made since 15 June 2023, IRCC issues the C16 permit under section 205(c)(ii) of the Regulations; from 1 June 2016 to 14 June 2023 it came under 205(a), significant benefit.',
+    provenance: 'primary',
+    source: 'IRCC, Francophone mobility [R205(c) – C16] – Canadian interests – International Mobility Program (page details 2026-06-23)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/canadian-interests-significant-benefit-mobilite-francophone-r205-exemption-code-c16.html',
+    checked: '2026-11-23',
+    note: 'PDI: “For applications submitted on or after June 15, 2023, the work permit will be issued under the authority of subparagraph R205(c)(ii)”; “From June 1, 2016, to June 14, 2023, applications under this code were assessed under paragraph R205(a)”. The topic brief suggested R205(a); IRCC’s codes list and PDI both give R205(c)(ii).',
+  },
+  irpr205cii: {
+    id: 'irpr.205-c-ii.publicPolicy',
+    claim:
+      'Section 205(c)(ii) covers work the Minister designates for public-policy reasons tied to Canada’s competitiveness.',
+    provenance: 'primary',
+    source: 'Justice Laws, IRPR (current to 2026-10-29), s. 205(c)(ii)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-205.html',
+    checked: '2026-11-23',
+    note: 'Text: “limited access to the Canadian labour market is necessary for reasons of public policy relating to the competitiveness of Canada’s academic institutions or economy”.',
+  },
+  c16Expansion2023: {
+    id: 'c16.expansion2023',
+    claim:
+      'IRCC announced the wider rules on 15 June 2023 for a fixed period; its eligibility page and instructions, read on 23 November 2026, still apply them and give no end date.',
+    provenance: 'primary',
+    source: 'IRCC, news release of 15 June 2023; Francophone Mobility eligibility page (2026-04-20); PDI (2026-06-23)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/news/2023/06/canada-expands-the-francophone-mobility-program-to-increase-francophone-immigration.html',
+    checked: '2026-11-23',
+    note: 'The release says the expansion runs “for a period of two years”. The post does not print the number (a duration in a news release, not in law). The eligibility page and PDI give the rules “for applications on or after June 15, 2023” with no end date.',
+  },
+  c16Location: {
+    id: 'c16.location',
+    claim:
+      'The job must be in any province or territory except Quebec; remote work for an employer based in Quebec does not count.',
+    provenance: 'primary',
+    source: 'IRCC, Francophone mobility [R205(c) – C16] – Canadian interests – International Mobility Program (page details 2026-06-23)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/canadian-interests-significant-benefit-mobilite-francophone-r205-exemption-code-c16.html',
+    checked: '2026-11-23',
+    note: 'PDI: “Telework or remote work for an employer who is located in Quebec is not eligible.” The eligibility page says live and work in one of the 9 provinces or 3 territories outside Quebec.',
+  },
+  c16Teer: {
+    id: 'c16.teer',
+    claim:
+      'Any TEER category qualifies, except primary agriculture jobs in TEER 4 and 5; you must meet the job’s NOC requirements.',
+    provenance: 'primary',
+    source: 'IRCC, Francophone mobility [R205(c) – C16] – Canadian interests – International Mobility Program (page details 2026-06-23)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/canadian-interests-significant-benefit-mobilite-francophone-r205-exemption-code-c16.html',
+    checked: '2026-11-23',
+    note: 'Also on the eligibility page (2026-04-20). PDI evidence list: “proof that the applicant meets the employment requirements, as specified for the occupation in the NOC”. Primary agriculture as defined in R315.2(4).',
+  },
+  c16French: {
+    id: 'c16.frenchLevel',
+    claim:
+      'C16 requires NCLC 5 or higher in speaking and listening; you do not have to prove reading or writing.',
+    provenance: 'primary',
+    source: 'IRCC, Francophone Mobility work permit: How to apply (page details 2026-04-21)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/special-instructions/francophone-mobility/apply.html',
+    checked: '2026-11-23',
+    note: 'Level printed because the topic brief asked for the NCLC level from IRCC’s own page. The eligibility page and PDI give the same level (CLB/NCLC 5, speaking and listening).',
+  },
+  c16LanguageOfWork: {
+    id: 'c16.languageOfWork',
+    claim:
+      'The language of the job does not need to be French.',
+    provenance: 'primary',
+    source: 'IRCC, Francophone mobility [R205(c) – C16] – Canadian interests – International Mobility Program (page details 2026-06-23)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/canadian-interests-significant-benefit-mobilite-francophone-r205-exemption-code-c16.html',
+    checked: '2026-11-23',
+    note: 'PDI: “The language of work does not need to be French.”',
+  },
+  c16JobOffer: {
+    id: 'c16.jobOffer',
+    claim:
+      'The employer submits the offer in the Employer Portal under code C16 and pays the compliance fee, then gives you the 7-digit offer number and a signed copy of the offer.',
+    provenance: 'primary',
+    source: 'IRCC, How to hire a French-speaking or bilingual foreign worker to work in Canada outside Quebec (page details 2026-04-28)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/hire-temporary-foreign/french-speaking-bilingual-workers-outside-quebec/hire.html',
+    checked: '2026-11-23',
+    note: 'The eligibility page (2026-04-20) gives the same steps.',
+  },
+  c16ComplianceFee: {
+    id: 'c16.complianceFee',
+    claim:
+      'The employer compliance fee is C$230, set by section 303.1 of the Regulations; it is due before you apply and refunded to the employer if your permit is refused.',
+    provenance: 'primary',
+    source: 'Justice Laws, IRPR (current to 2026-10-29), s. 303.1(1), (2) and (6)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-303.1.html',
+    checked: '2026-11-23',
+    note: 'Same figure as the existing fact irpr.303-1.employerComplianceFee. IRCC’s C16 eligibility and employer pages also show $230 and mention no exemption.',
+  },
+  irpr200f1: {
+    id: 'irpr.200-3-f1.c16',
+    claim:
+      'Under section 200(3)(f.1), an officer must refuse your permit if the fee was unpaid, or the offer not submitted, when you applied.',
+    provenance: 'primary',
+    source: 'Justice Laws, IRPR (current to 2026-10-29), s. 200(1)(c)(ii.1) and 200(3)(f.1)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-200.html',
+    checked: '2026-11-23',
+    note: '(f.1) applies to foreign nationals under 200(1)(c)(ii.1): work under s. 204 or 205 with an offer of employment. “Offer not submitted” = the information referred to in s. 209.11 not provided.',
+  },
+  irpr2092: {
+    id: 'irpr.209-2.c16',
+    claim:
+      'Section 209.2 bars the employer from charging you that fee or any recruitment fees; the employer must also make sure its recruiters do not.',
+    provenance: 'primary',
+    source: 'Justice Laws, IRPR (current to 2026-10-29), s. 209.2(1)(a)(ix) and (x)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-209.2.html',
+    checked: '2026-11-23',
+    note: 'Exception in (ix): IRCC’s own fees under ss. 296(1), 298(1) and 299(1).',
+  },
+  c16Integrity: {
+    id: 'c16.integrity',
+    claim:
+      'IRCC’s instructions tell officers to ask whether an employer has recently hired many people from the same region for the same job.',
+    provenance: 'primary',
+    source: 'IRCC, Francophone mobility [R205(c) – C16] – Canadian interests – International Mobility Program (page details 2026-06-23)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/canadian-interests-significant-benefit-mobilite-francophone-r205-exemption-code-c16.html',
+    checked: '2026-11-23',
+    note: 'PDI: “Has this employer recently hired many employees from the same region for the same position?”',
+  },
+  c16Wages: {
+    id: 'c16.wages',
+    claim:
+      'Officers check that the pay meets the provincial or territorial minimum wage, is reasonable for the job, and is affordable for the employer.',
+    provenance: 'primary',
+    source: 'IRCC, Francophone mobility [R205(c) – C16] – Canadian interests – International Mobility Program (page details 2026-06-23)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/canadian-interests-significant-benefit-mobilite-francophone-r205-exemption-code-c16.html',
+    checked: '2026-11-23',
+  },
+  c16PermitLength: {
+    id: 'c16.permitLength',
+    claim:
+      'The permit runs up to the length of the job offer, but not past your passport’s expiry.',
+    provenance: 'primary',
+    source: 'IRCC, Francophone mobility [R205(c) – C16] – Canadian interests – International Mobility Program (page details 2026-06-23)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/canadian-interests-significant-benefit-mobilite-francophone-r205-exemption-code-c16.html',
+    checked: '2026-11-23',
+    note: 'PDI: valid “for the duration of the offer of employment” or “until the expiry of the travel document, whichever is earlier”.',
+  },
+  c16FrenchEvidence: {
+    id: 'c16.frenchEvidence',
+    claim:
+      'IRCC accepts TEF or TCF results, written confirmation from a college or university of a French-language programme, or other proof of education in French; its C16 pages do not name a test version.',
+    provenance: 'primary',
+    source: 'IRCC, Francophone Mobility work permit: How to apply (page details 2026-04-21)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/special-instructions/francophone-mobility/apply.html',
+    checked: '2026-11-23',
+    note: 'The apply page names “Test d’évaluation de français (TEF)” and “Test de connaissance du français (TCF)”; the PDI says “TEF or TCF results”. Neither says TEF Canada or TCF Canada.',
+  },
+  c16OfficerFrench: {
+    id: 'c16.officerFrench',
+    claim:
+      'The officer decides whether your French evidence is enough and, if not, may ask for more, such as TEF or TCF results, or assess your French orally.',
+    provenance: 'primary',
+    source: 'IRCC, Francophone mobility [R205(c) – C16] – Canadian interests – International Mobility Program (page details 2026-06-23)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/temporary-residents/foreign-workers/exemption-codes/canadian-interests-significant-benefit-mobilite-francophone-r205-exemption-code-c16.html',
+    checked: '2026-11-23',
+  },
+  eeFrenchTests: {
+    id: 'ee.frenchTests',
+    claim:
+      'IRCC’s Express Entry language page lists TEF Canada and TCF Canada as its French tests.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: Language test results (page details 2026-10-16)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html',
+    checked: '2026-11-23',
+    note: 'The advice to take one of these for C16 is marked “Our suggestion” in the post.',
+  },
+  c16ApplyOnline: {
+    id: 'c16.applyOnline',
+    claim:
+      'You apply online from outside Canada through an IRCC account, choose a work permit with an LMIA exemption, enter the 7-digit offer number, and upload French evidence in the “Client information” field.',
+    provenance: 'primary',
+    source: 'IRCC, Francophone Mobility work permit: How to apply (page details 2026-04-21)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/special-instructions/francophone-mobility/apply.html',
+    checked: '2026-11-23',
+  },
+  c16AfterApply: {
+    id: 'c16.afterApply',
+    claim:
+      'IRCC checks for every document, including biometrics, and returns incomplete applications unprocessed; if approved you receive a port of entry letter of introduction, which is not your work permit, and the permit is issued at the port of entry when you arrive.',
+    provenance: 'primary',
+    source: 'IRCC, Francophone Mobility work permit: After you apply (page details 2026-07-28)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/special-instructions/francophone-mobility/after-apply.html',
+    checked: '2026-11-23',
+  },
+  processingTool: {
+    id: 'ircc.processingTimesTool',
+    claim:
+      'IRCC’s processing-times tool lists “Work permit (from outside Canada)” and asks for the country you apply from.',
+    provenance: 'primary',
+    source: 'IRCC, Check our current processing times (page details 2026-11-13)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html',
+    checked: '2026-11-23',
+    note: 'No processing time printed.',
+  },
+  c16Family: {
+    id: 'c16.family',
+    claim:
+      'IRCC says your spouse, common-law partner or dependent children “may be able to apply for an open work permit”.',
+    provenance: 'primary',
+    source: 'IRCC, Francophone Mobility work permit: After you apply (page details 2026-07-28)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/special-instructions/francophone-mobility/after-apply.html',
+    checked: '2026-11-23',
+    note: 'The PDI adds that family members not eligible under C16 “may apply for an open work permit under subparagraph R205(c)(ii)” (C41, C46, C47, C48).',
+  },
+  spouseOwpTeer: {
+    id: 'owp.family.spouseTeer',
+    claim:
+      'A spouse or common-law partner can qualify if your job is in TEER 0 or 1, or is one of the selected TEER 2 and 3 jobs IRCC lists, and your permit has a minimum time left when IRCC receives their application.',
+    provenance: 'primary',
+    source: 'IRCC, Open work permits for family members of foreign workers: Who can apply (page details 2026-06-12)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/special-instructions/spouses-dependent-children/eligibility.html',
+    checked: '2026-11-23',
+    note: 'The minimum on IRCC’s page is 16 months; not printed because it is on a web page only.',
+  },
+  childrenOwp2025: {
+    id: 'owp.family.children2025',
+    claim:
+      'Since 21 January 2025, dependent children are no longer eligible under this measure.',
+    provenance: 'primary',
+    source: 'IRCC, Open work permits for family members of foreign workers: Who can apply (page details 2026-06-12)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/special-instructions/spouses-dependent-children/eligibility.html',
+    checked: '2026-11-23',
+  },
+  lowSkilledFamily: {
+    id: 'owp.family.lowSkilled',
+    claim:
+      'If your job is in TEER 4 or 5, family members cannot get a new open work permit under the measure; IRCC treats workers on some pathways to permanent residence differently.',
+    provenance: 'primary',
+    source: 'IRCC, Open work permits for family members of foreign workers: Who can apply (page details 2026-06-12)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/special-instructions/spouses-dependent-children/eligibility.html',
+    checked: '2026-11-23',
+    note: 'Heading: “You’re a low-skilled worker and not on a pathway to permanent residence through one of the eligible streams”; “As of January 21, 2025, your family members are not eligible to apply for an open work permit under this measure.” Family already in Canada may extend in limited cases.',
+  },
+  c16Children: {
+    id: 'c16.childrenSchool',
+    claim:
+      'Children can go to school while you work, and may need a study permit.',
+    provenance: 'primary',
+    source: 'IRCC, Francophone Mobility work permit: After you apply (page details 2026-07-28)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/special-instructions/francophone-mobility/after-apply.html',
+    checked: '2026-11-23',
+  },
+  c16ToPr: {
+    id: 'c16.toPr',
+    claim:
+      'IRCC says to apply for permanent residence “as soon as you meet the eligibility criteria”.',
+    provenance: 'primary',
+    source: 'IRCC, Francophone Mobility work permit: After you apply (page details 2026-07-28)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/special-instructions/francophone-mobility/after-apply.html',
+    checked: '2026-11-23',
+    note: 'The post adds that C16 does not turn into permanent residence by itself and nobody can promise an invitation.',
+  },
+  cecWork: {
+    id: 'irpr.87-1.cecWork',
+    claim:
+      'For the Canadian Experience Class you need at least one year of full-time work in Canada, or the part-time equivalent, within the three years before you apply, in TEER 0, 1, 2 or 3.',
+    provenance: 'primary',
+    source: 'Justice Laws, IRPR (current to 2026-10-29), s. 87.1(2)(a)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-87.1.html',
+    checked: '2026-11-23',
+    note: 'So C16 work in TEER 4 or 5 does not count. S. 87.1(3) also excludes self-employment and requires temporary resident status during the work.',
+  },
+  cecLanguage: {
+    id: 'irpr.87-1.cecLanguage',
+    claim:
+      'The Canadian Experience Class also needs approved language test results in all four skills.',
+    provenance: 'primary',
+    source: 'Justice Laws, IRPR (current to 2026-10-29), s. 87.1(2)(d)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-87.1.html',
+    checked: '2026-11-23',
+  },
+  frenchCategory: {
+    id: 'ee.category.french',
+    claim:
+      'IRCC’s category-based selection page, dated 18 November 2026, lists French-language proficiency as a category and asks for NCLC 7 or higher in all four abilities.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: Category-based selection (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations/category-based-selection.html',
+    checked: '2026-11-23',
+    note: 'Page: “have French-language test results that show a minimum score of 7 in all 4 language abilities” on the NCLC. Same level as MI s. 32(1)(a).',
+  },
+  miS32French: {
+    id: 'ee.mi.s32French',
+    claim:
+      'NCLC 7 or higher in all four French abilities earns extra CRS points under section 32 of the Ministerial Instructions.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions respecting the Express Entry system (current), s. 32(1)(a) (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+    note: 'The post does not print the 25 points. The current instructions page shows signature on 17 November 2026.',
+  },
+  ukVisaNationalPakistan: {
+    id: 'uk.visit.visaNational.pakistan',
+    claim:
+      'Pakistan is on the visa national list (paragraph VN 1.1), so a Pakistani parent needs a visa before travelling.',
+    provenance: 'primary',
+    source: 'GOV.UK, Immigration Rules Appendix Visitor: Visa national list, VN 1.1 (updated 29 October 2026)',
+    sourceUrl: 'https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-visitor-visa-national-list',
+    checked: '2026-11-23',
+    note: 'VN 1.1: a person who meets the criteria \'needs entry clearance (a visa) in advance of travel to the UK for any purpose\', subject to VN 2 exceptions; Pakistan is listed.',
+  },
+  ukVisitGenuineVisitorV42: {
+    id: 'uk.visit.rules.v4_2',
+    claim:
+      'Paragraph V 4.2 says the applicant must satisfy the decision maker that they are a genuine visitor, which means they: will leave the UK at the end of the visit; will not live in the UK for extended periods through frequent or successive visits, or make it their main home; are coming for a purpose the Visitor route permits; will not do prohibited activities, such as working; and have enough money for all reasonable costs, including the return journey, without working or claiming public funds.',
+    provenance: 'primary',
+    source: 'GOV.UK, Immigration Rules Appendix V: Visitor, V 4.2 (updated 29 October 2026)',
+    sourceUrl: 'https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-v-visitor',
+    checked: '2026-11-23',
+    note: 'V 4.2(e) also requires funds relied on to be held in a financial institution permitted under FIN 2.1 of Appendix Finance.',
+  },
+  ukVisitRefusalV161: {
+    id: 'uk.visit.rules.v16_1',
+    claim:
+      'Under V 16.1, an application that fails any requirement is refused. The Rules we read were last updated on 29 October 2026.',
+    provenance: 'primary',
+    source: 'GOV.UK, Immigration Rules Appendix V: Visitor, V 16.1 (updated 29 October 2026)',
+    sourceUrl: 'https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-v-visitor',
+    checked: '2026-11-23',
+  },
+  ukVisitGuidanceBurden: {
+    id: 'uk.visit.guidance.burdenStandard',
+    claim:
+      'UKVI’s Visit: caseworker guidance (version 18.0, 8 October 2026) tells officers how to apply the test. The burden of proof is on the applicant, and the standard is the balance of probabilities: more likely than not. Officers must assess the applicant’s credibility and intentions from everything in the application.',
+    provenance: 'primary',
+    source: 'UK Visas and Immigration, Visit: caseworker guidance, version 18.0 (published for Home Office staff on 8 October 2026), section 6.1',
+    sourceUrl: 'https://www.gov.uk/government/publications/visit-guidance/visit-caseworker-guidance-accessible--2',
+    checked: '2026-11-23',
+  },
+  ukVisitGuidanceFactors: {
+    id: 'uk.visit.guidance.factors',
+    claim:
+      'Section 7.2 lists the factors that help decide whether someone is a genuine visitor: previous immigration history, including visits to the UK and other countries; financial circumstances, and family, social and economic background; personal and economic ties to the country where they live; how much time they have recently spent in the UK; and whether the reasons for the visit are credible and fit their background.',
+    provenance: 'primary',
+    source: 'UK Visas and Immigration, Visit: caseworker guidance, version 18.0, section 7.2',
+    sourceUrl: 'https://www.gov.uk/government/publications/visit-guidance/visit-caseworker-guidance-accessible--2',
+    checked: '2026-11-23',
+    note: 'Paraphrased. The guidance also lists the duration of previous visits; \'recently spent in the UK\' summarises \'the cumulative period ... over the last 12-month period\'.',
+  },
+  ukVisitGuidanceTravelHistory: {
+    id: 'uk.visit.guidance.travelHistory',
+    claim:
+      'Past compliance with UK visas, or travel to places such as the USA, Canada or the Schengen area, may point to a genuine visitor. But travel history should not be the only consideration. For a first-time traveller, officers must rely on other evidence.',
+    provenance: 'primary',
+    source: 'UK Visas and Immigration, Visit: caseworker guidance, version 18.0, section 7.3',
+    sourceUrl: 'https://www.gov.uk/government/publications/visit-guidance/visit-caseworker-guidance-accessible--2',
+    checked: '2026-11-23',
+    note: 'The guidance\'s full list is the USA, Canada, Australia, New Zealand, Ireland, Schengen countries or Switzerland.',
+  },
+  ukVisitGuidanceFunds: {
+    id: 'uk.visit.guidance.funds',
+    claim:
+      'Section 8.1 says there is no set level of funds. Officers weigh income or savings against commitments at home, such as rent and dependants. Money held only briefly may be checked for its origin, and the documents must match the income declared on the form.',
+    provenance: 'primary',
+    source: 'UK Visas and Immigration, Visit: caseworker guidance, version 18.0, sections 8.1 and 6.1',
+    sourceUrl: 'https://www.gov.uk/government/publications/visit-guidance/visit-caseworker-guidance-accessible--2',
+    checked: '2026-11-23',
+    note: 'The correlation between declared income and documents is in section 6.1 (\'Other documents\'); the rest is section 8.1.',
+  },
+  ukAppealSection82: {
+    id: 'uk.appeal.s82',
+    claim:
+      'Section 82 of the Nationality, Immigration and Asylum Act 2002 allows appeals only in protection and human rights cases.',
+    provenance: 'primary',
+    source: 'legislation.gov.uk, Nationality, Immigration and Asylum Act 2002, section 82(1) (up to date with changes in force on or before 23 November 2026)',
+    sourceUrl: 'https://www.legislation.gov.uk/ukpga/2002/41/section/82',
+    checked: '2026-11-23',
+    note: 's.82(1): appeal where the Secretary of State refuses a protection claim, refuses a human rights claim, or revokes protection status. GOV.UK\'s tribunal page (https://www.gov.uk/immigration-asylum-tribunal) lists appealable decisions consistently; an ordinary visit refusal is not among them.',
+  },
+  ukVisitRefusalTemplates: {
+    id: 'uk.visit.guidance.refusalTemplates',
+    claim:
+      'The caseworker guidance has a separate letter for visit refusals that carry a human-rights appeal; all others use a “no right of appeal” template.',
+    provenance: 'primary',
+    source: 'UK Visas and Immigration, Visit: caseworker guidance, version 18.0, section 6.3',
+    sourceUrl: 'https://www.gov.uk/government/publications/visit-guidance/visit-caseworker-guidance-accessible--2',
+    checked: '2026-11-23',
+  },
+  ukVisitNoAdminReview: {
+    id: 'uk.visit.adminReview.notEligible',
+    claim:
+      'Appendix Administrative Review lists the routes whose decisions can be reviewed (AR 1.1), and Appendix V: Visitor is not among them.',
+    provenance: 'primary',
+    source: 'GOV.UK, Immigration Rules Appendix Administrative Review, AR 1.1 and AR 2.2 (updated 29 October 2026)',
+    sourceUrl: 'https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-administrative-review',
+    checked: '2026-11-23',
+    note: 'AR 2.2: an application for administrative review must relate to a decision on a specified route in AR 1.1.',
+  },
+  ukAdminReviewDecisionLetter: {
+    id: 'uk.adminReview.decisionLetter',
+    claim:
+      'GOV.UK says your decision letter tells you whether review is open.',
+    provenance: 'primary',
+    source: 'GOV.UK, Ask for a visa administrative review: If you\'re outside the UK',
+    sourceUrl: 'https://www.gov.uk/ask-for-a-visa-administrative-review',
+    checked: '2026-11-23',
+  },
+  ukReconsiderationInUkOnly: {
+    id: 'uk.reconsideration.inUkOnly',
+    claim:
+      'A reconsideration request is only for people in the UK who applied there, so it does not help a parent refused in Pakistan.',
+    provenance: 'primary',
+    source: 'GOV.UK, Visa and immigration reconsideration requests',
+    sourceUrl: 'https://www.gov.uk/visa-and-immigration-reconsideration-requests',
+    checked: '2026-11-23',
+    note: 'Page: \'You must be in the UK to make the request. You can only make a request if you applied in the UK to ...\'',
+  },
+  ukJudicialReviewProtocol: {
+    id: 'uk.judicialReview.protocol',
+    claim:
+      'That leaves judicial review, where a judge reviews the lawfulness of a public body’s decision. The pre-action protocol says it should be used only where no adequate alternative remedy exists, and strongly advises early legal advice.',
+    provenance: 'primary',
+    source: 'Ministry of Justice, Pre-Action Protocol for Judicial Review, paragraphs 4 and 5 (page updated 1 December 2021)',
+    sourceUrl: 'https://www.justice.gov.uk/courts/procedure-rules/civil/protocol/prot_jrv',
+    checked: '2026-11-23',
+  },
+  ukJudicialReviewUtiac: {
+    id: 'uk.judicialReview.utiac',
+    claim:
+      'Most immigration judicial reviews go to the Upper Tribunal (Immigration and Asylum Chamber).',
+    provenance: 'primary',
+    source: 'Ministry of Justice, Pre-Action Protocol for Judicial Review, paragraph 8; HMCTS, Upper Tribunal (Immigration and Asylum Chamber) page',
+    sourceUrl: 'https://www.gov.uk/courts-tribunals/upper-tribunal-immigration-and-asylum-chamber',
+    checked: '2026-11-23',
+    note: 'Protocol para 8: UTIAC \'has jurisdiction in respect of judicial review proceedings in relation to most immigration decisions\'. The UT page says it handles \'judicial review of certain decisions made by the Home Office, normally relating to immigration, asylum and human rights claims\'.',
+  },
+  ukVisitThirdPartyV43: {
+    id: 'uk.visit.rules.v4_3',
+    claim:
+      'Paragraph V 4.3 lets a third party pay for travel, maintenance and accommodation, but only if that person: has a genuine personal or professional relationship with the applicant; is not, and will not be, in breach of immigration laws at the decision or on arrival; and can and will support the applicant for the whole visit.',
+    provenance: 'primary',
+    source: 'GOV.UK, Immigration Rules Appendix V: Visitor, V 4.3 (updated 29 October 2026)',
+    sourceUrl: 'https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-v-visitor',
+    checked: '2026-11-23',
+  },
+  ukVisitGuidanceSponsor: {
+    id: 'uk.visit.guidance.sponsor',
+    claim:
+      'Section 8.2 of the guidance says a sponsor must have enough to support themselves and their own dependants, as well as the visitor. Officers may look at the sponsor’s history of sponsoring visitors. Support not declared on the form is not counted if the applicant cannot show the money is really theirs.',
+    provenance: 'primary',
+    source: 'UK Visas and Immigration, Visit: caseworker guidance, version 18.0, sections 8.2 and 8.1',
+    sourceUrl: 'https://www.gov.uk/government/publications/visit-guidance/visit-caseworker-guidance-accessible--2',
+    checked: '2026-11-23',
+    note: 'The undeclared-support sentence is from section 8.1.',
+  },
+  ukVisitGuidanceNoGuarantee: {
+    id: 'uk.visit.guidance.noGuarantee',
+    claim:
+      'Do not offer a written promise to leave on time: officers must not ask for or accept a written guarantee or undertaking about the length of stay.',
+    provenance: 'primary',
+    source: 'UK Visas and Immigration, Visit: caseworker guidance, version 18.0, section 6.1',
+    sourceUrl: 'https://www.gov.uk/government/publications/visit-guidance/visit-caseworker-guidance-accessible--2',
+    checked: '2026-11-23',
+    note: 'Guidance: \'You must not ask for or accept a written guarantee or undertaking from the applicant concerning the length of their stay.\' \'A promise to return is not evidence\' is our framing of that line.',
+  },
+  ukVisitGuidanceFamilyCare: {
+    id: 'uk.visit.guidance.familyCare',
+    claim:
+      'Section 9.5 lets a visitor help look after a grandchild if the care is temporary and informal, not work as a child-minder or carer.',
+    provenance: 'primary',
+    source: 'UK Visas and Immigration, Visit: caseworker guidance, version 18.0, section 9.5',
+    sourceUrl: 'https://www.gov.uk/government/publications/visit-guidance/visit-caseworker-guidance-accessible--2',
+    checked: '2026-11-23',
+    note: 'Guidance wording: a family member coming \'to look after a child or relative\' is permitted if \'temporary and informal and does not amount to employment as a child-minder or carer\'. The grandchild example is ours.',
+  },
+  ukVisitGuidanceRefusalReasons: {
+    id: 'uk.visit.guidance.refusalReasons',
+    claim:
+      'The guidance says reasons must be factual, clear and relevant, and supported by evidence.',
+    provenance: 'primary',
+    source: 'UK Visas and Immigration, Visit: caseworker guidance, version 18.0, section 6.2',
+    sourceUrl: 'https://www.gov.uk/government/publications/visit-guidance/visit-caseworker-guidance-accessible--2',
+    checked: '2026-11-23',
+  },
+  ukVisitGuidanceDoubts: {
+    id: 'uk.visit.guidance.doubts',
+    claim:
+      'Evidence table, \'What the guidance says\' column: few family or economic ties at home with several family members in the UK; discrepancies, especially on points the sponsor should know; information the Home Office could not verify despite trying; first-time travellers assessed on other evidence.',
+    provenance: 'primary',
+    source: 'UK Visas and Immigration, Visit: caseworker guidance, version 18.0, sections 7.2, 7.3, 7.5, 8.1, 8.2, 6.1',
+    sourceUrl: 'https://www.gov.uk/government/publications/visit-guidance/visit-caseworker-guidance-accessible--2',
+    checked: '2026-11-23',
+    note: 'The table\'s right-hand \'Evidence\' column is our own suggestion and is labelled as such.',
+  },
+  ukVisitDocsLessUseful: {
+    id: 'uk.visit.supportingDocs.lessUseful',
+    claim:
+      'GOV.UK’s guide to supporting documents lists hotel and flight bookings, personal photographs, travel insurance and a sponsor’s utility bills under “Documents you should not use as evidence”.',
+    provenance: 'primary',
+    source: 'UK Visas and Immigration, Visiting the UK: guide to supporting documents (updated 8 October 2026), section 13',
+    sourceUrl: 'https://www.gov.uk/government/publications/visitor-visa-guide-to-supporting-documents/guide-to-supporting-documents-visiting-the-uk',
+    checked: '2026-11-23',
+    note: 'Section 13 is headed \'Documents you should not use as evidence\' and says these are \'less useful\'; flight bookings are excepted for transit.',
+  },
+  ukFinanceFin21: {
+    id: 'uk.finance.fin2_1',
+    claim:
+      'Under FIN 2.1 of Appendix Finance, funds do not count if the Home Office cannot check them satisfactorily with the bank. The same applies if the bank is unregulated or keeps no electronic records.',
+    provenance: 'primary',
+    source: 'GOV.UK, Immigration Rules Appendix Finance, FIN 2.1 (updated 29 October 2026)',
+    sourceUrl: 'https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-finance',
+    checked: '2026-11-23',
+  },
+  ukVisitStatsPakistanYeJun2026: {
+    id: 'uk.stats.visitor.pakistan.yeJun2026',
+    claim:
+      'Year to June 2026, Pakistani nationals, visitor visas: 148,810 applications; 85,750 granted; 65,175 refused; grant rate 57%. The Home Office granted 57% of visitor visa decisions for Pakistani nationals.',
+    provenance: 'primary',
+    source: 'Home Office, Immigration system statistics, year ending June 2026: Entry clearance visas summary tables, table Vis_06 (published 27 August 2026)',
+    sourceUrl: 'https://assets.publishing.service.gov.uk/media/6a85c6003d82f78d5c514552/visas-summary-jun-2026-tables.ods',
+    checked: '2026-11-23',
+    note: 'Vis_06 \'Decisions\' = 150,925 (grants + refusals). Accredited official statistics. Data from 2026 Q1 are provisional. Our sum of Vis_D02 for 2025 Q3 to 2026 Q2 gives the same numbers (plus 234 withdrawn).',
+  },
+  ukVisitStatsAllYeJun2026: {
+    id: 'uk.stats.visitor.all.yeJun2026',
+    claim:
+      'Grant rate for visitor visas, all nationalities, year to June 2026: 80%.',
+    provenance: 'primary',
+    source: 'Home Office, Entry clearance visas summary tables, year ending June 2026, table Vis_06, Total row (2,185,158 granted, 558,153 refused)',
+    sourceUrl: 'https://assets.publishing.service.gov.uk/media/6a85c6003d82f78d5c514552/visas-summary-jun-2026-tables.ods',
+    checked: '2026-11-23',
+  },
+  ukVisitStatsPakistanRank: {
+    id: 'uk.stats.visitor.pakistan.rank',
+    claim:
+      'Pakistan was the fifth-largest nationality for UK visitor visa applications in the year to June 2026.',
+    provenance: 'primary',
+    source: 'Home Office, Entry clearance visas summary tables, year ending June 2026, table Vis_06 (rank 5 of the top 20 nationalities by applications)',
+    sourceUrl: 'https://assets.publishing.service.gov.uk/media/6a85c6003d82f78d5c514552/visas-summary-jun-2026-tables.ods',
+    checked: '2026-11-23',
+  },
+  ukVisitStatsPakistanYeJun2025: {
+    id: 'uk.stats.visitor.pakistan.yeJun2025',
+    claim:
+      'Year to June 2025, Pakistani nationals, visitor visas: 156,862 applications; 92,221 granted; 64,443 refused; grant rate 59%. The 2025 column is our own sum of the Home Office’s detailed data, by the same method.',
+    provenance: 'primary',
+    source: 'Home Office, Entry clearance visa applications and outcomes detailed datasets, year ending June 2026, Data_Vis_D01 and Data_Vis_D02 (published 27 August 2026)',
+    sourceUrl: 'https://assets.publishing.service.gov.uk/media/6a85c3741b45e4e555421eda/entry-clearance-visa-outcomes-datasets-jun-2026.xlsx',
+    checked: '2026-11-23',
+    note: 'Our calculation: rows with Nationality \'Pakistan\' and Visa type group \'Visitor\', quarters 2024 Q3 to 2025 Q2. Grant rate 92,221 / (92,221 + 64,443) = 58.9%, rounded to 59%. 310 withdrawn excluded, as in the Home Office method (Notes sheet, note 14). The same method reproduces Vis_06 for the year to June 2026.',
+  },
+  ukVisitStatsAllYeJun2025: {
+    id: 'uk.stats.visitor.all.yeJun2025',
+    claim:
+      'Grant rate for visitor visas, all nationalities, year to June 2025: 80%.',
+    provenance: 'primary',
+    source: 'Home Office, Entry clearance visa applications and outcomes detailed datasets, year ending June 2026, Data_Vis_D02',
+    sourceUrl: 'https://assets.publishing.service.gov.uk/media/6a85c3741b45e4e555421eda/entry-clearance-visa-outcomes-datasets-jun-2026.xlsx',
+    checked: '2026-11-23',
+    note: 'Our calculation: all visitor rows, 2024 Q3 to 2025 Q2: 2,218,234 issued, 546,355 refused; 80.2%, rounded to 80%.',
+  },
+  ukVisitStatsRelease: {
+    id: 'uk.stats.visitor.release',
+    claim:
+      'The Home Office’s immigration system statistics, published on 27 August 2026, run to June 2026. They count by nationality, including Pakistanis who applied elsewhere, and figures from January 2026 are provisional. The grant rate is grants divided by grants plus refusals.',
+    provenance: 'primary',
+    source: 'Home Office, Immigration system statistics data tables (updated 27 August 2026); summary tables Notes sheet, notes 5 and 14',
+    sourceUrl: 'https://www.gov.uk/government/statistical-data-sets/immigration-system-statistics-data-tables',
+    checked: '2026-11-23',
+    note: 'Cover sheet of the datasets says \'Next update: 26 November 2026\'. The figures stay dated to the year to June 2026; the post does not mention the next release date.',
+  },
+  deAufenthGVersion: {
+    id: 'de.aufenthg.version',
+    claim:
+      'The Residence Act was read on gesetze-im-internet.de on 23 November 2026, in the version last amended on 22 October 2026.',
+    provenance: 'primary',
+    source: 'Residence Act (AufenthG) on gesetze-im-internet.de, version last amended by Art. 5 of the Act of 22 October 2026 (BGBl. 2026 I Nr. 318)',
+    sourceUrl: 'https://www.gesetze-im-internet.de/aufenthg_2004/BJNR195010004.html',
+    checked: '2026-11-23',
+    note: 'Stand line: "zuletzt geändert durch Art. 5 G v. 22.10.2026 I Nr. 318". Section pages carry no date of their own.',
+  },
+  deSpouseLegalBasis: {
+    id: 'de.family.legalBasis',
+    claim:
+      'Sections 27 to 30 of the Residence Act (Aufenthaltsgesetz) set the rules for joining a spouse in Germany.',
+    provenance: 'primary',
+    source: 'Residence Act (AufenthG) on gesetze-im-internet.de, version last amended by Art. 5 of the Act of 22 October 2026 (BGBl. 2026 I Nr. 318), §§ 27–30',
+    sourceUrl: 'https://www.gesetze-im-internet.de/aufenthg_2004/__27.html',
+    checked: '2026-11-23',
+    note: '§ 27 principle, § 28 Germans, § 29 foreign nationals, § 30 spouses.',
+  },
+  deSpouseMinAge: {
+    id: 'de.spouse.minAge',
+    claim:
+      'Both spouses must be at least 18.',
+    provenance: 'primary',
+    source: 'Residence Act (AufenthG) on gesetze-im-internet.de, version last amended by Art. 5 of the Act of 22 October 2026 (BGBl. 2026 I Nr. 318), § 30(1) sentence 1 no. 1',
+    sourceUrl: 'https://www.gesetze-im-internet.de/aufenthg_2004/__30.html',
+    checked: '2026-11-23',
+    note: '§ 30(2) sentence 1 allows a hardship waiver; not mentioned in the post.',
+  },
+  deSpouseResidenceTitle: {
+    id: 'de.spouse.sponsorTitle',
+    claim:
+      'The spouse in Germany must hold a residence title, such as a residence permit, an EU Blue Card or a settlement permit.',
+    provenance: 'primary',
+    source: 'Residence Act (AufenthG) on gesetze-im-internet.de, version last amended by Art. 5 of the Act of 22 October 2026 (BGBl. 2026 I Nr. 318), § 29(1) sentence 1 no. 1',
+    sourceUrl: 'https://www.gesetze-im-internet.de/aufenthg_2004/__29.html',
+    checked: '2026-11-23',
+    note: 'Full list: Niederlassungserlaubnis, Daueraufenthalt – EU, Aufenthaltserlaubnis, Blaue Karte EU, ICT-Karte, Mobiler-ICT-Karte, or stay under § 18e.',
+  },
+  deSpouseHousing: {
+    id: 'de.spouse.housing',
+    claim:
+      'There must be enough living space: no more than would be enough in a publicly funded social rental flat, meeting the occupancy and condition rules that apply to Germans; children under 2 are not counted.',
+    provenance: 'primary',
+    source: 'Residence Act (AufenthG) on gesetze-im-internet.de, version last amended by Art. 5 of the Act of 22 October 2026 (BGBl. 2026 I Nr. 318), § 29(1) sentence 1 no. 2 and § 2(4)',
+    sourceUrl: 'https://www.gesetze-im-internet.de/aufenthg_2004/__2.html',
+    checked: '2026-11-23',
+  },
+  deSpouseHousingWaiver: {
+    id: 'de.spouse.housingWaiver',
+    claim:
+      'The housing requirement does not apply to spouses of holders of an EU Blue Card, ICT or Mobile ICT Card, or a permit under ss. 18a, 18b, 18c(3), 18d, 18f, 19c(1) (listed jobs), 19c(2), 19c(4) sentence 1 or 21.',
+    provenance: 'primary',
+    source: 'Residence Act (AufenthG) on gesetze-im-internet.de, version last amended by Art. 5 of the Act of 22 October 2026 (BGBl. 2026 I Nr. 318), § 29(5)',
+    sourceUrl: 'https://www.gesetze-im-internet.de/aufenthg_2004/__29.html',
+    checked: '2026-11-23',
+  },
+  deSpouseLivelihood: {
+    id: 'de.spouse.livelihood',
+    claim:
+      'Living costs, including adequate health insurance, must as a rule be covered without public funds; the Act sets no fixed sum for spouses, and family members’ contributions to household income count.',
+    provenance: 'primary',
+    source: 'Residence Act (AufenthG) on gesetze-im-internet.de, version last amended by Art. 5 of the Act of 22 October 2026 (BGBl. 2026 I Nr. 318), § 5(1) no. 1 and § 2(3)',
+    sourceUrl: 'https://www.gesetze-im-internet.de/aufenthg_2004/__5.html',
+    checked: '2026-11-23',
+    note: '§ 2(3) sets sums only for study-type permits (by reference to BAföG); none for family reunification. "Bei der Erteilung ... zum Familiennachzug werden Beiträge der Familienangehörigen zum Haushaltseinkommen berücksichtigt."',
+  },
+  deSpouseSham: {
+    id: 'de.spouse.shamForced',
+    claim:
+      'Reunion is refused if the marriage was made only to get the spouse into Germany, or if facts suggest either spouse was forced to marry.',
+    provenance: 'primary',
+    source: 'Residence Act (AufenthG) on gesetze-im-internet.de, version last amended by Art. 5 of the Act of 22 October 2026 (BGBl. 2026 I Nr. 318), § 27(1a)',
+    sourceUrl: 'https://www.gesetze-im-internet.de/aufenthg_2004/__27.html',
+    checked: '2026-11-23',
+    note: 'No. 1 applies where it is established ("feststeht") that the marriage was made solely for that purpose.',
+  },
+  deNationalVisa: {
+    id: 'de.visa.nationalBeforeEntry',
+    claim:
+      'The national visa for a long stay must be issued before entry.',
+    provenance: 'primary',
+    source: 'Residence Act (AufenthG) on gesetze-im-internet.de, version last amended by Art. 5 of the Act of 22 October 2026 (BGBl. 2026 I Nr. 318), § 6(3)',
+    sourceUrl: 'https://www.gesetze-im-internet.de/aufenthg_2004/__6.html',
+    checked: '2026-11-23',
+  },
+  deA1Rule: {
+    id: 'de.spouse.a1',
+    claim:
+      'The joining spouse must be able to communicate in German at least in a simple way; basic German is level A1 of the CEFR.',
+    provenance: 'primary',
+    source: 'Residence Act (AufenthG) on gesetze-im-internet.de, version last amended by Art. 5 of the Act of 22 October 2026 (BGBl. 2026 I Nr. 318), § 30(1) sentence 1 no. 2 and § 2(9)',
+    sourceUrl: 'https://www.gesetze-im-internet.de/aufenthg_2004/__30.html',
+    checked: '2026-11-23',
+  },
+  deA1PermitExemptions: {
+    id: 'de.spouse.a1PermitExemptions',
+    claim:
+      'A1 is not needed if the spouse in Germany holds an EU Blue Card, ICT Card or Mobile ICT Card, or a permit under s. 18a, 18b, 18c(3), 18d, 18f, 19c(1) (executive, manager, company specialist, scientist, guest scientist, teacher, or engineer or technician in a guest scientist’s team), 19c(2), 19c(4) sentence 1, or 21.',
+    provenance: 'primary',
+    source: 'Residence Act (AufenthG) on gesetze-im-internet.de, version last amended by Art. 5 of the Act of 22 October 2026 (BGBl. 2026 I Nr. 318), § 30(1) sentence 3 no. 5',
+    sourceUrl: 'https://www.gesetze-im-internet.de/aufenthg_2004/__30.html',
+    checked: '2026-11-23',
+    note: '§ 18c(3): settlement permit for highly qualified skilled workers with academic training (post: "highly qualified graduates").',
+  },
+  deA1GeneralExceptions: {
+    id: 'de.spouse.a1GeneralExceptions',
+    claim:
+      'A1 is also not needed for illness or disability (no. 2), a clearly low integration need or no right to an integration course (no. 3), or where learning German before entry is impossible or unreasonable (no. 6); further exceptions cover spouses of some refugees (no. 1) and of some visa-free nationals (no. 4).',
+    provenance: 'primary',
+    source: 'Residence Act (AufenthG) on gesetze-im-internet.de, version last amended by Art. 5 of the Act of 22 October 2026 (BGBl. 2026 I Nr. 318), § 30(1) sentence 3 nos. 1–4 and 6',
+    sourceUrl: 'https://www.gesetze-im-internet.de/aufenthg_2004/__30.html',
+    checked: '2026-11-23',
+    note: 'No. 1: spouses of holders of § 23(4), § 25(1) or (2), § 26(3) and some § 26(4) titles, where the marriage existed before the move. No. 4: the person in Germany may, by nationality, enter and stay visa-free for longer than a short stay.',
+  },
+  deA1SettlementNo7: {
+    id: 'de.spouse.a1SettlementPermit',
+    claim:
+      'A settlement permit holder’s spouse needs A1 unless the holder held one of the exempt permits immediately before the settlement permit.',
+    provenance: 'primary',
+    source: 'Residence Act (AufenthG) on gesetze-im-internet.de, version last amended by Art. 5 of the Act of 22 October 2026 (BGBl. 2026 I Nr. 318), § 30(1) sentence 1 no. 2 and sentence 3 no. 7',
+    sourceUrl: 'https://www.gesetze-im-internet.de/aufenthg_2004/__30.html',
+    checked: '2026-11-23',
+  },
+  deA1StudentSpouse: {
+    id: 'de.spouse.a1Student',
+    claim:
+      'A student’s (s. 16b) spouse needs A1 unless a general exception applies.',
+    provenance: 'primary',
+    source: 'Residence Act (AufenthG) on gesetze-im-internet.de, version last amended by Art. 5 of the Act of 22 October 2026 (BGBl. 2026 I Nr. 318), § 30(1) sentence 1 no. 2 and sentence 3',
+    sourceUrl: 'https://www.gesetze-im-internet.de/aufenthg_2004/__30.html',
+    checked: '2026-11-23',
+    note: 'Our reading: § 16b is not in the sentence 3 no. 5 list.',
+  },
+  deA1GermanSpouse: {
+    id: 'de.spouse.a1German',
+    claim:
+      'Spouses of German citizens fall under s. 28, which applies the same A1 rule.',
+    provenance: 'primary',
+    source: 'Residence Act (AufenthG) on gesetze-im-internet.de, version last amended by Art. 5 of the Act of 22 October 2026 (BGBl. 2026 I Nr. 318), § 28(1) sentence 5',
+    sourceUrl: 'https://www.gesetze-im-internet.de/aufenthg_2004/__28.html',
+    checked: '2026-11-23',
+    note: '§ 28(1) sentence 5 applies § 30(1) sentence 1 nos. 1 and 2, sentence 3 and (2) sentence 1 correspondingly.',
+  },
+  deMarriageTiming: {
+    id: 'de.spouse.marriageTiming',
+    claim:
+      'For students, skilled workers under ss. 18a and 18b, and the self-employed, the marriage must have existed when their permit was issued, and their stay must be expected to last over a year.',
+    provenance: 'primary',
+    source: 'Residence Act (AufenthG) on gesetze-im-internet.de, version last amended by Art. 5 of the Act of 22 October 2026 (BGBl. 2026 I Nr. 318), § 30(1) sentence 1 no. 3(e)',
+    sourceUrl: 'https://www.gesetze-im-internet.de/aufenthg_2004/__30.html',
+    checked: '2026-11-23',
+    note: 'Letter (e) covers residence permits under Chapter 2, Sections (Abschnitte) 3 to 6, including § 16b, §§ 18a and 18b, and § 21.',
+  },
+  deMarriageTimingWaiver: {
+    id: 'de.spouse.marriageTimingWaiver',
+    claim:
+      'If the couple married later, the authorities may waive those two conditions, but need not.',
+    provenance: 'primary',
+    source: 'Residence Act (AufenthG) on gesetze-im-internet.de, version last amended by Art. 5 of the Act of 22 October 2026 (BGBl. 2026 I Nr. 318), § 30(2) sentence 2',
+    sourceUrl: 'https://www.gesetze-im-internet.de/aufenthg_2004/__30.html',
+    checked: '2026-11-23',
+    note: '"kann ... abgesehen werden" (discretion).',
+  },
+  deResearchBlueCardRoute: {
+    id: 'de.spouse.researchBlueCard',
+    claim:
+      'Researchers and EU Blue Card holders do not face the marriage-timing and one-year conditions.',
+    provenance: 'primary',
+    source: 'Residence Act (AufenthG) on gesetze-im-internet.de, version last amended by Art. 5 of the Act of 22 October 2026 (BGBl. 2026 I Nr. 318), § 30(1) sentence 1 no. 3(c) and (g)',
+    sourceUrl: 'https://www.gesetze-im-internet.de/aufenthg_2004/__30.html',
+    checked: '2026-11-23',
+    note: 'Letter (c): permits under §§ 18d, 18f; letter (g): EU Blue Card, ICT Card, Mobile ICT Card.',
+  },
+  dePermitDuration: {
+    id: 'de.spouse.permitDuration',
+    claim:
+      'The spouse’s permit can run no longer than the permit of the person in Germany.',
+    provenance: 'primary',
+    source: 'Residence Act (AufenthG) on gesetze-im-internet.de, version last amended by Art. 5 of the Act of 22 October 2026 (BGBl. 2026 I Nr. 318), § 27(4)',
+    sourceUrl: 'https://www.gesetze-im-internet.de/aufenthg_2004/__27.html',
+    checked: '2026-11-23',
+  },
+  deSpouseWork: {
+    id: 'de.spouse.work',
+    claim:
+      'Anyone with a residence title may work unless a law forbids or restricts it; ss. 27 to 30 set no such limit for spouses; every residence title must show whether work is allowed and any limits.',
+    provenance: 'primary',
+    source: 'Residence Act (AufenthG) on gesetze-im-internet.de, version last amended by Art. 5 of the Act of 22 October 2026 (BGBl. 2026 I Nr. 318), § 4a(1) and (3)',
+    sourceUrl: 'https://www.gesetze-im-internet.de/aufenthg_2004/__4a.html',
+    checked: '2026-11-23',
+    note: '§ 27 now ends at (4); there is no longer a § 27(5) work clause. §§ 27–30 read in full on 23 November 2026.',
+  },
+  deVisaFee: {
+    id: 'de.visa.nationalFee',
+    claim:
+      'The national visa fee is €75.',
+    provenance: 'primary',
+    source: 'Residence Ordinance (AufenthV) on gesetze-im-internet.de, version last amended by Art. 12(9) of the Act of 22 October 2026 (BGBl. 2026 I Nr. 318), § 46(2) no. 1',
+    sourceUrl: 'https://www.gesetze-im-internet.de/aufenthv/__46.html',
+    checked: '2026-11-23',
+    note: 'Set in the Ordinance itself, so printable under the brief.',
+  },
+  deVisaFeeExemptions: {
+    id: 'de.visa.feeExemptions',
+    claim:
+      'Spouses of German citizens are exempt from the national visa fee, as are spouses covered by a scholarship from public funds.',
+    provenance: 'primary',
+    source: 'Residence Ordinance (AufenthV) on gesetze-im-internet.de, version last amended by Art. 12(9) of the Act of 22 October 2026 (BGBl. 2026 I Nr. 318), § 52(1) and (5)',
+    sourceUrl: 'https://www.gesetze-im-internet.de/aufenthv/__52.html',
+    checked: '2026-11-23',
+    note: '§ 52(5) sentence 2: spouses only "soweit diese in die Förderung einbezogen sind".',
+  },
+  pkFamilyPortal: {
+    id: 'pk.de.family.portal',
+    claim:
+      'Since 15 January 2026, the Embassy in Islamabad has taken family reunion applications only through the Consular Services Portal; its appointment waiting list has been discontinued.',
+    provenance: 'primary',
+    source: 'German Embassy Islamabad / German Missions in Pakistan, Visa: family reunion (article dated 25.08.2026)',
+    sourceUrl: 'https://pakistan.diplo.de/pk-en/service/1-visa-fz-seite-1676108',
+    checked: '2026-11-23',
+    note: 'Joining a non-German EU citizen still uses the Islamabad waiting list (not in the post).',
+  },
+  pkFamilySteps: {
+    id: 'pk.de.family.steps',
+    claim:
+      'Fill in the Videx form (one per applicant, on a computer, signed); upload documents on the portal; the Embassy reviews them and, if all is in order, sends a booking link; at the appointment you show originals, pay the fee and give biometrics.',
+    provenance: 'primary',
+    source: 'German Embassy Islamabad / German Missions in Pakistan, Visa: family reunion (article dated 25.08.2026)',
+    sourceUrl: 'https://pakistan.diplo.de/pk-en/service/1-visa-fz-seite-1676108',
+    checked: '2026-11-23',
+  },
+  pkIncompleteDeleted: {
+    id: 'pk.de.family.incomplete',
+    claim:
+      'Incomplete uploads are deleted and the applicant goes to the back of the waiting list; upload only once every document, including any A1 certificate needed, is ready.',
+    provenance: 'primary',
+    source: 'German Missions in Pakistan, How to complete your family reunion application in the Consular Services Portal (PDF, 14.01.2026)',
+    sourceUrl: 'https://pakistan.diplo.de/resource/blob/2751960/79cce75cc5ff84732d1a8b436981da09/guidelines-auslandsportal-data.pdf',
+    checked: '2026-11-23',
+  },
+  pkKarachi: {
+    id: 'pk.de.family.karachi',
+    claim:
+      'Residents of Sindh or Balochistan book at the Consulate General in Karachi; applicants there bring original documents and passports, and the passport for travel stays at the consulate while the visa is processed.',
+    provenance: 'primary',
+    source: 'German Embassy Islamabad / German Missions in Pakistan, Visa: family reunion (article dated 25.08.2026)',
+    sourceUrl: 'https://pakistan.diplo.de/pk-en/service/1-visa-fz-seite-1676108',
+    checked: '2026-11-23',
+    note: 'Karachi page confirms the consular district (Sindh and Balochistan) and family reunion appointments: https://pakistan.diplo.de/pk-en/vertretungen/generalkonsulat1',
+  },
+  pkFeesCash: {
+    id: 'pk.de.visa.feePayment',
+    claim:
+      'Both missions take visa fees in rupees, in cash at the counter.',
+    provenance: 'primary',
+    source: 'German Missions in Pakistan, Visa: General Information',
+    sourceUrl: 'https://pakistan.diplo.de/pk-en/service/2208622-2208622',
+    checked: '2026-11-23',
+    note: 'Page also lists the €75 D-visa fee; the post prints it from AufenthV § 46 instead.',
+  },
+  pkA1Certificates: {
+    id: 'pk.de.family.a1Certificates',
+    claim:
+      'The Embassy’s family reunion page repeats the permit exemptions, accepts A1 certificates from the Goethe-Institut, ÖSD, telc or TestDaF, and sets a maximum age for the certificate.',
+    provenance: 'primary',
+    source: 'German Embassy Islamabad / German Missions in Pakistan, Visa: family reunion (article dated 25.08.2026)',
+    sourceUrl: 'https://pakistan.diplo.de/pk-en/service/1-visa-fz-seite-1676108',
+    checked: '2026-11-23',
+    note: 'Conflict: the Embassy’s printable leaflet (resource/blob/2701208) says that in Pakistan a valid certificate can only be issued by the Goethe-Institut. The post follows the web page. The Embassy cites "18b (1)"; § 18b no longer has subsections.',
+  },
+  pkDocumentList: {
+    id: 'pk.de.family.documents',
+    claim:
+      'The Embassy’s list includes the Videx form; biometric photos of both spouses; the spouse’s Meldebescheinigung and a copy of their residence permit; copies of both spouses’ old and current passports and the applicant’s CNIC; original NADRA computerised birth certificates for both; the original Nikah Nama in Urdu with an English translation; the original NADRA computerised marriage registration certificate; proof any earlier marriage ended; travel insurance; an A1 certificate if needed; and extra proof of the relationship such as photos, dated chat history and remittance records.',
+    provenance: 'primary',
+    source: 'German Embassy Islamabad / German Missions in Pakistan, Visa: family reunion (article dated 25.08.2026)',
+    sourceUrl: 'https://pakistan.diplo.de/pk-en/service/1-visa-fz-seite-1676108',
+    checked: '2026-11-23',
+    note: 'Document age limits (Meldebescheinigung, A1 certificate, photo) and the insurance period are left out as page-only figures.',
+  },
+  pkNoLegalisation: {
+    id: 'pk.de.legal.noLegalisation',
+    claim:
+      'The Embassy cannot attest or legalise documents issued by Pakistani authorities, such as birth or marriage registration certificates.',
+    provenance: 'primary',
+    source: 'German Missions in Pakistan, Legal (article dated 14.04.2026)',
+    sourceUrl: 'https://pakistan.diplo.de/pk-en/service/legal-uess-1680522',
+    checked: '2026-11-23',
+  },
+  pkDocVerification: {
+    id: 'pk.de.family.verification',
+    claim:
+      'After you apply, the mission may ask for more documents, another set of the application and a fee to verify your documents.',
+    provenance: 'primary',
+    source: 'German Embassy Islamabad / German Missions in Pakistan, Visa: family reunion (article dated 25.08.2026)',
+    sourceUrl: 'https://pakistan.diplo.de/pk-en/service/1-visa-fz-seite-1676108',
+    checked: '2026-11-23',
+    note: 'The page gives a PKR amount; left out as a page-only fee.',
+  },
+  pkUnsignedPassport: {
+    id: 'pk.de.visa.unsignedPassport',
+    claim:
+      'The Embassy cannot print a visa in an unsigned passport; Pakistani passports are valid only with the holder’s signature or thumb impression.',
+    provenance: 'primary',
+    source: 'German Missions in Pakistan, Visa: General Information',
+    sourceUrl: 'https://pakistan.diplo.de/pk-en/service/2208622-2208622',
+    checked: '2026-11-23',
+  },
+  pkA1LeafletGoetheOnly: {
+    id: 'eu.de.spouse.a1-leaflet-goethe',
+    claim:
+      'The Embassy’s printable family reunion leaflet names only the Goethe-Institut for A1 certificates issued in Pakistan, which is stricter than its web page.',
+    provenance: 'primary',
+    source: 'German Missions in Pakistan, Family reunion leaflet (PDF)',
+    sourceUrl: 'https://pakistan.diplo.de/resource/blob/2701208/656bdf70662ae4a25061f8ff8cd665dd/family-reunion-leaflet-data.pdf',
+    checked: '2026-11-23',
+  },
+  ukEvisaPakistanVisitors: {
+    id: 'uk.evisa.pakistan-visitors',
+    claim:
+      'The British High Commission in Islamabad announced eVisas for Pakistani visitors on 25 February 2026. The announcement covers visitors, including tourists. Approval now comes by email, not as a sticker in the passport.',
+    provenance: 'primary',
+    source: 'British High Commission Islamabad, “Pakistani visitors to the UK can now use eVisas” (25 February 2026)',
+    sourceUrl: 'https://www.gov.uk/government/news/pakistani-visitors-to-the-uk-can-now-use-evisas',
+    checked: '2026-11-23',
+    note: 'The story’s summary: those travelling to the UK, including tourists, receive confirmation by email rather than stickers in passports.',
+  },
+  ukEvisaPakistanVisitorsNoOtherChange: {
+    id: 'uk.evisa.pakistan-visitors-no-other-change',
+    claim:
+      'Processing times, eligibility rules and visa conditions did not change.',
+    provenance: 'primary',
+    source: 'British High Commission Islamabad, “Pakistani visitors to the UK can now use eVisas” (25 February 2026)',
+    sourceUrl: 'https://www.gov.uk/government/news/pakistani-visitors-to-the-uk-can-now-use-evisas',
+    checked: '2026-11-23',
+    note: 'Story: “There is no change to visa processing times, eligibility criteria or conditions.”',
+  },
+  ukEvisaPakistanStudentsWorkers: {
+    id: 'uk.evisa.pakistan-students-workers',
+    claim:
+      'Most students and workers switched on 15 July 2025: a story of 15 July 2025 said most main applicants on study and work visas would get eVisas. Dependants and visitors still got stickers then.',
+    provenance: 'primary',
+    source: 'British High Commission Islamabad, “New UK eVisas for Pakistani students and workers” (15 July 2025)',
+    sourceUrl: 'https://www.gov.uk/government/news/new-uk-evisas-for-pakistani-students-and-workers',
+    checked: '2026-11-23',
+    note: 'The story lists the routes: Student (including short-term study), Global Business Mobility, Global Talent, International Sportsperson, Skilled Worker (including Health and Care), certain Temporary Work routes and the Youth Mobility Scheme.',
+  },
+  ukEvisaStickersNotIssued: {
+    id: 'uk.evisa.stickers-not-issued',
+    claim:
+      'As of 23 November 2026, GOV.UK’s page on replacing a visa says stickers are no longer issued.',
+    provenance: 'primary',
+    source: 'GOV.UK, How to replace a physical visa if you’re outside the UK',
+    sourceUrl: 'https://www.gov.uk/replace-visa',
+    checked: '2026-11-23',
+    note: 'Page: “Physical visa vignettes (stickers) are no longer being issued.” The eVisa guide adds: “eVisas have replaced physical immigration documents.” No Pakistan-specific date for dependants was found on GOV.UK.',
+  },
+  ukEvisaDependantsOwnAccount: {
+    id: 'uk.evisa.dependants-own-account',
+    claim:
+      'A partner or child joining you as a dependant needs their own UKVI account.',
+    provenance: 'primary',
+    source: 'GOV.UK, eVisas: Set up a UKVI account to access your eVisa',
+    sourceUrl: 'https://www.gov.uk/evisa/set-up-ukvi-account',
+    checked: '2026-11-23',
+  },
+  ukEvisaStickerValidUntilExpiry: {
+    id: 'uk.evisa.sticker-valid-until-expiry',
+    claim:
+      'A sticker you already hold stays valid until it expires.',
+    provenance: 'primary',
+    source: 'GOV.UK, eVisas: What an eVisa is; British High Commission Islamabad (25 February 2026): “Existing sticker visas are unaffected”',
+    sourceUrl: 'https://www.gov.uk/evisa',
+    checked: '2026-11-23',
+  },
+  ukEvisaVisitorPassportSameDay: {
+    id: 'uk.evisa.visitor-passport-same-day',
+    claim:
+      'Visitors still give their fingerprints and photo at the visa centre, but get the passport back the same day.',
+    provenance: 'primary',
+    source: 'GOV.UK, Visit the UK as a Standard Visitor: Apply for a Standard Visitor visa',
+    sourceUrl: 'https://www.gov.uk/standard-visitor/apply-standard-visitor-visa',
+    checked: '2026-11-23',
+    note: 'The 25 February 2026 story adds that applicants no longer need to attend a visa application centre a second time to collect their passport.',
+  },
+  ukEvisaDefinition: {
+    id: 'uk.evisa.definition',
+    claim:
+      'An eVisa is a digital record of your identity, your status and its conditions, such as whether you may work. It is not an ETA, which is for people who do not need a visa.',
+    provenance: 'primary',
+    source: 'GOV.UK, eVisas: What an eVisa is; Travel with your eVisa',
+    sourceUrl: 'https://www.gov.uk/evisa',
+    checked: '2026-11-23',
+  },
+  ukEvisaDecisionEmail: {
+    id: 'uk.evisa.decision-email',
+    claim:
+      'Your decision email or letter tells you what to do next.',
+    provenance: 'primary',
+    source: 'GOV.UK, How to apply for a visa to come to the UK: Applying online and getting a decision',
+    sourceUrl: 'https://www.gov.uk/apply-to-come-to-the-uk/applying-online-and-getting-a-decision',
+    checked: '2026-11-23',
+  },
+  ukEvisaExistingAccount: {
+    id: 'uk.evisa.existing-account',
+    claim:
+      'If you used the UK Immigration: ID Check app or made an account when applying, you already have one. GOV.UK says not to create a second.',
+    provenance: 'primary',
+    source: 'GOV.UK, eVisas: Set up a UKVI account to access your eVisa',
+    sourceUrl: 'https://www.gov.uk/evisa/set-up-ukvi-account',
+    checked: '2026-11-23',
+  },
+  ukEvisaAccountRequirements: {
+    id: 'uk.evisa.account-requirements',
+    claim:
+      'To create an account, you need a phone number and email address you can use every time you sign in. For a new visa, you also need your passport and your GWF or UAN application number.',
+    provenance: 'primary',
+    source: 'GOV.UK, eVisas: Set up a UKVI account to access your eVisa',
+    sourceUrl: 'https://www.gov.uk/evisa/set-up-ukvi-account',
+    checked: '2026-11-23',
+    note: 'GOV.UK: “a valid passport and your visa application number - this is a global web form (GWF) number or unique application number (UAN)”.',
+  },
+  ukEvisaFree: {
+    id: 'uk.evisa.free',
+    claim:
+      'The account and the eVisa are free.',
+    provenance: 'primary',
+    source: 'GOV.UK, eVisas: What an eVisa is',
+    sourceUrl: 'https://www.gov.uk/evisa',
+    checked: '2026-11-23',
+    note: 'GOV.UK: “You do not need to pay to set up a UKVI account or access your eVisa.”',
+  },
+  ukEvisaConfirmIdentity: {
+    id: 'uk.evisa.confirm-identity',
+    claim:
+      'You then confirm your identity, usually with a smartphone app, and link the account to your eVisa. There is another way to confirm your identity if you cannot use the app.',
+    provenance: 'primary',
+    source: 'GOV.UK, eVisas: Set up a UKVI account to access your eVisa',
+    sourceUrl: 'https://www.gov.uk/evisa/set-up-ukvi-account',
+    checked: '2026-11-23',
+  },
+  ukEvisaHelpSomeoneElse: {
+    id: 'uk.evisa.help-someone-else',
+    claim:
+      'Someone can help you if you cannot use the internet, and a parent can manage a child’s account.',
+    provenance: 'primary',
+    source: 'GOV.UK, eVisas: Set up a UKVI account to access your eVisa (Help someone else)',
+    sourceUrl: 'https://www.gov.uk/evisa/set-up-ukvi-account',
+    checked: '2026-11-23',
+  },
+  ukEvisaAccountRecovery: {
+    id: 'uk.evisa.account-recovery',
+    claim:
+      'If you lose access, use the account recovery service.',
+    provenance: 'primary',
+    source: 'GOV.UK, eVisas: View your eVisa and get a share code; Travel with your eVisa (Get help)',
+    sourceUrl: 'https://update-your-details.homeoffice.gov.uk/account-recovery/help',
+    checked: '2026-11-23',
+    note: 'The recovery service itself needs JavaScript and could not be read by script; the description comes from the GOV.UK eVisa pages that link to it.',
+  },
+  ukEvisaChecks: {
+    id: 'uk.evisa.checks',
+    claim:
+      'Your eVisa is checked when you enter and leave the UK, and your airline checks your status at check-in. The carrier guidance says it can do this automatically only if your details match.',
+    provenance: 'primary',
+    source: 'GOV.UK, eVisas: Travel with your eVisa; UK Visas and Immigration, Confirm your immigration status to your carrier before travelling to the UK (23 July 2026)',
+    sourceUrl: 'https://www.gov.uk/guidance/confirm-your-immigration-status-to-your-carrier-before-travelling-to-the-uk',
+    checked: '2026-11-23',
+  },
+  ukEvisaCarrierMayRefuse: {
+    id: 'uk.evisa.carrier-may-refuse',
+    claim:
+      'An airline may not let you travel if your details are wrong.',
+    provenance: 'primary',
+    source: 'GOV.UK, eVisas: Travel with your eVisa',
+    sourceUrl: 'https://www.gov.uk/evisa/travel-with-evisa',
+    checked: '2026-11-23',
+  },
+  ukEvisaPreTravelChecks: {
+    id: 'uk.evisa.pre-travel-checks',
+    claim:
+      'Before you fly, check that your UKVI account has your correct personal details and the passport you will carry, that your eVisa shows the right immigration status, and that your details exactly match the passenger information you gave the airline.',
+    provenance: 'primary',
+    source: 'GOV.UK, eVisas: Travel with your eVisa',
+    sourceUrl: 'https://www.gov.uk/evisa/travel-with-evisa',
+    checked: '2026-11-23',
+  },
+  ukEvisaTravelPassport: {
+    id: 'uk.evisa.travel-passport',
+    claim:
+      'You must travel with a valid passport that you have added to your UKVI account.',
+    provenance: 'primary',
+    source: 'GOV.UK, eVisas: Travel with your eVisa',
+    sourceUrl: 'https://www.gov.uk/evisa/travel-with-evisa',
+    checked: '2026-11-23',
+  },
+  ukEvisaCarrierShareCode: {
+    id: 'uk.evisa.carrier-share-code',
+    claim:
+      'If the airline still cannot confirm your status, show it a share code with your passport. The airline decides whether you board, and can contact the UK Border Force carrier support hub.',
+    provenance: 'primary',
+    source: 'UK Visas and Immigration, Confirm your immigration status to your carrier before travelling to the UK (23 July 2026); GOV.UK, eVisas: Travel with your eVisa',
+    sourceUrl: 'https://www.gov.uk/guidance/confirm-your-immigration-status-to-your-carrier-before-travelling-to-the-uk',
+    checked: '2026-11-23',
+  },
+  ukEvisaTravelShareCodeReuse: {
+    id: 'uk.evisa.travel-share-code-reuse',
+    claim:
+      'GOV.UK says a travel share code can be used more than once.',
+    provenance: 'primary',
+    source: 'GOV.UK, eVisas: Travel with your eVisa',
+    sourceUrl: 'https://www.gov.uk/evisa/travel-with-evisa',
+    checked: '2026-11-23',
+    note: 'The page also says you can get it before you travel. Its validity period is not printed.',
+  },
+  ukEvisaNewPassport: {
+    id: 'uk.evisa.new-passport',
+    claim:
+      'Add the new passport through the account update service before you travel. This changes your account details, not your visa. You can add more than one passport.',
+    provenance: 'primary',
+    source: 'GOV.UK, eVisas: Update your details in your UKVI account; Travel with your eVisa',
+    sourceUrl: 'https://www.gov.uk/evisa/update-ukvi-account',
+    checked: '2026-11-23',
+    note: 'GOV.UK: “You can only use this service to update your UKVI account details. You cannot update any immigration details”.',
+  },
+  ukEvisaNoChangeWhilePending: {
+    id: 'uk.evisa.no-change-while-pending',
+    claim:
+      'You cannot change your passport or name while waiting for a visa decision.',
+    provenance: 'primary',
+    source: 'GOV.UK, eVisas: Update your details in your UKVI account',
+    sourceUrl: 'https://www.gov.uk/evisa/update-ukvi-account',
+    checked: '2026-11-23',
+  },
+  ukEvisaOutsideUkUpdates: {
+    id: 'uk.evisa.outside-uk-updates',
+    claim:
+      'Outside the UK, a biometric passport lets you update the passport details, your name and your nationality online. Without one, you can update only the passport number and expiry date. Other changes need UKVI to update the account, and may need a visa centre visit for biometrics.',
+    provenance: 'primary',
+    source: 'GOV.UK, eVisas: Travel with your eVisa (If your passport or personal details change when you’re outside the UK)',
+    sourceUrl: 'https://www.gov.uk/evisa/travel-with-evisa',
+    checked: '2026-11-23',
+  },
+  ukEvisaStickerInExpiredPassport: {
+    id: 'uk.evisa.sticker-in-expired-passport',
+    claim:
+      'If you hold a valid sticker in an expired passport, carry both passports when you travel. Or use your eVisa once the new passport is added.',
+    provenance: 'primary',
+    source: 'GOV.UK, How to replace a physical visa if you’re outside the UK',
+    sourceUrl: 'https://www.gov.uk/replace-visa',
+    checked: '2026-11-23',
+  },
+  ukEvisaShareCodeProve: {
+    id: 'uk.evisa.share-code-prove',
+    claim:
+      'You give a share code with your date of birth; you do not show the eVisa itself. GOV.UK tells you which of your details the other person will see.',
+    provenance: 'primary',
+    source: 'GOV.UK, eVisas: View your eVisa and get a share code to prove your immigration status',
+    sourceUrl: 'https://www.gov.uk/evisa/view-evisa-get-share-code-prove-immigration-status',
+    checked: '2026-11-23',
+  },
+  ukRightToRentEngland: {
+    id: 'uk.right-to-rent.england-only',
+    claim:
+      'Right to rent checks apply in England only.',
+    provenance: 'primary',
+    source: 'GOV.UK, Prove your right to rent in England',
+    sourceUrl: 'https://www.gov.uk/prove-right-to-rent',
+    checked: '2026-11-23',
+    note: 'GOV.UK: “You do not need to prove your right to rent in Wales, Scotland or Northern Ireland.”',
+  },
+  ukShareCodeOrDocuments: {
+    id: 'uk.share-code.documents-instead',
+    claim:
+      'You may use eligible immigration documents instead, and cannot be rejected for doing so.',
+    provenance: 'primary',
+    source: 'GOV.UK, Prove your right to work to an employer; Prove your right to rent in England',
+    sourceUrl: 'https://www.gov.uk/prove-right-to-work',
+    checked: '2026-11-23',
+  },
+  ukEvisaShareCodeExpiry: {
+    id: 'uk.evisa.share-code-expiry',
+    claim:
+      'A share code expires after a set time. Until then you can reuse it, and you can get a new one whenever you need it.',
+    provenance: 'primary',
+    source: 'GOV.UK, eVisas: View your eVisa and get a share code to prove your immigration status',
+    sourceUrl: 'https://www.gov.uk/evisa/view-evisa-get-share-code-prove-immigration-status',
+    checked: '2026-11-23',
+    note: 'GOV.UK gives the period (90 days); not printed because it is set on a web page, not in law.',
+  },
+  ukEvisaReportError: {
+    id: 'uk.evisa.report-error',
+    claim:
+      'Report an error online if your eVisa shows wrong details, such as your date of birth or immigration status. Report it too if you cannot get a share code, or if the eVisa has still not appeared after the wait GOV.UK describes.',
+    provenance: 'primary',
+    source: 'GOV.UK, eVisas: Report an error with your eVisa',
+    sourceUrl: 'https://www.gov.uk/evisa/report-error-evisa',
+    checked: '2026-11-23',
+    note: 'GOV.UK gives a 24-hour wait and a fix target of 5 working days (15 if complex); neither is printed.',
+  },
+  ukEvisaReportErrorNeeds: {
+    id: 'uk.evisa.report-error-needs',
+    claim:
+      'You need a contact email or UK postal address, your name, date of birth and nationality, and your passport or GWF number. A legal representative, an employer or a friend can report it for you.',
+    provenance: 'primary',
+    source: 'GOV.UK, eVisas: Report an error with your eVisa',
+    sourceUrl: 'https://www.gov.uk/evisa/report-error-evisa',
+    checked: '2026-11-23',
+    note: 'GOV.UK lists other accepted references too: expired BRP number, UAN or UKVI customer number.',
+  },
+  ukEvisaUpdateNotError: {
+    id: 'uk.evisa.update-not-error',
+    claim:
+      'A new name, passport, phone number, email or photo is not an error; use the account update service.',
+    provenance: 'primary',
+    source: 'GOV.UK, eVisas: Report an error with your eVisa (When you should not use this service); Update your details in your UKVI account',
+    sourceUrl: 'https://www.gov.uk/evisa/report-error-evisa',
+    checked: '2026-11-23',
+  },
+  ukEvisaStickerError: {
+    id: 'uk.evisa.sticker-error',
+    claim:
+      'If a sticker you hold is wrong, GOV.UK says to check your eVisa and report the error if it is there too. You will not get a replacement sticker.',
+    provenance: 'primary',
+    source: 'GOV.UK, How to apply for a visa to come to the UK: Travelling to the UK',
+    sourceUrl: 'https://www.gov.uk/apply-to-come-to-the-uk/travelling-to-the-uk',
+    checked: '2026-11-23',
+  },
+  ukBrpReplaced: {
+    id: 'uk.brp.replaced',
+    claim:
+      'You might hold a biometric residence permit (BRP) if you got permission to live or work in the UK by 31 October 2024. GOV.UK’s BRP page says all BRPs have now expired and have been replaced by eVisas.',
+    provenance: 'primary',
+    source: 'GOV.UK, Biometric residence permits (BRPs)',
+    sourceUrl: 'https://www.gov.uk/biometric-residence-permits',
+    checked: '2026-11-23',
+  },
+  ukBrpExpiredUse: {
+    id: 'uk.brp.expired-use',
+    claim:
+      'An expired BRP may still work until 31 December 2026 at the latest. It is only for signing in to see your eVisa or get a share code, creating a UKVI account, or extending your stay.',
+    provenance: 'primary',
+    source: 'GOV.UK, Biometric residence permits (BRPs)',
+    sourceUrl: 'https://www.gov.uk/biometric-residence-permits',
+    checked: '2026-11-23',
+    note: 'GOV.UK: “for 24 months after the expiry date printed on the card, or until 31 December 2026 - whichever comes first.” The right-to-work and right-to-rent pages say 18 months after expiry for share codes. The post prints only the 31 December 2026 end date, which both readings meet.',
+  },
+  ukBrpLostReport: {
+    id: 'uk.brp.lost-report',
+    claim:
+      'A lost or stolen expired BRP must still be reported.',
+    provenance: 'primary',
+    source: 'GOV.UK, Biometric residence permits (BRPs)',
+    sourceUrl: 'https://www.gov.uk/biometric-residence-permits',
+    checked: '2026-11-23',
+  },
+  ukVisaBrakePakistanNotListed: {
+    id: 'uk.visabrake.pakistan',
+    claim:
+      'As of 23 November 2026, Pakistan is not named in rule ST 3.3 of Appendix Student or SW 3.3 of Appendix Skilled Worker, so Pakistanis can apply for UK visas as normal.',
+    provenance: 'primary',
+    source: 'Immigration Rules, Appendix Student ST 3.3 and Appendix Skilled Worker SW 3.3 (both pages updated 8 October 2026)',
+    sourceUrl: 'https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-student',
+    checked: '2026-11-23',
+    note: 'Also checked Appendix Skilled Worker (https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-skilled-worker). GOV.UK\'s visa brake page (last updated 26 March 2026) names the same four countries. \'Processed as normal\' is GOV.UK\'s own wording for applications outside the affected routes and countries.',
+  },
+  ukVisaBrakeStudentCountries: {
+    id: 'uk.visabrake.student',
+    claim:
+      'Since 26 March 2026, the brake has refused Student visas to nationals of Afghanistan, Cameroon, Myanmar and Sudan who apply from outside the UK.',
+    provenance: 'primary',
+    source: 'Immigration Rules, Appendix Student ST 3.3 (page updated 8 October 2026)',
+    sourceUrl: 'https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-student',
+    checked: '2026-11-23',
+    note: 'ST 3.3: a person must not be applying for entry clearance as a Student as a national or citizen of Afghanistan, Cameroon, Myanmar or Sudan.',
+  },
+  ukVisaBrakeSkilledWorkerAfghanistan: {
+    id: 'uk.visabrake.skilledworker',
+    claim:
+      'It also refuses Skilled Worker visas to Afghan nationals applying from outside the UK.',
+    provenance: 'primary',
+    source: 'Immigration Rules, Appendix Skilled Worker SW 3.3 (page updated 8 October 2026)',
+    sourceUrl: 'https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-skilled-worker',
+    checked: '2026-11-23',
+  },
+  ukVisaBrakeHc1691: {
+    id: 'uk.visabrake.hc1691',
+    claim:
+      'Statement of Changes HC 1691, laid on 5 March 2026, added rule ST 3.3 to Appendix Student and SW 3.3 to Appendix Skilled Worker. Both took effect on 26 March 2026, and earlier applications were decided under the old rules.',
+    provenance: 'primary',
+    source: 'Statement of changes to the Immigration Rules: HC 1691, 5 March 2026, paragraphs APP ST1 and APP SW1 and the Implementation section',
+    sourceUrl: 'https://www.gov.uk/government/publications/statement-of-changes-to-the-immigration-rules-hc-1619-5-march-2026/statement-of-changes-to-the-immigration-rules-hc-1691-5-march-2026-accessible-version',
+    checked: '2026-11-23',
+    note: 'Implementation: applications made before 26 March 2026 are decided under the rules in force on 25 March 2026.',
+  },
+  ukVisaBrakeDefinition: {
+    id: 'uk.visabrake.definition',
+    claim:
+      'GOV.UK describes the visa brake as a restriction that refuses certain visas to certain nationalities, applied where high numbers and proportions of people issued visas later claim asylum.',
+    provenance: 'primary',
+    source: 'GOV.UK, Visa brake: changes to the UK visa system (last updated 26 March 2026)',
+    sourceUrl: 'https://www.gov.uk/guidance/visa-brake-changes-to-the-uk-visa-system',
+    checked: '2026-11-23',
+  },
+  ukVisaBrakeScope: {
+    id: 'uk.visabrake.scope',
+    claim:
+      'The brake covers only applications made outside the UK (entry clearance) and looks at the main applicant’s nationality. For a listed nationality, a valid CAS or Certificate of Sponsorship does not help. Other visa routes and nationalities are not affected.',
+    provenance: 'primary',
+    source: 'GOV.UK, Visa brake: changes to the UK visa system (last updated 26 March 2026)',
+    sourceUrl: 'https://www.gov.uk/guidance/visa-brake-changes-to-the-uk-visa-system',
+    checked: '2026-11-23',
+  },
+  ukVisaBrakeNationalityNotResidence: {
+    id: 'uk.visabrake.residence',
+    claim:
+      'The brake depends on nationality, not on where you live or where you apply, and uses the main nationality given on the application form. So an Afghan national living in Pakistan who applies there for a Student or Skilled Worker visa is caught by it.',
+    provenance: 'primary',
+    source: 'GOV.UK, Visa brake: changes to the UK visa system (last updated 26 March 2026)',
+    sourceUrl: 'https://www.gov.uk/guidance/visa-brake-changes-to-the-uk-visa-system',
+    checked: '2026-11-23',
+    note: 'The Afghan-national-in-Pakistan sentence is our application of GOV.UK\'s words: it does not depend on where you live or from where you apply.',
+  },
+  ukVisaBrakeDualNationals: {
+    id: 'uk.visabrake.dualnationals',
+    claim:
+      'A dual national applying on another country’s passport is assessed on that nationality.',
+    provenance: 'primary',
+    source: 'Home Office, Student route caseworker guidance: Student and Child Student, section \'Student: Visa Brake\' (16 October 2026)',
+    sourceUrl: 'https://www.gov.uk/government/publications/student-route-caseworker-guidance/student-and-child-student',
+    checked: '2026-11-23',
+  },
+  ukVisaBrakeExistingVisas: {
+    id: 'uk.visabrake.existing',
+    claim:
+      'The brake does not cancel a UK visa already granted; holders can still apply from inside the UK to extend, or to switch to another route, if eligible.',
+    provenance: 'primary',
+    source: 'GOV.UK, Visa brake: changes to the UK visa system (last updated 26 March 2026)',
+    sourceUrl: 'https://www.gov.uk/guidance/visa-brake-changes-to-the-uk-visa-system',
+    checked: '2026-11-23',
+  },
+  ukVisaBrakeSmallShare: {
+    id: 'uk.visabrake.stats',
+    claim:
+      'The Home Office’s monthly visa statistics of 12 November 2026 say the visa brake nationalities are a small proportion of sponsored study applications.',
+    provenance: 'primary',
+    source: 'Home Office, Monthly entry clearance visa applications, October 2026 (official statistics, 12 November 2026), section 4',
+    sourceUrl: 'https://www.gov.uk/government/statistics/monthly-entry-clearance-visa-applications-october-2026/monthly-entry-clearance-visa-applications-october-2026',
+    checked: '2026-11-23',
+  },
+  ukVisaBrakeNoLaterChange: {
+    id: 'uk.visabrake.nolaterchange',
+    claim:
+      'The Statements of Changes laid since HC 1691, HC 259 (9 July 2026) and HC 584 (3 September 2026), do not change the brake.',
+    provenance: 'primary',
+    source: 'GOV.UK, Immigration Rules: statements of changes collection (read 23 November 2026)',
+    sourceUrl: 'https://www.gov.uk/government/collections/immigration-rules-statement-of-changes',
+    checked: '2026-11-23',
+    note: 'Searched both statements\' accessible texts and memoranda for brake, ST 3.3, SW 3.3, Afghanistan, Cameroon and Pakistan: no hits. HC 259: https://www.gov.uk/government/publications/statement-of-changes-to-the-immigration-rules-hc-259-9-july-2026 ; HC 584: https://www.gov.uk/government/publications/statement-of-changes-to-the-immigration-rules-hc-584-3-september-2026 . No later statement listed on 23 November 2026.',
+  },
+  ukVisaBrakeAnnounced: {
+    id: 'uk.visabrake.announced',
+    claim:
+      'The Home Office announced the brake on 4 March 2026, naming only Afghanistan, Cameroon, Myanmar and Sudan.',
+    provenance: 'primary',
+    source: 'Home Office news story, Visa brake imposed on 4 countries after widespread visa abuse (first published 4 March 2026, updated 26 March 2026)',
+    sourceUrl: 'https://www.gov.uk/government/news/visa-brake-imposed-on-4-countries-after-widespread-visa-abuse',
+    checked: '2026-11-23',
+  },
+  ukVisaBrakeReasonEm: {
+    id: 'uk.visabrake.reason',
+    claim:
+      'The four countries had some of the highest proportions of asylum claims to visas issued. The Student route produced the highest number and proportion of their claims, and for Afghan nationals the Skilled Worker route also produced a high number.',
+    provenance: 'primary',
+    source: 'Explanatory memorandum to HC 1691, paragraphs 5.2 and 5.3',
+    sourceUrl: 'https://www.gov.uk/government/publications/statement-of-changes-to-the-immigration-rules-hc-1619-5-march-2026/explanatory-memorandum-to-the-statement-of-changes-in-the-immigration-rules-hc-1691-5-march-2026-accessible',
+    checked: '2026-11-23',
+  },
+  ukVisaBrakeThreshold: {
+    id: 'uk.visabrake.threshold',
+    claim:
+      'The impact assessment sets a threshold for considering a brake, counting asylum claims linked to one nationality’s visas on one route as a yearly number and as a share of visas issued. Meeting it only triggers a wider assessment with other government departments, weighing migration, national security and growth.',
+    provenance: 'primary',
+    source: 'Home Office, Impact assessment: visa brake (HO IA 1030), paragraphs 20 to 22 and annex paragraphs 8 to 10',
+    sourceUrl: 'https://www.gov.uk/government/publications/statement-of-changes-to-the-immigration-rules-hc-1619-5-march-2026/impact-assessment-visa-brake-accessible-version',
+    checked: '2026-11-23',
+    note: 'Threshold numbers deliberately not printed (policy figures in an impact assessment, not law or statistics): at least 100 visa-linked asylum claims a year for one nationality on one route, and claims at least 15% of entry clearance visas issued, measured over the year ending September 2025.',
+  },
+  ukVisaBrakeReview: {
+    id: 'uk.visabrake.review',
+    claim:
+      'The brake is not permanent, will be reviewed regularly, and will end when the government considers it appropriate.',
+    provenance: 'primary',
+    source: 'GOV.UK, Visa brake: changes to the UK visa system (last updated 26 March 2026)',
+    sourceUrl: 'https://www.gov.uk/guidance/visa-brake-changes-to-the-uk-visa-system',
+    checked: '2026-11-23',
+    note: 'The impact assessment (paragraph 2) speaks of an initial 18-month period followed by review; not printed.',
+  },
+  ukStudentSponsorBca2026: {
+    id: 'uk.sponsor.bca.thresholds',
+    claim:
+      'Basic Compliance Assessments applied for from 1 June 2026 set tighter limits on visa refusals and enrolment; a tighter course-completion limit applies from 1 June 2027.',
+    provenance: 'primary',
+    source: 'Home Office, Student sponsor guidance: Student sponsor compliance, paragraphs 2.13, 2.14 and 2.88 (updated 6 November 2026)',
+    sourceUrl: 'https://www.gov.uk/government/publications/student-sponsor-guidance/student-sponsor-compliance-accessible',
+    checked: '2026-11-23',
+    note: 'Percentages not printed (sponsor guidance, not law): refusal rate below 5% (was below 10%), enrolment at least 95% (was 90%), completion at least 85% until 31 May 2027 and at least 90% from 1 June 2027. Announced in the Home Office news story of 4 June 2026: https://www.gov.uk/government/news/universities-face-ban-on-international-students-over-visa-abuse',
+  },
+  ukStudentSponsorRag: {
+    id: 'uk.sponsor.bca.rag',
+    claim:
+      'Each sponsor now gets a red, amber or green rating. A red rating brings an action plan and a smaller CAS allocation next time, and serious or repeated failure can cost the licence. Ratings will be published on the Register of Student Sponsors once every sponsor has had its first one.',
+    provenance: 'primary',
+    source: 'Home Office, Student sponsor guidance: Student sponsor compliance, paragraphs 2.4, 2.27 to 2.29, 2.44 to 2.46, 2.51 to 2.57 and 2.87 (updated 6 November 2026)',
+    sourceUrl: 'https://www.gov.uk/government/publications/student-sponsor-guidance/student-sponsor-compliance-accessible',
+    checked: '2026-11-23',
+  },
+  ukStudentSponsorRefusalRate: {
+    id: 'uk.sponsor.bca.refusals',
+    claim:
+      'A refused visa counts against the sponsor that issued the CAS.',
+    provenance: 'primary',
+    source: 'Home Office, Student sponsor guidance: Student sponsor compliance, paragraphs 2.16 to 2.19 (updated 6 November 2026)',
+    sourceUrl: 'https://www.gov.uk/government/publications/student-sponsor-guidance/student-sponsor-compliance-accessible',
+    checked: '2026-11-23',
+    note: 'The next sentence in the post, that this gives universities a reason to check applicants carefully, is our own inference.',
+  },
+  ukGraduateLengthFrom2027VisaBrakePost: {
+    id: 'uk.graduate.length.2027',
+    claim:
+      'Graduate visa applications made from 1 January 2027 get 18 months, not 2 years, unless the applicant holds a PhD or other doctorate.',
+    provenance: 'primary',
+    source: 'Immigration Rules, Appendix Graduate GR 8.1 (page updated 3 August 2026)',
+    sourceUrl: 'https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-graduate',
+    checked: '2026-11-23',
+    note: 'Same fact as the existing uk.graduate.length.2027 entry; re-read 23 November 2026, unchanged. The lead may reuse that entry rather than add this one.',
+  },
+  ukStudentFundsDateVisaBrakePost: {
+    id: 'uk.student.funds.date',
+    claim:
+      'The living-cost amount a Student visa applicant must show rises for applications made from 30 November 2026.',
+    provenance: 'primary',
+    source: 'Statement of changes HC 584, 3 September 2026, Implementation section and paragraphs APP ST8 to APP ST10',
+    sourceUrl: 'https://www.gov.uk/government/publications/statement-of-changes-to-the-immigration-rules-hc-584-3-september-2026',
+    checked: '2026-11-23',
+    note: 'Amounts deliberately not repeated; the post links /blog/uk-student-visa-funds-30-november-2026. The lead may reuse that post\'s existing fact.',
+  },
+  ina221gText: {
+    id: 'us.221g.statute',
+    claim:
+      'Section 221(g) is 8 U.S.C. 1201(g) in the US Code. It says no visa shall be issued in three situations: statements in your application or its papers show you are ineligible; the application does not comply with the Act or its regulations; or the officer knows, or has reason to believe, that you are ineligible.',
+    provenance: 'primary',
+    source: 'GovInfo, United States Code 2024 edition, 8 U.S.C. 1201(g) (source note: June 27, 1952, ch. 477, title II, ch. 3, §221)',
+    sourceUrl: 'https://www.govinfo.gov/content/pkg/USCODE-2024-title8/html/USCODE-2024-title8-chap12-subchapII-partIII-sec1201.htm',
+    checked: '2026-11-23',
+    note: 'uscode.house.gov returned 404 for the prelim URL; Cornell LII text matches govinfo. The bond provisos at the end of 1201(g) are not mentioned.',
+  },
+  dos221gMeaning: {
+    id: 'us.221g.meaning',
+    claim:
+      'The State Department’s administrative processing page says a 221(g) refusal means you did not establish eligibility to the officer’s satisfaction.',
+    provenance: 'primary',
+    source: 'US Department of State, Administrative Processing Information (Wayback Machine copy of 14 July 2026)',
+    sourceUrl: 'https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/administrative-processing-information.html',
+    checked: '2026-11-23',
+    note: 'Live page returned HTTP 403 to automated reads; every Wayback capture after 14 July 2026 is also a 403. Archive: https://web.archive.org/web/20260714184556/https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/administrative-processing-information.html',
+  },
+  fam221gLegallyRefusal: {
+    id: 'us.221g.fam.legally-refusal',
+    claim:
+      'The Foreign Affairs Manual, the Department’s rulebook for officers, calls it legally a refusal “even if that refusal is eventually overcome”.',
+    provenance: 'primary',
+    source: 'Foreign Affairs Manual, 9 FAM 302.1-8(B) paragraph c (CT:VISA-2004, 31 May 2024)',
+    sourceUrl: 'https://fam.state.gov/fam/09FAM/09FAM030201.html',
+    checked: '2026-11-23',
+    note: 'The follow-on advice to count it when a later form asks about past refusals is our own suggestion, drawn from this statement.',
+  },
+  utd214bReapply: {
+    id: 'us.214b.reapply',
+    claim:
+      'A 214(b) refusal is different. The official appointment service for Pakistan says those applicants reapply, with a new DS-160 and a new fee.',
+    provenance: 'primary',
+    source: 'USTravelDocs Pakistan, FAQs, Visa Refusals: ‘Is a denial under Section 214(b) permanent?’',
+    sourceUrl: 'https://www.ustraveldocs.com/pk/en/general-information',
+    checked: '2026-11-23',
+    note: 'Script-rendered site; returns HTTP 404 to scripts but renders in a browser (read in the built-in browser pane, not Chrome). 9 FAM 306.2-2(A) b also says 214(b) refusals should generally not be overcome; the applicant reapplies.',
+  },
+  fam221gReopen: {
+    id: 'us.221g.fam.overcome',
+    claim:
+      'A 221(g) case can instead be reopened once you supply what was missing, or once processing ends.',
+    provenance: 'primary',
+    source: 'Foreign Affairs Manual, 9 FAM 306.2-2(A) a(1) and a(2) (CT:VISA-1910, 12 February 2024)',
+    sourceUrl: 'https://fam.state.gov/fam/09FAM/09FAM030602.html',
+    checked: '2026-11-23',
+  },
+  dos221gTwoReasons: {
+    id: 'us.221g.two-reasons',
+    claim:
+      'The State Department names two reasons. Either you must provide further documents or information, or the case needs administrative processing. The officer tells you which at the end of the interview.',
+    provenance: 'primary',
+    source: 'US Department of State, Administrative Processing Information (Wayback Machine copy of 14 July 2026)',
+    sourceUrl: 'https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/administrative-processing-information.html',
+    checked: '2026-11-23',
+    note: 'The page says the officer ‘will inform the applicant at the end of the interview’ when administrative processing is required, and will convey whether documents or information are required or administrative processing is needed.',
+  },
+  dosAdminProcessingMeaning: {
+    id: 'us.221g.admin-processing',
+    claim:
+      'Administrative processing means the officer wants information from sources other than you. When it ends, the officer may find that you qualify, or that you remain ineligible.',
+    provenance: 'primary',
+    source: 'US Department of State, Administrative Processing Information (Wayback Machine copy of 14 July 2026)',
+    sourceUrl: 'https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/administrative-processing-information.html',
+    checked: '2026-11-23',
+  },
+  utd221gMissingDocs: {
+    id: 'us.221g.missing-docs-letter',
+    claim:
+      'The appointment service adds that missing required or supporting documents lead to a 221(g), with a letter listing what you must present.',
+    provenance: 'primary',
+    source: 'USTravelDocs Pakistan, FAQs: ‘What may delay a decision on my application?’',
+    sourceUrl: 'https://www.ustraveldocs.com/pk/en/general-information',
+    checked: '2026-11-23',
+  },
+  embassySlipColour: {
+    id: 'us.221g.slip-colour',
+    claim:
+      'None of the US Embassy in Pakistan’s visa pages we read on 23 November 2026 gives a meaning to the colour of the slip.',
+    provenance: 'primary',
+    source: 'US Embassy in Pakistan: Visas, Nonimmigrant Visas, Immigrant Visas, Supplemental Document Submissions, Supplemental Questionnaire and Courier Services pages',
+    sourceUrl: 'https://pk.usembassy.gov/mts/',
+    checked: '2026-11-23',
+    note: 'Negative finding. The two visa navigators are embedded Google Forms and were not read.',
+  },
+  embassyFormsFollowLetter: {
+    id: 'us.221g.embassy-forms',
+    claim:
+      'The embassy runs two online forms for applicants in this position. Both tell you to follow the instructions in your 221(g) letter and to send what is asked as soon as possible.',
+    provenance: 'primary',
+    source: 'US Embassy in Pakistan, Supplemental Document Submissions for Visa Applicants (updated 18 November 2026) and Supplemental Questionnaire for Visa Applicants',
+    sourceUrl: 'https://pk.usembassy.gov/mts/',
+    checked: '2026-11-23',
+  },
+  embassyDocsForm: {
+    id: 'us.221g.docs-form',
+    claim:
+      'Documents such as a CV, a list of publications, references, recommendation letters, a sponsor’s letter of support, or a description of your planned work: upload only the documents your letter asks for, through the embassy’s Supplemental Document Submission Form. Choose Islamabad as your interview location and give your case number.',
+    provenance: 'primary',
+    source: 'US Embassy in Pakistan, Supplemental Document Submissions for Visa Applicants (updated 18 November 2026)',
+    sourceUrl: 'https://pk.usembassy.gov/mts/',
+    checked: '2026-11-23',
+    note: 'The form says ‘Please only attach the documents requested here’ and lists these six. It also states file types and a maximum file size, not printed.',
+  },
+  embassyQuestionnaire: {
+    id: 'us.221g.questionnaire',
+    claim:
+      'Answers to supplemental questions: download the embassy’s supplemental questions, answer them in a Word document, and upload it through the Supplemental Questionnaire form.',
+    provenance: 'primary',
+    source: 'US Embassy in Pakistan, Supplemental Questionnaire for Visa Applicants',
+    sourceUrl: 'https://pk.usembassy.gov/mrn/',
+    checked: '2026-11-23',
+    note: 'The page asks applicants to complete the questions ‘if a visa officer has requested it’; the upload field accepts Word files only.',
+  },
+  ivMissingDocOneYear: {
+    id: 'us.221g.iv-missing-doc',
+    claim:
+      'A missing document for an immigrant visa, such as a birth certificate: send it as your letter instructs, within one year of the refusal. After that year, the Foreign Affairs Manual says you need a new DS-260 and a new fee.',
+    provenance: 'primary',
+    source: '22 CFR 42.81(e) (CFR revised as of 1 April 2025); Foreign Affairs Manual, 9 FAM 306.2-2(A) a(1)(a) and a(1)(c)(i)',
+    sourceUrl: 'https://www.govinfo.gov/content/pkg/CFR-2025-title22-vol1/pdf/CFR-2025-title22-vol1-sec42-81.pdf',
+    checked: '2026-11-23',
+    note: 'The birth certificate example is the FAM’s own.',
+  },
+  adminProcessingWait: {
+    id: 'us.221g.admin-wait-hardship',
+    claim:
+      'Nothing more from you: administrative processing. Wait for the officer to finish. Check your status online, and tell the consular section if you face a unique hardship.',
+    provenance: 'primary',
+    source: 'US Department of State, Administrative Processing Information (Wayback Machine copy of 14 July 2026)',
+    sourceUrl: 'https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/administrative-processing-information.html',
+    checked: '2026-11-23',
+  },
+  ceacStatusCheck: {
+    id: 'us.221g.ceac-check',
+    claim:
+      'Use the State Department’s CEAC Visa Status Check. Choose immigrant or nonimmigrant visa, then enter the case and passport details it asks for.',
+    provenance: 'primary',
+    source: 'US Department of State, CEAC Visa Status Check (Wayback Machine copy of 11 November 2026)',
+    sourceUrl: 'https://ceac.state.gov/CEACStatTracker/Status.aspx',
+    checked: '2026-11-23',
+    note: 'The live page showed a bot check and was not read; archive: https://web.archive.org/web/20261111064547/https://ceac.state.gov/CEACStatTracker/Status.aspx',
+  },
+  ceacRefusedStatus: {
+    id: 'us.221g.ceac-refused',
+    claim:
+      'Expect it to say “Refused”. On 3 March 2020, the State Department changed CEAC so that cases once shown as in “Administrative Processing” show as refused. Its notice said nothing changed in the cases themselves. The status can change once you show the officer that you are eligible. It can also change when information from other sources resolves the open questions.',
+    provenance: 'primary',
+    source: 'US Department of State, Visas: CEAC Case Status Change (Wayback Machine copy of 13 July 2026)',
+    sourceUrl: 'https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/visas-news-archive/visas-ceac-case-status-change.html',
+    checked: '2026-11-23',
+    note: 'Archive: https://web.archive.org/web/20260713100905/https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/visas-news-archive/visas-ceac-case-status-change.html. The appointment service FAQ also says the Visa Status Check may show ‘Refused’.',
+  },
+  dosAdminDuration: {
+    id: 'us.221g.admin-duration',
+    claim:
+      'As of 23 November 2026, the State Department gives no fixed time for that processing; it says the time varies with each case. Its page says: “The duration of the administrative processing will vary based on the individual circumstances of each case.”',
+    provenance: 'primary',
+    source: 'US Department of State, Administrative Processing Information (Wayback Machine copy of 14 July 2026); same sentence on the USTravelDocs Pakistan FAQ, read live 23 November 2026',
+    sourceUrl: 'https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/administrative-processing-information.html',
+    checked: '2026-11-23',
+  },
+  utdCannotPredict: {
+    id: 'us.221g.cannot-predict',
+    claim:
+      'The appointment service for Pakistan says it cannot predict which cases will need it, or how long it will take.',
+    provenance: 'primary',
+    source: 'USTravelDocs Pakistan, FAQs: ‘How soon should I apply for my appointment?’',
+    sourceUrl: 'https://www.ustraveldocs.com/pk/en/general-information',
+    checked: '2026-11-23',
+  },
+  dosWaitTimesExclude: {
+    id: 'us.221g.wait-times-exclude',
+    claim:
+      'The State Department also says its published nonimmigrant visa wait times do not include administrative processing. If your situation presents a unique hardship, it asks you to tell the consular section where you applied.',
+    provenance: 'primary',
+    source: 'US Department of State, Administrative Processing Information (Wayback Machine copy of 14 July 2026)',
+    sourceUrl: 'https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/administrative-processing-information.html',
+    checked: '2026-11-23',
+  },
+  officialFiguresDisagree: {
+    id: 'us.221g.figures-disagree',
+    claim:
+      'Some official pages for Pakistan quote rough figures, and they do not agree with each other.',
+    provenance: 'primary',
+    source: 'US Embassy in Pakistan, Nonimmigrant Visas (updated 26 August 2026), Consulate General Karachi section; USTravelDocs Pakistan FAQ ‘What is administrative processing?’',
+    sourceUrl: 'https://pk.usembassy.gov/nonimmigrant-visas/',
+    checked: '2026-11-23',
+    note: 'Not printed: the embassy page says most administrative processing is resolved within 60 days of the interview and asks applicants to wait at least 90 days before inquiring; the appointment service FAQ says most is resolved within 180 days. Both are web-page figures, so left out.',
+  },
+  utdNoTravelBooking: {
+    id: 'us.221g.no-booking',
+    claim:
+      'The appointment service strongly advises against booking travel until you have your passport and visa.',
+    provenance: 'primary',
+    source: 'USTravelDocs Pakistan, FAQs: ‘I want to book my travel as far in advance as possible…’',
+    sourceUrl: 'https://www.ustraveldocs.com/pk/en/general-information',
+    checked: '2026-11-23',
+  },
+  ivProcessedIslamabad: {
+    id: 'us.iv.islamabad',
+    claim:
+      'The embassy’s immigrant visa page says immigrant visas for Pakistan are processed in Islamabad.',
+    provenance: 'primary',
+    source: 'US Embassy in Pakistan, Immigrant Visas (updated 26 August 2026)',
+    sourceUrl: 'https://pk.usembassy.gov/immigrant-visas/',
+    checked: '2026-11-23',
+    note: 'Page wording: processed ‘for citizens and residents of Pakistan at the U.S. Embassy in Islamabad’.',
+  },
+  cfr4281e: {
+    id: 'us.221g.cfr-42-81e',
+    claim:
+      'Under 22 CFR 42.81(e), evidence you produce within one year of the refusal gets the case reconsidered, with no new application fee.',
+    provenance: 'primary',
+    source: '22 CFR 42.81(e), Code of Federal Regulations revised as of 1 April 2025 (GovInfo)',
+    sourceUrl: 'https://www.govinfo.gov/content/pkg/CFR-2025-title22-vol1/pdf/CFR-2025-title22-vol1-sec42-81.pdf',
+    checked: '2026-11-23',
+    note: 'eCFR (current) showed a bot check. Federal Register rules since 1 April 2025 affecting 22 CFR part 42 concern the Diversity Visa programme and its fee, not 42.81 or 42.83 by their abstracts.',
+  },
+  cfr4283b: {
+    id: 'us.221g.cfr-42-83b',
+    claim:
+      'If you present nothing within that year, 22 CFR 42.83(b) says your immigrant visa registration is terminated.',
+    provenance: 'primary',
+    source: '22 CFR 42.83(b), Code of Federal Regulations revised as of 1 April 2025 (GovInfo)',
+    sourceUrl: 'https://www.govinfo.gov/content/pkg/CFR-2025-title22-vol1/pdf/CFR-2025-title22-vol1-sec42-83.pdf',
+    checked: '2026-11-23',
+  },
+  cfr4283Reinstate: {
+    id: 'us.221g.cfr-42-83-reinstate',
+    claim:
+      'You can have it reinstated before the end of the second year after the refusal, if you show the delay was beyond your control. The regulation gives illness, being refused permission to leave your country, and foreign military service as examples. Termination can also revoke the approved petition, which is restored if the registration is.',
+    provenance: 'primary',
+    source: '22 CFR 42.83(c), (d) and (e), Code of Federal Regulations revised as of 1 April 2025 (GovInfo)',
+    sourceUrl: 'https://www.govinfo.gov/content/pkg/CFR-2025-title22-vol1/pdf/CFR-2025-title22-vol1-sec42-83.pdf',
+    checked: '2026-11-23',
+    note: '42.83(e) wording: illness or other physical disability preventing travel; refusal by the authorities of the country of residence to grant permission to depart as an immigrant; foreign military service. 42.83(d): a petition automatically revoked as a result of termination is automatically reinstated if registration is reinstated.',
+  },
+  famNivNoLimit: {
+    id: 'us.221g.fam-niv-limit',
+    claim:
+      'For nonimmigrant visas, the Foreign Affairs Manual says the regulations set no time limit. Posts may set their own, but evidence sent a year or more after the refusal needs a new application and fee.',
+    provenance: 'primary',
+    source: 'Foreign Affairs Manual, 9 FAM 306.2-2(A) a(1)(c)(ii) (CT:VISA-1910, 12 February 2024)',
+    sourceUrl: 'https://fam.state.gov/fam/09FAM/09FAM030602.html',
+    checked: '2026-11-23',
+  },
+  dosOneYear: {
+    id: 'us.221g.dos-one-year',
+    claim:
+      'The State Department’s page puts it simply: you have one year from the refusal date.',
+    provenance: 'primary',
+    source: 'US Department of State, Administrative Processing Information (Wayback Machine copy of 14 July 2026)',
+    sourceUrl: 'https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/administrative-processing-information.html',
+    checked: '2026-11-23',
+    note: 'Page wording: if the officer refuses but requests additional information, ‘an applicant has one year from the date the visa was refused to submit the additional information’; otherwise the applicant must reapply and pay another application fee.',
+  },
+  caEeRaiseCrsMiSigned: {
+    id: 'ca.ee.raise-crs.mi-current',
+    claim:
+      'The Ministerial Instructions in force on 23 November 2026 were signed on 17 November; the current grid has applied since 3 November 2026, and IRCC’s CRS criteria page lists the same points.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions respecting the Express Entry system – current (page details 2026-11-18); IRCC, CRS criteria (page details 2026-11-03)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+  },
+  caEeRaiseCrsPnp600: {
+    id: 'ca.ee.raise-crs.pnp-600',
+    claim:
+      'A provincial nomination adds 600 points under section 28, once the province verifies it and you accept it. The points go if the province revokes it or you decline it.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions respecting the Express Entry system – current, s. 28(1)–(2) (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+  },
+  caEeRaiseCrsLang1Steps: {
+    id: 'ca.ee.raise-crs.first-language-steps',
+    claim:
+      'First official language, per ability, single / with spouse: below CLB 4 0; CLB 4 or 5 6/6; CLB 6 9/8; CLB 7 17/16; CLB 8 23/22; CLB 9 31/29; CLB 10 or more 34/32. All four: 0, 24, 36/32, 68/64, 92/88, 124/116, 136/128. Maximum 136, or 128 with a spouse.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions – current, s. 13; IRCC, CRS criteria (page details 2026-11-03)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score/crs-criteria.html',
+    checked: '2026-11-23',
+    note: 'Matches lang1PerAbility in lib/crs-grid.ts. The four-ability totals are multiplication of the per-ability figures.',
+  },
+  caEeRaiseCrsTransferThresholds: {
+    id: 'ca.ee.raise-crs.transferability-thresholds',
+    claim:
+      'Skill transferability points start when all four abilities reach CLB 7, and double when all four reach CLB 9 (sections 21 and 23). Section 21 treats two or more credentials, one of three years or more, as an advanced credential, worth 50 with CLB 9 in all four instead of 25.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions – current, ss. 21(1), 23, 27 and 8(2)(c) (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+    note: 's. 21: 13 (CLB 7, one under 9) / 25 (CLB 9) for a credential of one year or more; 25 / 50 for an advanced credential. s. 23: 13/25 for 1–2 years’ foreign work, 25/50 for 3+ years. Caps: 50 per pair (s. 27), 100 total (s. 8(2)(c)).',
+  },
+  caEeRaiseCrsExampleProfile: {
+    id: 'ca.ee.raise-crs.example-profile',
+    claim:
+      'Made-up applicant: 31, single, three-year bachelor’s with an ECA, three years’ skilled work in Pakistan, CLB 7 in all four: 325. At CLB 9 in all four: 418 (56 more for language, 37 more for transferability). Adding NCLC 7 in all four French skills: 480 (+62: 12 second language, 50 under s. 32). A second credential at CLB 9 instead: +33 (451). Turning 32 costs 5 points.',
+    provenance: 'primary',
+    source: 'Our own arithmetic on the grid in the Ministerial Instructions – current, ss. 10, 11, 13, 14, 21, 23, 32; checked with scoreCrs in lib/crs-grid.ts',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+    note: '325 = 99 + 120 + 68 + 38 (13 + 25). 418 = 99 + 120 + 124 + 75 (25 + 50). 480 = 418 + 12 + 50. 451 = 99 + 128 + 124 + 100. At 32 the age points are 94 instead of 99.',
+  },
+  caEeRaiseCrsProfileUpdate: {
+    id: 'ca.ee.raise-crs.profile-update',
+    claim:
+      'IRCC’s profile page lists a new language test among the changes you must report. Under section 4(2), your points are then recalculated, and they stop once results are two years old (s. 12(3)).',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: create your profile (page details 2026-11-18); Ministerial Instructions – current, ss. 4(2), 12(3)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/create-profile.html',
+    checked: '2026-11-23',
+  },
+  caEeRaiseCrsOneSkillRetake: {
+    id: 'ca.ee.raise-crs.one-skill-retake',
+    claim:
+      'IRCC’s language test page says it does not accept IELTS One Skill Retake for Express Entry. IRCC requires IELTS General Training, PTE Core or CELPIP-General for English.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: language test results (page details 2026-10-16)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html',
+    checked: '2026-11-23',
+  },
+  caEeRaiseCrsFrench: {
+    id: 'ca.ee.raise-crs.french',
+    claim:
+      'Section 14 gives a second official language up to 6 points per ability, at NCLC 9 or higher (1 at NCLC 5–6, 3 at 7–8; maximum 24, or 22 with a spouse). Section 32 adds 25 for NCLC 7 or higher in all four French skills, and 25 more if your English is CLB 5 or higher in all four.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions – current, ss. 14 and 32(1) (page details 2026-11-18); IRCC, CRS criteria (page details 2026-11-03)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+  },
+  caEeRaiseCrsFrenchCategory: {
+    id: 'ca.ee.raise-crs.french-category',
+    claim:
+      'French-language proficiency is one of the ten current categories on IRCC’s category-based selection page, and that category asks for NCLC 7 in all four abilities. IRCC ranks eligible candidates in a category by CRS score.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: category-based selection (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations/category-based-selection.html',
+    checked: '2026-11-23',
+  },
+  caEeRaiseCrsSecondCredential: {
+    id: 'ca.ee.raise-crs.second-credential',
+    claim:
+      'Points for two or more credentials need an assessment for each one. Under section 11, two or more credentials, one of three years or more, earn a single applicant 128 points, against 120 for one.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: educational credential assessment (page details 2026-10-16); Ministerial Instructions – current, s. 11',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessment.html',
+    checked: '2026-11-23',
+    note: 'With a spouse: 119 against 112.',
+  },
+  caEeRaiseCrsIqasPakistan: {
+    id: 'ca.ee.raise-crs.iqas-pakistan',
+    claim:
+      'IQAS’s education guide for Pakistan says a two-year pass BA, BSc or BCom generally compares to a two-year diploma, and a master’s after it, taken together with it, generally compares to a four-year bachelor’s. IQAS says its guide is not an official assessment.',
+    provenance: 'primary',
+    source: 'Government of Alberta (IQAS), International Education Guide: Pakistan (no page date shown)',
+    sourceUrl: 'https://www.alberta.ca/iqas-education-guide-pakistan',
+    checked: '2026-11-23',
+  },
+  caEeRaiseCrsSpouse: {
+    id: 'ca.ee.raise-crs.spouse',
+    claim:
+      'A spouse or partner coming with you can add up to 40 points. Their education earns up to 10 under section 17, with an ECA for foreign credentials; their test earns 1, 3 or 5 per ability from CLB 5, 7 and 9, up to 20 under section 18. A spouse with an assessed bachelor’s and CLB 9 in all four earns 28 spouse points, but the principal applicant is then scored on the lower with-spouse column (the post example: 421 against 418).; their results must be under two years old.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions – current, ss. 8(2)(b), 17(3), 18(2.1), 18(4)–(6) (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+    note: '28 = 8 (bachelor’s) + 20 (4 × 5).',
+  },
+  caEeRaiseCrsSibling: {
+    id: 'ca.ee.raise-crs.sibling',
+    claim:
+      'A brother or sister in Canada adds 15 under section 31. The sibling can be yours or your accompanying spouse’s, and must be 18 or older, a citizen or permanent resident, and living in Canada.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions – current, s. 31(1) (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+  },
+  caEeRaiseCrsCanadianStudyWork: {
+    id: 'ca.ee.raise-crs.canadian-study-work',
+    claim:
+      'Canadian study earns 15 or 30 and needs at least eight months full-time while physically in Canada (s. 30). Canadian work must be done in Canada with temporary resident status (s. 15.1); the Labour Market Integration factor is worth up to 150, or 140 with a spouse (s. 15).',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions – current, ss. 15(2), 15.1(2), 15.1(6)(d), 30(1), 30(3) (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+  },
+  caEeRaiseCrsForeignWork: {
+    id: 'ca.ee.raise-crs.foreign-work',
+    claim:
+      'Foreign work earns up to 50 with your language level (s. 23); it must be paid skilled work (TEER 0 to 3) outside Canada in the last 10 years. Three years earns more than one or two.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions – current, ss. 23 and 25(1) (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-application-management-system/current.html',
+    checked: '2026-11-23',
+    note: 's. 25(1) also requires full-time work or its equivalent (30 hours a week, s. 25(3)).',
+  },
+  caEeRaiseCrsJobOfferChange: {
+    id: 'ca.ee.raise-crs.job-offer-change',
+    claim:
+      'On 3 November 2026, IRCC changed how Canadian work and job offers score. An offer now earns points only in an occupation on IRCC’s high-wage list, and an LMIA adds nothing.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: what has changed (page details 2026-11-18); CRS criteria (page details 2026-11-03)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/changes.html',
+    checked: '2026-11-23',
+  },
+  caEeRaiseCrsAge: {
+    id: 'ca.ee.raise-crs.age',
+    claim:
+      'Under section 10, a single applicant gets 110 points from 20 to 29, then 105 at 30, 99 at 31 and 50 at 40, reaching zero at 45; with a spouse coming the most is 100. IRCC’s calculator says that once you are invited, you enter your age on the date of the invitation.',
+    provenance: 'primary',
+    source: 'IRCC, Ministerial Instructions – current, s. 10; CRS criteria (page details 2026-11-03); Express Entry: check your score (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score.html',
+    checked: '2026-11-23',
+  },
+  caEeRaiseCrsRoundsPaused: {
+    id: 'ca.ee.raise-crs.rounds-paused',
+    claim:
+      'IRCC paused rounds while its system recalculates existing profiles, which its calculator page says could take up to 2 weeks. As of 23 November 2026, IRCC’s rounds data listed round #453 on 28 October as the latest.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: check your score (page details 2026-11-18); IRCC rounds data ee_rounds_123_en.json (first entry #453, 28 October 2026)',
+    sourceUrl: 'https://www.canada.ca/content/dam/ircc/documents/json/ee_rounds_123_en.json',
+    checked: '2026-11-23',
+    note: 'Re-check before publishing; a new round would make this sentence and the October table’s framing stale.',
+  },
+  caEeRaiseCrsOctoberRounds: {
+    id: 'ca.ee.raise-crs.october-2026-rounds',
+    claim:
+      'Every round in October 2026: 28 Oct Transport occupations (#453) 150 invitations, lowest 477; 27 Oct French-language proficiency (#452) 5,000, 407; 26 Oct Provincial Nominee Program (#451) 792, 761; 16 Oct French-language proficiency (#450) 5,000, 435; 15 Oct Canadian Experience Class (#449) 2,500, 519; 13 Oct Provincial Nominee Program (#448) 752, 772; 1 Oct Trade occupations (#447) 3,500, 476.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry rounds data (ee_rounds_123_en.json), rounds #447 to #453',
+    sourceUrl: 'https://www.canada.ca/content/dam/ircc/documents/json/ee_rounds_123_en.json',
+    checked: '2026-11-23',
+    note: 'Round names shortened: the data file says \'Transport Occupations, 2026-Version 2\', \'French-Language proficiency 2026-Version 2\' and \'Trades Occupations, 2026-Version 3\'; \'Trade occupations\' follows IRCC’s category page. #446 is 29 September, so these seven are all of October. PNP figures match the express-entry-or-pnp post.',
+  },
+  irccSpouseChecklistMarriageProof: {
+    id: 'ircc.spouse.checklist.marriageProof',
+    claim:
+      'IRCC’s Document Checklist – Spouse (Including Dependent Children) (IMM 5533), edition 09-2022, is the list you upload with the application. It asks for your marriage certificate, or other proof the marriage was legally registered where it took place.',
+    provenance: 'primary',
+    source: 'IRCC, Document Checklist – Spouse (Including Dependent Children) (IMM 5533) (09-2022) E',
+    sourceUrl: 'https://www.canada.ca/content/dam/ircc/migration/ircc/english/pdf/kits/forms/imm5533e.pdf',
+    checked: '2026-11-23',
+    note: 'Checklist item 1: “You must upload this checklist with your application.” Part B, 2. Civil status documents, Current Relationship. canada.ca refuses scripted downloads (connection reset); exact wording read from a Wayback Machine copy and matched against the live page read via WebFetch on 2026-11-23. Wayback copy of 15 November 2026 (dated URL .../imm5533/01-09-2022/imm5533e.pdf); live edition line confirmed as IMM 5533 (09-2022) E.',
+  },
+  irccSpouseGuideMarriageRegistered: {
+    id: 'ircc.spouse.guide.marriageRegistered',
+    claim:
+      'The Complete Guide (IMM 5289) says the documents “must show that the marriage was legally registered with the government where it took place.” A record of solemnisation obtained in Canada, or a marriage licence, is not accepted.',
+    provenance: 'primary',
+    source: 'IRCC, Sponsor your spouse, common-law partner, conjugal partner or dependent child – Complete Guide (IMM 5289) (date modified 2026-04-23), Step 5, Marriage certificates',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides/guide-5289-sponsor-your-spouse-common-law-partner-conjugal-partner-dependent-child-complete-guide.html',
+    checked: '2026-11-23',
+    note: 'canada.ca refuses scripted downloads (connection reset); exact wording read from a Wayback Machine copy and matched against the live page read via WebFetch on 2026-11-23. Wayback copy of 12 November 2026; dcterms.modified 2026-04-23 on both.',
+  },
+  irccSpouseGuideCountryOfIssue: {
+    id: 'ircc.spouse.guide.countryOfIssue',
+    claim:
+      'Both documents send you to IRCC’s country-specific requirements. The guide says to check them for the country that issued each document, not only the country where your spouse lives.',
+    provenance: 'primary',
+    source: 'IRCC, Sponsor your spouse, common-law partner, conjugal partner or dependent child – Complete Guide (IMM 5289) (date modified 2026-04-23), Step 2, “2) Check your country-specific requirements”',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides/guide-5289-sponsor-your-spouse-common-law-partner-conjugal-partner-dependent-child-complete-guide.html',
+    checked: '2026-11-23',
+    note: 'Guide: “To see instructions about specific documents, select the country where the document is issued.” IMM 5533 carries the same reminder. The Gulf example in the post is our illustration of this rule.',
+  },
+  irccPakistanNameEndorsed: {
+    id: 'ircc.spouse.pakistan.nameEndorsed',
+    claim:
+      'Documents must show the applicant’s name. They must be endorsed by the government office that issues them in the district where the event took place.',
+    provenance: 'primary',
+    source: 'IRCC, Sponsoring your spouse, partner or dependent child (application package page), country-specific requirements: Pakistan, “Identity and civil status documents issued by Pakistan” (date modified 2026-10-06)',
+    sourceUrl: 'https://ircc.canada.ca/english/information/applications/spouse.asp',
+    checked: '2026-11-23',
+    note: 'Read live with curl on 2026-11-23. The Pakistan text is loaded into the page from https://ircc.canada.ca/english/information/applications/spouse-inc.html (items itm33 to itm35, shown when Pakistan is chosen).',
+  },
+  irccPakistanNikahNama: {
+    id: 'ircc.spouse.pakistan.nikahNama',
+    claim:
+      'For a marriage in Pakistan, you must submit a copy of the “Nikkah Nama”. It must include the “Nikkah registry seal”, which shows the union council or proper government office registered the marriage.',
+    provenance: 'primary',
+    source: 'IRCC, Sponsoring your spouse, partner or dependent child (application package page), country-specific requirements: Pakistan, “Identity and civil status documents issued by Pakistan” (date modified 2026-10-06)',
+    sourceUrl: 'https://ircc.canada.ca/english/information/applications/spouse.asp',
+    checked: '2026-11-23',
+    note: 'Read live with curl on 2026-11-23. The Pakistan text is loaded into the page from https://ircc.canada.ca/english/information/applications/spouse-inc.html (items itm33 to itm35, shown when Pakistan is chosen).',
+  },
+  irccPakistanNadraNotEnough: {
+    id: 'ircc.spouse.pakistan.nadraNotEnough',
+    claim:
+      'You can include the marriage certificate issued by NADRA, but IRCC says it “is not enough on its own to show the marriage is valid”.',
+    provenance: 'primary',
+    source: 'IRCC, Sponsoring your spouse, partner or dependent child (application package page), country-specific requirements: Pakistan, “Identity and civil status documents issued by Pakistan” (date modified 2026-10-06)',
+    sourceUrl: 'https://ircc.canada.ca/english/information/applications/spouse.asp',
+    checked: '2026-11-23',
+    note: 'Read live with curl on 2026-11-23. The Pakistan text is loaded into the page from https://ircc.canada.ca/english/information/applications/spouse-inc.html (items itm33 to itm35, shown when Pakistan is chosen). Exact text: “you can include the marriage certificate issued by the National Database and Registration Authority (NADRA), but it is not enough on its own to show the marriage is valid”.',
+  },
+  irccPakistanNonMuslim: {
+    id: 'ircc.spouse.pakistan.nonMuslim',
+    claim:
+      'Non-Muslims should provide certificates from the government office that registers marriages.',
+    provenance: 'primary',
+    source: 'IRCC, Sponsoring your spouse, partner or dependent child (application package page), country-specific requirements: Pakistan, “Identity and civil status documents issued by Pakistan” (date modified 2026-10-06)',
+    sourceUrl: 'https://ircc.canada.ca/english/information/applications/spouse.asp',
+    checked: '2026-11-23',
+    note: 'Read live with curl on 2026-11-23. The Pakistan text is loaded into the page from https://ircc.canada.ca/english/information/applications/spouse-inc.html (items itm33 to itm35, shown when Pakistan is chosen).',
+  },
+  irccPakistanNoAffidavits: {
+    id: 'ircc.spouse.pakistan.noAffidavits',
+    claim:
+      'IRCC does not accept affidavits to prove marriage, divorce, death or custody.',
+    provenance: 'primary',
+    source: 'IRCC, Sponsoring your spouse, partner or dependent child (application package page), country-specific requirements: Pakistan, “Identity and civil status documents issued by Pakistan” (date modified 2026-10-06)',
+    sourceUrl: 'https://ircc.canada.ca/english/information/applications/spouse.asp',
+    checked: '2026-11-23',
+    note: 'Read live with curl on 2026-11-23. The Pakistan text is loaded into the page from https://ircc.canada.ca/english/information/applications/spouse-inc.html (items itm33 to itm35, shown when Pakistan is chosen).',
+  },
+  irccPakistanMfloWarning: {
+    id: 'ircc.spouse.pakistan.mfloWarning',
+    claim:
+      'Marriage or divorce certificates that do not comply with Pakistan’s Muslim Family Laws Ordinance, 1961 can delay the application or lead to refusal.',
+    provenance: 'primary',
+    source: 'IRCC, Sponsoring your spouse, partner or dependent child (application package page), country-specific requirements: Pakistan, “Identity and civil status documents issued by Pakistan” (date modified 2026-10-06)',
+    sourceUrl: 'https://ircc.canada.ca/english/information/applications/spouse.asp',
+    checked: '2026-11-23',
+    note: 'Read live with curl on 2026-11-23. The Pakistan text is loaded into the page from https://ircc.canada.ca/english/information/applications/spouse-inc.html (items itm33 to itm35, shown when Pakistan is chosen). IRCC writes “Muslim Family Law Ordinance of 1961”; the post uses the Ordinance’s own title.',
+  },
+  irccPakistanPhotos: {
+    id: 'ircc.spouse.pakistan.photos',
+    claim:
+      'If you married by local rites and customs, IRCC asks for photos with relatives and friends: the Nikah signing, the Rukhsati or reception, and the two of you on other occasions, each labelled in English or French with the names, the date and the occasion.',
+    provenance: 'primary',
+    source: 'IRCC, Sponsoring your spouse, partner or dependent child (application package page), country-specific requirements: Pakistan, “Identity and civil status documents issued by Pakistan” (date modified 2026-10-06)',
+    sourceUrl: 'https://ircc.canada.ca/english/information/applications/spouse.asp',
+    checked: '2026-11-23',
+    note: 'Read live with curl on 2026-11-23. The Pakistan text is loaded into the page from https://ircc.canada.ca/english/information/applications/spouse-inc.html (items itm33 to itm35, shown when Pakistan is chosen).',
+  },
+  pkMfloS5Registration: {
+    id: 'pk.mflo.s5.registration',
+    claim:
+      'Section 5 of the Muslim Family Laws Ordinance, 1961 says every marriage solemnised under Muslim law must be registered. The union council licenses Nikah Registrars to do it. Anyone may obtain a copy of an entry in the union council’s records.',
+    provenance: 'primary',
+    source: 'Pakistan Code, The Muslim Family Laws Ordinance, 1961 (Ordinance VIII of 1961), s. 5(1), 5(2) and 5(6) (text “Updated till 10-3-2022”)',
+    sourceUrl: 'https://pakistancode.gov.pk/pdffiles/administratoreecaf3b490e2d43d2e3b50c0c068b5d7.pdf',
+    checked: '2026-11-23',
+    note: 'Read live on 2026-11-23. s. 5(6) adds “on payment of the prescribed fee, if any”; no fee printed. Punjab amended s. 5 in 2015 (one-registrar-per-ward limit and penalties); the sentences used here hold in both texts.',
+  },
+  pkPunjabMarriageRegistrationCertificate: {
+    id: 'pk.punjab.marriageRegistrationCertificate',
+    claim:
+      'Punjab’s Local Government and Community Development Department says the Nikah Khuwan has the Nikah Nama registered with the Nikah Registrar for the area. The union council or municipal committee then issues a computerised Marriage Registration Certificate. In Punjab, the application needs a copy of the registered Nikah Nama, both spouses’ identity cards and copies of their parents’ CNICs.',
+    provenance: 'primary',
+    source: 'Government of the Punjab, Local Government and Community Development Department, Frequently Asked Questions, “Registration of Marriage” (no page date shown)',
+    sourceUrl: 'https://lgcd.punjab.gov.pk/faq',
+    checked: '2026-11-23',
+    note: 'Read live on 2026-11-23. The FAQ also lists a fee and a processing time; neither is printed (not set in law). Punjab only; other provinces not checked.',
+  },
+  pkNadraCrms: {
+    id: 'pk.nadra.crms',
+    claim:
+      'Union councils use the provincial Civil Registration and Management System (CRMS) to issue marriage and divorce certificates. NADRA provides the technology under agreements with provincial and local governments.',
+    provenance: 'primary',
+    source: 'NADRA, Pakistan’s Registration Ecosystem page (CRMS section)',
+    sourceUrl: 'https://www.nadra.gov.pk/ecosystem',
+    checked: '2026-11-23',
+    note: 'nadra.gov.pk returns 403 to automated readers; read from a Wayback Machine copy. Snapshot of 8 April 2026 (web.archive.org/web/20260408134951/https://www.nadra.gov.pk/ecosystem). Page text: CRMS is “deployed across 11,000+ Union Councils” and “facilitates the registration of vital life events and issuance of birth, death, marriage and divorce certificates”; “The technical provisioning of CRMS is extended by NADRA under bilateral agreements with all provincial and local governments.” The 11,000+ figure is not printed.',
+  },
+  pkNadraPolicyMaritalStatus: {
+    id: 'pk.nadra.policy.maritalStatus',
+    claim:
+      'To change marital status on a CNIC, NADRA’s Registration Policy (18 September 2026) asks for the marriage certificate from the union council, municipal committee or cantonment.',
+    provenance: 'primary',
+    source: 'NADRA, Registration Policy, Version RP-6.0.2, date of issue 18 Sep 2026, “Marital Status Change Requirements”',
+    sourceUrl: 'https://www.nadra.gov.pk/assests/downloadsPdf/registration-policy-6-0-2-english.pdf',
+    checked: '2026-11-23',
+    note: 'nadra.gov.pk returns 403 to automated readers; read from a Wayback Machine copy. Snapshot of 11 November 2026. The policy also accepts a foreign marriage certificate; the post omits that case.',
+  },
+  irccGuideTranslationItems: {
+    id: 'ircc.spouse.guide.translation',
+    claim:
+      'With any document not in English or French, the Complete Guide asks for a certified copy of the original, the English or French translation, and an affidavit from the translator, unless they are a Canadian certified translator.',
+    provenance: 'primary',
+    source: 'IRCC, Sponsor your spouse, common-law partner, conjugal partner or dependent child – Complete Guide (IMM 5289) (date modified 2026-04-23), Step 2 and “Translation of documents”',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides/guide-5289-sponsor-your-spouse-common-law-partner-conjugal-partner-dependent-child-complete-guide.html',
+    checked: '2026-11-23',
+    note: 'canada.ca refuses scripted downloads (connection reset); exact wording read from a Wayback Machine copy and matched against the live page read via WebFetch on 2026-11-23.',
+  },
+  irccGuideTranslator: {
+    id: 'ircc.spouse.guide.translator',
+    claim:
+      'Anyone fluent in both languages may translate. Outside Canada, the affidavit is sworn before a notary public. The applicant and their family may not translate; IRCC’s list includes the spouse and first cousins.',
+    provenance: 'primary',
+    source: 'IRCC, Sponsor your spouse, common-law partner, conjugal partner or dependent child – Complete Guide (IMM 5289) (date modified 2026-04-23), “Translation of documents”',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides/guide-5289-sponsor-your-spouse-common-law-partner-conjugal-partner-dependent-child-complete-guide.html',
+    checked: '2026-11-23',
+    note: 'canada.ca refuses scripted downloads (connection reset); exact wording read from a Wayback Machine copy and matched against the live page read via WebFetch on 2026-11-23. Family list: parent, guardian, sibling, spouse, common-law partner, conjugal partner, grandparent, child, aunt, uncle, niece, nephew and first cousin.',
+  },
+  irccGuideCertifiedCopy: {
+    id: 'ircc.spouse.guide.certifiedCopy',
+    claim:
+      'For a certified copy, an authorised person compares the copy with the original and prints “I certify that this is a true copy of the original document”, the document’s name, the date, and their name, title and signature. Outside Canada, IRCC names a notary public. Other copies need no certification.',
+    provenance: 'primary',
+    source: 'IRCC, Sponsor your spouse, common-law partner, conjugal partner or dependent child – Complete Guide (IMM 5289) (date modified 2026-04-23), “Certified true copies” and Step 2',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides/guide-5289-sponsor-your-spouse-common-law-partner-conjugal-partner-dependent-child-complete-guide.html',
+    checked: '2026-11-23',
+    note: 'canada.ca refuses scripted downloads (connection reset); exact wording read from a Wayback Machine copy and matched against the live page read via WebFetch on 2026-11-23. Guide: “Other than copies of original documents used for translations, photocopies do not need to be certified.”',
+  },
+  irccSpouseCopiesNotOriginals: {
+    id: 'ircc.spouse.copiesNotOriginals',
+    claim:
+      'IRCC now accepts copies instead of originals, but says to keep the originals in case it asks for them.',
+    provenance: 'primary',
+    source: 'IRCC, Sponsoring your spouse, partner or dependent child (application package page), country-specific requirements: Pakistan, “Identity and civil status documents issued by Pakistan” (date modified 2026-10-06), “Get ready to apply”',
+    sourceUrl: 'https://ircc.canada.ca/english/information/applications/spouse.asp',
+    checked: '2026-11-23',
+    note: 'Page text: “We won’t ask you for original supporting documents anymore. We now accept copies. You should still have your originals in case we ask you for them during processing.”',
+  },
+  irccSpouseNoAttestation: {
+    id: 'ircc.spouse.noAttestation',
+    claim:
+      'On 23 November 2026, IRCC’s Pakistan instructions, the Complete Guide and the IMM 5533 checklist did not mention attestation, legalisation or an apostille.',
+    provenance: 'primary',
+    source: 'IRCC country-specific requirements (spouse-inc.html, all countries), IMM 5289 and IMM 5533 (09-2022), searched for attest*, legali*, apostille, authenticat*',
+    sourceUrl: 'https://ircc.canada.ca/english/information/applications/spouse.asp',
+    checked: '2026-11-23',
+    note: 'Zero matches in all three texts; WebFetch on the live IMM 5289 also found none. A negative finding about these three pages only; not a statement that IRCC never asks for attestation.',
+  },
+  irccGuideMoreDocuments: {
+    id: 'ircc.spouse.guide.moreDocuments',
+    claim:
+      'IRCC can still ask for more documents during processing.',
+    provenance: 'primary',
+    source: 'IRCC, Sponsor your spouse, common-law partner, conjugal partner or dependent child – Complete Guide (IMM 5289) (date modified 2026-04-23), Step 2 (“While processing your application, we may ask for more documents”)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides/guide-5289-sponsor-your-spouse-common-law-partner-conjugal-partner-dependent-child-complete-guide.html',
+    checked: '2026-11-23',
+    note: 'canada.ca refuses scripted downloads (connection reset); exact wording read from a Wayback Machine copy and matched against the live page read via WebFetch on 2026-11-23.',
+  },
+  irccChecklistPreviousMarriages: {
+    id: 'ircc.spouse.checklist.previousMarriages',
+    claim:
+      'IMM 5533 asks both of you to show any earlier marriage ended, with a final divorce, annulment or death certificate.',
+    provenance: 'primary',
+    source: 'IRCC, Document Checklist – Spouse (Including Dependent Children) (IMM 5533) (09-2022) E, Part A 4. Previous Relationships (sponsor) and Part B 2. Civil status documents, Previous Relationships (principal applicant)',
+    sourceUrl: 'https://www.canada.ca/content/dam/ircc/migration/ircc/english/pdf/kits/forms/imm5533e.pdf',
+    checked: '2026-11-23',
+    note: 'canada.ca refuses scripted downloads (connection reset); exact wording read from a Wayback Machine copy and matched against the live page read via WebFetch on 2026-11-23.',
+  },
+  irccPakistanDivorce: {
+    id: 'ircc.spouse.pakistan.divorce',
+    claim:
+      'For a divorce in Pakistan: the divorce certificate must come from the proper union council or government office; you must include the Certificate of Talaq issued by the union council; the NADRA divorce certificate can be included but is not enough on its own; for Khula, also include the decree of Khula issued by the Family Court.',
+    provenance: 'primary',
+    source: 'IRCC, Sponsoring your spouse, partner or dependent child (application package page), country-specific requirements: Pakistan, “Identity and civil status documents issued by Pakistan” (date modified 2026-10-06)',
+    sourceUrl: 'https://ircc.canada.ca/english/information/applications/spouse.asp',
+    checked: '2026-11-23',
+    note: 'Read live with curl on 2026-11-23. The Pakistan text is loaded into the page from https://ircc.canada.ca/english/information/applications/spouse-inc.html (items itm33 to itm35, shown when Pakistan is chosen). IRCC’s NADRA-divorce bullet ends “not enough on its own to show the marriage is valid” (apparently a drafting slip); the post says only “not enough on its own”.',
+  },
+  irccPakistanDivorceConnection: {
+    id: 'ircc.spouse.pakistan.divorceConnection',
+    claim:
+      'If the sponsor divorced in Pakistan while living in Canada, IRCC asks for proof that either spouse lived in Pakistan for at least one year before the divorce, or had a substantial connection, such as frequent visits, property or a business there.',
+    provenance: 'primary',
+    source: 'IRCC, Sponsoring your spouse, partner or dependent child (application package page), country-specific requirements: Pakistan, “Identity and civil status documents issued by Pakistan” (date modified 2026-10-06)',
+    sourceUrl: 'https://ircc.canada.ca/english/information/applications/spouse.asp',
+    checked: '2026-11-23',
+    note: 'Read live with curl on 2026-11-23. The Pakistan text is loaded into the page from https://ircc.canada.ca/english/information/applications/spouse-inc.html (items itm33 to itm35, shown when Pakistan is chosen). The one-year figure is printed because it is also set in law: Divorce Act s. 22(1).',
+  },
+  caDivorceActS22: {
+    id: 'ca.divorceAct.s22',
+    claim:
+      'Section 22(1) of Canada’s Divorce Act recognises a foreign divorce if either spouse was habitually resident in that country for at least one year before proceedings began.',
+    provenance: 'primary',
+    source: 'Justice Laws Website, Divorce Act, R.S.C. 1985, c. 3 (2nd Supp.), s. 22(1) (Act current to 2026-10-29, last amended 2024-02-01)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/acts/D-3.4/page-7.html',
+    checked: '2026-11-23',
+    note: 'Read live on 2026-11-23.',
+  },
+  teachersFswNoCertificate: {
+    id: 'teachers.tracks.fswNoCertificate',
+    claim:
+      'Section 75 of the Regulations asks Federal Skilled Workers for TEER 0 to 3 work experience, a language test and an assessed education credential. A teaching certificate is not on the list.',
+    provenance: 'primary',
+    source: 'Justice Laws, Immigration and Refugee Protection Regulations, s. 75(2) (current to 2026-10-29; last amended 2026-10-23)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-75.html',
+    checked: '2026-11-23',
+  },
+  teachersNocCertificateRequired: {
+    id: 'teachers.noc.certificateRequired',
+    claim:
+      'ESDC’s NOC pages for secondary (41220) and elementary (41221) teachers say a provincial teaching certificate is required.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit groups 41220 and 41221, employment requirements',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=41220&version=2021.0',
+    checked: '2026-11-23',
+    note: 'The 41221 page says the same: https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=41221&version=2021.0',
+  },
+  teachersEcaLicenceProvince: {
+    id: 'teachers.tracks.ecaLicenceProvince',
+    claim:
+      'IRCC’s ECA page says a licence for a regulated job must come from the province or territory you plan to settle in, and that an ECA does not guarantee a licence.',
+    provenance: 'primary',
+    source: 'IRCC, Educational credential assessment (ECA) for Express Entry (page details 2026-10-16)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessment.html',
+    checked: '2026-11-23',
+  },
+  teachersOctApplyAbroad: {
+    id: 'teachers.ontario.applyFromAbroad',
+    claim:
+      'The Ontario College of Teachers says you can apply even if you currently live outside Canada.',
+    provenance: 'primary',
+    source: 'Ontario College of Teachers, Internationally Educated Teachers: Overview (no date shown)',
+    sourceUrl: 'https://www.oct.ca/en-ca/becoming-a-teacher/requirements/internationally-educated-teachers/overview',
+    checked: '2026-11-23',
+  },
+  teachersAlbertaLawfulWork: {
+    id: 'teachers.alberta.lawfulWork',
+    claim:
+      'Under Alberta’s regulation, an interim professional certificate goes only to a Canadian citizen or someone lawfully permitted to work in Canada (s. 7(5)).',
+    provenance: 'primary',
+    source: 'Alberta King’s Printer, Certification of Teachers and Teacher Leaders Regulation, Alta Reg 123/2022, s. 7(5) (current as of 1 June 2026)',
+    sourceUrl: 'https://kings-printer.alberta.ca/documents/Regs/2022_123.pdf',
+    checked: '2026-11-23',
+    note: 's. 10(2) says the same for the permanent professional certificate. Alberta\'s certification page also asks all applicants for evidence of their right to work in Canada.',
+  },
+  teachersPathwaysWorkPermit: {
+    id: 'teachers.pathways.workPermit',
+    claim:
+      'Pathways to Teach Canada says some provinces may require a work permit before certification.',
+    provenance: 'primary',
+    source: 'Pathways to Teach Canada, Get Certified to Teach (no date shown)',
+    sourceUrl: 'https://pathwaystoteach.ca/get-certified-to-teach',
+    checked: '2026-11-23',
+  },
+  teachersOntarioDegreeAndProgramme: {
+    id: 'teachers.ontario.degreeProgramme',
+    claim:
+      'Ontario: a degree of at least 90 post-secondary credits or the equivalent, and a teacher education programme the College finds not substantially different from Ontario’s.',
+    provenance: 'primary',
+    source: 'Government of Ontario, e-Laws, O. Reg. 176/10, s. 1(1) (definition of acceptable post-secondary degree) and s. 11(2) (consolidated from 23 September 2026)',
+    sourceUrl: 'https://www.ontario.ca/laws/regulation/100176',
+    checked: '2026-11-23',
+    note: 'Read from e-Laws\' Word version (100176_e.doc). The College\'s 2026 guide describes the degree as at least three years of full-time study or 90 credits beyond Grade 12.',
+  },
+  teachersOntarioMathTest: {
+    id: 'teachers.ontario.mathTest',
+    claim:
+      'Ontario: you must also pass a mathematics test, though a teacher certified abroad may be certified first and given up to two years.',
+    provenance: 'primary',
+    source: 'Government of Ontario, e-Laws, O. Reg. 271/19, s. 2(1), (3) and (4) (consolidated from 30 May 2024)',
+    sourceUrl: 'https://www.ontario.ca/laws/regulation/190271',
+    checked: '2026-11-23',
+    note: 'Applies to applications completed on or after 1 February 2025 under s. 4 or 6 of O. Reg. 176/10. The College\'s MPT page says IETs must pass within two years of initial certification or the certificate expires.',
+  },
+  teachersBcProgramme: {
+    id: 'teachers.bc.programme',
+    claim:
+      'British Columbia (pages last updated February and March 2026): a programme at an accredited institution, with a supervised practicum in a K-12 school, that authorises you to teach where you trained. If you trained outside Canada, you also need a “familiarization course” approved by the BC Teachers’ Council. Certificates come from the Ministry of Education and Child Care under the Council’s standards.',
+    provenance: 'primary',
+    source: 'Government of British Columbia, Requirements to apply for a Certificate of Qualification (last updated 26 February 2026)',
+    sourceUrl: 'https://www2.gov.bc.ca/gov/content/education-training/k-12/teach/become-a-teacher/types/coq-requirements',
+    checked: '2026-11-23',
+    note: 'www2.gov.bc.ca reset every automated connection on 23 November 2026, so this was read from the Wayback Machine copy https://web.archive.org/web/20260313134916/https://www2.gov.bc.ca/gov/content/education-training/k-12/teach/become-a-teacher/types/coq-requirements. The page also sets year, credit and practicum-length counts; not printed because they are not in an Act or regulation.',
+  },
+  teachersAlbertaRequirement: {
+    id: 'teachers.alberta.requirement',
+    claim:
+      'Alberta: a degree that includes or adds an acceptable teacher preparation programme meeting certification rules where you completed it, plus English or French.',
+    provenance: 'primary',
+    source: 'Alberta King’s Printer, Certification of Teachers and Teacher Leaders Regulation, Alta Reg 123/2022, s. 7(1) (current as of 1 June 2026)',
+    sourceUrl: 'https://kings-printer.alberta.ca/documents/Regs/2022_123.pdf',
+    checked: '2026-11-23',
+    note: 'Alberta\'s certification page sets year, credit and practicum-length counts; not printed because they are not in the regulation.',
+  },
+  teachersOntarioLeadsToCertification: {
+    id: 'teachers.ontario.leadsToCertification',
+    claim:
+      'Ontario’s 2026 registration guide adds that your programme must lead to certification or authorisation to teach where you completed it.',
+    provenance: 'primary',
+    source: 'Ontario College of Teachers, Requirements for Becoming a Teacher of General Education in Ontario (2026 edition), p. 2',
+    sourceUrl: 'https://sc.oct.ca/-/media/PDF/Requirements%20General%20Education%20Teacher/EN/general_education_teacher_e.pdf',
+    checked: '2026-11-23',
+  },
+  teachersRegulatorJudgesProgramme: {
+    id: 'teachers.regulators.judgeProgramme',
+    claim:
+      'Each regulator judges whether your B.Ed. or M.Ed. is an acceptable teacher education programme.',
+    provenance: 'primary',
+    source: 'O. Reg. 176/10, s. 11(2)(b)(ii) (acceptable to the College); Alta Reg 123/2022, s. 7(1)(a)(ii)(A) (acceptable to the Minister); BC Certificate of Qualification requirements (acceptable teacher education program)',
+    sourceUrl: 'https://www.ontario.ca/laws/regulation/100176',
+    checked: '2026-11-23',
+  },
+  teachersOntarioConditional: {
+    id: 'teachers.ontario.conditional',
+    claim:
+      'If something is missing, Ontario may grant a certificate with conditions. Section 12 of its regulation lists what can be missing, such as a practicum of at least 80 days. That certificate expires five years after it is granted, unless you complete the missing parts or get a one-year extension.',
+    provenance: 'primary',
+    source: 'Government of Ontario, e-Laws, O. Reg. 176/10, s. 12(1), (2), (4), (5) and (6) (consolidated from 23 September 2026)',
+    sourceUrl: 'https://www.ontario.ca/laws/regulation/100176',
+    checked: '2026-11-23',
+    note: 's. 12(2) para. 4 (four academic semesters) is amended to \'three\' from 1 May 2027 by O. Reg. 317/26; not printed. Re-check after 1 May 2027. Wording corrected 23 Nov 2026 after an independent check: s. 12 needs one of two sets of requirements already met; what is missing becomes a condition; the one-year extension needs exceptional circumstances.',
+  },
+  teachersOntarioSps: {
+    id: 'teachers.ontario.sps',
+    claim:
+      'Ontario wants a statement of professional standing from where you trained, even if you never taught there. It confirms your right to teach was never suspended, cancelled or revoked.',
+    provenance: 'primary',
+    source: 'Ontario College of Teachers, Requirements for Becoming a Teacher of General Education in Ontario (2026 edition), pp. 6 and 14',
+    sourceUrl: 'https://sc.oct.ca/-/media/PDF/Requirements%20General%20Education%20Teacher/EN/general_education_teacher_e.pdf',
+    checked: '2026-11-23',
+  },
+  teachersOntarioPakistanSps: {
+    id: 'teachers.ontario.pakistanSps',
+    claim:
+      'The College’s Pakistan page says you can get the statement from the last school where you taught, signed by the principal, director, headmaster or headmistress.',
+    provenance: 'primary',
+    source: 'Ontario College of Teachers, Pakistan: Statement of Professional Standing (no date shown)',
+    sourceUrl: 'https://www.oct.ca/en-ca/becoming-a-teacher/requirements/internationally-educated-teachers/country-specific-information/sops-pakistan',
+    checked: '2026-11-23',
+  },
+  teachersAlbertaReferenceLetter: {
+    id: 'teachers.alberta.referenceLetter',
+    claim:
+      'Alberta accepts a letter of reference from the head of your school where a jurisdiction issues no certification. The head must send it directly and confirm you left in good standing.',
+    provenance: 'primary',
+    source: 'Government of Alberta, Teacher certification, Statement of Standing (no date shown; read 23 November 2026)',
+    sourceUrl: 'https://www.alberta.ca/teacher-certification',
+    checked: '2026-11-23',
+  },
+  teachersBcSchoolLetter: {
+    id: 'teachers.bc.schoolLetter',
+    claim:
+      'British Columbia’s document list asks schools where you taught without registering for a letter on your standing and dates.',
+    provenance: 'primary',
+    source: 'Government of British Columbia, Required documents details for completing a teacher certification application (last updated 27 March 2026)',
+    sourceUrl: 'https://www2.gov.bc.ca/gov/content/education-training/k-12/teach/your-application/submit-documents/documents-details',
+    checked: '2026-11-23',
+    note: 'Read from the Wayback Machine copy https://web.archive.org/web/20260420004500/https://www2.gov.bc.ca/gov/content/education-training/k-12/teach/your-application/submit-documents/documents-details because www2.gov.bc.ca reset automated connections.',
+  },
+  teachersTranscriptsNotFromApplicant: {
+    id: 'teachers.regulators.transcripts',
+    claim:
+      'None of the three accepts transcripts sent by you, even in a sealed envelope.',
+    provenance: 'primary',
+    source: 'OCT registration guide 2026, p. 12; BC Required documents details (last updated 27 March 2026); Government of Alberta, Teacher certification (Official transcripts)',
+    sourceUrl: 'https://www.alberta.ca/teacher-certification',
+    checked: '2026-11-23',
+  },
+  teachersOntarioLanguageList: {
+    id: 'teachers.ontario.languageList',
+    claim:
+      'Pakistan is not on Ontario’s list of countries whose English-language teacher programmes meet its language requirement automatically. If yours was taught entirely in English, the head of the institution can confirm this to the College by letter.',
+    provenance: 'primary',
+    source: 'Ontario College of Teachers, Language Requirements (no date shown); registration guide 2026, p. 4',
+    sourceUrl: 'https://www.oct.ca/en-ca/becoming-a-teacher/requirements/language-requirements',
+    checked: '2026-11-23',
+    note: 'O. Reg. 176/10, s. 7 is the legal basis (programme taught in English or French, or an acceptable test; the Registrar may exempt).',
+  },
+  teachersTestLists: {
+    id: 'teachers.languageTests',
+    claim:
+      'Ontario’s test list includes IELTS General Training, CELPIP-General and PTE Core, the English tests IRCC accepts for Express Entry. Alberta’s list names IELTS Academic and TOEFL iBT. British Columbia’s names those two and LCATP, and none of these is on IRCC’s list.',
+    provenance: 'primary',
+    source: 'Ontario College of Teachers, Language Requirements; Government of Alberta, Teacher certification; BC Certificate of Qualification requirements (last updated 26 February 2026); IRCC, Express Entry: Language test (page details 2026-10-16)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html',
+    checked: '2026-11-23',
+    note: 'BC and Alberta also accept other evidence in some cases (letters on language of instruction, teaching experience). No test scores printed.',
+  },
+  teachersEcaNoTeachingBody: {
+    id: 'teachers.eca.noTeachingBody',
+    claim:
+      'IRCC’s list of designated organisations for the ECA includes no teaching body.',
+    provenance: 'primary',
+    source: 'IRCC, Educational credential assessment (ECA) for Express Entry (page details 2026-10-16)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessment.html',
+    checked: '2026-11-23',
+    note: 'Listed: CES, ICAS, WES, IQAS, ICES; professional bodies CACB, MCC, PEBC.',
+  },
+  teachersAlbertaOnlyBody: {
+    id: 'teachers.alberta.onlyBody',
+    claim:
+      'Alberta says Alberta Education is the only body that can assess credentials for teaching in Alberta, and it does so course by course.',
+    provenance: 'primary',
+    source: 'Government of Alberta, Teacher certification (read 23 November 2026)',
+    sourceUrl: 'https://www.alberta.ca/teacher-certification',
+    checked: '2026-11-23',
+  },
+  teachersPathwaysMembers: {
+    id: 'teachers.pathways.members',
+    claim:
+      'Pathways to Teach Canada assesses credentials and language for participating provinces and territories, including British Columbia, Manitoba, Saskatchewan and the four Atlantic provinces, but not Ontario or Alberta. Pathways itself grants no certification.',
+    provenance: 'primary',
+    source: 'Pathways to Teach Canada, Get Certified to Teach (no date shown)',
+    sourceUrl: 'https://pathwaystoteach.ca/get-certified-to-teach',
+    checked: '2026-11-23',
+    note: 'Members listed: BC, Manitoba, New Brunswick, Newfoundland and Labrador, Northwest Territories, Nova Scotia, Nunavut, PEI, Saskatchewan. Non-members: Alberta, Quebec, Yukon, Ontario. Pathways is not an IRCC-designated ECA organisation.',
+  },
+  teachersEducationCategoryCodes: {
+    id: 'teachers.category.codes',
+    claim:
+      'On 23 November 2026, IRCC’s Education category listed 41220 Secondary school teachers (TEER 1), 41221 Elementary school and kindergarten teachers (TEER 1), 42202 Early childhood educators and assistants (TEER 2), 42203 Instructors of persons with disabilities (TEER 2) and 43100 Elementary and secondary school teacher assistants (TEER 3).',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: Category-based selection (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations/category-based-selection.html',
+    checked: '2026-11-23',
+    note: 'Titles and TEERs for 41220, 41221 and 42202 also confirmed on ESDC\'s NOC 2021 Version 1.0 pages. Re-check monthly.',
+  },
+  teachersFswTeer: {
+    id: 'teachers.category.fswTeer',
+    claim:
+      'All five codes are TEER 1, 2 or 3, so they can count for the Federal Skilled Worker Program.',
+    provenance: 'primary',
+    source: 'Justice Laws, IRPR s. 75(2)(a) (TEER 0, 1, 2 or 3); IRCC category page (TEERs)',
+    sourceUrl: 'https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-227/section-75.html',
+    checked: '2026-11-23',
+  },
+  teachersNocEceLicence: {
+    id: 'teachers.noc.eceLicence',
+    claim:
+      'The NOC says early childhood educators need a licence in Ontario, certification in British Columbia, and usually a licence elsewhere.',
+    provenance: 'primary',
+    source: 'ESDC, NOC 2021 Version 1.0, unit group 42202, employment requirements',
+    sourceUrl: 'https://noc.esdc.gc.ca/Structure/NOCProfile?GocTemplateCulture=en-CA&code=42202&version=2021.0',
+    checked: '2026-11-23',
+  },
+  teachersBackgrounderRenewed: {
+    id: 'teachers.category.renewed2026',
+    claim:
+      'IRCC’s backgrounder of 18 February 2026 named education occupations among the renewed 2026 categories.',
+    provenance: 'primary',
+    source: 'IRCC, Backgrounder: Attracting the world’s best talent to fill Canada’s labour gaps and build our economy (18 February 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/02/attracting-the-worlds-best-talent-to-fill-canadas-labour-gaps-and-build-our-economy.html',
+    checked: '2026-11-23',
+    note: 'The backgrounder also says the minimum experience for renewed categories rose; not printed, because no 2026 education round has set it in Ministerial Instructions.',
+  },
+  teachersSingleOccupation: {
+    id: 'teachers.category.singleOccupation',
+    claim:
+      'Your experience must be in one listed occupation, and the category page sets how much counts and how recent it must be.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: Category-based selection (page details 2026-11-18)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations/category-based-selection.html',
+    checked: '2026-11-23',
+    note: 'The page sets 12 months in the past 3 years, in Canada or abroad; linked, not printed.',
+  },
+  teachersNoEducationRound2026: {
+    id: 'teachers.rounds.none2026',
+    claim:
+      'IRCC’s rounds data, read on 23 November 2026, shows no education round in 2026. The latest round was #453 on 28 October 2026.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry rounds of invitations (ee_rounds_123_en.json, read 23 November 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html',
+    checked: '2026-11-23',
+    note: '2026 rounds run from #389 (5 January 2026) to #453 (28 October 2026, Transport Occupations 2026-Version 2). Read through a page-fetch tool; canada.ca reset scripted downloads.',
+  },
+  teachersEducationRounds2025: {
+    id: 'teachers.rounds.2025',
+    claim:
+      'In 2025, the category had two rounds: #344 on 1 May 2025 issued 1,000 invitations, with a lowest score of 479; #367 on 17 September 2025 issued 2,500, with a lowest score of 462.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry rounds of invitations (ee_rounds_123_en.json, read 23 November 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html',
+    checked: '2026-11-23',
+    note: 'drawName \'Education occupations (Version 1)\' for both; programmes FSW, CEC and FST. Each round is set by Ministerial Instructions.',
+  },
+  teachersCrsChange: {
+    id: 'teachers.crs.change',
+    claim:
+      'IRCC changed how CRS points are awarded from 3 November 2026. IRCC says the high-wage list brings extra points for Canadian work experience or a qualifying job offer.',
+    provenance: 'primary',
+    source: 'IRCC, News release: Canada refocusing Express Entry on top talent that drives economic growth (16 October 2026)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/10/canada-refocusing-express-entry-on-top-talent-that-drives-economic-growth.html',
+    checked: '2026-11-23',
+  },
+  teachersHighWage: {
+    id: 'teachers.crs.highWage',
+    claim:
+      'Secondary and elementary teachers (41220 and 41221) are on IRCC’s high-wage occupation list in force from 3 November 2026.',
+    provenance: 'primary',
+    source: 'IRCC, Express Entry: High-wage occupations (in force 3 November 2026; page details 2026-10-16)',
+    sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score/high-wage.html',
+    checked: '2026-11-23',
+    note: 'Both are in the 1.5-to-2-times table (level 2 in lib/crs-high-wage.ts). 42202, 42203 and 43100 are not listed. No wages printed.',
   },
 };
 

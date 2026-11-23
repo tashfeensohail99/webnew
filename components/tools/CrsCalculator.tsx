@@ -398,7 +398,7 @@ export function CrsCalculator({ digits }: { digits: string }) {
         </div>
 
         {/* Result rail */}
-        <aside className="lg:sticky lg:top-24">
+        <div className="lg:sticky lg:top-24">
           <div className="rounded-2xl border border-rule bg-navy p-6 text-white shadow-soft">
             <p className="eyebrow eyebrow--light">Indicative CRS score</p>
             <p className="mt-2 font-serif text-6xl leading-none text-gold-300">{result.total}</p>
@@ -462,7 +462,7 @@ export function CrsCalculator({ digits }: { digits: string }) {
               Check the work-permit route instead
             </a>
           </div>
-        </aside>
+        </div>
       </div>
 
       <p className="mt-10 border-t border-rule pt-5 text-xs leading-relaxed text-ink-400 text-pretty">

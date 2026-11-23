@@ -40,9 +40,27 @@ import PakistaniDoctorsCanada from '@/content/blog/pakistani-doctors-canada';
 import PakistaniEngineersCanada from '@/content/blog/pakistani-engineers-canada';
 import CanadaPrWithoutIeltsOrJobOffer from '@/content/blog/canada-pr-without-ielts-or-job-offer';
 import CanadianCitizenshipAfterPrPakistan from '@/content/blog/canadian-citizenship-after-pr-pakistan';
+import C16FrancophoneMobilityPakistan from '@/content/blog/c16-francophone-mobility-pakistan';
+import UkVisitVisaRefusedPakistan from '@/content/blog/uk-visit-visa-refused-pakistan';
+import GermanySpouseVisaPakistan from '@/content/blog/germany-spouse-visa-pakistan';
+import UkEvisaPakistan from '@/content/blog/uk-evisa-pakistan';
+import UkVisaBrakePakistan from '@/content/blog/uk-visa-brake-pakistan';
+import UsVisa221gIslamabad from '@/content/blog/us-visa-221g-islamabad';
+import RaiseCrsScore2026 from '@/content/blog/raise-crs-score-2026';
+import NadraMarriageCertificateCanadaSpouse from '@/content/blog/nadra-marriage-certificate-canada-spouse';
+import PakistaniTeachersCanada from '@/content/blog/pakistani-teachers-canada';
 
 /** One line per post. A slug in lib/blog.ts without a body here is a build error, not a blank page. */
 const BODIES: Record<string, ComponentType> = {
+  'pakistani-teachers-canada': PakistaniTeachersCanada,
+  'nadra-marriage-certificate-canada-spouse': NadraMarriageCertificateCanadaSpouse,
+  'raise-crs-score-2026': RaiseCrsScore2026,
+  'us-visa-221g-islamabad': UsVisa221gIslamabad,
+  'uk-visa-brake-pakistan': UkVisaBrakePakistan,
+  'uk-evisa-pakistan': UkEvisaPakistan,
+  'germany-spouse-visa-pakistan': GermanySpouseVisaPakistan,
+  'uk-visit-visa-refused-pakistan': UkVisitVisaRefusedPakistan,
+  'c16-francophone-mobility-pakistan': C16FrancophoneMobilityPakistan,
   'canadian-citizenship-after-pr-pakistan': CanadianCitizenshipAfterPrPakistan,
   'canada-pr-without-ielts-or-job-offer': CanadaPrWithoutIeltsOrJobOffer,
   'pakistani-engineers-canada': PakistaniEngineersCanada,

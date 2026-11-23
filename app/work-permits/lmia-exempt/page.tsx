@@ -211,6 +211,10 @@ export default function LmiaExemptPage() {
             <Link href="/blog/lmia-exempt-work-permit-codes" className="font-semibold">
               LMIA-exempt work permit codes
             </Link>
+            . French speakers with a job offer outside Quebec should read{' '}
+            <Link href="/blog/c16-francophone-mobility-pakistan" className="font-semibold">
+              the C16 Francophone Mobility work permit
+            </Link>
             .
           </p>
         </Prose>
