@@ -10,8 +10,10 @@ import { NextResponse, type NextRequest } from 'next/server';
  *
  * It records the page path, the tool's name and the kind of visit, nothing else:
  * no IP address, no user-agent string, no query string, no cookie. Nothing about the
- * visitor is stored, so the privacy page's promise still holds. It never changes
- * the response. scripts/geo-visits.mjs reads these lines out of the logs daily.
+ * visitor is stored, so the privacy page's promise still holds. The count never
+ * changes the response. scripts/geo-visits.mjs reads these lines out of the logs
+ * daily. The one response this file does change is a link broken by invisible
+ * characters (see withoutInvisible below), which it redirects.
  *
  * Google's AI Overviews and AI Mode cannot be told apart from ordinary Google
  * search here; Search Console counts them inside its Web figures.
@@ -61,7 +63,36 @@ const AI_UTM: [string, RegExp][] = [
   ['Claude', /^claude/i],
 ];
 
+/**
+ * Invisible formatting characters: zero-width spaces and joiners, direction marks
+ * and embeddings, word joiners and the byte-order mark.
+ *
+ * The firm's YouTube description template has two U+202C characters straight
+ * after the website address, most likely from copying it out of right-to-left text.
+ * YouTube keeps them in the link, so every video sent viewers to
+ * /%E2%80%AC%E2%80%AC, a 404 (checked on the watch page, 24 Nov 2026). No real
+ * address on this site contains one, so they are stripped and the visitor is
+ * sent, in one 308, to the page the link meant.
+ */
+const INVISIBLE = /[​-‏‪-‮⁠-⁤⁦-⁩﻿]/g;
+
+function withoutInvisible(req: NextRequest): NextResponse | undefined {
+  let decoded: string;
+  try {
+    decoded = decodeURIComponent(req.nextUrl.pathname);
+  } catch {
+    return undefined;
+  }
+  if (!decoded.match(INVISIBLE)) return undefined;
+  const url = req.nextUrl.clone();
+  url.pathname = decoded.replace(INVISIBLE, '') || '/';
+  return NextResponse.redirect(url, 308);
+}
+
 export function middleware(req: NextRequest) {
+  const fixed = withoutInvisible(req);
+  if (fixed) return fixed;
+
   const path = req.nextUrl.pathname;
   const ua = req.headers.get('user-agent') ?? '';
   const crawler = CRAWLERS.find(([, re]) => re.test(ua));
